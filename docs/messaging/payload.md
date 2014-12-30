@@ -1,4 +1,4 @@
-#Message PayloadThe
+#Message Payload
 
 The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and 
 the IOTF event format specification.

@@ -1,4 +1,3 @@
-#MQTT
 The primary mechanism that devices and applications use to communicate with the IBM Internet of Things 
 Foundation is MQTT; this is a protocol designed for the efficient exchange of real-time data with sensor 
 and mobile devices.
@@ -19,12 +18,12 @@ increased from the 23 character limit imposed by 3.1. The IoT service will often
 and will accept long ClientId’s with either version of the protocol however some 3.1 client libraries 
 check the ClientId and enforce the 23 character limit.
 
-##Insecure MQTT client connection
+#Insecure MQTT client connection
 Your client should connect to org_id.messaging.internetofthings.ibmcloud.com on port 1883.  Note that all 
 information your device submits is being sent in plain text (this includes the credentials for your device).  
 Outside of development and testing we do not recommend using an insecure connection.
 
-##Secure MQTT client connection
+#Secure MQTT client connection
 Your client should connect to org_id.messaging.internetofthings.ibmcloud.com on port 8883.  
 The Foundation only supports TLS v1.2 with AES 128 ciphers.  Please ensure your client library is able to meet 
 these requirements.  The primary advantage here is that all communication to the service is encrypted. 

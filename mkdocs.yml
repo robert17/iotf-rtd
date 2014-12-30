@@ -1,0 +1,7 @@
+site_name: IBM IOT Foundation
+repo_url: https://github.com/durera/iotf-rtd/
+pages:
+- [messaging/mqtt.md, "Messaging", "MQTT"]
+- [messaging/devices.md, "Messaging", "MQTT Connectivity for Devices"]
+- [messaging/payload.md, "Messaging", "Message Payload"]
+theme: readthedocs

@@ -11,15 +11,15 @@ The **d** element is where you include all data for the event (or command) being
 the IOTF message specification, in the case where you wish to send no data the **d** element should still be present, but contain an empty object.
 
 ####Example 1 - Simple Data
-'''json
+```json
 {
   "d": {"msg": "Hello World"}
 }
-'''
+```
 
 
 ####Example 2 - Complex data
-'''json
+```json
 {
   "d": {
     "host": "IBM700-R9E683D", 
@@ -31,20 +31,20 @@ the IOTF message specification, in the case where you wish to send no data the *
     "cpu": 1.3, 
   }
 }
-'''
+```
 
 ####Example 3 - No data
-'''json
+```json
 {
   "d": {}
 }
-'''
+```
 
 
 ### Timestamp
 The **ts** element allows you to assoicate a timestamp with the event (or command).  This is an optional element, if included it's value should be a valid ISO8601 encoded timestamp.
 
-'''json
+```json
 {
   "d": {
     "host": "IBM700-R9E683D", 
@@ -57,6 +57,6 @@ The **ts** element allows you to assoicate a timestamp with the event (or comman
   },
   "ts": "2014-12-30T14:47:36+00:00"
 }
-'''
+```
 
 

@@ -25,6 +25,6 @@ information your device submits is being sent in plain text (this includes the c
 Outside of development and testing we do not recommend using an insecure connection.
 
 ##Secure MQTT client connection
-Your client should connect to org_id.messaging.internetofthings.ibmcloud.com on port 8883.  The Foundation only 
-supports TLS v1.2.  Please ensure your client library also supports this version of TLS.  Here, all communication to 
-the service is encrypted. 
+Your client should connect to org_id.messaging.internetofthings.ibmcloud.com on port 8883.  
+The Foundation only supports TLS v1.2 with AES 128 ciphers.  Please ensure your client library is able to meet 
+these requirements.  The primary advantage here is that all communication to the service is encrypted. 

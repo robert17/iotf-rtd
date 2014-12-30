@@ -27,7 +27,7 @@ the IOTF message specification, in the case where you wish to send no data the *
     "network": {
       "up": 1.22, 
       "down": 0.55
-    }
+    },
     "cpu": 1.3, 
   }
 }
@@ -52,7 +52,7 @@ The **ts** element allows you to assoicate a timestamp with the event (or comman
     "network": {
       "up": 1.22, 
       "down": 0.55
-    }
+    },
     "cpu": 1.3, 
   },
   "ts": "2014-12-30T14:47:36+00:00"

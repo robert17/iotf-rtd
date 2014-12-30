@@ -1,15 +1,17 @@
+#Message PayloadThe
+
 The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and 
 the IOTF event format specification.
 
-# IOTF JSON Payload Specification
+## IOTF JSON Payload Specification
 It is simple to create a JSON message that meets the IOTF specification.  The message must be a valid JSON object with only 
 two top level elements:  **d** and **ts**
 
-## Data
+### Data
 The **d** element is where you include all data for the event (or command) being transmitted in the message.  This element is required for your message to meet 
 the IOTF message specification, in the case where you wish to send no data the **d** element should still be present, but contain an empty object.
 
-###Example 1 - Simple Data
+####Example 1 - Simple Data
 ```json
 {
   "d": {"msg": "Hello World"}
@@ -17,7 +19,7 @@ the IOTF message specification, in the case where you wish to send no data the *
 ```
 
 
-###Example 2 - Complex data
+####Example 2 - Complex data
 ```json
 {
   "d": {
@@ -32,7 +34,7 @@ the IOTF message specification, in the case where you wish to send no data the *
 }
 ```
 
-###Example 3 - No data
+####Example 3 - No data
 ```json
 {
   "d": {}
@@ -40,8 +42,8 @@ the IOTF message specification, in the case where you wish to send no data the *
 ```
 
 
-## Timestamp
-The **ts** element allows you to assoicate a timestamp with the event (or command).  This is an optional element, if included it's value should be a valid ISO8601 encoded timestamp.
+### Timestamp
+The **ts** element allows you to associate a timestamp with the event (or command).  This is an optional element, if included it's value should be a valid ISO8601 encoded timestamp.
 
 ```json
 {

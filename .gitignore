@@ -1,0 +1,3 @@
+docs/_build/*
+old_md_docs/*
+site/*

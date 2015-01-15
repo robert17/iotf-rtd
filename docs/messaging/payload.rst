@@ -13,17 +13,20 @@ IOTF JSON Payload Specification
 -------------------------------
 
 It is simple to create a JSON message that meets the IOTF specification.
-The message must be a valid JSON object with only two top level
-elements: **d** and **ts**
+
+* The message must be a valid JSON object (not an array) with only two top level
+  elements: **d** and **ts**
+* The message must be UTF-8 encoded
 
 Data
 ~~~~
-
 The **d** element is where you include all data for the event (or
-command) being transmitted in the message. This element is required for
-your message to meet the IOTF message specification, in the case where
-you wish to send no data the **d** element should still be present, but
-contain an empty object.
+command) being transmitted in the message. 
+
+* This element is required for your message to meet the IOTF message specification.
+* This must always be a JSON object (not an array)
+* In the case where you wish to send no data the **d** element should 
+  still be present, but contain an empty object.
 
 Example 1 - Simple Data
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,7 +68,7 @@ Timestamp
 
 The **ts** element allows you to associate a timestamp with the event
 (or command). This is an optional element, if included it's value should
-be a valid ISO8601 encoded timestamp.
+be a valid ISO8601 encoded timestamp string.
 
 .. code:: json
 
@@ -81,3 +84,61 @@ be a valid ISO8601 encoded timestamp.
       },
       "ts": "2014-12-30T14:47:36+00:00"
     }
+
+Custom JSON payloads
+-------------------------------------------------------------------------------
+The IOT Foundation is designed to be open, you may send your event and command data in any 
+format you choose, however if you choose to send data in a custom format it will limit some 
+features of the service which can only function with a known payload format.
+
+Below are a number of example payloads that are close the to the IOTF specification, but 
+do not quite match it.  Each would be treated as a custom JSON payload.
+
+**Example 1**
+
+Root node is a JSON array
+
+.. code:: json
+
+  [
+    {
+      "d": {
+        "myName": "Stuart's Pi",
+        "cputemp": 46,
+        "sine": -10,
+        "cpuload": 1.45
+      }
+    },
+    {
+      "d": {
+        "myName": "Stuart's Pi",
+        "cputemp": 46,
+        "sine": -10,
+        "cpuload": 1.45
+      }
+    }
+  ]
+
+
+**Example 2**
+
+"d" node is a JSON array
+
+.. code:: json
+
+  {
+    "d": ["green", "yellow"]
+  }
+
+
+**Example 3**
+
+Unexpected node at root level
+
+.. code:: json
+
+  {
+    "d": {},
+    "temp": 60,
+    "ts": "2014-12-30T14:47:36+00:00"
+  }

@@ -14,7 +14,7 @@ Dependencies
 -  `paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__
 -  `iso8601 <https://pypi.python.org/pypi/iso8601>`__
 -  `pytz <https://pypi.python.org/pypi/pytz>`__
-
+-  `requests <https://pypi.python.org/pypi/requests>`__
 
 ----
 

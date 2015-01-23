@@ -116,7 +116,7 @@ is not a simple case that QoS2 is "better" than QoS0.
 
 
 At most once (QoS0)
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 The message is delivered at most once, or it may not be delivered at all. 
 ts delivery across the network is not acknowledged. The message is not 
 stored. The message could be lost if the client is disconnected, or if 
@@ -135,7 +135,7 @@ implementation.
 
 
 At least once (QoS1)
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 The message is always delivered at least once. It might be delivered multiple 
 times if there is a failure before an acknowledgment is received by the 
 sender. The message must be stored locally at the sender, until the sender 

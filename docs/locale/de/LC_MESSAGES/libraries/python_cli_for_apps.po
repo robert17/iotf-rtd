@@ -1,0 +1,270 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-23 18:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\..\libraries\python_cli_for_apps.rst:3
+msgid "Python Client Library - Applications"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:6
+msgid "Constructor"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:8
+msgid "The Client constructor accepts an options dict containing:"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:10
+msgid "org - Your organization ID"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:11
+msgid "id - The unique ID of your application within your organization"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:12
+msgid ""
+"auth-method - Method of authentication (the only value currently supported "
+"is \"apikey\")"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:14
+msgid "auth-key - API key (required if auth-method is \"apikey\")"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:15
+msgid "auth-token - API key token (required if auth-method is \"apikey\")"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:34
+msgid "Using a configuration file"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:45
+msgid "The application configuration file must be in the following format:"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:61
+msgid "Subscribing to device events"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:62
+msgid ""
+"By default, this will subscribe to all events from all connected devices. "
+"Use the type, id and event parameters to control the scope of the "
+"subscription. A single client can support multiple subscriptions."
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:68
+msgid "Subscribe to all events from all devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:77
+msgid "Subscribe to all events from all devices of a specific type"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:86
+msgid "Subscribe to a specific event from all devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:95
+msgid "Subscribe to a specific event from two different devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:107
+msgid "Handling events from devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:108
+msgid ""
+"To process the events received by your subscroptions you need to register an"
+" event callback method. The messages are returned as an instance of the "
+"Event class:"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:112
+msgid ""
+"event.device - string (uniquely identifies the device across all types of "
+"devices in the organization"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:114
+msgid "event.deviceType - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:115
+msgid "event.deviceId - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:116
+msgid "event.event - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:117
+msgid "event.format - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:118
+msgid "event.data - dict"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:119
+msgid "event.timestamp - datetime"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:137
+msgid "Subscribing to device status"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:138
+msgid ""
+"By default, this will subscribe to status updates for all connected devices."
+" Use the type and id parameters to control the scope of the subscription. A "
+"single client can support multiple subscriptions."
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:143
+msgid "Subscribe to status updates for all devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:152
+msgid "Subscribe to status updates for all devices of a specific type"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:161
+msgid "Subscribe to status updates for two different devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:174
+msgid "Handling status updates from devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:175
+msgid ""
+"To process the status updates received by your subscriptions you need to "
+"register an event callback method. The messages are returned as an instance "
+"of the Status class:"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:179
+msgid ""
+"The following properties are set for both \"Connect\" and \"Disconnect\" "
+"status events:"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:182
+msgid "status.clientAddr - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:183
+msgid "status.protocol - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:184
+msgid "status.clientId - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:185
+msgid "status.user - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:186
+msgid "status.time - datetime"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:187
+msgid "status.action - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:188
+msgid "status.connectTime - datetime"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:189
+msgid "status.port - int"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:191
+msgid "The following properties are only set when the action is \"Disconnect\":"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:193
+msgid "status.writeMsg - int"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:194
+msgid "status.readMsg - int"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:195
+msgid "status.reason - string"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:196
+msgid "status.readBytes - int"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:197
+msgid "status.writeBytes - int"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:218
+msgid "Publishing events from devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:219
+msgid "Applications can publish events as if they originated from a Device"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:232
+msgid "Publishing commands to devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:233
+msgid "Applications can publish commands to connected devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:246
+msgid "Retrieve device details"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:249
+msgid "Retrieve details of all registered devices"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:258
+msgid "Retrieve details of a specific device"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:270
+msgid "Register a new device"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:283
+msgid "Delete a device"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:297
+msgid "Access historical event data"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:300
+msgid "Get historical event data for a specific device"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:309
+msgid "Get historical event data for all devices of a specific type"
+msgstr ""
+
+#: ..\..\libraries\python_cli_for_apps.rst:318
+msgid "Get historical event data for all devices of all types"
+msgstr ""

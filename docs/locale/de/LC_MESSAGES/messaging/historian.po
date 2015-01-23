@@ -1,0 +1,129 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-23 18:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\..\messaging\historian.rst:3
+msgid "Historian"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:5
+msgid ""
+"The entire payload must be a JSON object (  {  }   )  - an array value  (  ["
+"  ] ) for the payload would be rejected."
+msgstr ""
+
+#: ..\..\messaging\historian.rst:6
+msgid ""
+"If there is a top level \"d\" property in the payload object an attempt will"
+" be made to use its value as the TimeSeries event."
+msgstr ""
+
+#: ..\..\messaging\historian.rst:7
+msgid ""
+"If the value for the top level \"d\" property is not a JSON object it will "
+"be rejected. That is the value of the top level \"d\" property must be a "
+"JSON object itself."
+msgstr ""
+
+#: ..\..\messaging\historian.rst:8
+msgid ""
+"If the value for the top level \"d\" object is not a JSON object the entire "
+"payload will be used for the TimeSeries event."
+msgstr ""
+
+#: ..\..\messaging\historian.rst:9
+msgid ""
+"What I have outlined above is consistent with the Java connector that was "
+"used during beta. If this is correct I feel we should update the "
+"documentation with a few more * examples and be clear that we do not accept "
+"array for the payload or the value of the top level \"d\" property. Here are"
+" a few quick example:"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:12
+msgid "Valid:"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:21 ..\..\messaging\historian.rst:35
+#: ..\..\messaging\historian.rst:54 ..\..\messaging\historian.rst:75
+msgid "{"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:20 ..\..\messaging\historian.rst:34
+#: ..\..\messaging\historian.rst:53 ..\..\messaging\historian.rst:67
+msgid "\"d\": {"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:18 ..\..\messaging\historian.rst:65
+msgid "\"myName\": \"Stuart's Pi\", \"cputemp\": 46, \"sine\": -10, \"cpuload\": 1.45"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:22 ..\..\messaging\historian.rst:23
+#: ..\..\messaging\historian.rst:36 ..\..\messaging\historian.rst:37
+#: ..\..\messaging\historian.rst:55 ..\..\messaging\historian.rst:56
+#: ..\..\messaging\historian.rst:69 ..\..\messaging\historian.rst:77
+msgid "}"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:26
+msgid "Also valid:"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:32
+msgid ""
+"\"myName\": {\"first\" :\"Stuart\",  \"last\": \"Hayton\"}, \"cputemp\": 46,"
+" \"sine\": -10, \"cpuload\": 1.45"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:39
+msgid "And valid (notice the array embedded in the object \"names\":"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:49
+msgid "\"names\": {"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:48
+msgid "\"allMyNames\": ["
+msgstr ""
+
+#: ..\..\messaging\historian.rst:48
+msgid "\"Stuart\", \"Bloggs\""
+msgstr ""
+
+#: ..\..\messaging\historian.rst:50
+msgid "]"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:51
+msgid "}, \"cputemp\": 46, \"sine\": -10, \"cpuload\": 1.45"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:59
+msgid "Invalid:"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:71
+msgid "[{"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:70
+msgid "}]"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:73
+msgid "Also invalid:"
+msgstr ""
+
+#: ..\..\messaging\historian.rst:76
+msgid "\"d\": [\"green\", \"yellow\"]"
+msgstr ""

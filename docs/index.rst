@@ -23,6 +23,7 @@ Reference Material
 .. toctree::
     :maxdepth: 2
 	
+    reference/concepts
     reference/security
 
 

@@ -351,5 +351,6 @@ intersphinx_mapping = {'http://docs.python.org/': None}
 
 
 # Localization
+language = 'en'
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.

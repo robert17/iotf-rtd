@@ -12,11 +12,11 @@ applications.  Once registered devices and API keys are bound to a single
 organization.  When an application connects to the service using an API key it
 registers with the organization that "owns" the API key.
 
-It is impossible for cross-organization communication within the
-Internet of Things Foundation.  If you wish to transmit data between two 
-organizations you would need to write two applications, one from each 
-organization, which communicate with one another to expose data across the 
-boundaries that exist within the service itself.
+For your security it is impossible for cross-organization communication within the
+Internet of Things Foundation eco-system, intentional or otherwise.  The only way 
+to transmit data between two organizations it to explicitly create 
+two applications, one within each organization, that communicate with each other to
+act as a relay between the organizations.
 
 
 Devices

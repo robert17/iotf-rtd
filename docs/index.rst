@@ -34,6 +34,7 @@ API
     :maxdepth: 2
 	
     api/device_management
+    api/historical_events
 
 
 Client libraries

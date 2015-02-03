@@ -9,8 +9,8 @@ IBM Internet of Things Foundation
 
 About
 -------------------------------------------------------------------------------
-Welcome to the unofficial documentation/reference material for IBM's IOT Foundation 
-service.  If you are looking for "recipes" you can find them on DeveloperWorks_
+Welcome to the documentation/reference material for IBM's IOT Foundation 
+service.  If you are looking for tutorials you can find them on DeveloperWorks_
 
 .. _DeveloperWorks: https://developer.ibm.com/iot/
 
@@ -37,7 +37,7 @@ API
     api/historical_events
 
 
-Client libraries
+Client Libraries
 -------------------------------------------------------------------------------
 
 .. toctree::
@@ -58,3 +58,15 @@ Messaging
     messaging/devices
     messaging/applications
     messaging/payload
+
+
+
+Contribute
+-------------------------------------------------------------------------------
+If it's not working for you, it's not working for us. The source of this documentation 
+is available on GitHub_, we welcome both `suggestions for improvement`_ and community 
+contributions via the use of issues and pull requests against our repository.
+
+.. _GitHub: https://github.com/ibm-messaging/iotf-rtd
+.. _suggestions for improvement: https://github.com/ibm-messaging/iotf-rtd/issues
+

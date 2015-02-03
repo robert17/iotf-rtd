@@ -4,7 +4,7 @@ Concepts
 
 Organizations
 -------------------------------------------------------------------------------
-When you reigster with the Internet of Things Foundation you are given an 
+When you register with the Internet of Things Foundation you are given an 
 organization ID, this is a unique 6 character identifier for your account.
 
 **Organizations** ensure your data is only accessible from your devices and 

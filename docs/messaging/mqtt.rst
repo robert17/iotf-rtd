@@ -157,3 +157,17 @@ to ensure no duplication of messages occurs.
    and that it will be actioned only once.  This is one of the clearest examples
    of when the additional overhead of QoS2 has a clear benefit.
 
+
+Subscription Buffers
+~~~~~~~~~~~~~~~~~~~~
+Each subscription from either a device or application is allocated a buffer of 
+5000 messages.  This allows for any application or device to fall behind the 
+live data it is processing and build up a backlog of up to 5000 pending 
+messages for each subscription it has made.  Once the buffer fills up, any new 
+message will result in the oldest message in the buffer being discarded.
+
+.. note:: This limit applies regardless of the quality of service setting used.  
+    Thus it is possible that a message sent at QoS1 or QoS2 may not be delivered 
+    to an application that is unable to keep up with the messages rate for the 
+    subscription(s) it has made.
+

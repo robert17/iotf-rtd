@@ -19,8 +19,6 @@ and services:
 .. _Cloudant: https://cloudant.com/
 .. _SoftLayer: http://www.softlayer.com/
 
-.. image:: ibmtech.png
-
 
 The Foundation is also built upon a number of open source projects, including:
 
@@ -72,7 +70,4 @@ The Foundation is also built upon a number of open source projects, including:
 .. _Grafana: http://grafana.org/
 .. _AngularJS: https://angularjs.org/
 .. _Bootstrap: http://getbootstrap.com/
-
-
-.. image:: othertech.png
 

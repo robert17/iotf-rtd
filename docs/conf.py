@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'IBM IOT Foundation'
-copyright = '2014, David Parker'
+copyright = '2014, IBM Corporation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -281,8 +281,8 @@ texinfo_documents = [
 # Bibliographic Dublin Core info.
 epub_title = 'IBM IOT Foundation'
 epub_author = 'David Parker'
-epub_publisher = 'David Parker'
-epub_copyright = '2014, David Parker'
+epub_publisher = 'IBM Corporation'
+epub_copyright = '2014, IBM Corporation'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = 'IBM IOT Foundation'

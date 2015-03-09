@@ -307,7 +307,7 @@ Register a new device to an organization.
     type and id to registered devices, however the following restrictions apply:
 
     - Maximum length of 32 characters 
-    - Must comprise only of alpha-numeric characters and the following special characters:
+    - Must comprise only alpha-numeric characters and the following special characters:
 
       - dash ("-")
       - underscore ("\_")
@@ -370,7 +370,7 @@ device.
 - password - String
 
 .. important:: The response body will contain the generated authentication token for 
-    this device, you must make sure to record this when processing the response.  
+    this device. You must make sure to record this token when processing the response.  
     The data is stored hashed and salted so we are not able to retrieve lost 
     authentication tokens.
 

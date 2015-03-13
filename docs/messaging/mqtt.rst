@@ -66,7 +66,7 @@ Connect on port **1883**
 Encrypted client connection
 -------------------------------------------------------------------------------
 
-Connect on port **8883**
+Connect on port **8883** or **443** for websockets.
 
 In many client libraries you will need to provide the server's public certificate 
 in pem format.  The following file contains the entire certificate chain for 

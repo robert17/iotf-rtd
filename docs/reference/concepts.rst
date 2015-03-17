@@ -8,7 +8,7 @@ When you register with the Internet of Things Foundation you are given an
 organization ID, this is a unique 6 character identifier for your account.
 
 **Organizations** ensure your data is only accessible from your devices and 
-applications.  Once registered devices and API keys are bound to a single 
+applications.  Once registered, devices and API keys are bound to a single 
 organization.  When an application connects to the service using an API key it
 registers with the organization that "owns" the API key.
 
@@ -49,18 +49,18 @@ Things Foundation.  The device controls the content of the event and
 assigns a name for each event it sends.  
 
 When an event is received by the IOT Foundation the credentials 
-of the connection on which the event was receieved are used to determine which 
-device the event was sent from.  With this architecture it is impossible for a 
+of the connection on which the event was received are used to determine from which 
+device the event was sent.  With this architecture it is impossible for a 
 device to impersonate another device.
 
-**Devices** are unable to receive events, regardless of whether they are it's own 
+**Devices** are unable to receive events, regardless of whether they are its own 
 events or those of another device.
 
 **Applications** are able to process events from devices in real time.  When an 
-application receieves an event it has visibility of the source of the event and
+application receives an event it has visibility of the source of the event and
 the data contained in that event.  Applications can be configured to subscribe 
 to all events from all devices, a subset of events, a subset of devices or a 
-combination of the two.
+combination of these events.
 
 
 Commands
@@ -69,8 +69,8 @@ Commands
 **devices**.  Only applications can send commands, which must be issued to specific 
 devices. 
 
-The device must determines which action to take on receipt of any given command, 
+The device must determine which action to take on receipt of any given command, 
 and even controls which commands it will subscribe to in the first place.  It is 
-possible to design your device that it will listen for any command, or to simply 
+possible to design your device to listen for any command, or to simply 
 subscribe to a set of specific commands.
 

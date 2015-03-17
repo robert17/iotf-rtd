@@ -27,7 +27,7 @@ Devices
 * Devices are able to accept commands from applications.
 * Devices uniquely identify themselves to the IoT Foundation with an authentication
   token that will only be accepted for that device.
-* Devices must be registered before they can connect to the IoT Foundation
+* Devices must be registered before they can connect to the IoT Foundation.
 
 
 Applications

@@ -82,10 +82,10 @@ authorized to publish and subscribe to a restricted topic space:
 * /iot-2/evt/+/fmt/+
 * /iot-2/cmd/+
 
-All devices work with the same topic space space, it is the authentication 
-credentials provided by the client when it connects that dictate for which 
-device this topic space will be scoped to by the IOT Foundation.  This prevents
-devices from being able to impersonate another device.
+All devices work with the same topic space. The authentication credentials
+provided by the client connecting dictate to which device this topic space
+will be scoped by the IOT Foundation.  This prevents devices from being 
+able to impersonate another device.
 
 The only way to impersonate another device is via obtaining compromised security
 credentials for the device.
@@ -106,7 +106,7 @@ to forming the complementary side of a full duplex communication loop.
 How do we prevent data leaking between organizations?
 -------------------------------------------------------------------------------
 The topic space in which devices and applications operate is 
-scoped within a single organization, once authenticated the IoT Foundation 
+scoped within a single organization. When authenticated, the IoT Foundation 
 transforms the topic structure using an organization ID based on the client 
 authentication, making it impossible for data from one organization to be 
 accessed from another.

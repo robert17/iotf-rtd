@@ -7,7 +7,7 @@ Authentication
 -------------------------------------------------------------------------------
 
 The API is only accessible over HTTPS and is protected by HTTP Basic 
-Authentication, you must provide a username and password with every request.
+Authentication. You must provide a username and password with every request.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Username

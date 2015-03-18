@@ -2,7 +2,7 @@
 MQTT Connectivity for Devices
 ===============================================================================
 
-A Device must authenticate using a client ID in the following format
+A Device must authenticate using a client ID in the following format:
 
 	d:**org\_id**:**device_type**:**device\_id**
 
@@ -24,7 +24,7 @@ MQTT client identifier
 -  **device\_type** is intended to be used as an identifer of the type
    of device connecting, it may be useful to think of this as analogous
    to a model number. 
--  **device\_id** must uniquely identify a device acorss all devices of
+-  **device\_id** must uniquely identify a device across all devices of
    a specific device\_type, it may be useful to think of this as
    analogous to a serial number.
 
@@ -49,7 +49,7 @@ Password
 ~~~~~~~~
 
 When using token based authentication submit the device authentication
-token as the password when making your MQTT connection
+token as the password when making your MQTT connection.
 
 
 ----

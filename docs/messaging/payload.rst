@@ -67,7 +67,7 @@ Timestamp
 ~~~~~~~~~
 
 The **ts** element allows you to associate a timestamp with the event
-(or command). This is an optional element, if included it's value should
+(or command). This is an optional element, if included its value should
 be a valid ISO8601 encoded timestamp string.
 
 .. code:: json

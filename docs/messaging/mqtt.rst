@@ -118,7 +118,7 @@ is not a simple case that QoS2 is "better" than QoS0.
 At most once (QoS0)
 ~~~~~~~~~~~~~~~~~~~
 The message is delivered at most once, or it might not be delivered at all. 
-Its delivery across the network is not acknowledged. The message is not 
+Delivery across the network is not acknowledged, and the message is not 
 stored. The message could be lost if the client is disconnected, or if 
 the server fails. QoS0 is the fastest mode of transfer. It is sometimes 
 called "fire and forget".

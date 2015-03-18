@@ -303,7 +303,7 @@ Register a New Device
 
 Register a new device to an organization.
 
-.. note:: You may use any scheme of your choice when assigning values for 
+.. note:: You can use any scheme of your choice when assigning values for 
     type and id to registered devices, however the following restrictions apply:
 
     - Maximum length of 32 characters 

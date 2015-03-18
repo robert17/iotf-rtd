@@ -87,7 +87,7 @@ provided by the client connecting dictate to which device this topic space
 will be scoped by the IOT Foundation.  This prevents devices from being 
 able to impersonate another device.
 
-The only way to impersonate another device is via obtaining compromised security
+The only way to impersonate another device is by obtaining compromised security
 credentials for the device.
 
 
@@ -95,9 +95,9 @@ credentials for the device.
 
 
 Applications can subscribe and publish on both the event and command topics for 
-all devices in the organization. Applications may therefore analyse data from 
-many devices simultaneously, and can also simulate and proxy devices in addition 
-to forming the complementary side of a full duplex communication loop.
+all devices in the organization. Applications can analyse data from may devices
+simultaneously, and can also simulate and proxy devices in addition to forming
+the complementary side of a full duplex communication loop.
 
 
 ----

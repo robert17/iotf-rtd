@@ -75,7 +75,7 @@ in pem format.  The following file contains the entire certificate chain for
 .. _messaging.pem: https://github.com/ibm-messaging/iot-python/blob/master/src/ibmiotf/messaging.pem
 
 .. tip:: Some SSL client libraries have been shown to not handle wildcarded
-    domains, in which case - if you can not change library - you will need to turn 
+    domains, in which case, if you can not change libraries, you will need to turn 
     off certificate checking.
 
 .. note:: The Foundation only supports **TLS v1.2 with AES 128 ciphers**. Please ensure your 
@@ -111,14 +111,14 @@ Quality of service
 The MQTT protocol provides three qualities of service for delivering messages 
 between clients and servers: "at most once", "at least once" and "exactly once".
 Events and commands can be sent using any quality of service level, however you 
-should catrefully consider whether what the right level is for your needs.  It 
+should carefully consider whether what the right level is for your needs.  It 
 is not a simple case that QoS2 is "better" than QoS0.
 
 
 At most once (QoS0)
 ~~~~~~~~~~~~~~~~~~~
-The message is delivered at most once, or it may not be delivered at all. 
-ts delivery across the network is not acknowledged. The message is not 
+The message is delivered at most once, or it might not be delivered at all. 
+Its delivery across the network is not acknowledged. The message is not 
 stored. The message could be lost if the client is disconnected, or if 
 the server fails. QoS0 is the fastest mode of transfer. It is sometimes 
 called "fire and forget".

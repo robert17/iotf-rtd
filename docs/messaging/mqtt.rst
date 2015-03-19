@@ -158,13 +158,17 @@ to ensure no duplication of messages occurs.
    of when the additional overhead of QoS2 has a clear benefit.
 
 
-Subscription Buffers
+Subscription Buffers and Clean Session
 ~~~~~~~~~~~~~~~~~~~~
 Each subscription from either a device or application is allocated a buffer of 
 5000 messages.  This allows for any application or device to fall behind the 
 live data it is processing and build up a backlog of up to 5000 pending 
 messages for each subscription it has made.  Once the buffer fills up, any new 
 message will result in the oldest message in the buffer being discarded.
+
+The subscription buffer can be accessed using MQTT clean session option.  If clean
+session is set to true, a subscriber will start receiving messages from the buffer.
+If it is false the buffer is reset.
 
 .. note:: This limit applies regardless of the quality of service setting used.  
     Thus it is possible that a message sent at QoS1 or QoS2 may not be delivered 

@@ -82,3 +82,4 @@ registered service that are not supported in QuickStart:
 
 -  Subscribing to commands
 -  MQTT connection over SSL
+-  Clean or durable sessions

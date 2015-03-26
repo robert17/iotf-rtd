@@ -18,11 +18,7 @@ IBM contributes to the development and support of many of these libraries.
 .. _Eclipse Paho project: http://eclipse.org/paho/
 
 MQTT 3.1 is the version of the protocol that is in widest use
-today. Version 3.1.1 contains a number of minor enhancements, and is
-currently a Candidate OASIS Standard (ratification by the OASIS
-standards development organization is expected later this year). The IBM
-Internet of Things Foundation offers informal support for version 3.1.1
-now, with formal support to follow ratification.
+today. Version 3.1.1 contains a number of minor enhancements, and has been ratified as an OASIS Standard. 
 
 One reason for using version 3.1.1 is that the maximum length of the
 MQTT Client Identifier (ClientId) is increased from the 23 character

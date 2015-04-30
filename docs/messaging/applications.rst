@@ -38,14 +38,14 @@ MQTT authentication
 Applications require an API Key to connect into an Organization.  When an API Key 
 is registered a token will be generated that must be used with that API key.  
 
-The API key will look something like this: a:**org\_id**:a84ps90Ajs
+The API key will look something like this: a-**org\_id**-a84ps90Ajs
 
 The token will look something like this: MP$08VKz!8rXwnR-Q*
 
 When making an MQTT connection using an API key the following applies:
 
 - MQTT client ID: a:**org\id**:**app\_id**
-- MQTT username must be the API key: a:$org:a84ps90Ajs
+- MQTT username must be the API key: a-**org\_id**-a84ps90Ajs
 - MQTT password must be the authentication token: MP$08VKz!8rXwnR-Q*
 
 

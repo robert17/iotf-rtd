@@ -126,7 +126,7 @@ instance of the Event class:
 
     ...
     client.connect()
-    client.eventCallback = myEventCallback
+    client.deviceEventCallback = myEventCallback
     client.subscribeToDeviceEvents()
 
 
@@ -207,7 +207,7 @@ The following properties are only set when the action is "Disconnect":
 
     ...
     client.connect()
-    client.statusCallback = myStatusCallback
+    client.deviceStatusCallback = myStatusCallback
     client.subscribeToDeviceStstus()
 
 

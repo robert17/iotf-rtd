@@ -86,7 +86,7 @@ which has the following properties:
 
     ...
     client.connect()
-    client.eventCallback = myCommandCallback
+    client.commandCallback = myCommandCallback
 
 
 ----

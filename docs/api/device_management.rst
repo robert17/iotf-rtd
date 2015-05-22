@@ -34,7 +34,7 @@ Retrieve details about an organization.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-GET \internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**
+GET **org\_id**.internetofthings.ibmcloud.com/api/v0001/
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -84,8 +84,7 @@ Get a list of all devices in an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-GET
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices
+GET **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -177,8 +176,7 @@ Get a list of all devices of a specific type in an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-GET
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices/**device\_type**
+GET **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\_type**
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -252,8 +250,7 @@ Get a list of all devices types in an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-GET
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/device-types
+GET **org\_id**.internetofthings.ibmcloud.com/api/v0001/device-types
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -319,8 +316,7 @@ Register a new device to an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-POST
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices
+POST **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -421,8 +417,7 @@ Update an existing device in an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PUT
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices/**device\_type**/**device\_id**
+PUT **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\_type**/**device\_id**
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -513,8 +508,7 @@ Get summary information about a registered device in an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-GET
-\internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices/**device\_type**/**device\_id**
+GET **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\_type**/**device\_id**
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body
@@ -586,7 +580,7 @@ Unregister a device from an organization.
 Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-DELETE \internetofthings.ibmcloud.com/api/v0001/organizations/**org\_id**/devices/**device\_type**/**device\_id**
+DELETE **org\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\_type**/**device\_id**
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request Body

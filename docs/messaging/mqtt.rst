@@ -74,7 +74,7 @@ in pem format.  The following file contains the entire certificate chain for
     domains, in which case, if you can not change libraries, you will need to turn 
     off certificate checking.
 
-.. note:: The Foundation supports encrypted MQTT connections on port 8883 or port 443 for WebSockets. *We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256*
+.. note:: The Foundation supports encrypted MQTT connections on port 8883 or port 443 for WebSockets. IoT Foundation requires TLS v1.2. *We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256*
    
 ----
 

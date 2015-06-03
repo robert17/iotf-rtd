@@ -74,7 +74,7 @@ in pem format.  The following file contains the entire certificate chain for
     domains, in which case, if you can not change libraries, you will need to turn 
     off certificate checking.
 
-.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)* .
+.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
    
 ----
 

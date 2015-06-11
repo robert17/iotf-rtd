@@ -327,6 +327,7 @@ You must specify the type and identifer of the device being registered.
 -  type - String
 -  id - String
 -  metadata - Complex data (optional)
+-  password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Request

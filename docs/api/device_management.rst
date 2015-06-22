@@ -110,6 +110,16 @@ The response body will contain a list of devices, as below:
       -  type - String
 
    -  date - ISO8601 date string
+   
+-  status
+
+    -  mqtt
+    
+        -  client address - String
+        -  protocol - String
+        -  action - String
+        -  timestamp - ISO8061 date string
+        -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
@@ -134,6 +144,15 @@ Example Response
             "type": "person"
           },
           "date": "2014-08-21T18:25:43-05:00"
+        },
+        "status": {
+          "mqtt":{
+            "clientAddress":"123.456.78.90",
+            "protocol":"mqtt4-tcp",
+            "action":"Disconnect",
+            "timestamp":"2015-06-04T14:28:52.277z",
+            "port":1883
+            }
         }
       },
       {
@@ -152,6 +171,15 @@ Example Response
             "type": "person"
           },
           "date": "2014-08-21T18:25:43-05:00"
+        },
+        "status": {
+          "mqtt":{
+            "clientAddress":"123.456.78.09",
+            "protocol":"mqtt4-tcp",
+            "action":"Disconnect",
+            "timestamp":"2015-06-04T14:28:52.277z",
+            "port":1883
+            }
         }
       }
     ]
@@ -202,6 +230,16 @@ The response body will contain a list of devices, as below:
       -  type - String
 
    -  date - ISO8601 date string
+   
+-  status
+
+    -  mqtt
+    
+        -  client address - String
+        -  protocol - String
+        -  action - String
+        -  timestamp - ISO8061 date string
+        -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
@@ -226,6 +264,15 @@ Example Response
             "type": "person"
           },
           "date": "2014-08-21T18:25:43-05:00"
+        }
+        "status": {
+          "mqtt":{
+            "clientAddress":"123.456.78.90",
+            "protocol":"mqtt4-tcp",
+            "action":"Disconnect",
+            "timestamp":"2015-06-04T14:28:52.277z",
+            "port":1883
+            }
         }
       }
     ]
@@ -464,6 +511,16 @@ device.
 
    -  date - ISO8601 date string
 
+-  status
+
+    -  mqtt
+    
+        -  client address - String
+        -  protocol - String
+        -  action - String
+        -  timestamp - ISO8061 date string
+        -  port - Integer
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -486,7 +543,16 @@ Example Response
           "type": "person"
         },
         "date": "2014-08-21T18:25:43-05:00"
-      }
+      },
+      "status": {
+        "mqtt":{
+          "clientAddress":"123.456.78.09",
+          "protocol":"mqtt4-tcp",
+          "action":"Disconnect",
+          "timestamp":"2015-06-04T14:28:52.277z",
+          "port":1883
+            }
+        }
     }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -535,6 +601,16 @@ The response body will contain the known properties of the device.
       -  type - String
 
    -  date - ISO8601 date string
+   
+-  status
+
+    -  mqtt
+    
+        -  client address - String
+        -  protocol - String
+        -  action - String
+        -  timestamp - ISO8061 date string
+        -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
@@ -558,7 +634,16 @@ Example Response
           "type": "person"
         },
         "date": "2014-08-21T18:25:43-05:00"
-      }
+      },
+      "status": {
+        "mqtt":{
+          "clientAddress":"123.456.78.09",
+          "protocol":"mqtt4-tcp",
+          "action":"Disconnect",
+          "timestamp":"2015-06-04T14:28:52.277z",
+          "port":1883
+            }
+        }
     }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

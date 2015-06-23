@@ -113,13 +113,13 @@ The response body will contain a list of devices, as below:
    
 -  status
 
-    -  mqtt
-    
-        -  client address - String
-        -  protocol - String
-        -  action - String
-        -  timestamp - ISO8061 date string
-        -  port - Integer
+   -  mqtt
+
+      -  client address - String
+      -  protocol - String
+      -  action - String
+      -  timestamp - ISO8061 date string
+      -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
@@ -233,13 +233,13 @@ The response body will contain a list of devices, as below:
    
 -  status
 
-    -  mqtt
-    
-        -  client address - String
-        -  protocol - String
-        -  action - String
-        -  timestamp - ISO8061 date string
-        -  port - Integer
+   -  mqtt
+
+      -  client address - String
+      -  protocol - String
+      -  action - String
+      -  timestamp - ISO8061 date string
+      -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response
@@ -510,16 +510,16 @@ device.
       -  type - String
 
    -  date - ISO8601 date string
-
+   
 -  status
 
-    -  mqtt
-    
-        -  client address - String
-        -  protocol - String
-        -  action - String
-        -  timestamp - ISO8061 date string
-        -  port - Integer
+   -  mqtt
+
+      -  client address - String
+      -  protocol - String
+      -  action - String
+      -  timestamp - ISO8061 date string
+      -  port - Integer
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Example Response

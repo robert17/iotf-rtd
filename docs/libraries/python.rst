@@ -1,7 +1,7 @@
 IBM Internet of Things Foundation for Python
 ============================================
 
-Use the Python module for interacting with the [IBM Internet of Things Foundation](https://internetofthings.ibmcloud.com) and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions the interactions with the IBM Internet of Things Foundation using Python.
+Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions the interactions with the IBM Internet of Things Foundation using Python.
 
 -  `Python 3.4 <https://www.python.org/downloads/release/python-343/>`__
 -  `Python 2.7 <https://www.python.org/downloads/release/python-279/>`__
@@ -57,7 +57,7 @@ myData = { 'hello' : 'world', 'x' : x}
 deviceCli.publishEvent(event="greeting", msgFormat="json", data=myData)
 ```
 
-Also, as part of this change, events and commands sent as format "json" will not be assumed to meet the [IOTF JSON Payload Specification](https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification).  The default client behaviour will be to parse commands and events with format "json" as a generic JSON object only.  Only messages sent as format "json-iotf" will default to being decoded in this specification.  This can be easily changed with the following code.
+Also, as part of this change, events and commands sent as format "json" will not be assumed to meet the `IOTF JSON Payload Specification <https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification>`__.  The default client behaviour will be to parse commands and events with format "json" as a generic JSON object only.  Only messages sent as format "json-iotf" will default to being decoded in this specification.  This can be easily changed with the following code.
 
 ```python
 import ibmiotf.device
@@ -72,5 +72,5 @@ deviceCli.setMessageEncoderModule('json', jsonIotfCodec)
 
 Documentation
 -------------
-* [Device Client](https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html)
-* [Application Client](https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html)
+* `Device Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__
+* `Application Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__

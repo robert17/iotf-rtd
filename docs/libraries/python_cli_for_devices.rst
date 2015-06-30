@@ -114,3 +114,17 @@ Publish event using user-defined quality of service
     myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
     client.publishEvent("status", "json", myData, myQosLevel)
 
+
+Custom message format support
+-------------------------------------------------------------------------------
+By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat "json".  When you use msgFormat "json-iotf" it will encode the message in accordance with the IOTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__
+
+Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException
+
+.. code:: python
+
+    import myCustomCodec
+    
+    client.setMessageEncoderModule("custom", myCustomCodec)
+    client.publishEvent("status", "custom", myData)
+

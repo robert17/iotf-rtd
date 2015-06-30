@@ -60,7 +60,7 @@ The application configuration file must be in the following format:
 Subscribing to device events
 -------------------------------------------------------------------------------
 By default, this will subscribe to all events from all connected
-devices. Use the type, id and event parameters to control the scope of
+devices. Use the type, id, event and msgFormat parameters to control the scope of
 the subscription. A single client can support multiple subscriptions.
 
 
@@ -99,6 +99,15 @@ Subscribe to a specific event from two different devices
     client.connect()
     client.subscribeToDeviceEvents(deviceType=myDeviceType, deviceId=myDeviceId, event=myEvent)
     client.subscribeToDeviceEvents(deviceType=myOtherDeviceType, deviceId=myOtherDeviceId, event=myEvent)
+
+
+Subscribe to all events published by a device in json format
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    client.connect()
+    client.subscribeToDeviceEvents(deviceType=myDeviceType, deviceId=myDeviceId, msgFormat="json")
 
 
 ----
@@ -222,7 +231,7 @@ Applications can publish events as if they originated from a Device
 
     client.connect()
     myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
-    client.publishEvent(myDeviceType, myDeviceId, "status", myData)
+    client.publishEvent(myDeviceType, myDeviceId, "status", "json", myData)
 
 
 ----
@@ -236,7 +245,7 @@ Applications can publish commands to connected devices
 
     client.connect()
     commandData={'rebootDelay' : 50}
-    client.publishCommand(myDeviceType, myDeviceId, "reboot", myData)
+    client.publishCommand(myDeviceType, myDeviceId, "reboot", "json", myData)
 
 
 ----

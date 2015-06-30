@@ -16,18 +16,18 @@ The Client constructor accepts an options dict containing:
 
 .. code:: python
 
-    import ibmiotf.device
-    try:
-      options = {
-        "org": organization, 
-        "type": deviceType, 
-        "id": deviceId, 
-        "auth-method": authMethod, 
-        "auth-token": authToken
-      }
-      client = ibmiotf.device.Client(options)
-    except ibmiotf.ConnectionException  as e:
-      ...
+  import ibmiotf.device
+  try:
+    options = {
+      "org": organization, 
+      "type": deviceType, 
+      "id": deviceId, 
+      "auth-method": authMethod, 
+      "auth-token": authToken
+    }
+    client = ibmiotf.device.Client(options)
+  except ibmiotf.ConnectionException  as e:
+    ...
 
 
 Using a configuration file

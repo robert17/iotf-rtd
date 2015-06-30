@@ -23,19 +23,17 @@ Dependencies
 Installation
 ------------
 To install the latest version of the library with pip, enter the following code fragment in your command line.
+::
 
-```
-[root@localhost ~]# pip install ibmiotf
-```
-
+    [root@localhost ~]# pip install ibmiotf
 
 Uninstall
 ---------
 Uninstalling the module is simple, enter the following code in the command line. 
 
-```
-root@localhost ~]# pip uninstall ibmiotf
-```
+::
+
+    [root@localhost ~]# pip uninstall ibmiotf
 
 
 Migrating from v0.0.x to v0.1.x

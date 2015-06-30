@@ -103,7 +103,7 @@ Publish event using default quality of service
 
     client.connect()
     myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
-    client.publishEvent("status", myData)
+    client.publishEvent("status", "json", myData)
 
 Publish event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -112,5 +112,5 @@ Publish event using user-defined quality of service
     client.connect()
     myQosLevel=2
     myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
-    client.publishEvent("status", myData, myQosLevel)
+    client.publishEvent("status", "json", myData, myQosLevel)
 

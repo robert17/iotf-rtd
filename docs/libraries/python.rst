@@ -1,7 +1,7 @@
 IBM Internet of Things Foundation for Python
 ============================================
 
-Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions the interactions with the IBM Internet of Things Foundation using Python.
+Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the python ibmiotf module to interact with devices and applications within your organizations.
 
 -  `Python 3.4 <https://www.python.org/downloads/release/python-343/>`__
 -  `Python 2.7 <https://www.python.org/downloads/release/python-279/>`__
@@ -22,7 +22,7 @@ Dependencies
 
 Installation
 ------------
-To install the latest version of the library with pip, enter the following code fragment in your command line.
+To install the latest version of the library with pip, enter the following code in your command line.
 ::
 
     [root@localhost ~]# pip install ibmiotf

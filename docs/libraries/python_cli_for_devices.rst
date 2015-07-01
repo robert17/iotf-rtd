@@ -5,7 +5,7 @@ Python Client Library - Devices
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__.
+This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__. The devices library contains information on how devices publish events and handle commands using the Python ibmiotf module. 
 
 
 Constructor
@@ -13,14 +13,13 @@ Constructor
 
 The constructor builds the client instance, and accepts an options dict containing the following definitions:
 
-* org - Your organization ID 
-* type - The type of your device
-* id - The ID of your device
-* auth-method - Method of authentication (the only value currently 
-  supported is "token") 
-* auth-token - API key token (required if auth-method is "token")
+* org - Your organization ID.
+* type - The type of your device.
+* id - The ID of your device.
+* auth-method - Method of authentication (the only value currently supported is "token").
+* auth-token - API key token (required if auth-method is "token").
 
-If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart.
+If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device.
 
 .. code:: python
 
@@ -41,7 +40,7 @@ If no options dict is provided, the client will connect to the Internet of Thing
 Using a configuration file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are using a configuration file containing an options dict, use the following code sample.
+You can also use a configuration file containing an options dict, If you are using a configuration file containing an options dict, use the following code sample.
 
 .. code:: python
 
@@ -52,7 +51,7 @@ If you are using a configuration file containing an options dict, use the follow
     except ibmiotf.ConnectionException  as e:
       ...
 
-The device configuration file must be in the following format:
+The configuration file must be in the following format:
 
 ::
 

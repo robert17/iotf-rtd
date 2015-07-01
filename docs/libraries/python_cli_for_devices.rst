@@ -2,10 +2,16 @@
 Python Client Library - Devices
 ===============================================================================
 
+Introduction
+-------------------------------------------------------------------------------
+
+This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__.
+
+
 Constructor
 -------------------------------------------------------------------------------
 
-The Client constructor accepts an options dict containing: 
+The constructor builds the client instance, and accepts an options dict containing the following definitions:
 
 * org - Your organization ID 
 * type - The type of your device
@@ -13,6 +19,8 @@ The Client constructor accepts an options dict containing:
 * auth-method - Method of authentication (the only value currently 
   supported is "token") 
 * auth-token - API key token (required if auth-method is "token")
+
+If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart.
 
 .. code:: python
 
@@ -31,7 +39,9 @@ The Client constructor accepts an options dict containing:
 
 
 Using a configuration file
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are using a configuration file containing an options dict, use the following code sample.
 
 .. code:: python
 

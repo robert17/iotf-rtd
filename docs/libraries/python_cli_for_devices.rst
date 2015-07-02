@@ -19,7 +19,7 @@ The constructor builds the client instance, and accepts an options dict containi
 * auth-method - Method of authentication (the only value currently supported is "token").
 * auth-token - API key token (required if auth-method is "token").
 
-If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device.
+If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the Internet of Things Foundation module.
 
 .. code:: python
 
@@ -40,7 +40,7 @@ If no options dict is provided, the client will connect to the Internet of Thing
 Using a configuration file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also use a configuration file containing an options dict, If you are using a configuration file containing an options dict, use the following code sample.
+Instead of including an options dict directly, you can use a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format.
 
 .. code:: python
 
@@ -51,7 +51,7 @@ You can also use a configuration file containing an options dict, If you are usi
     except ibmiotf.ConnectionException  as e:
       ...
 
-The configuration file must be in the following format:
+The content of the configuration file must be in the following format:
 
 ::
 
@@ -103,8 +103,11 @@ which has the following properties:
 
 Publishing events
 -------------------------------------------------------------------------------
-Events can be published at any of the three :ref:`quality of service levels <qoslevels>`
-defined by the MQTT protocol.  By default events will be published as qos level 0.
+Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+
+When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+
+Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0.
 
 Publish event using default quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,8 +117,12 @@ Publish event using default quality of service
     myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
     client.publishEvent("status", "json", myData)
 
+
 Publish event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Events can be published at higher MQTT quality of servive levels, but these events may take slower then QoS level 0, because of the extra confirmation of receipt.
+
 .. code:: python
 
     client.connect()
@@ -128,7 +135,7 @@ Custom message format support
 -------------------------------------------------------------------------------
 By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat "json".  When you use msgFormat "json-iotf" it will encode the message in accordance with the IOTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__
 
-Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException
+Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException.
 
 .. code:: python
 

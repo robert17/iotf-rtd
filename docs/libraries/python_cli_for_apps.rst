@@ -71,7 +71,7 @@ Events are the mechanism by which devices publish data to the Internet of Things
 
 When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
-By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions.
+By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
 
 
 To subscribe to all events from all devices
@@ -101,7 +101,7 @@ To subscribe to a specific event from all devices
     client.subscribeToDeviceEvents(event=myEvent)
 
 
-To subscribe to a specific event from two different devices
+To subscribe to a specific event from two or more different devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python

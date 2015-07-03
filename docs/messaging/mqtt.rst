@@ -38,12 +38,6 @@ connecting MQTT clients for applications and devices in that organization.
 
 **org\_id**.messaging.internetofthings.ibmcloud.com
 
-.. warning:: Currently, your device will also be able to connect to 
-    **messaging.internetofthings.ibmcloud.com**, 
-    however we highly discourage users from writing client code using this
-    domain name, as it **will** stop working at some point in the near future.
-
-
 ----
 
 

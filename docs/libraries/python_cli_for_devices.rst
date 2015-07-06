@@ -5,7 +5,9 @@ Python Client Library - Devices
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__. The devices library contains information on how devices publish events and handle commands using the Python ibmiotf module. 
+This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__. 
+
+This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices.
 
 
 Constructor
@@ -66,6 +68,37 @@ The content of the configuration file must be in the following format:
 ----
 
 
+Publishing events
+-------------------------------------------------------------------------------
+Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+
+When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+
+Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0.
+
+Publish event using default quality of service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code:: python
+
+    client.connect()
+    myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
+    client.publishEvent("status", "json", myData)
+
+
+Publish event using user-defined quality of service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Events can be published at higher MQTT quality of servive levels, but these events may take slower then QoS level 0, because of the extra confirmation of receipt.
+
+.. code:: python
+
+    client.connect()
+    myQosLevel=2
+    myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
+    client.publishEvent("status", "json", myData, myQosLevel)
+
+----
+
 Handling commands
 -------------------------------------------------------------------------------
 When the device client connects it automatically subscribes to any command 
@@ -101,34 +134,6 @@ which has the following properties:
 ----
 
 
-Publishing events
--------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
-
-When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
-
-Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0.
-
-Publish event using default quality of service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code:: python
-
-    client.connect()
-    myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
-    client.publishEvent("status", "json", myData)
-
-
-Publish event using user-defined quality of service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Events can be published at higher MQTT quality of servive levels, but these events may take slower then QoS level 0, because of the extra confirmation of receipt.
-
-.. code:: python
-
-    client.connect()
-    myQosLevel=2
-    myData={'name' : 'foo', 'cpu' : 60, 'mem' : 50}
-    client.publishEvent("status", "json", myData, myQosLevel)
 
 
 Custom message format support

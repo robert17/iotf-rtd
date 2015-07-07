@@ -41,7 +41,7 @@ If no options dict is provided, the client will connect to the Internet of Thing
 Using a configuration file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Instead of including an options dict directly, you can use a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format.
+If you are not using an options dict as shown above, you include a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format.
 
 .. code:: python
 
@@ -188,12 +188,9 @@ Subscribe to status updates for two different devices
 
 Handling status updates from devices
 -------------------------------------------------------------------------------
-To process the status updates received by your subscriptions you need to
-register an event callback method. The messages are returned as an
-instance of the Status class:
+To process the status updates received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Status class:
 
-The following properties are set for both "Connect" and "Disconnect"
-status events:
+The following properties are set for both "Connect" and "Disconnect" status events:
   
 * status.clientAddr - string
 * status.protocol - string
@@ -202,15 +199,15 @@ status events:
 * status.time - datetime
 * status.action - string
 * status.connectTime - datetime
-* status.port - int
+* status.port - integer
 
 The following properties are only set when the action is "Disconnect":
 
-* status.writeMsg - int
-* status.readMsg - int
+* status.writeMsg - integer
+* status.readMsg - integer
 * status.reason - string
-* status.readBytes - int
-* status.writeBytes - int
+* status.readBytes - integer
+* status.writeBytes - integer
 
 .. code:: python
 

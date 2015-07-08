@@ -1,0 +1,144 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\python.rst:2
+msgid "IBM Internet of Things Foundation for Python"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:4
+msgid ""
+"Use the Python module for interacting with the `IBM Internet of Things "
+"Foundation <https://internetofthings.ibmcloud.com>`__ and to automate "
+"commands using Python 3.4 or 2.7. The module can be used to simplify "
+"interactions with the IBM Internet of Things Foundation. The following "
+"libraries contain instructions and guidance on using the python ibmiotf "
+"module to interact with devices and applications within your organizations."
+msgstr ""
+
+#: ..\docs\libraries\python.rst:6
+msgid "`Python 3.4 <https://www.python.org/downloads/release/python-343/>`__"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:7
+msgid "`Python 2.7 <https://www.python.org/downloads/release/python-279/>`__"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:9
+msgid ""
+"Note: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and"
+" openssl v1.0.1"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:11
+msgid ""
+"This client library is divided into two sections, both included within the "
+"library. The Devices section contains information on how devices publish "
+"events and handle commands using the Python ibmiotf module, and the "
+"Applications section contains information on how applications can use the "
+"ibmiotf module to interact with devices."
+msgstr ""
+
+#: ..\docs\libraries\python.rst:14
+msgid "Dependencies"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:16
+msgid ""
+"`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ - provides a client "
+"class which enable applications to connect to an MQTT broker"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:17
+msgid ""
+"`iso8601 <https://pypi.python.org/pypi/iso8601>`__ - parses the most common "
+"forms of ISO 8601 date strings into datetime objects"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:18
+msgid ""
+"`pytz <https://pypi.python.org/pypi/pytz>`__ - allows accurate and cross "
+"platform timezone calculations"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:19
+msgid "`requests <https://pypi.python.org/pypi/requests>`__ - an HTTP library"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:25
+msgid "Installation"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:26
+msgid ""
+"To install the latest version of the library with pip, enter the following "
+"code in your command line. ::"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:32
+msgid "Uninstall"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:33
+msgid ""
+"Uninstalling the module is simple, enter the following code in the command "
+"line."
+msgstr ""
+
+#: ..\docs\libraries\python.rst:41
+msgid "Migrating from v0.0.x to v0.1.x"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:42
+msgid ""
+"There is a significant change between the 0.0.x releases and 0.1.x that will"
+" require changes to client code.  Now that the library properly supports "
+"multiple message formats you will want to update calls to "
+"deviceClient.publishEvent, appClient.publishEvent and "
+"appClient.publishCommand to also supply the desired message format."
+msgstr ""
+
+#: ..\docs\libraries\python.rst:44
+msgid "Sample code v0.0.9:"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:53
+msgid "Sample code v0.1.1:"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:62
+msgid ""
+"Also, as part of this change, events and commands sent as format \"json\" "
+"will not be assumed to meet the `IOTF JSON Payload Specification "
+"<https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-"
+"json-payload-specification>`__. The default client behaviour will be to "
+"parse commands and events with format \"json\" as a generic JSON object "
+"only. Only messages sent as format \"json-iotf\" will default to being "
+"decoded in this specification. This can be easily changed with the following"
+" code."
+msgstr ""
+
+#: ..\docs\libraries\python.rst:82
+msgid "Documentation"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:83
+msgid ""
+"`Device Client "
+"<https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__"
+msgstr ""
+
+#: ..\docs\libraries\python.rst:84
+msgid ""
+"`Application Client "
+"<https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__"
+msgstr ""

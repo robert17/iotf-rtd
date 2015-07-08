@@ -24,7 +24,6 @@ Reference Material
     :maxdepth: 2
 	
     reference/concepts
-    reference/overview
     reference/security
 
 
@@ -60,6 +59,14 @@ Messaging
     messaging/applications
     messaging/payload
 
+
+Reference
+-------------------------------------------------------------------------------
+
+.. toctree::
+    :maxdepth: 2
+
+    reference/overview
 
 
 Contribute

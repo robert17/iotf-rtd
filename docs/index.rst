@@ -46,7 +46,17 @@ Client Libraries
     libraries/python
     libraries/python_cli_for_devices
     libraries/python_cli_for_apps
+    
+Embedded C Library
+------------------------------------------------------------------------------
 
+.. toctree::
+    :maxdepth: 2
+    
+    embeddedc/embeddedcintro
+    embeddedc/embeddedc_devices
+    embeddedc/embeddedc_samples
+    
 
 Messaging
 -------------------------------------------------------------------------------

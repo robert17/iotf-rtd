@@ -53,19 +53,3 @@ Events can be published by using:
 	
 	rc= publishEvent("status","json", "{\"d\" : {\"temp\" : 34 }}", QOS0); 
 	....
-
-Disconnect Client
---------------------------------------
-
-Disconnects the client and releases the connections
-
-.. code:: c
-	#include "iotfclient.h"
-	....
-	rc = connectiotf (org, type, id , authmethod, authtoken);
-	char *payload = {\"d\" : {\"temp\" : 34 }};
-	
-	rc= publishEvent("status","json", payload , QOS0);
-	...
-	rc = disconnect();
-	....

@@ -53,7 +53,7 @@ Embedded C Library
 .. toctree::
     :maxdepth: 2
     
-    embeddedc/embeddedcintro
+    embeddedc/embedcintro
     embeddedc/embeddedc_devices
     embeddedc/embeddedc_samples
     

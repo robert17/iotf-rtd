@@ -17,16 +17,6 @@ service.  If you are looking for tutorials you can find them on DeveloperWorks_
 The documentation is organized into a number of sections:
 
 
-Reference Material
--------------------------------------------------------------------------------
-
-.. toctree::
-    :maxdepth: 2
-	
-    reference/concepts
-    reference/security
-
-
 API
 -------------------------------------------------------------------------------
 
@@ -70,13 +60,15 @@ Messaging
     messaging/payload
 
 
-Reference
+Reference Material
 -------------------------------------------------------------------------------
 
 .. toctree::
     :maxdepth: 2
 
+    reference/concepts
     reference/overview
+    reference/security
 
 
 Contribute

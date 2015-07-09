@@ -23,7 +23,7 @@ The helloWorld.c Sample Application
 
 This sample application demonstrates the Internet of Things Foundation Quickstart service. The sample application connects to the Quickstart service and sends event data. To connect to the Quickstart service, you must provide an unique identifier for the device. 
 
-This sample is a great place to get started with the Internet of Things Foundation Quickstart service.
+This sample is a great place to get started with the Internet of Things Foundation Service using Quickstart.
 
 ::
 
@@ -44,7 +44,7 @@ The sampleDevice.c Sample Application
 
 This sample application demonstrates the registered mode in Internet of Things Foundation. This sample connects to the Internet of Things Foundation registered service. On registered mode, the devices can both publish events and receive commands. 
 
-But for running this sample, you must first register the device at https://internetofthings.ibmcloud.com/#/ and copy the credentials in the *device.cfg* file
+But for running this sample, you must first register the device at https://internetofthings.ibmcloud.com/#/ and copy the credentials in the *device.cfg* file. Using this sample, users can publish events and receive commands from the Internet of Things Foundation service.
 
 ::
 

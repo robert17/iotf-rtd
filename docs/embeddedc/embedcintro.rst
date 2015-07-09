@@ -2,7 +2,7 @@
 IBM Internet of Things Foundation for Embedded C - Introduction
 ==================================================================
 
-The Embedded C client library is used for interacting with the Internet of Things Foundation. This client will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
+The Embedded C client library is used for interacting with the Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
 
 The Embedded C client library also contains two sample applications, the helloWorld.c sample and the sampleDevice.c sample These samples are detailed in Embedded C Client Library Samples.
 
@@ -28,7 +28,7 @@ To install the Internet of Things Foundation client library for Embedded C follo
     cd iotf-embeddedc
     cp ~/org.eclipse.paho.mqtt.embedded-c-1.0.0.tar.gz lib/
 
-2. Extract the library file
+3. Extract the library file
 
 .. code::
     
@@ -41,7 +41,7 @@ When downloaded, the client has the following file structure:
 .. code::
 
  |-lib - contains all the dependent files
- |-samples - directory for all the samples
+ |-samples - contains the helloWorld and sampleDevice samples
    |-sampleDevice.c - sample device implementation
    |-helloworld.c - quickstart application
    |-README.md
@@ -59,15 +59,13 @@ There are 2 ways to initialize the Internet of Things Foundation Client Library 
 Passing as parameters
 -------------------------------------------
 
-The function 'initialize' takes the following details to connect to the
-IoT Foundation service:
+The 'initialize' function takes the following details to connect to the IoT Foundation service:
 
 -   client - Pointer to the *iotfclient*
 -   org - Your organization ID
 -   type - The type of your device
--   id - The ID of your device
--   authmethod - Method of authentication (the only value currently
-    supported is “token”)
+-   id - The device ID
+-   authmethod - Method of authentication (the only value currently supported is “token”)
 -   authtoken - API key token (required if auth-method is “token”)
 
 .. code:: c
@@ -85,8 +83,7 @@ IoT Foundation service:
 Using a configuration file
 ----------------------------------------
 
-The function 'initialize\_configfile' takes the configuration file path
-as a parameter.
+You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\_configfile' takes the configuration file path as a parameter.
 
 .. code:: c
 
@@ -99,7 +96,7 @@ as a parameter.
 	....
 
 
-The configuration file must be in the format of
+The configuration file must use the following format.
 
 .. code::
 	org=$orgId
@@ -134,4 +131,21 @@ After initializing the Internet of Things Foundation Embedded C client library, 
 		printf("Connection failed and returned rc = %d.\n Quitting..", rc);
 		return 0;
 	}
+	....
+
+
+Disconnect Client
+--------------------------------------
+
+To disconnect the client and release the connections, run the following code snippet.
+
+.. code:: c
+	#include "iotfclient.h"
+	....
+	rc = connectiotf (org, type, id , authmethod, authtoken);
+	char *payload = {\"d\" : {\"temp\" : 34 }};
+	
+	rc= publishEvent("status","json", payload , QOS0);
+	...
+	rc = disconnect();
 	....

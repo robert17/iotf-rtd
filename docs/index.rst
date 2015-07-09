@@ -27,7 +27,7 @@ API
     api/historical_events
 
 
-Client Libraries
+Python Library
 -------------------------------------------------------------------------------
 
 .. toctree::

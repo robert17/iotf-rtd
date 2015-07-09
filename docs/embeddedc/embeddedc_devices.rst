@@ -1,7 +1,7 @@
 Embedded C Client Library - Devices and Applications
 =========================================
 
-This client library describes how to use devices with the embedded c iotfclient library. For help with getting started, see `Embedded C Client Library - Introduction <http://google.com>`__. 
+This client library describes how to use devices with the embedded c iotfclient library. For help with getting started, see `Embedded C Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__. 
 
 This client library contains information on how devices publish events and handle commands and how applications can use the embedded c client library to interact with devices.
 

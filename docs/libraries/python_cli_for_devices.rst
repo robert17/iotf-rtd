@@ -72,7 +72,7 @@ Publishing events
 -------------------------------------------------------------------------------
 Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0.
 
@@ -138,7 +138,7 @@ which has the following properties:
 
 Custom message format support
 -------------------------------------------------------------------------------
-By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat "json".  When you use msgFormat "json-iotf" it will encode the message in accordance with the IOTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__
+By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat "json".  When you use msgFormat "json-iotf" it will encode the message in accordance with the IoTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__
 
 Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException.
 

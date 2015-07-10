@@ -60,7 +60,7 @@ Sample code v0.1.1:
     deviceCli.publishEvent(event="greeting", msgFormat="json", data=myData)
 
 Also, as part of this change, events and commands sent as format "json"
-will not be assumed to meet the `IOTF JSON Payload
+will not be assumed to meet the `IoTF JSON Payload
 Specification <https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification>`__.
 The default client behaviour will be to parse commands and events with
 format "json" as a generic JSON object only. Only messages sent as
@@ -74,7 +74,7 @@ This can be easily changed with the following code.
 
     deviceOptions = {"org": organization, "type": deviceType, "id": deviceId, "auth-method": authMethod, "auth-token": authToken}
     deviceCli = ibmiotf.device.Client(deviceOptions)
-    # Revert to v0.0.x parsing for json messages -- assume all JSON events and commands use the IOTF JSON payload specification
+    # Revert to v0.0.x parsing for json messages -- assume all JSON events and commands use the IoTF JSON payload specification
     deviceCli.setMessageEncoderModule('json', jsonIotfCodec) 
 
 

@@ -2,17 +2,17 @@ Message Payload
 ===============
 
 The Foundation supports sending and recieving messages in any format,
-however we recommend the use of JSON and the IOTF event format
+however we recommend the use of JSON and the IoTF event format
 specification.
 
 
 ----
 
 
-IOTF JSON Payload Specification
+IoTF JSON Payload Specification
 -------------------------------
 
-It is simple to create a JSON message that meets the IOTF specification.
+It is simple to create a JSON message that meets the IoTF specification.
 
 * The message must be a valid JSON object (not an array) with only two top level
   elements: **d** and **ts**
@@ -23,7 +23,7 @@ Data
 The **d** element is where you include all data for the event (or
 command) being transmitted in the message. 
 
-* This element is required for your message to meet the IOTF message specification.
+* This element is required for your message to meet the IoTF message specification.
 * This must always be a JSON object (not an array)
 * In the case where you wish to send no data the **d** element should 
   still be present, but contain an empty object.
@@ -87,11 +87,11 @@ be a valid ISO8601 encoded timestamp string.
 
 Custom JSON payloads
 -------------------------------------------------------------------------------
-The IOT Foundation is designed to be open, you may send your event and command data in any 
+The IoT Foundation is designed to be open, you may send your event and command data in any 
 format you choose, however if you choose to send data in a custom format it will limit some 
 features of the service which can only function with a known payload format.
 
-Below are a number of example payloads that are close the to the IOTF specification, but 
+Below are a number of example payloads that are close to the IoTF specification, but 
 do not quite match it.  Each would be treated as a custom JSON payload.
 
 **Example 1**

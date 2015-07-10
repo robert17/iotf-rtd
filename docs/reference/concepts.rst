@@ -48,7 +48,7 @@ Events are the mechanism by which **devices** publish data to the Internet of
 Things Foundation.  The device controls the content of the event and 
 assigns a name for each event it sends.  
 
-When an event is received by the IOT Foundation the credentials 
+When an event is received by the IoT Foundation the credentials 
 of the connection on which the event was received are used to determine from which 
 device the event was sent.  With this architecture it is impossible for a 
 device to impersonate another device.

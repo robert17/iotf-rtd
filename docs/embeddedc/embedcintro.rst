@@ -1,8 +1,7 @@
-
-IBM Internet of Things Foundation for Embedded C - Introduction
+Embedded C Client Library - Introduction
 ==================================================================
 
-The Embedded C client library is used for interacting with the Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
+The Embedded C client library is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
 
 The Embedded C client library also contains two sample applications, the helloWorld.c sample and the sampleDevice.c sample These samples are detailed in Embedded C Client Library Samples.
 
@@ -54,7 +53,7 @@ When downloaded, the client has the following file structure:
  Initializing the Client Library
 -------------------------------------------
 
-There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:
+After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:
 
 Passing as parameters
 -------------------------------------------
@@ -80,8 +79,9 @@ The 'initialize' function takes the following details to connect to the IoT Foun
 	rc = initialize(&client,"orgid","type","id","token","authtoken");
 	....
 
+
 Using a configuration file
-----------------------------------------
+-------------------------------------------------
 
 You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\_configfile' takes the configuration file path as a parameter.
 

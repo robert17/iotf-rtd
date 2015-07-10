@@ -9,7 +9,7 @@ IBM Internet of Things Foundation
 
 About
 -------------------------------------------------------------------------------
-Welcome to the documentation/reference material for IBM's IOT Foundation 
+Welcome to the documentation/reference material for IBM's IoT Foundation 
 service.  If you are looking for tutorials you can find them on DeveloperWorks_
 
 .. _DeveloperWorks: https://developer.ibm.com/iot/

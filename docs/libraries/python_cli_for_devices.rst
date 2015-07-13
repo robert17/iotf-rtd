@@ -61,7 +61,7 @@ The content of the configuration file must be in the following format(need not c
     org=$orgId
     type=$myDeviceType
     id=$myDeviceId
-    auth-method=$token
+    auth-method=token
     auth-token=$token
 
 

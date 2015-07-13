@@ -7,7 +7,7 @@ A Device must authenticate using a client ID in the following format:
 	d:**org\_id**:**device_type**:**device\_id**
 
 - A Device must be registered before it can connect
-- When connecting to the QuickStart service no authentication (or registration) is required
+- When connecting to the Quickstart service no authentication (or registration) is required
 
 
 ----
@@ -73,12 +73,12 @@ Subscribing to commands
 ----
 
 
-QuickStart restrictions
+Quickstart restrictions
 -------------------------------------------------------------------------------
 
-If you are writing device code that wants to support use with QuickStart
+If you are writing device code that wants to support use with Quickstart
 you must take into account the following features present in the
-registered service that are not supported in QuickStart: 
+registered service that are not supported in Quickstart: 
 
 -  Subscribing to commands
 -  MQTT connection over SSL

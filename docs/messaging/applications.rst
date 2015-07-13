@@ -141,7 +141,7 @@ An application can subscribe to monitor status of one or more applications.
 ----
 
 
-QuickStart restrictions
+Quickstart restrictions
 -------------------------------------------------------------------------------
 
 If you are writing application code that wants to support use with Quickstart

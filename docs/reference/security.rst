@@ -84,7 +84,7 @@ authorized to publish and subscribe to a restricted topic space:
 
 All devices work with the same topic space. The authentication credentials
 provided by the client connecting dictate to which device this topic space
-will be scoped by the IOT Foundation.  This prevents devices from being 
+will be scoped by the IoT Foundation.  This prevents devices from being 
 able to impersonate another device.
 
 The only way to impersonate another device is by obtaining compromised security

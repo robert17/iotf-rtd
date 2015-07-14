@@ -106,7 +106,7 @@ for this device.  To process specific commands you need to register a command
 callback method. The messages are returned as an instance of the Command class 
 which has the following properties:
 
-* payload - string
+* command - string
 * format - string
 * data - dict 
 * timestamp - datetime
@@ -114,7 +114,7 @@ which has the following properties:
 .. code:: python
 
     def myCommandCallback(cmd):
-      print("Command received: %s" % cmd.payload)
+      print("Command received: %s" % cmd.data)
       if cmd.command == "setInterval":
         if 'interval' not in cmd.data:
           print("Error - command is missing required information: 'interval'")

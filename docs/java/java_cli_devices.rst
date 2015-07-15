@@ -235,7 +235,7 @@ Events can be published at higher MQTT quality of servive levels, but these even
 
 Handling commands
 -------------------------------------------------------------------------------
-When the device client connects it automatically subscribes to any command for this device. To process specific commands you need to register a command callback method. 
+When the device client connects it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. 
 The messages are returned as an instance of the Command class which has the following properties:
 
 * payload - java.lang.String

@@ -47,6 +47,15 @@ Embedded C Library
     embeddedc/embeddedc_devices
     embeddedc/embeddedc_samples
     
+Java Client Library
+-------------------------------------------------------------------------------
+
+.. toctree::
+    :maxdepth: 2
+    
+    java/javaintro.rst
+    java/java_cli_devices.rst
+    
 
 Messaging
 -------------------------------------------------------------------------------

@@ -47,7 +47,8 @@ Unencrypted client connection
 Connect on port **1883**
 
 .. important:: All information your device submits is being sent in 
-    plain text (including the authentication credentials for your device).
+    plain text (including the authentication credentials for your device).  
+    We recommend the use of an encrypted connection whenever possible.
 
 
 ----

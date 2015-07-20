@@ -115,7 +115,7 @@ The response body will contain a list of devices, as below:
 
    -  mqtt
 
-      -  client address - String
+      -  clientAddress - String
       -  protocol - String
       -  action - String
       -  timestamp - ISO8061 date string
@@ -235,7 +235,7 @@ The response body will contain a list of devices, as below:
 
    -  mqtt
 
-      -  client address - String
+      -  clientAddress - String
       -  protocol - String
       -  action - String
       -  timestamp - ISO8061 date string
@@ -515,7 +515,7 @@ device.
 
    -  mqtt
 
-      -  client address - String
+      -  clientAddress - String
       -  protocol - String
       -  action - String
       -  timestamp - ISO8061 date string
@@ -606,7 +606,7 @@ The response body will contain the known properties of the device.
 
     -  mqtt
     
-        -  client address - String
+        -  clientAddress - String
         -  protocol - String
         -  action - String
         -  timestamp - ISO8061 date string

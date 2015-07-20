@@ -95,8 +95,8 @@ credentials for the device.
 
 
 Applications can subscribe and publish on both the event and command topics for 
-all devices in the organization. Applications can analyse data from may devices
-simultaneously, and can also simulate and proxy devices in addition to forming
+all devices in the organization. Applications can analyse data from many devices
+simultaneously, and can also simulate or proxy devices in addition to forming
 the complementary side of a full duplex communication loop.
 
 

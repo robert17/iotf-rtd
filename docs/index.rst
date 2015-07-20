@@ -10,9 +10,9 @@ IBM Internet of Things Foundation
 About
 -------------------------------------------------------------------------------
 Welcome to the documentation/reference material for IBM's IoT Foundation 
-service.  If you are looking for tutorials you can find them on DeveloperWorks_
+service.  If you are looking for tutorials you can find them on Remix_
 
-.. _DeveloperWorks: https://developer.ibm.com/iot/
+.. _Remix: https://developer.ibm.com/remix/
 
 The documentation is organized into a number of sections:
 

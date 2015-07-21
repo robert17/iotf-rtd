@@ -16,6 +16,14 @@ service.  If you are looking for tutorials you can find them on Remix_
 
 The documentation is organized into a number of sections:
 
+Introduction
+-------------------------------------------------------------------------------
+
+.. toctree::
+    :maxdepth: 2
+    
+    reference/concepts
+
 
 API
 -------------------------------------------------------------------------------
@@ -27,32 +35,22 @@ API
     api/historical_events
 
 
-Python Library
+Programming Guides
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 	
+    libraries/programmingguides
+
     libraries/python
     libraries/python_cli_for_devices
     libraries/python_cli_for_apps
-    
-Embedded C Library
-------------------------------------------------------------------------------
 
-.. toctree::
-    :maxdepth: 2
-    
     embeddedc/embedcintro
     embeddedc/embeddedc_devices
-    embeddedc/embeddedc_samples
-    
-Java Client Library
--------------------------------------------------------------------------------
+    embeddedc/embeddedc_samples    
 
-.. toctree::
-    :maxdepth: 2
-    
     java/javaintro.rst
     java/java_cli_devices.rst
     
@@ -75,7 +73,6 @@ Reference Material
 .. toctree::
     :maxdepth: 2
 
-    reference/concepts
     reference/overview
     reference/security
 

@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-13 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,153 +19,158 @@ msgstr ""
 #: ..\docs\messaging\applications.rst:3
 msgid "MQTT Connectivity for Applications"
 msgstr ""
+"应用程序的 MQTT 连接"
 
 #: ..\docs\messaging\applications.rst:5
-msgid ""
-"An Application must authenticate using a client ID in the following format:"
+msgid "An application must authenticate using a client ID in the following format:"
 msgstr ""
+"应用程序必须使用以下格式的客户机标识进行认证："
 
 #: ..\docs\messaging\applications.rst:7
 msgid "a:**org\\_id**:**app_id**"
 msgstr ""
+"a:**org\\_id**:**app_id**"
 
 #: ..\docs\messaging\applications.rst:9
-msgid ""
-"We do not impose any rules on the **app\\_id** component of the client ID"
+msgid "We do not impose any rules on the **app\\_id** component of the client ID"
 msgstr ""
+"我们不会针对客户机标识的 **app\\_id** 部分实施任何规则"
 
 #: ..\docs\messaging\applications.rst:10
-msgid ""
-"When connecting to the QuickStart service no authentication is required"
+msgid "When connecting to the Quickstart service no authentication is required"
 msgstr ""
+"连接到 Quickstart 服务时，不需要任何认证"
 
 #: ..\docs\messaging\applications.rst:11
-msgid "An Application does not need to be registered before it can connect"
+msgid "An application does not need to be registered before it can connect"
 msgstr ""
+"应用程序不需要进行注册，即可连接"
 
 #: ..\docs\messaging\applications.rst:18
 msgid "MQTT client identifier"
 msgstr ""
+"MQTT 客户机标识"
 
 #: ..\docs\messaging\applications.rst:20
 msgid "Supply a client id of the form **a**:**org\\_id**:**app\\_id**"
 msgstr ""
+"提供格式为 **a**:**org\\_id**:**app\\_id** 的客户机标识"
 
 #: ..\docs\messaging\applications.rst:22
 msgid "**a** indicates the client is an application"
 msgstr ""
+"**a** 指示客户机为应用程序"
 
 #: ..\docs\messaging\applications.rst:23
-msgid ""
-"**org\\_id** is your unique organization ID, assigned when you sign up with "
-"the service.  It will be a 6 character alphanumeric string."
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
 msgstr ""
+"**org\\_id** 为您的唯一组织标识，在您注册服务时予以分配。它将为 6 个字符的字母数字字符串。"
 
 #: ..\docs\messaging\applications.rst:25
 msgid "**app\\_id** is a user-defined unique string identifier for this client."
 msgstr ""
+"**app\\_id** 为此客户机的用户定义的唯一字符串标识。"
 
 #: ..\docs\messaging\applications.rst:27
-msgid ""
-"Only one MQTT client can connect using any given client ID.  As soon as a "
-"secnd client in your organization connects using an **app\\_id** that you "
-"have already connected the first client will be disconnected."
+msgid "Only one MQTT client can connect using any given client ID.  As soon as a second client in your organization connects using an **app\\_id** that you have already connected the first client will be disconnected."
 msgstr ""
+"仅一个 MQTT 客户机可使用任何给定客户机标识进行连接。您组织中另一个客户机使用已连接的 **app\\_id** 进行连接后，第一个客户机将立即断开连接。"
 
 #: ..\docs\messaging\applications.rst:36
 msgid "MQTT authentication"
 msgstr ""
+"MQTT 认证"
 
 #: ..\docs\messaging\applications.rst:38
-msgid ""
-"Applications require an API Key to connect into an Organization.  When an "
-"API Key is registered a token will be generated that must be used with that "
-"API key."
+msgid "Applications require an API Key to connect into an organization.  When an API Key is registered a token will be generated that must be used with that API key."
 msgstr ""
+"应用程序需要 API 密钥才能连接到组织。注册 API 密钥时，将生成必须与该 API 密钥配合使用的令牌。"
 
 #: ..\docs\messaging\applications.rst:41
 msgid "The API key will look something like this: a-**org\\_id**-a84ps90Ajs"
 msgstr ""
+"API 密钥将类似于以下内容：a-**org\\_id**-a84ps90Ajs"
 
 #: ..\docs\messaging\applications.rst:43
 msgid "The token will look something like this: MP$08VKz!8rXwnR-Q*"
 msgstr ""
+"令牌将类似于以下内容：MP$08VKz!8rXwnR-Q*"
 
 #: ..\docs\messaging\applications.rst:45
 msgid "When making an MQTT connection using an API key the following applies:"
 msgstr ""
+"使用 API 密钥建立 MQTT 连接时，以下内容适用："
 
 #: ..\docs\messaging\applications.rst:47
 msgid "MQTT client ID: a:**org\\id**:**app\\_id**"
 msgstr ""
+"MQTT 客户机标识：a:**org\\id**:**app\\_id**"
 
 #: ..\docs\messaging\applications.rst:48
 msgid "MQTT username must be the API key: a-**org\\_id**-a84ps90Ajs"
 msgstr ""
+"MQTT 用户名必须为 API 密钥：a-**org\\_id**-a84ps90Ajs"
 
 #: ..\docs\messaging\applications.rst:49
 msgid "MQTT password must be the authentication token: MP$08VKz!8rXwnR-Q*"
 msgstr ""
+"MQTT 密码必须为认证令牌：MP$08VKz!8rXwnR-Q*"
 
 #: ..\docs\messaging\applications.rst:56
 msgid "Publishing device events"
 msgstr ""
+"发布设备事件"
 
 #: ..\docs\messaging\applications.rst:57
-msgid ""
-"An application can publish events as if they came from any registered "
-"device."
+msgid "An application can publish events as if they came from any registered device."
 msgstr ""
+"应用程序在发布事件时可将事件视为如同来自任何已注册设备一样。"
 
 #: ..\docs\messaging\applications.rst:59
-msgid ""
-"Publish to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"发布到主题 iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:61
-msgid ""
-"You may have a number of devices that are already generating bespoke data "
-"that you wish to send to IOTF.  One way to get that data into the service "
-"would be to write an application that processes the data and publishes it to"
-" IOTF."
+msgid "You may have a number of devices that are already generating bespoke data that you wish to send to IoTF.  One way to get that data into the service would be to write an application that processes the data and publishes it to IoTF."
 msgstr ""
+"您可能有多个设备已在生成您希望发送到 IoTF 的定制数据。向此服务提供该数据的一种方式是编写应用程序来处理数据并将其发布到 IoTF。"
 
 #: ..\docs\messaging\applications.rst:69
 msgid "Publishing device commands"
 msgstr ""
+"发布设备命令"
 
 #: ..\docs\messaging\applications.rst:70
 msgid "An application can publish a command to any registered device."
 msgstr ""
+"应用程序可将命令发布到任何已注册设备。"
 
 #: ..\docs\messaging\applications.rst:72
-msgid ""
-"Publish to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"发布到主题 iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:78
 msgid "Subscribing to device events"
 msgstr ""
+"预订设备事件"
 
 #: ..\docs\messaging\applications.rst:79
 msgid "An application can subscribe to events from one or more devices."
 msgstr ""
+"应用程序可预订来自一个或多个设备的事件。"
 
 #: ..\docs\messaging\applications.rst:81
-msgid ""
-"Subscribe to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"预订主题 iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:83
 #: ..\docs\messaging\applications.rst:102
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for any of the following"
-" components if you want to subscribe to more than one type of event, or "
-"events from more than a single device."
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to more than one type of event, or events from more than a single device."
 msgstr ""
+"如果您希望预订多种类型的事件或来自多个设备的事件，那么 MQTT“any”通配符 (+) 可用于以下任何组件。"
 
 #: ..\docs\messaging\applications.rst:87
 #: ..\docs\messaging\applications.rst:106
@@ -168,107 +178,118 @@ msgstr ""
 #: ..\docs\messaging\applications.rst:155
 msgid "device\\_type"
 msgstr ""
+"device\\_type"
 
 #: ..\docs\messaging\applications.rst:88
 #: ..\docs\messaging\applications.rst:107
 #: ..\docs\messaging\applications.rst:125
 msgid "device\\_id"
 msgstr ""
+"device\\_id"
 
 #: ..\docs\messaging\applications.rst:89
 msgid "event\\_id"
 msgstr ""
+"event\\_id"
 
 #: ..\docs\messaging\applications.rst:90
 #: ..\docs\messaging\applications.rst:109
 msgid "format\\_string"
 msgstr ""
+"format\\_string"
 
 #: ..\docs\messaging\applications.rst:97
 msgid "Subscribing to device commands"
 msgstr ""
+"预订设备命令"
 
 #: ..\docs\messaging\applications.rst:98
-msgid ""
-"An application can subscribe to commands being sent to one or more devices."
+msgid "An application can subscribe to commands being sent to one or more devices."
 msgstr ""
+"应用程序可预订将发送到一个或多个设备的命令。"
 
 #: ..\docs\messaging\applications.rst:100
-msgid ""
-"Subscribe to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"预订主题 iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:108
 msgid "cmd\\_id"
 msgstr ""
+"cmd\\_id"
 
 #: ..\docs\messaging\applications.rst:116
 msgid "Subscribing to device status messages"
 msgstr ""
+"预订设备状态消息"
 
 #: ..\docs\messaging\applications.rst:117
 msgid "An application can subscribe to monitor status of one or more devices."
 msgstr ""
+"应用程序可预订一个或多个设备的监视状态。"
 
 #: ..\docs\messaging\applications.rst:119
 msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/mon"
 msgstr ""
+"预订主题 iot-2/type/**device\\_type**/id/**device\\_id**/mon"
 
 #: ..\docs\messaging\applications.rst:121
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for any of the following"
-" components if you want to subscribe to updates from more than one device."
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to updates from more than one device."
 msgstr ""
+"如果您希望预订来自多个设备的更新，那么 MQTT“any”通配符 (+) 可用于以下任何组件。"
 
 #: ..\docs\messaging\applications.rst:132
 msgid "Subscribing to application status messages"
 msgstr ""
+"预订应用程序状态消息"
 
 #: ..\docs\messaging\applications.rst:133
-msgid ""
-"An application can subscribe to monitor status of one or more applications."
+msgid "An application can subscribe to monitor status of one or more applications."
 msgstr ""
+"应用程序可预订一个或多个应用程序的监视状态。"
 
 #: ..\docs\messaging\applications.rst:135
 msgid "Subscribe to topic iot-2/app/**app\\_id**/mon"
 msgstr ""
+"预订主题 iot-2/app/**app\\_id**/mon"
 
 #: ..\docs\messaging\applications.rst:137
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for **app\\_id** if you "
-"want to subscribe for updates for all applications."
+msgid "The MQTT \"any\" wildcard character (+) may be used for **app\\_id** if you want to subscribe for updates for all applications."
 msgstr ""
+"如果您希望预订所有应用程序的更新，那么 MQTT“any”通配符 (+) 可用于 **app\\_id**。"
 
 #: ..\docs\messaging\applications.rst:145
-msgid "QuickStart restrictions"
+msgid "Quickstart restrictions"
 msgstr ""
+"Quickstart 限制"
 
 #: ..\docs\messaging\applications.rst:147
-msgid ""
-"If you are writing application code that wants to support use with "
-"QuickStart you must take into account the following features present in the "
-"registered service that are not supported in QuickStart:"
+msgid "If you are writing application code that wants to support use with Quickstart you must take into account the following features present in the registered service that are not supported in Quickstart:"
 msgstr ""
+"如果您所编写的应用程序代码要支持与 Quickstart 配合使用，那么必须考虑已注册服务中存在而在 Quickstart 中不支持的以下功能："
 
 #: ..\docs\messaging\applications.rst:151
 msgid "Publishing commands"
 msgstr ""
+"发布命令"
 
 #: ..\docs\messaging\applications.rst:152
 msgid "Subscribing to commands"
 msgstr ""
+"预订命令"
 
 #: ..\docs\messaging\applications.rst:153
-msgid ""
-"Use of the MQTT \"any\" wildcard character (+) for the following topic "
-"components:"
+msgid "Use of the MQTT \"any\" wildcard character (+) for the following topic components:"
 msgstr ""
+"将 MQTT“any”通配符 (+) 用于以下主题组件："
 
 #: ..\docs\messaging\applications.rst:156
 msgid "app\\_id"
 msgstr ""
+"app\\_id"
 
 #: ..\docs\messaging\applications.rst:157
 msgid "MQTT connection over SSL"
 msgstr ""
+"通过 SSL 进行 MQTT 连接"
+

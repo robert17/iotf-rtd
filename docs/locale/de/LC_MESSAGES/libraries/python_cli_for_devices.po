@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-13 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,171 +19,155 @@ msgstr ""
 #: ..\docs\libraries\python_cli_for_devices.rst:3
 msgid "Python Client Library - Devices"
 msgstr ""
+"Python-Clientbibliothek - Einheiten"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:6
 msgid "Introduction"
 msgstr ""
+"Einführung"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:8
-msgid ""
-"This client library describes how to use devices with the python ibmiotf "
-"module. For help with getting started with this module, see `Python Client "
-"Library - Introduction "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
+msgid "This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
 msgstr ""
+"Diese Clientbibliothek beschreibt die Verwendung von Einheiten mit dem Python-Modul ibmiotf. Hilfe bei den ersten Schritten mit diesem Modul siehe `Python-Clientbibliothek - Einführung <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:10
-msgid ""
-"This client library is divided into two sections, both included within the "
-"library. This section contains information on how devices publish events and"
-" handle commands using the Python ibmiotf module, and the Applications "
-"section contains information on how applications can use the ibmiotf module "
-"to interact with devices."
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
 msgstr ""
+"Diese Clientbibliothek ist in zwei Abschnitte unterteilt, die beide in der Bibliothek enthalten sind. Dieser Abschnitt enthält Informationen dazu, wie Einheiten Ereignisse publizieren, Befehle mit dem Python-Modul ibmiotf verarbeiten und wie Anwendungen das ibmiotf-Modul zur Interaktion mit Einheiten verwenden können."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:14
 msgid "Constructor"
 msgstr ""
+"Konstruktor"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:16
-msgid ""
-"The constructor builds the client instance, and accepts an options dict "
-"containing the following definitions:"
+msgid "The constructor builds the client instance, and accepts an options dict containing the following definitions:"
 msgstr ""
+"Der Konstruktor erstellt die Clientinstanz und akzeptiert ein Optionsverzeichnis, das die folgenden Definitionen enthält:"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:18
 msgid "org - Your organization ID."
 msgstr ""
+"org - Ihre Organisations-ID."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:19
 msgid "type - The type of your device."
 msgstr ""
+"type - Der Typ Ihrer Einheit."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:20
 msgid "id - The ID of your device."
 msgstr ""
+"id - Die ID Ihrer Einheit."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:21
-msgid ""
-"auth-method - Method of authentication (the only value currently supported "
-"is \"token\")."
+msgid "auth-method - Method of authentication (the only value currently supported is \"token\")."
 msgstr ""
+"auth-method - Die Methode der Authentifizierung (der einzige derzeit unterstützte Wert ist \"token\")."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:22
 msgid "auth-token - API key token (required if auth-method is \"token\")."
 msgstr ""
+"auth-token - API-Schlüsseltoken (erforderlich, falls auth-method den Wert \"token\" hat)."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:24
-msgid ""
-"If no options dict is provided, the client will connect to the Internet of "
-"Things Foundation Quickstart, and default to an unregistered device. The "
-"options dict creates definitions which are used to interact with the "
-"Internet of Things Foundation module."
+msgid "If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the Internet of Things Foundation module."
 msgstr ""
+"Wenn kein Wörterverzeichnis mit Optionen bereit gestellt wird, stellt der Client die Verbindung mit Internet of Things Foundation Quickstart her und nimmt standardmäßig den Wert einer nicht registrierten Einheit an. Das Wörterverzeichnis mit Optionen erstellt Definitionen, die zur Interaktion mit dem Internet of Things Foundation-Modul verwendet werden."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:43
 msgid "Using a configuration file"
 msgstr ""
+"Konfigurationsdatei verwenden"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:45
-msgid ""
-"Instead of including an options dict directly, you can use a configuration "
-"file containing an options dict. If you are using a configuration file "
-"containing an options dict, use the following code format."
+msgid "Instead of including an options dict directly, you can use a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format."
 msgstr ""
+"Anstatt ein Wörterverzeichnis mit Optionen direkt einzubeziehen, können Sie eine Konfigurationsdatei verwenden, die ein Wörterverzeichnis mit Optionen enthält. Wenn Sie eine Konfigurationsdatei verwenden, die ein Wörterverzeichnis mit Optionen enthält, verwenden Sie das folgende Codeformat."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:56
 msgid "The content of the configuration file must be in the following format:"
 msgstr ""
+"Der Inhalt der Konfigurationsdatei muss im folgenden Format vorliegen:"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:72
 msgid "Publishing events"
 msgstr ""
+"Ereignisse publizieren"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:73
-msgid ""
-"Events are the mechanism by which devices publish data to the Internet of "
-"Things Foundation. The device controls the content of the event and assigns "
-"a name for each event it sends."
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
 msgstr ""
+"Ereignisse sind die Mechanismen, mit denen Einheiten Daten bei Internet of Things Foundation publizieren. Die Einheit steuert den Inhalt des Ereignisses und ordnet einen Namen für jedes von der Einheit gesendete Ereignis zu."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:75
-msgid ""
-"When an event is received by the IOT Foundation the credentials of the "
-"connection on which the event was received are used to determine from which "
-"device the event was sent. With this architecture it is impossible for a "
-"device to impersonate another device."
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
 msgstr ""
+"Wenn ein Ereignis von IoT Foundation empfangen wird, werden die Identifikationsdaten der Verbindung, mit der das Ereignis empfangen wurde, dazu verwendet, die Einheit zu ermitteln, von der das Ereignis gesendet wurde. Mit dieser Architektur ist es für eine Einheit unmöglich, die Identität einer anderen Einheit anzunehmen."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:77
-msgid ""
-"Events can be published at any of the three :ref:`quality of service levels "
-"<qoslevels>` defined by the MQTT protocol.  By default events will be "
-"published as qos level 0."
+msgid "Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0."
 msgstr ""
+"Ereignisse können mit jeder der drei Servicequalitätsstufen (:ref:`quality of service levels <qoslevels>`), die durch das MQTT-Protokoll definiert sind, publiziert werden.  Standardmäßig werden Ereignisse als qos-Stufe 0 publiziert."
 
 #: ..\docs\libraries\python_cli_for_devices.rst:80
 msgid "Publish event using default quality of service"
 msgstr ""
+"Ereignisse mit der standardmäßigen Servicequalität publizieren"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:89
 msgid "Publish event using user-defined quality of service"
 msgstr ""
+"Ereignisse mit einer benutzerdefinierten Servicequalität publizieren"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:91
-msgid ""
-"Events can be published at higher MQTT quality of servive levels, but these "
-"events may take slower then QoS level 0, because of the extra confirmation "
-"of receipt."
+msgid "Events can be published at higher MQTT quality of servive levels, but these events may take slower then QoS level 0, because of the extra confirmation of receipt."
 msgstr ""
+"Ereignisse könne auf höheren MQTT-Servicequalitätsstufen publiziert werden. Diese Ereignisse können jedoch wegen der zusätzlichen Eingangsbestätigung langsamer sein als QoS-Stufe 0. "
 
 #: ..\docs\libraries\python_cli_for_devices.rst:103
 msgid "Handling commands"
 msgstr ""
+"Befehle verarbeiten"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:104
-msgid ""
-"When the device client connects it automatically subscribes to any command "
-"for this device.  To process specific commands you need to register a "
-"command callback method. The messages are returned as an instance of the "
-"Command class which has the following properties:"
+msgid "When the device client connects it automatically subscribes to any command for this device.  To process specific commands you need to register a command callback method. The messages are returned as an instance of the Command class which has the following properties:"
 msgstr ""
+"Wenn der Einheitenclient die Verbindung herstellt, subskribiert er automatisch jeden Befehl für diese Einheit.  Zum Verarbeiten bestimmter Befehle müssen Sie eine Callback-Methode für Befehle registrieren. Die Nachrichten werden als eine Instanz der Befehlsklasse zurückgegeben, die die folgenden Eigenschaften hat:"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:109
 msgid "payload - string"
 msgstr ""
+"payload - Zeichenfolge"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:110
 msgid "format - string"
 msgstr ""
+"format - Zeichenfolge"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:111
 msgid "data - dict"
 msgstr ""
+"data - Wörterverzeichnis"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:112
 msgid "timestamp - datetime"
 msgstr ""
+"timestamp - Datum/Uhrzeit"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:140
 msgid "Custom message format support"
 msgstr ""
+"Unterstützung für das Format angepasster Nachrichten"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:141
-msgid ""
-"By default the library supports the encoding and decoding of Python "
-"dictionary objects as JSON when you use msgFormat \"json\".  When you use "
-"msgFormat \"json-iotf\" it will encode the message in accordance with the "
-"IOTF JSON Payload Specification.  To add support for your own custom message"
-" formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-"
-"python/tree/master/samples/customMessageFormat>`__"
+msgid "By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat \"json\".  When you use msgFormat \"json-iotf\" it will encode the message in accordance with the IoTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__"
 msgstr ""
+"Standardmäßig unterstützt die Bibliothek die Codierung und Decodierung von Python-Wörterverzeichnisobjekten als JSON, wenn Sie das msgFormat-Nachrichtenformat \"json\" verwenden. Wenn Sie das Nachrichtenformat \"json-iotf\" verwenden, wird die Nachricht in Übereinstimmung mit der IoTF JSON Payload Specification codiert. Zum Hinzufügen der Unterstützung für Ihre eigenen angepassten Nachrichtenformate siehe das `Beispiel in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:143
-msgid ""
-"Once you have created your custom encoder module it needs to be registered "
-"in the device client.  If you attempt to use an unknown message format when "
-"sending an event or the device receives a command send in a format that it "
-"does not know how to decode then the library will throw a "
-"MissingMessageDecoderException."
+msgid "Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException."
 msgstr ""
+"Wenn Sie Ihr angepasstes Encoder-Modul erstellt haben, muss es im Einheitenclient registriert werden. Wenn Sie versuchen, ein unbekanntes Nachrichtenformat beim Senden eines Ereignisses zu verwenden, oder wenn die Einheit einen Befehl empfängt, der in einem Format gesendet wurde, das die Einheit nicht decodieren kann, gibt die Einheit die Ausnahmebedingung MissingMessageDecoderException aus."
+

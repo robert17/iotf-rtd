@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-13 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,121 +19,126 @@ msgstr ""
 #: ..\docs\messaging\devices.rst:3
 msgid "MQTT Connectivity for Devices"
 msgstr ""
+"Connettività MQTT per i dispositivi"
 
 #: ..\docs\messaging\devices.rst:5
 msgid "A Device must authenticate using a client ID in the following format:"
 msgstr ""
+"Un dispositivo si deve autenticare utilizzando un ID client nel seguente formato: "
 
 #: ..\docs\messaging\devices.rst:7
 msgid "d:**org\\_id**:**device_type**:**device\\_id**"
 msgstr ""
+"d:**org\\_id**:**device_type**:**device\\_id**"
 
 #: ..\docs\messaging\devices.rst:9
 msgid "A Device must be registered before it can connect"
 msgstr ""
+"Un dispositivo deve essere registrato prima che sia possibile connetterlo "
 
 #: ..\docs\messaging\devices.rst:10
-msgid ""
-"When connecting to the QuickStart service no authentication (or "
-"registration) is required"
+msgid "When connecting to the Quickstart service no authentication (or registration) is required"
 msgstr ""
+"Quando ci si connette al servizio Quickstart non è richiesta l'autenticazione (o registrazione)"
 
 #: ..\docs\messaging\devices.rst:17
 msgid "MQTT client identifier"
 msgstr ""
+"Identificativo client MQTT"
 
 #: ..\docs\messaging\devices.rst:19
-msgid ""
-"Supply a client id of the form "
-"**d**:**org\\_id**:**device\\_type**:**device\\_id**"
+msgid "Supply a client id of the form **d**:**org\\_id**:**device\\_type**:**device\\_id**"
 msgstr ""
+"Fornire un id client nel formato **d**:**org\\_id**:**device\\_type**:**device\\_id**"
 
 #: ..\docs\messaging\devices.rst:21
 msgid "**d** idenfities your client as a device"
 msgstr ""
+"**d** identifica il client come un dispositivo"
 
 #: ..\docs\messaging\devices.rst:22
-msgid ""
-"**org\\_id** is your unique organization ID, assigned when you sign up with "
-"the service.  It will be a 6 character alphanumeric string."
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
 msgstr ""
+"**org\\_id** è l'ID organizzazione univoco, assegnato quando ci si registra al servizio. Sarà una stringa di 6 caratteri alfanumerici. "
 
 #: ..\docs\messaging\devices.rst:24
-msgid ""
-"**device\\_type** is intended to be used as an identifer of the type of "
-"device connecting, it may be useful to think of this as analogous to a model"
-" number."
+msgid "**device\\_type** is intended to be used as an identifer of the type of device connecting, it may be useful to think of this as analogous to a model number."
 msgstr ""
+"**device\\_type** deve essere utilizzato come un identificativo del tipo di dispositivo che si connette, lo si può considerare analogo a un numero di modello. "
 
 #: ..\docs\messaging\devices.rst:27
-msgid ""
-"**device\\_id** must uniquely identify a device across all devices of a "
-"specific device\\_type, it may be useful to think of this as analogous to a "
-"serial number."
+msgid "**device\\_id** must uniquely identify a device across all devices of a specific device\\_type, it may be useful to think of this as analogous to a serial number."
 msgstr ""
+"**device\\_id** deve identificare univocamente un dispositivo tra tutti i dispositivi di un tipo (device\\_type) specifico, lo si può considerare analogo a un numero di serie. "
 
 #: ..\docs\messaging\devices.rst:36
 msgid "MQTT authentication"
 msgstr ""
+"Autenticazione MQTT"
 
 #: ..\docs\messaging\devices.rst:39
 msgid "Username"
 msgstr ""
+"Nome utente"
 
 #: ..\docs\messaging\devices.rst:41
-msgid ""
-"The service currently only supports token-based authentication for devices, "
-"as such there is only one valid username for devices today."
+msgid "The service currently only supports token-based authentication for devices, as such there is only one valid username for devices today."
 msgstr ""
+"Il servizio attualmente supporta solo l'autenticazione basata sul token per i dispositivi, per questo motivo c'è solo un nome utente valido per i dispositivi oggi. "
 
 #: ..\docs\messaging\devices.rst:44
-msgid ""
-"A value of **use-token-auth** indicates to the service that the "
-"authentication token for the device will be passed as the password for the "
-"MQTT connection."
+msgid "A value of **use-token-auth** indicates to the service that the authentication token for the device will be passed as the password for the MQTT connection."
 msgstr ""
+"Il valore **use-token-auth** indica al servizio che il token di autenticazione per il dispositivo verrà inoltrato come password per la connessione MQTT. "
 
 #: ..\docs\messaging\devices.rst:49
 msgid "Password"
 msgstr ""
+"Password"
 
 #: ..\docs\messaging\devices.rst:51
-msgid ""
-"When using token based authentication submit the device authentication token"
-" as the password when making your MQTT connection."
+msgid "When using token based authentication submit the device authentication token as the password when making your MQTT connection."
 msgstr ""
+"Quando si utilizza l'autenticazione basata sul token, inoltrare il token di autenticazione del dispositivo come la password quando si effettua la connessione MQTT. "
 
 #: ..\docs\messaging\devices.rst:59
 msgid "Publishing events"
 msgstr ""
+"Pubblicazione degli eventi "
 
 #: ..\docs\messaging\devices.rst:61
 msgid "Publish to topic iot-2/evt/\\ **event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"Pubblicare su argomento iot-2/evt/\\ **event\\_id**/fmt/**format\\_string**"
 
-#: ..\docs\messaging\devices.rst:68 ..\docs\messaging\devices.rst:83
+#: ..\docs\messaging\devices.rst:68
+#: ..\docs\messaging\devices.rst:83
 msgid "Subscribing to commands"
 msgstr ""
+"Sottoscrizione ai comandi "
 
 #: ..\docs\messaging\devices.rst:70
 msgid "Subscribe to topic iot-2/cmd/\\ **command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"Sottoscrivere a argomento iot-2/cmd/\\ **command\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\devices.rst:77
-msgid "QuickStart restrictions"
+msgid "Quickstart restrictions"
 msgstr ""
+"Limitazioni di Quickstart"
 
 #: ..\docs\messaging\devices.rst:79
-msgid ""
-"If you are writing device code that wants to support use with QuickStart you"
-" must take into account the following features present in the registered "
-"service that are not supported in QuickStart:"
+msgid "If you are writing device code that wants to support use with Quickstart you must take into account the following features present in the registered service that are not supported in Quickstart:"
 msgstr ""
+"Se si sta scrivendo un codice dispositivo che vuole supportare l'utilizzo con Quickstart è necessario tener conto delle seguenti funzioni presenti nel servizio registrato che non sono supportate in Quickstart: "
 
 #: ..\docs\messaging\devices.rst:84
 msgid "MQTT connection over SSL"
 msgstr ""
+"Connessione MQTT su SSL "
 
 #: ..\docs\messaging\devices.rst:85
 msgid "Clean or durable sessions"
 msgstr ""
+"Sessioni durature o pulite"
+

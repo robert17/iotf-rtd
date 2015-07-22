@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-13 10:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:2
+msgid "Embedded C Client Library - Samples"
+msgstr ""
+"Biblioteca do Cliente C Integrada - Amostras"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:5
+msgid "Prerequisites"
+msgstr ""
+"Pré-requisitos"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:6
+msgid "You must complete the Installation steps in the Internet of Things Foundation Embedded C Samples - Introduction page, before you can run the following samples."
+msgstr ""
+"É necessário concluir as etapas de Instalação nas Amostras C Integradas do Internet of Things Foundation - Página de introdução, antes de poder executar as amostras a seguir."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:9
+msgid "Using these samples"
+msgstr ""
+"Usando essas amostras"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:10
+msgid "Using the cd command in the command prompt, navigate to the samples directory of your installation of the Embedded C client library."
+msgstr ""
+"Usando o comando cd no prompt de comandos, navegue para o diretório samples de sua instalação da Biblioteca do cliente C integrada."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:13
+msgid "Go to the *samples* directory to run the sample. Either run *make* or use *build.sh* to compile and build the samples."
+msgstr ""
+"Vá para o diretório *samples* para executar a amostra. Execute *make* ou use *build.sh* para compilar e construir as amostras."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:22
+msgid "The helloWorld.c Sample Application"
+msgstr ""
+"O Aplicativo de Amostra helloWorld.c"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:24
+msgid "This sample application demonstrates the Internet of Things Foundation Quickstart service. The sample application connects to the Quickstart service and sends event data. To connect to the Quickstart service, you must provide an unique identifier for the device."
+msgstr ""
+"Esse aplicativo de amostra demonstra o serviço Quickstart do Internet of Things Foundation. O aplicativo de amostra conecta-se ao serviço Quickstart e envia dados do evento. Para conectar ao serviço Quickstart, deve-se fornecer um identificador exclusivo para o dispositivo."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:26
+msgid "This sample is a great place to get started with the Internet of Things Foundation Service using Quickstart."
+msgstr ""
+"Essa amostra é um ótimo lugar para começar com o Serviço do Internet of Things Foundation usando o Quickstart."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:43
+msgid "The sampleDevice.c Sample Application"
+msgstr ""
+"O Aplicativo de Amostra sampleDevice.c"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:45
+msgid "This sample application demonstrates the registered mode in Internet of Things Foundation. This sample connects to the Internet of Things Foundation registered service. On registered mode, the devices can both publish events and receive commands."
+msgstr ""
+"Esse aplicativo de amostra demonstra o modo registrado no Internet of Things Foundation. Essa amostra se conecta ao serviço registrado do Internet of Things Foundation. No modo registrado, os dispositivos podem publicar eventos e receber comandos."
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:47
+msgid "But for running this sample, you must first register the device at https://internetofthings.ibmcloud.com/#/ and copy the credentials in the *device.cfg* file. Using this sample, users can publish events and receive commands from the Internet of Things Foundation service."
+msgstr ""
+"Mas para executar essa amostra, deve-se primeiro registrar o dispositivo em https://internetofthings.ibmcloud.com/#/ e copiar as credenciais no arquivo *device.cfg*. Usando essa amostra, os usuários podem publicar eventos e receber comandos do serviço Internet of Things Foundation."
+

@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-13 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,150 +19,135 @@ msgstr ""
 #: ..\docs\reference\security.rst:3
 msgid "Securing the Internet of Things"
 msgstr ""
+"モノのインターネットのセキュリティー保護"
 
 #: ..\docs\reference\security.rst:5
-msgid ""
-"The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, "
-"cloud-hosted service that makes it simple to derive value from Internet of "
-"Things (IoT) devices."
+msgid "The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, cloud-hosted service that makes it simple to derive value from Internet of Things (IoT) devices."
 msgstr ""
+"IBM Internet of Things Foundation (IoT Foundation) は、モノのインターネット (IoT) デバイスの管理を簡素化して価値を引き出すように設計された、クラウド・ホスト型の完全管理サービスです。"
 
 #: ..\docs\reference\security.rst:9
-msgid ""
-"The following document aims to answer common questions about how your "
-"organization's data is protected. Focusing on specific areas:"
+msgid "The following document aims to answer common questions about how your organization's data is protected. Focusing on specific areas:"
 msgstr ""
+"以下の資料は、企業のデータの保護に関してよく尋ねられる質問への回答となるように準備されたものです。重点が置かれている特定の分野:"
 
 #: ..\docs\reference\security.rst:12
-msgid ""
-"Authentication: assuring the identity of users, devices or applications "
-"attempting to access your organization's information."
+msgid "Authentication: assuring the identity of users, devices or applications attempting to access your organization's information."
 msgstr ""
+"認証: 組織の情報にアクセスしようとするユーザー、デバイス、またはアプリケーションが確実に識別されるようにします。"
 
 #: ..\docs\reference\security.rst:14
-msgid ""
-"Authorization: assuring that users, devices and applications have permission"
-" to access your organization's information."
+msgid "Authorization: assuring that users, devices and applications have permission to access your organization's information."
 msgstr ""
+"権限: 組織の情報へのアクセス権がユーザー、デバイス、およびアプリケーションに確実に付与されるようにします。"
 
 #: ..\docs\reference\security.rst:16
-msgid ""
-"Encryption: assuring that data is only readable by authorized parties and "
-"cannot be intercepted."
+msgid "Encryption: assuring that data is only readable by authorized parties and cannot be intercepted."
 msgstr ""
+"暗号化: 許可を受けた者だけがデータを読むことができ、代行受信ができないようにします。"
 
 #: ..\docs\reference\security.rst:23
 msgid "Terminology"
 msgstr ""
+"用語"
 
 #: ..\docs\reference\security.rst:32
 msgid "How do we secure management of your organization?"
 msgstr ""
+"組織の管理のセキュリティー保護方法"
 
 #: ..\docs\reference\security.rst:33
-msgid ""
-"The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate"
-" signed by DigiCert enabling you to trust that you're connecting to the "
-"genuine IoT Foundation."
+msgid "The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate signed by DigiCert enabling you to trust that you're connecting to the genuine IoT Foundation."
 msgstr ""
+"ブラウザー・ベースの GUI および REST API は、DigiCert が署名した証明書で HTTPS で動作し、本当に IoT Foundation と接続していることが保証されます。"
 
 #: ..\docs\reference\security.rst:37
 msgid "GUI: authenticated via your IBM ID."
 msgstr ""
+"GUI: IBM ID により認証。"
 
 #: ..\docs\reference\security.rst:38
-msgid ""
-"REST API: once you create an API key through the GUI, you can use this to "
-"make authenticated REST calls against your organization."
+msgid "REST API: once you create an API key through the GUI, you can use this to make authenticated REST calls against your organization."
 msgstr ""
+"REST API: GUI により API キーを作成した後は、それを使用して、所属する組織に対して認証済み REST 呼び出しを行えます。"
 
 #: ..\docs\reference\security.rst:48
 msgid "How do we secure your device and application credentials?"
 msgstr ""
+"デバイスおよびアプリケーションの資格情報のセキュリティー保護方法"
 
 #: ..\docs\reference\security.rst:49
-msgid ""
-"When devices are registered or API keys are generated, the authentication "
-"token is salted and hashed. This means your organization's credentials can "
-"never be recovered from our systems - even in the unlikely event that the "
-"IoT Foundation is compromised."
+msgid "When devices are registered or API keys are generated, the authentication token is salted and hashed. This means your organization's credentials can never be recovered from our systems - even in the unlikely event that the IoT Foundation is compromised."
 msgstr ""
+"デバイスの登録時または API キーの生成時には、認証トークンが生成され、そのハッシュが生成されます。それにより、IoT Foundation から情報が漏えいするという、ありそうもないことが仮に発生したとしても、このシステムから組織の資格情報が復元されることは決してないことが保証されます。"
 
 #: ..\docs\reference\security.rst:54
-msgid ""
-"Device credentials and API keys can be individually revoked if they are "
-"compromised."
+msgid "Device credentials and API keys can be individually revoked if they are compromised."
 msgstr ""
+"デバイス資格情報および API キーが漏えいした場合、個別に取り消しが可能です。"
 
 #: ..\docs\reference\security.rst:64
 msgid "How do we ensure your devices connect securely to the IoT Foundation?"
 msgstr ""
+"デバイスと IoT Foundation の接続のセキュリティー保護方法"
 
 #: ..\docs\reference\security.rst:65
-msgid ""
-"Devices connect through a unique combination of clientId and authentication "
-"token that only you know."
+msgid "Devices connect through a unique combination of clientId and authentication token that only you know."
 msgstr ""
+"デバイスは、自分しか知らない clientId および認証トークンの固有の組み合わせにより接続します。"
 
 #: ..\docs\reference\security.rst:67
 msgid "Full support for connectivity over TLS (v1.2) is provided."
 msgstr ""
+"TLS (v1.2) による接続の完全サポートが提供されます。"
 
 #: ..\docs\reference\security.rst:68
-msgid ""
-"Open standards are used (MQTT v3.1.1) to allow easy interop across many "
-"platforms and languages."
+msgid "Open standards are used (MQTT v3.1.1) to allow easy interop across many platforms and languages."
 msgstr ""
+"多くのプラットフォームおよび言語を通じての相互運用を容易にするため、オープン・スタンダード (MQTT v3.1.1) が使用されています。"
 
 #: ..\docs\reference\security.rst:78
 msgid "How do we prevent data leaking between devices?"
 msgstr ""
+"デバイス間のデータ・リークを回避する方法"
 
 #: ..\docs\reference\security.rst:79
-msgid ""
-"Secure messaging patterns are baked in. Once authenticated, devices are only"
-" authorized to publish and subscribe to a restricted topic space:"
+msgid "Secure messaging patterns are baked in. Once authenticated, devices are only authorized to publish and subscribe to a restricted topic space:"
 msgstr ""
+"安全性の高いメッセージ・パターンが実現されています。認証されたデバイスは、制限されたトピック・スペースについてのみパブリッシュとサブスクライブが可能になるように権限が与えられます。"
 
 #: ..\docs\reference\security.rst:82
 msgid "/iot-2/evt/+/fmt/+"
 msgstr ""
+"/iot-2/evt/+/fmt/+"
 
 #: ..\docs\reference\security.rst:83
 msgid "/iot-2/cmd/+"
 msgstr ""
+"/iot-2/cmd/+"
 
 #: ..\docs\reference\security.rst:85
-msgid ""
-"All devices work with the same topic space. The authentication credentials "
-"provided by the client connecting dictate to which device this topic space "
-"will be scoped by the IOT Foundation.  This prevents devices from being able"
-" to impersonate another device."
+msgid "All devices work with the same topic space. The authentication credentials provided by the client connecting dictate to which device this topic space will be scoped by the IoT Foundation.  This prevents devices from being able to impersonate another device."
 msgstr ""
+"すべてのデバイスは、同じトピック・スペースで動作します。接続するクライアントから提供される認証資格情報は、IoT Foundation によりそのトピック・スペースの対象スコープがどのデバイスに対するものとされているかを示すものです。これにより、デバイスが別のデバイスを装うことが防止されます。"
 
 #: ..\docs\reference\security.rst:90
-msgid ""
-"The only way to impersonate another device is by obtaining compromised "
-"security credentials for the device."
+msgid "The only way to impersonate another device is by obtaining compromised security credentials for the device."
 msgstr ""
+"別のデバイスを装う唯一の方法は、そのデバイスのセキュリティー資格情報が漏えいしてそれを入手するということに限られます。"
 
 #: ..\docs\reference\security.rst:97
-msgid ""
-"Applications can subscribe and publish on both the event and command topics "
-"for all devices in the organization. Applications can analyse data from may "
-"devices simultaneously, and can also simulate and proxy devices in addition "
-"to forming the complementary side of a full duplex communication loop."
+msgid "Applications can subscribe and publish on both the event and command topics for all devices in the organization. Applications can analyse data from may devices simultaneously, and can also simulate and proxy devices in addition to forming the complementary side of a full duplex communication loop."
 msgstr ""
+"アプリケーションは、組織内のすべてのデバイスのイベントとコマンドの両方のトピックについてサブスクライブとパブリッシュが可能です。アプリケーションは、同時に多くのデバイスからのデータを分析することができ、また、全二重通信ループの補足側を形成することに加えて、デバイスのシミュレートおよびプロキシーも可能です。"
 
 #: ..\docs\reference\security.rst:107
 msgid "How do we prevent data leaking between organizations?"
 msgstr ""
+"複数組織間のデータ・リークの回避方法"
 
 #: ..\docs\reference\security.rst:108
-msgid ""
-"The topic space in which devices and applications operate is scoped within a"
-" single organization. When authenticated, the IoT Foundation transforms the "
-"topic structure using an organization ID based on the client authentication,"
-" making it impossible for data from one organization to be accessed from "
-"another."
+msgid "The topic space in which devices and applications operate is scoped within a single organization. When authenticated, the IoT Foundation transforms the topic structure using an organization ID based on the client authentication, making it impossible for data from one organization to be accessed from another."
 msgstr ""
+"デバイスおよびアプリケーションの動作するトピック・スペースの対象スコープは、単一組織内に限られます。認証後、IoT Foundation はクライアント認証に基づき組織 ID を使用してトピックの構造を変換するため、ある組織からのデータを別の組織からアクセスすることは不可能です。"
+

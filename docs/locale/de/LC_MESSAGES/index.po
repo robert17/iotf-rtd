@@ -29,7 +29,7 @@ msgstr ""
 #: ..\docs\index.rst:12
 msgid "Welcome to the documentation/reference material for IBM's IoT Foundation service.  If you are looking for tutorials you can find them on DeveloperWorks_"
 msgstr ""
-"Willkommen beim Dokumentations- und Referenzmaterial für den IBM's IoT Foundation-Service. Lerntexte finden Sie auf DeveloperWorks."
+"Willkommen beim Dokumentations- und Referenzmaterial für den IBM's IoT Foundation-Service. Lerntexte finden Sie auf DeveloperWorks_."
 
 #: ..\docs\index.rst:17
 msgid "The documentation is organized into a number of sections:"
@@ -69,5 +69,5 @@ msgstr ""
 #: ..\docs\index.rst:76
 msgid "If it's not working for you, it's not working for us. The source of this documentation is available on GitHub_, we welcome both `suggestions for improvement`_ and community contributions via the use of issues and pull requests against our repository."
 msgstr ""
-"Ihre Probleme sind unsere Probleme. Die Quelle dieser Dokumentation ist auf GitHub_ verfügbar. Wir begrüßn sehr Ihre Vorschläge zur Verbesserung und die Community-Beiträge bei evtl. Problemen und setzen zur Problemlösung Repository ein."
+"Ihre Probleme sind unsere Probleme. Die Quelle dieser Dokumentation ist auf GitHub_ verfügbar. Wir begrüßen Ihre `Vorschläge zur Verbesserung` sehr. Die Community-Beiträge tragen bei evtl. Problemen zu deren Lösung bei."
 

@@ -61,7 +61,7 @@ Sample code v0.1.1:
 
 Also, as part of this change, events and commands sent as format "json"
 will not be assumed to meet the `IoTF JSON Payload
-Specification <https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification>`__.
+Specification <../messaging/payload.html#iotf-json-payload-specification>`__.
 The default client behaviour will be to parse commands and events with
 format "json" as a generic JSON object only. Only messages sent as
 format "json-iotf" will default to being decoded in this specification.
@@ -80,5 +80,5 @@ This can be easily changed with the following code.
 
 Documentation
 -------------
-* `Device Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__
-* `Application Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__
+* `Device Client <../libraries/python_cli_for_devices.html>`__
+* `Application Client <../libraries/python_cli_for_apps.html>`__

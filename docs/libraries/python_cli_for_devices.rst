@@ -5,7 +5,7 @@ Python Client Library - Devices
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__. 
+This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <../libraries/python.html#/>`__. 
 
 This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices.
 

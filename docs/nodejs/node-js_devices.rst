@@ -1,4 +1,4 @@
-Node.js Client Library
+Node.js Client Library - Devices
 ========================
 
 The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using the NodeJS with the Internet of Things Foundation to interact with your devices and applications.

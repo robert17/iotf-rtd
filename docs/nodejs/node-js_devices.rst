@@ -1,9 +1,9 @@
 Node.js Client Library - Devices
 ========================
 
-The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using the NodeJS with the Internet of Things Foundation to interact with your devices and applications.
+The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using the Node.js with the Internet of Things Foundation to interact with your devices and applications.
 
-The client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using NodeJS, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices.
+The client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using node.js, and the Applications section contains information on how applications can use the node.js Internet of Things Foundation module to interact with devices.
 
 *IotfDevice* is the device client for the Internet of Things Foundation service. You can use this client to connect to the service, publish events from the device and subscribe to commands.
 

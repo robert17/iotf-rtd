@@ -1,11 +1,11 @@
-Node.js Client Library
-========================
+Node.js Client Library - Applications
+=======================================
 
-The node.js client is used for simplifying the interacting with the Internet of Things Foundation. The following libraries contain instructions and guidance on using the nodejs ibmiotf node to interact with devices and applications within your organizations.
+The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using node.js with Internet of Things Foundation to interact with you devices and applications.
 
-This client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using the nodejs ibmiotf module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices.
+This client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using the node.js Internet of Things Foundation module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices.
 
-*IotfApplication* is application client for the Internet of Things Foundation service. This section contains information on how applications interact with devices.
+*IotfApplication* is the application client for the Internet of Things Foundation service. This section contains information on how applications interact with devices.
 
 Constructor
 ---------------
@@ -70,14 +70,14 @@ Connect to the Internet of Things Foundation by calling the *connect* function.
     });
     
 
-After the successful connection to the IoTF service, the application client emits *connect* event. So all the logic can be implemented inside this callback function.
+After the successful connection to the IoTF service, the application client sends a *connect* event. So all the logic can be implemented inside this callback function.
 
 Subscribing to device events
 ----------------------------
 
 Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the Internet of Things Foundation, the credentials of the connection on which the event was received are used to determine from which device the event was sent. Using this architecture, it is impossible for a device to impersonate another device.
 
 By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
 

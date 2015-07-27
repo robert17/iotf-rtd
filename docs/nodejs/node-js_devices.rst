@@ -22,6 +22,7 @@ The constructor builds the device client instance. It accepts a configuration js
 If you want to use quickstart, then send only the first three properties.
 
 .. code:: javascript
+
     var Client = require("ibmiotf").IotfDevice;
     var config = {
     "org" : "organization",
@@ -61,6 +62,7 @@ Connecting to the Internet of Things Foundation
 Connect to the Internet of Things Foundation by calling the *connect* function.
 
 .. code:: javascript
+
     var Client = require("ibmiotf").IotfDevice;
     
     var config = Client.parseConfigFile(configFilePath);    
@@ -94,6 +96,7 @@ Events can be published by using
 -   QoS - MQTT quality of service for the publish event. Supported values : 0,1,2.
 
 .. code:: javascript
+
     var config = IotfDevice.ParseConfigFile(configFilePath);    
     var client = new IotfDevice(config);
 
@@ -119,6 +122,7 @@ When the device client connects, it automatically subscribes to any command for 
 -   topic - actual topic where the command was received
 
 .. code:: javascript
+
     var config = IotfDevice.ParseConfigFile(configFilePath);    
     var client = new IotfDevice(config);
     
@@ -146,6 +150,7 @@ Disconnect Client
 Disconnects the client and releases the connections
 
 .. code:: javascript
+
     var config = IotfDevice.ParseConfigFile(configFilePath);    
     var client = new IotfDevice(config);
     
@@ -169,6 +174,7 @@ Check Connection Status
 *isConnected* gives the current status of the client connection
 
 .. code:: javascript
+
     //publishing event using the default quality of service
     if(client.isConnected) {
         client.publish("status","json",'{"d" : { "cpu" : 60, "mem" : 50 }}');

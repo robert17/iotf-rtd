@@ -174,7 +174,7 @@ To subscribe to all events published by a device in json format
 Handling events from devices
 --------------------------------
 
-To process the events received by your subscriptions you need to implement an device event callback method. The ibmiotf application client emits the event *deviceEvent*. This function has the following properties:
+To process the events received by your subscriptions you need to implement a device event callback method. The ibmiotf application client emits the event *deviceEvent*. This function has the following properties:
 
 - deviceType
 - deviceId

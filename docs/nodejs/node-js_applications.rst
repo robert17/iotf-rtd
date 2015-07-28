@@ -175,12 +175,13 @@ Handling events from devices
 --------------------------------
 
 To process the events received by your subscriptions you need to implement an device event callback method. The ibmiotf application client emits the event *deviceEvent*. This function has the following properties:
--   deviceType
--   deviceId
--   eventType
--   format
--   payload - Device event payload
--   topic - Original topic
+
+- deviceType
+- deviceId
+- eventType
+- format
+- payload - Device event payload
+- topic - Original topic
 
 .. code:: javascript
 
@@ -372,12 +373,13 @@ Disconnects the client and releases the connections
     });
 
 Check Connection Status
------------------------
+--------------------------
 
-*isConnected* gives the current status of the application client connection.
+*isConnected* gives the current status of the application client connection
 
 .. code:: javascript
-    if(client.isConnected) {
-        ....
-        ....
-    }
+
+	if(client.isConnected) {
+		....
+		....
+	}

@@ -4,13 +4,13 @@
    contain the root `toctree` directive.
 
 ===============================================================================
-IBM Internet of Things Foundation
+Introduction to the IBM Internet of Things Foundation
 ===============================================================================
 
 About
 -------------------------------------------------------------------------------
 Welcome to the documentation/reference material for IBM's IoT Foundation 
-service.  If you are looking for tutorials you can find them on DeveloperWorks Recipes_
+service.  If you are looking for tutorials you can find them on developerWorks Recipes_
 
 .. _Recipes: https://developer.ibm.com/recipes/
 
@@ -21,7 +21,8 @@ Introduction
 
 .. toctree::
     :maxdepth: 2
-    
+
+    index
     reference/concepts
 
 

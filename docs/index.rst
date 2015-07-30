@@ -55,6 +55,9 @@ Programming Guides
     java/javaintro.rst
     java/java_cli_devices.rst
     
+    nodejs/node-js_intro.rst
+    nodejs/node-js_devices.rst
+    nodejs/node-js_applications.rst	
 
 Messaging
 -------------------------------------------------------------------------------

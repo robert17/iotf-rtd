@@ -26,3 +26,10 @@ Java
 
 - `Java Client Library - Introduction <../java/javaintro.html#/>`__
 - `Java Client Library - Devices <../java/java_cli_devices.html#/>`__
+
+Node.js
+~~~~~~~~~~~~~~~
+
+- `Node.js Client Library - Introduction <../nodejs/node-js_intro.html#/>`__
+- `Node.js Client Library - Devices <../nodejs/node-js_devices.html#/>`__
+- `Node.js Client Library - Applications <../nodejs/node-js_applications.html#/>`__

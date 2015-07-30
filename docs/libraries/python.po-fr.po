@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\python.rst:2
+msgid "Python Client Library - Introduction"
+msgstr ""
+"Bibliothèque client Python - Introduction"
+
+#: ..\docs\libraries\python.rst:4
+msgid "Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the python ibmiotf module to interact with devices and applications within your organizations."
+msgstr ""
+"Utilisez le module Python pour interagir avec `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ et automatiser des commandes à l'aide de Python version 3.4 ou 2.7. Ce module permet de faciliter les interactions avec IBM Internet of Things Foundation. Les bibliothèques ci-dessous contiennent des instructions et des conseils à suivre si vous utilisez le module Python ibmiotf pour interagir avec des terminaux et des applications dans vos organisations."
+
+#: ..\docs\libraries\python.rst:6
+msgid "`Python 3.4 <https://www.python.org/downloads/release/python-343/>`__"
+msgstr ""
+"`Python 3.4 <https://www.python.org/downloads/release/python-343/>`__"
+
+#: ..\docs\libraries\python.rst:7
+msgid "`Python 2.7 <https://www.python.org/downloads/release/python-279/>`__"
+msgstr ""
+"`Python 2.7 <https://www.python.org/downloads/release/python-279/>`__"
+
+#: ..\docs\libraries\python.rst:9
+msgid "Note: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1"
+msgstr ""
+"Remarque : La prise en charge de MQTT sur SSL requiert au moins Python version 2.7.9 ou 3.4 et openssl version 1.0.1"
+
+#: ..\docs\libraries\python.rst:11
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"Cette bibliothèque client est divisée en deux sections, placées chacune dans la bibliothèque. La section Terminaux (Devices) contient des informations expliquant comment les terminaux publient des événements et traitent des commandes à l'aide du module Python ibmiotf. La section Applications contient des informations décrivant comment les applications peuvent utiliser le module ibmiotf pour interagir avec des terminaux."
+
+#: ..\docs\libraries\python.rst:14
+msgid "Dependencies"
+msgstr ""
+"Dépendances"
+
+#: ..\docs\libraries\python.rst:16
+msgid "`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ : Fournit une classe client qui permet aux applications de se connecter à un courtier MQTT."
+
+#: ..\docs\libraries\python.rst:17
+msgid "`iso8601 <https://pypi.python.org/pypi/iso8601>`__ - parses the most common forms of ISO 8601 date strings into datetime objects"
+msgstr ""
+"`iso8601 <https://pypi.python.org/pypi/iso8601>`__ : Analyse les formes les plus courantes des chaînes de date ISO 8601 pour générer des objets datetime."
+
+#: ..\docs\libraries\python.rst:18
+msgid "`pytz <https://pypi.python.org/pypi/pytz>`__ - allows accurate and cross platform timezone calculations"
+msgstr ""
+"`pytz <https://pypi.python.org/pypi/pytz>`__ : Permet d'effectuer avec précision des calculs de fuseau horaire entre différentes plateformes."
+
+#: ..\docs\libraries\python.rst:19
+msgid "`requests <https://pypi.python.org/pypi/requests>`__ - an HTTP library"
+msgstr ""
+"`requests <https://pypi.python.org/pypi/requests>`__ : Bibliothèque HTTP"
+
+#: ..\docs\libraries\python.rst:25
+msgid "Installation"
+msgstr ""
+"Installation"
+
+#: ..\docs\libraries\python.rst:26
+msgid "To install the latest version of the library with pip, enter the following code in your command line. ::"
+msgstr ""
+"Pour installer la dernière version de la bibliothèque avec pip, entrez le code suivant sur la ligne de commande ::"
+
+#: ..\docs\libraries\python.rst:32
+msgid "Uninstall"
+msgstr ""
+"Désinstallation"
+
+#: ..\docs\libraries\python.rst:33
+msgid "Uninstalling the module is simple, enter the following code in the command line."
+msgstr ""
+"La désinstallation du module est une procédure simple. Entrez le code suivant sur la ligne de commande."
+
+#: ..\docs\libraries\python.rst:41
+msgid "Migrating from v0.0.x to v0.1.x"
+msgstr ""
+"Migration de la version 0.0.x vers la version 0.1.x"
+
+#: ..\docs\libraries\python.rst:42
+msgid "There is a significant change between the 0.0.x releases and 0.1.x that will require changes to client code.  Now that the library properly supports multiple message formats you will want to update calls to deviceClient.publishEvent, appClient.publishEvent and appClient.publishCommand to also supply the desired message format."
+msgstr ""
+"Les modifications importantes apportées entre la version 0.0.x et la version 0.1.x nécessitent la modification du code client.  Maintenant que la bibliothèque prend correctement en charge plusieurs formats de message, vous devez mettre à jour les appels à deviceClient.publishEvent, appClient.publishEvent et appClient.publishCommand pour indiquer le format de message de votre choix."
+
+#: ..\docs\libraries\python.rst:44
+msgid "Sample code v0.0.9:"
+msgstr ""
+"Exemple de code de la version 0.0.9 :"
+
+#: ..\docs\libraries\python.rst:53
+msgid "Sample code v0.1.1:"
+msgstr ""
+"Exemple de code de la version 0.1.1 :"
+
+#: ..\docs\libraries\python.rst:62
+msgid "Also, as part of this change, events and commands sent as format \"json\" will not be assumed to meet the `IoTF JSON Payload Specification <https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification>`__. The default client behaviour will be to parse commands and events with format \"json\" as a generic JSON object only. Only messages sent as format \"json-iotf\" will default to being decoded in this specification. This can be easily changed with the following code."
+msgstr ""
+"A la suite de ces modifications, le système considère que les événements et les commandes envoyées au format \"json\" ne respectent pas la spécification `IoTF JSON Payload  <https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-json-payload-specification>`__. Le comportement par défaut du client consiste à analyser les commandes et les événements au format \"json\"  comme des objets JSON génériques. Seuls les messages envoyés au format \"json-iotf\" sont décodés par défaut conformément à cette spécification. Vous pouvez modifier facilement ce comportement en utilisant le code suivant :"
+
+#: ..\docs\libraries\python.rst:82
+msgid "Documentation"
+msgstr ""
+"Documentation"
+
+#: ..\docs\libraries\python.rst:83
+msgid "`Device Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__"
+msgstr ""
+"`Client de terminal <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__"
+
+#: ..\docs\libraries\python.rst:84
+msgid "`Application Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__"
+msgstr ""
+"`Client d'application <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__"
+

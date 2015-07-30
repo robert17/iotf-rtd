@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\messaging\applications.rst:3
+msgid "MQTT Connectivity for Applications"
+msgstr ""
+"Conectividad de MQTT para aplicaciones"
+
+#: ..\docs\messaging\applications.rst:5
+msgid "An application must authenticate using a client ID in the following format:"
+msgstr ""
+"Una aplicación se debe autenticar utilizando un ID de cliente en el formato siguiente:"
+
+#: ..\docs\messaging\applications.rst:7
+msgid "a:**org\\_id**:**app_id**"
+msgstr ""
+"a:**id\\_org**:**id_aplic**"
+
+#: ..\docs\messaging\applications.rst:9
+msgid "We do not impose any rules on the **app\\_id** component of the client ID"
+msgstr ""
+"No imponemos ninguna regla en el componente **id\\_aplic** del ID de cliente"
+
+#: ..\docs\messaging\applications.rst:10
+msgid "When connecting to the Quickstart service no authentication is required"
+msgstr ""
+"Al conectarse al servicio Quickstart, no se necesita autenticación"
+
+#: ..\docs\messaging\applications.rst:11
+msgid "An application does not need to be registered before it can connect"
+msgstr ""
+"Una aplicación no necesita estar registrada para poderse conectar"
+
+#: ..\docs\messaging\applications.rst:18
+msgid "MQTT client identifier"
+msgstr ""
+"Identificador de cliente MQTT"
+
+#: ..\docs\messaging\applications.rst:20
+msgid "Supply a client id of the form **a**:**org\\_id**:**app\\_id**"
+msgstr ""
+"Proporcione un id de cliente con el formato **a**:**id\\_org**:**id\\_aplic**"
+
+#: ..\docs\messaging\applications.rst:22
+msgid "**a** indicates the client is an application"
+msgstr ""
+"**a** indica que el cliente es una aplicación"
+
+#: ..\docs\messaging\applications.rst:23
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
+msgstr ""
+"**id\\_org** es el id de organización, asignado cuando se registra en el servicio.  Será una serie alfanumérica de 6 caracteres."
+
+#: ..\docs\messaging\applications.rst:25
+msgid "**app\\_id** is a user-defined unique string identifier for this client."
+msgstr ""
+"**id\\_aplic** es un identificador de serie exclusivo definido por el usuario para este cliente."
+
+#: ..\docs\messaging\applications.rst:27
+msgid "Only one MQTT client can connect using any given client ID.  As soon as a second client in your organization connects using an **app\\_id** that you have already connected the first client will be disconnected."
+msgstr ""
+"Solo un cliente MQTT puede conectarse utilizando cualquier ID de cliente proporcionado.  Tan pronto como un segundo cliente de la organización se conecte utilizando un **id\\_aplic** que ya se ha conectado, se desconectará el primero cliente."
+
+#: ..\docs\messaging\applications.rst:36
+msgid "MQTT authentication"
+msgstr ""
+"Autenticación de MQTT"
+
+#: ..\docs\messaging\applications.rst:38
+msgid "Applications require an API Key to connect into an organization.  When an API Key is registered a token will be generated that must be used with that API key."
+msgstr ""
+"Las aplicaciones necesitan una clave de API para conectarse a una organización.  Cuando se registre una clave de API, se generará una señal que se deberá utilizar con esa clave de API."
+
+#: ..\docs\messaging\applications.rst:41
+msgid "The API key will look something like this: a-**org\\_id**-a84ps90Ajs"
+msgstr ""
+"La clave de API tendrá un aspecto similar a lo siguiente: a-**id\\_org**-a84ps90Ajs"
+
+#: ..\docs\messaging\applications.rst:43
+msgid "The token will look something like this: MP$08VKz!8rXwnR-Q*"
+msgstr ""
+"La señal tendrá este aspecto: MP$08VKz!8rXwnR-Q*"
+
+#: ..\docs\messaging\applications.rst:45
+msgid "When making an MQTT connection using an API key the following applies:"
+msgstr ""
+"Al realizar una conexión MQTT utilizando una clave de API, se aplica lo siguiente:"
+
+#: ..\docs\messaging\applications.rst:47
+msgid "MQTT client ID: a:**org\\id**:**app\\_id**"
+msgstr ""
+"ID de cliente MQTT: a:**id\\org**:**id\\_aplic**"
+
+#: ..\docs\messaging\applications.rst:48
+msgid "MQTT username must be the API key: a-**org\\_id**-a84ps90Ajs"
+msgstr ""
+"El nombre de usuario de MQTT debe ser la clave de API: a-**id\\_org**-a84ps90Ajs"
+
+#: ..\docs\messaging\applications.rst:49
+msgid "MQTT password must be the authentication token: MP$08VKz!8rXwnR-Q*"
+msgstr ""
+"La contraseña de MQTT debe ser la señal de autenticación: MP$08VKz!8rXwnR-Q*"
+
+#: ..\docs\messaging\applications.rst:56
+msgid "Publishing device events"
+msgstr ""
+"Publicación de sucesos de dispositivo"
+
+#: ..\docs\messaging\applications.rst:57
+msgid "An application can publish events as if they came from any registered device."
+msgstr ""
+"Una aplicación puede publicar sucesos como si procedieran de cualquier dispositivo registrado."
+
+#: ..\docs\messaging\applications.rst:59
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgstr ""
+"Publicar en tema iot-2/type/**tipo\\_dispositivo**/id/**id\\_dispositivo**/evt/**id\\_suceso**/fmt/**serie\\_formato**"
+
+#: ..\docs\messaging\applications.rst:61
+msgid "You may have a number of devices that are already generating bespoke data that you wish to send to IoTF.  One way to get that data into the service would be to write an application that processes the data and publishes it to IoTF."
+msgstr ""
+"Puede tener varios dispositivos que ya estén generando datos bespoke que desea enviar a IoTF.  Una manera de poner dichos datos en el servicio será escribir una aplicación que procese los datos y los publique en IoTF."
+
+#: ..\docs\messaging\applications.rst:69
+msgid "Publishing device commands"
+msgstr ""
+"Publicación de mandatos de dispositivo"
+
+#: ..\docs\messaging\applications.rst:70
+msgid "An application can publish a command to any registered device."
+msgstr ""
+"Una aplicación puede publicar un mandato en cualquier dispositivo registrado."
+
+#: ..\docs\messaging\applications.rst:72
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgstr ""
+"Publicar en tema iot-2/type/**tipo\\_dispositivo**/id/**id\\_dispositivo**/cmd/**id\\_mandato**/fmt/**serie\\_formato**"
+
+#: ..\docs\messaging\applications.rst:78
+msgid "Subscribing to device events"
+msgstr ""
+"Suscripción a sucesos de dispositivo"
+
+#: ..\docs\messaging\applications.rst:79
+msgid "An application can subscribe to events from one or more devices."
+msgstr ""
+"Una aplicación se puede suscribir a sucesos de uno o varios dispositivos."
+
+#: ..\docs\messaging\applications.rst:81
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgstr ""
+"Suscribirse a tema iot-2/type/**tipo\\_dispositivo**/id/**id\\_dispositivo**/evt/**id\\_suceso**/fmt/**serie\\_formato**"
+
+#: ..\docs\messaging\applications.rst:83
+#: ..\docs\messaging\applications.rst:102
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to more than one type of event, or events from more than a single device."
+msgstr ""
+"Se puede utilizar el carácter comodín de MQTT \"any\" (+) para cualquiera de los componentes siguientes si desea suscribirse a más de un tipo de suceso o sucesos de más de un dispositivo único."
+
+#: ..\docs\messaging\applications.rst:87
+#: ..\docs\messaging\applications.rst:106
+#: ..\docs\messaging\applications.rst:124
+#: ..\docs\messaging\applications.rst:155
+msgid "device\\_type"
+msgstr ""
+"tipo\\_dispositivo"
+
+#: ..\docs\messaging\applications.rst:88
+#: ..\docs\messaging\applications.rst:107
+#: ..\docs\messaging\applications.rst:125
+msgid "device\\_id"
+msgstr ""
+"id\\_dispositivo"
+
+#: ..\docs\messaging\applications.rst:89
+msgid "event\\_id"
+msgstr ""
+"id\\_suceso"
+
+#: ..\docs\messaging\applications.rst:90
+#: ..\docs\messaging\applications.rst:109
+msgid "format\\_string"
+msgstr ""
+"serie\\_formato"
+
+#: ..\docs\messaging\applications.rst:97
+msgid "Subscribing to device commands"
+msgstr ""
+"Suscripción a mandatos de dispositivo"
+
+#: ..\docs\messaging\applications.rst:98
+msgid "An application can subscribe to commands being sent to one or more devices."
+msgstr ""
+"Una aplicación se puede suscribir a los mandatos que se están enviando a uno o varios dispositivos."
+
+#: ..\docs\messaging\applications.rst:100
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgstr ""
+"Subscribirse a tema iot-2/type/**tipo\\_dispositivo**/id/**id\\_dispositivo**/cmd/**id\\_mandato**/fmt/**serie\\_formato**"
+
+#: ..\docs\messaging\applications.rst:108
+msgid "cmd\\_id"
+msgstr ""
+"id\\_mandato"
+
+#: ..\docs\messaging\applications.rst:116
+msgid "Subscribing to device status messages"
+msgstr ""
+"Suscripción a mensajes de estado de dispositivo"
+
+#: ..\docs\messaging\applications.rst:117
+msgid "An application can subscribe to monitor status of one or more devices."
+msgstr ""
+"Una aplicación se puede suscribir al estado de supervisión de uno o varios dispositivos."
+
+#: ..\docs\messaging\applications.rst:119
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/mon"
+msgstr ""
+"Suscribirse a tema iot-2/type/**tipo\\_dispositivo**/id/**id\\_dispositivo**/mon"
+
+#: ..\docs\messaging\applications.rst:121
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to updates from more than one device."
+msgstr ""
+"Se puede utilizar el carácter comodín de MQTT \"any\" (+) para cualquiera de los componentes siguientes si desea suscribirse a las actualizaciones de más de un dispositivo."
+
+#: ..\docs\messaging\applications.rst:132
+msgid "Subscribing to application status messages"
+msgstr ""
+"Suscripción a mensajes de estado de aplicación"
+
+#: ..\docs\messaging\applications.rst:133
+msgid "An application can subscribe to monitor status of one or more applications."
+msgstr ""
+"Una aplicación se puede suscribir al estado de supervisión de una o varias aplicaciones."
+
+#: ..\docs\messaging\applications.rst:135
+msgid "Subscribe to topic iot-2/app/**app\\_id**/mon"
+msgstr ""
+"Subscribirse a tema iot-2/app/**id\\_aplic**/mon"
+
+#: ..\docs\messaging\applications.rst:137
+msgid "The MQTT \"any\" wildcard character (+) may be used for **app\\_id** if you want to subscribe for updates for all applications."
+msgstr ""
+"Se puede utilizar el carácter comodín de MQTT \"any\" (+) para **id\\_aplic** si desea suscribirse a las actualizaciones de todas las aplicaciones."
+
+#: ..\docs\messaging\applications.rst:145
+msgid "Quickstart restrictions"
+msgstr ""
+"Restricciones de Quickstart"
+
+#: ..\docs\messaging\applications.rst:147
+msgid "If you are writing application code that wants to support use with Quickstart you must take into account the following features present in the registered service that are not supported in Quickstart:"
+msgstr ""
+"Si está escribiendo código de aplicación que desea soportar el uso con Quickstart, debe tener en cuenta las siguientes características presentes en el servicio registrado que no se soportan en Quickstart:"
+
+#: ..\docs\messaging\applications.rst:151
+msgid "Publishing commands"
+msgstr ""
+"Publicación de mandatos"
+
+#: ..\docs\messaging\applications.rst:152
+msgid "Subscribing to commands"
+msgstr ""
+"Suscripción a mandatos"
+
+#: ..\docs\messaging\applications.rst:153
+msgid "Use of the MQTT \"any\" wildcard character (+) for the following topic components:"
+msgstr ""
+"Uso del carácter comodín de MQTT \"any\" (+) para los siguientes componentes de tema:"
+
+#: ..\docs\messaging\applications.rst:156
+msgid "app\\_id"
+msgstr ""
+"id\\_aplic"
+
+#: ..\docs\messaging\applications.rst:157
+msgid "MQTT connection over SSL"
+msgstr ""
+"Conexión de MQTT sobre SSL"
+

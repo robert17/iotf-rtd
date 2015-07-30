@@ -1,0 +1,522 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\device_management.rst:3
+msgid "The Device Management API"
+msgstr ""
+"디바이스 관리 API"
+
+#: ..\docs\api\device_management.rst:7
+msgid "Authentication"
+msgstr ""
+"인증"
+
+#: ..\docs\api\device_management.rst:9
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
+msgstr ""
+"이 API는 HTTPS를 통해서만 액세스할 수 있고 HTTP 기본 인증에 의해 보호되므로 사용자는 모든 요청과 함께 사용자 이름 및 비밀번호를 제공해야 합니다. "
+
+#: ..\docs\api\device_management.rst:14
+msgid "Username"
+msgstr ""
+"사용자 이름"
+
+#: ..\docs\api\device_management.rst:16
+msgid "A valid API key registered to the organization you want to work with."
+msgstr ""
+"작업할 조직에 등록된 올바른 API 키입니다. "
+
+#: ..\docs\api\device_management.rst:20
+msgid "Password"
+msgstr ""
+"비밀번호"
+
+#: ..\docs\api\device_management.rst:22
+msgid "The authentication token corresponding to your API key."
+msgstr ""
+"API 키에 해당하는 인증 토큰입니다. "
+
+#: ..\docs\api\device_management.rst:30
+msgid "View Organization"
+msgstr ""
+"조직 보기"
+
+#: ..\docs\api\device_management.rst:32
+msgid "Retrieve details about an organization."
+msgstr ""
+"조직에 대한 세부사항을 검색합니다. "
+
+#: ..\docs\api\device_management.rst:36
+#: ..\docs\api\device_management.rst:85
+#: ..\docs\api\device_management.rst:205
+#: ..\docs\api\device_management.rst:298
+#: ..\docs\api\device_management.rst:364
+#: ..\docs\api\device_management.rst:466
+#: ..\docs\api\device_management.rst:576
+#: ..\docs\api\device_management.rst:667
+msgid "Request"
+msgstr ""
+"요청"
+
+#: ..\docs\api\device_management.rst:37
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+
+#: ..\docs\api\device_management.rst:41
+#: ..\docs\api\device_management.rst:91
+#: ..\docs\api\device_management.rst:211
+#: ..\docs\api\device_management.rst:304
+#: ..\docs\api\device_management.rst:370
+#: ..\docs\api\device_management.rst:472
+#: ..\docs\api\device_management.rst:582
+#: ..\docs\api\device_management.rst:673
+msgid "Request Body"
+msgstr ""
+"요청 본문"
+
+#: ..\docs\api\device_management.rst:43
+#: ..\docs\api\device_management.rst:93
+#: ..\docs\api\device_management.rst:213
+#: ..\docs\api\device_management.rst:306
+#: ..\docs\api\device_management.rst:584
+#: ..\docs\api\device_management.rst:675
+#: ..\docs\api\device_management.rst:681
+msgid "None"
+msgstr ""
+"없음"
+
+#: ..\docs\api\device_management.rst:47
+#: ..\docs\api\device_management.rst:97
+#: ..\docs\api\device_management.rst:217
+#: ..\docs\api\device_management.rst:310
+#: ..\docs\api\device_management.rst:405
+#: ..\docs\api\device_management.rst:496
+#: ..\docs\api\device_management.rst:588
+#: ..\docs\api\device_management.rst:679
+msgid "Response Body"
+msgstr ""
+"응답 본문"
+
+#: ..\docs\api\device_management.rst:49
+#: ..\docs\api\device_management.rst:103
+#: ..\docs\api\device_management.rst:109
+#: ..\docs\api\device_management.rst:223
+#: ..\docs\api\device_management.rst:229
+#: ..\docs\api\device_management.rst:375
+#: ..\docs\api\device_management.rst:412
+#: ..\docs\api\device_management.rst:503
+#: ..\docs\api\device_management.rst:509
+#: ..\docs\api\device_management.rst:594
+#: ..\docs\api\device_management.rst:600
+msgid "id - String"
+msgstr ""
+"id - 문자열"
+
+#: ..\docs\api\device_management.rst:50
+msgid "name - String"
+msgstr ""
+"이름 - 문자열"
+
+#: ..\docs\api\device_management.rst:51
+msgid "created - ISO8601 date string"
+msgstr ""
+"작성됨 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\device_management.rst:52
+msgid "updated - ISO8601 date string"
+msgstr ""
+"업데이트됨 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\device_management.rst:56
+#: ..\docs\api\device_management.rst:126
+#: ..\docs\api\device_management.rst:246
+#: ..\docs\api\device_management.rst:319
+#: ..\docs\api\device_management.rst:423
+#: ..\docs\api\device_management.rst:526
+#: ..\docs\api\device_management.rst:617
+msgid "Example Response"
+msgstr ""
+"예제 응답"
+
+#: ..\docs\api\device_management.rst:69
+#: ..\docs\api\device_management.rst:189
+#: ..\docs\api\device_management.rst:282
+#: ..\docs\api\device_management.rst:336
+#: ..\docs\api\device_management.rst:449
+#: ..\docs\api\device_management.rst:560
+#: ..\docs\api\device_management.rst:651
+#: ..\docs\api\device_management.rst:685
+msgid "Common Response Codes"
+msgstr ""
+"공통 응답 코드"
+
+#: ..\docs\api\device_management.rst:71
+#: ..\docs\api\device_management.rst:191
+#: ..\docs\api\device_management.rst:284
+#: ..\docs\api\device_management.rst:338
+#: ..\docs\api\device_management.rst:562
+#: ..\docs\api\device_management.rst:653
+msgid "200 (Success)"
+msgstr ""
+"200(성공)"
+
+#: ..\docs\api\device_management.rst:79
+msgid "List Devices"
+msgstr ""
+"디바이스 나열"
+
+#: ..\docs\api\device_management.rst:81
+msgid "Get a list of all devices in an organization."
+msgstr ""
+"조직의 모든 디바이스 목록을 가져옵니다. "
+
+#: ..\docs\api\device_management.rst:87
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\device_management.rst:99
+#: ..\docs\api\device_management.rst:219
+msgid "The response body will contain a list of devices, as below:"
+msgstr ""
+"응답 본문은 아래와 같이 디바이스 목록을 포함합니다. "
+
+#: ..\docs\api\device_management.rst:101
+#: ..\docs\api\device_management.rst:221
+#: ..\docs\api\device_management.rst:410
+#: ..\docs\api\device_management.rst:501
+#: ..\docs\api\device_management.rst:592
+msgid "uuid - String"
+msgstr ""
+"uuid - 문자열"
+
+#: ..\docs\api\device_management.rst:102
+#: ..\docs\api\device_management.rst:110
+#: ..\docs\api\device_management.rst:222
+#: ..\docs\api\device_management.rst:230
+#: ..\docs\api\device_management.rst:374
+#: ..\docs\api\device_management.rst:411
+#: ..\docs\api\device_management.rst:502
+#: ..\docs\api\device_management.rst:510
+#: ..\docs\api\device_management.rst:593
+#: ..\docs\api\device_management.rst:601
+msgid "type - String"
+msgstr ""
+"유형 - 문자열"
+
+#: ..\docs\api\device_management.rst:104
+#: ..\docs\api\device_management.rst:413
+msgid "metadata - Complex data (if available)"
+msgstr ""
+"메타데이터 - 복합 데이터(사용 가능한 경우)"
+
+#: ..\docs\api\device_management.rst:105
+#: ..\docs\api\device_management.rst:225
+#: ..\docs\api\device_management.rst:505
+#: ..\docs\api\device_management.rst:596
+msgid "registration"
+msgstr ""
+"등록"
+
+#: ..\docs\api\device_management.rst:107
+#: ..\docs\api\device_management.rst:227
+#: ..\docs\api\device_management.rst:507
+#: ..\docs\api\device_management.rst:598
+msgid "auth"
+msgstr ""
+"인증"
+
+#: ..\docs\api\device_management.rst:112
+#: ..\docs\api\device_management.rst:232
+#: ..\docs\api\device_management.rst:512
+#: ..\docs\api\device_management.rst:603
+msgid "date - ISO8601 date string"
+msgstr ""
+"날짜 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\device_management.rst:114
+#: ..\docs\api\device_management.rst:234
+#: ..\docs\api\device_management.rst:514
+#: ..\docs\api\device_management.rst:605
+msgid "status"
+msgstr ""
+"상태"
+
+#: ..\docs\api\device_management.rst:116
+#: ..\docs\api\device_management.rst:236
+#: ..\docs\api\device_management.rst:516
+#: ..\docs\api\device_management.rst:607
+msgid "mqtt"
+msgstr ""
+"mqtt"
+
+#: ..\docs\api\device_management.rst:118
+#: ..\docs\api\device_management.rst:238
+#: ..\docs\api\device_management.rst:518
+#: ..\docs\api\device_management.rst:609
+msgid "clientAddress - String"
+msgstr ""
+"clientAddress - 문자열"
+
+#: ..\docs\api\device_management.rst:119
+#: ..\docs\api\device_management.rst:239
+#: ..\docs\api\device_management.rst:519
+#: ..\docs\api\device_management.rst:610
+msgid "protocol - String"
+msgstr ""
+"프로토콜 - 문자열"
+
+#: ..\docs\api\device_management.rst:120
+#: ..\docs\api\device_management.rst:240
+#: ..\docs\api\device_management.rst:520
+#: ..\docs\api\device_management.rst:611
+msgid "action - String"
+msgstr ""
+"조치 - 문자열"
+
+#: ..\docs\api\device_management.rst:121
+#: ..\docs\api\device_management.rst:241
+#: ..\docs\api\device_management.rst:521
+#: ..\docs\api\device_management.rst:612
+msgid "timestamp - ISO8061 date string"
+msgstr ""
+"시간소인 - ISO8061 날짜 문자열"
+
+#: ..\docs\api\device_management.rst:122
+#: ..\docs\api\device_management.rst:242
+#: ..\docs\api\device_management.rst:522
+#: ..\docs\api\device_management.rst:613
+msgid "port - Integer"
+msgstr ""
+"포트 - 정수"
+
+#: ..\docs\api\device_management.rst:199
+msgid "List Devices by Type"
+msgstr ""
+"유형별 디바이스 나열"
+
+#: ..\docs\api\device_management.rst:201
+msgid "Get a list of all devices of a specific type in an organization."
+msgstr ""
+"조직에 있는 특정 유형의 모든 디바이스 목록을 가져옵니다. "
+
+#: ..\docs\api\device_management.rst:207
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+
+#: ..\docs\api\device_management.rst:224
+#: ..\docs\api\device_management.rst:477
+#: ..\docs\api\device_management.rst:504
+#: ..\docs\api\device_management.rst:595
+msgid "metadata - Complex data"
+msgstr ""
+"메타데이터 - 복합 데이터"
+
+#: ..\docs\api\device_management.rst:292
+msgid "List Device Types"
+msgstr ""
+"디바이스 유형 나열"
+
+#: ..\docs\api\device_management.rst:294
+msgid "Get a list of all devices types in an organization."
+msgstr ""
+"조직의 모든 디바이스 유형 목록을 가져옵니다. "
+
+#: ..\docs\api\device_management.rst:300
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+
+#: ..\docs\api\device_management.rst:312
+msgid "The response body will contain a list of device types:"
+msgstr ""
+"응답 본문은 디바이스 유형 목록을 포함합니다. "
+
+#: ..\docs\api\device_management.rst:314
+msgid "deviceType - String"
+msgstr ""
+"deviceType - 문자열"
+
+#: ..\docs\api\device_management.rst:315
+msgid "count - Integer"
+msgstr ""
+"개수 - 정수"
+
+#: ..\docs\api\device_management.rst:346
+msgid "Register a New Device"
+msgstr ""
+"새 디바이스 등록"
+
+#: ..\docs\api\device_management.rst:348
+msgid "Register a new device to an organization."
+msgstr ""
+"새 디바이스를 조직에 등록합니다. "
+
+#: ..\docs\api\device_management.rst:350
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
+msgstr ""
+"등록된 디바이스에 유형 및 id에 대한 값을 지정할 때 선택한 스킴을 사용할 수 있지만 다음과 같은 제한사항이 적용됩니다. "
+
+#: ..\docs\api\device_management.rst:353
+msgid "Maximum length of 32 characters"
+msgstr ""
+"최대 길이 32자"
+
+#: ..\docs\api\device_management.rst:354
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
+msgstr ""
+"영숫자 문자와 다음과 같은 특수 문자로만 구성되어야 함"
+
+#: ..\docs\api\device_management.rst:356
+msgid "dash (\"-\")"
+msgstr ""
+"대시(\"-\")"
+
+#: ..\docs\api\device_management.rst:357
+msgid "underscore (\"\\_\")"
+msgstr ""
+"밑줄(\"\\_\")"
+
+#: ..\docs\api\device_management.rst:358
+msgid "dot (\".\")"
+msgstr ""
+"점(\".\")"
+
+#: ..\docs\api\device_management.rst:366
+msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\device_management.rst:372
+msgid "You must specify the type and identifer of the device being registered."
+msgstr ""
+"등록 중인 디바이스의 ID 및 유형을 지정해야 합니다. "
+
+#: ..\docs\api\device_management.rst:376
+msgid "metadata - Complex data (optional)"
+msgstr ""
+"메타데이터 - 복합 데이터(선택사항)"
+
+#: ..\docs\api\device_management.rst:377
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
+msgstr ""
+"비밀번호 - 문자열(선택사항이며 유형 및 id와 동일한 제한사항이 적용되고 최소 길이는 8자임)"
+
+#: ..\docs\api\device_management.rst:381
+#: ..\docs\api\device_management.rst:481
+msgid "Example Request"
+msgstr ""
+"예제 요청"
+
+#: ..\docs\api\device_management.rst:398
+msgid "Response Headers"
+msgstr ""
+"응답 헤더"
+
+#: ..\docs\api\device_management.rst:400
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
+msgstr ""
+"응답 헤더는 등록된 디바이스에 대한 위치(자원 URI)를 포함합니다. \\* 위치 - URI"
+
+#: ..\docs\api\device_management.rst:407
+msgid "The response body will contain a uuid and password for the registered device."
+msgstr ""
+"응답 본문은 등록된 디바이스에 대한 uuid 및 비밀번호를 포함합니다. "
+
+#: ..\docs\api\device_management.rst:414
+msgid "password - String"
+msgstr ""
+"비밀번호 - 문자열"
+
+#: ..\docs\api\device_management.rst:416
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
+msgstr ""
+"응답 본문은 이 디바이스에 대해 생성된 인증 토큰을 포함합니다. 응답 처리 시 이 토큰을 기록해야 합니다. 데이터는 해시되고 솔트(salt)된 상태로 저장되므로 유실된 인증 토큰을 검색할 수 없습니다. "
+
+#: ..\docs\api\device_management.rst:451
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
+msgstr ""
+"201(작성됨) - 디바이스가 등록되었음(위치 헤더가 새 디바이스의 URL로 설정됨)"
+
+#: ..\docs\api\device_management.rst:460
+msgid "Update a Registered Device"
+msgstr ""
+"등록된 디바이스 업데이트"
+
+#: ..\docs\api\device_management.rst:462
+msgid "Update an existing device in an organization."
+msgstr ""
+"조직의 기존 디바이스를 업데이트합니다. "
+
+#: ..\docs\api\device_management.rst:468
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\device_management.rst:474
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
+msgstr ""
+"현재 초기 등록 후 변경할 수 있는 유일한 디바이스 특성은 메타데이터입니다. "
+
+#: ..\docs\api\device_management.rst:498
+msgid "The response body will contain the updated properties of the registered device."
+msgstr ""
+"응답 본문은 등록된 디바이스의 업데이트된 특성을 포함합니다. "
+
+#: ..\docs\api\device_management.rst:570
+msgid "View a Registered Device"
+msgstr ""
+"등록된 디바이스 보기"
+
+#: ..\docs\api\device_management.rst:572
+msgid "Get summary information about a registered device in an organization."
+msgstr ""
+"조직의 등록된 디바이스에 대한 요약 정보를 가져옵니다. "
+
+#: ..\docs\api\device_management.rst:578
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\device_management.rst:590
+msgid "The response body will contain the known properties of the device."
+msgstr ""
+"응답 본문은 디바이스의 알려진 특성을 포함합니다. "
+
+#: ..\docs\api\device_management.rst:661
+msgid "Delete a Registered Device"
+msgstr ""
+"등록된 디바이스 삭제"
+
+#: ..\docs\api\device_management.rst:663
+msgid "Unregister a device from an organization."
+msgstr ""
+"조직에서 디바이스를 등록 해제합니다. "
+
+#: ..\docs\api\device_management.rst:669
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\device_management.rst:687
+msgid "204 (No Content) - The device was successfully deleted"
+msgstr ""
+"204(컨텐츠 없음) - 디바이스가 삭제되었음"
+

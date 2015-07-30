@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\embeddedc\embedcintro.rst:2
+msgid "Embedded C Client Library - Introduction"
+msgstr ""
+"Eingebettete C-Clientbibliothek - Einführung"
+
+#: ..\docs\embeddedc\embedcintro.rst:4
+msgid "The Embedded C client library is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol."
+msgstr ""
+"Die Embedded C-Clientbibliothek wird  zur Interaktion mit IBM Internet of Things Foundation verwendet. Diese Bibliothek aktiviert Einheiten, so dass diese mit dem IoT Foundation Cloud-Service unter Verwendung des MQTT-Protokolls kommunizieren können."
+
+#: ..\docs\embeddedc\embedcintro.rst:6
+msgid "The Embedded C client library also contains two sample applications, the helloWorld.c sample and the sampleDevice.c sample These samples are detailed in Embedded C Client Library Samples."
+msgstr ""
+"Die Embedded C-Clientbibliothek umfasst auch zwei Beispielanwendungen - das Sample helloWorld.c und das Sample sampleDevice.c. Diese Beispiele werden in 'Embedded C-Clientbibliothek - Beispiele' detailliert beschrieben."
+
+#: ..\docs\embeddedc\embedcintro.rst:9
+msgid "Dependencies"
+msgstr ""
+"Abhängigkeiten"
+
+#: ..\docs\embeddedc\embedcintro.rst:11
+msgid "`Eclipse Paho Embedded C library <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information."
+msgstr ""
+"`Eclipse Paho Embedded C-Bibliothek <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - stellt eine MQTT C-Clientbibliothek bereit. Weitere Informationen finden Sie hier: `<http://www.eclipse.org/paho/clients/c/embedded/>`__."
+
+#: ..\docs\embeddedc\embedcintro.rst:14
+msgid "Installation"
+msgstr ""
+"Installation"
+
+#: ..\docs\embeddedc\embedcintro.rst:15
+msgid "To install the Internet of Things Foundation client library for Embedded C follow the instructions below."
+msgstr ""
+"Zur Installation der Internet of Things Foundation-Clientbibliothek für Embedded C befolgen Sie die nachfolgenden Anweisungen."
+
+#: ..\docs\embeddedc\embedcintro.rst:17
+msgid "To install the latest version of the library, enter the following code in your command line. The client is also available at https://github.com/ibm-messaging/iotf-embeddedc."
+msgstr ""
+"Zur Installation der neuesten Version der Bibliothek geben Sie den folgenden Code in der Befehlszeile ein. Der Client ist auch unter https://github.com/ibm-messaging/iotf-embeddedc verfügbar."
+
+#: ..\docs\embeddedc\embedcintro.rst:23
+msgid "Copy the Paho library .tar file that was downloaded in the previous step to the *lib* directory."
+msgstr ""
+"Kopieren Sie die TAR-Datei der Paho-Bibliothek, die im vorherigen TAR-Datei heruntergeladen wurde, in die Bibliothek *lib*."
+
+#: ..\docs\embeddedc\embedcintro.rst:30
+msgid "Extract the library file"
+msgstr ""
+"Bibliotheksdatei extrahieren"
+
+#: ..\docs\embeddedc\embedcintro.rst:38
+msgid "When downloaded, the client has the following file structure:"
+msgstr ""
+"Nach dem Herunterladen hat der Client die folgenden Dateistruktur:"
+
+#: ..\docs\embeddedc\embedcintro.rst:56
+msgid "After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:"
+msgstr ""
+"Nach dem Herunterladen der Clientbibliothek muss diese initialisiert und mit Internet of Things Foundation verbunden werden. Zum Initialisieren der Internet of Things Foundation-Clientbibliothek für Embedded C stehen zwei Möglichkeiten zur Verfügung:"
+
+#: ..\docs\embeddedc\embedcintro.rst:59
+msgid "Passing as parameters"
+msgstr ""
+"Als Parameter übergeben"
+
+#: ..\docs\embeddedc\embedcintro.rst:61
+msgid "The 'initialize' function takes the following details to connect to the IoT Foundation service:"
+msgstr ""
+"die Funktion 'initialize' übernimmt die folgenden Details zum Herstellen der Verbindung mit dem IoT Foundation-Service:"
+
+#: ..\docs\embeddedc\embedcintro.rst:63
+msgid "client - Pointer to the *iotfclient*"
+msgstr ""
+"client - Zeiger auf *iotfclient*"
+
+#: ..\docs\embeddedc\embedcintro.rst:64
+msgid "org - Your organization ID"
+msgstr ""
+"org - Ihre Organisations-ID"
+
+#: ..\docs\embeddedc\embedcintro.rst:65
+msgid "type - The type of your device"
+msgstr ""
+"type - Der Typ Ihrer Einheit"
+
+#: ..\docs\embeddedc\embedcintro.rst:66
+msgid "id - The device ID"
+msgstr ""
+"id - Die Einheiten-ID"
+
+#: ..\docs\embeddedc\embedcintro.rst:67
+msgid "authmethod - Method of authentication (the only value currently supported is “token”)"
+msgstr ""
+"authmethod - Die Methode der Authentifizierung (der einzige derzeit unterstützte Wert ist “token”)"
+
+#: ..\docs\embeddedc\embedcintro.rst:68
+msgid "authtoken - API key token (required if auth-method is “token”)"
+msgstr ""
+"authtoken - API-Schlüsseltoken (erforderlich, falls auth-method den Wert “token” hat)."
+
+#: ..\docs\embeddedc\embedcintro.rst:84
+msgid "Using a configuration file"
+msgstr ""
+"Konfigurationsdatei verwenden"
+
+#: ..\docs\embeddedc\embedcintro.rst:86
+msgid "You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\\_configfile' takes the configuration file path as a parameter."
+msgstr ""
+"Sie können auch eine Konfigurationsdatei verwenden, um die Embedded C-Clientbibliothek zu initialisieren. Die Funktion 'initialize\\_configfile' übernimmt den Konfigurationsdateipfad als einen Parameter."
+
+#: ..\docs\embeddedc\embedcintro.rst:99
+msgid "The configuration file must use the following format."
+msgstr ""
+"Die Konfigurationsdatei muss das folgende Format verwenden."
+
+#: ..\docs\embeddedc\embedcintro.rst:107
+msgid "..."
+msgstr ""
+"..."
+
+#: ..\docs\embeddedc\embedcintro.rst:110
+msgid "Connecting to the Internet of Things Foundation Service"
+msgstr ""
+"Herstellen der Verbindung zum Internet of Things Foundation-Service"
+
+#: ..\docs\embeddedc\embedcintro.rst:112
+msgid "After initializing the Internet of Things Foundation Embedded C client library, you can connect to the Internet of Things Foundation by calling the 'connectiotf' function."
+msgstr ""
+"Nach der Initialisierung der Embedded C-Clientbibliothek von Internet of Things Foundation können Sie die Verbindung zu Internet of Things herstellen, indem Sie die Funktion 'connectiotf' aufrufen."
+
+#: ..\docs\embeddedc\embedcintro.rst:138
+msgid "Disconnect Client"
+msgstr ""
+"Verbindung des Clients trennen"
+
+#: ..\docs\embeddedc\embedcintro.rst:140
+msgid "To disconnect the client and release the connections, run the following code snippet."
+msgstr ""
+"Um die Verbindung des Clients zu trennen und die Verbindungen freizugeben, führen Sie das folgende Code-Snippet aus."
+

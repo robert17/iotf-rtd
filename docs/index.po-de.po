@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\index.rst:8
+msgid "IBM Internet of Things Foundation"
+msgstr ""
+"IBM Internet of Things Foundation"
+
+#: ..\docs\index.rst:11
+msgid "About"
+msgstr ""
+"Produktinfo"
+
+#: ..\docs\index.rst:12
+msgid "Welcome to the documentation/reference material for IBM's IoT Foundation service.  If you are looking for tutorials you can find them on Remix_"
+msgstr ""
+"Willkommen beim Dokumentations- und Referenzmaterial für den IBM's IoT Foundation-Service.  Lerntexte finden Sie auf Remix_."
+
+#: ..\docs\index.rst:17
+msgid "The documentation is organized into a number of sections:"
+msgstr ""
+"Die Dokumentation ist in einer Reihe von Abschnitten organisiert:"
+
+#: ..\docs\index.rst:20
+msgid "Introduction"
+msgstr ""
+"Einführung"
+
+#: ..\docs\index.rst:29
+msgid "API"
+msgstr ""
+"API"
+
+#: ..\docs\index.rst:39
+msgid "Programming Guides"
+msgstr ""
+"Programmierhandbücher"
+
+#: ..\docs\index.rst:59
+msgid "Messaging"
+msgstr ""
+"Messaging"
+
+#: ..\docs\index.rst:71
+msgid "Reference Material"
+msgstr ""
+"Referenzmaterial"
+
+#: ..\docs\index.rst:81
+msgid "Contribute"
+msgstr ""
+"Beitragen"
+
+#: ..\docs\index.rst:82
+msgid "If it's not working for you, it's not working for us. The source of this documentation is available on GitHub_, we welcome both `suggestions for improvement`_ and community contributions via the use of issues and pull requests against our repository."
+msgstr ""
+"Ihre Probleme sind unsere Probleme. Die Quelle dieser Dokumentation ist auf GitHub_ verfügbar. Wir begrüßn sehr Ihre Vorschläge zur Verbesserung und die Community-Beiträge bei evtl. Problemen und setzen zur Problemlösung Repository ein."
+

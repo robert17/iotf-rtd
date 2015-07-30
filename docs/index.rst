@@ -23,6 +23,7 @@ Introduction
     :maxdepth: 0
 
     index
+    intro/getting_started
     reference/concepts
 
 

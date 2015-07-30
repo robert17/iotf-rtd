@@ -20,7 +20,7 @@ Introduction
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 0
 
     index
     reference/concepts

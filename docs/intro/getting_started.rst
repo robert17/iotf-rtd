@@ -27,6 +27,7 @@ Connecting to Quickstart:
 3. Publish to topic iot-2/evt/status/fmt/json.
 4. The message payload should be encoded in JSON, and contain some defined elements. The payload must not exceed the Quickstart limit of 4096 bytes.
 5. It must contain a single top-level property called "d". This property may contain an arbitrary number of child properties, these having either integer or string datatypes. For example:
+
 .. code:: 
 
     {
@@ -37,6 +38,7 @@ Connecting to Quickstart:
             "cpuload": 1.45
        }
     }
+
 6. Publish messages using MQTT QoS 0.
 
 You may also like to know...

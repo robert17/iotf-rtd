@@ -17,6 +17,7 @@ Connecting to Quickstart
 2. Supply a client-id of the form d:quickstart:<type-id>:<device-id>, where:
     - type-id is an identifier you provide, for example, "acme-thing". If you have a number of similar devices; perhaps all running the same code, you should use the same type-id for all of them.
     - device-id is a 12 hexadecimal unique identifier. For example, a36d7c91bf9e.
+    - when connecting to the Quickstart service, no authentication is required, and org_id should be set to "quickstart".
 3. Publish to topic iot-2/evt/status/fmt/json.
 4. The message payload should be encoded in JSON, and contain some defined elements. The payload must not exceed the Quickstart limit of 4096 bytes.
 5. It must contain a single top-level property called "d". This property may contain an arbitrary number of child properties, these having either integer or string datatypes. For example:

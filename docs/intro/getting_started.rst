@@ -2,11 +2,9 @@
 Getting started with the Internet of Things Foundation Quickstart Service
 ==========================================================================
 
-The Internet of Things Foundation Quickstart service is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or by using the IoT Sensor which you can find `here <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__.
+The Internet of Things Foundation Quickstart service is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or, if you don't have a device to hand, you can simulate a device using the IoT Sensor which you can find `here <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__.
 
-These instructions are intended to allow users to connect devices to the Internet of Things Foundation Quickstart service. However, there are several restrictions as a part of the Quickstart service which are not present in the registered service.
-
-To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality. See below for more details on the additional functionality of MQTT 3.1.1.
+To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality. For more information on the additional functionality of MQTT 3.1.1 see `here <../messaging/mqtt.html#/>`__.
 
 There are several programming guides which you can use to connect to Quickstart in a language of your preference, you can find documentation for them `here <../libraries/programmingguides.html#/>`__.
 
@@ -35,28 +33,20 @@ Connecting to Quickstart
 
 6. Publish messages using MQTT QoS 0.
 
-Why is MQTT 3.1.1 better?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can read more about the the benefits of MQTT 3.1.1 `here <../messaging/mqtt.html#/>`__.
-
 Limitations of the Quickstart service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are writing device code for use with Quickstart you must take into account the following features present in the
 registered service that are not supported in Quickstart: 
 
--  Subscribing to commands
+-  Subscribing to commands, however devices connecting to registered organizations can subscribe to and receive commands from applications
 -  MQTT connection over SSL
 -  Durable sessions
+    - The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest QoS level and offers no confirmation of receipt.
 
 Also, in Quickstart:
 
 - The retained flag is not currently honored.
-- Devices subscribing to commands is not possible in the Quickstart service.
-    - Devices connected to registered organizations can subscribe to, and receive commands from applications, see the "command recipe" for more details.
 - You can write an application to subscribe to events from devices even using the Quickstart service, see the "application recipe" for more details.
-
-The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest and offers no confirmation of receipt. 
 
 Please note, the Quickstart service might drop messages that are sent more frequently than 1 per second.

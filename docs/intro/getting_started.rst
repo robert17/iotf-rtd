@@ -40,13 +40,13 @@ If you are writing device code for use with Quickstart you must take into accoun
 registered service that are not supported in Quickstart: 
 
 -  Subscribing to commands, however devices connecting to registered organizations can subscribe to and receive commands from applications
--  MQTT connection over SSL
--  Durable sessions
-    - The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest QoS level and offers no confirmation of receipt.
+-  MQTT connection over SSL.
+-  Durable sessions.
+- The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest QoS level and offers no confirmation of receipt.
+- The retained flag is not currently honored.
 
 Also, in Quickstart:
 
-- The retained flag is not currently honored.
 - You can write an application to subscribe to events from devices even using the Quickstart service, see the "application recipe" for more details.
 
 Please note, the Quickstart service might drop messages that are sent more frequently than 1 per second.

@@ -126,7 +126,7 @@ To subscribe to all events published by a device in json format
 
 Handling events from devices
 -------------------------------------------------------------------------------
-To process the events received by your subscroptions you need to register an event callback method. The messages are returned as an instance of the Event class:
+To process the events received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Event class:
 
 * event.device - string (uniquely identifies the device across all types of devices in the organization)
 * event.deviceType - string

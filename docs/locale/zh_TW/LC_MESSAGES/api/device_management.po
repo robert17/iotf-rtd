@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,392 +19,504 @@ msgstr ""
 #: ..\docs\api\device_management.rst:3
 msgid "The Device Management API"
 msgstr ""
+"裝置管理 API"
 
 #: ..\docs\api\device_management.rst:7
 msgid "Authentication"
 msgstr ""
+"鑑別"
 
 #: ..\docs\api\device_management.rst:9
-msgid ""
-"The API is only accessible over HTTPS and is protected by HTTP Basic "
-"Authentication, you must provide a username and password with every request."
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
 msgstr ""
+"此 API 只能透過 HTTPS 存取，且受到「HTTP 基本鑑別」保護，您必須在每一次要求時提供使用者名稱和密碼。"
 
 #: ..\docs\api\device_management.rst:14
 msgid "Username"
 msgstr ""
+"使用者名稱"
 
 #: ..\docs\api\device_management.rst:16
 msgid "A valid API key registered to the organization you want to work with."
 msgstr ""
+"已登錄到您想要使用之組織的有效 API 金鑰。"
 
 #: ..\docs\api\device_management.rst:20
 msgid "Password"
 msgstr ""
+"密碼"
 
 #: ..\docs\api\device_management.rst:22
 msgid "The authentication token corresponding to your API key."
 msgstr ""
+"對應到 API 金鑰的鑑別記號。"
 
 #: ..\docs\api\device_management.rst:30
 msgid "View Organization"
 msgstr ""
+"檢視組織"
 
 #: ..\docs\api\device_management.rst:32
 msgid "Retrieve details about an organization."
 msgstr ""
+"擷取關於組織的詳細資料。"
 
-#: ..\docs\api\device_management.rst:36 ..\docs\api\device_management.rst:85
-#: ..\docs\api\device_management.rst:205 ..\docs\api\device_management.rst:298
-#: ..\docs\api\device_management.rst:364 ..\docs\api\device_management.rst:466
-#: ..\docs\api\device_management.rst:576 ..\docs\api\device_management.rst:667
+#: ..\docs\api\device_management.rst:36
+#: ..\docs\api\device_management.rst:85
+#: ..\docs\api\device_management.rst:205
+#: ..\docs\api\device_management.rst:298
+#: ..\docs\api\device_management.rst:364
+#: ..\docs\api\device_management.rst:466
+#: ..\docs\api\device_management.rst:576
+#: ..\docs\api\device_management.rst:667
 msgid "Request"
 msgstr ""
+"要求"
 
 #: ..\docs\api\device_management.rst:37
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
 
-#: ..\docs\api\device_management.rst:41 ..\docs\api\device_management.rst:91
-#: ..\docs\api\device_management.rst:211 ..\docs\api\device_management.rst:304
-#: ..\docs\api\device_management.rst:370 ..\docs\api\device_management.rst:472
-#: ..\docs\api\device_management.rst:582 ..\docs\api\device_management.rst:673
+#: ..\docs\api\device_management.rst:41
+#: ..\docs\api\device_management.rst:91
+#: ..\docs\api\device_management.rst:211
+#: ..\docs\api\device_management.rst:304
+#: ..\docs\api\device_management.rst:370
+#: ..\docs\api\device_management.rst:472
+#: ..\docs\api\device_management.rst:582
+#: ..\docs\api\device_management.rst:673
 msgid "Request Body"
 msgstr ""
+"要求內文"
 
-#: ..\docs\api\device_management.rst:43 ..\docs\api\device_management.rst:93
-#: ..\docs\api\device_management.rst:213 ..\docs\api\device_management.rst:306
-#: ..\docs\api\device_management.rst:584 ..\docs\api\device_management.rst:675
+#: ..\docs\api\device_management.rst:43
+#: ..\docs\api\device_management.rst:93
+#: ..\docs\api\device_management.rst:213
+#: ..\docs\api\device_management.rst:306
+#: ..\docs\api\device_management.rst:584
+#: ..\docs\api\device_management.rst:675
 #: ..\docs\api\device_management.rst:681
 msgid "None"
 msgstr ""
+"無"
 
-#: ..\docs\api\device_management.rst:47 ..\docs\api\device_management.rst:97
-#: ..\docs\api\device_management.rst:217 ..\docs\api\device_management.rst:310
-#: ..\docs\api\device_management.rst:405 ..\docs\api\device_management.rst:496
-#: ..\docs\api\device_management.rst:588 ..\docs\api\device_management.rst:679
+#: ..\docs\api\device_management.rst:47
+#: ..\docs\api\device_management.rst:97
+#: ..\docs\api\device_management.rst:217
+#: ..\docs\api\device_management.rst:310
+#: ..\docs\api\device_management.rst:405
+#: ..\docs\api\device_management.rst:496
+#: ..\docs\api\device_management.rst:588
+#: ..\docs\api\device_management.rst:679
 msgid "Response Body"
 msgstr ""
+"回應內文"
 
-#: ..\docs\api\device_management.rst:49 ..\docs\api\device_management.rst:103
-#: ..\docs\api\device_management.rst:109 ..\docs\api\device_management.rst:223
-#: ..\docs\api\device_management.rst:229 ..\docs\api\device_management.rst:375
-#: ..\docs\api\device_management.rst:412 ..\docs\api\device_management.rst:503
-#: ..\docs\api\device_management.rst:509 ..\docs\api\device_management.rst:594
+#: ..\docs\api\device_management.rst:49
+#: ..\docs\api\device_management.rst:103
+#: ..\docs\api\device_management.rst:109
+#: ..\docs\api\device_management.rst:223
+#: ..\docs\api\device_management.rst:229
+#: ..\docs\api\device_management.rst:375
+#: ..\docs\api\device_management.rst:412
+#: ..\docs\api\device_management.rst:503
+#: ..\docs\api\device_management.rst:509
+#: ..\docs\api\device_management.rst:594
 #: ..\docs\api\device_management.rst:600
 msgid "id - String"
 msgstr ""
+"id - 字串"
 
 #: ..\docs\api\device_management.rst:50
 msgid "name - String"
 msgstr ""
+"name - 字串"
 
 #: ..\docs\api\device_management.rst:51
 msgid "created - ISO8601 date string"
 msgstr ""
+"created - ISO8601 日期字串"
 
 #: ..\docs\api\device_management.rst:52
 msgid "updated - ISO8601 date string"
 msgstr ""
+"updated - ISO8601 日期字串"
 
-#: ..\docs\api\device_management.rst:56 ..\docs\api\device_management.rst:126
-#: ..\docs\api\device_management.rst:246 ..\docs\api\device_management.rst:319
-#: ..\docs\api\device_management.rst:423 ..\docs\api\device_management.rst:526
+#: ..\docs\api\device_management.rst:56
+#: ..\docs\api\device_management.rst:126
+#: ..\docs\api\device_management.rst:246
+#: ..\docs\api\device_management.rst:319
+#: ..\docs\api\device_management.rst:423
+#: ..\docs\api\device_management.rst:526
 #: ..\docs\api\device_management.rst:617
 msgid "Example Response"
 msgstr ""
+"回應範例"
 
-#: ..\docs\api\device_management.rst:69 ..\docs\api\device_management.rst:189
-#: ..\docs\api\device_management.rst:282 ..\docs\api\device_management.rst:336
-#: ..\docs\api\device_management.rst:449 ..\docs\api\device_management.rst:560
-#: ..\docs\api\device_management.rst:651 ..\docs\api\device_management.rst:685
+#: ..\docs\api\device_management.rst:69
+#: ..\docs\api\device_management.rst:189
+#: ..\docs\api\device_management.rst:282
+#: ..\docs\api\device_management.rst:336
+#: ..\docs\api\device_management.rst:449
+#: ..\docs\api\device_management.rst:560
+#: ..\docs\api\device_management.rst:651
+#: ..\docs\api\device_management.rst:685
 msgid "Common Response Codes"
 msgstr ""
+"一般回應碼"
 
-#: ..\docs\api\device_management.rst:71 ..\docs\api\device_management.rst:191
-#: ..\docs\api\device_management.rst:284 ..\docs\api\device_management.rst:338
-#: ..\docs\api\device_management.rst:562 ..\docs\api\device_management.rst:653
+#: ..\docs\api\device_management.rst:71
+#: ..\docs\api\device_management.rst:191
+#: ..\docs\api\device_management.rst:284
+#: ..\docs\api\device_management.rst:338
+#: ..\docs\api\device_management.rst:562
+#: ..\docs\api\device_management.rst:653
 msgid "200 (Success)"
 msgstr ""
+"200（成功）"
 
 #: ..\docs\api\device_management.rst:79
 msgid "List Devices"
 msgstr ""
+"列出裝置"
 
 #: ..\docs\api\device_management.rst:81
 msgid "Get a list of all devices in an organization."
 msgstr ""
+"取得組織中所有裝置的清單。"
 
 #: ..\docs\api\device_management.rst:87
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 
-#: ..\docs\api\device_management.rst:99 ..\docs\api\device_management.rst:219
+#: ..\docs\api\device_management.rst:99
+#: ..\docs\api\device_management.rst:219
 msgid "The response body will contain a list of devices, as below:"
 msgstr ""
+"回應內文將包含裝置清單，如下所示："
 
-#: ..\docs\api\device_management.rst:101 ..\docs\api\device_management.rst:221
-#: ..\docs\api\device_management.rst:410 ..\docs\api\device_management.rst:501
+#: ..\docs\api\device_management.rst:101
+#: ..\docs\api\device_management.rst:221
+#: ..\docs\api\device_management.rst:410
+#: ..\docs\api\device_management.rst:501
 #: ..\docs\api\device_management.rst:592
 msgid "uuid - String"
 msgstr ""
+"uuid - 字串"
 
-#: ..\docs\api\device_management.rst:102 ..\docs\api\device_management.rst:110
-#: ..\docs\api\device_management.rst:222 ..\docs\api\device_management.rst:230
-#: ..\docs\api\device_management.rst:374 ..\docs\api\device_management.rst:411
-#: ..\docs\api\device_management.rst:502 ..\docs\api\device_management.rst:510
-#: ..\docs\api\device_management.rst:593 ..\docs\api\device_management.rst:601
+#: ..\docs\api\device_management.rst:102
+#: ..\docs\api\device_management.rst:110
+#: ..\docs\api\device_management.rst:222
+#: ..\docs\api\device_management.rst:230
+#: ..\docs\api\device_management.rst:374
+#: ..\docs\api\device_management.rst:411
+#: ..\docs\api\device_management.rst:502
+#: ..\docs\api\device_management.rst:510
+#: ..\docs\api\device_management.rst:593
+#: ..\docs\api\device_management.rst:601
 msgid "type - String"
 msgstr ""
+"type - 字串"
 
-#: ..\docs\api\device_management.rst:104 ..\docs\api\device_management.rst:413
+#: ..\docs\api\device_management.rst:104
+#: ..\docs\api\device_management.rst:413
 msgid "metadata - Complex data (if available)"
 msgstr ""
+"metadata - 複式資料（如果可用的話）"
 
-#: ..\docs\api\device_management.rst:105 ..\docs\api\device_management.rst:225
-#: ..\docs\api\device_management.rst:505 ..\docs\api\device_management.rst:596
+#: ..\docs\api\device_management.rst:105
+#: ..\docs\api\device_management.rst:225
+#: ..\docs\api\device_management.rst:505
+#: ..\docs\api\device_management.rst:596
 msgid "registration"
 msgstr ""
+"登錄"
 
-#: ..\docs\api\device_management.rst:107 ..\docs\api\device_management.rst:227
-#: ..\docs\api\device_management.rst:507 ..\docs\api\device_management.rst:598
+#: ..\docs\api\device_management.rst:107
+#: ..\docs\api\device_management.rst:227
+#: ..\docs\api\device_management.rst:507
+#: ..\docs\api\device_management.rst:598
 msgid "auth"
 msgstr ""
+"鑑別"
 
-#: ..\docs\api\device_management.rst:112 ..\docs\api\device_management.rst:232
-#: ..\docs\api\device_management.rst:512 ..\docs\api\device_management.rst:603
+#: ..\docs\api\device_management.rst:112
+#: ..\docs\api\device_management.rst:232
+#: ..\docs\api\device_management.rst:512
+#: ..\docs\api\device_management.rst:603
 msgid "date - ISO8601 date string"
 msgstr ""
+"date - ISO8601 日期字串"
 
-#: ..\docs\api\device_management.rst:114 ..\docs\api\device_management.rst:234
-#: ..\docs\api\device_management.rst:514 ..\docs\api\device_management.rst:605
+#: ..\docs\api\device_management.rst:114
+#: ..\docs\api\device_management.rst:234
+#: ..\docs\api\device_management.rst:514
+#: ..\docs\api\device_management.rst:605
 msgid "status"
 msgstr ""
+"狀態"
 
-#: ..\docs\api\device_management.rst:116 ..\docs\api\device_management.rst:236
-#: ..\docs\api\device_management.rst:516 ..\docs\api\device_management.rst:607
+#: ..\docs\api\device_management.rst:116
+#: ..\docs\api\device_management.rst:236
+#: ..\docs\api\device_management.rst:516
+#: ..\docs\api\device_management.rst:607
 msgid "mqtt"
 msgstr ""
+"mqtt"
 
-#: ..\docs\api\device_management.rst:118 ..\docs\api\device_management.rst:238
-#: ..\docs\api\device_management.rst:518 ..\docs\api\device_management.rst:609
-msgid "client address - String"
+#: ..\docs\api\device_management.rst:118
+#: ..\docs\api\device_management.rst:238
+#: ..\docs\api\device_management.rst:518
+#: ..\docs\api\device_management.rst:609
+msgid "clientAddress - String"
 msgstr ""
+"clientAddress - 字串"
 
-#: ..\docs\api\device_management.rst:119 ..\docs\api\device_management.rst:239
-#: ..\docs\api\device_management.rst:519 ..\docs\api\device_management.rst:610
+#: ..\docs\api\device_management.rst:119
+#: ..\docs\api\device_management.rst:239
+#: ..\docs\api\device_management.rst:519
+#: ..\docs\api\device_management.rst:610
 msgid "protocol - String"
 msgstr ""
+"protocol - 字串"
 
-#: ..\docs\api\device_management.rst:120 ..\docs\api\device_management.rst:240
-#: ..\docs\api\device_management.rst:520 ..\docs\api\device_management.rst:611
+#: ..\docs\api\device_management.rst:120
+#: ..\docs\api\device_management.rst:240
+#: ..\docs\api\device_management.rst:520
+#: ..\docs\api\device_management.rst:611
 msgid "action - String"
 msgstr ""
+"action - 字串"
 
-#: ..\docs\api\device_management.rst:121 ..\docs\api\device_management.rst:241
-#: ..\docs\api\device_management.rst:521 ..\docs\api\device_management.rst:612
+#: ..\docs\api\device_management.rst:121
+#: ..\docs\api\device_management.rst:241
+#: ..\docs\api\device_management.rst:521
+#: ..\docs\api\device_management.rst:612
 msgid "timestamp - ISO8061 date string"
 msgstr ""
+"timestamp - ISO8061 日期字串"
 
-#: ..\docs\api\device_management.rst:122 ..\docs\api\device_management.rst:242
-#: ..\docs\api\device_management.rst:522 ..\docs\api\device_management.rst:613
+#: ..\docs\api\device_management.rst:122
+#: ..\docs\api\device_management.rst:242
+#: ..\docs\api\device_management.rst:522
+#: ..\docs\api\device_management.rst:613
 msgid "port - Integer"
 msgstr ""
+"port - 整數"
 
 #: ..\docs\api\device_management.rst:199
 msgid "List Devices by Type"
 msgstr ""
+"依類型列出裝置"
 
 #: ..\docs\api\device_management.rst:201
 msgid "Get a list of all devices of a specific type in an organization."
 msgstr ""
+"取得組織中特定類型的所有裝置清單。"
 
 #: ..\docs\api\device_management.rst:207
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
 
-#: ..\docs\api\device_management.rst:224 ..\docs\api\device_management.rst:477
-#: ..\docs\api\device_management.rst:504 ..\docs\api\device_management.rst:595
+#: ..\docs\api\device_management.rst:224
+#: ..\docs\api\device_management.rst:477
+#: ..\docs\api\device_management.rst:504
+#: ..\docs\api\device_management.rst:595
 msgid "metadata - Complex data"
 msgstr ""
+"metadata - 複式資料"
 
 #: ..\docs\api\device_management.rst:292
 msgid "List Device Types"
 msgstr ""
+"列出裝置類型"
 
 #: ..\docs\api\device_management.rst:294
 msgid "Get a list of all devices types in an organization."
 msgstr ""
+"取得組織中所有裝置類型的清單。"
 
 #: ..\docs\api\device_management.rst:300
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
 
 #: ..\docs\api\device_management.rst:312
 msgid "The response body will contain a list of device types:"
 msgstr ""
+"回應內文將包含裝置類型的清單："
 
 #: ..\docs\api\device_management.rst:314
 msgid "deviceType - String"
 msgstr ""
+"deviceType - 字串"
 
 #: ..\docs\api\device_management.rst:315
 msgid "count - Integer"
 msgstr ""
+"count - 整數"
 
 #: ..\docs\api\device_management.rst:346
 msgid "Register a New Device"
 msgstr ""
+"登錄新裝置"
 
 #: ..\docs\api\device_management.rst:348
 msgid "Register a new device to an organization."
 msgstr ""
+"在組織中登錄新裝置。"
 
 #: ..\docs\api\device_management.rst:350
-msgid ""
-"You can use any scheme of your choice when assigning values for type and id "
-"to registered devices, however the following restrictions apply:"
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
 msgstr ""
+"對已登錄裝置指派類型和 ID 的值時，您可以使用自己選擇的任何方法，但有下列限制："
 
 #: ..\docs\api\device_management.rst:353
 msgid "Maximum length of 32 characters"
 msgstr ""
+"長度上限為 32 個字元"
 
 #: ..\docs\api\device_management.rst:354
-msgid ""
-"Must comprise only alpha-numeric characters and the following special "
-"characters:"
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
 msgstr ""
+"只能包含英數字元和下列特殊字元："
 
 #: ..\docs\api\device_management.rst:356
 msgid "dash (\"-\")"
 msgstr ""
+"橫線 (\"-\")"
 
 #: ..\docs\api\device_management.rst:357
 msgid "underscore (\"\\_\")"
 msgstr ""
+"底線 (\"\\_\")"
 
 #: ..\docs\api\device_management.rst:358
 msgid "dot (\".\")"
 msgstr ""
+"句點 (\".\")"
 
 #: ..\docs\api\device_management.rst:366
 msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 msgstr ""
+"POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 
 #: ..\docs\api\device_management.rst:372
-msgid ""
-"You must specify the type and identifer of the device being registered."
+msgid "You must specify the type and identifer of the device being registered."
 msgstr ""
+"您必須指定所要登錄之裝置的類型和 ID。"
 
 #: ..\docs\api\device_management.rst:376
 msgid "metadata - Complex data (optional)"
 msgstr ""
+"metadata - 複式資料（選用）"
 
 #: ..\docs\api\device_management.rst:377
-msgid ""
-"password - String (optional, and follows the same restrictions as type and "
-"id, with a minimum length of 8 characters)"
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
 msgstr ""
+"password - 字串（選用，遵循與類型和 ID 相同的限制，長度下限為 8 個字元）"
 
-#: ..\docs\api\device_management.rst:381 ..\docs\api\device_management.rst:481
+#: ..\docs\api\device_management.rst:381
+#: ..\docs\api\device_management.rst:481
 msgid "Example Request"
 msgstr ""
+"要求範例"
 
 #: ..\docs\api\device_management.rst:398
 msgid "Response Headers"
 msgstr ""
+"回應標頭"
 
 #: ..\docs\api\device_management.rst:400
-msgid ""
-"The response header will contain the location (resource URI) for the "
-"registered device. \\* Location - URI"
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
 msgstr ""
+"回應標頭將包含已登錄裝置的位置（資源 URI）。\\* 位置 - URI"
 
 #: ..\docs\api\device_management.rst:407
-msgid ""
-"The response body will contain a uuid and password for the registered "
-"device."
+msgid "The response body will contain a uuid and password for the registered device."
 msgstr ""
+"回應內文將包含已登錄裝置的 UUID 和密碼。"
 
 #: ..\docs\api\device_management.rst:414
 msgid "password - String"
 msgstr ""
+"password - 字串"
 
 #: ..\docs\api\device_management.rst:416
-msgid ""
-"The response body will contain the generated authentication token for this "
-"device. You must make sure to record this token when processing the "
-"response. The data is stored hashed and salted so we are not able to "
-"retrieve lost authentication tokens."
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
 msgstr ""
+"回應內文將包含此裝置已產生的鑑別記號。在處理回應時，請務必記錄此記號。此資料以雜湊方式儲存並包含冗餘字串，因此我們無法擷取失去的鑑別記號。"
 
 #: ..\docs\api\device_management.rst:451
-msgid ""
-"201 (Created) - The device was successfully registered (Location header set "
-"to the URL of the new device)"
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
 msgstr ""
+"201（已建立）- 已順利登錄此裝置（位置標頭設為新裝置的 URL）"
 
 #: ..\docs\api\device_management.rst:460
 msgid "Update a Registered Device"
 msgstr ""
+"更新已登錄裝置"
 
 #: ..\docs\api\device_management.rst:462
 msgid "Update an existing device in an organization."
 msgstr ""
+"更新組織中現有的裝置。"
 
 #: ..\docs\api\device_management.rst:468
-msgid ""
-"PUT "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 
 #: ..\docs\api\device_management.rst:474
-msgid ""
-"Currently, the only property of a device that can be changed after initial "
-"registration is its metadata."
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
 msgstr ""
+"目前，在起始登錄之後可變更的裝置唯一內容是它的 meta 資料。"
 
 #: ..\docs\api\device_management.rst:498
-msgid ""
-"The response body will contain the updated properties of the registered "
-"device."
+msgid "The response body will contain the updated properties of the registered device."
 msgstr ""
+"回應內文將包含已登錄裝置的已更新內容。"
 
 #: ..\docs\api\device_management.rst:570
 msgid "View a Registered Device"
 msgstr ""
+"檢視已登錄裝置"
 
 #: ..\docs\api\device_management.rst:572
 msgid "Get summary information about a registered device in an organization."
 msgstr ""
+"取得關於組織中已登錄裝置的摘要資訊。"
 
 #: ..\docs\api\device_management.rst:578
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 
 #: ..\docs\api\device_management.rst:590
 msgid "The response body will contain the known properties of the device."
 msgstr ""
+"回應內文將包含裝置的已知內容。"
 
 #: ..\docs\api\device_management.rst:661
 msgid "Delete a Registered Device"
 msgstr ""
+"刪除已登錄裝置"
 
 #: ..\docs\api\device_management.rst:663
 msgid "Unregister a device from an organization."
 msgstr ""
+"從組織中取消登錄裝置。"
 
 #: ..\docs\api\device_management.rst:669
-msgid ""
-"DELETE "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 
 #: ..\docs\api\device_management.rst:687
 msgid "204 (No Content) - The device was successfully deleted"
 msgstr ""
+"204（無內容）- 已順利刪除裝置"
+

@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,171 +19,155 @@ msgstr ""
 #: ..\docs\libraries\python_cli_for_devices.rst:3
 msgid "Python Client Library - Devices"
 msgstr ""
+"Python クライアント・ライブラリー - デバイス"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:6
 msgid "Introduction"
 msgstr ""
+"概要"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:8
-msgid ""
-"This client library describes how to use devices with the python ibmiotf "
-"module. For help with getting started with this module, see `Python Client "
-"Library - Introduction "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
+msgid "This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
 msgstr ""
+"このクライアント・ライブラリーは、python ibmiotf モジュールでデバイスを使用する方法について記述しています。このモジュールを始めるにあたって、ヘルプとなる `Python クライアント・ライブラリー - 概要 <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__ を参照してください。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:10
-msgid ""
-"This client library is divided into two sections, both included within the "
-"library. This section contains information on how devices publish events and"
-" handle commands using the Python ibmiotf module, and the Applications "
-"section contains information on how applications can use the ibmiotf module "
-"to interact with devices."
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
 msgstr ""
+"このクライアント・ライブラリーは、それぞれがライブラリー内に組み込まれた 2 つのセクションに分割されます。このセクションにはデバイスが Python ibmiotf モジュールを使用してイベントをパブリッシュしコマンドを処理する方法に関する情報が、アプリケーション・セクションにはアプリケーションが ibmiotf モジュールを使用してデバイスと対話する方法に関する情報が含まれます。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:14
 msgid "Constructor"
 msgstr ""
+"コンストラクター"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:16
-msgid ""
-"The constructor builds the client instance, and accepts an options dict "
-"containing the following definitions:"
+msgid "The constructor builds the client instance, and accepts an options dict containing the following definitions:"
 msgstr ""
+"コンストラクターはクライアント・インスタンスを構築し、以下の定義を含む options dict を受け入れます。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:18
 msgid "org - Your organization ID."
 msgstr ""
+"org - 組織 ID。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:19
 msgid "type - The type of your device."
 msgstr ""
+"type - デバイスのタイプ。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:20
 msgid "id - The ID of your device."
 msgstr ""
+"id - デバイスの ID。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:21
-msgid ""
-"auth-method - Method of authentication (the only value currently supported "
-"is \"token\")."
+msgid "auth-method - Method of authentication (the only value currently supported is \"token\")."
 msgstr ""
+"auth-method - 認証方式 (現在サポートされている値は \"token\" のみ)。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:22
 msgid "auth-token - API key token (required if auth-method is \"token\")."
 msgstr ""
+"auth-token - API キー・トークン (auth-method が \"token\" であるときに必須)。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:24
-msgid ""
-"If no options dict is provided, the client will connect to the Internet of "
-"Things Foundation Quickstart, and default to an unregistered device. The "
-"options dict creates definitions which are used to interact with the "
-"Internet of Things Foundation module."
+msgid "If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the Internet of Things Foundation module."
 msgstr ""
+"options dict が指定されていないと、クライアントは Internet of Things Foundation Quickstart に接続し、デフォルトで未登録デバイスになります。options dict は Internet of Things Foundation モジュールと対話するために使用する定義を作成します。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:43
 msgid "Using a configuration file"
 msgstr ""
+"構成ファイルの使用"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:45
-msgid ""
-"Instead of including an options dict directly, you can use a configuration "
-"file containing an options dict. If you are using a configuration file "
-"containing an options dict, use the following code format."
+msgid "Instead of including an options dict directly, you can use a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format."
 msgstr ""
+"options dict を直接組み込む代わりに、options dict を含んでいる構成ファイルを使用できます。options dict を含んでいる構成ファイルを使用している場合、以下のコード形式を使用してください。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:56
 msgid "The content of the configuration file must be in the following format:"
 msgstr ""
+"構成ファイルのコンテンツは、以下の形式でなければなりません。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:72
 msgid "Publishing events"
 msgstr ""
+"イベントのパブリッシング"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:73
-msgid ""
-"Events are the mechanism by which devices publish data to the Internet of "
-"Things Foundation. The device controls the content of the event and assigns "
-"a name for each event it sends."
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
 msgstr ""
+"イベントとは、デバイスが Internet of Things Foundation にデータをパブリッシュする際に使用するメカニズムです。デバイスはイベントのコンテンツを制御し、送信するイベントごとに名前を割り当てます。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:75
-msgid ""
-"When an event is received by the IOT Foundation the credentials of the "
-"connection on which the event was received are used to determine from which "
-"device the event was sent. With this architecture it is impossible for a "
-"device to impersonate another device."
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
 msgstr ""
+"IoT Foundation がイベントを受け取ると、イベントが受信された接続の資格情報を使用して、イベントの送信元デバイスが判別されます。このアーキテクチャーにより、デバイスは別のデバイスの偽名を使用することが不可能になります。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:77
-msgid ""
-"Events can be published at any of the three :ref:`quality of service levels "
-"<qoslevels>` defined by the MQTT protocol.  By default events will be "
-"published as qos level 0."
+msgid "Events can be published at any of the three :ref:`quality of service levels <qoslevels>` defined by the MQTT protocol.  By default events will be published as qos level 0."
 msgstr ""
+"イベントは、MQTT プロトコルによって定義された 3 つの :ref:`サービスの品質<qoslevels>` のいずれでもパブリッシュできます。デフォルトで、イベントは qos レベル 0 としてパブリッシュされます。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:80
 msgid "Publish event using default quality of service"
 msgstr ""
+"デフォルトのサービスの品質を使用してイベントをパブリッシュ"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:89
 msgid "Publish event using user-defined quality of service"
 msgstr ""
+"ユーザー定義のサービスの品質を使用してイベントをパブリッシュ"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:91
-msgid ""
-"Events can be published at higher MQTT quality of servive levels, but these "
-"events may take slower then QoS level 0, because of the extra confirmation "
-"of receipt."
+msgid "Events can be published at higher MQTT quality of servive levels, but these events may take slower then QoS level 0, because of the extra confirmation of receipt."
 msgstr ""
+"イベントは、より高レベルな MQTT サービスの品質でパブリッシュできますが、余分な受信の確認があるためこれらのイベントは QoS レベル 0 よりも低速になる可能性があります。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:103
 msgid "Handling commands"
 msgstr ""
+"コマンドの処理"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:104
-msgid ""
-"When the device client connects it automatically subscribes to any command "
-"for this device.  To process specific commands you need to register a "
-"command callback method. The messages are returned as an instance of the "
-"Command class which has the following properties:"
+msgid "When the device client connects it automatically subscribes to any command for this device.  To process specific commands you need to register a command callback method. The messages are returned as an instance of the Command class which has the following properties:"
 msgstr ""
+"デバイス・クライアントは、接続時に自動的にこのデバイスのコマンドをサブスクライブします。特定のコマンドを処理するには、コマンド・コールバック・メソッドを登録する必要があります。メッセージは、以下のプロパティーを持つ Command クラスのインスタンスとして返されます。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:109
 msgid "payload - string"
 msgstr ""
+"payload - ストリング"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:110
 msgid "format - string"
 msgstr ""
+"format - ストリング"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:111
 msgid "data - dict"
 msgstr ""
+"data - dict"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:112
 msgid "timestamp - datetime"
 msgstr ""
+"timestamp - 日時"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:140
 msgid "Custom message format support"
 msgstr ""
+"カスタム・メッセージ形式のサポート"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:141
-msgid ""
-"By default the library supports the encoding and decoding of Python "
-"dictionary objects as JSON when you use msgFormat \"json\".  When you use "
-"msgFormat \"json-iotf\" it will encode the message in accordance with the "
-"IOTF JSON Payload Specification.  To add support for your own custom message"
-" formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-"
-"python/tree/master/samples/customMessageFormat>`__"
+msgid "By default the library supports the encoding and decoding of Python dictionary objects as JSON when you use msgFormat \"json\".  When you use msgFormat \"json-iotf\" it will encode the message in accordance with the IoTF JSON Payload Specification.  To add support for your own custom message formats see the `sample in GitHub <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__"
 msgstr ""
+"msgFormat \"json\" を使用している場合、ライブラリーはデフォルトで JSON としての Python ディクショナリー・オブジェクトのエンコードおよびデコードをサポートします。msgFormat \"json-iotf\" を使用している場合、メッセージは IoTF JSON ペイロード仕様に従ってエンコードされます。独自のカスタム・メッセージ形式のサポートを追加するには、`GitHub のサンプル <https://github.com/ibm-messaging/iot-python/tree/master/samples/customMessageFormat>`__ を参照してください。"
 
 #: ..\docs\libraries\python_cli_for_devices.rst:143
-msgid ""
-"Once you have created your custom encoder module it needs to be registered "
-"in the device client.  If you attempt to use an unknown message format when "
-"sending an event or the device receives a command send in a format that it "
-"does not know how to decode then the library will throw a "
-"MissingMessageDecoderException."
+msgid "Once you have created your custom encoder module it needs to be registered in the device client.  If you attempt to use an unknown message format when sending an event or the device receives a command send in a format that it does not know how to decode then the library will throw a MissingMessageDecoderException."
 msgstr ""
+"作成したカスタム・エンコーダー・モジュールは、デバイス・クライアントに登録する必要があります。イベントの送信時に不明なメッセージ形式の使用を試みた場合、またはデバイスがデコード方法を認識していない形式で送信されたコマンドを受信した場合、ライブラリーは MissingMessageDecoderException をスローします。"
+

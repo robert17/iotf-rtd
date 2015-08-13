@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:2
+msgid "Embedded C Client Library - Samples"
+msgstr ""
+"Embedded C 클라이언트 라이브러리 - 샘플"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:5
+msgid "Prerequisites"
+msgstr ""
+"전제조건"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:6
+msgid "You must complete the Installation steps in the Internet of Things Foundation Embedded C Samples - Introduction page, before you can run the following samples."
+msgstr ""
+"다음의 샘플을 실행하려면 먼저 Internet of Things Foundation Embedded C 샘플 - 소개 페이지에 있는 설치 단계를 완료해야 합니다. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:9
+msgid "Using these samples"
+msgstr ""
+"이 샘플 사용"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:10
+msgid "Using the cd command in the command prompt, navigate to the samples directory of your installation of the Embedded C client library."
+msgstr ""
+"명령 프롬프트에서 cd 명령을 사용하여 Embedded C 클라이언트 라이브러리 설치의 samples 디렉토리를 탐색하십시오. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:13
+msgid "Go to the *samples* directory to run the sample. Either run *make* or use *build.sh* to compile and build the samples."
+msgstr ""
+"*samples* 디렉토리로 이동하여 샘플을 실행하십시오. *make*를 실행하거나 *build.sh*를 사용하여 샘플을 컴파일하고 빌드하십시오. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:22
+msgid "The helloWorld.c Sample Application"
+msgstr ""
+"helloWorld.c 샘플 애플리케이션"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:24
+msgid "This sample application demonstrates the Internet of Things Foundation Quickstart service. The sample application connects to the Quickstart service and sends event data. To connect to the Quickstart service, you must provide an unique identifier for the device."
+msgstr ""
+"이 샘플 애플리케이션은 Internet of Things Foundation Quickstart 서비스를 보여줍니다. 이 샘플 애플리케이션은 Quickstart 서비스에 연결하고 이벤트 데이터를 전송합니다. Quickstart 서비스에 연결하려면 디바이스에 대한 고유 ID를 제공해야 합니다. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:26
+msgid "This sample is a great place to get started with the Internet of Things Foundation Service using Quickstart."
+msgstr ""
+"이 샘플은 Quickstart를 사용하여 Internet of Things Foundation 서비스를 시작하는 최적의 위치입니다. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:43
+msgid "The sampleDevice.c Sample Application"
+msgstr ""
+"sampleDevice.c 샘플 애플리케이션"
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:45
+msgid "This sample application demonstrates the registered mode in Internet of Things Foundation. This sample connects to the Internet of Things Foundation registered service. On registered mode, the devices can both publish events and receive commands."
+msgstr ""
+"이 샘플 애플리케이션은 Internet of Things Foundation에서 등록된 모드를 보여줍니다. 이 샘플은 Internet of Things Foundation 등록된 서비스에 연결됩니다. 등록된 모드에서 디바이스는 이벤트를 공개하고 명령을 수신할 수 있습니다. "
+
+#: ..\docs\embeddedc\embeddedc_samples.rst:47
+msgid "But for running this sample, you must first register the device at https://internetofthings.ibmcloud.com/#/ and copy the credentials in the *device.cfg* file. Using this sample, users can publish events and receive commands from the Internet of Things Foundation service."
+msgstr ""
+"이 샘플을 실행하려면 먼저 https://internetofthings.ibmcloud.com/#/에서 디바이스를 등록한 후 *device.cfg* 파일에 있는 신임 정보를 복사해야 합니다. 이 샘플을 사용하면 사용자가 Internet of Things Foundation 서비스로부터 이벤트를 공개하고 명령을 수신할 수 있습니다. "
+

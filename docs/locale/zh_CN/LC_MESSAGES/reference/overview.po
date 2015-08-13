@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,123 +19,150 @@ msgstr ""
 #: ..\docs\reference\overview.rst:3
 msgid "Building the Internet of Things"
 msgstr ""
+"构建 Internet of Things"
 
 #: ..\docs\reference\overview.rst:5
-msgid ""
-"The IBM Internet of Things Foundation is powered by a core of IBM's leading "
-"products and services:"
+msgid "The IBM Internet of Things Foundation is powered by a core of IBM's leading products and services:"
 msgstr ""
+"IBM Internet of Things Foundation 基于 IBM 前沿产品和服务的核心："
 
 #: ..\docs\reference\overview.rst:8
 msgid "`IBM DataPower Gateway`_"
 msgstr ""
+"`IBM DataPower 网关`_"
 
 #: ..\docs\reference\overview.rst:9
 msgid "`IBM WebSphere Application Server Liberty Core`_"
 msgstr ""
+"`IBM WebSphere Application Server Liberty Core`_"
 
 #: ..\docs\reference\overview.rst:10
 msgid "`IBM Informix TimeSeries`_"
 msgstr ""
+"`IBM Informix TimeSeries`_"
 
 #: ..\docs\reference\overview.rst:11
 msgid "`IBM MessageSight`_"
 msgstr ""
+"`IBM MessageSight`_"
 
 #: ..\docs\reference\overview.rst:12
 msgid "Cloudant_"
 msgstr ""
+"Cloudant"
 
 #: ..\docs\reference\overview.rst:13
 msgid "SoftLayer_"
 msgstr ""
+"SoftLayer"
 
 #: ..\docs\reference\overview.rst:23
-msgid ""
-"The Foundation is also built upon a number of open source projects, "
-"including:"
+msgid "The Foundation is also built upon a number of open source projects, including:"
 msgstr ""
+"Foundation 还基于多个开放式源代码项目进行构建，包括："
 
 #: ..\docs\reference\overview.rst:25
 msgid "Logging"
 msgstr ""
+"日志记录"
 
 #: ..\docs\reference\overview.rst:27
 msgid "Logstash_"
 msgstr ""
+"Logstash"
 
 #: ..\docs\reference\overview.rst:28
 msgid "Redis_"
 msgstr ""
+"Redis"
 
 #: ..\docs\reference\overview.rst:29
 msgid "Elasticsearch_"
 msgstr ""
+"Elasticsearch"
 
 #: ..\docs\reference\overview.rst:30
 msgid "Kibana_"
 msgstr ""
+"Kibana"
 
 #: ..\docs\reference\overview.rst:32
 msgid "Service Discovery"
 msgstr ""
+"服务发现"
 
 #: ..\docs\reference\overview.rst:34
 msgid "Consul_"
 msgstr ""
+"Consul"
 
 #: ..\docs\reference\overview.rst:36
 msgid "Continuous Delivery"
 msgstr ""
+"持续交付"
 
 #: ..\docs\reference\overview.rst:38
 msgid "CasperJS_"
 msgstr ""
+"CasperJS"
 
 #: ..\docs\reference\overview.rst:39
 msgid "Chef_"
 msgstr ""
+"Chef"
 
 #: ..\docs\reference\overview.rst:40
 msgid "Docker_"
 msgstr ""
+"Docker"
 
 #: ..\docs\reference\overview.rst:41
 msgid "Karma_"
 msgstr ""
+"Karma"
 
 #: ..\docs\reference\overview.rst:42
 msgid "Mocha_"
 msgstr ""
+"Mocha"
 
 #: ..\docs\reference\overview.rst:44
 msgid "Statistics & Monitoring"
 msgstr ""
+"统计信息和监视"
 
 #: ..\docs\reference\overview.rst:46
 msgid "Graphite_"
 msgstr ""
+"Graphite"
 
 #: ..\docs\reference\overview.rst:47
 msgid "Diamond_"
 msgstr ""
+"Diamond"
 
 #: ..\docs\reference\overview.rst:48
 msgid "StatsD_"
 msgstr ""
+"StatsD"
 
 #: ..\docs\reference\overview.rst:49
 msgid "Grafana_"
 msgstr ""
+"Grafana"
 
 #: ..\docs\reference\overview.rst:51
 msgid "User Interface"
 msgstr ""
+"用户界面"
 
 #: ..\docs\reference\overview.rst:53
 msgid "AngularJS_"
 msgstr ""
+"AngularJS"
 
 #: ..\docs\reference\overview.rst:54
 msgid "Bootstrap_"
 msgstr ""
+"Bootstrap"
+

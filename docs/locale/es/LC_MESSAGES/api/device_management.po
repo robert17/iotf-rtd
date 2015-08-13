@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,392 +19,504 @@ msgstr ""
 #: ..\docs\api\device_management.rst:3
 msgid "The Device Management API"
 msgstr ""
+"API de gestión de dispositivos"
 
 #: ..\docs\api\device_management.rst:7
 msgid "Authentication"
 msgstr ""
+"Autenticación"
 
 #: ..\docs\api\device_management.rst:9
-msgid ""
-"The API is only accessible over HTTPS and is protected by HTTP Basic "
-"Authentication, you must provide a username and password with every request."
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
 msgstr ""
+"La API solo es accesible a través de HTTPS y está protegida por la autenticación básica HTTP; debe proporcionar un nombre de usuario y una contraseña con cada solicitud."
 
 #: ..\docs\api\device_management.rst:14
 msgid "Username"
 msgstr ""
+"Nombre de usuario"
 
 #: ..\docs\api\device_management.rst:16
 msgid "A valid API key registered to the organization you want to work with."
 msgstr ""
+"Una clave de API válida registrada en la organización con la que desea trabajar."
 
 #: ..\docs\api\device_management.rst:20
 msgid "Password"
 msgstr ""
+"Contraseña"
 
 #: ..\docs\api\device_management.rst:22
 msgid "The authentication token corresponding to your API key."
 msgstr ""
+"Señal de autenticación correspondiente a la clave de API."
 
 #: ..\docs\api\device_management.rst:30
 msgid "View Organization"
 msgstr ""
+"Ver organización"
 
 #: ..\docs\api\device_management.rst:32
 msgid "Retrieve details about an organization."
 msgstr ""
+"Recuperar detalles sobre una organización."
 
-#: ..\docs\api\device_management.rst:36 ..\docs\api\device_management.rst:85
-#: ..\docs\api\device_management.rst:205 ..\docs\api\device_management.rst:298
-#: ..\docs\api\device_management.rst:364 ..\docs\api\device_management.rst:466
-#: ..\docs\api\device_management.rst:576 ..\docs\api\device_management.rst:667
+#: ..\docs\api\device_management.rst:36
+#: ..\docs\api\device_management.rst:85
+#: ..\docs\api\device_management.rst:205
+#: ..\docs\api\device_management.rst:298
+#: ..\docs\api\device_management.rst:364
+#: ..\docs\api\device_management.rst:466
+#: ..\docs\api\device_management.rst:576
+#: ..\docs\api\device_management.rst:667
 msgid "Request"
 msgstr ""
+"Solicitud"
 
 #: ..\docs\api\device_management.rst:37
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
 msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/"
 
-#: ..\docs\api\device_management.rst:41 ..\docs\api\device_management.rst:91
-#: ..\docs\api\device_management.rst:211 ..\docs\api\device_management.rst:304
-#: ..\docs\api\device_management.rst:370 ..\docs\api\device_management.rst:472
-#: ..\docs\api\device_management.rst:582 ..\docs\api\device_management.rst:673
+#: ..\docs\api\device_management.rst:41
+#: ..\docs\api\device_management.rst:91
+#: ..\docs\api\device_management.rst:211
+#: ..\docs\api\device_management.rst:304
+#: ..\docs\api\device_management.rst:370
+#: ..\docs\api\device_management.rst:472
+#: ..\docs\api\device_management.rst:582
+#: ..\docs\api\device_management.rst:673
 msgid "Request Body"
 msgstr ""
+"Cuerpo de solicitud"
 
-#: ..\docs\api\device_management.rst:43 ..\docs\api\device_management.rst:93
-#: ..\docs\api\device_management.rst:213 ..\docs\api\device_management.rst:306
-#: ..\docs\api\device_management.rst:584 ..\docs\api\device_management.rst:675
+#: ..\docs\api\device_management.rst:43
+#: ..\docs\api\device_management.rst:93
+#: ..\docs\api\device_management.rst:213
+#: ..\docs\api\device_management.rst:306
+#: ..\docs\api\device_management.rst:584
+#: ..\docs\api\device_management.rst:675
 #: ..\docs\api\device_management.rst:681
 msgid "None"
 msgstr ""
+"Ninguno"
 
-#: ..\docs\api\device_management.rst:47 ..\docs\api\device_management.rst:97
-#: ..\docs\api\device_management.rst:217 ..\docs\api\device_management.rst:310
-#: ..\docs\api\device_management.rst:405 ..\docs\api\device_management.rst:496
-#: ..\docs\api\device_management.rst:588 ..\docs\api\device_management.rst:679
+#: ..\docs\api\device_management.rst:47
+#: ..\docs\api\device_management.rst:97
+#: ..\docs\api\device_management.rst:217
+#: ..\docs\api\device_management.rst:310
+#: ..\docs\api\device_management.rst:405
+#: ..\docs\api\device_management.rst:496
+#: ..\docs\api\device_management.rst:588
+#: ..\docs\api\device_management.rst:679
 msgid "Response Body"
 msgstr ""
+"Cuerpo de respuesta"
 
-#: ..\docs\api\device_management.rst:49 ..\docs\api\device_management.rst:103
-#: ..\docs\api\device_management.rst:109 ..\docs\api\device_management.rst:223
-#: ..\docs\api\device_management.rst:229 ..\docs\api\device_management.rst:375
-#: ..\docs\api\device_management.rst:412 ..\docs\api\device_management.rst:503
-#: ..\docs\api\device_management.rst:509 ..\docs\api\device_management.rst:594
+#: ..\docs\api\device_management.rst:49
+#: ..\docs\api\device_management.rst:103
+#: ..\docs\api\device_management.rst:109
+#: ..\docs\api\device_management.rst:223
+#: ..\docs\api\device_management.rst:229
+#: ..\docs\api\device_management.rst:375
+#: ..\docs\api\device_management.rst:412
+#: ..\docs\api\device_management.rst:503
+#: ..\docs\api\device_management.rst:509
+#: ..\docs\api\device_management.rst:594
 #: ..\docs\api\device_management.rst:600
 msgid "id - String"
 msgstr ""
+"id - Serie"
 
 #: ..\docs\api\device_management.rst:50
 msgid "name - String"
 msgstr ""
+"name - Serie"
 
 #: ..\docs\api\device_management.rst:51
 msgid "created - ISO8601 date string"
 msgstr ""
+"created - Serie de fecha ISO8601"
 
 #: ..\docs\api\device_management.rst:52
 msgid "updated - ISO8601 date string"
 msgstr ""
+"updated - Serie de fecha ISO8601"
 
-#: ..\docs\api\device_management.rst:56 ..\docs\api\device_management.rst:126
-#: ..\docs\api\device_management.rst:246 ..\docs\api\device_management.rst:319
-#: ..\docs\api\device_management.rst:423 ..\docs\api\device_management.rst:526
+#: ..\docs\api\device_management.rst:56
+#: ..\docs\api\device_management.rst:126
+#: ..\docs\api\device_management.rst:246
+#: ..\docs\api\device_management.rst:319
+#: ..\docs\api\device_management.rst:423
+#: ..\docs\api\device_management.rst:526
 #: ..\docs\api\device_management.rst:617
 msgid "Example Response"
 msgstr ""
+"Respuesta de ejemplo"
 
-#: ..\docs\api\device_management.rst:69 ..\docs\api\device_management.rst:189
-#: ..\docs\api\device_management.rst:282 ..\docs\api\device_management.rst:336
-#: ..\docs\api\device_management.rst:449 ..\docs\api\device_management.rst:560
-#: ..\docs\api\device_management.rst:651 ..\docs\api\device_management.rst:685
+#: ..\docs\api\device_management.rst:69
+#: ..\docs\api\device_management.rst:189
+#: ..\docs\api\device_management.rst:282
+#: ..\docs\api\device_management.rst:336
+#: ..\docs\api\device_management.rst:449
+#: ..\docs\api\device_management.rst:560
+#: ..\docs\api\device_management.rst:651
+#: ..\docs\api\device_management.rst:685
 msgid "Common Response Codes"
 msgstr ""
+"Códigos de respuesta comunes"
 
-#: ..\docs\api\device_management.rst:71 ..\docs\api\device_management.rst:191
-#: ..\docs\api\device_management.rst:284 ..\docs\api\device_management.rst:338
-#: ..\docs\api\device_management.rst:562 ..\docs\api\device_management.rst:653
+#: ..\docs\api\device_management.rst:71
+#: ..\docs\api\device_management.rst:191
+#: ..\docs\api\device_management.rst:284
+#: ..\docs\api\device_management.rst:338
+#: ..\docs\api\device_management.rst:562
+#: ..\docs\api\device_management.rst:653
 msgid "200 (Success)"
 msgstr ""
+"200 (Éxito)"
 
 #: ..\docs\api\device_management.rst:79
 msgid "List Devices"
 msgstr ""
+"Listar dispositivos"
 
 #: ..\docs\api\device_management.rst:81
 msgid "Get a list of all devices in an organization."
 msgstr ""
+"Obtener una lista de todos los dispositivos de una organización."
 
 #: ..\docs\api\device_management.rst:87
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices"
 
-#: ..\docs\api\device_management.rst:99 ..\docs\api\device_management.rst:219
+#: ..\docs\api\device_management.rst:99
+#: ..\docs\api\device_management.rst:219
 msgid "The response body will contain a list of devices, as below:"
 msgstr ""
+"El cuerpo de respuesta contendrá una lista de dispositivos, como se indica más abajo:"
 
-#: ..\docs\api\device_management.rst:101 ..\docs\api\device_management.rst:221
-#: ..\docs\api\device_management.rst:410 ..\docs\api\device_management.rst:501
+#: ..\docs\api\device_management.rst:101
+#: ..\docs\api\device_management.rst:221
+#: ..\docs\api\device_management.rst:410
+#: ..\docs\api\device_management.rst:501
 #: ..\docs\api\device_management.rst:592
 msgid "uuid - String"
 msgstr ""
+"uuid - Serie"
 
-#: ..\docs\api\device_management.rst:102 ..\docs\api\device_management.rst:110
-#: ..\docs\api\device_management.rst:222 ..\docs\api\device_management.rst:230
-#: ..\docs\api\device_management.rst:374 ..\docs\api\device_management.rst:411
-#: ..\docs\api\device_management.rst:502 ..\docs\api\device_management.rst:510
-#: ..\docs\api\device_management.rst:593 ..\docs\api\device_management.rst:601
+#: ..\docs\api\device_management.rst:102
+#: ..\docs\api\device_management.rst:110
+#: ..\docs\api\device_management.rst:222
+#: ..\docs\api\device_management.rst:230
+#: ..\docs\api\device_management.rst:374
+#: ..\docs\api\device_management.rst:411
+#: ..\docs\api\device_management.rst:502
+#: ..\docs\api\device_management.rst:510
+#: ..\docs\api\device_management.rst:593
+#: ..\docs\api\device_management.rst:601
 msgid "type - String"
 msgstr ""
+"type - Serie"
 
-#: ..\docs\api\device_management.rst:104 ..\docs\api\device_management.rst:413
+#: ..\docs\api\device_management.rst:104
+#: ..\docs\api\device_management.rst:413
 msgid "metadata - Complex data (if available)"
 msgstr ""
+"metadata - Datos complejos (si están disponibles)"
 
-#: ..\docs\api\device_management.rst:105 ..\docs\api\device_management.rst:225
-#: ..\docs\api\device_management.rst:505 ..\docs\api\device_management.rst:596
+#: ..\docs\api\device_management.rst:105
+#: ..\docs\api\device_management.rst:225
+#: ..\docs\api\device_management.rst:505
+#: ..\docs\api\device_management.rst:596
 msgid "registration"
 msgstr ""
+"registration"
 
-#: ..\docs\api\device_management.rst:107 ..\docs\api\device_management.rst:227
-#: ..\docs\api\device_management.rst:507 ..\docs\api\device_management.rst:598
+#: ..\docs\api\device_management.rst:107
+#: ..\docs\api\device_management.rst:227
+#: ..\docs\api\device_management.rst:507
+#: ..\docs\api\device_management.rst:598
 msgid "auth"
 msgstr ""
+"auth"
 
-#: ..\docs\api\device_management.rst:112 ..\docs\api\device_management.rst:232
-#: ..\docs\api\device_management.rst:512 ..\docs\api\device_management.rst:603
+#: ..\docs\api\device_management.rst:112
+#: ..\docs\api\device_management.rst:232
+#: ..\docs\api\device_management.rst:512
+#: ..\docs\api\device_management.rst:603
 msgid "date - ISO8601 date string"
 msgstr ""
+"date - Serie de fecha ISO8601"
 
-#: ..\docs\api\device_management.rst:114 ..\docs\api\device_management.rst:234
-#: ..\docs\api\device_management.rst:514 ..\docs\api\device_management.rst:605
+#: ..\docs\api\device_management.rst:114
+#: ..\docs\api\device_management.rst:234
+#: ..\docs\api\device_management.rst:514
+#: ..\docs\api\device_management.rst:605
 msgid "status"
 msgstr ""
+"status"
 
-#: ..\docs\api\device_management.rst:116 ..\docs\api\device_management.rst:236
-#: ..\docs\api\device_management.rst:516 ..\docs\api\device_management.rst:607
+#: ..\docs\api\device_management.rst:116
+#: ..\docs\api\device_management.rst:236
+#: ..\docs\api\device_management.rst:516
+#: ..\docs\api\device_management.rst:607
 msgid "mqtt"
 msgstr ""
+"mqtt"
 
-#: ..\docs\api\device_management.rst:118 ..\docs\api\device_management.rst:238
-#: ..\docs\api\device_management.rst:518 ..\docs\api\device_management.rst:609
-msgid "client address - String"
+#: ..\docs\api\device_management.rst:118
+#: ..\docs\api\device_management.rst:238
+#: ..\docs\api\device_management.rst:518
+#: ..\docs\api\device_management.rst:609
+msgid "clientAddress - String"
 msgstr ""
+"clientAddress - Serie"
 
-#: ..\docs\api\device_management.rst:119 ..\docs\api\device_management.rst:239
-#: ..\docs\api\device_management.rst:519 ..\docs\api\device_management.rst:610
+#: ..\docs\api\device_management.rst:119
+#: ..\docs\api\device_management.rst:239
+#: ..\docs\api\device_management.rst:519
+#: ..\docs\api\device_management.rst:610
 msgid "protocol - String"
 msgstr ""
+"protocol - Serie"
 
-#: ..\docs\api\device_management.rst:120 ..\docs\api\device_management.rst:240
-#: ..\docs\api\device_management.rst:520 ..\docs\api\device_management.rst:611
+#: ..\docs\api\device_management.rst:120
+#: ..\docs\api\device_management.rst:240
+#: ..\docs\api\device_management.rst:520
+#: ..\docs\api\device_management.rst:611
 msgid "action - String"
 msgstr ""
+"action - Serie"
 
-#: ..\docs\api\device_management.rst:121 ..\docs\api\device_management.rst:241
-#: ..\docs\api\device_management.rst:521 ..\docs\api\device_management.rst:612
+#: ..\docs\api\device_management.rst:121
+#: ..\docs\api\device_management.rst:241
+#: ..\docs\api\device_management.rst:521
+#: ..\docs\api\device_management.rst:612
 msgid "timestamp - ISO8061 date string"
 msgstr ""
+"timestamp - Serie de fecha ISO8061"
 
-#: ..\docs\api\device_management.rst:122 ..\docs\api\device_management.rst:242
-#: ..\docs\api\device_management.rst:522 ..\docs\api\device_management.rst:613
+#: ..\docs\api\device_management.rst:122
+#: ..\docs\api\device_management.rst:242
+#: ..\docs\api\device_management.rst:522
+#: ..\docs\api\device_management.rst:613
 msgid "port - Integer"
 msgstr ""
+"port - Entero"
 
 #: ..\docs\api\device_management.rst:199
 msgid "List Devices by Type"
 msgstr ""
+"Listar dispositivos por tipo"
 
 #: ..\docs\api\device_management.rst:201
 msgid "Get a list of all devices of a specific type in an organization."
 msgstr ""
+"Obtener una lista de todos los dispositivos de un tipo específico de una organización."
 
 #: ..\docs\api\device_management.rst:207
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
 msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices/**tipo\\_dispositivo**"
 
-#: ..\docs\api\device_management.rst:224 ..\docs\api\device_management.rst:477
-#: ..\docs\api\device_management.rst:504 ..\docs\api\device_management.rst:595
+#: ..\docs\api\device_management.rst:224
+#: ..\docs\api\device_management.rst:477
+#: ..\docs\api\device_management.rst:504
+#: ..\docs\api\device_management.rst:595
 msgid "metadata - Complex data"
 msgstr ""
+"metadata - Datos complejos"
 
 #: ..\docs\api\device_management.rst:292
 msgid "List Device Types"
 msgstr ""
+"Listar tipos de dispositivo"
 
 #: ..\docs\api\device_management.rst:294
 msgid "Get a list of all devices types in an organization."
 msgstr ""
+"Obtener una lista de todos los tipos de dispositivos de una organización."
 
 #: ..\docs\api\device_management.rst:300
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
 msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/tipos-dispositivo"
 
 #: ..\docs\api\device_management.rst:312
 msgid "The response body will contain a list of device types:"
 msgstr ""
+"El cuerpo de respuesta contendrá una lista de tipos de dispositivo:"
 
 #: ..\docs\api\device_management.rst:314
 msgid "deviceType - String"
 msgstr ""
+"deviceType - Serie"
 
 #: ..\docs\api\device_management.rst:315
 msgid "count - Integer"
 msgstr ""
+"count - Entero"
 
 #: ..\docs\api\device_management.rst:346
 msgid "Register a New Device"
 msgstr ""
+"Registrar un dispositivo nuevo"
 
 #: ..\docs\api\device_management.rst:348
 msgid "Register a new device to an organization."
 msgstr ""
+"Registrar un dispositivo nuevo en una organización."
 
 #: ..\docs\api\device_management.rst:350
-msgid ""
-"You can use any scheme of your choice when assigning values for type and id "
-"to registered devices, however the following restrictions apply:"
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
 msgstr ""
+"Puede utilizar cualquier esquema de su elección al asignar valores para type e id a los dispositivos registrados, sin embargo, se aplican las restricciones siguientes:"
 
 #: ..\docs\api\device_management.rst:353
 msgid "Maximum length of 32 characters"
 msgstr ""
+"Longitud máxima de 32 caracteres"
 
 #: ..\docs\api\device_management.rst:354
-msgid ""
-"Must comprise only alpha-numeric characters and the following special "
-"characters:"
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
 msgstr ""
+"Debe constar solo de caracteres alfanuméricos y de los siguientes caracteres especiales:"
 
 #: ..\docs\api\device_management.rst:356
 msgid "dash (\"-\")"
 msgstr ""
+"guión (\"-\")"
 
 #: ..\docs\api\device_management.rst:357
 msgid "underscore (\"\\_\")"
 msgstr ""
+"subrayado (\"\\_\")"
 
 #: ..\docs\api\device_management.rst:358
 msgid "dot (\".\")"
 msgstr ""
+"punto (\".\")"
 
 #: ..\docs\api\device_management.rst:366
 msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
 msgstr ""
+"POST **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices"
 
 #: ..\docs\api\device_management.rst:372
-msgid ""
-"You must specify the type and identifer of the device being registered."
+msgid "You must specify the type and identifer of the device being registered."
 msgstr ""
+"Debe especificar el tipo y el identificador del dispositivo que se está registrando."
 
 #: ..\docs\api\device_management.rst:376
 msgid "metadata - Complex data (optional)"
 msgstr ""
+"metadata - Datos complejos (opcional)"
 
 #: ..\docs\api\device_management.rst:377
-msgid ""
-"password - String (optional, and follows the same restrictions as type and "
-"id, with a minimum length of 8 characters)"
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
 msgstr ""
+"password - Serie (opcional y sigue las mismas restricciones que type e id, con una longitud mínima de 8 caracteres)"
 
-#: ..\docs\api\device_management.rst:381 ..\docs\api\device_management.rst:481
+#: ..\docs\api\device_management.rst:381
+#: ..\docs\api\device_management.rst:481
 msgid "Example Request"
 msgstr ""
+"Solicitud de ejemplo"
 
 #: ..\docs\api\device_management.rst:398
 msgid "Response Headers"
 msgstr ""
+"Cabeceras de respuesta"
 
 #: ..\docs\api\device_management.rst:400
-msgid ""
-"The response header will contain the location (resource URI) for the "
-"registered device. \\* Location - URI"
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
 msgstr ""
+"La cabecera de respuesta contendrá la ubicación (URI de recurso) para el dispositivo registrado. \\* Ubicación - URI"
 
 #: ..\docs\api\device_management.rst:407
-msgid ""
-"The response body will contain a uuid and password for the registered "
-"device."
+msgid "The response body will contain a uuid and password for the registered device."
 msgstr ""
+"El cuerpo de respuesta contendrá un uuid y una contraseña para el dispositivo registrado."
 
 #: ..\docs\api\device_management.rst:414
 msgid "password - String"
 msgstr ""
+"password - Serie"
 
 #: ..\docs\api\device_management.rst:416
-msgid ""
-"The response body will contain the generated authentication token for this "
-"device. You must make sure to record this token when processing the "
-"response. The data is stored hashed and salted so we are not able to "
-"retrieve lost authentication tokens."
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
 msgstr ""
+"El cuerpo de respuesta contendrá la señal de autenticación generada para este dispositivo. Debe asegurarse de registrar esta señal al procesar la respuesta. Los datos se almacenan con hash y salt, de modo que no podemos recupera señales de autenticación perdidas."
 
 #: ..\docs\api\device_management.rst:451
-msgid ""
-"201 (Created) - The device was successfully registered (Location header set "
-"to the URL of the new device)"
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
 msgstr ""
+"201 (Creado) - El dispositivo se ha registrado correctamente (Cabecera de ubicación establecida en el URL del dispositivo nuevo)"
 
 #: ..\docs\api\device_management.rst:460
 msgid "Update a Registered Device"
 msgstr ""
+"Actualizar un dispositivo registrado"
 
 #: ..\docs\api\device_management.rst:462
 msgid "Update an existing device in an organization."
 msgstr ""
+"Actualizar un dispositivo existente en una organización."
 
 #: ..\docs\api\device_management.rst:468
-msgid ""
-"PUT "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"PUT **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices/**tipo\\_dispositivo**/**id\\_dispositivo**"
 
 #: ..\docs\api\device_management.rst:474
-msgid ""
-"Currently, the only property of a device that can be changed after initial "
-"registration is its metadata."
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
 msgstr ""
+"Actualmente, la única propiedad de un dispositivo que se puede cambiar después del registro inicial son sus metadatos."
 
 #: ..\docs\api\device_management.rst:498
-msgid ""
-"The response body will contain the updated properties of the registered "
-"device."
+msgid "The response body will contain the updated properties of the registered device."
 msgstr ""
+"El cuerpo de respuesta contendrá las propiedades actualizadas del dispositivo registrado."
 
 #: ..\docs\api\device_management.rst:570
 msgid "View a Registered Device"
 msgstr ""
+"Ver un dispositivo registrado"
 
 #: ..\docs\api\device_management.rst:572
 msgid "Get summary information about a registered device in an organization."
 msgstr ""
+"Obtener información de resumen sobre un dispositivo registrado en una organización."
 
 #: ..\docs\api\device_management.rst:578
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices/**tipo\\_dispositivo**/**id\\_dispositivo**"
 
 #: ..\docs\api\device_management.rst:590
 msgid "The response body will contain the known properties of the device."
 msgstr ""
+"El cuerpo de respuesta contendrá las propiedades conocidas del dispositivo."
 
 #: ..\docs\api\device_management.rst:661
 msgid "Delete a Registered Device"
 msgstr ""
+"Suprimir un dispositivo registrado"
 
 #: ..\docs\api\device_management.rst:663
 msgid "Unregister a device from an organization."
 msgstr ""
+"Anular registro de un dispositivo de una organización."
 
 #: ..\docs\api\device_management.rst:669
-msgid ""
-"DELETE "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
 msgstr ""
+"DELETE **id\\_org**.internetofthings.ibmcloud.com/api/v0001/devices/**tipo\\_dispositivo**/**id\\_dispositivo**"
 
 #: ..\docs\api\device_management.rst:687
 msgid "204 (No Content) - The device was successfully deleted"
 msgstr ""
+"204 (Sin contenido) - El dispositivo se ha suprimido correctamente"
+

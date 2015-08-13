@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,281 +19,361 @@ msgstr ""
 #: ..\docs\api\historical_events.rst:3
 msgid "Historical Event API"
 msgstr ""
+"歷程事件 API"
 
 #: ..\docs\api\historical_events.rst:7
 msgid "Authentication"
 msgstr ""
+"鑑別"
 
 #: ..\docs\api\historical_events.rst:9
-msgid ""
-"The API is only accessible over HTTPS and is protected by HTTP Basic "
-"Authentication. You must provide a username and password with every request."
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication. You must provide a username and password with every request."
 msgstr ""
+"此 API 只能透過 HTTPS 存取，且受到「HTTP 基本鑑別」保護。您必須在每一次要求時提供使用者名稱和密碼。"
 
 #: ..\docs\api\historical_events.rst:14
 msgid "Username"
 msgstr ""
+"使用者名稱"
 
 #: ..\docs\api\historical_events.rst:16
 msgid "A valid API key registered to the organization you want to work with."
 msgstr ""
+"已登錄到您想要使用之組織的有效 API 金鑰。"
 
 #: ..\docs\api\historical_events.rst:20
 msgid "Password"
 msgstr ""
+"密碼"
 
 #: ..\docs\api\historical_events.rst:22
 msgid "The authentication token corresponding to your API key."
 msgstr ""
+"對應到 API 金鑰的鑑別記號。"
 
 #: ..\docs\api\historical_events.rst:30
 msgid "View all events"
 msgstr ""
+"檢視所有事件"
 
 #: ..\docs\api\historical_events.rst:32
 msgid "View events across all devices registered to the organization"
 msgstr ""
+"檢視已在組織中登錄的所有裝置之間發生的事件"
 
-#: ..\docs\api\historical_events.rst:36 ..\docs\api\historical_events.rst:134
+#: ..\docs\api\historical_events.rst:36
+#: ..\docs\api\historical_events.rst:134
 #: ..\docs\api\historical_events.rst:252
 msgid "Request"
 msgstr ""
+"要求"
 
 #: ..\docs\api\historical_events.rst:37
 msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/"
 
-#: ..\docs\api\historical_events.rst:41 ..\docs\api\historical_events.rst:139
+#: ..\docs\api\historical_events.rst:41
+#: ..\docs\api\historical_events.rst:139
 #: ..\docs\api\historical_events.rst:257
 msgid "Request Headers"
 msgstr ""
+"要求標頭"
 
-#: ..\docs\api\historical_events.rst:43 ..\docs\api\historical_events.rst:141
+#: ..\docs\api\historical_events.rst:43
+#: ..\docs\api\historical_events.rst:141
 #: ..\docs\api\historical_events.rst:259
 msgid "cursorId"
 msgstr ""
+"cursorId"
 
-#: ..\docs\api\historical_events.rst:45 ..\docs\api\historical_events.rst:143
+#: ..\docs\api\historical_events.rst:45
+#: ..\docs\api\historical_events.rst:143
 #: ..\docs\api\historical_events.rst:261
-msgid ""
-"Use the cursorId response header returned by the initial request to iterate "
-"through the list of historical records"
+msgid "Use the cursorId response header returned by the initial request to iterate through the list of historical records"
 msgstr ""
+"使用起始要求所傳回的 cursorId 回應標頭來逐一查看歷程記錄清單"
 
-#: ..\docs\api\historical_events.rst:48 ..\docs\api\historical_events.rst:146
+#: ..\docs\api\historical_events.rst:48
+#: ..\docs\api\historical_events.rst:146
 #: ..\docs\api\historical_events.rst:264
 msgid "Cookie"
 msgstr ""
+"Cookie"
 
-#: ..\docs\api\historical_events.rst:50 ..\docs\api\historical_events.rst:148
+#: ..\docs\api\historical_events.rst:50
+#: ..\docs\api\historical_events.rst:148
 #: ..\docs\api\historical_events.rst:266
-msgid ""
-"Required when setting the cursorId header. Use the iotHistorianSessionId "
-"cookie returned by the initial request"
+msgid "Required when setting the cursorId header. Use the iotHistorianSessionId cookie returned by the initial request"
 msgstr ""
+"設定 cursorId 標頭時需要。請使用起始要求所傳回的 iotHistorianSessionId Cookie"
 
-#: ..\docs\api\historical_events.rst:55 ..\docs\api\historical_events.rst:153
+#: ..\docs\api\historical_events.rst:55
+#: ..\docs\api\historical_events.rst:153
 #: ..\docs\api\historical_events.rst:271
 msgid "Request Body"
 msgstr ""
+"要求內文"
 
-#: ..\docs\api\historical_events.rst:56 ..\docs\api\historical_events.rst:154
+#: ..\docs\api\historical_events.rst:56
+#: ..\docs\api\historical_events.rst:154
 #: ..\docs\api\historical_events.rst:272
 msgid "None"
 msgstr ""
+"無"
 
-#: ..\docs\api\historical_events.rst:60 ..\docs\api\historical_events.rst:158
+#: ..\docs\api\historical_events.rst:60
+#: ..\docs\api\historical_events.rst:158
 #: ..\docs\api\historical_events.rst:276
 msgid "Query Parameters"
 msgstr ""
+"查詢參數"
 
-#: ..\docs\api\historical_events.rst:62 ..\docs\api\historical_events.rst:160
+#: ..\docs\api\historical_events.rst:62
+#: ..\docs\api\historical_events.rst:160
 #: ..\docs\api\historical_events.rst:278
 msgid "evt_type - String"
 msgstr ""
+"evt_type - 字串"
 
-#: ..\docs\api\historical_events.rst:64 ..\docs\api\historical_events.rst:162
+#: ..\docs\api\historical_events.rst:64
+#: ..\docs\api\historical_events.rst:162
 #: ..\docs\api\historical_events.rst:280
-msgid ""
-"Restrict results only to those events published under this event identifier"
+msgid "Restrict results only to those events published under this event identifier"
 msgstr ""
+"將結果限制為只有那些以此事件 ID 所發佈的事件"
 
-#: ..\docs\api\historical_events.rst:66 ..\docs\api\historical_events.rst:164
+#: ..\docs\api\historical_events.rst:66
+#: ..\docs\api\historical_events.rst:164
 #: ..\docs\api\historical_events.rst:282
 msgid "start - Number of milliseconds since January 1, 1970, 00:00:00 GMT)"
 msgstr ""
+"開始 - 自 1970 年 1 月 1 日 00:00:00 GMT 以來的毫秒數"
 
-#: ..\docs\api\historical_events.rst:68 ..\docs\api\historical_events.rst:166
+#: ..\docs\api\historical_events.rst:68
+#: ..\docs\api\historical_events.rst:166
 #: ..\docs\api\historical_events.rst:284
 msgid "Restrict results to events published after this date"
 msgstr ""
+"將結果限制為此日期之後發佈的事件"
 
-#: ..\docs\api\historical_events.rst:70 ..\docs\api\historical_events.rst:168
+#: ..\docs\api\historical_events.rst:70
+#: ..\docs\api\historical_events.rst:168
 #: ..\docs\api\historical_events.rst:286
 msgid "end - Number of milliseconds since January 1, 1970, 00:00:00 GMT)"
 msgstr ""
+"結束 - 自 1970 年 1 月 1 日 00:00:00 GMT 以來的毫秒數"
 
-#: ..\docs\api\historical_events.rst:72 ..\docs\api\historical_events.rst:170
+#: ..\docs\api\historical_events.rst:72
+#: ..\docs\api\historical_events.rst:170
 #: ..\docs\api\historical_events.rst:288
 msgid "Restrict results to events published before this date"
 msgstr ""
+"將結果限制為此日期之前發佈的事件"
 
-#: ..\docs\api\historical_events.rst:77 ..\docs\api\historical_events.rst:197
+#: ..\docs\api\historical_events.rst:77
+#: ..\docs\api\historical_events.rst:197
 #: ..\docs\api\historical_events.rst:315
 msgid "Response Headers"
 msgstr ""
+"回應標頭"
 
-#: ..\docs\api\historical_events.rst:78 ..\docs\api\historical_events.rst:198
+#: ..\docs\api\historical_events.rst:78
+#: ..\docs\api\historical_events.rst:198
 #: ..\docs\api\historical_events.rst:316
-msgid ""
-"cursorId: use the cursorId response header returned by the initial request "
-"to iterate through the list of historical records"
+msgid "cursorId: use the cursorId response header returned by the initial request to iterate through the list of historical records"
 msgstr ""
+"cursorId：使用起始要求所傳回的 cursorId 回應標頭來逐一查看歷程記錄清單"
 
-#: ..\docs\api\historical_events.rst:80 ..\docs\api\historical_events.rst:200
+#: ..\docs\api\historical_events.rst:80
+#: ..\docs\api\historical_events.rst:200
 #: ..\docs\api\historical_events.rst:318
 msgid "Set-Cookie: iotHistorianSessionId"
 msgstr ""
+"Set-Cookie：iotHistorianSessionId"
 
-#: ..\docs\api\historical_events.rst:84 ..\docs\api\historical_events.rst:204
+#: ..\docs\api\historical_events.rst:84
+#: ..\docs\api\historical_events.rst:204
 #: ..\docs\api\historical_events.rst:322
 msgid "Response Body"
 msgstr ""
+"回應內文"
 
-#: ..\docs\api\historical_events.rst:85 ..\docs\api\historical_events.rst:205
+#: ..\docs\api\historical_events.rst:85
+#: ..\docs\api\historical_events.rst:205
 #: ..\docs\api\historical_events.rst:323
-msgid ""
-"Returns a list of historical data records sorted by timestamp in descending "
-"order"
+msgid "Returns a list of historical data records sorted by timestamp in descending order"
 msgstr ""
+"傳回依遞減時間戳記排序的歷程資料記錄清單"
 
-#: ..\docs\api\historical_events.rst:87 ..\docs\api\historical_events.rst:207
+#: ..\docs\api\historical_events.rst:87
+#: ..\docs\api\historical_events.rst:207
 msgid "device_id (String)"
 msgstr ""
+"device_id（字串）"
 
 #: ..\docs\api\historical_events.rst:88
 msgid "device_type (String)"
 msgstr ""
+"device_type（字串）"
 
-#: ..\docs\api\historical_events.rst:89 ..\docs\api\historical_events.rst:208
+#: ..\docs\api\historical_events.rst:89
+#: ..\docs\api\historical_events.rst:208
 #: ..\docs\api\historical_events.rst:325
 msgid "evt_type (String)"
 msgstr ""
+"evt_type（字串）"
 
-#: ..\docs\api\historical_events.rst:90 ..\docs\api\historical_events.rst:209
+#: ..\docs\api\historical_events.rst:90
+#: ..\docs\api\historical_events.rst:209
 #: ..\docs\api\historical_events.rst:326
 msgid "timestamp (Date)"
 msgstr ""
+"timestamp（日期）"
 
-#: ..\docs\api\historical_events.rst:91 ..\docs\api\historical_events.rst:210
+#: ..\docs\api\historical_events.rst:91
+#: ..\docs\api\historical_events.rst:210
 #: ..\docs\api\historical_events.rst:327
 msgid "evt (Complex object)"
 msgstr ""
+"evt（複式物件）"
 
-#: ..\docs\api\historical_events.rst:95 ..\docs\api\historical_events.rst:214
+#: ..\docs\api\historical_events.rst:95
+#: ..\docs\api\historical_events.rst:214
 #: ..\docs\api\historical_events.rst:331
 msgid "Example Response"
 msgstr ""
+"回應範例"
 
-#: ..\docs\api\historical_events.rst:118 ..\docs\api\historical_events.rst:236
+#: ..\docs\api\historical_events.rst:118
+#: ..\docs\api\historical_events.rst:236
 #: ..\docs\api\historical_events.rst:351
 msgid "Common Response Codes"
 msgstr ""
+"一般回應碼"
 
-#: ..\docs\api\historical_events.rst:120 ..\docs\api\historical_events.rst:238
+#: ..\docs\api\historical_events.rst:120
+#: ..\docs\api\historical_events.rst:238
 #: ..\docs\api\historical_events.rst:353
 msgid "200 (success)"
 msgstr ""
+"200（成功）"
 
 #: ..\docs\api\historical_events.rst:128
 msgid "View events for a device type"
 msgstr ""
+"檢視裝置類型的事件"
 
 #: ..\docs\api\historical_events.rst:130
 msgid "View events across all devices of a specific type"
 msgstr ""
+"檢視特定類型的所有裝置之間發生的事件"
 
 #: ..\docs\api\historical_events.rst:135
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**"
 
-#: ..\docs\api\historical_events.rst:172 ..\docs\api\historical_events.rst:290
+#: ..\docs\api\historical_events.rst:172
+#: ..\docs\api\historical_events.rst:290
 msgid "top - Number between 1 and 100"
 msgstr ""
+"top - 1 到 100 之間的數字"
 
 #: ..\docs\api\historical_events.rst:174
 msgid "Restrict the number of records returned (default=100)"
 msgstr ""
+"限制傳回的記錄數（預設值=100）"
 
-#: ..\docs\api\historical_events.rst:176 ..\docs\api\historical_events.rst:294
+#: ..\docs\api\historical_events.rst:176
+#: ..\docs\api\historical_events.rst:294
 msgid "summarize - Array"
 msgstr ""
+"summarize - 陣列"
 
-#: ..\docs\api\historical_events.rst:178 ..\docs\api\historical_events.rst:296
-msgid ""
-"A list of fields from the JSON event payload on which to perform the "
-"aggregate function specified by the summarize_type parameter.  The format "
-"for the parameter is {field1,field2,...,fieldN}"
+#: ..\docs\api\historical_events.rst:178
+#: ..\docs\api\historical_events.rst:296
+msgid "A list of fields from the JSON event payload on which to perform the aggregate function specified by the summarize_type parameter.  The format for the parameter is {field1,field2,...,fieldN}"
 msgstr ""
+"JSON 事件內容的欄位清單，要對其執行 summarize_type 參數所指定的總計函數。此參數的格式為 {field1,field2,...,fieldN}"
 
-#: ..\docs\api\historical_events.rst:182 ..\docs\api\historical_events.rst:300
+#: ..\docs\api\historical_events.rst:182
+#: ..\docs\api\historical_events.rst:300
 msgid "summarize_type        - String"
 msgstr ""
+"summarize_type        - 字串"
 
-#: ..\docs\api\historical_events.rst:184 ..\docs\api\historical_events.rst:302
-msgid ""
-"The aggregation to perform on the fields specified by the summarize "
-"parameter:"
+#: ..\docs\api\historical_events.rst:184
+#: ..\docs\api\historical_events.rst:302
+msgid "The aggregation to perform on the fields specified by the summarize parameter:"
 msgstr ""
+"要對 summarize 參數所指定的欄位執行的總計："
 
-#: ..\docs\api\historical_events.rst:186 ..\docs\api\historical_events.rst:304
+#: ..\docs\api\historical_events.rst:186
+#: ..\docs\api\historical_events.rst:304
 msgid "avg (default)"
 msgstr ""
+"avg（預設值）"
 
-#: ..\docs\api\historical_events.rst:187 ..\docs\api\historical_events.rst:305
+#: ..\docs\api\historical_events.rst:187
+#: ..\docs\api\historical_events.rst:305
 msgid "count"
 msgstr ""
+"count"
 
-#: ..\docs\api\historical_events.rst:188 ..\docs\api\historical_events.rst:306
+#: ..\docs\api\historical_events.rst:188
+#: ..\docs\api\historical_events.rst:306
 msgid "min"
 msgstr ""
+"min"
 
-#: ..\docs\api\historical_events.rst:189 ..\docs\api\historical_events.rst:307
+#: ..\docs\api\historical_events.rst:189
+#: ..\docs\api\historical_events.rst:307
 msgid "max"
 msgstr ""
+"max"
 
-#: ..\docs\api\historical_events.rst:190 ..\docs\api\historical_events.rst:308
+#: ..\docs\api\historical_events.rst:190
+#: ..\docs\api\historical_events.rst:308
 msgid "sum"
 msgstr ""
+"sum"
 
-#: ..\docs\api\historical_events.rst:191 ..\docs\api\historical_events.rst:309
+#: ..\docs\api\historical_events.rst:191
+#: ..\docs\api\historical_events.rst:309
 msgid "range"
 msgstr ""
+"range"
 
-#: ..\docs\api\historical_events.rst:192 ..\docs\api\historical_events.rst:310
+#: ..\docs\api\historical_events.rst:192
+#: ..\docs\api\historical_events.rst:310
 msgid "stdev"
 msgstr ""
+"stdev"
 
-#: ..\docs\api\historical_events.rst:193 ..\docs\api\historical_events.rst:311
+#: ..\docs\api\historical_events.rst:193
+#: ..\docs\api\historical_events.rst:311
 msgid "variance"
 msgstr ""
+"variance"
 
 #: ..\docs\api\historical_events.rst:246
 msgid "View events for a device"
 msgstr ""
+"檢視裝置的事件"
 
 #: ..\docs\api\historical_events.rst:248
 msgid "View events for a specific device"
 msgstr ""
+"檢視特定裝置的事件"
 
 #: ..\docs\api\historical_events.rst:253
-msgid ""
-"GET "
-"**org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**/**device_id**"
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**/**device_id**"
 msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**/**device_id**"
 
 #: ..\docs\api\historical_events.rst:292
 msgid "Restrict the number of records returned (default=100)."
 msgstr ""
+"限制傳回的記錄數（預設值=100）。"
+

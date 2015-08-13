@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-23 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\java\java_cli_devices.rst:3
+msgid "Java Client Library - Devices"
+msgstr ""
+"Java-Clientbibliothek - Einheiten"
+
+#: ..\docs\java\java_cli_devices.rst:6
+msgid "Introduction"
+msgstr ""
+"Einführung"
+
+#: ..\docs\java\java_cli_devices.rst:8
+msgid "This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/java.html#/>`__."
+msgstr ""
+"Diese Clientbibliothek beschreibt die Verwendung von Einheiten mit der Java ibmiotf-Clientbibliothek. Hilfe bei den ersten Schritten mit diesem Modul siehe `Java-Clientbibliothek - Einführung <https://docs.internetofthings.ibmcloud.com/libraries/java.html#/>`__."
+
+#: ..\docs\java\java_cli_devices.rst:10
+msgid "This client library is divided into three sections, all included within the library. This section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"Diese Clientbibliothek ist in drei Abschnitte unterteilt, die alle in der Bibliothek enthalten sind. Dieser Abschnitt enthält Informationen dazu, wie Einheiten Ereignisse publizieren und Befehle mit der Java ibmiotf-Clientbibliothek verarbeiten. "
+
+#: ..\docs\java\java_cli_devices.rst:12
+msgid "The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"Der Abschnitt mit den Anwendungen enthält Informationen, wie Anwendungen die Java ibmiotf-Clientbibliothek zur Interaktion mit Einheiten verwenden können."
+
+#: ..\docs\java\java_cli_devices.rst:14
+msgid "The Historian section contains information on how applications can use the Java ibmiotf Client Library to retrieve the historical information."
+msgstr ""
+"Der Abschnitt mit den archivierten Daten enthält Informationen, wie Anwendungen die Java ibmiotf-Clientbibliothek zum Abrufen der archivierten Informationen verwenden können."
+
+#: ..\docs\java\java_cli_devices.rst:17
+msgid "Constructor"
+msgstr ""
+"Konstruktor"
+
+#: ..\docs\java\java_cli_devices.rst:19
+msgid "The constructor builds the client instance, and accepts a Properties object containing the following definitions:"
+msgstr ""
+"Der Konstruktor erstellt die Clientinstanz und akzeptiert ein Eigenschaftsobjekt, das die folgenden Definitionen enthält:"
+
+#: ..\docs\java\java_cli_devices.rst:21
+msgid "org - Your organization ID. (This is a required field. In case of quickstart flow, provide org as quickstart.)"
+msgstr ""
+"org - Ihre Organisations-ID. (Dies ist ein erforderliches Feld. Im Fall eines Quickstart-Ablaufs, geben Sie org als Quickstart an.)"
+
+#: ..\docs\java\java_cli_devices.rst:22
+msgid "type - The type of your device. (This is a required field.)"
+msgstr ""
+"type - Der Typ Ihrer Einheit. (Dies ist ein erforderliches Feld.) "
+
+#: ..\docs\java\java_cli_devices.rst:23
+msgid "id - The ID of your device. (This is a required field."
+msgstr ""
+"id - Die ID Ihrer Einheit. (Dies ist ein erforderliches Feld.) "
+
+#: ..\docs\java\java_cli_devices.rst:24
+msgid "auth-method - Method of authentication (This is an optional field, needed only for registered flow and the only value currently supported is \"token\")."
+msgstr ""
+"auth-method - Die Methode der Authentifizierung. (Dies ist ein optionales Feld, das nur für registrierte Abläufe erforderlich ist; der einzige derzeit unterstützte Wert ist \"token\".)"
+
+#: ..\docs\java\java_cli_devices.rst:25
+msgid "auth-token - API key token (This is an optional field, needed only for registered flow)."
+msgstr ""
+"auth-token - API-Schlüsseltoken. (Dies ist ein optionales Feld, das nur für registrierte Abläufe erforderlich ist.)"
+
+#: ..\docs\java\java_cli_devices.rst:27
+msgid "The Properties object creates definitions which are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"Das Eigenschaftsobjekt erstellt Definitionen, die zur Interaktion mit dem Internet of Things Foundation-Modul verwendet werden. "
+
+#: ..\docs\java\java_cli_devices.rst:29
+msgid "The following code shows a device publishing events in a Quickstart mode."
+msgstr ""
+"Der folgende Code zeigt eine Einheit, die Ereignisse in einem Quickstart-Ablauf publiziert. "
+
+#: ..\docs\java\java_cli_devices.rst:79
+msgid "The following program shows a device publishing events in a registered flow"
+msgstr ""
+"Das folgende Programm zeigt eine Einheit, die Ereignisse in einem registrierten Ablauf publiziert. "
+
+#: ..\docs\java\java_cli_devices.rst:131
+msgid "Using a configuration file"
+msgstr ""
+"Konfigurationsdatei verwenden"
+
+#: ..\docs\java\java_cli_devices.rst:133
+msgid "Instead of including a Properties object directly, you can use a configuration file containing the name-value pairs for Properties. If you are using a configuration file containing a Properties object, use the following code format."
+msgstr ""
+"Anstatt ein Eigenschaftsobjekt direkt einzubeziehen, können Sie eine Konfigurationsdatei verwenden, die die Name/Wert-Paare für die Eigenschaften enthält. Wenn Sie eine Konfigurationsdatei verwenden, die ein Eigenschaftsobjekt enthält, verwenden Sie das folgende Codeformat. "
+
+#: ..\docs\java\java_cli_devices.rst:175
+msgid "The content of the configuration file must be in the following format:"
+msgstr ""
+"Der Inhalt der Konfigurationsdatei muss im folgenden Format vorliegen:"
+
+#: ..\docs\java\java_cli_devices.rst:191
+msgid "Publishing events"
+msgstr ""
+"Ereignisse publizieren"
+
+#: ..\docs\java\java_cli_devices.rst:192
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Ereignisse sind die Mechanismen, mit denen Einheiten Daten bei Internet of Things Foundation publizieren. Die Einheit steuert den Inhalt des Ereignisses und ordnet einen Namen für jedes von der Einheit gesendete Ereignis zu."
+
+#: ..\docs\java\java_cli_devices.rst:194
+msgid "When an event is received by the IBM IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Wenn ein Ereignis von IBM IoT Foundation empfangen wird, werden die Identifikationsdaten der Verbindung, mit der das Ereignis empfangen wurde, dazu verwendet, die Einheit zu ermitteln, von der das Ereignis gesendet wurde. Mit dieser Architektur ist es für eine Einheit unmöglich, die Identität einer anderen Einheit anzunehmen."
+
+#: ..\docs\java\java_cli_devices.rst:196
+msgid "Events can be published at any of the three `quality of service levels <https://docs.internetofthings.ibmcloud.com/messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0."
+msgstr ""
+"Ereignisse können mit jeder der drei 'Servicequalitätsstufen <https://docs.internetofthings.ibmcloud.com/messaging/mqtt.html#/>`, die durch das MQTT-Protokoll definiert sind, publiziert werden. Standardmäßig werden Ereignisse als qos-Stufe 0 publiziert."
+
+#: ..\docs\java\java_cli_devices.rst:199
+msgid "Publish event using default quality of service"
+msgstr ""
+"Ereignisse mit der standardmäßigen Servicequalität publizieren"
+
+#: ..\docs\java\java_cli_devices.rst:216
+msgid "Publish event using user-defined quality of service"
+msgstr ""
+"Ereignisse mit einer benutzerdefinierten Servicequalität publizieren"
+
+#: ..\docs\java\java_cli_devices.rst:218
+msgid "Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also Quickstart flow allows only Qos of 0"
+msgstr ""
+"Ereignisse könne auf höheren MQTT-Servicequalitätsstufen publiziert werden. Diese Ereignisse können jedoch wegen der zusätzlichen Eingangsbestätigung langsamer als QoS-Stufe 0 sein. der Quickstart-Ablauf erluabt außerdem nur ein Qos von 0."
+
+#: ..\docs\java\java_cli_devices.rst:237
+msgid "Handling commands"
+msgstr ""
+"Befehle verarbeiten"
+
+#: ..\docs\java\java_cli_devices.rst:238
+msgid "When the device client connects it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. The messages are returned as an instance of the Command class which has the following properties:"
+msgstr ""
+"Wenn der Einheitenclient die Verbindung herstellt, subskribiert er automatisch alle Befehle für diese Einheit. Zum Verarbeiten bestimmter Befehle müssen Sie eine Callback-Methode für Befehle registrieren. Die Nachrichten werden als eine Instanz der Befehlsklasse zurückgegeben, die die folgenden Eigenschaften hat:"
+
+#: ..\docs\java\java_cli_devices.rst:241
+msgid "payload - java.lang.String"
+msgstr ""
+"payload - java.lang.String"
+
+#: ..\docs\java\java_cli_devices.rst:242
+msgid "format - java.lang.String"
+msgstr ""
+"format - java.lang.String"
+
+#: ..\docs\java\java_cli_devices.rst:243
+msgid "command - java.lang.String"
+msgstr ""
+"command - java.lang.String"
+
+#: ..\docs\java\java_cli_devices.rst:244
+msgid "timestamp - org.joda.time.DateTime"
+msgstr ""
+"timestamp - org.joda.time.DateTime"
+

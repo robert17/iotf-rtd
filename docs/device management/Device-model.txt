@@ -1,0 +1,23 @@
+========================
+Device Model
+========================
+
+The device model describes the metadata and management characteristics of a device. The device database in the Internet of Things Foundation is the master source of device information. Devices are able to send updates to the database such as a location or the progress of a firmware update. Once these updates are received by the Internet of Things Foundation, it updates the device database and makes the information available.
+
+Device Identification
+-----------------------
+
+The Internet of Things Foundation requires a unique identifier for every device. However, the identification of devices from the can often be complex due to the number of different potential identifying characteristics of a device. For example, model numbers will likely be unique within a manufacturer, and serial numbers will be unique within a model number. However, these rules are not true for all devices.
+
+All devices within the Internet of Things Foundation are identified using the clientId, typeId and deviceId attributes. The characters which can be used in these identifiers are restricted so they can be used straightforwardly in communication protocols and REST APIs. There are a number of optional device identifiers for use with the device management protocol. These identifiers are: deviceInfo.manufacturer, deviceInfo.serialNumber, deviceInfo.model, deviceInfo.deviceClass, deviceInfo.description. 
+
+For more information on the identifiers and descriptions of their comparative identifiers in other device management standards, see Device Model Attributes Reference.
+
+Identifiers and Device Type
+------------------------------
+
+Each device connected to the Internet of Things Foundation is associated with a device type. Device types are intended to be groups of devices which share characteristics or behaviour. 
+
+A device type has a set of attributes. When a device is added to the Internet of Things Foundation, the attributes in its device type are used as a template overridden by device-specific attributes. For example, the device type could have a value for the "deviceInfo.fwVersion" attribute reflecting the firmware version at the time of manufacture, and this value would be copied from the device type into the devices as they are added. However, if a device was added which already had a value for "deviceInfo.fwVersion", it would not be overridden by the device type.
+
+When a device type is updated, devices associated with that device type are not affected, their attributes will remain unchanged. The device type is used as a template for the setting of the attributes it contains on new devices, but does not retroactively affect existing devices. 

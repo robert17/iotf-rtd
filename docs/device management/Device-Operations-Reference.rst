@@ -15,7 +15,7 @@ Topic
 
 .. code:: 
 
-	iotdevice-1/mgmt/managed
+	iotdevice-1/mgmt/manage
 	
 Message Format
 ~~~~~~~~~~~~~~~~
@@ -75,7 +75,7 @@ Topic
 
 .. code::
 
-	iotdevice-1/mgmt/unmanaged
+	iotdevice-1/mgmt/unmanage
 	
 Message Format
 ~~~~~~~~~~~~~~~

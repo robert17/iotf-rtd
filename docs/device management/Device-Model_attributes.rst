@@ -6,8 +6,8 @@ The table below shows the list of attributes which can apply to devices in the I
 
 - API/DMA: Can be updated by API/Device Management Agent
     - R: Read only
-	- W: Write and read
-	- A: Append
+    - W: Write and read
+    - A: Append
 
 +----------------------------------+------------+---------------------------------------------------+-----+-----+
 | Attribute                        | Type       | Description                                       | API | DMA |

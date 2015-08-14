@@ -8,6 +8,6 @@ To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the min
 
 * `Learn more about MQTT <../messaging/mqtt.html#/>`__
 * `How to connect a device to Quickstart <../messaging/devices.html#/>`__
-* `How to connection an application to Quickstart <../messaging/applications.html#/>`__
+* `How to connect an application to Quickstart <../messaging/applications.html#/>`__
 
 There are also several programming guides which you can use to connect to Quickstart in a language of your preference, you can find documentation for them `here <../libraries/programmingguides.html#/>`__.  Many of these guides feature sample device and application code which will 

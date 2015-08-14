@@ -216,7 +216,50 @@ Example Response:
 		"reqId": "string"
 	}
 
+Adding a log entry
+'''''''''''''''''''''
 
+Devices can choose to notify IoTF device management support about changes a new log entry. Log entry includes a log messages, its timestamp and severity, as well as an optional base64-encoded binary diagnostic data.
+
+Topic
+~~~~~~~
+
+.. code:: 
+
+	iotdevice-1/add/diag/log
+
+Message Format
+~~~~~~~~~~~~~~~
+
+"message" is a diagnostic message that needs to be added to IoTF.
+"timestamp" is a date and time of the log entry in ISO8601 format.
+"data" is an optional base64-encoded diagnostic data.
+"severity" is a severity of the message (0: informational, 1: warning, 2: error).
+
+Example Request:
+
+.. code:: 
+
+	{
+		"d": {
+			"message": string,
+			"timestamp": string,
+			"data": string,
+			"severity": number
+		},
+		"reqId": "string"
+	}
+
+
+Example Response:
+
+.. code::
+
+	{
+		"rc": 200,
+		"reqId": "string"
+	}
+	
 Clear log entries
 '''''''''''''''''''
 

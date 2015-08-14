@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ===============================================================================
-Introduction to the IBM Internet of Things Foundation
+Introduction
 ===============================================================================
 
 About

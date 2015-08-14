@@ -83,6 +83,7 @@ Message Format
 Example Request:
 
 .. code::
+
 	{
 		"reqId": "string"
 	}
@@ -90,6 +91,7 @@ Example Request:
 Example Response:
 
 .. code:: 
+
 	{
 		"rc": 200,
 		"reqId": "string"
@@ -121,6 +123,7 @@ Location can be updated in several ways:
 Example Request:
 
 .. code::
+
 	{
 		"d": {
 			"longitude": number,
@@ -137,6 +140,7 @@ Example Request:
 Example Response:
 
 .. code:: 
+
 	{
 		"rc": 200,
 		"reqId": "string"
@@ -151,6 +155,7 @@ Topic
 ~~~~~~~
 
 .. code:: 
+
 	iotdevice-1/add/diag/errorCodes
 
 Message Format
@@ -188,6 +193,7 @@ Topic
 ~~~~~~
 
 .. code::
+
 	iotdevice-1/clear/diag/errorCodes
 
 Message Format
@@ -196,6 +202,7 @@ Message Format
 Example Request:
 
 .. code:: 
+
 	{
 		"reqId": "string"
 	}
@@ -203,6 +210,7 @@ Example Request:
 Example Response:
 
 .. code::
+
 	{
 		"rc": 200,
 		"reqId": "string"

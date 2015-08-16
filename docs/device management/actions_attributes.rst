@@ -2,6 +2,9 @@
 Device Attribute Operations
 ============================
 
+Operation Details
+------------------
+
 Update Location
 ''''''''''''''''
 

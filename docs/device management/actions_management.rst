@@ -24,7 +24,7 @@ Message Format
 
 For the request, the "d" field and all of its sub-fields are optional. The "metadata" and "deviceInfo" field values replace the corresponding attributes for the sending device if they are sent.
 
-The optional "lifetime" field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as formant. If omitted or if set to 0, the managed device will not become dormant.
+The optional "lifetime" field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as dormant. If omitted or if set to 0, the managed device will not become dormant.
 
 Optional "supports.deviceActions" and "supports.firmwareActions" indicate the capabilities of the device management agent. If "supports.deviceActions" is set, the agent supports Reboot and Factory Reset actions. For a device which does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If "supports.firmwareActions" is set, the agent supports Firmware Download and Firmware Update actions.
 

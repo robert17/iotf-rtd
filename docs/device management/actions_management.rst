@@ -1,0 +1,68 @@
+=============================
+Device Management Operations
+=============================
+
+The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices.
+
+Operation details
+-------------------
+
+Manage Device
+''''''''''''''
+
+A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever is starts or restarts. 
+
+Topic
+~~~~~~
+
+.. code:: 
+
+	iotdevice-1/mgmt/manage
+	
+Message Format
+~~~~~~~~~~~~~~~~
+
+For the request, the "d" field and all of its sub-fields are optional. The "metadata" and "deviceInfo" field values replace the corresponding attributes for the sending device if they are sent.
+
+The optional "lifetime" field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as formant. If omitted or if set to 0, the managed device will not become dormant.
+
+Optional "supports.deviceActions" and "supports.firmwareActions" indicate the capabilities of the device management agent. If "supports.deviceActions" is set, the agent supports Reboot and Factory Reset actions. For a device which does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If "supports.firmwareActions" is set, the agent supports Firmware Download and Firmware Update actions.
+
+Example Request:
+
+.. code:: 
+
+	{
+		"d": {
+			"metadata":{},
+			"lifetime": "number",
+			"supports": {
+				"deviceActions": "boolean",
+				"firmwareActions": "boolean"
+			},
+			"deviceInfo": {
+				"serialNumber": "string",
+				"manufacturer": "string",
+				"model": "string",
+				"deviceClass": "string",
+				"description" :"string",
+				"fwVersion": "string",
+				"hwVersion": "string",
+				"descriptiveLocation": "string"
+			}
+		},
+		"reqId": "string"
+	}
+
+			}
+		}
+	}
+	
+Example Response:
+
+.. code::
+
+	{
+		"rc": 200,
+		"reqId": "string"
+	}

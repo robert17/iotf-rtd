@@ -171,3 +171,27 @@ Sequence:
 7. The device sets its firmware status to 1 (Downloading) and initiates the download.
 8. When the firmware is downloaded, the device changes the firmware status to 2 (Downloaded) and sends a notification to the Internet of Things Foundation.
 9. The Internet of Things Foundation updates the firmware section of the device's metadata.
+
+Request 2:
+
+.. code::
+
+    POST org_id.internetofthings.ibmcloud.com/pai/v0002/mgmt/requests
+
+Request Body:
+
+.. code:: 
+
+  {
+    "action": "firmware/update",
+    "devices": [{"typeId": "raspberry-pi", "deviceId": "andrewpi"}]
+  }
+
+Sequence:
+
+1. REST API is issued to the Internet of Things Foundation.
+2. The command is published to update the device firmware to the downloaded package.
+3. The firmware section of the device's metadata is updated.
+4. The REST API returns and a management request document is created which can be queried to keep track of the progress of the request.
+5. When the device is connected, it receives the command and begins the firmware update.
+6. Assuming the firmware update was successful, the device changes the firmware update status to 0 (Success) and sends a notification to the Internet of Things Foundation.

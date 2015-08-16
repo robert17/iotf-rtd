@@ -66,3 +66,36 @@ Example Response:
 		"rc": 200,
 		"reqId": "string"
 	}
+
+Unmanage Device
+''''''''''''''''
+
+A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request.
+
+Topic
+~~~~~~
+
+.. code::
+
+	iotdevice-1/mgmt/unmanage
+	
+Message Format
+~~~~~~~~~~~~~~~
+
+Example Request:
+
+.. code::
+
+	{
+		"reqId": "string"
+	}
+	
+Example Response:
+
+.. code:: 
+
+	{
+		"rc": 200,
+		"reqId": "string"
+	}
+	

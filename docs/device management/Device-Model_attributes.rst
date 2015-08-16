@@ -126,35 +126,35 @@ The 'mgmt.' attributes are only present for managed devices. When a managed devi
 
 Devices have a management lifecycle, defined by their status as managed devices. The device management agent on the device is responsible for sending a Manage Device request using the device management protocol. To deal with defunct devices in large device populations, a managed device can be set to send a Manage Device request regularly, allowing the Internet of Things Foundation to notice when a device has become dormant. To facilitate this functionality, the Manage Device request has an optional lifetime parameter, When the Internet of Things Foundation receives a Manage Device request with a lifetime, it calculates the time before which another Manage Device request is required and stores it in the  "mgmt.dormantDateTime" attribute.
 
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| Attribute                     | Type    | Description                                            | API | DMA |
-+===============================+=========+========================================================+=====+=====+
-| mgmt.dormant                  | boolean | Whether the device has become dormant                  |  R  |  -  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.dormantDateTime          | string  | ISO8601 date-time: Date and time at which the managed  |  R  |  -  |
-|                               |         | device will become dormant                             |     |     |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-|mgmt.lastActivityDateTime      | string  | ISO8601 date-time: Date and time of last activity,     |  R  |  -  |
-|                               |         | updated periodically                                   |     |     |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-|mgmt.supports.deviceActions    | boolean | Whether the device supports Reboot and Factory Reset   |  R  |  -  |
-|                               |         | actions                                                |     |     |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.supports.firmwareActions | boolean | Whether the device supports Firmware Download and      |  R  |  -  |
-|                               |         | Firmware Update actions                                |     |     |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.version         | string  | The version of the firmware on the device              |  R  |  W  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.name            | string  | The name of the firmware to be used on the device      |  R  |  W  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.url             | string  |The URL from which the firmware image can be downloaded |  R  |  W  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.verifier        | string  | The verifier such as a checksum for the firmware image |  R  |  W  |
-|                               |         | to validate its integrity                              |     |     |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.state           | number  | Indicates the state of firmware download               |  R  |  W  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.updateStatus    | number  | Indicates the status of the update                     |  R  |  W  |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.updatedDateTime  | string  | ISO8601 date-time: Date of last update                 |  R  |  - |
-+-------------------------------+---------+--------------------------------------------------------+-----+-----+
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| Attribute                      | Type    | Description                                            | API | DMA |
++================================+=========+========================================================+=====+=====+
+| mgmt.dormant                   | boolean | Whether the device has become dormant                  |  R  |  -  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.dormantDateTime           | string  | ISO8601 date-time: Date and time at which the managed  |  R  |  -  |
+|                                |         | device will become dormant                             |     |     |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+|mgmt.lastActivityDateTime       | string  | ISO8601 date-time: Date and time of last activity,     |  R  |  -  |
+|                                |         | updated periodically                                   |     |     |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+|mgmt.supports.deviceActions     | boolean | Whether the device supports Reboot and Factory Reset   |  R  |  -  |
+|                                |         | actions                                                |     |     |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.supports.firmwareActions  | boolean | Whether the device supports Firmware Download and      |  R  |  -  |
+|                                |         | Firmware Update actions                                |     |     |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.version          | string  | The version of the firmware on the device              |  R  |  W  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.name             | string  | The name of the firmware to be used on the device      |  R  |  W  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.url              | string  |The URL from which the firmware image can be downloaded |  R  |  W  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.verifier         | string  | The verifier such as a checksum for the firmware image |  R  |  W  |
+|                                |         | to validate its integrity                              |     |     |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.state            | number  | Indicates the state of firmware download               |  R  |  W  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.updateStatus     | number  | Indicates the status of the update                     |  R  |  W  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+
+| mgmt.firmware.updatedDateTime  | string  | ISO8601 date-time: Date of last update                 |  R  |  -  |
++--------------------------------+---------+--------------------------------------------------------+-----+-----+

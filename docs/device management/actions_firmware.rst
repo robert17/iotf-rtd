@@ -1,6 +1,6 @@
-=====================
-Updating Firmware
-=====================
+======================================
+Updating Firmware On Managed Devices
+======================================
 
 Updating Firmware and the Device Model
 ---------------------------------------

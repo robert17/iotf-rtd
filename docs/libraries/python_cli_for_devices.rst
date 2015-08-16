@@ -53,13 +53,13 @@ Instead of including an options dict directly, you can use a configuration file 
     except ibmiotf.ConnectionException  as e:
       ...
 
-The content of the configuration file must be in the following format:
+The content of the configuration file must be in the following format(need not contain **$** sign):
 
 ::
 
     [device]
     org=$orgId
-    typ=$myDeviceType
+    type=$myDeviceType
     id=$myDeviceId
     auth-method=token
     auth-token=$token

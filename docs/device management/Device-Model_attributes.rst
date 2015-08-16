@@ -156,5 +156,5 @@ Devices have a management lifecycle, defined by their status as managed devices.
 +-------------------------------+---------+--------------------------------------------------------+-----+-----+
 | mgmt.firmware.updateStatus    | number  | Indicates the status of the update                     |  R  |  W  |
 +-------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.updatedDateTime  | string  | ISO8601 date-time: Date of last update                 |  R  |  -  |
+| mgmt.firmware.updatedDateTime  | string  | ISO8601 date-time: Date of last update                 |  R  |  - |
 +-------------------------------+---------+--------------------------------------------------------+-----+-----+

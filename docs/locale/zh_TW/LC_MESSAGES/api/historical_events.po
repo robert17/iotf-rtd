@@ -307,7 +307,7 @@ msgstr ""
 #: ..\docs\api\historical_events.rst:302
 msgid "The aggregation to perform on the fields specified by the summarize parameter:"
 msgstr ""
-"要對 summarize 參數所指定的欄位執行的總計："
+"要對欄位執行且由 summarize 參數指定的總計："
 
 #: ..\docs\api\historical_events.rst:186
 #: ..\docs\api\historical_events.rst:304

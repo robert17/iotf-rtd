@@ -114,7 +114,7 @@ msgstr ""
 #: ..\docs\messaging\mqtt.rst:85
 msgid "Applications and devices also work with different MQTT topic spaces.  Devices work within a device-scoped topic space, whereas applications have full access to the topic space for an entire organization."
 msgstr ""
-"また、アプリケーションおよびデバイスは、異なる MQTT トピック・スペースで動作します。デバイスはデバイス・スコープのトピック・スペース内で動作する一方、アプリケーションには組織全体のトピック・スペースに対して全アクセス権限が付与されます。"
+"また、アプリケーションおよびデバイスは、異なる MQTT トピック空間で動作します。デバイスはデバイス・スコープのトピック空間内で動作する一方、アプリケーションには組織全体のトピック空間に対して全アクセス権限が付与されます。"
 
 #: ..\docs\messaging\mqtt.rst:89
 msgid ":doc:`devices`"

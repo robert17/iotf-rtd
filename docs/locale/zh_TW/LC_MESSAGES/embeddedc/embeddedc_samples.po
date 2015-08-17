@@ -19,7 +19,7 @@ msgstr ""
 #: ..\docs\embeddedc\embeddedc_samples.rst:2
 msgid "Embedded C Client Library - Samples"
 msgstr ""
-"Embedded C 用戶端程式庫 - 範例"
+"嵌入式 C 用戶端程式庫 - 範例"
 
 #: ..\docs\embeddedc\embeddedc_samples.rst:5
 msgid "Prerequisites"
@@ -29,7 +29,7 @@ msgstr ""
 #: ..\docs\embeddedc\embeddedc_samples.rst:6
 msgid "You must complete the Installation steps in the Internet of Things Foundation Embedded C Samples - Introduction page, before you can run the following samples."
 msgstr ""
-"在執行下列範例之前，您必須先完成「Internet of Things Foundation Embedded C 範例 - 簡介」頁面中的「安裝」步驟。"
+"在執行下列範例之前，您必須先完成「Internet of Things Foundation 嵌入式 C 範例 - 簡介」頁面中的「安裝」步驟。"
 
 #: ..\docs\embeddedc\embeddedc_samples.rst:9
 msgid "Using these samples"
@@ -39,7 +39,7 @@ msgstr ""
 #: ..\docs\embeddedc\embeddedc_samples.rst:10
 msgid "Using the cd command in the command prompt, navigate to the samples directory of your installation of the Embedded C client library."
 msgstr ""
-"使用命令提示字元中的 cd 指令，導覽至 Embedded C 用戶端程式庫安裝的 samples 目錄。"
+"使用命令提示字元中的 cd 指令，導覽至嵌入式 C 用戶端程式庫安裝的 samples 目錄。"
 
 #: ..\docs\embeddedc\embeddedc_samples.rst:13
 msgid "Go to the *samples* directory to run the sample. Either run *make* or use *build.sh* to compile and build the samples."

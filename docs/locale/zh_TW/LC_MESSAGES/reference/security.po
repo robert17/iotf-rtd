@@ -19,12 +19,12 @@ msgstr ""
 #: ..\docs\reference\security.rst:3
 msgid "Securing the Internet of Things"
 msgstr ""
-"保護 Internet of Things 安全"
+"保護物聯網安全"
 
 #: ..\docs\reference\security.rst:5
 msgid "The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, cloud-hosted service that makes it simple to derive value from Internet of Things (IoT) devices."
 msgstr ""
-"IBM Internet of Things Foundation (IoT Foundation) 是一種全面管理的雲端代管服務，能夠輕易從 Internet of Things (IoT) 裝置衍生值。"
+"IBM Internet of Things Foundation (IoT Foundation) 是一種全面管理的雲端代管服務，能夠輕易從物聯網 (IoT) 裝置取得所需的資訊。"
 
 #: ..\docs\reference\security.rst:9
 msgid "The following document aims to answer common questions about how your organization's data is protected. Focusing on specific areas:"
@@ -59,7 +59,7 @@ msgstr ""
 #: ..\docs\reference\security.rst:33
 msgid "The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate signed by DigiCert enabling you to trust that you're connecting to the genuine IoT Foundation."
 msgstr ""
-"瀏覽器型 GUI 和 REST API 是在 HTTPS 前面，具有 DigiCert 所簽署的憑證，讓您相信您是要連接到真正的 IoT Foundation。"
+"瀏覽器型 GUI 和 REST API 前面有 HTTPS，具有 DigiCert 所簽署的憑證，讓您相信您是要連接到真正的 IoT Foundation。"
 
 #: ..\docs\reference\security.rst:37
 msgid "GUI: authenticated via your IBM ID."
@@ -79,7 +79,7 @@ msgstr ""
 #: ..\docs\reference\security.rst:49
 msgid "When devices are registered or API keys are generated, the authentication token is salted and hashed. This means your organization's credentials can never be recovered from our systems - even in the unlikely event that the IoT Foundation is compromised."
 msgstr ""
-"當登錄裝置或產生 API 金鑰時，鑑別記號有冗餘字串，而且為雜湊方式。這表示組織的認證絕對無法從我們的系統中回復 - 即使是發生 IoT Foundation 受損的極罕見事件也是如此。"
+"當登錄裝置或產生 API 金鑰時，鑑別記號以隨機雜湊方式產生。這表示組織的認證絕對無法從我們的系統中回復 - 即使是發生 IoT Foundation 受損的極罕見事件也是如此。"
 
 #: ..\docs\reference\security.rst:54
 msgid "Device credentials and API keys can be individually revoked if they are compromised."
@@ -94,7 +94,7 @@ msgstr ""
 #: ..\docs\reference\security.rst:65
 msgid "Devices connect through a unique combination of clientId and authentication token that only you know."
 msgstr ""
-"裝置是透過 clientId 和只有您才知道的鑑別記號的唯一組合來進行連接。"
+"裝置是透過只有您才知道的唯一 clientId 和鑑別記號組合來進行連接。"
 
 #: ..\docs\reference\security.rst:67
 msgid "Full support for connectivity over TLS (v1.2) is provided."

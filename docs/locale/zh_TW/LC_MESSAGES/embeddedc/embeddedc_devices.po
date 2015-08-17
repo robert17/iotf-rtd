@@ -19,17 +19,17 @@ msgstr ""
 #: ..\docs\embeddedc\embeddedc_devices.rst:2
 msgid "Embedded C Client Library - Devices and Applications"
 msgstr ""
-"Embedded C 用戶端程式庫 - 裝置和應用程式"
+"嵌入式 C 用戶端程式庫 - 裝置和應用程式"
 
 #: ..\docs\embeddedc\embeddedc_devices.rst:4
 msgid "This client library describes how to use devices with the embedded c iotfclient library. For help with getting started, see `Embedded C Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__."
 msgstr ""
-"此用戶端程式庫說明要如何搭配 Embedded C iotfclient 程式庫來使用裝置。開始使用時如需協助，請參閱 `Embedded C 用戶端程式庫 - 簡介 <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__。"
+"此用戶端程式庫說明要如何搭配嵌入式 C iotfclient 程式庫來使用裝置。開始使用時如需協助，請參閱 `嵌入式 C 用戶端程式庫 - 簡介 <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__。"
 
 #: ..\docs\embeddedc\embeddedc_devices.rst:6
 msgid "This client library contains information on how devices publish events and handle commands and how applications can use the embedded c client library to interact with devices."
 msgstr ""
-"此用戶端程式庫包含裝置如何發佈事件及處理指令和應用程式如何使用 Embedded C 用戶端程式庫來與裝置進行互動等相關資訊。"
+"此用戶端程式庫包含裝置如何發佈事件及處理指令和應用程式如何使用嵌入式 C 用戶端程式庫來與裝置進行互動等相關資訊。"
 
 #: ..\docs\embeddedc\embeddedc_devices.rst:9
 msgid "Handling commands"

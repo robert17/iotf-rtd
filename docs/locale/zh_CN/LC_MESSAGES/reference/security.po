@@ -19,12 +19,12 @@ msgstr ""
 #: ..\docs\reference\security.rst:3
 msgid "Securing the Internet of Things"
 msgstr ""
-"保护 Internet of Things"
+"保护物联网"
 
 #: ..\docs\reference\security.rst:5
 msgid "The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, cloud-hosted service that makes it simple to derive value from Internet of Things (IoT) devices."
 msgstr ""
-"IBM Internet of Things Foundation (IoT Foundation) 是一项完全受管的云托管服务，可轻松从 Internet of Things (IoT) 设备派生值。"
+"IBM Internet of Things Foundation (IoT Foundation) 是一项完全受管的云托管服务，可轻松从物联网 (IoT) 设备派生值。"
 
 #: ..\docs\reference\security.rst:9
 msgid "The following document aims to answer common questions about how your organization's data is protected. Focusing on specific areas:"

@@ -154,7 +154,7 @@ msgstr ""
 #: ..\docs\messaging\mqtt.rst:120
 msgid "When sending real-time data on an interval we recommend using QoS0.  If a single message goes missing it does not really matter as another message will be sent shortly after containing newer data.  In this scenario the extra cost of using higher quality of service does not result in any tangible benefit."
 msgstr ""
-"當間隔一段時間傳送即時資料時，我們建議使用 QoS0。遺漏單一訊息沒有多大關係，因為很快就會在包含更新資料之後傳送另一則訊息。在此實務範例中，使用更高服務品質的額外成本不會帶來任何實質利益。"
+"如果是根據時間間隔來傳送即時資料，我們建議使用 QoS0。遺漏單一訊息沒有多大關係，因為不久之後就會傳送另一則包含更新資料的訊息。在此實務範例中，使用更高服務品質的額外成本不會帶來任何實質利益。"
 
 #: ..\docs\messaging\mqtt.rst:127
 msgid "At least once (QoS1)"

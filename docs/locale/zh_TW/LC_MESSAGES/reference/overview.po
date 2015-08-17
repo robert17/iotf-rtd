@@ -19,7 +19,7 @@ msgstr ""
 #: ..\docs\reference\overview.rst:3
 msgid "Building the Internet of Things"
 msgstr ""
-"建置 Internet of Things"
+"建置物聯網"
 
 #: ..\docs\reference\overview.rst:5
 msgid "The IBM Internet of Things Foundation is powered by a core of IBM's leading products and services:"

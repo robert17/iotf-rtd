@@ -19,17 +19,17 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:2
 msgid "Embedded C Client Library - Introduction"
 msgstr ""
-"Embedded C 用戶端程式庫 - 簡介"
+"嵌入式 C 用戶端程式庫 - 簡介"
 
 #: ..\docs\embeddedc\embedcintro.rst:4
 msgid "The Embedded C client library is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol."
 msgstr ""
-"Embedded C 用戶端程式庫是用來與 IBM Internet of Things Foundation 進行互動。此程式庫可讓裝置利用 MQTT 通訊協定來與「IoT Foundation 雲端」服務進行通訊。"
+"嵌入式 C 用戶端程式庫是用來與 IBM Internet of Things Foundation 進行互動。此程式庫可讓裝置利用 MQTT 通訊協定來與「IoT Foundation 雲端」服務進行通訊。"
 
 #: ..\docs\embeddedc\embedcintro.rst:6
 msgid "The Embedded C client library also contains two sample applications, the helloWorld.c sample and the sampleDevice.c sample These samples are detailed in Embedded C Client Library Samples."
 msgstr ""
-"Embedded C 用戶端程式庫也包含兩個範例應用程式：helloWorld.c 範例和 sampleDevice.c 範例。這些範例詳述於「Embedded C 用戶端程式庫範例」。"
+"嵌入式 C 用戶端程式庫也包含兩個範例應用程式：helloWorld.c 範例和 sampleDevice.c 範例。這些範例詳述於「嵌入式 C 用戶端程式庫範例」。"
 
 #: ..\docs\embeddedc\embedcintro.rst:9
 msgid "Dependencies"
@@ -39,7 +39,7 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:11
 msgid "`Eclipse Paho Embedded C library <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information."
 msgstr ""
-"`Eclipse Paho Embedded C 程式庫 <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - 提供 MQTT C 用戶端程式庫，如需相關資訊，請查閱 `這裡 <http://www.eclipse.org/paho/clients/c/embedded/>`__。"
+"`Eclipse Paho 嵌入式 C 程式庫 <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - 提供 MQTT C 用戶端程式庫，如需相關資訊，請查閱 `這裡 <http://www.eclipse.org/paho/clients/c/embedded/>`__。"
 
 #: ..\docs\embeddedc\embedcintro.rst:14
 msgid "Installation"
@@ -49,7 +49,7 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:15
 msgid "To install the Internet of Things Foundation client library for Embedded C follow the instructions below."
 msgstr ""
-"若要安裝 Embedded C 的 Internet of Things Foundation 用戶端程式庫，請遵循下列指示。"
+"若要安裝嵌入式 C 的 Internet of Things Foundation 用戶端程式庫，請遵循下列指示。"
 
 #: ..\docs\embeddedc\embedcintro.rst:17
 msgid "To install the latest version of the library, enter the following code in your command line. The client is also available at https://github.com/ibm-messaging/iotf-embeddedc."
@@ -74,7 +74,7 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:56
 msgid "After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:"
 msgstr ""
-"下載用戶端程式庫之後，它必須進行起始設定並連接到 Internet of Things Foundation。有 2 種方法可以起始設定 Embedded C 的 Internet of Things Foundation 用戶端程式庫："
+"下載用戶端程式庫之後，它必須進行起始設定並連接到 Internet of Things Foundation。有 2 種方法可以起始設定嵌入式 C 的 Internet of Things Foundation 用戶端程式庫："
 
 #: ..\docs\embeddedc\embedcintro.rst:59
 msgid "Passing as parameters"
@@ -124,7 +124,7 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:86
 msgid "You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\\_configfile' takes the configuration file path as a parameter."
 msgstr ""
-"您也可以使用配置檔來起始設定 Embedded C 用戶端程式庫。'initialize\\_configfile' 函數採用配置檔路徑作為參數。"
+"您也可以使用配置檔來起始設定嵌入式 C 用戶端程式庫。'initialize\\_configfile' 函數採用配置檔路徑作為參數。"
 
 #: ..\docs\embeddedc\embedcintro.rst:99
 msgid "The configuration file must use the following format."
@@ -144,7 +144,7 @@ msgstr ""
 #: ..\docs\embeddedc\embedcintro.rst:112
 msgid "After initializing the Internet of Things Foundation Embedded C client library, you can connect to the Internet of Things Foundation by calling the 'connectiotf' function."
 msgstr ""
-"在起始設定 Internet of Things Foundation Embedded C 用戶端程式庫之後，您可以透過呼叫 'connectiotf' 函數來連接到 Internet of Things Foundation。"
+"在起始設定 Internet of Things Foundation 嵌入式 C 用戶端程式庫之後，您可以透過呼叫 'connectiotf' 函數來連接到 Internet of Things Foundation。"
 
 #: ..\docs\embeddedc\embedcintro.rst:138
 msgid "Disconnect Client"

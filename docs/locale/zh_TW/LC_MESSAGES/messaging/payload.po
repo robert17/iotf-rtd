@@ -104,7 +104,7 @@ msgstr ""
 #: ..\docs\messaging\payload.rst:90
 msgid "The IoT Foundation is designed to be open, you may send your event and command data in any format you choose, however if you choose to send data in a custom format it will limit some features of the service which can only function with a known payload format."
 msgstr ""
-"IoT Foundation 為開放式設計，您可以用您選擇的任何格式傳送事件和指令資料，不過，如果您選擇以自訂格式傳送資料，它將限制該服務的部分特性，因為這些特性只對已知的內容格式有效。"
+"IoT Foundation 為開放式設計，您可以用您選擇的任何格式傳送事件和指令資料，不過，如果您選擇以自訂格式傳送資料，它將限制該服務的部分特性，讓這些特性只在使用已知的內容格式時才有效。"
 
 #: ..\docs\messaging\payload.rst:94
 msgid "Below are a number of example payloads that are close to the IoTF specification, but do not quite match it.  Each would be treated as a custom JSON payload."

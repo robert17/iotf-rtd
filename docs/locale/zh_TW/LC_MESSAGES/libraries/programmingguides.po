@@ -54,22 +54,22 @@ msgstr ""
 #: ..\docs\libraries\programmingguides.rst:18
 msgid "Embedded C"
 msgstr ""
-"Embedded C"
+"嵌入式 C"
 
 #: ..\docs\libraries\programmingguides.rst:20
 msgid "`Embedded C Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__"
 msgstr ""
-"`Embedded C 用戶端程式庫 - 簡介 <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__"
+"`嵌入式 C 用戶端程式庫 - 簡介 <https://docs.internetofthings.ibmcloud.com/embeddedc/embedcintro.html#/>`__"
 
 #: ..\docs\libraries\programmingguides.rst:21
 msgid "`Embedded C Client Library - Devices and Applications <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_devices.html#/>`__"
 msgstr ""
-"`Embedded C 用戶端程式庫 - 裝置和應用程式 <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_devices.html#/>`__"
+"`嵌入式 C 用戶端程式庫 - 裝置和應用程式 <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_devices.html#/>`__"
 
 #: ..\docs\libraries\programmingguides.rst:22
 msgid "`Embedded C Client Library - Samples <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_samples.html#/>`__"
 msgstr ""
-"`Embedded C 用戶端程式庫 - 範例 <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_samples.html#/>`__"
+"`嵌入式 C 用戶端程式庫 - 範例 <https://docs.internetofthings.ibmcloud.com/embeddedc/embeddedc_samples.html#/>`__"
 
 #: ..\docs\libraries\programmingguides.rst:25
 msgid "Java"

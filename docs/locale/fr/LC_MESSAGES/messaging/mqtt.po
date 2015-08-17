@@ -39,7 +39,7 @@ msgstr ""
 #: ..\docs\messaging\mqtt.rst:23
 msgid "One reason for using version 3.1.1 is that the maximum length of the MQTT Client Identifier (ClientId) is increased from the 23 character limit imposed by 3.1. The IoT service will often require longer ClientId's and will accept long ClientId's with either version of the protocol however some 3.1 client libraries check the ClientId and enforce the 23 character limit."
 msgstr ""
-"L'une des raisons justifiant l'utilisation de la version 3.1.1 est l'augmentation du nombre maximal de caractères de l'identificateur du client MQTT (ClientId), qui était limité à 23 caractères dans la version 3.1. Le service internet des objets requiert souvent des ID client plus longs et accepte les ID client longs avec les deux versions du protocole. Toutefois, certaines bibliothèques client de la version 3.1 vérifient l'ID client et applique la valeur maximale de 23 caractères."
+"L'une des raisons justifiant l'utilisation de la version 3.1.1 est l'augmentation du nombre maximal de caractères de l'identificateur du client MQTT (ClientId), qui était limité à 23 caractères dans la version 3.1. Le service IoT (internet des objets) requiert souvent des ID client plus longs et accepte les ID client longs avec les deux versions du protocole. Toutefois, certaines bibliothèques client de la version 3.1 vérifient l'ID client et applique la valeur maximale de 23 caractères."
 
 #: ..\docs\messaging\mqtt.rst:35
 msgid "MQTT client connection"

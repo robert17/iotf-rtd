@@ -2,6 +2,8 @@
 Device Actions
 ==============
 
+.. _device_actions_reboot:
+
 Reboot
 ------
 
@@ -39,6 +41,8 @@ Response Format:
 		"reqId": "string"
 	}
 
+
+.. _device_actions_factory_reset:
 
 Factory Reset
 -------------

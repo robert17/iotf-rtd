@@ -4,82 +4,112 @@ Device Management Operations
 
 The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 
-Actions taken by a device
---------------------------
+Device Initiated
+----------------
 
-- Manage device
-	This action sets the device as a managed device in the Internet of Things Foundation. Devices can optionally be set to confirm this action regularly.
-	
-- Unmanage device
-	This action reverts a device from managed to unmanaged.
-	
-- Update device attributes
-	This action can be taken to update device-specific information like descriptive location.
-	
-- Add and clear device diagnostic information
-	Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation.
+Thesre operations are initiated by the device, manage and unmanage operations must be supported by all managed devices.  All other operations are optional. 
 
-- Notify changes
-	Devices must be able to observe changes in specific device attributes and notify the Internet of Things Foundation about changes, if the observation is requested.
+
+Management Operations
+~~~~~~~~~~~~~~~~~~~~~
+
+This action sets the device as a managed device in the Internet of Things Foundation. Devices can optionally be set to confirm this action regularly.
+
++------------------------+------------------------+
+| Operation              | Device Support         |
++========================+========================+
+| Manage device          | Required               |
++------------------------+------------------------+
+| Unmanage device        | Required               |
++------------------------+------------------------+
 
 	
-Actions taken by the Internet of Things Foundation
----------------------------------------------------
+Device Property Changes
+~~~~~~~~~~~~~~~~~~~~~~~
 
-- Update device attributes
-	Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation.
+These optional operations, if implemented allow the device to submit updated device-specific information to the service.
+
++------------------------+------------------------+
+| Action                 | Device Support         |
++========================+========================+
+| Update location        | Optional               |
++------------------------+------------------------+
+| Notify                 | Optional, required     |
+|                        | for devices supporting |
+|                        | firmware update        |
++------------------------+------------------------+
+
+
+Add and Clear Diagnostic Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation.
+
++------------------------+------------------------+
+| Action                 | Device Support         |
++========================+========================+
+| Add an error code      | Optional               |
++------------------------+------------------------+
+| Clear an error code    | Optional               |
++------------------------+------------------------+
+| Add a log entry        | Optional               |
++------------------------+------------------------+
+| Clear log entries      | Optional               |
++------------------------+------------------------+
+
 	
-- Observe device attributes
-	This action requests devices to respond with changes in one or more attributes.
-	
-- Cancel observation
-	This action requests the device to stop observing changes in one or more attributes.
-	
-- Initiate an action
-	This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware.
-	
-+-------------+----------------------+------------------------+------------------------+
-| Originator  | Type                 | Action                 | Device Support         |
-+=============+======================+========================+========================+
-| Device      | Management           | Manage device          | Required               |
-+             +----------------------+------------------------+------------------------+
-|             | Management           | Unmanage device        | Required               |
-+             +----------------------+------------------------+------------------------+
-|             | Set device attribute | Update location        | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Device diagnostics   | Add an error code      | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Device diagnostics   | Clear an error code    | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Device diagnostics   | Add a log entry        | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Device diagnostics   | Clear log entries      | Optional               |
-+-------------+----------------------+------------------------+------------------------+
-| Internet of | Observation          | Notify                 | Optional, required     |
-| of Things   |                      |                        | for devices supporting |
-| Foundation  |                      |                        | firmware update        |
-+             +----------------------+------------------------+------------------------+
-|             | Observation          | Observe changes        | Optional, required for |
-|             |                      |                        | devices supporting     |
-|             |                      |                        | firmware update        |
-+             +----------------------+------------------------+------------------------+
-|             | Observation          | Cancel observation     | Optional, required for |
-|             |                      |                        | devices supporting     |
-|             |                      |                        | firmware update        |
-+             +----------------------+------------------------+------------------------+
-|             | Set device attribute | Update device          | Optional               |
-|             |                      | attribute              |                        |
-+             +----------------------+------------------------+------------------------+
-|             | Device action        | Initiate reboot        | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Device action        | Initiate factory reset | Optional               |
-+             +----------------------+------------------------+------------------------+
-|             | Firmware action      | Initiate firmware      | Optional               |
-|             |                      | download               |                        |
-+             +----------------------+------------------------+------------------------+
-|             | Firmware action      | Initiate firmware      | Optional               |
-|             |                      | update                 |                        |
-+-------------+----------------------+------------------------+------------------------+
+Service Initiated
+-----------------
+
+These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations.
+
+
+Update Attributes
+~~~~~~~~~~~~~~~~~
+Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation.
+
++------------------------+------------------------+
+| Operation              | Device Support         |
++========================+========================+
+| Update attribute       | Optional               |
++------------------------+------------------------+
+
+
+Attribute Observations
+~~~~~~~~~~~~~~~~~~~~~~
+These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device.
+
++------------------------+------------------------+
+| Operation              | Device Support         |
++========================+========================+
+| Observe changes        | Optional, required for |
+|                        | devices supporting     |
+|                        | firmware update        |
++------------------------+------------------------+
+| Cancel observation     | Optional, required for |
+|                        | devices supporting     |
+|                        | firmware update        |
++------------------------+------------------------+
+
+
+Initiate an action
+~~~~~~~~~~~~~~~~~~
+
+This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware.
+
++----------------------+------------------------+------------------------+
+| Type                 | Operation              | Device Support         |
++======================+========================+========================+
+| Device action        | Initiate reboot        | Optional               |
++----------------------+------------------------+------------------------+
+| Device action        | Initiate factory reset | Optional               |
++----------------------+------------------------+------------------------+
+| Firmware action      | Initiate firmware      | Optional               |
+|                      | download               |                        |
++----------------------+------------------------+------------------------+
+| Firmware action      | Initiate firmware      | Optional               |
+|                      | update                 |                        |
++----------------------+------------------------+------------------------+
 
 
 Return Codes

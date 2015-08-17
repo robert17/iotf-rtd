@@ -1,12 +1,9 @@
-============================
-Device Attribute Operations
-============================
-
-Operation Details
-------------------
+==========================
+Updating Device Properties
+==========================
 
 Update Location
-''''''''''''''''
+---------------
 
 Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes.
 
@@ -54,8 +51,9 @@ Response Format:
 		"reqId": "string"
 	}
 	
-	Update device attributes
-''''''''''''''''''''''''''
+
+Update Device Attributes
+------------------------
 
 The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by this operation are location, metadata, device information and firmware.
 

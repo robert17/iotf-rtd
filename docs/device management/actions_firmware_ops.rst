@@ -20,7 +20,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -29,7 +29,7 @@ Example Request:
 	}
 
 	
-Example Response:
+Response Format:
 
 .. code::
 
@@ -57,7 +57,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -65,7 +65,7 @@ Example Request:
 		"reqId": "string"
 	}
 
-Example Response:
+Response Format:
 
 .. code::
 

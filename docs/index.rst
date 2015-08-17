@@ -20,7 +20,7 @@ Introduction
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 0
+    :maxdepth: 1
 
     index
     intro/getting_started
@@ -31,7 +31,7 @@ API
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 	
     api/device_management
     api/historical_events
@@ -40,7 +40,7 @@ Device Management
 ------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     device management/introduction
     device management/protocol
@@ -84,7 +84,7 @@ Messaging
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     messaging/mqtt
     messaging/devices
@@ -96,7 +96,7 @@ Reference Material
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     reference/overview
     reference/security

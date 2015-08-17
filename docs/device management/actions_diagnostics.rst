@@ -1,5 +1,5 @@
 ===============================
-Device Deiagnostics Operations
+Device Diagnostics Operations
 ===============================
 
 The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation.

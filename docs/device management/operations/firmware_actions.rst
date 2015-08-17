@@ -1,9 +1,9 @@
-========================
-Firmware Operations
-========================
+================
+Firmware Actions
+================
 
-Initiate firmware download
-''''''''''''''''''''''''''''
+Firmware Download
+-----------------
 
 The Internet of Things Foundation can send this request to download new firmware onto the device. The firmware update process is described in more detail in the corresponding section. The firmware download action is considered complete when the device sends a Notify attribute change request for the "mgmt.firmware.state" attribute reaching a final value, usually "Downloaded" for a successful download.
 
@@ -39,8 +39,8 @@ Response Format:
 		"reqId": "string"
 	}
 
-Initiate firmware update
-''''''''''''''''''''''''''
+Firmware Update
+---------------
 
 The Internet of Things Foundation sends this request to update the firmware on the device. See the detailed description of the firmware update process in the corresponding section. IoTF considers the action completed when the device sends a Notify attribute change request of the "mgmt.firmware.updateStatus" attribute reaching a final value, usually "Success" for a successful update.
 

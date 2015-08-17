@@ -23,7 +23,7 @@ The "message" field used in the response can be specified if "rc" is not 200. If
 
 This operation must be supported in order to support firmware update.
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -36,7 +36,7 @@ Example Request:
 		"reqId": "string"
 	}
 
-Example Response:
+Response Format:
 
 .. code::
 
@@ -74,7 +74,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -86,7 +86,7 @@ Example Request:
 		"reqId": "string"
 	}
 	
-Example Response:
+Response Format:
 
 .. code::
 
@@ -113,7 +113,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -126,7 +126,7 @@ Example Request:
 		"reqId": "string"
 	}
 
-Example Response:
+Response Format:
 
 .. code:: 
 

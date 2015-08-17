@@ -13,14 +13,14 @@ All messages are sent in JSON format over MQTT. There are two types of message.
 
 1. Requests.
 	Requests are formatted as follows:
-	.. code::
+.. code::
 
-		{
-			"d": {...},
-			"reqId": ...
-		}
-	
-	These messages must include two JSON elements, "d" and "reqId". The "d" field carries the data relevant to the request, and the "reqId" field is an identifier of the request, and must be copied into a response. If a response is not required, the field should be omitted.
+	{
+		"d": {...},
+		"reqId": ...
+	}
+
+These messages must include two JSON elements, "d" and "reqId". The "d" field carries the data relevant to the request, and the "reqId" field is an identifier of the request, and must be copied into a response. If a response is not required, the field should be omitted.
 	
 2. Response.
 	Responses are formatted as follows:
@@ -67,12 +67,13 @@ Messages originating from the Internet of Things Foundation are published to top
 	iotdm-1/...
 	
 Responses from the device must be published to:
+
 .. code::
 
-	iotdevice-1/response.
+	iotdevice-1/response
 
 Responses from the Internet of Things Foundation will be published to:
 
 .. code::
 
-	iotdm-1/response.
+	iotdm-1/response

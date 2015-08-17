@@ -28,7 +28,7 @@ The optional "lifetime" field specifies the length of time in seconds within whi
 
 Optional "supports.deviceActions" and "supports.firmwareActions" indicate the capabilities of the device management agent. If "supports.deviceActions" is set, the agent supports Reboot and Factory Reset actions. For a device which does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If "supports.firmwareActions" is set, the agent supports Firmware Download and Firmware Update actions.
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -58,7 +58,7 @@ Example Request:
 		}
 	}
 	
-Example Response:
+Response Format:
 
 .. code::
 
@@ -82,7 +82,7 @@ Topic
 Message Format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -90,7 +90,7 @@ Example Request:
 		"reqId": "string"
 	}
 	
-Example Response:
+Response Format:
 
 .. code:: 
 

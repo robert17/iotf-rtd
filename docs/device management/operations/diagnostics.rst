@@ -1,14 +1,11 @@
-===============================
-Device Diagnostics Operations
-===============================
+==================
+Device Diagnostics
+==================
 
 The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation.
 
-Operation Details
-------------------
-
-Adding an error code
-'''''''''''''''''''''
+Add error code
+--------------
 
 Devices can choose to notify the Internet of Things Foundation device management server about changes in their error status.
 
@@ -46,7 +43,7 @@ Response Format:
 	}
 
 Clear Error Codes
-''''''''''''''''''
+-----------------
 
 Devices can request that the Internet of Things Foundation clear all of their error codes.
 
@@ -77,8 +74,8 @@ Response Format:
 		"reqId": "string"
 	}
 
-Adding a log entry
-'''''''''''''''''''''
+Add new log
+-----------
 
 Devices can choose to notify IoTF device management support about changes a new log entry. Log entry includes a log messages, its timestamp and severity, as well as an optional base64-encoded binary diagnostic data.
 
@@ -122,7 +119,7 @@ Response Format:
 	}
 	
 Clear log entries
-'''''''''''''''''''
+-----------------
 
 Devices can request that the Internet of Things Foundation clear all of their log entries.
 

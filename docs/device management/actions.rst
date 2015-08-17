@@ -1,5 +1,5 @@
 ========================================================
-Device Management Actions and Return Codes Introduction
+Introduction to Device Operations and Return Codes
 ========================================================
 
 The Device Management Protocol defines a set of supported actions. A device management agent can support a subset of the actions, but the Manage device and Unmanage device actions must be supported. A device supporting firmware actions must also support observation.

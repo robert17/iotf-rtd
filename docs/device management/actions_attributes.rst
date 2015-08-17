@@ -28,7 +28,7 @@ Location can be updated in several ways:
 - The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated.
 - The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata.
 
-Example Request:
+Request Format:
 
 .. code::
 
@@ -45,7 +45,7 @@ Example Request:
 		"reqId": "string"
 	}
 
-Example Response:
+Response Format:
 
 .. code:: 
 
@@ -78,7 +78,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -91,7 +91,7 @@ Example Request:
 	}
 
 
-Example Response:
+Response Format:
 
 .. code::
 

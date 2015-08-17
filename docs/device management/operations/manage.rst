@@ -1,14 +1,12 @@
-=============================
-Device Management Operations
-=============================
+=================
+Device Management
+=================
 
 The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices.
 
-Operation details
--------------------
 
 Manage Device
-''''''''''''''
+-------------
 
 A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever is starts or restarts. 
 
@@ -18,7 +16,8 @@ Topic
 .. code:: 
 
 	iotdevice-1/mgmt/manage
-	
+
+
 Message Format
 ~~~~~~~~~~~~~~~~
 
@@ -67,8 +66,9 @@ Response Format:
 		"reqId": "string"
 	}
 
+
 Unmanage Device
-''''''''''''''''
+---------------
 
 A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request.
 

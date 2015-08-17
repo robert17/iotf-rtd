@@ -24,7 +24,7 @@ Message Format
 
 The "errorCode" is a current device error code that needs to be added to the Internet of Things Foundation.
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -36,7 +36,7 @@ Example Request:
 	}
 
 
-Example Response:
+Response Format:
 
 .. code::
 
@@ -60,7 +60,7 @@ Topic
 Message Format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -68,7 +68,7 @@ Example Request:
 		"reqId": "string"
 	}
 	
-Example Response:
+Response Format:
 
 .. code::
 
@@ -97,7 +97,7 @@ Message Format
 "data" is an optional base64-encoded diagnostic data.
 "severity" is a severity of the message (0: informational, 1: warning, 2: error).
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -112,7 +112,7 @@ Example Request:
 	}
 
 
-Example Response:
+Response Format:
 
 .. code::
 
@@ -136,7 +136,7 @@ Topic
 Message format
 ~~~~~~~~~~~~~~~
 
-Example Request:
+Request Format:
 
 .. code:: 
 
@@ -144,7 +144,7 @@ Example Request:
 		"reqId": "string"
 	}
 	
-Example Response:
+Response Format:
 
 .. code::
 

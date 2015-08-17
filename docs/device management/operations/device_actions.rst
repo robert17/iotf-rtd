@@ -1,12 +1,9 @@
-===========================
-Device Actions Operations
-===========================
+==============
+Device Actions
+==============
 
-Operation Details
-------------------
-
-Initiate reboot
-''''''''''''''''
+Reboot
+------
 
 The Internet of Things Foundation can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot.
 	
@@ -31,6 +28,7 @@ Request Format:
 	{
 		"reqId": "string"
 	}
+
 Response Format:
 
 .. code::
@@ -41,8 +39,9 @@ Response Format:
 		"reqId": "string"
 	}
 
-Initiate factory reset
-'''''''''''''''''''''''
+
+Factory Reset
+-------------
 
 The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot.
 

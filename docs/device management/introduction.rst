@@ -49,3 +49,14 @@ Management Agent
 ~~~~~~~~~~~~~~~~~~~
 
 A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices.
+
+
+The Device Management Lifecycle
+-----------------------------------
+
+1. A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API.
+2. The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device.
+3. The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot.
+4. The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes.
+5. In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device.
+6. When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API.

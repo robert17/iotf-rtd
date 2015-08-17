@@ -1,8 +1,8 @@
-========================================================
-Introduction to Device Operations and Return Codes
-========================================================
+============================
+Device Management Operations
+============================
 
-The Device Management Protocol defines a set of supported actions. A device management agent can support a subset of the actions, but the Manage device and Unmanage device actions must be supported. A device supporting firmware actions must also support observation.
+The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 
 Actions taken by a device
 --------------------------
@@ -21,6 +21,7 @@ Actions taken by a device
 
 - Notify changes
 	Devices must be able to observe changes in specific device attributes and notify the Internet of Things Foundation about changes, if the observation is requested.
+
 	
 Actions taken by the Internet of Things Foundation
 ---------------------------------------------------

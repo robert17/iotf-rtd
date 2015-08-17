@@ -97,19 +97,17 @@ Initiate an action
 
 This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware.
 
-+----------------------+------------------------+------------------------+
-| Type                 | Operation              | Device Support         |
-+======================+========================+========================+
-| Device action        | Initiate reboot        | Optional               |
-+----------------------+------------------------+------------------------+
-| Device action        | Initiate factory reset | Optional               |
-+----------------------+------------------------+------------------------+
-| Firmware action      | Initiate firmware      | Optional               |
-|                      | download               |                        |
-+----------------------+------------------------+------------------------+
-| Firmware action      | Initiate firmware      | Optional               |
-|                      | update                 |                        |
-+----------------------+------------------------+------------------------+
++----------------------+---------------------------------------------------------------+------------------------+
+| Type                 | Operation                                                     | Device Support         |
++======================+===============================================================+========================+
+| Device action        | :ref:`Initiate reboot <_device_actions_reboot>`               | Optional               |
++----------------------+---------------------------------------------------------------+------------------------+
+| Device action        | :ref:`Initiate factory reset <_device_actions_factory_reset>` | Optional               |
++----------------------+---------------------------------------------------------------+------------------------+
+| Firmware action      | Initiate firmware download                                    | Optional               |
++----------------------+---------------------------------------------------------------+------------------------+
+| Firmware action      | Initiate firmware update                                      | Optional               |
++----------------------+---------------------------------------------------------------+------------------------+
 
 
 Return Codes

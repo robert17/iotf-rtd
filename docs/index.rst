@@ -35,7 +35,7 @@ API
 	
     api/device
     api/historical_events
-    device management/device_management
+    api/device_management
 
 Device Management
 ------------------------------------------------------------------------------
@@ -43,18 +43,18 @@ Device Management
 .. toctree::
     :maxdepth: 1
     
-    device management/introduction
-    device management/protocol
-    device management/device_model
-    device management/device_model_attributes
-    device management/actions
-    device management/actions_management
-    device management/actions_attributes
-    device management/actions_device_actions
-    device management/actions_diagnostics
-    device management/actions_firmware_ops
-    device management/actions_observation
-    device management/updating_firmware
+    device_mgmt/introduction
+    device_mgmt/protocol
+    device_mgmt/device_model
+    device_mgmt/device_model_attributes
+    device_mgmt/operations/index
+    device_mgmt/operations/manage
+    device_mgmt/operations/update
+    device_mgmt/operations/diagnostics
+    device_mgmt/operations/observations
+    device_mgmt/operations/device_actions
+    device_mgmt/operations/firmware_actions
+    device_mgmt/updating_firmware
     
 
 Programming Guides

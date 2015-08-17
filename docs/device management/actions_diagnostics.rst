@@ -2,7 +2,7 @@
 Device Deiagnostics Operations
 ===============================
 
-The device diagnostics operations are intended to provide information on device errors. For diagnostic information on the devices connection to the Internet of Things Foundation service, USE SOME OTHER THING.
+The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation.
 
 Operation Details
 ------------------

@@ -83,6 +83,6 @@ The query string takes the form of a list of attribute=value pairs separated by 
 
 .. code::
 
-	GET /bulk/devices?typeId='wdl5205'&deviceInfo.fwVersion=17
+	GET /bulk/devices?typeId=wdl5205&deviceInfo.fwVersion=17
 
 However, there is no capability to perform other types of matches, such as greater than or regular expressions. 

@@ -25,7 +25,8 @@ Introduction
     index
     intro/getting_started
     reference/concepts
-
+    reference/device_model
+    reference/device_mgmt
 
 API
 -------------------------------------------------------------------------------
@@ -37,15 +38,12 @@ API
     api/v0001/historical_events
     api/v0002/device
 
-Device Management
+Device Management Operations
 ------------------------------------------------------------------------------
 
 .. toctree::
     :maxdepth: 1
     
-    device_mgmt/introduction
-    device_mgmt/protocol
-    device_mgmt/device_model
     device_mgmt/operations/index
     device_mgmt/operations/manage
     device_mgmt/operations/update
@@ -84,6 +82,7 @@ Messaging
 
     messaging/mqtt
     messaging/devices
+    messaging/managed_devices
     messaging/applications
     messaging/payload
 

@@ -1,9 +1,10 @@
-================
-Observe & Notify
-================
+===============================================================================
+Device Management Operations - Observations
+===============================================================================
 
-.. note:: Observe & notify operations must be supported in order to support firmware update.
+.. important:: Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`.
 
+.. _observations-observe:
 
 Observe Attribute Changes
 -------------------------
@@ -56,12 +57,14 @@ Response Format:
 	}
 
 
+.. _observations-cancel:
+
 Cancel Attribute Observation
 ----------------------------
 
 The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The "fields" is an array of the device attribute names from the device model, for example, values could be "location", "mgmt.firmware" or "mgmt.firmware.state".
 
-.. important:: The "message" field must be specified if "rc" is not 200.
+The "message" field must be specified if "rc" is not 200.
 
 Topic
 ~~~~~~
@@ -98,6 +101,8 @@ Response Format:
 	}
 
 
+.. _observations-notify:
+
 Notify Attribute Changes
 ------------------------
 
@@ -105,7 +110,7 @@ The Internet of Things Foundation can make an observation request referring to a
 
 The "field_name" value is the name of the attribute that has changed, the "field_value" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent.
 
-.. important:: If notify request is processed successfully, "rc" should be set to 200. If the request is not correct, "rc" should be set to 400. If the field specified in the notify request is not being observed, "rc" should be set to 404.
+If notify request is processed successfully, "rc" should be set to 200. If the request is not correct, "rc" should be set to 400. If the field specified in the notify request is not being observed, "rc" should be set to 404.
 
 
 Topic

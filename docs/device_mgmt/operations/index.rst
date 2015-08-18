@@ -13,31 +13,31 @@ Thesre operations are initiated by the device, manage and unmanage operations mu
 Management Operations
 ~~~~~~~~~~~~~~~~~~~~~
 
-This action sets the device as a managed device in the Internet of Things Foundation. Devices can optionally be set to confirm this action regularly.
+These operations control whether device management features are enabled for the device.
 
 +------------------------+------------------------+
 | Operation              | Device Support         |
 +========================+========================+
-| Manage device          | Required               |
+| :ref:`manage-manage`   | Required               |
 +------------------------+------------------------+
-| Unmanage device        | Required               |
+| :ref:`manage-unmanage` | Required               |
 +------------------------+------------------------+
 
 	
 Device Property Changes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-These optional operations, if implemented allow the device to submit updated device-specific information to the service.
+These optional operations, if implemented, allow the device to submit updated device-specific information to the service.
 
-+------------------------+------------------------+
-| Action                 | Device Support         |
-+========================+========================+
-| Update location        | Optional               |
-+------------------------+------------------------+
-| Notify                 | Optional, required     |
-|                        | for devices supporting |
-|                        | firmware update        |
-+------------------------+------------------------+
++----------------------------+------------------------+
+| Operation                  | Device Support         |
++============================+========================+
+| :ref:`update-location`     | Optional               |
++----------------------------+------------------------+
+| :ref:`observations-notify` | Optional, required     |
+|                            | for devices supporting |
+|                            | firmware update        |
++----------------------------+------------------------+
 
 
 Add and Clear Diagnostic Information
@@ -45,17 +45,17 @@ Add and Clear Diagnostic Information
 
 Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation.
 
-+------------------------+------------------------+
-| Action                 | Device Support         |
-+========================+========================+
-| Add an error code      | Optional               |
-+------------------------+------------------------+
-| Clear an error code    | Optional               |
-+------------------------+------------------------+
-| Add a log entry        | Optional               |
-+------------------------+------------------------+
-| Clear log entries      | Optional               |
-+------------------------+------------------------+
++-------------------------------+------------------------+
+| Operation                     | Device Support         |
++===============================+========================+
+| :ref:`diag-add-error-code`    | Optional               |
++-------------------------------+------------------------+
+| :ref:`diag-clear-error-codes` | Optional               |
++-------------------------------+------------------------+
+| :ref:`diag-add-log`           | Optional               |
++-------------------------------+------------------------+
+| :ref:`diag-clear-logs`        | Optional               |
++-------------------------------+------------------------+
 
 	
 Service Initiated
@@ -68,28 +68,28 @@ Update Attributes
 ~~~~~~~~~~~~~~~~~
 Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation.
 
-+------------------------+------------------------+
-| Operation              | Device Support         |
-+========================+========================+
-| Update attribute       | Optional               |
-+------------------------+------------------------+
++--------------------------+------------------------+
+| Operation                | Device Support         |
++==========================+========================+
+| :ref:`update-attributes` | Optional               |
++--------------------------+------------------------+
 
 
 Attribute Observations
 ~~~~~~~~~~~~~~~~~~~~~~
 These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device.
 
-+------------------------+------------------------+
-| Operation              | Device Support         |
-+========================+========================+
-| Observe changes        | Optional, required for |
-|                        | devices supporting     |
-|                        | firmware update        |
-+------------------------+------------------------+
-| Cancel observation     | Optional, required for |
-|                        | devices supporting     |
-|                        | firmware update        |
-+------------------------+------------------------+
++------------------------------+------------------------+
+| Operation                    | Device Support         |
++==============================+========================+
+| :ref:`observations-observe`  | Optional, required for |
+|                              | devices supporting     |
+|                              | firmware update        |
++------------------------------+------------------------+
+| :ref:`observations-cancel`   | Optional, required for |
+|                              | devices supporting     |
+|                              | firmware update        |
++------------------------------+------------------------+
 
 
 Initiate an action
@@ -97,17 +97,17 @@ Initiate an action
 
 This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware.
 
-+----------------------+---------------------------------------------------------------+------------------------+
-| Type                 | Operation                                                     | Device Support         |
-+======================+===============================================================+========================+
-| Device action        | :ref:`Initiate reboot <_device_actions_reboot>`               | Optional               |
-+----------------------+---------------------------------------------------------------+------------------------+
-| Device action        | :ref:`Initiate factory reset <_device_actions_factory_reset>` | Optional               |
-+----------------------+---------------------------------------------------------------+------------------------+
-| Firmware action      | Initiate firmware download                                    | Optional               |
-+----------------------+---------------------------------------------------------------+------------------------+
-| Firmware action      | Initiate firmware update                                      | Optional               |
-+----------------------+---------------------------------------------------------------+------------------------+
++----------------------+-------------------------------------------------+------------------------+
+| Type                 | Operation                                       | Device Support         |
++======================+=================================================+========================+
+| Device action        | :ref:`device-actions-reboot`                    | Optional               |
++----------------------+-------------------------------------------------+------------------------+
+| Device action        | :ref:`device-actions-factory-reset`             | Optional               |
++----------------------+-------------------------------------------------+------------------------+
+| Firmware action      | :ref:`firmware-actions-download`                | Optional               |
++----------------------+-------------------------------------------------+------------------------+
+| Firmware action      | :ref:`firmware-actions-update`                  | Optional               |
++----------------------+-------------------------------------------------+------------------------+
 
 
 Return Codes

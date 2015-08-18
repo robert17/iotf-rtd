@@ -32,10 +32,10 @@ API
 
 .. toctree::
     :maxdepth: 1
-	
-    api/device
-    api/historical_events
-    api/device_management
+    
+    api/v0001/device
+    api/v0001/historical_events
+    api/v0002/device
 
 Device Management
 ------------------------------------------------------------------------------
@@ -46,7 +46,6 @@ Device Management
     device_mgmt/introduction
     device_mgmt/protocol
     device_mgmt/device_model
-    device_mgmt/device_model_attributes
     device_mgmt/operations/index
     device_mgmt/operations/manage
     device_mgmt/operations/update
@@ -54,7 +53,6 @@ Device Management
     device_mgmt/operations/observations
     device_mgmt/operations/device_actions
     device_mgmt/operations/firmware_actions
-    device_mgmt/updating_firmware
     
 
 Programming Guides
@@ -69,9 +67,7 @@ Programming Guides
     libraries/python_cli_for_devices
     libraries/python_cli_for_apps
 
-    embeddedc/embedcintro
-    embeddedc/embeddedc_devices
-    embeddedc/embeddedc_samples    
+    libraries/embedded_c
 
     java/javaintro.rst
     java/java_cli_devices.rst

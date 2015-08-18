@@ -1,9 +1,7 @@
-Embedded C Client Library - Introduction
-==================================================================
+Embedded C Client Library
+=========================
 
-The Embedded C client library is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
-
-The Embedded C client library also contains two sample applications, the helloWorld.c sample and the sampleDevice.c sample These samples are detailed in Embedded C Client Library Samples.
+The `Embedded C client library <https://github.com/ibm-messaging/iotf-embeddedc>`_ is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
 
 Dependencies
 ------------
@@ -14,7 +12,7 @@ Installation
 --------------
 To install the Internet of Things Foundation client library for Embedded C follow the instructions below.
 
-1. To install the latest version of the library, enter the following code in your command line. The client is also available at https://github.com/ibm-messaging/iotf-embeddedc.
+1. To install the latest version of the library, enter the following code in your command line.
 
 .. code::
 
@@ -33,8 +31,8 @@ To install the Internet of Things Foundation client library for Embedded C follo
     
     cd lib
     tar xvzf org.eclipse.paho.mqtt.embedded-c-1.0.0.tar.gz
-	
-	
+
+
 When downloaded, the client has the following file structure:
 
 .. code::
@@ -50,13 +48,13 @@ When downloaded, the client has the following file structure:
  |-iotfclient.h - Header file for the client
  
  
- Initializing the Client Library
--------------------------------------------
+Initializing the Client Library
+-------------------------------
 
 After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:
 
-Passing as parameters
--------------------------------------------
+Passing as Parameters
+~~~~~~~~~~~~~~~~~~~~~
 
 The 'initialize' function takes the following details to connect to the IoT Foundation service:
 
@@ -64,8 +62,8 @@ The 'initialize' function takes the following details to connect to the IoT Foun
 -   org - Your organization ID
 -   type - The type of your device
 -   id - The device ID
--   authmethod - Method of authentication (the only value currently supported is “token”)
--   authtoken - API key token (required if auth-method is “token”)
+-   authmethod - Method of authentication (the only value currently supported is "token")
+-   authtoken - API key token (required if auth-method is "token")
 
 .. code:: c
 
@@ -80,8 +78,8 @@ The 'initialize' function takes the following details to connect to the IoT Foun
 	....
 
 
-Using a configuration file
--------------------------------------------------
+Using a Configuration File
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\_configfile' takes the configuration file path as a parameter.
 
@@ -99,19 +97,22 @@ You can also use a configuration file to initialize the Embedded C client librar
 The configuration file must use the following format.
 
 .. code::
+
 	org=$orgId
 	type=$myDeviceType
 	id=$myDeviceId
 	auth-method=token
 	auth-token=$token
-...
 
-Connecting to the Internet of Things Foundation Service
----------------------------------------------------------------
+
+Connecting to the Service
+-------------------------
 
 After initializing the Internet of Things Foundation Embedded C client library, you can connect to the Internet of Things Foundation by calling the 'connectiotf' function.
 
+
 .. code:: c
+
 	#include "iotfclient.h"
 	....
 	....
@@ -134,12 +135,66 @@ After initializing the Internet of Things Foundation Embedded C client library, 
 	....
 
 
+Handling commands
+------------------------------------------
+
+When the device client connects, it automatically subscribes to any command for this device. To process specific commands you need to register a command callback function by calling the function 'setCommandHandler'. The commands are returned as:
+
+- commandName - name of the command invoked
+- format - e.g json, xml
+- payload
+
+
+.. code:: c
+
+	#include "iotfclient.h"
+	
+	void myCallback (char* commandName, char* format, void* payload)
+	{
+	printf("The command received :: %s\n", commandName);
+	printf("format : %s\n", format);
+	printf("Payload is : %s\n", (char *)payload);
+	}
+	...
+	...
+	char *filePath = "./device.cfg";
+	rc = connectiotfConfig(filePath);
+	setCommandHandler(myCallback);
+	
+	yield(1000);
+	....
+
+.. note:: The 'yield' function must be called periodically to receive commands.
+
+
+Publishing events
+-----------------------------------
+
+Events can be published by using:
+
+- eventType - Type of event to be published e.g status, gps
+- eventFormat - Format of the event e.g json
+- data - Payload of the event
+- QoS - qos for the publish event. Supported values : QOS0, QOS1, QOS2
+
+.. code:: c
+
+	#include "iotfclient.h"
+	....
+	rc = connectiotf (org, type, id , authmethod, authtoken);
+	char *payload = {\"d\" : {\"temp\" : 34 }};
+	
+	rc= publishEvent("status","json", "{\"d\" : {\"temp\" : 34 }}", QOS0); 
+	....
+
+
 Disconnect Client
---------------------------------------
+-----------------
 
 To disconnect the client and release the connections, run the following code snippet.
 
 .. code:: c
+
 	#include "iotfclient.h"
 	....
 	rc = connectiotf (org, type, id , authmethod, authtoken);
@@ -149,3 +204,9 @@ To disconnect the client and release the connections, run the following code sni
 	...
 	rc = disconnect();
 	....
+
+
+Samples
+-------
+
+Sample device and application code is provided in `GitHub <https://github.com/ibm-messaging/iotf-embeddedc/tree/master/samples>`_.

@@ -1,9 +1,10 @@
-=================
-Device Management
-=================
+===============================================================================
+Device Management Operations - Manage
+===============================================================================
 
 The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices.
 
+.. _manage-manage:
 
 Manage Device
 -------------
@@ -66,6 +67,8 @@ Response Format:
 		"reqId": "string"
 	}
 
+
+.. _manage-unmanage:
 
 Unmanage Device
 ---------------

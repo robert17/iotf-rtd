@@ -148,7 +148,7 @@ to ensure no duplication of messages occurs.
 
 
 Subscription Buffers and Clean Session
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Each subscription from either a device or application is allocated a buffer of 
 5000 messages.  This allows for any application or device to fall behind the 
 live data it is processing and build up a backlog of up to 5000 pending 

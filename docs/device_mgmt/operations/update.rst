@@ -1,6 +1,8 @@
-==========================
-Updating Device Properties
-==========================
+===============================================================================
+Device Management Operations - Update
+===============================================================================
+
+.. _update-location:
 
 Update Location
 ---------------
@@ -51,6 +53,8 @@ Response Format:
 		"reqId": "string"
 	}
 	
+
+.. _update-attributes:
 
 Update Device Attributes
 ------------------------

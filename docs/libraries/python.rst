@@ -6,7 +6,7 @@ Use the Python module for interacting with the `IBM Internet of Things Foundatio
 -  `Python 3.4 <https://www.python.org/downloads/release/python-343/>`__
 -  `Python 2.7 <https://www.python.org/downloads/release/python-279/>`__
 
-Note: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1
+.. important:: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1
 
 This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices.
 

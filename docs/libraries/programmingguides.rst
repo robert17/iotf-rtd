@@ -17,9 +17,7 @@ Python
 Embedded C
 ~~~~~~~~~~~~~~~
 
-- `Embedded C Client Library - Introduction <../embeddedc/embedcintro.html#/>`__
-- `Embedded C Client Library - Devices and Applications <../embeddedc/embeddedc_devices.html#/>`__
-- `Embedded C Client Library - Samples <../embeddedc/embeddedc_samples.html#/>`__
+- `Embedded C Client Library <../libraries/embedded_c.html#/>`__
 
 Java
 ~~~~~~~~~~~~~~~

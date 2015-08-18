@@ -1,8 +1,8 @@
-==============
-Device Actions
-==============
+===============================================================================
+Device Management Operations - Device Actions
+===============================================================================
 
-.. _device_actions_reboot:
+.. _device-actions-reboot:
 
 Reboot
 ------
@@ -42,7 +42,7 @@ Response Format:
 	}
 
 
-.. _device_actions_factory_reset:
+.. _device-actions-factory-reset:
 
 Factory Reset
 -------------

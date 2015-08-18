@@ -196,14 +196,14 @@ messages that are being processed by a single application. It might be helpful t
 balancing capability of a shared subscription. IoTF shared subscription support is limited to 
 non-durable subscriptions only.  
 
-.. example:: You have an auto-scaling application:
+A simple example of an auto-scaling application:
 
-    -  client 1 connects as A:abc123:myApplication and subscribes to all device events
-       client 1 will receive 100% of the device events published
-    -  client 2 connects as A:abc123:myApplication and subscribes to all device events
-       now, client 1 and client 2 will share all of the events published between them. that is
-       the load is now shared between client 1 and client 2.
-    -  client 3 connects as A:abc123:myApplication and subscribes to all device events
-       now, instance 1, 2 and 3 will process the events shared amongst all three instances
-    -  clients 2 and 3 unsubscribe from all device events now, although instance 2 and 3 are 
-       still connected to the service, instance 1 will be receiving  all device events published
+-  client 1 connects as A:abc123:myApplication and subscribes to all device events
+   client 1 will receive 100% of the device events published
+-  client 2 connects as A:abc123:myApplication and subscribes to all device events
+   now, client 1 and client 2 will share all of the events published between them. that is
+   the load is now shared between client 1 and client 2.
+-  client 3 connects as A:abc123:myApplication and subscribes to all device events
+   now, instance 1, 2 and 3 will process the events shared amongst all three instances
+-  clients 2 and 3 unsubscribe from all device events now, although instance 2 and 3 are 
+   still connected to the service, instance 1 will be receiving  all device events published

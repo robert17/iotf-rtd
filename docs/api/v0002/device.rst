@@ -85,15 +85,4 @@ The query string takes the form of a list of attribute=value pairs separated by 
 
 	GET /bulk/devices?typeId='wdl5205'&deviceInfo.fwVersion=17
 
-However, there is no capability to perform other types of matches, such as greater than or regular expressions. It is possible to specify fields that are required using a query parameter of the following form:
-
-.. code:: 
-
-	?_fields=<field1>,<field2>...
-
-The query string will be able to refer to all of the device attributes in the core device model, and the attributes in the diagnostic and device management extensions. For example, to request the client ID and the firmware version on the devices, you can use:
-
-.. code:: 
-
-	GET /bulk/devices?typeId='wdl5205'&_fields=clientId,deviceInfo.fwVersion
-	
+However, there is no capability to perform other types of matches, such as greater than or regular expressions. 

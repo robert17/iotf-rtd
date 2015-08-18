@@ -1,33 +1,37 @@
 =====================================================================
-Programming Guides for the Internet of Things Foundation
+Programming Guides
 =====================================================================
 
-There are several client libraries availabe for use with the Internet of Things Foundation. These are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible.
-
-Current Programming Guides
----------------------------------------------------------------------
+There are several client libraries availabe for use with the Internet 
+of Things Foundation. These are designed to allow users to interact 
+with their devices and applications using their preferred language, 
+and to simplify this interaction as much as possible.
 
 Python
-~~~~~~~~~~~~~~~
+---------------------------------------------------------------------
 
-- `Python Client Library - Introduction <../libraries/python.html#/>`__
-- `Python Client Library - Devices <../libraries/python_cli_for_devices.html#/>`__
-- `Python Client Library - Applications <../libraries/python_cli_for_apps.html#/>`__
+- `Introduction <../libraries/python.html#/>`__
+- `Documentation for device developers <../libraries/python_cli_for_devices.html#/>`__
+- `Documentation application developers <../libraries/python_cli_for_apps.html#/>`__
+- `See the code in GitHub <https://github.com/ibm-messaging/iot-python>`_
 
 Embedded C
-~~~~~~~~~~~~~~~
+---------------------------------------------------------------------
 
-- `Embedded C Client Library <../libraries/embedded_c.html#/>`__
+- `Documentation <../libraries/embedded_c.html#/>`__
+- `See the code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_
 
 Java
-~~~~~~~~~~~~~~~
+---------------------------------------------------------------------
 
-- `Java Client Library - Introduction <../java/javaintro.html#/>`__
-- `Java Client Library - Devices <../java/java_cli_devices.html#/>`__
+- `Introduction <../java/javaintro.html#/>`__
+- `Documentation for device developers <../java/java_cli_devices.html#/>`__
+- `See the code in GitHub <https://github.com/ibm-messaging/iot-java>`_
 
 Node.js
-~~~~~~~~~~~~~~~
+---------------------------------------------------------------------
 
-- `Node.js Client Library - Introduction <../nodejs/node-js_intro.html#/>`__
-- `Node.js Client Library - Devices <../nodejs/node-js_devices.html#/>`__
-- `Node.js Client Library - Applications <../nodejs/node-js_applications.html#/>`__
+- `Introduction <../nodejs/node-js_intro.html#/>`__
+- `Documentation for device developers <../nodejs/node-js_devices.html#/>`__
+- `Documentation for application developers <../nodejs/node-js_applications.html#/>`__
+- `See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_

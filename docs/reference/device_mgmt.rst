@@ -1,5 +1,5 @@
 ============================================================================
-Introduction to Device Management
+Device Management
 ============================================================================
 
 The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management.

@@ -5,12 +5,12 @@ Building the Internet of Things
 The IBM Internet of Things Foundation is powered by a core of IBM's leading products 
 and services:
 
- - `IBM DataPower Gateway`_
- - `IBM WebSphere Application Server Liberty Core`_
- - `IBM Informix TimeSeries`_
- - `IBM MessageSight`_
- - Cloudant_
- - SoftLayer_
+- `IBM DataPower Gateway`_
+- `IBM WebSphere Application Server Liberty Core`_
+- `IBM Informix TimeSeries`_
+- `IBM MessageSight`_
+- Cloudant_
+- SoftLayer_
  
 .. _IBM DataPower Gateway: http://www-03.ibm.com/software/products/en/datapower-gateway
 .. _IBM WebSphere Application Server Liberty Core: http://www-03.ibm.com/software/products/en/appserv-was-liberty-core

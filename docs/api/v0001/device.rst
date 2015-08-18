@@ -350,7 +350,7 @@ Register a new device to an organization.
 .. note:: You can use any scheme of your choice when assigning values for 
     type and id to registered devices, however the following restrictions apply:
 
-    - Maximum length of 32 characters 
+    - Maximum length of 36 characters 
     - Must comprise only alpha-numeric characters and the following special characters:
 
       - dash ("-")

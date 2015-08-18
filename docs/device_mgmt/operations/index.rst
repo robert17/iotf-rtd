@@ -7,7 +7,7 @@ The Device Management Protocol defines a set of supported operations. A device m
 Device Initiated
 ----------------
 
-Thesre operations are initiated by the device, manage and unmanage operations must be supported by all managed devices.  All other operations are optional. 
+These operations are initiated by the device, manage and unmanage operations must be supported by all managed devices.  All other operations are optional. 
 
 
 Management Operations

@@ -155,3 +155,55 @@ registered service that are not supported in Quickstart:
   - device\_type
   - app\_id
 - MQTT connection over SSL
+
+
+----
+
+
+Scalable Applications
+-------------------------------------------------------------------------------
+
+You can build scalable applications which will load balance messages across 
+multiple instances of your application by making a few changes to how your 
+application connects to the IoT Foundation. Applications taking advantage
+of this feature must only attempt to make non-durable subscriptions. A bit
+of experimentation may be needed to understand how many clients are needed
+for the optimum balance in load.
+
+-  Supply a client id of the form
+   **A**:**org\_id**:**app\_id**
+-  **A** indicates the client is a scalable application
+-  **org\_id** is your unique organization ID, assigned when you sign up
+   with the service.  It will be a 6 character alphanumeric string.
+-  **app\_id** is a user-defined unique string identifier for this client.
+-  Create a non-durable subscription 
+
+.. note:: Only non-durable subscriptions are supported for scalable applications. 
+    Please note that the client id must begin with a capital 'A' in order to designated
+    as a scalable application by IoTF. Multiple clients that are part of the scalable
+    application should use the exact same client id.
+
+----
+
+
+How It Works
+~~~~~~~~~~~~
+The IoTF service extends the MQTT 3.1.1 specification to provide support for shared subscriptions. 
+Shared subscription can provide simple load balancing functionality for applications. A shared 
+subscription might be needed if a back-end enterprise application can not keep up with the number 
+of messages being published to a specific topic space. For example if many devices were publishing 
+messages that are being processed by a single application. It might be helpful to leverage the load 
+balancing capability of a shared subscription. IoTF shared subscription support is limited to 
+non-durable subscriptions only.  
+
+.. example:: You have an auto-scaling application:
+
+    -  client 1 connects as A:abc123:myApplication and subscribes to all device events
+       client 1 will receive 100% of the device events published
+    -  client 2 connects as A:abc123:myApplication and subscribes to all device events
+       now, client 1 and client 2 will share all of the events published between them. that is
+       the load is now shared between client 1 and client 2.
+    -  client 3 connects as A:abc123:myApplication and subscribes to all device events
+       now, instance 1, 2 and 3 will process the events shared amongst all three instances
+    -  clients 2 and 3 unsubscribe from all device events now, although instance 2 and 3 are 
+       still connected to the service, instance 1 will be receiving  all device events published

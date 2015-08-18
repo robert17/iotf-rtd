@@ -45,7 +45,7 @@ MQTT Client Configuration
 Quality of Service Levels and CleanSession
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Devices can send messages with Quality of Service (QoS) level of 0 or 1. If QoS 1 is used, messages from the device will be queued is necessary. Messages from the device must not be retained messages. The Internet of Things Foundation publishes requests with a QoS level of 1 o support queuing messages.
+Devices can send messages with Quality of Service (QoS) level of 0 or 1. If QoS 1 is used, messages from the device will be queued if necessary. Messages from the device must not be retained messages. The Internet of Things Foundation publishes requests with a QoS level of 1 o support queuing messages.
 
 In order to queue messages sent while a device is not connected, the device should use cleansession=false. Otherwise, cleansession=true should be used.
 

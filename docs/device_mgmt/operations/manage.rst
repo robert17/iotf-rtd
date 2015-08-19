@@ -54,10 +54,7 @@ Request Format:
 		"reqId": "string"
 	}
 
-			}
-		}
-	}
-	
+
 Response Format:
 
 .. code::

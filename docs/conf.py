@@ -108,9 +108,25 @@ import os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
-    import sphinx_rtd_theme
-    html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    try:
+        import iotf_theme2
+    except ImportError:
+        # This part is only required to run the sample from within the samples
+        # directory when the module itself is not installed.
+        #
+        # If you have the module installed, just use "import ibmiotf"
+        import os
+        import inspect
+        cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0], "..")))
+        if cmd_subfolder not in sys.path:
+            print(cmd_subfolder)
+            sys.path.insert(0, cmd_subfolder)
+        import iotf_theme2
+    html_theme = 'iotf_theme2'
+    html_theme_path = [iotf_theme2.get_html_theme_path()]
+#    import sphinx_rtd_theme
+#    html_theme = 'sphinx_rtd_theme'
+#    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 

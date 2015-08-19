@@ -1,0 +1,77 @@
+{
+	"copyright": [
+		"Licensed Materials - Property of IBM",
+		"5725-Q07",
+		"(C) Copyright IBM Corp. 2015",
+		"US Government Users Restricted Rights - Use, duplication, or disclosure",
+		"restricted by GSA ADP Schedule Contract with IBM Corp."
+	],
+
+	"angular-modules": {
+		"footer": {
+			"terms-link": "ご利用条件",
+			"support-link": "サポート",
+			"privacy-link": "プライバシー",
+			"recipes-link": "レシピ",
+			"doc-link": "資料",
+			"answers-link": "回答",
+			"api-link": "API",
+			"status-link": "状況",
+			"quickstart-link": "Quickstart"
+		},
+		"modals": {
+			"logoutprompt": {
+				"title": "IoT Foundation からログアウト",
+				"text": "IBM ID で IBM Internet of Things Foundation にログインしました。IoT Foundation からログアウトすると、他のブラウザー・ウィンドウでその他の IBM アプリケーションを開いていた場合、そのアプリケーションからもサインアウトすることになります。ログアウトしますか?",
+				"logout-button": "ログアウト",
+				"cancel-button": "キャンセル",
+				"close-button": "閉じる",
+				"logging-out": "ログアウトします。お待ちください..."
+			}
+		},
+		"languageselector": {
+			"language-label": "言語",
+			"language-de": "ドイツ語",
+			"language-en": "英語",
+			"language-es": "スペイン語",
+			"language-fr": "フランス語",
+			"language-it": "イタリア語",
+			"language-ja": "日本語",
+			"language-ko": "韓国語",
+			"language-pt-br": "ポルトガル語 (ブラジル)",
+			"language-zh-hans": "中国語 (簡体字)",
+			"language-zh-hant": "中国語 (繁体字)"
+		},
+		"rootnavigation": {
+			"orgs": "自分の組織 ({{number}})",
+			"no-orgs": "どの組織のメンバーでもありません",
+			"login": "ログイン",
+			"logout": "ログアウト",
+			"service-status": "サービス状況",
+			"doc": "資料",
+			"terms": "条件",
+			"privacy": "プライバシー",
+			"support": "サポート",
+			"signin-button": "サインイン"
+		},
+		"translationhelperservice": {
+			"memorysize": {
+				"unknown": "-",
+				"zero-bytes": "0 バイト",
+				"one-byte": "1 バイト",
+				"several-bytes": "{{number}} バイト",
+				"one-kb": "1 KB",
+				"several-kb": "{{number}} kB",
+				"one-mb": "1 MB",
+				"several-mb": "{{number}} MB",
+				"one-gb": "1 GB",
+				"several-gb": "{{number}} GB",
+				"one-tb": "1 TB",
+				"several-tb": "{{number}} TB",
+				"one-pb": "1 PB",
+				"several-pb": "{{number}} PB"
+			}
+		}
+	}
+}
+

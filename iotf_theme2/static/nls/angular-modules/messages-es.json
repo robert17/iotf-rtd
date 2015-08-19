@@ -1,0 +1,77 @@
+{
+	"copyright": [
+		"Materiales con licencia - Propiedad de IBM",
+		"5725-Q07",
+		"(C) Copyright IBM Corp. 2015",
+		"Derechos restringidos para los usuarios del Gobierno de Estados Unidos - El uso, duplicación o divulgación",
+		"restringidos por GSA ADP Schedule Contract con IBM Corp."
+	],
+
+	"angular-modules": {
+		"footer": {
+			"terms-link": "Condiciones de uso",
+			"support-link": "Soporte",
+			"privacy-link": "Privacidad",
+			"recipes-link": "Recetas",
+			"doc-link": "Documentación",
+			"answers-link": "Respuestas",
+			"api-link": "API",
+			"status-link": "Estado",
+			"quickstart-link": "Inicio rápido"
+		},
+		"modals": {
+			"logoutprompt": {
+				"title": "Finalizar sesión de IOT Foundation",
+				"text": "Está registrado en IBM Internet of Things Foundation con el ID de IBM. Finalizando sesión en IoT Foundation, sale de las demás aplicaciones de IBM que tiene abiertas en otras ventanas del navegador. ¿Desea finalizar la sesión?",
+				"logout-button": "Finalizar sesión",
+				"cancel-button": "Cancelar",
+				"close-button": "Cerrar ",
+				"logging-out": "Finalizando sesión, espere..."
+			}
+		},
+		"languageselector": {
+			"language-label": "Idioma ",
+			"language-de": "Alemán",
+			"language-en": "Inglés",
+			"language-es": "Español",
+			"language-fr": "Francés",
+			"language-it": "Italiano",
+			"language-ja": "Japonés",
+			"language-ko": "Coreano",
+			"language-pt-br": "Portugués (Brasil)",
+			"language-zh-hans": "Chino (simplificado) ",
+			"language-zh-hant": "Chino (tradicional)"
+		},
+		"rootnavigation": {
+			"orgs": "Mis organizaciones ({{number}})",
+			"no-orgs": "No es miembro de ninguna organización",
+			"login": "Iniciar sesión",
+			"logout": "Finalizar sesión",
+			"service-status": "Estado de servicio ",
+			"doc": "Documentación",
+			"terms": "Términos",
+			"privacy": "Privacidad",
+			"support": "Soporte",
+			"signin-button": "Iniciar sesión"
+		},
+		"translationhelperservice": {
+			"memorysize": {
+				"unknown": "-",
+				"zero-bytes": "0 bytes",
+				"one-byte": "1 byte",
+				"several-bytes": "{{number}} bytes",
+				"one-kb": "1 kB",
+				"several-kb": "{{number}} kB",
+				"one-mb": "1 MB",
+				"several-mb": "{{number}} MB",
+				"one-gb": "1 GB",
+				"several-gb": "{{number}} GB",
+				"one-tb": "1 TB",
+				"several-tb": "{{number}} TB",
+				"one-pb": "1 PB",
+				"several-pb": "{{number}} PB"
+			}
+		}
+	}
+}
+

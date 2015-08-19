@@ -1,0 +1,301 @@
+.iotf-main-nav li a.btn-signin {
+  margin-right: 0px;
+}
+
+body{
+	font-size: 14px;
+}
+body a{
+	font-size: 14px;
+}
+
+div.section > img {
+   display: block;  height: auto;  max-width: 100%;
+}
+
+div.section > hr.docutils {
+   border-top: 1px solid #e1e4e5;
+   margin:24px
+}
+
+div.section > p {
+  line-height:160%;
+  margin-bottom: 1em
+}
+
+/* ----------------------------------------------------------------------------
+ * Headings
+ * --------------------------------------------------------------------------*/
+div.section > h1 {
+  font-size: 180%;
+  font-weight: 700;
+  margin-bottom: 1em
+}
+
+div.section > h2 {
+  font-size: 150%;
+  font-weight: 700;
+  margin-bottom: 1em
+}
+
+div.section > h3 {
+  font-size: 120%;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 1em
+}
+
+/* ----------------------------------------------------------------------------
+ * Admonitions
+ * --------------------------------------------------------------------------*/
+div.admonition {
+  padding: 12px;
+  margin-bottom: 24px
+}
+
+div.warning {
+  background: #ffedcc;
+}
+
+div.admonition > p.admonition-title {
+  font-weight: bold;
+  display:block;
+  color: #fff;
+  margin: -12px;
+  padding: 6px 12px;
+  margin-bottom:12px
+}
+
+div.warning > p.admonition-title {
+  background: #f0b37e;
+}
+
+div.important, div.tip {
+  background: #dbfaf4;
+}
+
+div.important > p.admonition-title, div.tip > p.admonition-title {
+  background: #1abc9c;
+}
+
+div.note {
+  background: #e7f2fa;
+}
+
+div.note > p.admonition-title {
+  background: #6ab0de;
+}
+
+div.doc-nav-content {
+  margin:1em 0 0;
+  padding:0 1em 0 0 ;
+}
+
+div.doc-nav-content > ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0 0 1em 0;
+}
+
+div.doc-nav-content > ul > li > ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+
+div.doc-nav-content > ul > li.toctree-l1 {
+  list-style:none;
+  padding:0;
+  margin:0;
+  line-height:24px;
+  padding-left:12px;
+}
+div.doc-nav-content > ul > li.toctree-l1 > a{
+  font-size:85%;
+  color:#fff;
+  font-weight:700;
+}
+
+div.doc-nav-content > ul > li > ul > li.toctree-l2 {
+  list-style:none;
+  margin:0;
+  line-height:24px;
+  padding-left:24px;
+}
+
+div.doc-nav-content > ul > li > ul > li.toctree-l2 > a{
+  font-size:85%;
+  color:#fff;
+}
+
+div.doc-nav-content select {
+  color:#fff;
+  background-color:#264a60;
+}
+
+div.doc-nav-content span {
+  color:#fff;
+}
+
+div.doc-nav-content [data-iotc-language-selector] {
+  padding:12px;
+}
+
+/* ----------------------------------------------------------------------------
+ * Pygments Syntax Highighting (defaults)
+ * --------------------------------------------------------------------------*/
+div.code div.highlight .hll { background-color: #ffffcc }
+div.code div.highlight  { background: #f8f8f8; }
+div.code div.highlight .c { color: #408080; font-style: italic } /* Comment */
+div.code div.highlight .err { border: 1px solid #FF0000 } /* Error */
+div.code div.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+div.code div.highlight .o { color: #666666 } /* Operator */
+div.code div.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+div.code div.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+div.code div.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+div.code div.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+div.code div.highlight .gd { color: #A00000 } /* Generic.Deleted */
+div.code div.highlight .ge { font-style: italic } /* Generic.Emph */
+div.code div.highlight .gr { color: #FF0000 } /* Generic.Error */
+div.code div.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+div.code div.highlight .gi { color: #00A000 } /* Generic.Inserted */
+div.code div.highlight .go { color: #808080 } /* Generic.Output */
+div.code div.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+div.code div.highlight .gs { font-weight: bold } /* Generic.Strong */
+div.code div.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+div.code div.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+div.code div.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+div.code div.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+div.code div.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+div.code div.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+div.code div.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+div.code div.highlight .kt { color: #B00040 } /* Keyword.Type */
+div.code div.highlight .m { color: #666666 } /* Literal.Number */
+div.code div.highlight .s { color: #BA2121 } /* Literal.String */
+div.code div.highlight .na { color: #7D9029 } /* Name.Attribute */
+div.code div.highlight .nb { color: #008000 } /* Name.Builtin */
+div.code div.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+div.code div.highlight .no { color: #880000 } /* Name.Constant */
+div.code div.highlight .nd { color: #AA22FF } /* Name.Decorator */
+div.code div.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+div.code div.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+div.code div.highlight .nf { color: #0000FF } /* Name.Function */
+div.code div.highlight .nl { color: #A0A000 } /* Name.Label */
+div.code div.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+div.code div.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+div.code div.highlight .nv { color: #19177C } /* Name.Variable */
+div.code div.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+div.code div.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+div.code div.highlight .mf { color: #666666 } /* Literal.Number.Float */
+div.code div.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+div.code div.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+div.code div.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+div.code div.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+div.code div.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+div.code div.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+div.code div.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+div.code div.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+div.code div.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+div.code div.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+div.code div.highlight .sx { color: #008000 } /* Literal.String.Other */
+div.code div.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+div.code div.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+div.code div.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+div.code div.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+div.code div.highlight .vc { color: #19177C } /* Name.Variable.Class */
+div.code div.highlight .vg { color: #19177C } /* Name.Variable.Global */
+div.code div.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+div.code div.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+.doc-nav-content {
+  padding-top: 17px;
+}
+
+
+
+.doc-main-content{
+  padding-top: 5px;
+}
+
+.breadcrumb a{
+	font-size:14px;
+}
+
+.breadcrumb-custom{
+	margin-bottom: 0px;
+}
+
+.github-btn{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0px;
+	padding-bottom: 14px;
+	padding-top: 10px;
+	text-align: center;
+	color: purple;
+}
+
+.github-btn:hover, .github-btn:focus, .github-btn:visited{
+	text-decoration: none;
+	color: purple;
+}
+
+.github-remove-padding{
+	padding-left:0;
+}
+
+.hr-remove-margin{
+	margin-top: 0px;
+}
+
+.doc-breadcrumb-padding{
+	padding-top: 15px;
+}
+
+.section a:hover{
+	text-decoration: none;
+}
+.TEMPsection h1:hover::after,.TEMPsection h2:hover::after{
+	margin-left: 5px;
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background: url(../images/linkIcon.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.headerlink{
+  display: none;
+  visibility: hidden;
+}
+
+.custom-next-btn-align{
+	text-align: right;
+}
+
+.custom-next-btn{
+	width:81px ;
+}
+
+.footer-next-padding{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+list-style-type: none;
+}
+
+ul#nav-org-scroller {
+display: block;
+padding: 0px;
+}
+
+.nav-org-id {
+	display: block;
+}
+
+.nav-org-id:hover, .nav-org-id:hover, .nav-org-id:hover {
+	text-decoration: none;
+}

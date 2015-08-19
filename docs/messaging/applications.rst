@@ -193,8 +193,8 @@ Shared subscription can provide simple load balancing functionality for applicat
 subscription might be needed if a back-end enterprise application can not keep up with the number 
 of messages being published to a specific topic space. For example if many devices were publishing 
 messages that are being processed by a single application. It might be helpful to leverage the load 
-balancing capability of a shared subscription. IoTF shared subscription support is limited to 
-non-durable subscriptions only.  
+balancing capability of a shared subscription. IoTF shared subscription support is limited to 
+non-durable subscriptions only.
 
 A simple example of an auto-scaling application:
 

@@ -1,0 +1,77 @@
+{
+	"copyright": [
+		"Licensed Materials - Property of IBM",
+		"5725-Q07",
+		"(C) Copyright IBM Corp. 2015",
+		"US Government Users Restricted Rights - Use, duplication, or disclosure",
+		"restricted by GSA ADP Schedule Contract with IBM Corp."
+	],
+
+	"angular-modules": {
+		"footer": {
+			"terms-link": "Termos de uso ",
+			"support-link": "Suporte",
+			"privacy-link": "Privacidade ",
+			"recipes-link": "Receitas",
+			"doc-link": "Documentação",
+			"answers-link": "Respostas",
+			"api-link": "API",
+			"status-link": "Status",
+			"quickstart-link": "Quickstart"
+		},
+		"modals": {
+			"logoutprompt": {
+				"title": "Efetuar logout do IOT Foundation",
+				"text": "Você está com login efetuado no IBM Internet of Things Foundation com seu ID IBM. Efetuar logout do IoT Foundation desconecta-o de outros aplicativos IBM que você pode ter aberto em outras janelas do navegador. Deseja efetuar logout?",
+				"logout-button": "Efetuar logout",
+				"cancel-button": "Cancelar",
+				"close-button": "Fechar",
+				"logging-out": "Efetuando logout, aguarde..."
+			}
+		},
+		"languageselector": {
+			"language-label": "Idioma",
+			"language-de": "Alemão ",
+			"language-en": "Inglês",
+			"language-es": "Espanhol ",
+			"language-fr": "Francês ",
+			"language-it": "Italiano ",
+			"language-ja": "Japonês",
+			"language-ko": "Coreano ",
+			"language-pt-br": "Português (Brasil)",
+			"language-zh-hans": "Chinês (Simplificado)",
+			"language-zh-hant": "Chinês (Tradicional)"
+		},
+		"rootnavigation": {
+			"orgs": "Minhas organizações ({{number}})",
+			"no-orgs": "Você não é membro de nenhuma organização ",
+			"login": "Efetuar login",
+			"logout": "Efetuar logout",
+			"service-status": "Status de serviço ",
+			"doc": "Documentação",
+			"terms": "Termos",
+			"privacy": "Privacidade ",
+			"support": "Suporte",
+			"signin-button": "Conectar"
+		},
+		"translationhelperservice": {
+			"memorysize": {
+				"unknown": "-",
+				"zero-bytes": "0 bytes",
+				"one-byte": "1 byte",
+				"several-bytes": "{{number}} bytes",
+				"one-kb": "1 kB",
+				"several-kb": "{{number}} kB",
+				"one-mb": "1 MB",
+				"several-mb": "{{number}} MB",
+				"one-gb": "1 GB",
+				"several-gb": "{{number}} GB",
+				"one-tb": "1 TB",
+				"several-tb": "{{number}} TB",
+				"one-pb": "1 PB",
+				"several-pb": "{{number}} PB"
+			}
+		}
+	}
+}
+

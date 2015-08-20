@@ -67,12 +67,16 @@ Programming Guides
 
     libraries/embedded_c
 
-    java/javaintro.rst
-    java/java_cli_devices.rst
+    java/javaintro
+    java/java_cli_devices
     
-    nodejs/node-js_intro.rst
-    nodejs/node-js_devices.rst
-    nodejs/node-js_applications.rst	
+    nodejs/node-js_intro
+    nodejs/node-js_devices
+    nodejs/node-js_applications	
+    
+    libraries/c_sharp_introduction
+    libraries/c_sharp_devices
+    libraries/c_sharp_applications
 
 Messaging
 -------------------------------------------------------------------------------

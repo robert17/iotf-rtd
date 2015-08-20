@@ -4,11 +4,14 @@ Device Model
 
 The device model describes the metadata and management characteristics of a 
 device. The device database in the Internet of Things Foundation is the master 
-source of device information. Devices are able to send updates to the database 
-such as a location or the progress of a firmware update. Once these updates 
-are received by the Internet of Things Foundation, it updates the device database 
-and makes the information available.
+source of device information. Applications and managed devices and are able 
+to send updates to the database such as a location or the progress of a firmware 
+update. Once these updates are received by the Internet of Things Foundation 
+it updates the device database and makes the information available.
 
+.. note:: With the exception of the management extension, the entire device model 
+   is available for both managed and unmanaged devices. But only managed devices
+   can directly update attributes of the device model.
 
 --------
 
@@ -33,7 +36,7 @@ identifiers for use with the device management protocol. These identifiers are:
 - deviceInfo.serialNumber
 - deviceInfo.model
 - deviceInfo.deviceClass
-- deviceInfo.description. 
+- deviceInfo.description
 
 For more information on the identifiers and descriptions of their comparative 
 identifiers in other device management standards, see Device Model Attributes Reference.
@@ -130,7 +133,7 @@ Extented Attributes
 -------------------------------------------------------------------------------
 
 In addition to core attributes listed above, there are additional attributes which 
-are treated as extensions to the code device model. Simple queries about the device 
+are treated as extensions to the core device model. Simple queries about the device 
 return information from the core device model, but not the extensions. Information 
 from the extensions must be specifically requested.
 
@@ -197,7 +200,7 @@ For solutions which place significant importance on frequent location updates, i
 Device Management Extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The 'mgmt.' attributes are only present for managed devices. When a managed device becomes dormant, it becomes unmanaged and the 'mgmt.' attributes are deleted. The 'mgmt.' attributes are set by the Internet of Things Foundation as a result of processing device management requests. These attributes cannot be directly written using the API.
+The ``mgmt.`` attributes are only present for managed devices. When a managed device becomes dormant, it becomes unmanaged and the ``mgmt.`` attributes are deleted. The ``mgmt.`` attributes are set by the Internet of Things Foundation as a result of processing device management requests. These attributes cannot be directly written using the API.
 
 Devices have a management lifecycle, defined by their status as managed devices. The device management agent on the device is responsible for sending a Manage Device request using the device management protocol. To deal with defunct devices in large device populations, a managed device can be set to send a Manage Device request regularly, allowing the Internet of Things Foundation to notice when a device has become dormant. To facilitate this functionality, the Manage Device request has an optional lifetime parameter, When the Internet of Things Foundation receives a Manage Device request with a lifetime, it calculates the time before which another Manage Device request is required and stores it in the  "mgmt.dormantDateTime" attribute.
 

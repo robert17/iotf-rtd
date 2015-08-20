@@ -4,14 +4,14 @@ Device Model
 
 The device model describes the metadata and management characteristics of a 
 device. The device database in the Internet of Things Foundation is the master 
-source of device information. Applications and managed devices and are able 
+source of device information. Applications and managed devices are able 
 to send updates to the database such as a location or the progress of a firmware 
 update. Once these updates are received by the Internet of Things Foundation 
 it updates the device database and makes the information available.
 
 .. note:: With the exception of the management extension, the entire device model 
-   is available for both managed and unmanaged devices. But only managed devices
-   can directly update attributes of the device model.
+   is available for both managed and unmanaged devices. However, an unmanaged 
+   device can not directly update it's device model in the database.
 
 --------
 

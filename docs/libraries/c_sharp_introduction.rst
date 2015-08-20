@@ -1,8 +1,8 @@
 =====================================
-C Sharp Client Library - Introduction
+C# Client Library - Introduction
 =====================================
 
-Use the C Sharp module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ and to automate commands using C# 5.0 or 4.0. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instruction and guidance on using the C Sharp module to interact with devices and applications within your organizations.
+Use the C# module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ and to automate commands using C# 5.0 or 4.0. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instruction and guidance on using the C# module to interact with devices and applications within your organizations.
 
 - `C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_
 - `C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_

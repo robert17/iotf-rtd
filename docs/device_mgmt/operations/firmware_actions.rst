@@ -5,6 +5,8 @@ Device Management Operations - Firmware Actions
 The firmware level currently known to be on a given device is stored in the ``deviceInfo.fwVersion`` attribute. 
 The ``mgmt.firmware`` attributes are used to perform a firmware update and observe its status.
 
+.. important:: The managed device must support observation of the ``mgmt.firmware`` attribute in order to support firmware actions.
+
 The firmware update process is separated into two distinct actions, Downloading Firmware, and Updating Firmware. 
 The status of each of these actions is stored in a separate attribute on the device. The ``mgmt.firmware.state`` 
 attribute describes the status of the firmware download. The possible values for ``mgmt.firmware.state`` are:

@@ -6,12 +6,12 @@ The device model describes the metadata and management characteristics of a
 device. The device database in the Internet of Things Foundation is the master 
 source of device information. Applications and managed devices are able 
 to send updates to the database such as a location or the progress of a firmware 
-update. Once these updates are received by the Internet of Things Foundation 
-it updates the device database and makes the information available.
+update. Once these updates are received by the Internet of Things Foundation, the 
+device database is updated, making the information available to applications.
 
 .. note:: With the exception of the management extension, the entire device model 
    is available for both managed and unmanaged devices. However, an unmanaged 
-   device can not directly update it's device model in the database.
+   device can not directly update its device model in the database.
 
 --------
 
@@ -19,16 +19,13 @@ it updates the device database and makes the information available.
 Device Identification
 -------------------------------------------------------------------------------
 
-The Internet of Things Foundation requires a unique identifier for every device. 
-However, the identification of devices from the can often be complex due to the 
-number of different potential identifying characteristics of a device. For 
-example, model numbers will likely be unique within a manufacturer, and serial 
-numbers will be unique within a model number. However, these rules are not 
-true for all devices.
+Every device has a typeId and deviceId attribute. Typically, the 
+typeId represents the model of your device, whilst the deviceId can represent its serial number. Within
+your Internet of Things Foundation organization, the combination of typeId and deviceId must be unique for each device.
 
-All devices within the Internet of Things Foundation are identified using the 
-clientId, typeId and deviceId attributes. The characters which can be used in 
-these identifiers are restricted so they can be used straightforwardly in 
+In addition, the Internet of Things Foundation constructs a further identifier for each device based on your organizationId, the device's typeId and the device's deviceId. This identifier - the clientId - allows you to identify unequivocally an individual device.  
+
+The characters which can be used in these identifiers are restricted so they can be used straightforwardly in 
 communication protocols and REST APIs. There are a number of optional device 
 identifiers for use with the device management protocol. These identifiers are:
 
@@ -60,10 +57,9 @@ manufacture, and this value would be copied from the device type into the device
 they are added. However, if a device was added which already had a value for 
 ``deviceInfo.fwVersion``, it would not be overridden by the device type.
 
-When a device type is updated, devices associated with that device type are not 
-affected, their attributes will remain unchanged. The device type is used as a 
-template for the setting of the attributes it contains on new devices, but 
-does not retroactively affect existing devices. 
+When a device type is updated, future registered devices will reflect the modified device
+type template. However, existing devices of this device type are unaffected and remain
+unchanged.
 
 
 --------
@@ -73,7 +69,7 @@ Attributes
 -------------------------------------------------------------------------------
 
 The table below shows the list of attributes which can apply to devices in the Internet 
-of Things Foundation, additionally, italicized attributes can also apply to device types.
+of Things Foundation. Additionally, italicized attributes can also apply to device types.
 
 - API/DMA: Can be updated by API/Device Management Agent
 
@@ -129,7 +125,7 @@ of Things Foundation, additionally, italicized attributes can also apply to devi
 
 --------
 
-Extented Attributes
+Extended Attributes
 -------------------------------------------------------------------------------
 
 In addition to core attributes listed above, there are additional attributes which 

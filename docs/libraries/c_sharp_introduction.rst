@@ -17,7 +17,7 @@ Dependencies
 
 Documentation
 -------------
-- `Device Client <http://>`_
+- `Device Client <../libraries/c_sharp_devices.html#/>`_
 
-- `Application Client <http://>`_
+- `Application Client <../libraries/c_sharp_applications.html#/>`_
 

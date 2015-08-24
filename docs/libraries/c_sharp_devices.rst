@@ -4,7 +4,7 @@ C# Client Library - Devices
 
 Introduction
 ------------
-This client library describes how to use devices with the C# ibmiotf module. For help with getting started with this module, see `C Sharp Client Library - Introduction <http://docs.internetofthings.ibmcloud.com>`_\.
+This client library describes how to use devices with the C# ibmiotf module. For help with getting started with this module, see `C Sharp Client Library - Introduction <../libraries/c_sharp_introduction.html#/>`_\.
 
 This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the C# ibmiotf module. The Applications section contains information on how applications can use the ibmiotf module to interact with devices.
 

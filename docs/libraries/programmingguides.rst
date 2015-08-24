@@ -35,3 +35,11 @@ Node.js
 - `Documentation for device developers <../nodejs/node-js_devices.html#/>`__
 - `Documentation for application developers <../nodejs/node-js_applications.html#/>`__
 - `See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_
+
+
+C#
+-----------------------------------------------------------------------
+
+- `Introduction <../libraries/c_sharp_introduction.html#/>`__
+- `Documentation for device developers <../libraries/c_sharp_devices.html#/>`__
+- `Documentation for application developers <../libraries/c_sharp_applications.html#/>`__

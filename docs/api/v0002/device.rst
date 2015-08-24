@@ -57,7 +57,7 @@ Device Management API
 Filtering and Querying
 ------------------------
 
-An important part of device management is the ability to query and filter information about devices. This is important for operator dashboards as well as building tools using APIs. For example a tool might query for a list of devices, filtering by device type, last activity and connection status.
+An important part of device management is the ability to query and filter information about devices. This is important for operator dashboards as well as building tools using APIs.
 
 The following API will permit a query string to qualify the devices whose information is being requested.
 - GET /bulk/devices 

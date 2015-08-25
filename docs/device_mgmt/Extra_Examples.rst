@@ -73,7 +73,7 @@ Request Body:
     "parameters": [
       {"name": "version", "value": "20"},
       {"name": "name", "value": "Twisty swirls"},
-      {"name": "url", "value": "https://firmware.smartcop.com/flyingcarpet/1001.zip"}
+      {"name": "uri", "value": "https://firmware.smartcop.com/flyingcarpet/1001.zip"}
       ]
     "devices": [{"typeId": "raspberry-pi", "deviceId": "andrewpi"}]
   }

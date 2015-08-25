@@ -77,7 +77,7 @@ These messages must include two JSON elements, "d" and "reqId". The "d" field ca
 			"reqId": ...
 		}
 	
-	These messages can include include four JSON elements: "rc", "message", "d", and "reqId". The "rc" field is a result code of the original request, the "message" field is an optional field with a text description of the response code, "d" is a data field accompanying the response, if necessary, and "reqId" is the request ID of the original request. The "reqId" field is used to correlate responses with requests, and the device needs to ensure that all request IDs are unique.
+	These messages can include four JSON elements: "rc", "message", "d", and "reqId". The "rc" field is a result code of the original request, the "message" field is an optional field with a text description of the response code, "d" is a data field accompanying the response, if necessary, and "reqId" is the request ID of the original request. The "reqId" field is used to correlate responses with requests, and the device needs to ensure that all request IDs are unique.
 	
 	When responding to Internet of Things Foundation requests, the correct "reqId" value must be sent in the response.
 	

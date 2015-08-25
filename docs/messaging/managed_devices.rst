@@ -13,20 +13,27 @@ MQTT Client Configuration
 Quality of Service Levels and CleanSession
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Devices can send messages with Quality of Service (QoS) level of 0 or 1. If QoS 1 is used, messages from the device will be queued if necessary. Messages from the device must not be retained messages. The Internet of Things Foundation publishes requests with a QoS level of 1 o support queuing messages.
+Devices can publish messages with Quality of Service (QoS) level of 0 or 1. If QoS 1 is used, messages from the device will be queued if necessary. Messages from the device must not be retained messages. 
 
-In order to queue messages sent while a device is not connected, the device should use cleansession=false. Otherwise, cleansession=true should be used.
+The Internet of Things Foundation publishes requests with a QoS level of 1 to support queuing of messages.  In order to queue messages sent while a device is not connected, the device should use cleansession=false. Otherwise, cleansession=true should be used.
 
 Topics
 ~~~~~~~~
 
-Messages can originate from the Internet of Things Foundation, or on the device.
+Messages can originate from the Internet of Things Foundation or from the device.
 
-Messages originating on the device are published to topics with the prefix 'iotdevice-1' in the form:
+Messages originating from the device are published to topics with the prefix 'iotdevice-1' in the form:
 
 .. code::
 
 	iotdevice-1/...
+
+Responses from the Internet of Things Foundation will be published to:
+
+.. code::
+
+	iotdm-1/response
+
 	
 Messages originating from the Internet of Things Foundation are published to topics with the prefix 'iotdm-1' in the form:
 
@@ -40,11 +47,6 @@ Responses from the device must be published to:
 
 	iotdevice-1/response
 
-Responses from the Internet of Things Foundation will be published to:
-
-.. code::
-
-	iotdm-1/response
 
 
 Message Format

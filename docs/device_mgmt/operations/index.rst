@@ -4,10 +4,12 @@ Device Management Operations
 
 The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 
+The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__
+
 Device Initiated
 ----------------
 
-These operations are initiated by the device, manage and unmanage operations must be supported by all managed devices.  All other operations are optional. 
+These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional. 
 
 
 Management Operations

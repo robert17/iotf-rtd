@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-18 12:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\programmingguides.rst:3
+msgid "Programming Guides for the Internet of Things Foundation"
+msgstr ""
+"Programmierhandbücher für Internet of Things Foundation"
+
+#: ..\docs\libraries\programmingguides.rst:5
+msgid "There are several client libraries availabe for use with the Internet of Things Foundation. These are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible."
+msgstr ""
+"Es sind mehrere Clientbibliotheken für die Verwendung mit Internet of Things Foundation verfügbar. Diese helfen Benutzer bei der Interaktion mit ihren Einheiten und Anwendungen unter Verwendung ihrer bevorzugten Sprache und vereinfachen daher diese Interaktion so weit wie möglich."
+
+#: ..\docs\libraries\programmingguides.rst:8
+msgid "Current Programming Guides"
+msgstr ""
+"Aktuelle Programmierhandbücher"
+
+#: ..\docs\libraries\programmingguides.rst:11
+msgid "Python"
+msgstr ""
+"Python"
+
+#: ..\docs\libraries\programmingguides.rst:13
+msgid "`Python Client Library - Introduction <../libraries/python.html#/>`__"
+msgstr ""
+"`Python-Clientbibliothek - Einführung <../libraries/python.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:14
+msgid "`Python Client Library - Devices <../libraries/python_cli_for_devices.html#/>`__"
+msgstr ""
+"`Python-Clientbibliothek - Einheiten <../libraries/python_cli_for_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:15
+msgid "`Python Client Library - Applications <../libraries/python_cli_for_apps.html#/>`__"
+msgstr ""
+"`Python-Clientbibliothek - Anwendungen <../libraries/python_cli_for_apps.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:18
+msgid "Embedded C"
+msgstr ""
+"Embedded C"
+
+#: ..\docs\libraries\programmingguides.rst:20
+msgid "`Embedded C Client Library <../libraries/embedded_c.html#/>`__"
+msgstr ""
+"`Embedded C-Clientbibliothek <../libraries/embedded_c.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:23
+msgid "Java"
+msgstr ""
+"Java"
+
+#: ..\docs\libraries\programmingguides.rst:25
+msgid "`Java Client Library - Introduction <../java/javaintro.html#/>`__"
+msgstr ""
+"`Java-Clientbibliothek - Einführung <../java/javaintro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:26
+msgid "`Java Client Library - Devices <../java/java_cli_devices.html#/>`__"
+msgstr ""
+"`Java-Clientbibliothek - Einheiten <../java/java_cli_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:29
+msgid "Node.js"
+msgstr ""
+"Node.js"
+
+#: ..\docs\libraries\programmingguides.rst:31
+msgid "`Node.js Client Library - Introduction <../nodejs/node-js_intro.html#/>`__"
+msgstr ""
+"`Node.js-Clientbibliothek - Einführung <../nodejs/node-js_intro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:32
+msgid "`Node.js Client Library - Devices <../nodejs/node-js_devices.html#/>`__"
+msgstr ""
+"`Node.js-Clientbibliothek - Einheiten <../nodejs/node-js_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:33
+msgid "`Node.js Client Library - Applications <../nodejs/node-js_applications.html#/>`__"
+msgstr ""
+"`Node.js-Clientbibliothek - Anwendungen <../nodejs/node-js_applications.html#/>`__"
+

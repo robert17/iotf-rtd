@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-18 12:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\java\javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Java 클라이언트 라이브러리 - 소개"
+
+#: ..\docs\java\javaintro.rst:5
+msgid "Use the Java client library for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Java 7 or Java 8. The client library can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the java ibmiotf client library to interact with devices and applications within your organizations."
+msgstr ""
+"`IBM Internet of Things Foundation(<https://internetofthings.ibmcloud.com>)과 상호작용하고 Java 7 또는 Java 8을 사용하여 명령을 자동화하기 위해 Java 클라이언트 라이브러리를 사용하십시오. IBM Internet of Things Foundation과의 상호작용을 단순화하는 데 클라이언트 라이브러리를 사용할 수 있습니다. 다음 라이브러리는 사용자의 조직 내에서 디바이스 및 애플리케이션과 상호작용하기 위해 Java ibmiotf 클라이언트 라이브러리 사용에 대한 지시사항 및 안내를 포함합니다."
+
+#: ..\docs\java\javaintro.rst:7
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ..\docs\java\javaintro.rst:8
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ..\docs\java\javaintro.rst:10
+msgid "This client library is divided into three sections, all included within the library."
+msgstr ""
+"이 클라이언트 라이브러리는 세 개의 절로 구성되며 모두 라이브러리에 포함되어 있습니다."
+
+#: ..\docs\java\javaintro.rst:12
+msgid "The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"이 디바이스 절은 디바이스가 이벤트를 공개하고 Java ibmiotf 클라이언트 라이브러리를 사용하여 명령을 처리하는 방법에 대한 정보를 포함합니다."
+
+#: ..\docs\java\javaintro.rst:13
+msgid "The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"애플리케이션 절은 애플리케이션이 Java ibmiotf 클라이언트 라이브러리를 사용하여 디바이스와 상호작용할 수 있는 방법에 대한 정보를 포함합니다."
+
+#: ..\docs\java\javaintro.rst:14
+msgid "The Historian section contains information on how applications can use the Java ibmiotf Client Library to retrieve the historical information."
+msgstr ""
+"히스토리언 절은 애플리케이션이 Java ibmiotf 클라이언트 라이브러리를 사용하여 히스토리 정보를 검색하는 방법에 대한 정보를 포함합니다."
+
+#: ..\docs\java\javaintro.rst:19
+msgid "Dependencies"
+msgstr ""
+"종속 항목"
+
+#: ..\docs\java\javaintro.rst:21
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Paho MQTT Java 클라이언트 <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - 애플리케이션이 MQTT 브로커에 연결할 수 있게 하는 클라이언트 클래스를 제공함"
+
+#: ..\docs\java\javaintro.rst:22
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - JSON 오브젝트와 상호작용하기 위한 라이브러리"
+
+#: ..\docs\java\javaintro.rst:23
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Apache 공통 로깅 <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - 다양한 정보를 로그하기 위한 라이브러리"
+
+#: ..\docs\java\javaintro.rst:24
+msgid "`Apache Commons Codec <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Apache 공통 코덱 <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__  - Base-64와 같은 공통 인코더 및 디코더 기능 제공"
+
+#: ..\docs\java\javaintro.rst:25
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - 자동화된 빌드를 위한 빌드 도구"
+
+#: ..\docs\java\javaintro.rst:26
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - HTTP 클라이언트 라이브러리"
+
+#: ..\docs\java\javaintro.rst:27
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - HTTP 코어 라이브러리"
+
+#: ..\docs\java\javaintro.rst:28
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - Java의 날짜 및 시간 라이브러리"
+
+#: ..\docs\java\javaintro.rst:35
+msgid "Documentation"
+msgstr ""
+"문서"
+
+#: ..\docs\java\javaintro.rst:36
+msgid "`Device Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_devices.rst>`__"
+msgstr ""
+"`디바이스 클라이언트 <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_devices.rst>`__"
+
+#: ..\docs\java\javaintro.rst:37
+msgid "`Application Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__"
+msgstr ""
+"`애플리케이션 클라이언트 <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__"
+
+#: ..\docs\java\javaintro.rst:38
+msgid "`Historian Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_historian.rst>`__"
+msgstr ""
+"`히스토리언 클라이언트 <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_historian.rst>`__"
+

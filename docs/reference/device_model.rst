@@ -221,7 +221,7 @@ Devices have a management lifecycle, defined by their status as managed devices.
 +--------------------------------+---------+--------------------------------------------------------+-----+-----+
 | mgmt.firmware.name             | string  | The name of the firmware to be used on the device      |  R  |  W  |
 +--------------------------------+---------+--------------------------------------------------------+-----+-----+
-| mgmt.firmware.url              | string  |The URL from which the firmware image can be downloaded |  R  |  W  |
+| mgmt.firmware.uri              | string  |The URI from which the firmware image can be downloaded |  R  |  W  |
 +--------------------------------+---------+--------------------------------------------------------+-----+-----+
 | mgmt.firmware.verifier         | string  | The verifier such as a checksum for the firmware image |  R  |  W  |
 |                                |         | to validate its integrity                              |     |     |

@@ -40,7 +40,7 @@ The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware up
 +--------------+---------------------+----------------------------------------------------------------------+
 | 5            | Unsupported Image   | The downloaded firmware image is not supported by the device         |
 +--------------+---------------------+----------------------------------------------------------------------+
-| 6            | Invalid URL         | The device could not download the firmware from the provided URL     |
+| 6            | Invalid URI         | The device could not download the firmware from the provided URI     |
 +--------------+---------------------+----------------------------------------------------------------------+
 
 
@@ -53,7 +53,7 @@ The Download Firmware action can be initiated by using either the Internet of Th
 To initiate a firmware download using the REST API, issue a POST request to /mgmt/requests. The information provided is:
 
 - The action ``firmware/download``
-- The URL for the firmware image
+- The URI for the firmware image
 - A list of devices to receive the image, with a maximum of 5000 devices
 - Optional verifier string to validate the image
 - Optional firmware name
@@ -66,7 +66,7 @@ The device management server in the Internet of Things Foundation uses the Devic
  
 - If ``mgmt.firmware.state`` is not ``0`` ("Idle") an error should be reported with response code ``400``, and an optional message text.
 - If the action can be initiated immediately, set ``rc`` to ``202``. 
-- If ``mgmt.firmware.url`` is not set or is not a valid URL, set ``rc`` to ``400``. 
+- If ``mgmt.firmware.uri`` is not set or is not a valid URI, set ``rc`` to ``400``. 
 - If firmware download attempt fails, set ``rc`` to ``500`` and optionally set ``message`` accordingly. 
 - If firmware download is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly.
 - When an excecute request is received by the device, ``mgmt.firmware.state`` should change from ``0`` (Idle) to ``1`` (Downloading). 
@@ -75,7 +75,7 @@ The device management server in the Internet of Things Foundation uses the Devic
 
   - 2 (Out of Memory)
   - 3 (Connection Lost)
-  - 6 (Invalid URL)
+  - 6 (Invalid URI)
 
 - If a firmware verifier has been set, the device should attempt to verify the firmware image. If the image verification fails, ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to the error status value ``4`` (Verification Failed).
 - If download and verification were successful, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded) and ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success). The downloaded firmware is now ready to be installed.

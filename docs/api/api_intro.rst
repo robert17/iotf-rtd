@@ -2,7 +2,12 @@
 Introduction to the Internet of Things Foundation API
 =====================================================
 
-The Internet of Things Foundation API can be used to interact with your organization in the Internet of Things Foundation. The IoT Foundation API supports the following tasks:
+The Internet of Things Foundation API can be used to interact with your organization in the Internet of Things Foundation. 
+
+API Capabilities
+------------------
+
+The IoT API has the following functionality:
 
 - View organization details.
 - Bulk device operations (list all, add, remove).
@@ -19,7 +24,9 @@ The current version of the Internet of Things Foundation API is version 2. The d
 
 Version 1 of the API is still supported, however, some of the operations cannot be performed using version 1 of the API and others are performed using different API paths.
 
-Restrictions of version 1 of the IoT Foundation API:
+
+Restrictions of version 1 of the IoT Foundation API
+----------------------------------------------------
 
 - Many of the API paths operations relating to devices have changed.
 - Version 1 of the API does not support any device type operations, other than listing all device types.

@@ -28,7 +28,7 @@ Version 1 of the API is still supported, however, some of the operations cannot 
 Restrictions of version 1 of the IoT Foundation API
 ----------------------------------------------------
 
-- Many of the API paths operations relating to devices have changed.
+- Many of the API paths relating to devices have changed.
 - Version 1 of the API does not support any device type operations, other than listing all device types.
 - Operations related to device management, device management requests, diagnostic logs, or location cannot be performed using version 1 of the API.
 

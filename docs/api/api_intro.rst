@@ -16,7 +16,7 @@ The IoT API has the following functionality:
 - Device diagnostic operations (clear log, retrieve logs, add log information, delete logs, get specific log, clear error codes, get device error codes, add an error code).
 - Connection problem determination (list device connection log events).
 - Historical event retrieval (view events from all devices, view events from a device type, view events for a specific device).
-- Device management request operations (list device management requests, initiate a request, clear request status, get details of a request, get list of request statuses,  get device request status for a specific device).
+- Device management request operations (list device management requests, initiate a request, clear request status, get details of a request, get list of request statuses for each affected device,  get request status for a specific device).
 - Usage management (retrieve number of active devices over a period of time, retrieve amount of storage used by historical event data, retrieve total amount of data used).
 - Service status queries (retrieve service statuses for an organization).
 
@@ -30,6 +30,6 @@ Restrictions of version 1 of the IoT Foundation API
 
 - Many of the API paths relating to devices have changed.
 - Version 1 of the API does not support any device type operations, other than listing all device types.
-- Operations related to device management, device management requests, diagnostic logs, or location cannot be performed using version 1 of the API.
+- Operations related to device management, device management requests, diagnostic information, or location cannot be performed using version 1 of the API.
 
 The documentation for the operations supported by version 1 of the API can be found `here <http://.com>`_.

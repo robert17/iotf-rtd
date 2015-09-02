@@ -67,6 +67,15 @@ Response Format:
 
 .. _manage-unmanage:
 
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.
+
+
 Unmanage Device
 ---------------
 
@@ -99,3 +108,10 @@ Response Format:
 		"reqId": "string"
 	}
 	
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.

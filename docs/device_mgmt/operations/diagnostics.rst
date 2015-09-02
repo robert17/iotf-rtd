@@ -46,6 +46,15 @@ Response Format:
 
 .. _diag-clear-error-codes:
 
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.
+
+
 Clear Error Codes
 -----------------
 
@@ -80,6 +89,15 @@ Response Format:
 
 
 .. _diag-add-log:
+
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.
+
 
 Add Log
 -------
@@ -127,6 +145,15 @@ Response Format:
 
 .. _diag-clear-logs:
 
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.
+
+
 Clear Logs
 ----------
 
@@ -158,3 +185,11 @@ Response Format:
 		"rc": 200,
 		"reqId": "string"
 	}
+
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, or the device is not in the database.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.

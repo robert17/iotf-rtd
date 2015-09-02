@@ -143,3 +143,12 @@ Response Format:
 		"rc": number,
 		"reqId": "string"
 	}
+
+Possible Response Codes:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 200: The operation was successful.
+- 400: The input message does not match the expected format, or one of the values is out of the valid range.
+- 404: THe topic name is incorrect, the device is not in the database, or there is no observation for the field reported.
+- 409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary.
+- 500: An internal error occurred, contact IBM Support.

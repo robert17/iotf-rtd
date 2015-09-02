@@ -20,7 +20,7 @@ The IoT API has the following functionality:
 - Usage management (retrieve number of active devices over a period of time, retrieve amount of storage used by historical event data, retrieve total amount of data used).
 - Service status queries (retrieve service statuses for an organization).
 
-The current version of the Internet of Things Foundation API is version 2. The details of the version 2 API operations can be found `here <http://>`_.
+The current version of the Internet of Things Foundation API is version 2. The details of the version 2 API operations can be found `here <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`_.
 
 Version 1 of the API is still supported, however, some of the operations cannot be performed using version 1 of the API and others are performed using different API paths.
 
@@ -32,4 +32,4 @@ Restrictions of version 1 of the IoT Foundation API
 - Version 1 of the API does not support any device type operations, other than listing all device types.
 - Operations related to device management, device management requests, diagnostic information, or location cannot be performed using version 1 of the API.
 
-The documentation for the operations supported by version 1 of the API can be found `here <http://.com>`_.
+The documentation for the operations supported by version 1 of the API can be found `here <https://docs.internetofthings.ibmcloud.com/swagger/v0001.html>`_.

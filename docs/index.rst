@@ -10,7 +10,7 @@ Introduction
 About
 -------------------------------------------------------------------------------
 Welcome to the documentation/reference material for IBM's IoT Foundation 
-service.  If you are looking for tutorials you can find them on developerWorks Recipes_
+service.  If you are looking for tutorials you can find them on developerWorks Recipes_.
 
 .. _Recipes: https://developer.ibm.com/recipes/
 
@@ -34,9 +34,9 @@ API
 .. toctree::
     :maxdepth: 1
     
-    api/v0001/device
-    api/v0001/historical_events
-    api/v0002/device
+    api/api_intro
+    `Internet of Things Foundation API Version 2 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`_
+    `Internet of Things Foundation API Version 1 <https://docs.internetofthings.ibmcloud.com/swagger/v0001.html>`_
 
 Device Management Operations
 ------------------------------------------------------------------------------

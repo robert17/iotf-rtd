@@ -34,7 +34,6 @@ API
 -------------------------------------------------------------------------------
 
 .. toctree::
-    :maxdepth: 1
     
     api/api_intro
     API Version 2 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>

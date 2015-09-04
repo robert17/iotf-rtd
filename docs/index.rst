@@ -37,8 +37,8 @@ API
     :maxdepth: 1
     
     api/api_intro
-    https://docs.internetofthings.ibmcloud.com/swagger/v0002.html
-    https://docs.internetofthings.ibmcloud.com/swagger/v0001.html
+    API Version 2 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>
+    API Version 1 <https://docs.internetofthings.ibmcloud.com/swagger/v0001.html>
 
 Device Management Operations
 ------------------------------------------------------------------------------

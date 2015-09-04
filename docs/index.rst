@@ -37,8 +37,8 @@ API
     :maxdepth: 1
     
     api/api_intro
-    API Version 2_
-    API Version 1_
+    ../swagger/v0002.html
+    ../swagger/v0001.html
 
 Device Management Operations
 ------------------------------------------------------------------------------
@@ -111,6 +111,3 @@ contributions via the use of issues and pull requests against our repository.
 
 .. _GitHub: https://github.com/ibm-messaging/iotf-rtd
 .. _suggestions for improvement: https://github.com/ibm-messaging/iotf-rtd/issues
-
-.. _API Version 1: ../swagger/v0001.html
-.. _API Version 2: ../swagger/v0002.html

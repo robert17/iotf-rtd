@@ -14,6 +14,8 @@ service.  If you are looking for tutorials you can find them on developerWorks R
 
 .. _Recipes: https://developer.ibm.com/recipes/
 
+
+
 The documentation is organized into a number of sections:
 
 Introduction
@@ -35,8 +37,8 @@ API
     :maxdepth: 1
     
     api/api_intro
-    `Internet of Things Foundation API Version 2 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`_
-    `Internet of Things Foundation API Version 1 <https://docs.internetofthings.ibmcloud.com/swagger/v0001.html>`_
+    API Version 2_
+    API Version 1_
 
 Device Management Operations
 ------------------------------------------------------------------------------
@@ -110,3 +112,5 @@ contributions via the use of issues and pull requests against our repository.
 .. _GitHub: https://github.com/ibm-messaging/iotf-rtd
 .. _suggestions for improvement: https://github.com/ibm-messaging/iotf-rtd/issues
 
+.. _API Version 1: ../swagger/v0001.html
+.. _API Version 2: ../swagger/v0002.html

@@ -36,8 +36,8 @@ API
 .. toctree::
     
     api/api_intro
-    API Version 2 <../swagger/v0002.html>
-    API Version 1 <../swagger/v0001.html>
+    API Version 2 <http://docs.internetofthings.ibmcloud.com/swagger/v0002.html>
+    API Version 1 <http://docs.internetofthings.ibmcloud.com/swagger/v0001.html>
 
 Device Management Operations
 ------------------------------------------------------------------------------

@@ -115,13 +115,13 @@ This action requests the device to initiate one of the following actions: reboot
 Return Codes
 -------------
 
-There are seven return codes which are sent in response to the actions listed above.
+There are several return codes which are sent in response to the actions listed above.
 
 - 200: Operation succeeded
 - 202: Accepted (for initiating commands)
 - 204: Changed (for attribute updates)
 - 400: Bad request, for example, if a device is not in the appropriate state for this command
-- 404: Attribute was not found
+- 404: Attribute was not found, this code is also used if the operation was published to an invalid topic.
 - 409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later
 - 500: Unexpected device error
 - 501: Operation not implemented

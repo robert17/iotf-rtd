@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:3
+msgid "Device Management Operations - Firmware Actions"
+msgstr ""
+"디바이스 관리 오퍼레이션 - 펌웨어 조치"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:5
+msgid "The firmware level currently known to be on a given device is stored in the ``deviceInfo.fwVersion`` attribute. The ``mgmt.firmware`` attributes are used to perform a firmware update and observe its status."
+msgstr ""
+"제공된 디바이스에 있는 것으로 현재 알려진 펌웨어 레벨이 ``deviceInfo.fwVersion`` 속성에 저장됩니다. ``mgmt.firmware`` 속성은 펌웨어 업데이트를 수행하고 상태를 관찰하는 데 사용됩니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:8
+msgid "The managed device must support observation of the ``mgmt.firmware`` attribute in order to support firmware actions."
+msgstr ""
+"관리 디바이스는 펌웨어 조치를 지원하기 위해 ``mgmt.firmware`` 속성의 관찰을 지원해야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:10
+msgid "The firmware update process is separated into two distinct actions, Downloading Firmware, and Updating Firmware. The status of each of these actions is stored in a separate attribute on the device. The ``mgmt.firmware.state`` attribute describes the status of the firmware download. The possible values for ``mgmt.firmware.state`` are:"
+msgstr ""
+"펌웨어 업데이트 프로세스가 별개의 2가지 조치인 펌웨어 다운로드 및 펌웨어 업데이트로 분리됩니다. 이러한 조치 각각의 상태는 디바이스에서 별도의 속성에 저장됩니다. ``mgmt.firmware.state`` 속성이 펌웨어 다운로드의 상태에 대해 설명합니다. ``mgmt.firmware.state``의 가능한 값은 다음과 같습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Value"
+msgstr ""
+"값"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "State"
+msgstr ""
+"상태"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Meaning"
+msgstr ""
+"의미"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "0"
+msgstr ""
+"0"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "Idle"
+msgstr ""
+"유휴"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "The device is currently not in the process of downloading firmware"
+msgstr ""
+"디바이스가 현재 펌웨어를 다운로드하는 과정에 있지 안습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "1"
+msgstr ""
+"1"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "Downloading"
+msgstr ""
+"다운로드 중"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "The device is currently downloading firmware"
+msgstr ""
+"디바이스가 현재 펌웨어를 다운로드 중입니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "2"
+msgstr ""
+"2"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "Downloaded"
+msgstr ""
+"다운로드됨"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "The device has successfully downloaded a firmware update and it is ready to install"
+msgstr ""
+"디바이스가 펌웨어 업데이트를 성공적으로 다운로드했으므로 설치할 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:26
+msgid "The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware update. The possible values for ``mgmt.firmware.status`` are:"
+msgstr ""
+"``mgmt.firmware.updateStatus`` 속성이 펌웨어 업데이트의 상태에 대해 설명합니다. ``mgmt.firmware.status``의 가능한 값은 다음과 같습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "Success"
+msgstr ""
+"성공"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "The firmware has been successfully updated"
+msgstr ""
+"펌웨어가 성공적으로 업데이트되었습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "In Progress"
+msgstr ""
+"진행 중"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "The firmware update has been initiated but is not yet complete"
+msgstr ""
+"펌웨어 업데이트가 시작되었으나 아직 완료되지 않았습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "Out of Memory"
+msgstr ""
+"메모리 부족"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "An out of memory condition has been detected during the operation."
+msgstr ""
+"메모리 부족 조건이 오퍼레이션 중 발견되었습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "3"
+msgstr ""
+"3"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "Connection Lost"
+msgstr ""
+"연결 유실"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "The connection was lost during the firmware download"
+msgstr ""
+"연결이 펌웨어 다운로드 중 유실되었습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "4"
+msgstr ""
+"4"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "Verification Failed"
+msgstr ""
+"검증 실패"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "The firmware did not pass verification"
+msgstr ""
+"펌웨어가 검증을 통과하지 못했습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "5"
+msgstr ""
+"5"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "Unsupported Image"
+msgstr ""
+"지원되지 않는 이미지"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "The downloaded firmware image is not supported by the device"
+msgstr ""
+"다운로드된 펌웨어 이미지가 디바이스에서 지원되지 않습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "6"
+msgstr ""
+"6"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "Invalid URI"
+msgstr ""
+"올바르지 않은 URI"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "The device could not download the firmware from the provided URI"
+msgstr ""
+"디바이스가 제공된 URI에서 펌웨어를 다운로드할 수 없습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:50
+msgid "Firmware Download"
+msgstr ""
+"펌웨어 다운로드"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:51
+msgid "The Download Firmware action can be initiated by using either the Internet of Things Foundation dashboard, or the REST API."
+msgstr ""
+"Internet of Things Foundation 대시보드 또는 REST API를 사용하여 펌웨어 다운로드 조치를 시작할 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:53
+msgid "To initiate a firmware download using the REST API, issue a POST request to /mgmt/requests. The information provided is:"
+msgstr ""
+"REST API를 통해 펌웨어 다운로드를 시작하려면 POST 요청을 /mgmt/requests에 발행하십시오. 제공된 정보는 다음과 같습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:55
+msgid "The action ``firmware/download``"
+msgstr ""
+"조치 ``firmware/download``"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:56
+msgid "The URI for the firmware image"
+msgstr ""
+"펌웨어 이미지의 URI"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:57
+msgid "A list of devices to receive the image, with a maximum of 5000 devices"
+msgstr ""
+"최대 5000개의 디바이스가 포함되어 이미지를 수신할 디바이스의 목록"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:58
+msgid "Optional verifier string to validate the image"
+msgstr ""
+"이미지를 유효성 검증할 선택적 검사기 문자열"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:59
+msgid "Optional firmware name"
+msgstr ""
+"선택적 펌웨어 이름"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:60
+msgid "Optional firmware version"
+msgstr ""
+"선택적 펌웨어 버전"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:62
+msgid "The device management server in the Internet of Things Foundation uses the Device Management Protocol to send a request to the devices, initiating the firmware download. There are two steps:"
+msgstr ""
+"Internet of Things Foundation의 디바이스 관리 서버가 디바이스 관리 프로토콜을 사용하여 디바이스에 요청을 보내서 펌웨어 다운로드를 시작합니다. 다음과 같이 2가지 단계가 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:64
+msgid "Firmware details update request sent on topic ``iotdm-1/device/update``"
+msgstr ""
+"주제 ``iotdm-1/device/update``에 대해 전송된 펌웨어 세부사항 업데이트 요청"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:65
+msgid "Initiate the download request sent on topic ``iotdm-1/mgmt/initiate/firmware/download``"
+msgstr ""
+"주제 ``iotdm-1/mgmt/initiate/firmware/download``에 대해 전송된 다운로드 요청을 시작하십시오."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:67
+msgid "If ``mgmt.firmware.state`` is not ``0`` (\"Idle\") an error should be reported with response code ``400``, and an optional message text."
+msgstr ""
+"``mgmt.firmware.state``가 ``0``(\"유휴\")이 아닌 경우 오류가 응답 코드 ``400`` 및 선택적 메시지 텍스트와 함께 보고되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:68
+msgid "If the action can be initiated immediately, set ``rc`` to ``202``."
+msgstr ""
+"조치를 즉시 시작할 수 있는 경우 ``rc``를 ``202``로 설정하십시오."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:69
+msgid "If ``mgmt.firmware.uri`` is not set or is not a valid URI, set ``rc`` to ``400``."
+msgstr ""
+"``mgmt.firmware.uri``가 설정되지 않았거나 올바른 URI가 아닌 경우 ``rc``를 ``400``으로 설정하십시오."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:70
+msgid "If firmware download attempt fails, set ``rc`` to ``500`` and optionally set ``message`` accordingly."
+msgstr ""
+"펌웨어 다운로드 시도에 실패하는 경우 ``rc``를 ``500``으로 설정하고 선택적으로 ``message``를 그에 따라 설정하십시오."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:71
+msgid "If firmware download is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly."
+msgstr ""
+"펌웨어 다운로드가 지원되지 않는 경우 ``rc``를 ``501``로 설정하고 선택적으로 ``message``를 그에 따라 설정하십시오."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:72
+msgid "When an excecute request is received by the device, ``mgmt.firmware.state`` should change from ``0`` (Idle) to ``1`` (Downloading)."
+msgstr ""
+"실행 요청이 디바이스에서 수신되면 ``mgmt.firmware.state``가 ``0``(유휴)에서 ``1``(다운로드 중)로 변경되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:73
+msgid "When the download has been completed successfully, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded)."
+msgstr ""
+"다운로드가 성공적으로 완료되었으면 ``mgmt.firmware.state``가 ``2``(다운로드됨)로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:74
+msgid "If an error occurrs during download ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to one of the error status values:"
+msgstr ""
+"다운로드 중 오류가 발생하는 경우 ``mgmt.firmware.state``가 ``0``(유휴)으로 설정되어야 하고 ``mgmt.firmware.updateStatus``가 오류 상태 값 중 하나로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:76
+msgid "2 (Out of Memory)"
+msgstr ""
+"2(메모리 부족)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:77
+msgid "3 (Connection Lost)"
+msgstr ""
+"3(연결 유실)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:78
+msgid "6 (Invalid URI)"
+msgstr ""
+"6(올바르지 않은 URI)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:80
+msgid "If a firmware verifier has been set, the device should attempt to verify the firmware image. If the image verification fails, ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to the error status value ``4`` (Verification Failed)."
+msgstr ""
+"펌웨어 검사기가 설정된 경우 디바이스가 펌웨어 이미지를 확인하려고 시도해야 합니다. 이미지 검증에 실패하는 경우 ``mgmt.firmware.state``가 ``0``(유휴)으로 설정되어야 하고 ``mgmt.firmware.updateStatus``가 오류 상태 값 ``4``(검증 실패)로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:81
+msgid "If download and verification were successful, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded) and ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success). The downloaded firmware is now ready to be installed."
+msgstr ""
+"다운로드 및 검증에 성공한 경우 ``mgmt.firmware.state``가 ``2``(다운로드됨)로 설정되어야 하고 ``mgmt.firmware.updateStatus``가 ``0``(성공)으로 설정되어야 합니다. 다운로드된 펌웨어를 이제 설치할 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:85
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:143
+msgid "Topic"
+msgstr ""
+"주제"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:92
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:151
+msgid "Message format"
+msgstr ""
+"메시지 형식"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:94
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:153
+msgid "Request Format:"
+msgstr ""
+"요청 형식:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:103
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:161
+msgid "Response Format:"
+msgstr ""
+"응답 형식:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:117
+msgid "Firmware Update"
+msgstr ""
+"펌웨어 업데이트"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:119
+msgid "The installation of the downloaded firmware is initiated using the REST API by issuing a POST request to /mgmt/requests. The information which should be provided is:"
+msgstr ""
+"다운로드된 펌웨어의 설치가 /mgmt/requests에 POST 요청을 실행하여 REST API를 통해 시작됩니다. 제공되어야 하는 정보는 다음과 같습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:121
+msgid "The action ``firmware/update``"
+msgstr ""
+"조치 ``firmware/update``"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:122
+msgid "The list of devices to receive the image, all of the same device type"
+msgstr ""
+"이미지를 수신할 디바이스의 목록이고, 동일한 모든 디바이스 유형"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:124
+msgid "The device management server in the Internet of Things Foundation uses the device management protocol to request that the devices specified initiate the firmware installation by publishing using the topic ``iotdm-1/mgmt/initiate/firmware/update``."
+msgstr ""
+"Internet of Things Foundation의 디바이스 관리 서버가 디바이스 관리 프로토콜을 사용하여 지정된 디바이스가 주제 ``iotdm-1/mgmt/initiate/firmware/update``를 통해 공개하여 펌웨어 설치를 시작하도록 요청합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:126
+msgid "If this operation can be initiated immediately, ``rc`` should be set to ``202``."
+msgstr ""
+"이 오퍼레이션을 즉시 시작할 수 있는 경우 ``rc``가 ``202``로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:127
+msgid "If firmware was not previously downloaded successfully, ``rc`` should be set to ``400``."
+msgstr ""
+"펌웨어가 이전에 성공적으로 다운로드되지 않은 경우 ``rc``가 ``400``으로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:128
+msgid "If firmware update attempt fails, ``rc`` should be set to ``500`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"펌웨어 업데이트 시도에 실패한 경우 ``rc``가 ``500``으로 설정되어야 하고 ``message`` 필드가 관련 정보를 포함하도록 선택적으로 설정될 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:129
+msgid "If firmware update is not supported ``rc`` should be set to ``501`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"펌웨어 업데이트가 지원되지 않는 경우 ``rc``가 ``501``로 설정되어야 하고 ``message`` 필드가 관련 정보를 포함하도록 선택적으로 설정될 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:130
+msgid "If ``mgmt.firmware.state`` is not ``2`` (Downloaded), an error should be reported with ``rc`` set to ``400`` and an optional message text."
+msgstr ""
+"``mgmt.firmware.state``가 ``2``(다운로드됨)가 아닌 경우 오류가 ``400``으로 설정된 ``rc`` 및 선택적 메시지 텍스트와 함께 보고되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:131
+msgid "Otherwise, ``mgmt.firmware.updateStatus`` should be set to ``1`` (In Progress) and firmware installation should start."
+msgstr ""
+"그렇지 않으면, ``mgmt.firmware.updateStatus``가 ``1``(진행 중)로 설정되어야 하고 펌웨어 설치가 시작되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:132
+msgid "If firmware installation fails, ``mgmt.firmware.updateStatus`` should be set to either:"
+msgstr ""
+"펌웨어 설치에 실패하는 경우 ``mgmt.firmware.updateStatus``가 다음 중 하나로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:134
+msgid "``2`` (Out of Memory)"
+msgstr ""
+"``2``(메모리 부족)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:135
+msgid "``5`` (Unsupported Image)"
+msgstr ""
+"``5``(지원되지 않는 이미지)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:137
+msgid "Once firmware update is complete, ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success), ``mgmt.firmware.state`` should be set to ``0`` (Idle), downloaded firmware image can be deleted from the device and ``deviceInfo.fwVersion`` should be set to the value of ``mgmt.firmware.version``."
+msgstr ""
+"펌웨어 업데이트가 완료되면 ``mgmt.firmware.updateStatus``가 ``0``(성공)으로 설정되어야 하고 ``mgmt.firmware.state``가 ``0``(유휴)으로 설정되어야 하며 다운로드된 펌웨어 이미지를 디바이스에서 삭제할 수 있고 ``deviceInfo.fwVersion``이 ``mgmt.firmware.version``의 값으로 설정되어야 합니다."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:139
+msgid "All fields under ``mgmt.firmware`` must be set at the same time, so that if there is a current observation for ``mgmt.firmware``, only a single notify message is sent."
+msgstr ""
+"``mgmt.firmware``에 대한 현재 관찰이 있는 경우 하나의 알림 메시지만 전송되도록 ``mgmt.firmware`` 아래의 모든 필드가 동시에 설정되어야 합니다."
+

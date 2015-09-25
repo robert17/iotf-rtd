@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_mgmt.rst:3
+msgid "Device Management"
+msgstr ""
+"디바이스 관리"
+
+#: ..\docs\reference\device_mgmt.rst:5
+msgid "The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management."
+msgstr ""
+"디바이스 관리 기능에서는 디바이스를 관리하기 위한 새 기능으로 Internet of Things Foundation 서비스를 개선합니다. 여기에서는 디바이스 관리의 개념 및 기능의 일부를 소개합니다."
+
+#: ..\docs\reference\device_mgmt.rst:8
+msgid "What does Device Management add?"
+msgstr ""
+"디바이스 관리가 추가하는 항목"
+
+#: ..\docs\reference\device_mgmt.rst:10
+msgid "Control and management of device lifecycles for both individual and batches of devices."
+msgstr ""
+"디바이스의 개별 처리 및 일괄처리 둘 다에 대해 디바이스 라이프사이클의 제어 및 관리입니다."
+
+#: ..\docs\reference\device_mgmt.rst:11
+msgid "Device metadata and status information, enabling the creation of device dashboards and other tools."
+msgstr ""
+"디바이스 메타데이터 및 상태 정보인데, 디바이스 대시보드 및 기타 도구의 작성을 가능하게 합니다."
+
+#: ..\docs\reference\device_mgmt.rst:12
+msgid "Diagnostic information, both for connectivity to the Internet of Things Foundation service, and device diagnostics."
+msgstr ""
+"Internet of Things Foundation 서비스 및 디바이스 진단에 대한 연결 둘 다에 대한 진단 정보입니다."
+
+#: ..\docs\reference\device_mgmt.rst:13
+msgid "Device management commands, like firmware update, and device reboot."
+msgstr ""
+"펌웨어 업데이트와 같은 디바이스 관리 명령 및 디바이스 다시 부팅입니다."
+
+#: ..\docs\reference\device_mgmt.rst:15
+msgid "At a more technical level, device management adds:"
+msgstr ""
+"더 기술적인 레벨에서 디바이스 관리가 다음을 추가합니다."
+
+#: ..\docs\reference\device_mgmt.rst:17
+msgid "a device model, that describes the metadata and management characteristics of a device,"
+msgstr ""
+"디바이스의 메타데이터 및 관리 특성을 설명하는 디바이스 모델"
+
+#: ..\docs\reference\device_mgmt.rst:18
+msgid "a ReST API which provides a callable interface for managing devices,"
+msgstr ""
+"디바이스를 관리하기 위한 호출 가능한 인터페이스를 제공하는 ReST API"
+
+#: ..\docs\reference\device_mgmt.rst:19
+msgid "and a device management protocol, used for communication between the management agent on the devices and the Internet of Things Foundation."
+msgstr ""
+"Internet of Things Foundation 및 디바이스에서 관리 에이전트 간의 통신에 사용되는 디바이스 관리 프로토콜입니다."
+
+#: ..\docs\reference\device_mgmt.rst:22
+msgid "Important concepts in device management"
+msgstr ""
+"디바이스 관리의 중요한 개념"
+
+#: ..\docs\reference\device_mgmt.rst:25
+msgid "Managed and Unmanaged Devices"
+msgstr ""
+"관리 및 비관리 디바이스"
+
+#: ..\docs\reference\device_mgmt.rst:27
+msgid "Device management creates a distinction between managed and unmanaged devices."
+msgstr ""
+"디바이스 관리에서는 관리 및 비관리 디바이스 간의 차이를 작성합니다."
+
+#: ..\docs\reference\device_mgmt.rst:29
+msgid "**Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation. The device management agent and the Internet of Things Foundation device management service must share an understanding of data formats and communication patterns so they can interpret data correctly."
+msgstr ""
+"관리 에이전트가 설치되어 있는 디바이스로 **Managed Devices**가 정의됩니다. 관리 에이전트가 디바이스 메타데이터를 전송하고 수신하며 Internet of Things Foundation에서 디바이스 관리 명령에 응답합니다. 디바이스 관리 에이전트 및 Internet of Things Foundation 디바이스 관리 서비스가 데이터 형식 및 통신 패턴에 대한 이해를 공유해야 데이터를 올바르게 해석할 수 있습니다."
+
+#: ..\docs\reference\device_mgmt.rst:30
+msgid "**Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation. Devices without a device management agent installed can never become managed devices."
+msgstr ""
+"**Unmanaged Devices**는 디바이스 관리 에이전트가 없는 디바이스입니다. 모든 디바이스가 비관리 디바이스로 라이프사이클을 시작하고 디바이스 관리 에이전트에서 Internet of Things Foundation까지 메시지를 보내서 관리 디바이스로 전이할 수 있습니다. 디바이스 관리 에이전트가 설치되어 있지 않은 디바이스는 관리 디바이스가 될 수 없습니다."
+
+#: ..\docs\reference\device_mgmt.rst:33
+msgid "Device Model"
+msgstr ""
+"디바이스 모델"
+
+#: ..\docs\reference\device_mgmt.rst:34
+msgid "The device model is the combination of device metadata and management characteristics of a device. Devices can contain a lot of metadata, including device identifiers, device type and associated identifiers, and device model extensions. For a list of identifiers, see the device model reference documentation."
+msgstr ""
+"디바이스 모델은 디바이스의 관리 특성 및 디바이스 메타데이터의 조합입니다. 디바이스에는 디바이스 ID, 디바이스 유형 및 연관된 ID와 디바이스 모델 확장기능을 포함하여 많은 메타데이터가 포함될 수 있습니다. ID의 목록을 보려면 디바이스 모델 참조 문서를 참조하십시오."
+
+#: ..\docs\reference\device_mgmt.rst:37
+msgid "Device Management Protocol"
+msgstr ""
+"디바이스 관리 프로토콜"
+
+#: ..\docs\reference\device_mgmt.rst:39
+msgid "This protocol is used for device management communication between the Internet of Things Foundation and the management agent on a managed device. The device management protocol is based on MQTT and uses a different set of topics than the regular device messaging protocol. The device management agent of a device must implement the device management protocol in order to enable device management functions."
+msgstr ""
+"이 프로토콜이 관리 디바이스에서 관리 에이전트 및 Internet of Things Foundation 간의 디바이스 관리 통신을 위해 사용됩니다. 디바이스 관리 프로토콜은 MQTT에 기반하고 일반 디바이스 메시징 프로토콜과 다른 주제 세트를 사용합니다. 디바이스의 디바이스 관리 에이전트는 디바이스 관리 기능을 사용으로 설정하도록 디바이스 관리 프로토콜을 구현해야 합니다."
+
+#: ..\docs\reference\device_mgmt.rst:42
+msgid "Device Identifiers"
+msgstr ""
+"디바이스 ID"
+
+#: ..\docs\reference\device_mgmt.rst:44
+msgid "Manufactured devices come with a variety of identifiers, such as model and serial number. Each identifier can be considered a separate namespace, but the combination of identifiers which uniquely identify a specific device is customer dependent and may be very complex."
+msgstr ""
+"제조된 디바이스는 모델 및 일련 번호 등의 여러 ID와 함께 제공됩니다. 각 ID는 별도의 네임스페이스로 간주될 수 있지만, 특정 디바이스를 고유하게 식별하는 ID의 조합이 고객에 따라 다르고 매우 복잡할 수 있습니다."
+
+#: ..\docs\reference\device_mgmt.rst:46
+msgid "In order to accommodate this complexity, the device management standards have defined many types of identifier, and these are represented in the core device model. See the Device Model Attributes reference document for more detailed information on device identifiers and attributes."
+msgstr ""
+"이 복잡도를 수용하기 위해 디바이스 관리 표준이 여러 유형의 ID를 정의했고 이는 코어 디바이스 모델에 나타납니다. 디바이스 ID 및 속성에 대한 자세한 정보는 디바이스 모델 속성 참조 문서를 참조하십시오."
+
+#: ..\docs\reference\device_mgmt.rst:49
+msgid "Management Agent"
+msgstr ""
+"관리 에이전트"
+
+#: ..\docs\reference\device_mgmt.rst:51
+msgid "A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices."
+msgstr ""
+"관리 에이전트는 관리 디바이스로 Internet of Things Foundation 서비스에 연결하도록 허용하는 디바이스에 설치된 로직의 콜렉션입니다. 관리 에이전트는 디바이스 관리 메시징 프로토콜에서 사용되는 메타데이터 및 디바이스 관리 명령에 대해 파악하고 있습니다. 관리 에이전트가 없으면 디바이스가 디바이스 관리 메시징 프로토콜을 사용할 수 없고 관리 디바이스가 될 수 없습니다."
+
+#: ..\docs\reference\device_mgmt.rst:55
+msgid "The Device Management Lifecycle"
+msgstr ""
+"디바이스 관리 라이프사이클"
+
+#: ..\docs\reference\device_mgmt.rst:57
+msgid "A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"디바이스 및 연관된 디바이스 유형이 대시보드 또는 REST API를 통해 Internet of Things Foundation에 작성됩니다."
+
+#: ..\docs\reference\device_mgmt.rst:58
+msgid "The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device."
+msgstr ""
+"디바이스가 Internet of Things Foundation에 연결하고 관리 디바이스가 되도록 '디바이스 관리' 오퍼레이션을 사용합니다."
+
+#: ..\docs\reference\device_mgmt.rst:59
+msgid "The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot."
+msgstr ""
+"디바이스 모델에 설명된 대로 이제 디바이스의 메타데이터를 펌웨어 업데이트 및 디바이스 다시 부팅 등의 디바이스 오퍼레이션을 통해 보고 조작할 수 있습니다."
+
+#: ..\docs\reference\device_mgmt.rst:60
+msgid "The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes."
+msgstr ""
+"디바이스가 위치 또는 진단 정보와 오류 코드 등의 디바이스 관리 프로토콜을 통해 업데이트를 통신할 수 있습니다."
+
+#: ..\docs\reference\device_mgmt.rst:61
+msgid "In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device."
+msgstr ""
+"다수의 디바이스에서 존재하지 않는 디바이스를 처리하는 방법을 제공하기 위해 '디바이스 관리' 오퍼레이션 요청에 선택적 영구 매개변수가 있습니다. 이 영구 매개변수는 휴지 상태로 표시되어 관리 해제된 디바이스가 되지 않도록 디바이스가 다른 '디바이스 관리' 요청을 작성해야 하는 제한시간(초)입니다."
+
+#: ..\docs\reference\device_mgmt.rst:62
+msgid "When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"디바이스가 권한 해제되면 대시보드 또는 REST API를 통해 Internet of Things Foundation에서 제거할 수 있습니다."
+

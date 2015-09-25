@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:3
+msgid "Device Management Operations - Diagnostics"
+msgstr ""
+"Opérations de gestion des terminaux - Diagnostic"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:5
+msgid "The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation."
+msgstr ""
+"Les opérations de diagnostic des terminaux sont conçues pour fournir des informations sur les erreurs des terminaux mais elles ne transmettent pas d'informations de diagnostic sur la connexion des terminaux avec Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:10
+msgid "Add Error Code"
+msgstr ""
+"Ajouter un code d'erreur"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:12
+msgid "Devices can choose to notify the Internet of Things Foundation device management server about changes in their error status."
+msgstr ""
+"Les terminaux peuvent signaler au serveur de gestion des terminaux Internet of Things Foundation les modifications de leur statut d'erreur."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:15
+#: ..\docs\device_mgmt\operations\diagnostics.rst:55
+#: ..\docs\device_mgmt\operations\diagnostics.rst:90
+#: ..\docs\device_mgmt\operations\diagnostics.rst:136
+msgid "Topic"
+msgstr ""
+"Sujet"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:22
+#: ..\docs\device_mgmt\operations\diagnostics.rst:62
+#: ..\docs\device_mgmt\operations\diagnostics.rst:97
+msgid "Message Format"
+msgstr ""
+"Format du message"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:24
+msgid "The \"errorCode\" is a current device error code that needs to be added to the Internet of Things Foundation."
+msgstr ""
+"La valeur \"errorCode\" représente le code d'erreur en cours du terminal, qui doit être ajouté à Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:26
+#: ..\docs\device_mgmt\operations\diagnostics.rst:64
+#: ..\docs\device_mgmt\operations\diagnostics.rst:104
+#: ..\docs\device_mgmt\operations\diagnostics.rst:145
+msgid "Request Format:"
+msgstr ""
+"Format de la demande :"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:38
+#: ..\docs\device_mgmt\operations\diagnostics.rst:72
+#: ..\docs\device_mgmt\operations\diagnostics.rst:119
+#: ..\docs\device_mgmt\operations\diagnostics.rst:153
+msgid "Response Format:"
+msgstr ""
+"Format de la réponse :"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:50
+msgid "Clear Error Codes"
+msgstr ""
+"Effacer des codes d'erreur"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:52
+msgid "Devices can request that the Internet of Things Foundation clear all of their error codes."
+msgstr ""
+"Les terminaux peuvent demander à Internet of Things Foundation d'effacer tous leurs codes d'erreur."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:85
+msgid "Add Log"
+msgstr ""
+"Ajouter un journal"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:87
+msgid "Devices can choose to notify IoTF device management support about changes a new log entry. Log entry includes a log messages, its timestamp and severity, as well as an optional base64-encoded binary diagnostic data."
+msgstr ""
+"Les terminaux peuvent signaler la création d'une entrée de journal à la fonction de gestion des terminaux IoTF. L'entrée de journal inclut des messages de journal, l'horodatage et le niveau de gravité associés, ainsi que des données de diagnostic binaires facultatives codées en base64."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:99
+msgid "\"message\" is a diagnostic message that needs to be added to IoTF. \"timestamp\" is a date and time of the log entry in ISO8601 format. \"data\" is an optional base64-encoded diagnostic data. \"severity\" is a severity of the message (0: informational, 1: warning, 2: error)."
+msgstr ""
+"La zone \"message\" représente un message de diagnostic qui doit être ajouté à IoTF. La zone \"timestamp\" représente la date et à l'heure de l'entrée de journal au format ISO8601. La zone \"data\" représente des données de diagnostic facultatives, codées en base64. La zone \"severity\" représente le niveau de gravité du message (0 : informations, 1 : avertissement, 2 : erreur)."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:131
+msgid "Clear Logs"
+msgstr ""
+"Effacer des journaux"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:133
+msgid "Devices can request that the Internet of Things Foundation clear all of their log entries."
+msgstr ""
+"Les terminaux peuvent demander à Internet of Things Foundation d'effacer toutes leurs entrées de journal."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:143
+msgid "Message format"
+msgstr ""
+"Format du message"
+

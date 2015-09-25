@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,121 +19,125 @@ msgstr ""
 #: ..\docs\messaging\payload.rst:2
 msgid "Message Payload"
 msgstr ""
+"Carga útil de mensaje"
 
 #: ..\docs\messaging\payload.rst:4
-msgid ""
-"The Foundation supports sending and recieving messages in any format, "
-"however we recommend the use of JSON and the IOTF event format "
-"specification."
+msgid "The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and the IoTF event format specification."
 msgstr ""
+"Aunque Foundation soporta el envío y la recepción de mensajes en cualquier formato, recomendamos el uso de JSON y la especificación de formato de sucesos de IoTF."
 
 #: ..\docs\messaging\payload.rst:13
-msgid "IOTF JSON Payload Specification"
+msgid "IoTF JSON Payload Specification"
 msgstr ""
+"Especificación de carga útil JSON de IoTF"
 
 #: ..\docs\messaging\payload.rst:15
-msgid ""
-"It is simple to create a JSON message that meets the IOTF specification."
+msgid "It is simple to create a JSON message that meets the IoTF specification."
 msgstr ""
+"Es simple crear un mensaje JSON que cumpla con la especificación de IoTF."
 
 #: ..\docs\messaging\payload.rst:17
-msgid ""
-"The message must be a valid JSON object (not an array) with only two top "
-"level elements: **d** and **ts**"
+msgid "The message must be a valid JSON object (not an array) with only two top level elements: **d** and **ts**"
 msgstr ""
+"El mensaje debe ser un objeto (no una matriz) JSON válido con solo dos elementos de nivel superior: **d** y **ts**"
 
 #: ..\docs\messaging\payload.rst:19
 msgid "The message must be UTF-8 encoded"
 msgstr ""
+"El mensaje debe estar codificado en UTF-8"
 
 #: ..\docs\messaging\payload.rst:22
 msgid "Data"
 msgstr ""
+"Datos"
 
 #: ..\docs\messaging\payload.rst:23
-msgid ""
-"The **d** element is where you include all data for the event (or command) "
-"being transmitted in the message."
+msgid "The **d** element is where you include all data for the event (or command) being transmitted in the message."
 msgstr ""
+"El elemento **d** es el lugar donde se incluyen todos los datos para el suceso (o mandato) que se está transmitiendo en el mensaje."
 
 #: ..\docs\messaging\payload.rst:26
-msgid ""
-"This element is required for your message to meet the IOTF message "
-"specification."
+msgid "This element is required for your message to meet the IoTF message specification."
 msgstr ""
+"Este elemento es necesario para que el mensaje cumpla con la especificación de mensajes de IoTF."
 
 #: ..\docs\messaging\payload.rst:27
 msgid "This must always be a JSON object (not an array)"
 msgstr ""
+"Este debe ser siempre un objeto JSON (no una matriz)"
 
 #: ..\docs\messaging\payload.rst:28
-msgid ""
-"In the case where you wish to send no data the **d** element should still be"
-" present, but contain an empty object."
+msgid "In the case where you wish to send no data the **d** element should still be present, but contain an empty object."
 msgstr ""
+"En caso de que no desee enviar datos, el elemento **d** debe estar presente de todas formas, pero debe contener un objeto vacío."
 
 #: ..\docs\messaging\payload.rst:32
 msgid "Example 1 - Simple Data"
 msgstr ""
+"Ejemplo 1 - Datos simples"
 
 #: ..\docs\messaging\payload.rst:41
 msgid "Example 2 - Complex data"
 msgstr ""
+"Ejemplo 2 - Datos complejos"
 
 #: ..\docs\messaging\payload.rst:58
 msgid "Example 3 - No data"
 msgstr ""
+"Ejemplo 3 - Sin datos"
 
 #: ..\docs\messaging\payload.rst:67
 msgid "Timestamp"
 msgstr ""
+"Indicación de fecha y hora"
 
 #: ..\docs\messaging\payload.rst:69
-msgid ""
-"The **ts** element allows you to associate a timestamp with the event (or "
-"command). This is an optional element, if included its value should be a "
-"valid ISO8601 encoded timestamp string."
+msgid "The **ts** element allows you to associate a timestamp with the event (or command). This is an optional element, if included its value should be a valid ISO8601 encoded timestamp string."
 msgstr ""
+"El elemento **ts** le permite asociar una indicación de fecha y hora con el suceso (o mandato). Este es un elemento opcional; si se incluye, el valor debe ser una serie de indicación de fecha y hora codificada ISO8601 válida."
 
 #: ..\docs\messaging\payload.rst:89
 msgid "Custom JSON payloads"
 msgstr ""
+"Cargas útiles JSON personalizadas"
 
 #: ..\docs\messaging\payload.rst:90
-msgid ""
-"The IOT Foundation is designed to be open, you may send your event and "
-"command data in any format you choose, however if you choose to send data in"
-" a custom format it will limit some features of the service which can only "
-"function with a known payload format."
+msgid "The IoT Foundation is designed to be open, you may send your event and command data in any format you choose, however if you choose to send data in a custom format it will limit some features of the service which can only function with a known payload format."
 msgstr ""
+"Aunque IoT Foundation está diseñado para ser abierto y se pueden enviar los datos de suceso y mandato en cualquier formato que se elija, si se elige enviar datos en un formato personalizado limitará algunas características del servicio que solo pueden funcionar con un formato de carga útil conocido."
 
 #: ..\docs\messaging\payload.rst:94
-msgid ""
-"Below are a number of example payloads that are close the to the IOTF "
-"specification, but do not quite match it.  Each would be treated as a custom"
-" JSON payload."
+msgid "Below are a number of example payloads that are close to the IoTF specification, but do not quite match it.  Each would be treated as a custom JSON payload."
 msgstr ""
+"Más abajo hay diversas cargas útiles de ejemplo que están cerca de la especificación de IoTF, pero no coinciden del todo con ella.  Cada una de ellas debe tratarse como carga útil JSON personalizada."
 
 #: ..\docs\messaging\payload.rst:97
 msgid "**Example 1**"
 msgstr ""
+"**Ejemplo 1**"
 
 #: ..\docs\messaging\payload.rst:99
 msgid "Root node is a JSON array"
 msgstr ""
+"El nodo raíz es una matriz JSON"
 
 #: ..\docs\messaging\payload.rst:123
 msgid "**Example 2**"
 msgstr ""
+"**Ejemplo 2**"
 
 #: ..\docs\messaging\payload.rst:125
 msgid "\"d\" node is a JSON array"
 msgstr ""
+"El nodo \"d\" es una matriz JSON"
 
 #: ..\docs\messaging\payload.rst:134
 msgid "**Example 3**"
 msgstr ""
+"**Ejemplo 3**"
 
 #: ..\docs\messaging\payload.rst:136
 msgid "Unexpected node at root level"
 msgstr ""
+"Nodo inesperado a nivel raíz"
+

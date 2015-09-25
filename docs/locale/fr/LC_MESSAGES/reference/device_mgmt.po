@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_mgmt.rst:3
+msgid "Device Management"
+msgstr ""
+"Gestion des terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:5
+msgid "The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management."
+msgstr ""
+"La fonction de gestion des terminaux améliore le service Internet of Things Foundation en proposant de nouvelles fonctionnalités pour la gestion des terminaux. Cette introduction présente certains des concepts et des options de la fonction de gestion des terminaux."
+
+#: ..\docs\reference\device_mgmt.rst:8
+msgid "What does Device Management add?"
+msgstr ""
+"Avantages de la fonction de gestion des terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:10
+msgid "Control and management of device lifecycles for both individual and batches of devices."
+msgstr ""
+"Contrôle et gestion du cycle de vie de terminaux spécifiques ou de groupes de terminaux."
+
+#: ..\docs\reference\device_mgmt.rst:11
+msgid "Device metadata and status information, enabling the creation of device dashboards and other tools."
+msgstr ""
+"Métadonnées et informations de statut des terminaux pour permettre la création de tableaux de bord de terminaux et d'autres outils."
+
+#: ..\docs\reference\device_mgmt.rst:12
+msgid "Diagnostic information, both for connectivity to the Internet of Things Foundation service, and device diagnostics."
+msgstr ""
+"Informations de diagnostic relatives à la connectivité avec le service Internet of Things Foundation et diagnostic des terminaux."
+
+#: ..\docs\reference\device_mgmt.rst:13
+msgid "Device management commands, like firmware update, and device reboot."
+msgstr ""
+"Commandes de gestion des terminaux, comme la mise à jour du microprogramme et le réamorçage des terminaux."
+
+#: ..\docs\reference\device_mgmt.rst:15
+msgid "At a more technical level, device management adds:"
+msgstr ""
+"A un niveau plus technique, la fonction de gestion des terminaux ajoute les éléments suivants :"
+
+#: ..\docs\reference\device_mgmt.rst:17
+msgid "a device model, that describes the metadata and management characteristics of a device,"
+msgstr ""
+"Un modèle de terminal qui décrit les métadonnées et les caractéristiques de gestion d'un terminal."
+
+#: ..\docs\reference\device_mgmt.rst:18
+msgid "a ReST API which provides a callable interface for managing devices,"
+msgstr ""
+"Une API REST qui fournit une interface pouvant être appelée pour gérer des terminaux."
+
+#: ..\docs\reference\device_mgmt.rst:19
+msgid "and a device management protocol, used for communication between the management agent on the devices and the Internet of Things Foundation."
+msgstr ""
+"Un protocole de gestion des terminaux utilisé pour les communications entre l'agent de gestion des terminaux et Internet of Things Foundation."
+
+#: ..\docs\reference\device_mgmt.rst:22
+msgid "Important concepts in device management"
+msgstr ""
+"Concepts importants de la gestion des terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:25
+msgid "Managed and Unmanaged Devices"
+msgstr ""
+"Terminaux gérés et non gérés"
+
+#: ..\docs\reference\device_mgmt.rst:27
+msgid "Device management creates a distinction between managed and unmanaged devices."
+msgstr ""
+"La fonction de gestion des terminaux établit une distinction entre les terminaux gérés et les terminaux non gérés."
+
+#: ..\docs\reference\device_mgmt.rst:29
+msgid "**Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation. The device management agent and the Internet of Things Foundation device management service must share an understanding of data formats and communication patterns so they can interpret data correctly."
+msgstr ""
+"Les **terminaux gérés** sont des terminaux où un agent de gestion a été installé. L'agent de gestion envoie et reçoit les métadonnées du terminal et répond aux commandes de gestion des terminaux provenant d'Internet of Things Foundation. L'agent de gestion des terminaux et le service de gestion des terminaux Internet of Things Foundation doivent comprendre les formats de données et les modèles de communication de la même manière afin de pouvoir interpréter les données correctement."
+
+#: ..\docs\reference\device_mgmt.rst:30
+msgid "**Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation. Devices without a device management agent installed can never become managed devices."
+msgstr ""
+"Les **terminaux non gérés** sont des terminaux qui ne comportent pas d'agent de gestion des terminaux. Tous les terminaux commencent leur cycle de vie en tant que terminaux non gérés et peuvent devenir des terminaux gérés lorsqu'ils envoient un message à Internet of Things Foundation via un agent de gestion des terminaux. Les terminaux où il n'y a pas d'agent de gestion des terminaux installé ne peuvent jamais devenir des terminaux gérés."
+
+#: ..\docs\reference\device_mgmt.rst:33
+msgid "Device Model"
+msgstr ""
+"Modèle de terminal"
+
+#: ..\docs\reference\device_mgmt.rst:34
+msgid "The device model is the combination of device metadata and management characteristics of a device. Devices can contain a lot of metadata, including device identifiers, device type and associated identifiers, and device model extensions. For a list of identifiers, see the device model reference documentation."
+msgstr ""
+"Le modèle de terminal est une combinaison de métadonnées et de caractéristiques de gestion d'un terminal. Les terminaux peuvent comporter de nombreuses métadonnées, notamment des identificateurs de terminaux, un type de terminal et les identificateurs associés, ainsi que des extensions du modèle de terminal. Pour connaître la liste d'identificateurs, reportez-vous à la documentation de référence du modèle de terminal."
+
+#: ..\docs\reference\device_mgmt.rst:37
+msgid "Device Management Protocol"
+msgstr ""
+"Protocoles de gestion des terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:39
+msgid "This protocol is used for device management communication between the Internet of Things Foundation and the management agent on a managed device. The device management protocol is based on MQTT and uses a different set of topics than the regular device messaging protocol. The device management agent of a device must implement the device management protocol in order to enable device management functions."
+msgstr ""
+"Ce protocole est utilisé pour établir des communications de gestion des terminaux entre Internet of Things Foundation et l'agent de gestion installé sur un terminal géré. Le protocole de gestion des terminaux s'appuie sur MQTT et utilise un ensemble de sujets différents de celui du protocole de messagerie des terminaux standard. L'agent de gestion d'un terminal doit mettre en oeuvre le protocole de gestion des terminaux pour activer les fonctions de gestion correspondantes. "
+
+#: ..\docs\reference\device_mgmt.rst:42
+msgid "Device Identifiers"
+msgstr ""
+"Identificateurs de terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:44
+msgid "Manufactured devices come with a variety of identifiers, such as model and serial number. Each identifier can be considered a separate namespace, but the combination of identifiers which uniquely identify a specific device is customer dependent and may be very complex."
+msgstr ""
+"Lors de leur fabrication, les terminaux reçoivent un certain nombre d'identificateurs, comme un numéro de modèle et un numéro de série. Chaque identificateur peut être considéré comme un espace de nom distinct mais la combinaison d'identificateurs qui identifient de manière unique un terminal spécifique varie d'un client à l'autre et peut être très complexe. "
+
+#: ..\docs\reference\device_mgmt.rst:46
+msgid "In order to accommodate this complexity, the device management standards have defined many types of identifier, and these are represented in the core device model. See the Device Model Attributes reference document for more detailed information on device identifiers and attributes."
+msgstr ""
+"Pour prendre en charge cette complexité, les normes de gestion des terminaux ont défini de nombreux types d'identificateur qui sont représentés dans le modèle de terminal de base. Pour plus d'informations sur les identificateurs et les attributs d'un terminal, reportez-vous au document de référence consacré aux attributs du modèle de terminal."
+
+#: ..\docs\reference\device_mgmt.rst:49
+msgid "Management Agent"
+msgstr ""
+"Agent de gestion"
+
+#: ..\docs\reference\device_mgmt.rst:51
+msgid "A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices."
+msgstr ""
+"Un agent de gestion est un bloc de logique installé sur un terminal pour lui permettre de se connecter au service Internet of Things Foundation en tant que terminal géré. L'agent de gestion comprend les métadonnées et les commandes de gestion des terminaux utilisées dans le protocole de messagerie de gestion des terminaux. Sans agent de gestion, les terminaux ne peuvent pas utiliser le protocole de messagerie des terminaux et ne peuvent donc pas devenir des terminaux gérés."
+
+#: ..\docs\reference\device_mgmt.rst:55
+msgid "The Device Management Lifecycle"
+msgstr ""
+"Cycle de vie de la gestion des terminaux"
+
+#: ..\docs\reference\device_mgmt.rst:57
+msgid "A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"Un terminal et le type de terminal associé sont créés dans Internet of Things Foundation à l'aide du tableau de bord ou de l'API REST."
+
+#: ..\docs\reference\device_mgmt.rst:58
+msgid "The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device."
+msgstr ""
+"Le terminal se connecte à Internet of Things Foundation et utilise l'opération 'Gérer le terminal' pour devenir un terminal géré. "
+
+#: ..\docs\reference\device_mgmt.rst:59
+msgid "The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot."
+msgstr ""
+"Les métadonnées du terminal, telles qu'elles sont décrites dans le modèle de terminal, peuvent désormais être affichées et manipulées via l'exécution d'opérations sur le terminal, par exemple la mise à jour du microprogramme et le réamorçage du terminal."
+
+#: ..\docs\reference\device_mgmt.rst:60
+msgid "The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes."
+msgstr ""
+"Le terminal peut transmettre des mises à jour via le protocole de gestion des terminaux, comme des informations d'emplacement ou de diagnostic ou des codes d'erreur."
+
+#: ..\docs\reference\device_mgmt.rst:61
+msgid "In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device."
+msgstr ""
+"Pour prendre en charge les terminaux obsolètes dans des parcs de terminaux volumineux, la demande de l'opération 'Gérer le terminal' inclut un paramètre de durée de vie (lifetime) facultatif. Ce paramètre correspond au nombre de secondes au cours desquelles le terminal doit effectuer une autre demande 'Gérer le terminal' pour éviter d'être considéré comme un terminal en veille et devenir un terminal non géré. "
+
+#: ..\docs\reference\device_mgmt.rst:62
+msgid "When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"Lorsqu'un terminal n'est plus utilisé, il peut être supprimé d'Internet of Things Foundation à l'aide du tableau de bord ou de l'API REST."
+

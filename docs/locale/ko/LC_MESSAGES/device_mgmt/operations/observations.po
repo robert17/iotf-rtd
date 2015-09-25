@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\observations.rst:3
+msgid "Device Management Operations - Observations"
+msgstr ""
+"디바이스 관리 오퍼레이션 - 관찰"
+
+#: ..\docs\device_mgmt\operations\observations.rst:5
+msgid "Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`."
+msgstr ""
+":ref:`firmware-actions-update`를 지원하도록 디바이스가 관찰, 알림 및 취소 오퍼레이션을 구현해야 합니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:10
+msgid "Observe Attribute Changes"
+msgstr ""
+"속성 변경 관찰"
+
+#: ..\docs\device_mgmt\operations\observations.rst:12
+msgid "The Internet of Things Foundation can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request (\"notify\" message) to the Internet of Things Foundation whenever the observed attributes value changes."
+msgstr ""
+"Internet of Things Foundation이 이 요청을 디바이스에 전송하여 하나 이상의 디바이스 속성 변경사항을 관찰할 수 있습니다. 디바이스가 이 요청을 수신하면 관찰된 속성 값이 변경될 때마다 Internet of Things Foundation에 알림 요청(\"notify\" 메시지)을 보내야 합니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:15
+#: ..\docs\device_mgmt\operations\observations.rst:70
+#: ..\docs\device_mgmt\operations\observations.rst:117
+msgid "Topic"
+msgstr ""
+"주제"
+
+#: ..\docs\device_mgmt\operations\observations.rst:22
+#: ..\docs\device_mgmt\operations\observations.rst:78
+#: ..\docs\device_mgmt\operations\observations.rst:124
+msgid "Message format"
+msgstr ""
+"메시지 형식"
+
+#: ..\docs\device_mgmt\operations\observations.rst:24
+msgid "The \"fields\" field is an array of the device attribute names from the device model. For example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\". If a complex field, such as \"mgmt.firmware\" is specified, it is expected that its underlying fields are updated at the same time, such that only a single notify message is generated."
+msgstr ""
+"\"fields\" 필드는 디바이스 모델의 디바이스 속성 이름 배열입니다. 예를 들어, 값이 \"location\", \"mgmt.firmware\" 또는 \"mgmt.firmware.state\"일 수 있습니다. \"mgmt.firmware\" 등의 복합 필드가 지정되는 경우 기존 필드가 동시에 업데이트되어 단일 알림 메시지만 생성되는 것으로 예상됩니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:26
+msgid "The \"message\" field used in the response can be specified if \"rc\" is not 200. If any field value which was to be observed could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). When values for fields to be observed cannot be found, \"fields\" should contain an array of elements with \"field\" set to the name of each field that could not be read, \"value\" fields should be omitted. For the response code to be set to 200, both \"field\" and \"value\" must be specified, \"value\" is the current value of an attribute identified by \"field\" content."
+msgstr ""
+"\"rc\"가 200이 아닌 경우 응답에 사용된 \"message\" 필드를 지정할 수 있습니다. 관찰할 필드 값을 검색할 수 없는 경우 \"rc\"가 404(찾을 수 없는 경우) 또는 500(기타 이유)으로 설정되어야 합니다. 관찰할 필드의 값을 찾을 수 없는 경우 \"fields\"에 읽을 수 없는 각 필드의 이름으로 \"field\"가 설정되어 요소의 배열이 포함되어야 하고 \"value\" 필드를 생략해야 합니다. 응답 코드가 200으로 설정되려면 \"field\" 및 \"value\" 둘 다 지정되어야 하고 \"value\"가 \"field\" 컨텐츠에서 식별되는 속성의 현재 값입니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:28
+#: ..\docs\device_mgmt\operations\observations.rst:80
+#: ..\docs\device_mgmt\operations\observations.rst:126
+msgid "Request Format:"
+msgstr ""
+"요청 형식:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:41
+#: ..\docs\device_mgmt\operations\observations.rst:93
+#: ..\docs\device_mgmt\operations\observations.rst:138
+msgid "Response Format:"
+msgstr ""
+"응답 형식:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:63
+msgid "Cancel Attribute Observation"
+msgstr ""
+"속성 관찰 취소"
+
+#: ..\docs\device_mgmt\operations\observations.rst:65
+msgid "The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The \"fields\" is an array of the device attribute names from the device model, for example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\"."
+msgstr ""
+"Internet of Things Foundation이 이 요청을 디바이스에 전송하여 하나 이상의 디바이스 속성의 현재 관찰을 취소할 수 있습니다. \"fields\"가 디바이스 모델의 디바이스 속성 이름 배열입니다. 예를 들어, 값이 \"location\", \"mgmt.firmware\" 또는 \"mgmt.firmware.state\"일 수 있습니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:67
+msgid "The \"message\" field must be specified if \"rc\" is not 200."
+msgstr ""
+"\"rc\"가 200이 아닌 경우 \"message\" 필드를 지정해야 합니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:107
+msgid "Notify Attribute Changes"
+msgstr ""
+"속성 변경 알림"
+
+#: ..\docs\device_mgmt\operations\observations.rst:109
+msgid "The Internet of Things Foundation can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value."
+msgstr ""
+"Internet of Things Foundation이 특정 속성 또는 값 세트를 참조하는 관찰 요청을 작성할 수 있습니다. 속성의 값이 변경되면 디바이스가 최신 값이 포함된 알림을 보내야 합니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:111
+msgid "The \"field_name\" value is the name of the attribute that has changed, the \"field_value\" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent."
+msgstr ""
+"\"field_name\" 값은 변경된 속성의 이름이고 \"field_value\"는 속성의 현재 값입니다. 속성은 복합 필드일 수 있으며, 복합 필드의 여러 값이 단일 오퍼레이션의 결과로 업데이트되는 경우 단일 알림 메시지만 보내야 합니다."
+
+#: ..\docs\device_mgmt\operations\observations.rst:113
+msgid "If notify request is processed successfully, \"rc\" should be set to 200. If the request is not correct, \"rc\" should be set to 400. If the field specified in the notify request is not being observed, \"rc\" should be set to 404."
+msgstr ""
+"알림 요청이 성공적으로 처리되는 경우 \"rc\"가 200으로 설정되어야 합니다. 요청이 올바르지 않는 경우 \"rc\"가 400으로 설정되어야 합니다. 알림 요청에 지정된 필드를 관찰 중이 아닌 경우 \"rc\"가 404로 설정되어야 합니다."
+

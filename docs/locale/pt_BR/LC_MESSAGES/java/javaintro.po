@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\java\javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Biblioteca do Cliente Java - Introdução"
+
+#: ..\docs\java\javaintro.rst:5
+msgid "Use the Java client library for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Java 7 or Java 8. The client library can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the java ibmiotf client library to interact with devices and applications within your organizations."
+msgstr ""
+"Use a biblioteca do cliente Java para interagir com o `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ e para automatizar comandos usando o Java 7 ou Java 8. A biblioteca do cliente pode ser usada para simplificar interações com o IBM Internet of Things Foundation. As bibliotecas a seguir contêm instruções e orientações sobre como usar a biblioteca ibmiotf java para interagir com dispositivos e aplicativos dentro de suas organizações."
+
+#: ..\docs\java\javaintro.rst:7
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ..\docs\java\javaintro.rst:8
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ..\docs\java\javaintro.rst:10
+msgid "This client library is divided into three sections, all included within the library."
+msgstr ""
+"Esta biblioteca do cliente é dividida em três seções, todas incluídas na biblioteca."
+
+#: ..\docs\java\javaintro.rst:12
+msgid "The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"A seção Dispositivos contém informações sobre como os dispositivos publicam eventos e manipulam comandos usando a Biblioteca do Cliente ibmiotf Java."
+
+#: ..\docs\java\javaintro.rst:13
+msgid "The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"A seção Aplicativos contém informações sobre como os aplicativos podem usar a Biblioteca do Cliente ibmiotf Java para interagir com dispositivos."
+
+#: ..\docs\java\javaintro.rst:14
+msgid "The Historian section contains information on how applications can use the Java ibmiotf Client Library to retrieve the historical information."
+msgstr ""
+"A seção Historiador contém informações sobre como os aplicativos podem usar a Biblioteca do Cliente ibmiotf Java para recuperar as informações históricas."
+
+#: ..\docs\java\javaintro.rst:19
+msgid "Dependencies"
+msgstr ""
+"Dependências"
+
+#: ..\docs\java\javaintro.rst:21
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Cliente Java Paho MQTT <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - fornece uma classe de cliente que permite que os aplicativos se conectem a um broker MQTT"
+
+#: ..\docs\java\javaintro.rst:22
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - biblioteca para interagir com objetos JSON"
+
+#: ..\docs\java\javaintro.rst:23
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Criação de Log do Apache Commons <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - biblioteca para criação de log de várias informações"
+
+#: ..\docs\java\javaintro.rst:24
+msgid "`Apache Commons Codec <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Apache Commons Codec <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__  - fornece funcionalidades comuns de codificador e decodificador como Base64"
+
+#: ..\docs\java\javaintro.rst:25
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - ferramenta de construção para construções automatizadas"
+
+#: ..\docs\java\javaintro.rst:26
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - Uma biblioteca de Cliente HTTP"
+
+#: ..\docs\java\javaintro.rst:27
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - Uma biblioteca de Núcleo HTTP"
+
+#: ..\docs\java\javaintro.rst:28
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - A biblioteca de data e hora para Java"
+
+#: ..\docs\java\javaintro.rst:35
+msgid "Documentation"
+msgstr ""
+"Documentação"
+
+#: ..\docs\java\javaintro.rst:36
+msgid "`Device Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_devices.rst>`__"
+msgstr ""
+"`Cliente do Dispositivo <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_devices.rst>`__"
+
+#: ..\docs\java\javaintro.rst:37
+msgid "`Application Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__"
+msgstr ""
+"`Aplicativo Cliente <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__"
+
+#: ..\docs\java\javaintro.rst:38
+msgid "`Historian Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_historian.rst>`__"
+msgstr ""
+"`Cliente do Historiador <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_historian.rst>`__"
+

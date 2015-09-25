@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0002\device.rst:3
+msgid "Device Management API"
+msgstr ""
+"API de gestión de dispositivos"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "Path"
+msgstr ""
+"Vía de acceso"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "GET"
+msgstr ""
+"GET"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "POST"
+msgstr ""
+"POST"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "DELETE"
+msgstr ""
+"DELETE"
+
+#: ..\docs\api\v0002\device.rst:8
+msgid "/"
+msgstr ""
+"/"
+
+#: ..\docs\api\v0002\device.rst:8
+msgid "Get organization"
+msgstr ""
+"Obtener organización"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "/device/types"
+msgstr ""
+"/device/types"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "List device types"
+msgstr ""
+"Listar tipos de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "Create device type"
+msgstr ""
+"Crear tipo de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "/device/types/{typeID}"
+msgstr ""
+"/device/types/{typeID}"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Get device type"
+msgstr ""
+"Obtener tipo de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Update device type"
+msgstr ""
+"Actualizar tipo de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Delete device type"
+msgstr ""
+"Suprimir tipo de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "/device/types/{typeID}/devices"
+msgstr ""
+"/device/types/{typeID}/devices"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "List devices"
+msgstr ""
+"Listar dispositivos"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "Add device"
+msgstr ""
+"Añadir dispositivo"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "/device/types/{typeID}/devices /{deviceID}"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Get device"
+msgstr ""
+"Obtener dispositivo"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Update device"
+msgstr ""
+"Actualizar dispositivo"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Remove device"
+msgstr ""
+"Eliminar dispositivo"
+
+#: ..\docs\api\v0002\device.rst:19
+msgid "/device/types/{typeID}/devices /{deviceID}/diag"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag"
+
+#: ..\docs\api\v0002\device.rst:19
+msgid "Get device diagnostic information"
+msgstr ""
+"Obtener información de diagnóstico de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Get device diagnostic error codes"
+msgstr ""
+"Obtener códigos de error de diagnóstico de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Add error code"
+msgstr ""
+"Añadir código de error"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Clear error codes"
+msgstr ""
+"Borrar códigos de error"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/log"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/log"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "Get device diagnostic log"
+msgstr ""
+"Obtener registro de diagnóstico de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "Add device diagnostic log"
+msgstr ""
+"Añadir registro de diagnóstico de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "/device/types/{typeID}/devices /{deviceID}/location"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/location"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "Get device location information"
+msgstr ""
+"Obtener información de ubicación de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "Update device location information"
+msgstr ""
+"Actualizar información de ubicación de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:31
+msgid "/device/types/{typeID}/devices /{deviceID}/mgmt"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/mgmt"
+
+#: ..\docs\api\v0002\device.rst:31
+msgid "Get device management information"
+msgstr ""
+"Obtener información de gestión de dispositivos"
+
+#: ..\docs\api\v0002\device.rst:34
+msgid "/bulk/devices"
+msgstr ""
+"/bulk/devices"
+
+#: ..\docs\api\v0002\device.rst:34
+msgid "List devices in bulk, with paging and filtering"
+msgstr ""
+"Lista de dispositivos de forma masiva, con paginación y filtrado"
+
+#: ..\docs\api\v0002\device.rst:38
+msgid "/bulk/devices/add"
+msgstr ""
+"/bulk/devices/add"
+
+#: ..\docs\api\v0002\device.rst:38
+msgid "Add devices in bulk"
+msgstr ""
+"Añadir dispositivos de forma masiva"
+
+#: ..\docs\api\v0002\device.rst:41
+msgid "/bulk/devices/remove"
+msgstr ""
+"/bulk/devices/remove"
+
+#: ..\docs\api\v0002\device.rst:41
+msgid "Remove devices in bulk"
+msgstr ""
+"Eliminar dispositivos de forma masiva"
+
+#: ..\docs\api\v0002\device.rst:44
+msgid "/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+msgstr ""
+"/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+
+#: ..\docs\api\v0002\device.rst:44
+msgid "Get connection log for device"
+msgstr ""
+"Obtener registro de conexión para dispositivo"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "/mgmt/requests"
+msgstr ""
+"/mgmt/requests"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "List device management requests"
+msgstr ""
+"Listar solicitudes de gestión de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "Initiate device management requests"
+msgstr ""
+"Iniciar solicitudes de gestión de dispositivo"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "/mgmt/requests/{requestId}"
+msgstr ""
+"/mgmt/requests/{requestId}"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "Get device management request"
+msgstr ""
+"Obtener solicitud de gestión de dispositivos"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "Clear device management request"
+msgstr ""
+"Eliminar solicitud de gestión de dispositivos"
+
+#: ..\docs\api\v0002\device.rst:53
+msgid "/mgmt/requests/{requestId} /deviceStatus"
+msgstr ""
+"/mgmt/requests/{requestId} /deviceStatus"
+
+#: ..\docs\api\v0002\device.rst:53
+msgid "Get device status for management requests"
+msgstr ""
+"Obtener estado del dispositivo para solicitudes de gestión"
+
+#: ..\docs\api\v0002\device.rst:58
+msgid "Filtering and Querying"
+msgstr ""
+"Filtrado y consulta"
+
+#: ..\docs\api\v0002\device.rst:60
+msgid "An important part of device management is the ability to query and filter information about devices. This is important for operator dashboards as well as building tools using APIs."
+msgstr ""
+"Una parte importante de la gestión de dispositivos es la capacidad para consultar y filtrar información sobre dispositivos. Esto es importante para los paneles de control de operador, así como para las herramientas de creación mediante API."
+
+#: ..\docs\api\v0002\device.rst:62
+msgid "The following API will permit a query string to qualify the devices whose information is being requested. - GET /bulk/devices"
+msgstr ""
+"La siguiente API permite a una cadena de consulta calificar los dispositivos cuya información se solicita. - GET /bulk/devices"
+
+#: ..\docs\api\v0002\device.rst:65
+msgid "The query string will be able to refer to all of the device attributes in the core device model, plus the management and diagnostic extensions. The location extension is excluded, meaning devices cannot be queried for their latitude and longitude. The query string can contain the following attributes:"
+msgstr ""
+"La cadena de consulta podrá referirse a todos los atributos de dispositivo en el modelo básico de dispositivo, más las extensiones de gestión y diagnóstico. La extensión de ubicación está excluida, lo que significa que no se podrá consultar la latitud y la longitud de los dispositivos. La cadena de consulta puede contener los atributos siguientes:"
+
+#: ..\docs\api\v0002\device.rst:67
+msgid "``typeId``"
+msgstr ""
+"``typeId``"
+
+#: ..\docs\api\v0002\device.rst:68
+msgid "``deviceId``"
+msgstr ""
+"``deviceId``"
+
+#: ..\docs\api\v0002\device.rst:69
+msgid "``status.alert.enabled``"
+msgstr ""
+"``status.alert.enabled``"
+
+#: ..\docs\api\v0002\device.rst:70
+msgid "``deviceInfo.serialNumber``"
+msgstr ""
+"``deviceInfo.serialNumber``"
+
+#: ..\docs\api\v0002\device.rst:71
+msgid "``deviceInfo.manufacturer``"
+msgstr ""
+"``deviceInfo.manufacturer``"
+
+#: ..\docs\api\v0002\device.rst:72
+msgid "``deviceInfo.model``"
+msgstr ""
+"``deviceInfo.model``"
+
+#: ..\docs\api\v0002\device.rst:73
+msgid "``deviceInfo.deviceClass``"
+msgstr ""
+"``deviceInfo.deviceClass``"
+
+#: ..\docs\api\v0002\device.rst:74
+msgid "``deviceInfo.description``"
+msgstr ""
+"``deviceInfo.description``"
+
+#: ..\docs\api\v0002\device.rst:75
+msgid "``deviceInfo.fwVersion``"
+msgstr ""
+"``deviceInfo.fwVersion``"
+
+#: ..\docs\api\v0002\device.rst:76
+msgid "``deviceInfo.hwVersion``"
+msgstr ""
+"``deviceInfo.hwVersion``"
+
+#: ..\docs\api\v0002\device.rst:77
+msgid "``deviceInfo.descriptiveLocation``"
+msgstr ""
+"``deviceInfo.descriptiveLocation``"
+
+#: ..\docs\api\v0002\device.rst:78
+msgid "``mgmt.dormant``"
+msgstr ""
+"``mgmt.dormant``"
+
+#: ..\docs\api\v0002\device.rst:79
+msgid "``mgmt.supports.deviceActions``"
+msgstr ""
+"``mgmt.supports.deviceActions``"
+
+#: ..\docs\api\v0002\device.rst:80
+msgid "``mgmt.supports.firmwareActions``"
+msgstr ""
+"``mgmt.supports.firmwareActions``"
+
+#: ..\docs\api\v0002\device.rst:82
+msgid "The query string takes the form of a list of attribute=value pairs separated by '&'. This corresponds to an equality match on the attributes and values supplied. For example:"
+msgstr ""
+"La cadena de consulta adopta el formato de pares attribute=value separados por '&'. Esto se corresponde con una coincidencia de igualdad de los atributos y valores suministrados. Por ejemplo:"
+
+#: ..\docs\api\v0002\device.rst:88
+msgid "However, there is no capability to perform other types of matches, such as greater than or regular expressions."
+msgstr ""
+"Sin embargo, no existe la posibilidad de realizar otros tipos de coincidencias, por ejemplo, mayor que u otras expresiones regulares. "
+

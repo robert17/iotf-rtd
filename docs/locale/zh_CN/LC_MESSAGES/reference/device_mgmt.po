@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_mgmt.rst:3
+msgid "Device Management"
+msgstr ""
+"设备管理"
+
+#: ..\docs\reference\device_mgmt.rst:5
+msgid "The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management."
+msgstr ""
+"Internet of Things Foundation 服务中新增了一些设备管理功能。本简介中将介绍设备管理方面的一些概念和功能。"
+
+#: ..\docs\reference\device_mgmt.rst:8
+msgid "What does Device Management add?"
+msgstr ""
+"“设备管理”增加了哪些功能？"
+
+#: ..\docs\reference\device_mgmt.rst:10
+msgid "Control and management of device lifecycles for both individual and batches of devices."
+msgstr ""
+"可控制和管理单个和批量设备的设备生命周期。"
+
+#: ..\docs\reference\device_mgmt.rst:11
+msgid "Device metadata and status information, enabling the creation of device dashboards and other tools."
+msgstr ""
+"设备元数据和状态信息（支持创建设备仪表板和其他工具）。"
+
+#: ..\docs\reference\device_mgmt.rst:12
+msgid "Diagnostic information, both for connectivity to the Internet of Things Foundation service, and device diagnostics."
+msgstr ""
+"诊断信息（用于对 Internet of Things Foundation 服务连接和设备进行诊断）。"
+
+#: ..\docs\reference\device_mgmt.rst:13
+msgid "Device management commands, like firmware update, and device reboot."
+msgstr ""
+"设备管理命令（如固件更新和设备重新引导）。"
+
+#: ..\docs\reference\device_mgmt.rst:15
+msgid "At a more technical level, device management adds:"
+msgstr ""
+"从较深的技术层面来讲，“设备管理”增加了以下内容："
+
+#: ..\docs\reference\device_mgmt.rst:17
+msgid "a device model, that describes the metadata and management characteristics of a device,"
+msgstr ""
+"设备模型（用于描述设备的元数据和管理特征），"
+
+#: ..\docs\reference\device_mgmt.rst:18
+msgid "a ReST API which provides a callable interface for managing devices,"
+msgstr ""
+"ReST API（提供了用于管理设备的可调用接口），以及"
+
+#: ..\docs\reference\device_mgmt.rst:19
+msgid "and a device management protocol, used for communication between the management agent on the devices and the Internet of Things Foundation."
+msgstr ""
+"设备管理协议（用于设备上管理代理程序和 Internet of Things Foundation 之间的通信）。"
+
+#: ..\docs\reference\device_mgmt.rst:22
+msgid "Important concepts in device management"
+msgstr ""
+"设备管理中的重要概念"
+
+#: ..\docs\reference\device_mgmt.rst:25
+msgid "Managed and Unmanaged Devices"
+msgstr ""
+"受管设备和非受管设备"
+
+#: ..\docs\reference\device_mgmt.rst:27
+msgid "Device management creates a distinction between managed and unmanaged devices."
+msgstr ""
+"设备管理可区分受管设备和非受管设备。"
+
+#: ..\docs\reference\device_mgmt.rst:29
+msgid "**Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation. The device management agent and the Internet of Things Foundation device management service must share an understanding of data formats and communication patterns so they can interpret data correctly."
+msgstr ""
+"**Managed Devices** 定义为已安装管理代理程序的设备。管理代理程序可以与 Internet of Things Foundation 之间传输设备元数据，并响应来自 Internet of Things Foundation 的设备管理命令。设备管理代理程序和 Internet of Things Foundation 设备管理服务必须就数据格式和通信模式达成共识，这样它们才能正确解释数据。"
+
+#: ..\docs\reference\device_mgmt.rst:30
+msgid "**Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation. Devices without a device management agent installed can never become managed devices."
+msgstr ""
+"**Unmanaged Devices** 是没有安装设备管理代理程序的设备。在生命周期一开始，所有设备都是非受管设备，并可以通过设备管理代理程序将消息发送到 Internet of Things Foundation 来转换为受管设备。未安装设备管理代理程序的设备绝不可能成为受管设备。"
+
+#: ..\docs\reference\device_mgmt.rst:33
+msgid "Device Model"
+msgstr ""
+"设备模型"
+
+#: ..\docs\reference\device_mgmt.rst:34
+msgid "The device model is the combination of device metadata and management characteristics of a device. Devices can contain a lot of metadata, including device identifiers, device type and associated identifiers, and device model extensions. For a list of identifiers, see the device model reference documentation."
+msgstr ""
+"设备模型是由设备的元数据和管理特征组合而成。设备可以包含大量元数据（包括设备标识、设备类型和相关标识，以及设备模型扩展）。要获取标识列表，请参阅《设备模型参考》文档。"
+
+#: ..\docs\reference\device_mgmt.rst:37
+msgid "Device Management Protocol"
+msgstr ""
+"设备管理协议"
+
+#: ..\docs\reference\device_mgmt.rst:39
+msgid "This protocol is used for device management communication between the Internet of Things Foundation and the management agent on a managed device. The device management protocol is based on MQTT and uses a different set of topics than the regular device messaging protocol. The device management agent of a device must implement the device management protocol in order to enable device management functions."
+msgstr ""
+"此协议用于 Internet of Things Foundation 与受管设备上的管理代理程序之间的设备管理通信。设备管理协议基于 MQTT，但它使用的主题集不同于普通设备消息传递协议。设备的设备管理代理程序必须实施设备管理协议，才能启用设备管理功能。"
+
+#: ..\docs\reference\device_mgmt.rst:42
+msgid "Device Identifiers"
+msgstr ""
+"设备标识"
+
+#: ..\docs\reference\device_mgmt.rst:44
+msgid "Manufactured devices come with a variety of identifiers, such as model and serial number. Each identifier can be considered a separate namespace, but the combination of identifiers which uniquely identify a specific device is customer dependent and may be very complex."
+msgstr ""
+"制造的设备都会随附各种标识，如型号和序列号。每个标识可视为一个单独的名称空间，但是用于唯一标识特定设备的标识组合与客户有关，而且可能非常复杂。"
+
+#: ..\docs\reference\device_mgmt.rst:46
+msgid "In order to accommodate this complexity, the device management standards have defined many types of identifier, and these are represented in the core device model. See the Device Model Attributes reference document for more detailed information on device identifiers and attributes."
+msgstr ""
+"为了适应这种复杂性，设备管理标准定义了多种类型的标识，并且在核心设备模型中表示了这些标识类型。请参阅《设备模型属性参考》文档，以了解有关设备标识和属性的更多详细信息。"
+
+#: ..\docs\reference\device_mgmt.rst:49
+msgid "Management Agent"
+msgstr ""
+"管理代理程序"
+
+#: ..\docs\reference\device_mgmt.rst:51
+msgid "A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices."
+msgstr ""
+"管理代理程序是安装在设备上的一组逻辑，可将设备作为受管设备连接到 Internet of Things Foundation 服务。管理代理程序将理解设备管理消息传递协议中使用的元数据和设备管理命令。如果没有管理代理程序，设备将无法使用设备管理消息传递协议，因此也无法成为受管设备。"
+
+#: ..\docs\reference\device_mgmt.rst:55
+msgid "The Device Management Lifecycle"
+msgstr ""
+"设备管理生命周期"
+
+#: ..\docs\reference\device_mgmt.rst:57
+msgid "A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"在 Internet of Things Foundation 中使用仪表板或 REST API 创建设备及相关设备类型。"
+
+#: ..\docs\reference\device_mgmt.rst:58
+msgid "The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device."
+msgstr ""
+"设备必须连接到 Internet of Things Foundation 并使用“管理设备”操作，才能成为受管设备。"
+
+#: ..\docs\reference\device_mgmt.rst:59
+msgid "The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot."
+msgstr ""
+"现在，可以通过设备操作（例如，固件更新和设备重新引导）来查看和操纵设备的元数据（如设备模型中所述）。"
+
+#: ..\docs\reference\device_mgmt.rst:60
+msgid "The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes."
+msgstr ""
+"设备可以通过设备管理协议来传达更新（例如，位置或诊断信息，以及错误代码）。"
+
+#: ..\docs\reference\device_mgmt.rst:61
+msgid "In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device."
+msgstr ""
+"为了能够在设备众多的情况下处理生效的设备，“管理设备”操作请求中提供了一个可选的生命周期参数。此生命周期参数包含的是一个秒数，设备必须在这段时间内发出另一个“管理设备”请求，才能避免被标记为停止而成为非受管设备。"
+
+#: ..\docs\reference\device_mgmt.rst:62
+msgid "When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"设备退役后，可以使用仪表板或 REST API 从 Internet of Things Foundation 中移除该设备。"
+

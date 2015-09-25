@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:3
+msgid "Device Management Operations - Firmware Actions"
+msgstr ""
+"Operaciones de gestión de dispositivo - Acciones de firmware "
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:5
+msgid "The firmware level currently known to be on a given device is stored in the ``deviceInfo.fwVersion`` attribute. The ``mgmt.firmware`` attributes are used to perform a firmware update and observe its status."
+msgstr ""
+"El nivel de firmware que se sabe que existe actualmente en un determinado dispositivo se almacena en el atributo 'deviceInfo.fwVersion'. Los atributos 'mgmt.firmware' se utilizan para realizar una actualización de firmware y observar su estado."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:8
+msgid "The managed device must support observation of the ``mgmt.firmware`` attribute in order to support firmware actions."
+msgstr ""
+"El dispositivo gestionado debe admitir la observación del atributo 'mgmt.firmware' para admitir acciones de firmware."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:10
+msgid "The firmware update process is separated into two distinct actions, Downloading Firmware, and Updating Firmware. The status of each of these actions is stored in a separate attribute on the device. The ``mgmt.firmware.state`` attribute describes the status of the firmware download. The possible values for ``mgmt.firmware.state`` are:"
+msgstr ""
+"El proceso de actualización del firmware se divide en dos acciones distintas: descarga de firmware y actualización de firmware. El estado de cada una de estas acciones se almacena en un atributo aparte en el dispositivo. El atributo 'mgmt.firmware.state' describe el estado de la descarga del firmware. Los valores posibles de 'mgmt.firmware.state' son:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Value"
+msgstr ""
+"Valor"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "State"
+msgstr ""
+"Estado"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Meaning"
+msgstr ""
+"Significado"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "0"
+msgstr ""
+"0"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "Idle"
+msgstr ""
+"Inactivo"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "The device is currently not in the process of downloading firmware"
+msgstr ""
+"El dispositivo no está actualmente en el proceso de descarga de firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "1"
+msgstr ""
+"1"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "Downloading"
+msgstr ""
+"Descargando"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "The device is currently downloading firmware"
+msgstr ""
+"El dispositivo está actualmente descargando el firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "2"
+msgstr ""
+"2"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "Downloaded"
+msgstr ""
+"Descargado"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "The device has successfully downloaded a firmware update and it is ready to install"
+msgstr ""
+"El dispositivo ha descargado correctamente una actualización de firmware y está listo para instalarla"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:26
+msgid "The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware update. The possible values for ``mgmt.firmware.status`` are:"
+msgstr ""
+"El atributo 'mgmt.firmware.updateStatus' describe el estado de la actualización del firmware. Los valores posibles de 'mgmt.firmware.status' son:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "Success"
+msgstr ""
+"Satisfactorio"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "The firmware has been successfully updated"
+msgstr ""
+"El firmware se ha actualizado satisfactoriamente"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "In Progress"
+msgstr ""
+"En curso"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "The firmware update has been initiated but is not yet complete"
+msgstr ""
+"La actualización de firmware se ha iniciado pero no ha finalizado todavía"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "Out of Memory"
+msgstr ""
+"Sin memoria"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "An out of memory condition has been detected during the operation."
+msgstr ""
+"Se ha detectado una condición de falta de memoria durante la operación."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "3"
+msgstr ""
+"3"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "Connection Lost"
+msgstr ""
+"Se ha perdido la conexión"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "The connection was lost during the firmware download"
+msgstr ""
+"La conexión se ha perdido durante la descarga del firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "4"
+msgstr ""
+"4"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "Verification Failed"
+msgstr ""
+"La verificación ha fallado"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "The firmware did not pass verification"
+msgstr ""
+"El firmware no han superado la verificación"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "5"
+msgstr ""
+"5"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "Unsupported Image"
+msgstr ""
+"Imagen no soportada"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "The downloaded firmware image is not supported by the device"
+msgstr ""
+"El dispositivo no admite la imagen de firmware descargada"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "6"
+msgstr ""
+"6"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "Invalid URI"
+msgstr ""
+"URI no válido"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "The device could not download the firmware from the provided URI"
+msgstr ""
+"El dispositivo no ha podido descargar el firmware desde el URI proporcionado"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:50
+msgid "Firmware Download"
+msgstr ""
+"Descarga de firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:51
+msgid "The Download Firmware action can be initiated by using either the Internet of Things Foundation dashboard, or the REST API."
+msgstr ""
+"La acción Descargar firmware se puede iniciar mediante el panel de instrumentos de Internet of Things Foundation o la API REST."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:53
+msgid "To initiate a firmware download using the REST API, issue a POST request to /mgmt/requests. The information provided is:"
+msgstr ""
+"Para iniciar una descarga de firmware mediante la API REST, emita una solicitud POST a /mgmt/requests. La información proporcionada es:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:55
+msgid "The action ``firmware/download``"
+msgstr ""
+"La acción 'firmware/download'"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:56
+msgid "The URI for the firmware image"
+msgstr ""
+"El URI de la imagen de firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:57
+msgid "A list of devices to receive the image, with a maximum of 5000 devices"
+msgstr ""
+"Una lista de dispositivos para recibir la imagen, con un máximo de 5000 dispositivos"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:58
+msgid "Optional verifier string to validate the image"
+msgstr ""
+"Verificador opcional de serie para validar la imagen"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:59
+msgid "Optional firmware name"
+msgstr ""
+"Nombre de firmware opcional"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:60
+msgid "Optional firmware version"
+msgstr ""
+"Versión de firmware opcional"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:62
+msgid "The device management server in the Internet of Things Foundation uses the Device Management Protocol to send a request to the devices, initiating the firmware download. There are two steps:"
+msgstr ""
+"El servidor de gestión de dispositivos de Internet of Things Foundation utiliza el protocolo de gestión de dispositivos para enviar una solicitud a los dispositivos, iniciando la descarga del firmware. Existen dos pasos:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:64
+msgid "Firmware details update request sent on topic ``iotdm-1/device/update``"
+msgstr ""
+"Los detalles de firmware actualizan la solicitud enviada en el tema 'iotdm-1/device/update'"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:65
+msgid "Initiate the download request sent on topic ``iotdm-1/mgmt/initiate/firmware/download``"
+msgstr ""
+"Iniciar la solicitud de descarga en el tema 'iotdm-1/mgmt/initiate/firmware/download'"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:67
+msgid "If ``mgmt.firmware.state`` is not ``0`` (\"Idle\") an error should be reported with response code ``400``, and an optional message text."
+msgstr ""
+"Si 'mgmt.firmware.state' no es '00 (\"Inactivo\"), es necesario notificar un error con el código de respuesta '400' y un mensaje de texto opcional."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:68
+msgid "If the action can be initiated immediately, set ``rc`` to ``202``."
+msgstr ""
+"Si la acción se puede iniciar inmediatamente, establezca 'rc' en '202'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:69
+msgid "If ``mgmt.firmware.uri`` is not set or is not a valid URI, set ``rc`` to ``400``."
+msgstr ""
+"Si no se establece 'mgmt.firmware.uri'  no es un URI válido, establezca 'rc' en '400'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:70
+msgid "If firmware download attempt fails, set ``rc`` to ``500`` and optionally set ``message`` accordingly."
+msgstr ""
+"Si falla el intento de descarga, establezca 'rc' en '500' y opcionalmente configure 'message' en consecuencia."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:71
+msgid "If firmware download is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly."
+msgstr ""
+"Si la descarga de firmware no es compatible, establezca 'rc' en '501' y opcionalmente configure 'message' en consecuencia."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:72
+msgid "When an excecute request is received by the device, ``mgmt.firmware.state`` should change from ``0`` (Idle) to ``1`` (Downloading)."
+msgstr ""
+"Cuando el dispositivo recibe una solicitud de ejecución, 'mgmt.firmware.state' debe cambiar de '0' (Inactivo) a '1' (Descargando)."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:73
+msgid "When the download has been completed successfully, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded)."
+msgstr ""
+"Cuando la descarga se ha completado satisfactoriamente, 'mgmt.firmware.state' debe establecerse en '2' (Descargado)."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:74
+msgid "If an error occurrs during download ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to one of the error status values:"
+msgstr ""
+"Si se ha producido un error durante la descarga 'mgmt.firmware.state' debe establecerse en '0' (Inactivo) y 'mgmt.firmware.updateStatus' debe definirse con uno de los valores de estado de error:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:76
+msgid "2 (Out of Memory)"
+msgstr ""
+"2 (Sin memoria)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:77
+msgid "3 (Connection Lost)"
+msgstr ""
+"3 (Se ha perdido la conexión)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:78
+msgid "6 (Invalid URI)"
+msgstr ""
+"6 (URI no válido)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:80
+msgid "If a firmware verifier has been set, the device should attempt to verify the firmware image. If the image verification fails, ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to the error status value ``4`` (Verification Failed)."
+msgstr ""
+"Si se ha establecido un verificador de firmware, el dispositivo debe intentar verificar la imagen de firmware. Si la verificación falla, 'mgmt.firmware.state' debe establecerse en '0' (Inactivo) y 'mgmt.firmware.updateStatus' debe establecerse en el valor de estado de error '4' (Error de verificación)."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:81
+msgid "If download and verification were successful, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded) and ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success). The downloaded firmware is now ready to be installed."
+msgstr ""
+"Si la descarga y la verificación son correctas, 'mgmt.firmware.state' debe establecerse en '2' (Descargado) y 'mgmt.firmware.updateStatus' debe establecerse en '0' (Satisfactorio). El firmware descargado ya está listo para instalarse."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:85
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:143
+msgid "Topic"
+msgstr ""
+"Tema"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:92
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:151
+msgid "Message format"
+msgstr ""
+"Formato de mensaje"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:94
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:153
+msgid "Request Format:"
+msgstr ""
+"Formato de solicitud:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:103
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:161
+msgid "Response Format:"
+msgstr ""
+"Formato de respuesta:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:117
+msgid "Firmware Update"
+msgstr ""
+"Actualización de firmware"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:119
+msgid "The installation of the downloaded firmware is initiated using the REST API by issuing a POST request to /mgmt/requests. The information which should be provided is:"
+msgstr ""
+"La instalación del firmware descargado se inicia mediante la API REST emitiendo una solicitud POST a /mgmt/requests. La información que se debe proporcionar es:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:121
+msgid "The action ``firmware/update``"
+msgstr ""
+"La acción 'firmware/update'"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:122
+msgid "The list of devices to receive the image, all of the same device type"
+msgstr ""
+"La lista de dispositivos que recibirán la imagen, todos con el mismo tipo de dispositivo"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:124
+msgid "The device management server in the Internet of Things Foundation uses the device management protocol to request that the devices specified initiate the firmware installation by publishing using the topic ``iotdm-1/mgmt/initiate/firmware/update``."
+msgstr ""
+"El servidor de gestión de dispositivos de Internet of Things Foundation utiliza el protocolo de gestión de dispositivos para solicitar que los dispositivos especificados inicien la instalación de firmware mediante publicación utilizando el tema 'iotdm-1/mgmt/initiate/firmware/update'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:126
+msgid "If this operation can be initiated immediately, ``rc`` should be set to ``202``."
+msgstr ""
+"Si esta operación se puede iniciar inmediatamente, establezca 'rc' en '202'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:127
+msgid "If firmware was not previously downloaded successfully, ``rc`` should be set to ``400``."
+msgstr ""
+"Si el firmware no se ha descargado correctamente con anterioridad, 'rc' debe establecerse en '400'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:128
+msgid "If firmware update attempt fails, ``rc`` should be set to ``500`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"Si el intento de actualización de firmware falla, 'rc' debe establecerse en '500' y el campo 'message' se puede configurar de forma opcional para que contenga información pertinente."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:129
+msgid "If firmware update is not supported ``rc`` should be set to ``501`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"Si la actualización de firmware no es compatible, 'rc' debe establecerse en '501' y el campo 'message' se puede configurar de forma opcional para que contenga información pertinente."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:130
+msgid "If ``mgmt.firmware.state`` is not ``2`` (Downloaded), an error should be reported with ``rc`` set to ``400`` and an optional message text."
+msgstr ""
+"Si 'mgmt.firmware.state' no es '2' (Descargado), debe notificarse un error con 'rc' establecido en '400' y un mensaje de texto opcional."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:131
+msgid "Otherwise, ``mgmt.firmware.updateStatus`` should be set to ``1`` (In Progress) and firmware installation should start."
+msgstr ""
+"De lo contrario, 'mgmt.firmware.updateStatus' debe establecerse en '1' (En curso) y la instalación de firmware debe comenzar."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:132
+msgid "If firmware installation fails, ``mgmt.firmware.updateStatus`` should be set to either:"
+msgstr ""
+"Si falla la instalación de firmware, 'mgmt.firmware.updateStatus' se debe establecer en:"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:134
+msgid "``2`` (Out of Memory)"
+msgstr ""
+"'2' (Sin memoria)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:135
+msgid "``5`` (Unsupported Image)"
+msgstr ""
+"'5' (Imagen no soportada)"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:137
+msgid "Once firmware update is complete, ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success), ``mgmt.firmware.state`` should be set to ``0`` (Idle), downloaded firmware image can be deleted from the device and ``deviceInfo.fwVersion`` should be set to the value of ``mgmt.firmware.version``."
+msgstr ""
+"Una vez finalizada la actualización de firmware, 'mgmt.firmware.updateStatus' debe establecerse en '0' (Satisfactorio), 'mgmt.firmware.state' debe establecerse en '0' (Satisfactorio), se puede eliminar la imagen de firmware del dispositivo y 'deviceInfo.fwVersion' debe establecerse en el valor de 'mgmt.firmware.version'."
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:139
+msgid "All fields under ``mgmt.firmware`` must be set at the same time, so that if there is a current observation for ``mgmt.firmware``, only a single notify message is sent."
+msgstr ""
+"Todos los campos en 'mgmt.firmware' deben establecerse al mismo tiempo para que si hay una observación actual para 'mgmt.firmware', solo se envía un mensaje de notificación."
+

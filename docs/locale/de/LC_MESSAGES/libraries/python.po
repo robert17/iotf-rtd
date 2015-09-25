@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,133 +17,117 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ..\docs\libraries\python.rst:2
-msgid "IBM Internet of Things Foundation for Python"
+msgid "Python Client Library - Introduction"
 msgstr ""
+"Python-Clientbibliothek - Einführung"
 
 #: ..\docs\libraries\python.rst:4
-msgid ""
-"Use the Python module for interacting with the `IBM Internet of Things "
-"Foundation <https://internetofthings.ibmcloud.com>`__ and to automate "
-"commands using Python 3.4 or 2.7. The module can be used to simplify "
-"interactions with the IBM Internet of Things Foundation. The following "
-"libraries contain instructions and guidance on using the python ibmiotf "
-"module to interact with devices and applications within your organizations."
+msgid "Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the python ibmiotf module to interact with devices and applications within your organizations."
 msgstr ""
+"Verwenden Sie das Python-Modul für die Interaktion mit `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ und für die Automatisierung von Befehlen unter Verwendung von Python 3.4 oder 2.7. Das Modul kann zur Vereinfachung der Interaktionen mit IBM Internet of Things Foundation verwendet werden. Die folgenden Bibliotheken enthalten Anweisungen und Informationen zur Verwendung des Python-Moduls ibmiotf für die Interaktion mit Einheiten und Anwendungen in Ihren Organisationen."
 
 #: ..\docs\libraries\python.rst:6
 msgid "`Python 3.4 <https://www.python.org/downloads/release/python-343/>`__"
 msgstr ""
+"`Python 3.4 <https://www.python.org/downloads/release/python-343/>`__"
 
 #: ..\docs\libraries\python.rst:7
 msgid "`Python 2.7 <https://www.python.org/downloads/release/python-279/>`__"
 msgstr ""
+"`Python 2.7 <https://www.python.org/downloads/release/python-279/>`__"
 
 #: ..\docs\libraries\python.rst:9
-msgid ""
-"Note: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and"
-" openssl v1.0.1"
+msgid "Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1"
 msgstr ""
+"Unterstützung für MQTT über SSL erfordert mindestens Python v2.7.9 oder v3.4 und openssl v1.0.1"
 
 #: ..\docs\libraries\python.rst:11
-msgid ""
-"This client library is divided into two sections, both included within the "
-"library. The Devices section contains information on how devices publish "
-"events and handle commands using the Python ibmiotf module, and the "
-"Applications section contains information on how applications can use the "
-"ibmiotf module to interact with devices."
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
 msgstr ""
+"Diese Clientbibliothek ist in zwei Abschnitte unterteilt, die beide in der Bibliothek enthalten sind. Der Abschnitt mit den Einheiten enthält Informationen dazu, wie Einheiten Ereignisse publizieren und Befehle mit dem Python-Modul ibmiotf verarbeiten. Der Abschnitt mit den Anwendungen enthält Informationen, wie Anwendungen das ibmiotf-Modul zur Interaktion mit Einheiten verwenden können."
 
 #: ..\docs\libraries\python.rst:14
 msgid "Dependencies"
 msgstr ""
+"Abhängigkeiten"
 
 #: ..\docs\libraries\python.rst:16
-msgid ""
-"`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ - provides a client "
-"class which enable applications to connect to an MQTT broker"
+msgid "`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ - provides a client class which enable applications to connect to an MQTT broker"
 msgstr ""
+"`paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ - Bietet eine Clientklasse, mit der das Verbinden von Anwendungen mit einem MQTT-Broker ermöglicht wird"
 
 #: ..\docs\libraries\python.rst:17
-msgid ""
-"`iso8601 <https://pypi.python.org/pypi/iso8601>`__ - parses the most common "
-"forms of ISO 8601 date strings into datetime objects"
+msgid "`iso8601 <https://pypi.python.org/pypi/iso8601>`__ - parses the most common forms of ISO 8601 date strings into datetime objects"
 msgstr ""
+"`iso8601 <https://pypi.python.org/pypi/iso8601>`__ - Führt ein Parsing der allgemeinen Formen von ISO 8601-Datumszeichenfolgen in datetime-Objekte durch"
 
 #: ..\docs\libraries\python.rst:18
-msgid ""
-"`pytz <https://pypi.python.org/pypi/pytz>`__ - allows accurate and cross "
-"platform timezone calculations"
+msgid "`pytz <https://pypi.python.org/pypi/pytz>`__ - allows accurate and cross platform timezone calculations"
 msgstr ""
+"`pytz <https://pypi.python.org/pypi/pytz>`__ - Ermöglicht eine präzise und plattformübergreifende Zeitzonenberechnung"
 
 #: ..\docs\libraries\python.rst:19
 msgid "`requests <https://pypi.python.org/pypi/requests>`__ - an HTTP library"
 msgstr ""
+"`requests <https://pypi.python.org/pypi/requests>`__ - Eine HTTP-Bibliothek"
 
 #: ..\docs\libraries\python.rst:25
 msgid "Installation"
 msgstr ""
+"Installation"
 
 #: ..\docs\libraries\python.rst:26
-msgid ""
-"To install the latest version of the library with pip, enter the following "
-"code in your command line. ::"
+msgid "To install the latest version of the library with pip, enter the following code in your command line. ::"
 msgstr ""
+"Zur Installation der neuesten Version der Bibliothek mit pip geben Sie den folgenden Code in der Befehlszeile ein. ::"
 
 #: ..\docs\libraries\python.rst:32
 msgid "Uninstall"
 msgstr ""
+"Deinstallation"
 
 #: ..\docs\libraries\python.rst:33
-msgid ""
-"Uninstalling the module is simple, enter the following code in the command "
-"line."
+msgid "Uninstalling the module is simple, enter the following code in the command line."
 msgstr ""
+"Die Deinstallation des Moduls ist einfach. Geben Sie den folgenden Code in der Befehlszeile ein."
 
 #: ..\docs\libraries\python.rst:41
 msgid "Migrating from v0.0.x to v0.1.x"
 msgstr ""
+"Migration von v0.0.x auf v0.1.x"
 
 #: ..\docs\libraries\python.rst:42
-msgid ""
-"There is a significant change between the 0.0.x releases and 0.1.x that will"
-" require changes to client code.  Now that the library properly supports "
-"multiple message formats you will want to update calls to "
-"deviceClient.publishEvent, appClient.publishEvent and "
-"appClient.publishCommand to also supply the desired message format."
+msgid "There is a significant change between the 0.0.x releases and 0.1.x that will require changes to client code.  Now that the library properly supports multiple message formats you will want to update calls to deviceClient.publishEvent, appClient.publishEvent and appClient.publishCommand to also supply the desired message format."
 msgstr ""
+"Zwischen den 0.0.x-Releases und 0.1.x gab es eine wesentliche Änderung, die Änderungen am Client-Code erforderlich macht.  Jetzt, da die Bibliothek mehrere Nachrichtenformate korrekt unterstützt, können Sie die Aufrufe von deviceClient.publishEvent, appClient.publishEvent und appClient.publishCommand aktualisieren, damit diese ebenso das gewünschte Nachrichtenformat liefern."
 
 #: ..\docs\libraries\python.rst:44
 msgid "Sample code v0.0.9:"
 msgstr ""
+"Beispielcode v0.0.9:"
 
 #: ..\docs\libraries\python.rst:53
 msgid "Sample code v0.1.1:"
 msgstr ""
+"Beispielcode v0.1.1:"
 
 #: ..\docs\libraries\python.rst:62
-msgid ""
-"Also, as part of this change, events and commands sent as format \"json\" "
-"will not be assumed to meet the `IOTF JSON Payload Specification "
-"<https://docs.internetofthings.ibmcloud.com/messaging/payload.html#iotf-"
-"json-payload-specification>`__. The default client behaviour will be to "
-"parse commands and events with format \"json\" as a generic JSON object "
-"only. Only messages sent as format \"json-iotf\" will default to being "
-"decoded in this specification. This can be easily changed with the following"
-" code."
+msgid "Also, as part of this change, events and commands sent as format \"json\" will not be assumed to meet the `IoTF JSON Payload Specification <../messaging/payload.html#iotf-json-payload-specification>`__. The default client behaviour will be to parse commands and events with format \"json\" as a generic JSON object only. Only messages sent as format \"json-iotf\" will default to being decoded in this specification. This can be easily changed with the following code."
 msgstr ""
+"Außerdem wird als Teil dieser Änderung nicht vorausgesetzt, dass Ereignisse und Befehle, die im Format \"json\" gesendet werden, die Spezifikation `IoTF JSON Payload Specification <../messaging/payload.html#iotf-json-payload-specification>`__ erfüllen. Das standardmäßige Clientverhalten besteht im Parsing von Befehlen und Ereignissen mit dem Format \"json\" lediglich als generisches JSON-Objekt. Nur Nachrichten, die im Format \"json-iotf\" gesendet werden, werden standardmäßig in dieser Spezifikation decodiert. Dies kann auf einfache Weise mit dem folgenden Code geändert werden."
 
 #: ..\docs\libraries\python.rst:82
 msgid "Documentation"
 msgstr ""
+"Dokumentation"
 
 #: ..\docs\libraries\python.rst:83
-msgid ""
-"`Device Client "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__"
+msgid "`Device Client <../libraries/python_cli_for_devices.html>`__"
 msgstr ""
+"`Einheitenclient <../libraries/python_cli_for_devices.html>`__"
 
 #: ..\docs\libraries\python.rst:84
-msgid ""
-"`Application Client "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__"
+msgid "`Application Client <../libraries/python_cli_for_apps.html>`__"
 msgstr ""
+"`Anwendungsclient <../libraries/python_cli_for_apps.html>`__"
+

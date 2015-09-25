@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\messaging\managed_devices.rst:3
+msgid "MQTT Connectivity for Managed Devices"
+msgstr ""
+"Connettività MQTT per i dispositivi gestiti"
+
+#: ..\docs\messaging\managed_devices.rst:5
+msgid "The Device Management Protocol is used for device management communication between the device management agent and the device management server as a part of the Internet of Things Foundation. It is based on MQTT but uses a different set of topics to the regular device messaging protocol used for unmanaged device communication."
+msgstr ""
+"Il protocollo di gestione dispositivo è utilizzato per le comunicazioni di gestione dispositivo tra l'agent di gestione dispositivo e il server di gestione dispositivo come parte di Internet of Things Foundation. Si basa su MQTT ma utilizza un insieme differente di argomenti rispetto al protocollo di messaggistica dispositivo regolare utilizzato per le comunicazioni del dispositivo non gestito. "
+
+#: ..\docs\messaging\managed_devices.rst:7
+msgid "The management agent on a device must implement the device management protocol in order to enable management by the Internet of Things Foundation. The management agent may be packaged as an enhanced MQTT client, or written using an MQTT library."
+msgstr ""
+"L'agent di gestione su un dispositivo deve implementare il protocollo di gestione dispositivo per poter abilitare la gestione da parte di Internet of Things Foundation. L'agent di gestione può essere assemblato come un client MQTT potenziato o scritto utilizzando una libreria MQTT. "
+
+#: ..\docs\messaging\managed_devices.rst:11
+msgid "MQTT Client Configuration"
+msgstr ""
+"Configurazione client MQTT "
+
+#: ..\docs\messaging\managed_devices.rst:14
+msgid "Quality of Service Levels and CleanSession"
+msgstr ""
+"Livelli QoS (Quality of Service) e sessione pulita"
+
+#: ..\docs\messaging\managed_devices.rst:16
+msgid "Devices can publish messages with Quality of Service (QoS) level of 0 or 1. If QoS 1 is used, messages from the device will be queued if necessary. Messages from the device must not be retained messages."
+msgstr ""
+"I dispositivi possono pubblicare messaggi con livello QoS 0 o 1. Se è utilizzato QoS 1, i messaggi dal dispositivo verranno accodati, se necessario. I messaggi dal dispositivo non devono essere messaggi conservati. "
+
+#: ..\docs\messaging\managed_devices.rst:18
+msgid "The Internet of Things Foundation publishes requests with a QoS level of 1 to support queuing of messages.  In order to queue messages sent while a device is not connected, the device should use cleansession=false. Otherwise, cleansession=true should be used."
+msgstr ""
+"Internet of Things Foundation pubblica richieste con un livello QoS 1 per supportare l'accodamento dei messaggi. Al fine di accodare i messaggi inviati mentre un dispositivo non è connesso, il dispositivo deve utilizzare cleansession=false. In caso contrario, deve essere utilizzato cleansession=true. "
+
+#: ..\docs\messaging\managed_devices.rst:21
+msgid "Topics"
+msgstr ""
+"Argomenti "
+
+#: ..\docs\messaging\managed_devices.rst:23
+msgid "Messages can originate from the Internet of Things Foundation or from the device."
+msgstr ""
+"I messaggi possono provenire da Internet of Things Foundation o dal dispositivo. "
+
+#: ..\docs\messaging\managed_devices.rst:25
+msgid "Messages originating from the device are published to topics with the prefix 'iotdevice-1' in the form:"
+msgstr ""
+"I messaggi che provengono dal dispositivo sono pubblicati su argomenti con il prefisso 'iotdevice-1' nel modulo: "
+
+#: ..\docs\messaging\managed_devices.rst:31
+msgid "Responses from the Internet of Things Foundation will be published to:"
+msgstr ""
+"Le risposte da Internet of Things Foundation verranno pubblicate in: "
+
+#: ..\docs\messaging\managed_devices.rst:38
+msgid "Messages originating from the Internet of Things Foundation are published to topics with the prefix 'iotdm-1' in the form:"
+msgstr ""
+"I messaggi che provengono da Internet of Things Foundation sono pubblicati su argomenti con il prefisso 'iotdm-1' nel modulo: "
+
+#: ..\docs\messaging\managed_devices.rst:44
+msgid "Responses from the device must be published to:"
+msgstr ""
+"Le risposte dal dispositivo devono essere pubblicate in: "
+
+#: ..\docs\messaging\managed_devices.rst:53
+msgid "Message Format"
+msgstr ""
+"Formato messaggio"
+
+#: ..\docs\messaging\managed_devices.rst:55
+msgid "All messages are sent in JSON format over MQTT. There are two types of message."
+msgstr ""
+"Tutti i messaggi vengono inviati in formato JSON su MQTT. Ci sono due tipi di messaggio. "
+
+#: ..\docs\messaging\managed_devices.rst:57
+msgid "Requests."
+msgstr ""
+"Richieste. "
+
+#: ..\docs\messaging\managed_devices.rst:58
+msgid "Requests are formatted as follows:"
+msgstr ""
+"Le richieste vengono formattate come segue: "
+
+#: ..\docs\messaging\managed_devices.rst:66
+msgid "These messages must include two JSON elements, \"d\" and \"reqId\". The \"d\" field carries the data relevant to the request, and the \"reqId\" field is an identifier of the request, and must be copied into a response. If a response is not required, the field should be omitted."
+msgstr ""
+"Questi messaggi devono comprendere due elementi JSON, \"d\" e \"reqId\". Il campo \"d\" include i dati relativi alla richiesta e il campo \"reqId\" è un identificativo della richiesta e deve essere copiato in una risposta. Se non è richiesta una risposta, il campo deve essere omesso. "
+
+#: ..\docs\messaging\managed_devices.rst:82
+msgid "Response."
+msgstr ""
+"Risposta."
+
+#: ..\docs\messaging\managed_devices.rst:69
+msgid "Responses are formatted as follows:"
+msgstr ""
+"Le risposte vengono formattate come segue: "
+
+#: ..\docs\messaging\managed_devices.rst:80
+msgid "These messages can include four JSON elements: \"rc\", \"message\", \"d\", and \"reqId\". The \"rc\" field is a result code of the original request, the \"message\" field is an optional field with a text description of the response code, \"d\" is a data field accompanying the response, if necessary, and \"reqId\" is the request ID of the original request. The \"reqId\" field is used to correlate responses with requests, and the device needs to ensure that all request IDs are unique."
+msgstr ""
+"Questi messaggi possono includere quattro elementi JSON: \"rc\", \"message\", \"d\" e \"reqId\". Il campo \"rc\" è un codice di risultato della richiesta originale, il campo \"message\" è un campo facoltativo con una descrizione di testo del codice di risposta, \"d\" è un campo dati che accompagna la risposta, se necessario, e \"reqId\" è l'ID richiesta della richiesta originale. Il campo \"reqId\" viene utilizzato per correlare le risposte con le richieste e il dispositivo deve assicurare che tutti gli ID richiesta siano univoci. "
+
+#: ..\docs\messaging\managed_devices.rst:82
+msgid "When responding to Internet of Things Foundation requests, the correct \"reqId\" value must be sent in the response."
+msgstr ""
+"Quando si risponde alle richieste Internet of Things Foundation, nella risposta deve essere inviato il valore \"reqId\" corretto. "
+

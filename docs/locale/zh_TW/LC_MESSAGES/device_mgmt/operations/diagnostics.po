@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:3
+msgid "Device Management Operations - Diagnostics"
+msgstr ""
+"裝置管理作業 - 診斷"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:5
+msgid "The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation."
+msgstr ""
+"裝置診斷作業的目的是提供裝置錯誤的相關資訊，但不會提供與 Internet of Things Foundation 的裝置連線相關的診斷資訊。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:10
+msgid "Add Error Code"
+msgstr ""
+"新增錯誤碼"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:12
+msgid "Devices can choose to notify the Internet of Things Foundation device management server about changes in their error status."
+msgstr ""
+"裝置可以選擇通知 Internet of Things Foundation 裝置管理伺服器有關其錯誤狀態的變更。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:15
+#: ..\docs\device_mgmt\operations\diagnostics.rst:55
+#: ..\docs\device_mgmt\operations\diagnostics.rst:90
+#: ..\docs\device_mgmt\operations\diagnostics.rst:136
+msgid "Topic"
+msgstr ""
+"主題"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:22
+#: ..\docs\device_mgmt\operations\diagnostics.rst:62
+#: ..\docs\device_mgmt\operations\diagnostics.rst:97
+msgid "Message Format"
+msgstr ""
+"訊息格式"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:24
+msgid "The \"errorCode\" is a current device error code that needs to be added to the Internet of Things Foundation."
+msgstr ""
+"\"errorCode\" 是必須新增至 Internet of Things Foundation 的現行裝置錯誤碼。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:26
+#: ..\docs\device_mgmt\operations\diagnostics.rst:64
+#: ..\docs\device_mgmt\operations\diagnostics.rst:104
+#: ..\docs\device_mgmt\operations\diagnostics.rst:145
+msgid "Request Format:"
+msgstr ""
+"要求格式："
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:38
+#: ..\docs\device_mgmt\operations\diagnostics.rst:72
+#: ..\docs\device_mgmt\operations\diagnostics.rst:119
+#: ..\docs\device_mgmt\operations\diagnostics.rst:153
+msgid "Response Format:"
+msgstr ""
+"回應格式："
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:50
+msgid "Clear Error Codes"
+msgstr ""
+"清除錯誤碼"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:52
+msgid "Devices can request that the Internet of Things Foundation clear all of their error codes."
+msgstr ""
+"裝置可以要求 Internet of Things Foundation 清除其所有錯誤碼。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:85
+msgid "Add Log"
+msgstr ""
+"新增日誌"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:87
+msgid "Devices can choose to notify IoTF device management support about changes a new log entry. Log entry includes a log messages, its timestamp and severity, as well as an optional base64-encoded binary diagnostic data."
+msgstr ""
+"裝置可以選擇通知 IoTF 裝置管理支援有關新日誌項目的變更。日誌項目包括日誌訊息、其時間戳記和嚴重性，以及可能包含 base64 編碼的二進位診斷資料。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:99
+msgid "\"message\" is a diagnostic message that needs to be added to IoTF. \"timestamp\" is a date and time of the log entry in ISO8601 format. \"data\" is an optional base64-encoded diagnostic data. \"severity\" is a severity of the message (0: informational, 1: warning, 2: error)."
+msgstr ""
+"「訊息」是必須新增至 IoTF 的診斷訊息。「時間戳記」是 ISO8601 格式的日誌項目的日期和時間。「資料」是可能包含的 base64 編碼診斷資料。「嚴重性」是訊息的嚴重性（0：參考、1：警告、2：錯誤）。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:131
+msgid "Clear Logs"
+msgstr ""
+"清除日誌"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:133
+msgid "Devices can request that the Internet of Things Foundation clear all of their log entries."
+msgstr ""
+"裝置可以要求 Internet of Things Foundation 清除其所有日誌項目。"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:143
+msgid "Message format"
+msgstr ""
+"訊息格式"
+

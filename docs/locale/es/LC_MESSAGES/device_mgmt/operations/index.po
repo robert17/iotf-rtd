@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\index.rst:3
+msgid "Device Management Operations"
+msgstr ""
+"Operaciones de gestión de dispositivos"
+
+#: ..\docs\device_mgmt\operations\index.rst:5
+msgid "The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation."
+msgstr ""
+"El protocolo de gestión de dispositivos define un conjunto de operaciones admitidas. Un agente de gestión de dispositivos puede admitir un subconjunto de operaciones, pero las operaciones Gestionar el dispositivo o No gestionar el dispositivo deben ser compatibles. Un dispositivo que admita operaciones de acción de firmware debe admitir también la observación."
+
+#: ..\docs\device_mgmt\operations\index.rst:7
+msgid "The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__"
+msgstr ""
+"El protocolo de gestión de dispositivos está construido en la parte superior de MQTT. Para obtener detalles concretos de cómo interactúa el protocolo de gestión de dispositivos con MQTT, consulte 'MQTT para dispositivos gestionados <../../messaging/managed_devices.html>'__"
+
+#: ..\docs\device_mgmt\operations\index.rst:10
+msgid "Device Initiated"
+msgstr ""
+"Dispositivo iniciado"
+
+#: ..\docs\device_mgmt\operations\index.rst:12
+msgid "These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional."
+msgstr ""
+"El dispositivo inicia estas operaciones.  Las operaciones 'manage' y 'unmanage' deben ser compatibles con todos los dispositivos gestionados.  Todas las demás operaciones son opcionales."
+
+#: ..\docs\device_mgmt\operations\index.rst:16
+msgid "Management Operations"
+msgstr ""
+"Operaciones de gestión"
+
+#: ..\docs\device_mgmt\operations\index.rst:18
+msgid "These operations control whether device management features are enabled for the device."
+msgstr ""
+"Estas operaciones controlan si las funciones de gestión de dispositivos están habilitadas para el dispositivo."
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Operation"
+msgstr ""
+"Operación"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Device Support"
+msgstr ""
+"Soporte de dispositivo"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+msgid ":ref:`manage-manage`"
+msgstr ""
+":ref:`manage-manage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid "Required"
+msgstr ""
+"Obligatorio"
+
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid ":ref:`manage-unmanage`"
+msgstr ""
+":ref:`manage-unmanage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:30
+msgid "Device Property Changes"
+msgstr ""
+"Cambios en la propiedad del dispositivo"
+
+#: ..\docs\device_mgmt\operations\index.rst:32
+msgid "These optional operations, if implemented, allow the device to submit updated device-specific information to the service."
+msgstr ""
+"Estas operaciones opcionales, si se implementan, permiten al dispositivo enviar información específica de dispositivo actualizada al servicio."
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+msgid ":ref:`update-location`"
+msgstr ""
+":ref:`update-location`"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+#: ..\docs\device_mgmt\operations\index.rst:53
+#: ..\docs\device_mgmt\operations\index.rst:55
+#: ..\docs\device_mgmt\operations\index.rst:57
+#: ..\docs\device_mgmt\operations\index.rst:59
+#: ..\docs\device_mgmt\operations\index.rst:76
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Optional"
+msgstr ""
+"Opcional"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+msgid ":ref:`observations-notify`"
+msgstr ""
+":ref:`observations-notify`"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+#: ..\docs\device_mgmt\operations\index.rst:87
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid "Optional, required for devices supporting firmware update"
+msgstr ""
+"Opcional, necesario para los dispositivos compatibles con actualización de firmware"
+
+#: ..\docs\device_mgmt\operations\index.rst:46
+msgid "Add and Clear Diagnostic Information"
+msgstr ""
+"Añadir y borrar información de diagnóstico"
+
+#: ..\docs\device_mgmt\operations\index.rst:48
+msgid "Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation."
+msgstr ""
+"Los dispositivos pueden añadir información de diagnóstico nueva, por ejemplo, un nuevo código de error, un mensaje de registro o para borrar todos los códigos de error o mensajes de registro existentes de Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\index.rst:53
+msgid ":ref:`diag-add-error-code`"
+msgstr ""
+":ref:`diag-add-error-code`"
+
+#: ..\docs\device_mgmt\operations\index.rst:55
+msgid ":ref:`diag-clear-error-codes`"
+msgstr ""
+":ref:`diag-clear-error-codes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:57
+msgid ":ref:`diag-add-log`"
+msgstr ""
+":ref:`diag-add-log`"
+
+#: ..\docs\device_mgmt\operations\index.rst:59
+msgid ":ref:`diag-clear-logs`"
+msgstr ""
+":ref:`diag-clear-logs`"
+
+#: ..\docs\device_mgmt\operations\index.rst:64
+msgid "Service Initiated"
+msgstr ""
+"Servicio iniciado"
+
+#: ..\docs\device_mgmt\operations\index.rst:66
+msgid "These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations."
+msgstr ""
+"Estas operaciones son iniciadas por Internet of Things Foundation, un dispositivo gestionado no necesita compatibilidad con el manejo de estas operaciones."
+
+#: ..\docs\device_mgmt\operations\index.rst:70
+msgid "Update Attributes"
+msgstr ""
+"Actualizar atributos"
+
+#: ..\docs\device_mgmt\operations\index.rst:71
+msgid "Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation."
+msgstr ""
+"Los dispositivos deben actualizar atributos, como los metadatos, la ubicación o la información del dispositivo tras una solicitud procedente de Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\index.rst:76
+msgid ":ref:`update-attributes`"
+msgstr ""
+":ref:`update-attributes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:81
+msgid "Attribute Observations"
+msgstr ""
+"Observaciones de atributo"
+
+#: ..\docs\device_mgmt\operations\index.rst:82
+msgid "These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device."
+msgstr ""
+"Estas acciones solicitan a los dispositivos que notifiquen (o dejar de notificar) al servicio sobre los cambios en uno o varios atributos del dispositivo."
+
+#: ..\docs\device_mgmt\operations\index.rst:87
+msgid ":ref:`observations-observe`"
+msgstr ""
+":ref:`observations-observe`"
+
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid ":ref:`observations-cancel`"
+msgstr ""
+":ref:`observations-cancel`"
+
+#: ..\docs\device_mgmt\operations\index.rst:98
+msgid "Initiate an action"
+msgstr ""
+"Iniciar una acción"
+
+#: ..\docs\device_mgmt\operations\index.rst:100
+msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
+msgstr ""
+"Esta acción solicita al dispositivo que inicie una de las siguientes acciones: reinicio, restablecimiento a configuración de fábrica, descarga de firmware o actualización de firmware."
+
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Type"
+msgstr ""
+"Tipo"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid "Device action"
+msgstr ""
+"Acción de dispositivo"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+msgid ":ref:`device-actions-reboot`"
+msgstr ""
+":ref:`device-actions-reboot`"
+
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid ":ref:`device-actions-factory-reset`"
+msgstr ""
+":ref:`device-actions-factory-reset`"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Firmware action"
+msgstr ""
+"Acción de firmware"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+msgid ":ref:`firmware-actions-download`"
+msgstr ""
+":ref:`firmware-actions-download`"
+
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid ":ref:`firmware-actions-update`"
+msgstr ""
+":ref:`firmware-actions-update`"
+
+#: ..\docs\device_mgmt\operations\index.rst:116
+msgid "Return Codes"
+msgstr ""
+"Códigos de devolución"
+
+#: ..\docs\device_mgmt\operations\index.rst:118
+msgid "There are seven return codes which are sent in response to the actions listed above."
+msgstr ""
+"Hay siete códigos de devolución que se envían en respuesta a las acciones listadas anteriormente."
+
+#: ..\docs\device_mgmt\operations\index.rst:120
+msgid "200: Operation succeeded"
+msgstr ""
+"200: La operación ha finalizado correctamente"
+
+#: ..\docs\device_mgmt\operations\index.rst:121
+msgid "202: Accepted (for initiating commands)"
+msgstr ""
+"202: Aceptado (para iniciar mandatos)"
+
+#: ..\docs\device_mgmt\operations\index.rst:122
+msgid "204: Changed (for attribute updates)"
+msgstr ""
+"204: Modificado (para actualizaciones de atributo)"
+
+#: ..\docs\device_mgmt\operations\index.rst:123
+msgid "400: Bad request, for example, if a device is not in the appropriate state for this command"
+msgstr ""
+"400: Solicitud incorrecta, por ejemplo, si el estado del dispositivo no es correcto para este mandato"
+
+#: ..\docs\device_mgmt\operations\index.rst:124
+msgid "404: Attribute was not found"
+msgstr ""
+"404: No se ha encontrado el atributo"
+
+#: ..\docs\device_mgmt\operations\index.rst:125
+msgid "409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later"
+msgstr ""
+"409: El recurso no se puede actualizar debido a un conflicto, por ejemplo, dos solicitudes simultáneas están actualizando el recurso, por lo tanto, la actualización se puede intentar más tarde"
+
+#: ..\docs\device_mgmt\operations\index.rst:126
+msgid "500: Unexpected device error"
+msgstr ""
+"500: Error de dispositivo inesperado"
+
+#: ..\docs\device_mgmt\operations\index.rst:127
+msgid "501: Operation not implemented"
+msgstr ""
+"501: Operación no implementada"
+

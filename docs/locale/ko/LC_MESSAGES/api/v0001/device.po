@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0001\device.rst:3
+msgid "Device API v0001"
+msgstr ""
+"디바이스 API v0001"
+
+#: ..\docs\api\v0001\device.rst:7
+msgid "Authentication"
+msgstr ""
+"인증"
+
+#: ..\docs\api\v0001\device.rst:9
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
+msgstr ""
+"이 API는 HTTPS를 통해서만 액세스할 수 있고 HTTP 기본 인증에 의해 보호되므로 사용자는 모든 요청과 함께 사용자 이름 및 비밀번호를 제공해야 합니다. "
+
+#: ..\docs\api\v0001\device.rst:14
+msgid "Username"
+msgstr ""
+"사용자 이름"
+
+#: ..\docs\api\v0001\device.rst:16
+msgid "A valid API key registered to the organization you want to work with."
+msgstr ""
+"작업할 조직에 등록된 올바른 API 키입니다. "
+
+#: ..\docs\api\v0001\device.rst:20
+msgid "Password"
+msgstr ""
+"비밀번호"
+
+#: ..\docs\api\v0001\device.rst:22
+msgid "The authentication token corresponding to your API key."
+msgstr ""
+"API 키에 해당하는 인증 토큰입니다. "
+
+#: ..\docs\api\v0001\device.rst:30
+msgid "View Organization"
+msgstr ""
+"조직 보기"
+
+#: ..\docs\api\v0001\device.rst:32
+msgid "Retrieve details about an organization."
+msgstr ""
+"조직에 대한 세부사항을 검색합니다. "
+
+#: ..\docs\api\v0001\device.rst:36
+#: ..\docs\api\v0001\device.rst:85
+#: ..\docs\api\v0001\device.rst:178
+#: ..\docs\api\v0001\device.rst:253
+#: ..\docs\api\v0001\device.rst:319
+#: ..\docs\api\v0001\device.rst:421
+#: ..\docs\api\v0001\device.rst:513
+#: ..\docs\api\v0001\device.rst:586
+msgid "Request"
+msgstr ""
+"요청"
+
+#: ..\docs\api\v0001\device.rst:37
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+
+#: ..\docs\api\v0001\device.rst:41
+#: ..\docs\api\v0001\device.rst:91
+#: ..\docs\api\v0001\device.rst:184
+#: ..\docs\api\v0001\device.rst:259
+#: ..\docs\api\v0001\device.rst:325
+#: ..\docs\api\v0001\device.rst:427
+#: ..\docs\api\v0001\device.rst:519
+#: ..\docs\api\v0001\device.rst:592
+msgid "Request Body"
+msgstr ""
+"요청 본문"
+
+#: ..\docs\api\v0001\device.rst:43
+#: ..\docs\api\v0001\device.rst:93
+#: ..\docs\api\v0001\device.rst:186
+#: ..\docs\api\v0001\device.rst:261
+#: ..\docs\api\v0001\device.rst:521
+#: ..\docs\api\v0001\device.rst:594
+#: ..\docs\api\v0001\device.rst:600
+msgid "None"
+msgstr ""
+"없음"
+
+#: ..\docs\api\v0001\device.rst:47
+#: ..\docs\api\v0001\device.rst:97
+#: ..\docs\api\v0001\device.rst:190
+#: ..\docs\api\v0001\device.rst:265
+#: ..\docs\api\v0001\device.rst:360
+#: ..\docs\api\v0001\device.rst:451
+#: ..\docs\api\v0001\device.rst:525
+#: ..\docs\api\v0001\device.rst:598
+msgid "Response Body"
+msgstr ""
+"응답 본문"
+
+#: ..\docs\api\v0001\device.rst:49
+#: ..\docs\api\v0001\device.rst:103
+#: ..\docs\api\v0001\device.rst:109
+#: ..\docs\api\v0001\device.rst:196
+#: ..\docs\api\v0001\device.rst:202
+#: ..\docs\api\v0001\device.rst:330
+#: ..\docs\api\v0001\device.rst:367
+#: ..\docs\api\v0001\device.rst:458
+#: ..\docs\api\v0001\device.rst:464
+#: ..\docs\api\v0001\device.rst:531
+#: ..\docs\api\v0001\device.rst:537
+msgid "id - String"
+msgstr ""
+"id - 문자열"
+
+#: ..\docs\api\v0001\device.rst:50
+msgid "name - String"
+msgstr ""
+"이름 - 문자열"
+
+#: ..\docs\api\v0001\device.rst:51
+msgid "created - ISO8601 date string"
+msgstr ""
+"작성됨 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\v0001\device.rst:52
+msgid "updated - ISO8601 date string"
+msgstr ""
+"업데이트됨 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\v0001\device.rst:56
+#: ..\docs\api\v0001\device.rst:117
+#: ..\docs\api\v0001\device.rst:210
+#: ..\docs\api\v0001\device.rst:274
+#: ..\docs\api\v0001\device.rst:378
+#: ..\docs\api\v0001\device.rst:472
+#: ..\docs\api\v0001\device.rst:545
+msgid "Example Response"
+msgstr ""
+"예제 응답"
+
+#: ..\docs\api\v0001\device.rst:69
+#: ..\docs\api\v0001\device.rst:162
+#: ..\docs\api\v0001\device.rst:237
+#: ..\docs\api\v0001\device.rst:291
+#: ..\docs\api\v0001\device.rst:404
+#: ..\docs\api\v0001\device.rst:497
+#: ..\docs\api\v0001\device.rst:570
+#: ..\docs\api\v0001\device.rst:604
+msgid "Common Response Codes"
+msgstr ""
+"공통 응답 코드"
+
+#: ..\docs\api\v0001\device.rst:71
+#: ..\docs\api\v0001\device.rst:164
+#: ..\docs\api\v0001\device.rst:239
+#: ..\docs\api\v0001\device.rst:293
+#: ..\docs\api\v0001\device.rst:499
+#: ..\docs\api\v0001\device.rst:572
+msgid "200 (Success)"
+msgstr ""
+"200(성공)"
+
+#: ..\docs\api\v0001\device.rst:79
+msgid "List Devices"
+msgstr ""
+"디바이스 나열"
+
+#: ..\docs\api\v0001\device.rst:81
+msgid "Get a list of all devices in an organization."
+msgstr ""
+"조직의 모든 디바이스 목록을 가져옵니다. "
+
+#: ..\docs\api\v0001\device.rst:87
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:99
+#: ..\docs\api\v0001\device.rst:192
+msgid "The response body will contain a list of devices, as below:"
+msgstr ""
+"응답 본문은 아래와 같이 디바이스 목록을 포함합니다. "
+
+#: ..\docs\api\v0001\device.rst:101
+#: ..\docs\api\v0001\device.rst:194
+#: ..\docs\api\v0001\device.rst:365
+#: ..\docs\api\v0001\device.rst:456
+#: ..\docs\api\v0001\device.rst:529
+msgid "uuid - String"
+msgstr ""
+"uuid - 문자열"
+
+#: ..\docs\api\v0001\device.rst:102
+#: ..\docs\api\v0001\device.rst:110
+#: ..\docs\api\v0001\device.rst:195
+#: ..\docs\api\v0001\device.rst:203
+#: ..\docs\api\v0001\device.rst:329
+#: ..\docs\api\v0001\device.rst:366
+#: ..\docs\api\v0001\device.rst:457
+#: ..\docs\api\v0001\device.rst:465
+#: ..\docs\api\v0001\device.rst:530
+#: ..\docs\api\v0001\device.rst:538
+msgid "type - String"
+msgstr ""
+"유형 - 문자열"
+
+#: ..\docs\api\v0001\device.rst:104
+#: ..\docs\api\v0001\device.rst:368
+msgid "metadata - Complex data (if available)"
+msgstr ""
+"메타데이터 - 복합 데이터(사용 가능한 경우)"
+
+#: ..\docs\api\v0001\device.rst:105
+#: ..\docs\api\v0001\device.rst:198
+#: ..\docs\api\v0001\device.rst:460
+#: ..\docs\api\v0001\device.rst:533
+msgid "registration"
+msgstr ""
+"등록"
+
+#: ..\docs\api\v0001\device.rst:107
+#: ..\docs\api\v0001\device.rst:200
+#: ..\docs\api\v0001\device.rst:462
+#: ..\docs\api\v0001\device.rst:535
+msgid "auth"
+msgstr ""
+"인증"
+
+#: ..\docs\api\v0001\device.rst:112
+#: ..\docs\api\v0001\device.rst:205
+#: ..\docs\api\v0001\device.rst:467
+#: ..\docs\api\v0001\device.rst:540
+msgid "date - ISO8601 date string"
+msgstr ""
+"날짜 - ISO8601 날짜 문자열"
+
+#: ..\docs\api\v0001\device.rst:172
+msgid "List Devices by Type"
+msgstr ""
+"유형별 디바이스 나열"
+
+#: ..\docs\api\v0001\device.rst:174
+msgid "Get a list of all devices of a specific type in an organization."
+msgstr ""
+"조직에 있는 특정 유형의 모든 디바이스 목록을 가져옵니다. "
+
+#: ..\docs\api\v0001\device.rst:180
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+
+#: ..\docs\api\v0001\device.rst:197
+#: ..\docs\api\v0001\device.rst:432
+#: ..\docs\api\v0001\device.rst:459
+#: ..\docs\api\v0001\device.rst:532
+msgid "metadata - Complex data"
+msgstr ""
+"메타데이터 - 복합 데이터"
+
+#: ..\docs\api\v0001\device.rst:247
+msgid "List Device Types"
+msgstr ""
+"디바이스 유형 나열"
+
+#: ..\docs\api\v0001\device.rst:249
+msgid "Get a list of all devices types in an organization."
+msgstr ""
+"조직의 모든 디바이스 유형 목록을 가져옵니다. "
+
+#: ..\docs\api\v0001\device.rst:255
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+
+#: ..\docs\api\v0001\device.rst:267
+msgid "The response body will contain a list of device types:"
+msgstr ""
+"응답 본문은 디바이스 유형 목록을 포함합니다. "
+
+#: ..\docs\api\v0001\device.rst:269
+msgid "deviceType - String"
+msgstr ""
+"deviceType - 문자열"
+
+#: ..\docs\api\v0001\device.rst:270
+msgid "count - Integer"
+msgstr ""
+"개수 - 정수"
+
+#: ..\docs\api\v0001\device.rst:301
+msgid "Register a New Device"
+msgstr ""
+"새 디바이스 등록"
+
+#: ..\docs\api\v0001\device.rst:303
+msgid "Register a new device to an organization."
+msgstr ""
+"새 디바이스를 조직에 등록합니다. "
+
+#: ..\docs\api\v0001\device.rst:305
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
+msgstr ""
+"등록된 디바이스에 유형 및 id에 대한 값을 지정할 때 선택한 스킴을 사용할 수 있지만 다음과 같은 제한사항이 적용됩니다. "
+
+#: ..\docs\api\v0001\device.rst:308
+msgid "Maximum length of 36 characters"
+msgstr ""
+"최대 길이 36자"
+
+#: ..\docs\api\v0001\device.rst:309
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
+msgstr ""
+"영숫자 문자와 다음과 같은 특수 문자로만 구성되어야 함"
+
+#: ..\docs\api\v0001\device.rst:311
+msgid "dash (\"-\")"
+msgstr ""
+"대시(\"-\")"
+
+#: ..\docs\api\v0001\device.rst:312
+msgid "underscore (\"\\_\")"
+msgstr ""
+"밑줄(\"\\_\")"
+
+#: ..\docs\api\v0001\device.rst:313
+msgid "dot (\".\")"
+msgstr ""
+"점(\".\")"
+
+#: ..\docs\api\v0001\device.rst:321
+msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:327
+msgid "You must specify the type and identifer of the device being registered."
+msgstr ""
+"등록 중인 디바이스의 ID 및 유형을 지정해야 합니다. "
+
+#: ..\docs\api\v0001\device.rst:331
+msgid "metadata - Complex data (optional)"
+msgstr ""
+"메타데이터 - 복합 데이터(선택사항)"
+
+#: ..\docs\api\v0001\device.rst:332
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
+msgstr ""
+"비밀번호 - 문자열(선택사항이며 유형 및 id와 동일한 제한사항이 적용되고 최소 길이는 8자임)"
+
+#: ..\docs\api\v0001\device.rst:336
+#: ..\docs\api\v0001\device.rst:436
+msgid "Example Request"
+msgstr ""
+"예제 요청"
+
+#: ..\docs\api\v0001\device.rst:353
+msgid "Response Headers"
+msgstr ""
+"응답 헤더"
+
+#: ..\docs\api\v0001\device.rst:355
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
+msgstr ""
+"응답 헤더는 등록된 디바이스에 대한 위치(자원 URI)를 포함합니다. \\* 위치 - URI"
+
+#: ..\docs\api\v0001\device.rst:362
+msgid "The response body will contain a uuid and password for the registered device."
+msgstr ""
+"응답 본문은 등록된 디바이스에 대한 uuid 및 비밀번호를 포함합니다. "
+
+#: ..\docs\api\v0001\device.rst:369
+msgid "password - String"
+msgstr ""
+"비밀번호 - 문자열"
+
+#: ..\docs\api\v0001\device.rst:371
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
+msgstr ""
+"응답 본문은 이 디바이스에 대해 생성된 인증 토큰을 포함합니다. 응답 처리 시 이 토큰을 기록해야 합니다. 데이터는 해시되고 솔트(salt)된 상태로 저장되므로 유실된 인증 토큰을 검색할 수 없습니다. "
+
+#: ..\docs\api\v0001\device.rst:406
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
+msgstr ""
+"201(작성됨) - 디바이스가 등록되었음(위치 헤더가 새 디바이스의 URL로 설정됨)"
+
+#: ..\docs\api\v0001\device.rst:415
+msgid "Update a Registered Device"
+msgstr ""
+"등록된 디바이스 업데이트"
+
+#: ..\docs\api\v0001\device.rst:417
+msgid "Update an existing device in an organization."
+msgstr ""
+"조직의 기존 디바이스를 업데이트합니다. "
+
+#: ..\docs\api\v0001\device.rst:423
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:429
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
+msgstr ""
+"현재 초기 등록 후 변경할 수 있는 유일한 디바이스 특성은 메타데이터입니다. "
+
+#: ..\docs\api\v0001\device.rst:453
+msgid "The response body will contain the updated properties of the registered device."
+msgstr ""
+"응답 본문은 등록된 디바이스의 업데이트된 특성을 포함합니다. "
+
+#: ..\docs\api\v0001\device.rst:507
+msgid "View a Registered Device"
+msgstr ""
+"등록된 디바이스 보기"
+
+#: ..\docs\api\v0001\device.rst:509
+msgid "Get summary information about a registered device in an organization."
+msgstr ""
+"조직의 등록된 디바이스에 대한 요약 정보를 가져옵니다. "
+
+#: ..\docs\api\v0001\device.rst:515
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:527
+msgid "The response body will contain the known properties of the device."
+msgstr ""
+"응답 본문은 디바이스의 알려진 특성을 포함합니다. "
+
+#: ..\docs\api\v0001\device.rst:580
+msgid "Delete a Registered Device"
+msgstr ""
+"등록된 디바이스 삭제"
+
+#: ..\docs\api\v0001\device.rst:582
+msgid "Unregister a device from an organization."
+msgstr ""
+"조직에서 디바이스를 등록 해제합니다. "
+
+#: ..\docs\api\v0001\device.rst:588
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:606
+msgid "204 (No Content) - The device was successfully deleted"
+msgstr ""
+"204(컨텐츠 없음) - 디바이스가 삭제되었음"
+

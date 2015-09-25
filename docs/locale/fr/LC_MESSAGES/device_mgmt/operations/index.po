@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\index.rst:3
+msgid "Device Management Operations"
+msgstr ""
+"Opérations de gestion des terminaux"
+
+#: ..\docs\device_mgmt\operations\index.rst:5
+msgid "The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation."
+msgstr ""
+"Le protocole de gestion des terminaux définit un ensemble d'opérations prises en charge. Un agent de gestion des terminaux peut prendre en charge un sous-ensemble de ces opérations mais les opérations de gestion d'un terminal et d'annulation de la gestion d'un terminal doivent être prises en charge. Un terminal qui prend en charge les opérations impliquant des actions sur le microprogramme doit également prendre en charge l'action d'observation."
+
+#: ..\docs\device_mgmt\operations\index.rst:7
+msgid "The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__"
+msgstr ""
+"Le protocole de gestion des terminaux se trouve au-dessus de MQTT. Pour plus d'informations sur l'interaction du protocole de gestion des terminaux avec MQTT, reportez-vous à la rubrique `Connectivité MQTT des terminaux gérés <../../messaging/managed_devices.html>`__"
+
+#: ..\docs\device_mgmt\operations\index.rst:10
+msgid "Device Initiated"
+msgstr ""
+"Opérations lancées par le terminal"
+
+#: ..\docs\device_mgmt\operations\index.rst:12
+msgid "These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional."
+msgstr ""
+"Ces opérations sont lancées par le terminal. Les opérations de``gestion`` et d'``annulation de la gestion`` doivent être prises en charge par tous les terminaux gérés. Toutes les autres opérations sont facultatives."
+
+#: ..\docs\device_mgmt\operations\index.rst:16
+msgid "Management Operations"
+msgstr ""
+"Opérations de gestion"
+
+#: ..\docs\device_mgmt\operations\index.rst:18
+msgid "These operations control whether device management features are enabled for the device."
+msgstr ""
+"Ces opérations déterminent si les fonctions de gestion des terminaux sont activées pour le terminal."
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Operation"
+msgstr ""
+"Opération"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Device Support"
+msgstr ""
+"Prise en charge des terminaux"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+msgid ":ref:`manage-manage`"
+msgstr ""
+":ref:`manage-manage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid "Required"
+msgstr ""
+"Obligatoire"
+
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid ":ref:`manage-unmanage`"
+msgstr ""
+":ref:`manage-unmanage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:30
+msgid "Device Property Changes"
+msgstr ""
+"Modifications des propriétés d'un terminal"
+
+#: ..\docs\device_mgmt\operations\index.rst:32
+msgid "These optional operations, if implemented, allow the device to submit updated device-specific information to the service."
+msgstr ""
+"Si elles sont mises en oeuvre, ces opérations facultatives permettent au terminal de soumettre au service des informations mises à jour propres au terminal."
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+msgid ":ref:`update-location`"
+msgstr ""
+":ref:`update-location`"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+#: ..\docs\device_mgmt\operations\index.rst:53
+#: ..\docs\device_mgmt\operations\index.rst:55
+#: ..\docs\device_mgmt\operations\index.rst:57
+#: ..\docs\device_mgmt\operations\index.rst:59
+#: ..\docs\device_mgmt\operations\index.rst:76
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Optional"
+msgstr ""
+"Facultatif"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+msgid ":ref:`observations-notify`"
+msgstr ""
+":ref:`observations-notify`"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+#: ..\docs\device_mgmt\operations\index.rst:87
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid "Optional, required for devices supporting firmware update"
+msgstr ""
+"Facultatif. Obligatoire pour les terminaux qui prennent en charge la mise à jour du microprogramme"
+
+#: ..\docs\device_mgmt\operations\index.rst:46
+msgid "Add and Clear Diagnostic Information"
+msgstr ""
+"Ajouter et effacer des informations de diagnostic"
+
+#: ..\docs\device_mgmt\operations\index.rst:48
+msgid "Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation."
+msgstr ""
+"Les terminaux peuvent ajouter de nouvelles informations de diagnostic propres à un terminal, par exemple un nouveau code d'erreur ou un message de journal, ou effacer tous les codes d'erreur ou les messages d'erreur existants dans Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\index.rst:53
+msgid ":ref:`diag-add-error-code`"
+msgstr ""
+":ref:`diag-add-error-code`"
+
+#: ..\docs\device_mgmt\operations\index.rst:55
+msgid ":ref:`diag-clear-error-codes`"
+msgstr ""
+":ref:`diag-clear-error-codes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:57
+msgid ":ref:`diag-add-log`"
+msgstr ""
+":ref:`diag-add-log`"
+
+#: ..\docs\device_mgmt\operations\index.rst:59
+msgid ":ref:`diag-clear-logs`"
+msgstr ""
+":ref:`diag-clear-logs`"
+
+#: ..\docs\device_mgmt\operations\index.rst:64
+msgid "Service Initiated"
+msgstr ""
+"Opérations lancées par le service"
+
+#: ..\docs\device_mgmt\operations\index.rst:66
+msgid "These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations."
+msgstr ""
+"Ces opérations sont lancées par Internet of Things Foundation. Un terminal géré n'a pas à prendre en charge ces opérations."
+
+#: ..\docs\device_mgmt\operations\index.rst:70
+msgid "Update Attributes"
+msgstr ""
+"Mettre à jour des attributs"
+
+#: ..\docs\device_mgmt\operations\index.rst:71
+msgid "Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation."
+msgstr ""
+"Les terminaux doivent mettre à jour un certain nombre d'attributs, comme les métadonnées, l'emplacement ou les informations des terminaux, à la demande d'Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\index.rst:76
+msgid ":ref:`update-attributes`"
+msgstr ""
+":ref:`update-attributes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:81
+msgid "Attribute Observations"
+msgstr ""
+"Observations des attributs"
+
+#: ..\docs\device_mgmt\operations\index.rst:82
+msgid "These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device."
+msgstr ""
+"Ces actions demandent aux terminaux de signaler (ou d'arrêter de signaler) au service les modifications apportées à un ou à plusieurs de leurs attributs."
+
+#: ..\docs\device_mgmt\operations\index.rst:87
+msgid ":ref:`observations-observe`"
+msgstr ""
+":ref:`observations-observe`"
+
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid ":ref:`observations-cancel`"
+msgstr ""
+":ref:`observations-cancel`"
+
+#: ..\docs\device_mgmt\operations\index.rst:98
+msgid "Initiate an action"
+msgstr ""
+"Lancer une action"
+
+#: ..\docs\device_mgmt\operations\index.rst:100
+msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
+msgstr ""
+"Cette action demande au terminal de lancer l'une des actions suivantes : Réamorcer, Réinitialiser avec les paramètres d'usine, Télécharger le microprogramme ou Mettre à jour le microprogramme."
+
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Type"
+msgstr ""
+"Type"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid "Device action"
+msgstr ""
+"Action sur le terminal"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+msgid ":ref:`device-actions-reboot`"
+msgstr ""
+":ref:`device-actions-reboot`"
+
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid ":ref:`device-actions-factory-reset`"
+msgstr ""
+":ref:`device-actions-factory-reset`"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Firmware action"
+msgstr ""
+"Action sur le microprogramme"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+msgid ":ref:`firmware-actions-download`"
+msgstr ""
+":ref:`firmware-actions-download`"
+
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid ":ref:`firmware-actions-update`"
+msgstr ""
+":ref:`firmware-actions-update`"
+
+#: ..\docs\device_mgmt\operations\index.rst:116
+msgid "Return Codes"
+msgstr ""
+"Codes retour"
+
+#: ..\docs\device_mgmt\operations\index.rst:118
+msgid "There are seven return codes which are sent in response to the actions listed above."
+msgstr ""
+"Sept codes retour peuvent être envoyés en réponse aux actions indiquées ci-dessus."
+
+#: ..\docs\device_mgmt\operations\index.rst:120
+msgid "200: Operation succeeded"
+msgstr ""
+"200 : Réussite de l'opération"
+
+#: ..\docs\device_mgmt\operations\index.rst:121
+msgid "202: Accepted (for initiating commands)"
+msgstr ""
+"202 : Accepté (pour le lancement de commandes)"
+
+#: ..\docs\device_mgmt\operations\index.rst:122
+msgid "204: Changed (for attribute updates)"
+msgstr ""
+"204 : Modifié (pour les mises à jour d'attributs)"
+
+#: ..\docs\device_mgmt\operations\index.rst:123
+msgid "400: Bad request, for example, if a device is not in the appropriate state for this command"
+msgstr ""
+"400 : Demande erronée, par exemple si un terminal ne se trouve pas dans l'état approprié pour cette commande"
+
+#: ..\docs\device_mgmt\operations\index.rst:124
+msgid "404: Attribute was not found"
+msgstr ""
+"404 : L'attribut est introuvable"
+
+#: ..\docs\device_mgmt\operations\index.rst:125
+msgid "409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later"
+msgstr ""
+"409 : La ressource n'a pas pu être mise à jour en raison d'un conflit, par exemple lorsqu'elle est mise à jour par deux demandes simultanées. La tentative de mise à jour peut donc être effectuée ultérieurement."
+
+#: ..\docs\device_mgmt\operations\index.rst:126
+msgid "500: Unexpected device error"
+msgstr ""
+"500 : Erreur inattendue du terminal"
+
+#: ..\docs\device_mgmt\operations\index.rst:127
+msgid "501: Operation not implemented"
+msgstr ""
+"501 : Opération non mise en oeuvre"
+

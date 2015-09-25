@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"裝置管理作業 - 更新"
+
+#: ..\docs\device_mgmt\operations\update.rst:8
+msgid "Update Location"
+msgstr ""
+"更新位置"
+
+#: ..\docs\device_mgmt\operations\update.rst:10
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"可以判斷其位置的裝置可以選擇通知 Internet of Things Foundation 裝置管理伺服器有關其位置變更。"
+
+#: ..\docs\device_mgmt\operations\update.rst:13
+#: ..\docs\device_mgmt\operations\update.rst:78
+msgid "Topic"
+msgstr ""
+"主題"
+
+#: ..\docs\device_mgmt\operations\update.rst:20
+msgid "Message Format"
+msgstr ""
+"訊息格式"
+
+#: ..\docs\device_mgmt\operations\update.rst:22
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"\"measuredDateTime\" 是位置測量的日期。\"updatedDateTime\" 是裝置資訊的更新日期。基於效率的考量，IoTF 可能會批次更新位置資訊，因此更新可能會稍微延遲。\"latitude\" 及 \"longitude\" 應該使用 WGS84 以十進位制指定。"
+
+#: ..\docs\device_mgmt\operations\update.rst:24
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"每當位置更新時，提供給緯度、經度、海拔高度及不確定性的值，都會被視為單一的多值更新。緯度與經度是必要項目，每次更新時兩者都必須提供。海拔高度及不確定性則是選用項目，可以省略。"
+
+#: ..\docs\device_mgmt\operations\update.rst:26
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"如果在某次更新時提供了選用值，然後在之後的更新中省略這些值，則之前的值會被後面的更新刪除。每次更新都會被視為完整的多值設定。"
+
+#: ..\docs\device_mgmt\operations\update.rst:28
+msgid "Location can be updated in several ways:"
+msgstr ""
+"更新位置有下列幾種方式："
+
+#: ..\docs\device_mgmt\operations\update.rst:30
+msgid "The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"裝置會從 GPS 接收端擷取其位置，再傳送裝置管理訊息給 Internet of Things Foundation 來更新其位置。時間戳記會擷取從 GPS 接收端擷取位置的時間。這表示時間戳記是有效的，即使傳輸位置訊息有點延遲。如果傳送的裝置管理訊息中省略時間戳記，則當裝置的位置 meta 資料更新時，會使用訊息回條上的現行日期和時間。"
+
+#: ..\docs\device_mgmt\operations\update.rst:32
+msgid "The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"Internet of Things Foundation REST API 可用來設定靜態裝置的位置 meta 資料。這可以在登錄裝置時完成，或是之後需要時再完成。您可以選擇是否要併入時間戳記。如果省略，現行日期和時間會設為裝置的位置 meta 資料。"
+
+#: ..\docs\device_mgmt\operations\update.rst:34
+#: ..\docs\device_mgmt\operations\update.rst:88
+msgid "Request Format:"
+msgstr ""
+"要求格式："
+
+#: ..\docs\device_mgmt\operations\update.rst:51
+#: ..\docs\device_mgmt\operations\update.rst:101
+msgid "Response Format:"
+msgstr ""
+"回應格式："
+
+#: ..\docs\device_mgmt\operations\update.rst:64
+msgid "Update Device Attributes"
+msgstr ""
+"更新裝置屬性"
+
+#: ..\docs\device_mgmt\operations\update.rst:66
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by this operation are location, metadata, device information and firmware."
+msgstr ""
+"Internet of Things Foundation 可以將這項要求傳送給裝置，以更新一或多個裝置屬性的值。可透過這項作業更新的屬性包含位置、meta 資料、裝置資訊及韌體。"
+
+#: ..\docs\device_mgmt\operations\update.rst:68
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"\"value\" 是新的裝置屬性值。這是個符合裝置模型的複式欄位。這項作業應該只更新可寫入的欄位。可更新以下項目的值："
+
+#: ..\docs\device_mgmt\operations\update.rst:70
+msgid "location (see Update location section for details)"
+msgstr ""
+"location（請參閱「更新位置區段」以取得詳細資料）"
+
+#: ..\docs\device_mgmt\operations\update.rst:71
+msgid "metadata (Optional)"
+msgstr ""
+"metadata（選用）"
+
+#: ..\docs\device_mgmt\operations\update.rst:72
+msgid "deviceInfo (Optional)"
+msgstr ""
+"deviceInfo（選用）"
+
+#: ..\docs\device_mgmt\operations\update.rst:73
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware（請參閱「韌體更新程序」以取得詳細資料）"
+
+#: ..\docs\device_mgmt\operations\update.rst:75
+msgid "If the update is successful, the \"rc\" should be set to 204. The \"message\" field can be specified if \"rc\" is not 204. If any field value could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). The \"fields\" array should contain the name of each field that could not be updated."
+msgstr ""
+"如果更新成功，\"rc\" 應該設為 204。如果 \"rc\" 不是 204，則可以指定 \"message\" 欄位。如果無法擷取任一個欄位值，\"rc\" 應該設為 404（如果找不到）或 500（任何其他理由）。\"fields\" 陣列應該包含每一個無法更新的欄位名稱。"
+
+#: ..\docs\device_mgmt\operations\update.rst:86
+msgid "Message format"
+msgstr ""
+"訊息格式"
+

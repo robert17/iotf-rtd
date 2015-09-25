@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\index.rst:3
+msgid "Device Management Operations"
+msgstr ""
+"デバイス管理操作"
+
+#: ..\docs\device_mgmt\operations\index.rst:5
+msgid "The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation."
+msgstr ""
+"デバイス管理プロトコルとは、サポートされる一連の操作を定義したものです。デバイス管理エージェントはこれらの操作のサブセットをサポートできますが、「デバイスを管理」操作と「デバイスを管理解除」操作のサポートは必須です。また、ファームウェア・アクション操作をサポートするデバイスでは、監視もサポートする必要があります。"
+
+#: ..\docs\device_mgmt\operations\index.rst:7
+msgid "The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__"
+msgstr ""
+"デバイス管理プロトコルは、MQTT を基礎として作成されています。デバイス管理プロトコルと MQTT の対話方法に関する詳細については、`管理対象デバイスの MQTT 接続<../../messaging/managed_devices.html>`__ を参照してください"
+
+#: ..\docs\device_mgmt\operations\index.rst:10
+msgid "Device Initiated"
+msgstr ""
+"デバイスから開始されるもの"
+
+#: ..\docs\device_mgmt\operations\index.rst:12
+msgid "These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional."
+msgstr ""
+"これらの操作はデバイスから開始されます。「管理 (manage)」および「管理解除 (unmanage)」操作は、すべての管理対象デバイスでサポートされる必要があります。その他のすべての操作はオプションです。"
+
+#: ..\docs\device_mgmt\operations\index.rst:16
+msgid "Management Operations"
+msgstr ""
+"管理操作"
+
+#: ..\docs\device_mgmt\operations\index.rst:18
+msgid "These operations control whether device management features are enabled for the device."
+msgstr ""
+"これらの操作は、デバイスのデバイス管理機能を有効にするかどうかを制御します。"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Operation"
+msgstr ""
+"操作"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Device Support"
+msgstr ""
+"デバイス・サポート"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+msgid ":ref:`manage-manage`"
+msgstr ""
+":ref:`manage-manage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid "Required"
+msgstr ""
+"必須"
+
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid ":ref:`manage-unmanage`"
+msgstr ""
+":ref:`manage-unmanage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:30
+msgid "Device Property Changes"
+msgstr ""
+"デバイス・プロパティー変更"
+
+#: ..\docs\device_mgmt\operations\index.rst:32
+msgid "These optional operations, if implemented, allow the device to submit updated device-specific information to the service."
+msgstr ""
+"これらの操作はオプションですが、これらを実装すると、デバイスは更新されたデバイス固有情報をサービスに送信できます。"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+msgid ":ref:`update-location`"
+msgstr ""
+":ref:`update-location`"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+#: ..\docs\device_mgmt\operations\index.rst:53
+#: ..\docs\device_mgmt\operations\index.rst:55
+#: ..\docs\device_mgmt\operations\index.rst:57
+#: ..\docs\device_mgmt\operations\index.rst:59
+#: ..\docs\device_mgmt\operations\index.rst:76
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Optional"
+msgstr ""
+"オプション"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+msgid ":ref:`observations-notify`"
+msgstr ""
+":ref:`observations-notify`"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+#: ..\docs\device_mgmt\operations\index.rst:87
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid "Optional, required for devices supporting firmware update"
+msgstr ""
+"オプション。ファームウェア更新をサポートするデバイスでは必須"
+
+#: ..\docs\device_mgmt\operations\index.rst:46
+msgid "Add and Clear Diagnostic Information"
+msgstr ""
+"診断情報の追加と消去"
+
+#: ..\docs\device_mgmt\operations\index.rst:48
+msgid "Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation."
+msgstr ""
+"デバイスはデバイス固有の新しい診断情報 (新しいエラー・コード、ログ・メッセージなど) を追加できます。また、既存のすべてのエラー・コードやログ・メッセージを Internet of Things Foundation から消去できます。"
+
+#: ..\docs\device_mgmt\operations\index.rst:53
+msgid ":ref:`diag-add-error-code`"
+msgstr ""
+":ref:`diag-add-error-code`"
+
+#: ..\docs\device_mgmt\operations\index.rst:55
+msgid ":ref:`diag-clear-error-codes`"
+msgstr ""
+":ref:`diag-clear-error-codes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:57
+msgid ":ref:`diag-add-log`"
+msgstr ""
+":ref:`diag-add-log`"
+
+#: ..\docs\device_mgmt\operations\index.rst:59
+msgid ":ref:`diag-clear-logs`"
+msgstr ""
+":ref:`diag-clear-logs`"
+
+#: ..\docs\device_mgmt\operations\index.rst:64
+msgid "Service Initiated"
+msgstr ""
+"サービスから開始されるもの"
+
+#: ..\docs\device_mgmt\operations\index.rst:66
+msgid "These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations."
+msgstr ""
+"これらの操作は Internet of Things Foundation から開始されるため、管理対象デバイスがこれらの操作のハンドリングをサポートする必要はありません。"
+
+#: ..\docs\device_mgmt\operations\index.rst:70
+msgid "Update Attributes"
+msgstr ""
+"属性の更新"
+
+#: ..\docs\device_mgmt\operations\index.rst:71
+msgid "Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation."
+msgstr ""
+"デバイスは、Internet of Things Foundation からのリクエストに応じてメタデータ、ロケーション、デバイス情報などの属性を更新する必要があります。"
+
+#: ..\docs\device_mgmt\operations\index.rst:76
+msgid ":ref:`update-attributes`"
+msgstr ""
+":ref:`update-attributes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:81
+msgid "Attribute Observations"
+msgstr ""
+"属性の監視"
+
+#: ..\docs\device_mgmt\operations\index.rst:82
+msgid "These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device."
+msgstr ""
+"これらのアクションは、デバイスの 1 つ以上の属性の変更をサービスに通知する (または通知を停止する) ようにデバイスに要求します。"
+
+#: ..\docs\device_mgmt\operations\index.rst:87
+msgid ":ref:`observations-observe`"
+msgstr ""
+":ref:`observations-observe`"
+
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid ":ref:`observations-cancel`"
+msgstr ""
+":ref:`observations-cancel`"
+
+#: ..\docs\device_mgmt\operations\index.rst:98
+msgid "Initiate an action"
+msgstr ""
+"アクションの開始"
+
+#: ..\docs\device_mgmt\operations\index.rst:100
+msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
+msgstr ""
+"このアクションは、リブート、ファクトリー・リセット、ファームウェア・ダウンロード、またはファームウェア更新のいずれかのアクションを開始するようにデバイスに要求します。"
+
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Type"
+msgstr ""
+"タイプ"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid "Device action"
+msgstr ""
+"デバイス・アクション"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+msgid ":ref:`device-actions-reboot`"
+msgstr ""
+":ref:`device-actions-reboot`"
+
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid ":ref:`device-actions-factory-reset`"
+msgstr ""
+":ref:`device-actions-factory-reset`"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Firmware action"
+msgstr ""
+"ファームウェア・アクション"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+msgid ":ref:`firmware-actions-download`"
+msgstr ""
+":ref:`firmware-actions-download`"
+
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid ":ref:`firmware-actions-update`"
+msgstr ""
+":ref:`firmware-actions-update`"
+
+#: ..\docs\device_mgmt\operations\index.rst:116
+msgid "Return Codes"
+msgstr ""
+"戻りコード"
+
+#: ..\docs\device_mgmt\operations\index.rst:118
+msgid "There are seven return codes which are sent in response to the actions listed above."
+msgstr ""
+"上記のアクションに対する応答として送信される戻りコードは 7 つあります。"
+
+#: ..\docs\device_mgmt\operations\index.rst:120
+msgid "200: Operation succeeded"
+msgstr ""
+"200: 操作が成功しました"
+
+#: ..\docs\device_mgmt\operations\index.rst:121
+msgid "202: Accepted (for initiating commands)"
+msgstr ""
+"202: 受け入れられました (開始コマンドの場合)"
+
+#: ..\docs\device_mgmt\operations\index.rst:122
+msgid "204: Changed (for attribute updates)"
+msgstr ""
+"204: 変更されました (属性更新の場合)"
+
+#: ..\docs\device_mgmt\operations\index.rst:123
+msgid "400: Bad request, for example, if a device is not in the appropriate state for this command"
+msgstr ""
+"400: 不適切なリクエストです (デバイスがこのコマンドに適した状態にない場合など)"
+
+#: ..\docs\device_mgmt\operations\index.rst:124
+msgid "404: Attribute was not found"
+msgstr ""
+"404: 属性が見つかりません"
+
+#: ..\docs\device_mgmt\operations\index.rst:125
+msgid "409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later"
+msgstr ""
+"409: (2 つのリクエストが同時にリソースを更新しようとしたなどの理由で) 競合のためにリソースを更新できませんでした。更新は後で再試行されます"
+
+#: ..\docs\device_mgmt\operations\index.rst:126
+msgid "500: Unexpected device error"
+msgstr ""
+"500: 予期しないデバイス・エラー"
+
+#: ..\docs\device_mgmt\operations\index.rst:127
+msgid "501: Operation not implemented"
+msgstr ""
+"501: 操作が実装されていません"
+

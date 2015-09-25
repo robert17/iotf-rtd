@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\index.rst:3
+msgid "Device Management Operations"
+msgstr ""
+"裝置管理作業"
+
+#: ..\docs\device_mgmt\operations\index.rst:5
+msgid "The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation."
+msgstr ""
+"「裝置管理通訊協定」定義一組支援的作業。裝置管理代理程式可以支援部分作業，但必須支援「管理裝置」及「取消管理裝置」作業。支援韌體動作作業的裝置也必須支援觀察。"
+
+#: ..\docs\device_mgmt\operations\index.rst:7
+msgid "The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__"
+msgstr ""
+"「裝置管理通訊協定」是建置在 MQTT 之上。如需「裝置管理通訊協定」如何與 MQTT 互動的特定詳細資訊，請參閱 `適用於受管理裝置的 MQTT <../../messaging/managed_devices.html>`__"
+
+#: ..\docs\device_mgmt\operations\index.rst:10
+msgid "Device Initiated"
+msgstr ""
+"由裝置起始"
+
+#: ..\docs\device_mgmt\operations\index.rst:12
+msgid "These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional."
+msgstr ""
+"這些作業是由裝置起始。所有受管理裝置都必須支援「管理」及「取消管理」作業。所有其他作業都是選用的。"
+
+#: ..\docs\device_mgmt\operations\index.rst:16
+msgid "Management Operations"
+msgstr ""
+"管理作業"
+
+#: ..\docs\device_mgmt\operations\index.rst:18
+msgid "These operations control whether device management features are enabled for the device."
+msgstr ""
+"這些作業控制是否針對裝置啟用裝置管理特性。"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Operation"
+msgstr ""
+"作業"
+
+#: ..\docs\device_mgmt\operations\index.rst:21
+#: ..\docs\device_mgmt\operations\index.rst:35
+#: ..\docs\device_mgmt\operations\index.rst:51
+#: ..\docs\device_mgmt\operations\index.rst:74
+#: ..\docs\device_mgmt\operations\index.rst:85
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Device Support"
+msgstr ""
+"裝置支援"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+msgid ":ref:`manage-manage`"
+msgstr ""
+":ref:`manage-manage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:23
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid "Required"
+msgstr ""
+"必要項目"
+
+#: ..\docs\device_mgmt\operations\index.rst:25
+msgid ":ref:`manage-unmanage`"
+msgstr ""
+":ref:`manage-unmanage`"
+
+#: ..\docs\device_mgmt\operations\index.rst:30
+msgid "Device Property Changes"
+msgstr ""
+"裝置內容變更"
+
+#: ..\docs\device_mgmt\operations\index.rst:32
+msgid "These optional operations, if implemented, allow the device to submit updated device-specific information to the service."
+msgstr ""
+"如果實作這些選用作業，可讓裝置提交更新的裝置特定資訊給服務。"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+msgid ":ref:`update-location`"
+msgstr ""
+":ref:`update-location`"
+
+#: ..\docs\device_mgmt\operations\index.rst:37
+#: ..\docs\device_mgmt\operations\index.rst:53
+#: ..\docs\device_mgmt\operations\index.rst:55
+#: ..\docs\device_mgmt\operations\index.rst:57
+#: ..\docs\device_mgmt\operations\index.rst:59
+#: ..\docs\device_mgmt\operations\index.rst:76
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Optional"
+msgstr ""
+"選用"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+msgid ":ref:`observations-notify`"
+msgstr ""
+":ref:`observations-notify`"
+
+#: ..\docs\device_mgmt\operations\index.rst:39
+#: ..\docs\device_mgmt\operations\index.rst:87
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid "Optional, required for devices supporting firmware update"
+msgstr ""
+"選用，若裝置支援韌體更新則是必要的"
+
+#: ..\docs\device_mgmt\operations\index.rst:46
+msgid "Add and Clear Diagnostic Information"
+msgstr ""
+"新增及清除診斷資訊"
+
+#: ..\docs\device_mgmt\operations\index.rst:48
+msgid "Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation."
+msgstr ""
+"裝置可以新增裝置特定的診斷資訊（例如，新的錯誤碼、日誌訊息），或清除來自 Internet of Things Foundation 的所有現有錯誤碼或日誌訊息。"
+
+#: ..\docs\device_mgmt\operations\index.rst:53
+msgid ":ref:`diag-add-error-code`"
+msgstr ""
+":ref:`diag-add-error-code`"
+
+#: ..\docs\device_mgmt\operations\index.rst:55
+msgid ":ref:`diag-clear-error-codes`"
+msgstr ""
+":ref:`diag-clear-error-codes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:57
+msgid ":ref:`diag-add-log`"
+msgstr ""
+":ref:`diag-add-log`"
+
+#: ..\docs\device_mgmt\operations\index.rst:59
+msgid ":ref:`diag-clear-logs`"
+msgstr ""
+":ref:`diag-clear-logs`"
+
+#: ..\docs\device_mgmt\operations\index.rst:64
+msgid "Service Initiated"
+msgstr ""
+"由服務起始"
+
+#: ..\docs\device_mgmt\operations\index.rst:66
+msgid "These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations."
+msgstr ""
+"這些作業是由 Internet of Things Foundation 起始；受管理裝置不需要支援處理任何作業。"
+
+#: ..\docs\device_mgmt\operations\index.rst:70
+msgid "Update Attributes"
+msgstr ""
+"更新屬性"
+
+#: ..\docs\device_mgmt\operations\index.rst:71
+msgid "Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation."
+msgstr ""
+"裝置應該在 Internet of Things Foundation 要求時更新屬性（例如 meta 資料、位置或裝置資訊）。"
+
+#: ..\docs\device_mgmt\operations\index.rst:76
+msgid ":ref:`update-attributes`"
+msgstr ""
+":ref:`update-attributes`"
+
+#: ..\docs\device_mgmt\operations\index.rst:81
+msgid "Attribute Observations"
+msgstr ""
+"屬性觀察"
+
+#: ..\docs\device_mgmt\operations\index.rst:82
+msgid "These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device."
+msgstr ""
+"這些動作會要求裝置在變更裝置上的一或多個屬性時，通知（或停止通知）服務。"
+
+#: ..\docs\device_mgmt\operations\index.rst:87
+msgid ":ref:`observations-observe`"
+msgstr ""
+":ref:`observations-observe`"
+
+#: ..\docs\device_mgmt\operations\index.rst:91
+msgid ":ref:`observations-cancel`"
+msgstr ""
+":ref:`observations-cancel`"
+
+#: ..\docs\device_mgmt\operations\index.rst:98
+msgid "Initiate an action"
+msgstr ""
+"起始動作"
+
+#: ..\docs\device_mgmt\operations\index.rst:100
+msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
+msgstr ""
+"此動作要求裝置起始下列其中一個動作：重新開機、重設為原廠設定、下載韌體，或更新韌體。"
+
+#: ..\docs\device_mgmt\operations\index.rst:103
+msgid "Type"
+msgstr ""
+"類型"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid "Device action"
+msgstr ""
+"裝置動作"
+
+#: ..\docs\device_mgmt\operations\index.rst:105
+msgid ":ref:`device-actions-reboot`"
+msgstr ""
+":ref:`device-actions-reboot`"
+
+#: ..\docs\device_mgmt\operations\index.rst:107
+msgid ":ref:`device-actions-factory-reset`"
+msgstr ""
+":ref:`device-actions-factory-reset`"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid "Firmware action"
+msgstr ""
+"韌體動作"
+
+#: ..\docs\device_mgmt\operations\index.rst:109
+msgid ":ref:`firmware-actions-download`"
+msgstr ""
+":ref:`firmware-actions-download`"
+
+#: ..\docs\device_mgmt\operations\index.rst:111
+msgid ":ref:`firmware-actions-update`"
+msgstr ""
+":ref:`firmware-actions-update`"
+
+#: ..\docs\device_mgmt\operations\index.rst:116
+msgid "Return Codes"
+msgstr ""
+"回覆碼"
+
+#: ..\docs\device_mgmt\operations\index.rst:118
+msgid "There are seven return codes which are sent in response to the actions listed above."
+msgstr ""
+"您可以傳送下列七種回覆碼，以回應上面列出的動作。"
+
+#: ..\docs\device_mgmt\operations\index.rst:120
+msgid "200: Operation succeeded"
+msgstr ""
+"200：作業成功"
+
+#: ..\docs\device_mgmt\operations\index.rst:121
+msgid "202: Accepted (for initiating commands)"
+msgstr ""
+"202：已接受（針對起始指令）"
+
+#: ..\docs\device_mgmt\operations\index.rst:122
+msgid "204: Changed (for attribute updates)"
+msgstr ""
+"204：已變更（針對屬性更新）"
+
+#: ..\docs\device_mgmt\operations\index.rst:123
+msgid "400: Bad request, for example, if a device is not in the appropriate state for this command"
+msgstr ""
+"400：不當的要求，例如，如果裝置不在此指令適用的狀態中"
+
+#: ..\docs\device_mgmt\operations\index.rst:124
+msgid "404: Attribute was not found"
+msgstr ""
+"404：找不到屬性"
+
+#: ..\docs\device_mgmt\operations\index.rst:125
+msgid "409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later"
+msgstr ""
+"409：由於衝突而無法更新資源，例如，資源由兩個同時執行的要求更新，因此稍後可能會再重試更新"
+
+#: ..\docs\device_mgmt\operations\index.rst:126
+msgid "500: Unexpected device error"
+msgstr ""
+"500：非預期的裝置錯誤"
+
+#: ..\docs\device_mgmt\operations\index.rst:127
+msgid "501: Operation not implemented"
+msgstr ""
+"501：未實作作業"
+

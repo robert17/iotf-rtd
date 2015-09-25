@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\observations.rst:3
+msgid "Device Management Operations - Observations"
+msgstr ""
+"设备管理操作 - 观察"
+
+#: ..\docs\device_mgmt\operations\observations.rst:5
+msgid "Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`."
+msgstr ""
+"设备必须实施“观察”、“通知”和“取消”操作，才能支持 :ref:`firmware-actions-update`。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:10
+msgid "Observe Attribute Changes"
+msgstr ""
+"观察属性更改"
+
+#: ..\docs\device_mgmt\operations\observations.rst:12
+msgid "The Internet of Things Foundation can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request (\"notify\" message) to the Internet of Things Foundation whenever the observed attributes value changes."
+msgstr ""
+"Internet of Things Foundation 可以向设备发送此请求，以观察一个或多个设备属性的更改。如果设备收到此请求，那么在所观察的属性值发生更改时，必须向 Internet of Things Foundation 发送通知请求（“通知”消息）。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:15
+#: ..\docs\device_mgmt\operations\observations.rst:70
+#: ..\docs\device_mgmt\operations\observations.rst:117
+msgid "Topic"
+msgstr ""
+"主题"
+
+#: ..\docs\device_mgmt\operations\observations.rst:22
+#: ..\docs\device_mgmt\operations\observations.rst:78
+#: ..\docs\device_mgmt\operations\observations.rst:124
+msgid "Message format"
+msgstr ""
+"消息格式"
+
+#: ..\docs\device_mgmt\operations\observations.rst:24
+msgid "The \"fields\" field is an array of the device attribute names from the device model. For example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\". If a complex field, such as \"mgmt.firmware\" is specified, it is expected that its underlying fields are updated at the same time, such that only a single notify message is generated."
+msgstr ""
+"“fields”字段是一个数组，其中包含来自设备模型的设备属性名称。例如，值可以是“location”、“mgmt.firmware”或“mgmt.firmware.state”。如果指定了复杂字段（如“mgmt.firmware”），那么需要同时更新其下层字段，这样就只会生成一条通知消息。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:26
+msgid "The \"message\" field used in the response can be specified if \"rc\" is not 200. If any field value which was to be observed could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). When values for fields to be observed cannot be found, \"fields\" should contain an array of elements with \"field\" set to the name of each field that could not be read, \"value\" fields should be omitted. For the response code to be set to 200, both \"field\" and \"value\" must be specified, \"value\" is the current value of an attribute identified by \"field\" content."
+msgstr ""
+"如果“rc”不为 200，那么可以指定响应中的“message”字段。如果检索不到先前观察的任何字段值，那么“rc”应设置为 404（找不到）或 500（任何其他原因）。如果找不到要观察的字段值，那么“fields”中应包含元素数组，其中“field”分别设置为各个无法读取的字段的名称，并且应忽略“value”字段。要将响应代码设置为 200，必须同时指定“field”和“value”，“value”是由“field”内容标识的属性的当前值。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:28
+#: ..\docs\device_mgmt\operations\observations.rst:80
+#: ..\docs\device_mgmt\operations\observations.rst:126
+msgid "Request Format:"
+msgstr ""
+"请求格式："
+
+#: ..\docs\device_mgmt\operations\observations.rst:41
+#: ..\docs\device_mgmt\operations\observations.rst:93
+#: ..\docs\device_mgmt\operations\observations.rst:138
+msgid "Response Format:"
+msgstr ""
+"响应格式："
+
+#: ..\docs\device_mgmt\operations\observations.rst:63
+msgid "Cancel Attribute Observation"
+msgstr ""
+"取消属性观察"
+
+#: ..\docs\device_mgmt\operations\observations.rst:65
+msgid "The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The \"fields\" is an array of the device attribute names from the device model, for example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\"."
+msgstr ""
+"Internet of Things Foundation 可以向设备发送此请求，以取消当前对一个或多个设备属性的观察。“fields”是一个数组，其中包含来自设备模型的设备属性名称，例如，值可以是“ location”、“mgmt.firmware”或“mgmt.firmware.state”。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:67
+msgid "The \"message\" field must be specified if \"rc\" is not 200."
+msgstr ""
+"如果“rc”不为 200，那么必须指定“message”字段。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:107
+msgid "Notify Attribute Changes"
+msgstr ""
+"通知属性更改"
+
+#: ..\docs\device_mgmt\operations\observations.rst:109
+msgid "The Internet of Things Foundation can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value."
+msgstr ""
+"Internet of Things Foundation 可以发出观察请求（其中引用了特定属性或值集）。当一个或多个属性的值发生更改时，设备必须发送包含最新值的通知。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:111
+msgid "The \"field_name\" value is the name of the attribute that has changed, the \"field_value\" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent."
+msgstr ""
+"“field_name”值是已更改属性的名称，“field_value”是此属性的当前值。此属性可以是复杂字段，如果复杂字段中的多个值因为一个操作而发生更新，那么只应发送一条通知消息。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:113
+msgid "If notify request is processed successfully, \"rc\" should be set to 200. If the request is not correct, \"rc\" should be set to 400. If the field specified in the notify request is not being observed, \"rc\" should be set to 404."
+msgstr ""
+"如果成功处理了通知请求，那么“rc”应设置为 200。如果请求不正确，那么“rc”应设置为 400。如果未在观察该通知请求中指定的字段，那么“rc”应设置为 404。"
+

@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_mgmt.rst:3
+msgid "Device Management"
+msgstr ""
+"Einheitenmanagement"
+
+#: ..\docs\reference\device_mgmt.rst:5
+msgid "The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management."
+msgstr ""
+"Von der Einheitenmanagementfunktion wird der Internet of Things Foundation-Service um neue Funktionen zur Verwaltung von Einheiten erweitert. In dieser Einführung werden einige der Konzepte und Funktionen des Einheitenmanagements vorgestellt. "
+
+#: ..\docs\reference\device_mgmt.rst:8
+msgid "What does Device Management add?"
+msgstr ""
+"Was wird vom Einheitenmanagement hinzugefügt? "
+
+#: ..\docs\reference\device_mgmt.rst:10
+msgid "Control and management of device lifecycles for both individual and batches of devices."
+msgstr ""
+"Steuerung und Management der Lebenszyklen von Einheiten für einzelne Einheiten und Einheitengruppen. "
+
+#: ..\docs\reference\device_mgmt.rst:11
+msgid "Device metadata and status information, enabling the creation of device dashboards and other tools."
+msgstr ""
+"Einheitenmetadaten und Statusinformationen, die die Erstellung von Einheitendashboards und weiterer Tools ermöglichen. "
+
+#: ..\docs\reference\device_mgmt.rst:12
+msgid "Diagnostic information, both for connectivity to the Internet of Things Foundation service, and device diagnostics."
+msgstr ""
+"Diagnoseinformationen, sowohl für die Konnektivität zum Internet of Things Foundation-Service als auch Einheitendiagnoseinformationen. "
+
+#: ..\docs\reference\device_mgmt.rst:13
+msgid "Device management commands, like firmware update, and device reboot."
+msgstr ""
+"Einheitenmanagementbefehle, zum Beispiel für Firmware-Updates und Neustarts von Einheiten. "
+
+#: ..\docs\reference\device_mgmt.rst:15
+msgid "At a more technical level, device management adds:"
+msgstr ""
+"Auf einer eher technischen Ebene wird vom Einheitenmanagement Folgendes hinzugefügt: "
+
+#: ..\docs\reference\device_mgmt.rst:17
+msgid "a device model, that describes the metadata and management characteristics of a device,"
+msgstr ""
+"Ein Einheitenmodell, von dem die Metadaten und Managementeigenschaften einer Einheit beschrieben werden. "
+
+#: ..\docs\reference\device_mgmt.rst:18
+msgid "a ReST API which provides a callable interface for managing devices,"
+msgstr ""
+"Eine REST-API, von der eine aufrufbare Schnittstelle zur Veraltung von Einheiten bereitgestellt wird. "
+
+#: ..\docs\reference\device_mgmt.rst:19
+msgid "and a device management protocol, used for communication between the management agent on the devices and the Internet of Things Foundation."
+msgstr ""
+"Ein Einheitenmanagementprotokoll, das zur Kommunikation zwischen den Managementagenten der Einheiten und Internet of Things Foundation verwendet wird. "
+
+#: ..\docs\reference\device_mgmt.rst:22
+msgid "Important concepts in device management"
+msgstr ""
+"Wichtige Konzepte für das Einheitenmanagement"
+
+#: ..\docs\reference\device_mgmt.rst:25
+msgid "Managed and Unmanaged Devices"
+msgstr ""
+"Verwaltete und nicht verwaltete Einheiten"
+
+#: ..\docs\reference\device_mgmt.rst:27
+msgid "Device management creates a distinction between managed and unmanaged devices."
+msgstr ""
+"Vom Einheitenmanagement wird zwischen verwalteten und nicht verwalteten Einheiten unterschieden. "
+
+#: ..\docs\reference\device_mgmt.rst:29
+msgid "**Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation. The device management agent and the Internet of Things Foundation device management service must share an understanding of data formats and communication patterns so they can interpret data correctly."
+msgstr ""
+"**Verwaltete Einheiten** sind Einheiten, auf denen ein Managementagent installiert ist. Vom Managementagenten werden Einheitenmetadaten gesendet und empfangen sowie auf Einheitenmanagementbefehle von Internet of Things Foundation geantwortet. Vom Einheitenmanagementagenten und vom Internet of Things Foundation-Einheitenmanagementservice müssen übereinstimmende Datenformate und Kommunikationsmuster gemeinsam genutzt werden, damit die Daten von beiden korrekt interpretiert werden können. "
+
+#: ..\docs\reference\device_mgmt.rst:30
+msgid "**Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation. Devices without a device management agent installed can never become managed devices."
+msgstr ""
+"**Nicht verwaltete Einheiten** sind Einheiten, die nicht über einen Einheitenmanagementagenten verfügen. Der Lebenszyklus jeder Einheit beginnt als nicht verwaltete Einheit; wenn vom Einheitenmanagementagenten die entsprechende Nachricht an Internet of Things Foundation gesendet wird, kann sie zu einer verwalteten Einheit werden. Einheiten ohne installierten Einheitenmanagementagenten können nie zu verwalteten Einheiten werden. "
+
+#: ..\docs\reference\device_mgmt.rst:33
+msgid "Device Model"
+msgstr ""
+"Einheitenmodell"
+
+#: ..\docs\reference\device_mgmt.rst:34
+msgid "The device model is the combination of device metadata and management characteristics of a device. Devices can contain a lot of metadata, including device identifiers, device type and associated identifiers, and device model extensions. For a list of identifiers, see the device model reference documentation."
+msgstr ""
+"Ein Einheitenmodell ist eine Kombination aus den Einheitenmetadaten und Managementeigenschaften einer Einheit. Einheiten können viele Metadaten enthalten, zum Beispiel Einheitenkennungen, Einheitentypen und zugeordnete Kennungen sowie Einheitenmodellerweiterungen. Eine Liste der Kennungen finden Sie in der Referenzliteratur zum Einheitenmodell. "
+
+#: ..\docs\reference\device_mgmt.rst:37
+msgid "Device Management Protocol"
+msgstr ""
+"Einheitenmanagementprotokoll"
+
+#: ..\docs\reference\device_mgmt.rst:39
+msgid "This protocol is used for device management communication between the Internet of Things Foundation and the management agent on a managed device. The device management protocol is based on MQTT and uses a different set of topics than the regular device messaging protocol. The device management agent of a device must implement the device management protocol in order to enable device management functions."
+msgstr ""
+"Dieses Protokoll wird für die Einheitenmanagementkommunikation zwischen Internet of Things Foundation und dem Managementagenten auf einer verwalteten Einheit verwendet. Das Einheitenmanagementprotokoll basiert auf MQTT und verwendet eine abweichende Themenmenge, die vom regulären Einheitennachrichtenprotokoll nicht bereitgestellt wird. Vom Einheitenmanagementagenten einer Einheit muss das Einheitenmanagementprotokoll implementiert werden, damit die Einheitenmanagementfunktionen aktiviert werden können. "
+
+#: ..\docs\reference\device_mgmt.rst:42
+msgid "Device Identifiers"
+msgstr ""
+"Einheitenkennungen"
+
+#: ..\docs\reference\device_mgmt.rst:44
+msgid "Manufactured devices come with a variety of identifiers, such as model and serial number. Each identifier can be considered a separate namespace, but the combination of identifiers which uniquely identify a specific device is customer dependent and may be very complex."
+msgstr ""
+"Gefertigte Einheiten werden mit einer Vielzahl an Kennungen geliefert, zum Beispiel einer Modellnummer und einer Seriennummer. Jede Kennung kann als gesonderter Namensbereich betrachtet werden, die Kombinationen der Kennungen, mit denen eine Einheit eindeutig identifiziert werden kann, ist vom Kunden abhängig und kann sehr komplex sein. "
+
+#: ..\docs\reference\device_mgmt.rst:46
+msgid "In order to accommodate this complexity, the device management standards have defined many types of identifier, and these are represented in the core device model. See the Device Model Attributes reference document for more detailed information on device identifiers and attributes."
+msgstr ""
+"Um dieser Komplexität gerecht zu werden, wurden als Einheitenmanagementstandards viele Kennungstypen definiert, die auch im Basiseinheitenmodell enthalten sind. Detaillierte Informationen zu Einheitenkennungen und Attributen finden Sie im Referenzdokument zu den Einheitenmodellattributen. "
+
+#: ..\docs\reference\device_mgmt.rst:49
+msgid "Management Agent"
+msgstr ""
+"Managementagent"
+
+#: ..\docs\reference\device_mgmt.rst:51
+msgid "A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices."
+msgstr ""
+"Ein Managementagent ist ein Logikbaustein, der auf einer Einheit installiert wird, mit dem als verwaltete Einheit eine Verbindung zum Internet of Things Foundation-Service aufgebaut werden kann. Der Managementagent versteht die Metadaten und Einheitenmanagementbefehle, die im Nachrichtenprotokoll des Einheitenmanagements verwendet werden. Ohne einen Managementagenten kann eine Einheit das Nachrichtenprotokoll des Einheitenmanagements nicht verwenden und somit auch nicht zu einer verwalteten Einheit werden. "
+
+#: ..\docs\reference\device_mgmt.rst:55
+msgid "The Device Management Lifecycle"
+msgstr ""
+"Lebenszyklus im Einheitenmanagement"
+
+#: ..\docs\reference\device_mgmt.rst:57
+msgid "A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"Eine Einheit und ihr zugeordneter Einheitentyp werden von Internet of Things Foundation mithilfe eines Dashboards oder einer REST-API erstellt. "
+
+#: ..\docs\reference\device_mgmt.rst:58
+msgid "The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device."
+msgstr ""
+"Von der Einheit wird eine Verbindung zu Internet of Things Foundation hergestellt und die Operation 'Einheit verwalten' verwendet, um zu einer verwalteten Einheit zu werden. "
+
+#: ..\docs\reference\device_mgmt.rst:59
+msgid "The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot."
+msgstr ""
+"Die Metadaten der Einheit können jetzt wie im Einheitenmodell beschrieben angezeigt und mithilfe von Einheitenoperationen geändert werden, zum Beispiel durch ein Firmware-Update oder einen Neustart der Einheit. "
+
+#: ..\docs\reference\device_mgmt.rst:60
+msgid "The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes."
+msgstr ""
+"Von der Einheit können Aktualisierungen über das Einheitenmanagementprotokoll kommuniziert werden, zum Beispiel die Position oder Diagnoseinformationen und Fehlercodes. "
+
+#: ..\docs\reference\device_mgmt.rst:61
+msgid "In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device."
+msgstr ""
+"Zur Handhabung von nicht mehr vorhandenen Einheiten in Umgebungen mit einer großen Anzahl an Einheiten wird von der Anforderung der Operation 'Einheit verwalten' ein optionaler Parameter für den Lebenszyklus bereitgestellt. Dieser Lebenszyklusparameter gibt den Zeitraum als Anzahl der Sekunden an, in dem eine Einheit eine weitere Anforderung des Typs 'Einheit verwalten' senden muss, um zu vermeiden, dass sie als 'ruhend' angesehen und zu einer nicht verwalteten Einheit wird. "
+
+#: ..\docs\reference\device_mgmt.rst:62
+msgid "When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"Wenn eine Einheit stillgelegt wird, kann sie mithilfe des Dashboards oder der REST-API von Internet of Things Foundation entfernt werden. "
+

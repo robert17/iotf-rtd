@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,121 +19,125 @@ msgstr ""
 #: ..\docs\messaging\payload.rst:2
 msgid "Message Payload"
 msgstr ""
+"メッセージ・ペイロード"
 
 #: ..\docs\messaging\payload.rst:4
-msgid ""
-"The Foundation supports sending and recieving messages in any format, "
-"however we recommend the use of JSON and the IOTF event format "
-"specification."
+msgid "The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and the IoTF event format specification."
 msgstr ""
+"Foundation では、任意の形式のメッセージの送受信がサポートされていますが、JSON および IoTF イベント形式仕様を使用することをお勧めします。"
 
 #: ..\docs\messaging\payload.rst:13
-msgid "IOTF JSON Payload Specification"
+msgid "IoTF JSON Payload Specification"
 msgstr ""
+"IoTF JSON ペイロード仕様"
 
 #: ..\docs\messaging\payload.rst:15
-msgid ""
-"It is simple to create a JSON message that meets the IOTF specification."
+msgid "It is simple to create a JSON message that meets the IoTF specification."
 msgstr ""
+"IoTF 仕様を満たす JSON メッセージを作成することは簡単です。"
 
 #: ..\docs\messaging\payload.rst:17
-msgid ""
-"The message must be a valid JSON object (not an array) with only two top "
-"level elements: **d** and **ts**"
+msgid "The message must be a valid JSON object (not an array) with only two top level elements: **d** and **ts**"
 msgstr ""
+"メッセージは、**d** および **ts** の 2 つのトップレベル要素のみを含む有効な JSON オブジェクト (配列ではない) でなければなりません。"
 
 #: ..\docs\messaging\payload.rst:19
 msgid "The message must be UTF-8 encoded"
 msgstr ""
+"メッセージは UTF-8 エンコードでなければなりません"
 
 #: ..\docs\messaging\payload.rst:22
 msgid "Data"
 msgstr ""
+"データ"
 
 #: ..\docs\messaging\payload.rst:23
-msgid ""
-"The **d** element is where you include all data for the event (or command) "
-"being transmitted in the message."
+msgid "The **d** element is where you include all data for the event (or command) being transmitted in the message."
 msgstr ""
+"**d** 要素には、メッセージに入れて送信されるイベント (またはコマンド) のすべてのデータを入れます。"
 
 #: ..\docs\messaging\payload.rst:26
-msgid ""
-"This element is required for your message to meet the IOTF message "
-"specification."
+msgid "This element is required for your message to meet the IoTF message specification."
 msgstr ""
+"この要素は、メッセージが IoTF メッセージ仕様を満たす上で必須です。"
 
 #: ..\docs\messaging\payload.rst:27
 msgid "This must always be a JSON object (not an array)"
 msgstr ""
+"これは、常に JSON オブジェクトでなければなりません (配列ではない)"
 
 #: ..\docs\messaging\payload.rst:28
-msgid ""
-"In the case where you wish to send no data the **d** element should still be"
-" present, but contain an empty object."
+msgid "In the case where you wish to send no data the **d** element should still be present, but contain an empty object."
 msgstr ""
+"データを送信するわけではない場合でも、**d** 要素には、空オブジェクトが内容として存在しなければなりません。"
 
 #: ..\docs\messaging\payload.rst:32
 msgid "Example 1 - Simple Data"
 msgstr ""
+"例 1 - 単純なデータ"
 
 #: ..\docs\messaging\payload.rst:41
 msgid "Example 2 - Complex data"
 msgstr ""
+"例 2 - 複合データ"
 
 #: ..\docs\messaging\payload.rst:58
 msgid "Example 3 - No data"
 msgstr ""
+"例 3 - データなし"
 
 #: ..\docs\messaging\payload.rst:67
 msgid "Timestamp"
 msgstr ""
+"タイム・スタンプ"
 
 #: ..\docs\messaging\payload.rst:69
-msgid ""
-"The **ts** element allows you to associate a timestamp with the event (or "
-"command). This is an optional element, if included its value should be a "
-"valid ISO8601 encoded timestamp string."
+msgid "The **ts** element allows you to associate a timestamp with the event (or command). This is an optional element, if included its value should be a valid ISO8601 encoded timestamp string."
 msgstr ""
+"**ts** 要素を使用すると、イベント (またはコマンド) にタイム・スタンプを関連付けることができます。これはオプションの要素であり、これを含めた場合、その値は、ISO8601 エンコードのタイム・スタンプ文字列として有効なものでなければなりません。"
 
 #: ..\docs\messaging\payload.rst:89
 msgid "Custom JSON payloads"
 msgstr ""
+"カスタム JSON ペイロード"
 
 #: ..\docs\messaging\payload.rst:90
-msgid ""
-"The IOT Foundation is designed to be open, you may send your event and "
-"command data in any format you choose, however if you choose to send data in"
-" a custom format it will limit some features of the service which can only "
-"function with a known payload format."
+msgid "The IoT Foundation is designed to be open, you may send your event and command data in any format you choose, however if you choose to send data in a custom format it will limit some features of the service which can only function with a known payload format."
 msgstr ""
+"IoT Foundation はオープンとして設計されており、イベントおよびコマンドのデータは任意の形式で送信することが可能ですが、カスタム形式のデータを送信する場合、特定のペイロード形式でのみ機能するサービスの一部の機能が制限されることになります。"
 
 #: ..\docs\messaging\payload.rst:94
-msgid ""
-"Below are a number of example payloads that are close the to the IOTF "
-"specification, but do not quite match it.  Each would be treated as a custom"
-" JSON payload."
+msgid "Below are a number of example payloads that are close to the IoTF specification, but do not quite match it.  Each would be treated as a custom JSON payload."
 msgstr ""
+"IoTF 仕様に近いものの、完全には一致していないサンプル・ペイロードをいくつか以下に示します。いずれもカスタム JSON ペイロードとして扱われます。"
 
 #: ..\docs\messaging\payload.rst:97
 msgid "**Example 1**"
 msgstr ""
+"**例 1**"
 
 #: ..\docs\messaging\payload.rst:99
 msgid "Root node is a JSON array"
 msgstr ""
+"ルート・ノードは JSON 配列"
 
 #: ..\docs\messaging\payload.rst:123
 msgid "**Example 2**"
 msgstr ""
+"**例 2**"
 
 #: ..\docs\messaging\payload.rst:125
 msgid "\"d\" node is a JSON array"
 msgstr ""
+"\"d\" ノードは JSON 配列"
 
 #: ..\docs\messaging\payload.rst:134
 msgid "**Example 3**"
 msgstr ""
+"**例 3**"
 
 #: ..\docs\messaging\payload.rst:136
 msgid "Unexpected node at root level"
 msgstr ""
+"ルート・レベルに予期しないノード"
+

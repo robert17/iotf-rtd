@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\api_intro.rst:3
+msgid "Introduction to the Internet of Things Foundation API"
+msgstr ""
+"Internet of Things Foundation API 簡介"
+
+#: ..\docs\api\api_intro.rst:5
+msgid "The Internet of Things Foundation API can be used to interact with your organization in the Internet of Things Foundation."
+msgstr ""
+"Internet of Things Foundation API 可以用來在 Internet of Things Foundation 內與您的組織互動。"
+
+#: ..\docs\api\api_intro.rst:8
+msgid "API Capabilities"
+msgstr ""
+"API 功能"
+
+#: ..\docs\api\api_intro.rst:10
+msgid "The IoT API has the following functionality:"
+msgstr ""
+"IoT API 具有下列功能："
+
+#: ..\docs\api\api_intro.rst:12
+msgid "View organization details."
+msgstr ""
+"檢視組織詳細資料。"
+
+#: ..\docs\api\api_intro.rst:13
+msgid "Bulk device operations (list all, add, remove)."
+msgstr ""
+"大量裝置作業（全部列出、新增、移除)。"
+
+#: ..\docs\api\api_intro.rst:14
+msgid "Device type operations (list all, create, delete, view details, update)."
+msgstr ""
+"裝置類型作業（全部列出、建立、刪除、檢視詳細資料、更新）。"
+
+#: ..\docs\api\api_intro.rst:15
+msgid "Device operations (list devices, add, remove, view details, update, view location, view management information)."
+msgstr ""
+"裝置作業（列出裝置、新增、移除、檢視詳細資料、更新、檢視位置、視圖管理資訊）。"
+
+#: ..\docs\api\api_intro.rst:16
+msgid "Device diagnostic operations (clear log, retrieve logs, add log information, delete logs, get specific log, clear error codes, get device error codes, add an error code)."
+msgstr ""
+"裝置診斷作業（清除日誌、擷取日誌、新增日誌資訊、刪除日誌、取得特定日誌、清除錯誤碼、取得裝置錯誤碼、新增錯誤碼）。"
+
+#: ..\docs\api\api_intro.rst:17
+msgid "Connection problem determination (list device connection log events)."
+msgstr ""
+"連線問題判斷（列出裝置連線日誌事件）。"
+
+#: ..\docs\api\api_intro.rst:18
+msgid "Historical event retrieval (view events from all devices, view events from a device type, view events for a specific device)."
+msgstr ""
+"擷取歷程事件（檢視所有裝置的事件、檢視某一裝置類型的事件、檢視特定裝置的事件）。"
+
+#: ..\docs\api\api_intro.rst:19
+msgid "Device management request operations (list device management requests, initiate a request, clear request status, get details of a request, get list of request statuses,  get device request status for a specific device)."
+msgstr ""
+"裝置管理要求作業（列出裝置管理要求、起始要求、清除要求狀態、取得要求的詳細資料、取得要求狀態的清單、取得特定裝置的裝置要求狀態）。"
+
+#: ..\docs\api\api_intro.rst:20
+msgid "Usage management (retrieve number of active devices over a period of time, retrieve amount of storage used by historical event data, retrieve total amount of data used)."
+msgstr ""
+"使用情形管理（擷取一段時間內作用中的裝置數、擷取歷程事件資料所使用的儲存體量、擷取所使用的總資料量）。"
+
+#: ..\docs\api\api_intro.rst:21
+msgid "Service status queries (retrieve service statuses for an organization)."
+msgstr ""
+"服務狀態查詢（擷取組織的服務狀態）。"
+
+#: ..\docs\api\api_intro.rst:23
+msgid "The current version of the Internet of Things Foundation API is version 2. The details of the version 2 API operations can be found `here <http://>`_."
+msgstr ""
+"Internet of Things Foundation API 的現行版本是第 2 版。您可以在 `這裡 <http://>`_ 取得第 2 版 API 作業的詳細資料。"
+
+#: ..\docs\api\api_intro.rst:25
+msgid "Version 1 of the API is still supported, however, some of the operations cannot be performed using version 1 of the API and others are performed using different API paths."
+msgstr ""
+"仍然支援第 1 版 API；不過，某些作業無法使用第 1 版的 API 來執行，其他作業則會使用不同的 API 路徑來執行。"
+
+#: ..\docs\api\api_intro.rst:29
+msgid "Restrictions of version 1 of the IoT Foundation API"
+msgstr ""
+"第 1 版 IoT Foundation API 的限制"
+
+#: ..\docs\api\api_intro.rst:31
+msgid "Many of the API paths relating to devices have changed."
+msgstr ""
+"許多與裝置相關的 API 路徑已變更。"
+
+#: ..\docs\api\api_intro.rst:32
+msgid "Version 1 of the API does not support any device type operations, other than listing all device types."
+msgstr ""
+"第 1 版 API 不支援列出所有裝置類型以外的任何裝置類型作業。"
+
+#: ..\docs\api\api_intro.rst:33
+msgid "Operations related to device management, device management requests, diagnostic logs, or location cannot be performed using version 1 of the API."
+msgstr ""
+"與裝置管理、裝置管理要求、診斷日誌或位置相關的作業，無法使用第 1 版 API 來執行。"
+
+#: ..\docs\api\api_intro.rst:35
+msgid "The documentation for the operations supported by version 1 of the API can be found `here <http://.com>`_."
+msgstr ""
+"您可以在 `這裡 <http://.com>`_ 取得第 1 版 API 所支援作業的文件。"
+

@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_mgmt.rst:3
+msgid "Device Management"
+msgstr ""
+"Gerenciamento de Dispositivo"
+
+#: ..\docs\reference\device_mgmt.rst:5
+msgid "The device management feature enhances the Internet of Things Foundation service with new capabilities for managing devices. This introduction will introduce some of the concepts and features of device management."
+msgstr ""
+"O recurso de gerenciamento de dispositivo aprimora o serviço do Internet of Things Foundation com novos recursos para o gerenciamento de dispositivos. Esta introdução apresentará alguns dos conceitos e recursos de gerenciamento de dispositivos."
+
+#: ..\docs\reference\device_mgmt.rst:8
+msgid "What does Device Management add?"
+msgstr ""
+"O que o Gerenciamento de Dispositivos inclui?"
+
+#: ..\docs\reference\device_mgmt.rst:10
+msgid "Control and management of device lifecycles for both individual and batches of devices."
+msgstr ""
+"Controle e gerenciamento de ciclos de vida de dispositivos para dispositivos individuais e lotes de dispositivos."
+
+#: ..\docs\reference\device_mgmt.rst:11
+msgid "Device metadata and status information, enabling the creation of device dashboards and other tools."
+msgstr ""
+"Metadados de dispositivos e informações de status, permitindo a criação de painéis de dispositivos e outras ferramentas."
+
+#: ..\docs\reference\device_mgmt.rst:12
+msgid "Diagnostic information, both for connectivity to the Internet of Things Foundation service, and device diagnostics."
+msgstr ""
+"Informações de diagnóstico, para a conectividade com o serviço do Internet of Things Foundation e para diagnósticos do dispositivo."
+
+#: ..\docs\reference\device_mgmt.rst:13
+msgid "Device management commands, like firmware update, and device reboot."
+msgstr ""
+"Comandos de gerenciamento de dispositivos, como atualização de firmware e reinicialização do dispositivo."
+
+#: ..\docs\reference\device_mgmt.rst:15
+msgid "At a more technical level, device management adds:"
+msgstr ""
+"Em um nível mais técnico, o gerenciamento de dispositivo inclui:"
+
+#: ..\docs\reference\device_mgmt.rst:17
+msgid "a device model, that describes the metadata and management characteristics of a device,"
+msgstr ""
+"um modelo de dispositivo, que descreve os metadados e as características de gerenciamento de um dispositivo,"
+
+#: ..\docs\reference\device_mgmt.rst:18
+msgid "a ReST API which provides a callable interface for managing devices,"
+msgstr ""
+"uma API ReST, que fornece uma interface solicitável para o gerenciamento de dispositivos,"
+
+#: ..\docs\reference\device_mgmt.rst:19
+msgid "and a device management protocol, used for communication between the management agent on the devices and the Internet of Things Foundation."
+msgstr ""
+"e um protocolo de gerenciamento de dispositivos, usado para a comunicação entre o agente de gerenciamento nos dispositivos e o Internet of Things Foundation."
+
+#: ..\docs\reference\device_mgmt.rst:22
+msgid "Important concepts in device management"
+msgstr ""
+"Conceitos importantes no gerenciamento de dispositivos"
+
+#: ..\docs\reference\device_mgmt.rst:25
+msgid "Managed and Unmanaged Devices"
+msgstr ""
+"Dispositivos Gerenciados e Não Gerenciados"
+
+#: ..\docs\reference\device_mgmt.rst:27
+msgid "Device management creates a distinction between managed and unmanaged devices."
+msgstr ""
+"O gerenciamento de dispositivos cria uma distinção entre dispositivos gerenciados e não gerenciados."
+
+#: ..\docs\reference\device_mgmt.rst:29
+msgid "**Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation. The device management agent and the Internet of Things Foundation device management service must share an understanding of data formats and communication patterns so they can interpret data correctly."
+msgstr ""
+"**Dispositivos Gerenciados** são definidos como dispositivos que possuem um agente de gerenciamento instalado. O agente de gerenciamento envia e recebe metadados do dispositivo e responde aos comandos de gerenciamento de dispositivo do Internet of Things Foundation. O agente de gerenciamento de dispositivos e o serviço de gerenciamento de dispositivos do Internet of Things Foundation devem compartilhar informações sobre formatos de dados e padrões de comunicação para que possam interpretar os dados corretamente."
+
+#: ..\docs\reference\device_mgmt.rst:30
+msgid "**Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation. Devices without a device management agent installed can never become managed devices."
+msgstr ""
+"**Dispositivos Não Gerenciados** são todos os dispositivos que não possuem um agente de gerenciamento de dispositivo. Todos os dispositivos iniciam seus ciclos de vida como dispositivos não gerenciados e podem se transformar em dispositivos gerenciados através do envio de uma mensagem de um agente de gerenciamento de dispositivo para o Internet of Things Foundation. Os dispositivos que não possuem um agente de gerenciamento de dispositivo instalado nunca poderão se tornar dispositivos gerenciados."
+
+#: ..\docs\reference\device_mgmt.rst:33
+msgid "Device Model"
+msgstr ""
+"Modelo de Dispositivo"
+
+#: ..\docs\reference\device_mgmt.rst:34
+msgid "The device model is the combination of device metadata and management characteristics of a device. Devices can contain a lot of metadata, including device identifiers, device type and associated identifiers, and device model extensions. For a list of identifiers, see the device model reference documentation."
+msgstr ""
+"O modelo de dispositivo é a combinação dos metadados do dispositivo e das características de gerenciamento de um dispositivo. Os dispositivos podem conter vários metadados, incluindo identificadores de dispositivo, tipo de dispositivo e identificadores associados e extensões de modelo de dispositivo. Para obter uma lista de identificadores, consulte a documentação de referência do modelo de dispositivo."
+
+#: ..\docs\reference\device_mgmt.rst:37
+msgid "Device Management Protocol"
+msgstr ""
+"Protocolo de Gerenciamento de Dispositivo"
+
+#: ..\docs\reference\device_mgmt.rst:39
+msgid "This protocol is used for device management communication between the Internet of Things Foundation and the management agent on a managed device. The device management protocol is based on MQTT and uses a different set of topics than the regular device messaging protocol. The device management agent of a device must implement the device management protocol in order to enable device management functions."
+msgstr ""
+"Este protocolo é usado para a comunicação de gerenciamento de dispositivos entre o Internet of Things Foundation e o agente de gerenciamento em um dispositivo gerenciado. O protocolo de gerenciamento de dispositivo é baseado em MQTT e usa um conjunto diferente de tópicos do que o protocolo regular de sistema de mensagens do dispositivo. O agente de gerenciamento de dispositivo de um dispositivo deve implementar o protocolo de gerenciamento de dispositivo para ativar as funções de gerenciamento de dispositivos."
+
+#: ..\docs\reference\device_mgmt.rst:42
+msgid "Device Identifiers"
+msgstr ""
+"Identificadores de Dispositivo"
+
+#: ..\docs\reference\device_mgmt.rst:44
+msgid "Manufactured devices come with a variety of identifiers, such as model and serial number. Each identifier can be considered a separate namespace, but the combination of identifiers which uniquely identify a specific device is customer dependent and may be very complex."
+msgstr ""
+"Os dispositivos fabricados são fornecidos com diversos identificadores, como modelo e número de série. Cada identificador pode ser considerado um namespace separado, mas a combinação de identificadores que identificam de forma exclusiva um dispositivo específico depende do cliente e pode ser muito complexa."
+
+#: ..\docs\reference\device_mgmt.rst:46
+msgid "In order to accommodate this complexity, the device management standards have defined many types of identifier, and these are represented in the core device model. See the Device Model Attributes reference document for more detailed information on device identifiers and attributes."
+msgstr ""
+"Para acomodar essa complexidade, os padrões de gerenciamento de dispositivos definiram muitos tipos de identificadores, que são representados no modelo de dispositivo principal. Consulte o documento de referência Atributos do Modelo de Dispositivo para obter informações mais detalhadas sobre identificadores de dispositivos e atributos."
+
+#: ..\docs\reference\device_mgmt.rst:49
+msgid "Management Agent"
+msgstr ""
+"Agente de Gerenciamento"
+
+#: ..\docs\reference\device_mgmt.rst:51
+msgid "A management agent is a collection of logic installed on a device which allows it to connect to the Internet of Things Foundation service as a managed device. The management agent understands the metadata and device management commands used in the device management messaging protocol. Without a management agent, devices cannot use the device management messaging protocol and so cannot become managed devices."
+msgstr ""
+"Um agente de gerenciamento é uma coleção de lógica instalada em um dispositivo que permite que ele se conecte ao serviço do Internet of Things Foundation como um dispositivo gerenciado. O agente de gerenciamento entende os metadados e os comandos de gerenciamento de dispositivo usados no protocolo de sistema de mensagens de gerenciamento de dispositivos. Sem um agente de gerenciamento, os dispositivos não podem usar o protocolo de sistema de mensagens de gerenciamento de dispositivos e, portanto, não podem se tornar dispositivos gerenciados."
+
+#: ..\docs\reference\device_mgmt.rst:55
+msgid "The Device Management Lifecycle"
+msgstr ""
+"O Ciclo de Vida de Gerenciamento do Dispositivo"
+
+#: ..\docs\reference\device_mgmt.rst:57
+msgid "A device and its associated device type are created in the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"O dispositivo e seu tipo de dispositivo associado são criados no Internet of Things Foundation usando o painel ou a API REST."
+
+#: ..\docs\reference\device_mgmt.rst:58
+msgid "The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device."
+msgstr ""
+"O dispositivo se conecta ao Internet of Things Foundation e usa a operação 'Gerenciar Dispositivo' para se tornar um dispositivo gerenciado."
+
+#: ..\docs\reference\device_mgmt.rst:59
+msgid "The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot."
+msgstr ""
+"Os metadados do dispositivo, conforme descrito no Modelo de Dispositivo, agora podem ser visualizados e manipulados por meio de operações de dispositivo, por exemplo, a atualização de firmware e a reinicialização do dispositivo."
+
+#: ..\docs\reference\device_mgmt.rst:60
+msgid "The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes."
+msgstr ""
+"O dispositivo pode comunicar atualizações por meio do protocolo de gerenciamento de dispositivo, como informações de local ou de diagnóstico e códigos de erro."
+
+#: ..\docs\reference\device_mgmt.rst:61
+msgid "In order to provice a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device."
+msgstr ""
+"A fim de fornecer um meio de lidar com dispositivos inativos em grandes populações de dispositivos, a solicitação da operação 'Gerenciar dispositivo' possui um parâmetro de tempo de vida opcional. Esse parâmetro de tempo de vida é o período, em segundos, no qual o dispositivo deve fazer outra solicitação 'Gerenciar dispositivo' para evitar ser marcado como inativo e tornar-se um dispositivo não gerenciado."
+
+#: ..\docs\reference\device_mgmt.rst:62
+msgid "When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API."
+msgstr ""
+"Quando um dispositivo é desatribuído, ele pode ser removido do Internet of Things Foundation usando o painel ou a API REST."
+

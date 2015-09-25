@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\manage.rst:3
+msgid "Device Management Operations - Manage"
+msgstr ""
+"デバイス管理操作 - 管理"
+
+#: ..\docs\device_mgmt\operations\manage.rst:5
+msgid "The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices."
+msgstr ""
+"デバイス管理操作には、「管理」と「管理解除」の 2 つがあります。管理対象デバイスでは、このどちらの操作も必須です。"
+
+#: ..\docs\device_mgmt\operations\manage.rst:10
+msgid "Manage Device"
+msgstr ""
+"デバイスを管理"
+
+#: ..\docs\device_mgmt\operations\manage.rst:12
+msgid "A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever it starts or restarts."
+msgstr ""
+"デバイスはこのリクエストを使用して管理対象デバイスになります。これは、デバイスが Internet of Things Foundation に接続した後に送信する最初のデバイス管理リクエストでなければなりません。通常、デバイス管理エージェントは、開始または再始動するたびにこれを送信します。"
+
+#: ..\docs\device_mgmt\operations\manage.rst:15
+#: ..\docs\device_mgmt\operations\manage.rst:76
+msgid "Topic"
+msgstr ""
+"トピック"
+
+#: ..\docs\device_mgmt\operations\manage.rst:23
+#: ..\docs\device_mgmt\operations\manage.rst:83
+msgid "Message Format"
+msgstr ""
+"メッセージの形式"
+
+#: ..\docs\device_mgmt\operations\manage.rst:25
+msgid "For the request, the ``d`` field and all of its sub-fields are optional. The ``metadata`` and ``deviceInfo`` field values replace the corresponding attributes for the sending device if they are sent."
+msgstr ""
+"リクエストの ``d`` フィールドとそのすべてのサブフィールドはオプションです。``metadata`` および ``deviceInfo`` フィールド値を送信した場合は、それらの値が送信側デバイスの対応する属性を置き換えます。"
+
+#: ..\docs\device_mgmt\operations\manage.rst:27
+msgid "The optional ``lifetime`` field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as dormant. If omitted or if set to ``0``, the managed device will not become dormant.  When set, the minimum supported setting is ``3600`` (1 hour)."
+msgstr ""
+"オプションの ``lifetime`` フィールドは、デバイスが次の「デバイスを管理」リクエストを送信しなければならない制限時間 (秒数) を指定します。これを過ぎるとデバイスは非管理対象デバイスに戻り、「休止」のマークが付けられます。これを省略するか ``0`` に設定すると、管理対象デバイスは休止状態になりません。これを設定する場合、サポートされる最小設定値は ``3600`` (1 時間) です。"
+
+#: ..\docs\device_mgmt\operations\manage.rst:29
+msgid "Optional ``supports.deviceActions`` and ``supports.firmwareActions`` indicate the capabilities of the device management agent. If ``supports.deviceActions`` is set, the agent supports Reboot and Factory Reset actions. For a device that does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If ``supports.firmwareActions`` is set, the agent supports Firmware Download and Firmware Update actions."
+msgstr ""
+"オプションの ``supports.deviceActions`` および ``supports.firmwareActions`` はデバイス管理エージェントの機能を示します。``supports.deviceActions`` を設定した場合、エージェントはリブート・アクションとファクトリー・リセット・アクションをサポートします。リブートとファクトリー・リセットが区別されないデバイスの場合は、両方のアクションに同じ動作を使用してかまいません。``supports.firmwareActions`` を設定した場合、エージェントはファームウェア・ダウンロード・アクションとファームウェア更新アクションをサポートします。"
+
+#: ..\docs\device_mgmt\operations\manage.rst:31
+#: ..\docs\device_mgmt\operations\manage.rst:85
+msgid "Request Format:"
+msgstr ""
+"リクエストの形式:"
+
+#: ..\docs\device_mgmt\operations\manage.rst:58
+#: ..\docs\device_mgmt\operations\manage.rst:93
+msgid "Response Format:"
+msgstr ""
+"レスポンスの形式:"
+
+#: ..\docs\device_mgmt\operations\manage.rst:71
+msgid "Unmanage Device"
+msgstr ""
+"デバイスを管理解除"
+
+#: ..\docs\device_mgmt\operations\manage.rst:73
+msgid "A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request."
+msgstr ""
+"デバイスは、管理される必要がなくなったときにこのリクエストを使用します。Internet of Things Foundation は新しいデバイス管理リクエストをこのデバイスに送信しなくなり、このデバイスからのすべてのデバイス管理リクエスト (「デバイスを管理」リクエストを除く) は拒否されます。"
+

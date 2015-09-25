@@ -5,6 +5,15 @@ The Foundation supports sending and recieving messages in any format,
 however we recommend the use of JSON and the IoTF event format
 specification.
 
+IoTF Maximum Payload Size
+-------------------------
+
+The maximum payload size is 4 kilobytes (kB).  If messages with payloads larger
+than this limit are sent, the client will be disconnected and the following log
+message will appear in the Diagnostic Logs if the client is a device:
+
+Closed connection from x.x.x.x. The message size is too large for this endpoint.
+
 
 ----
 

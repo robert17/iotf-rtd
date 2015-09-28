@@ -63,11 +63,11 @@ Query Parameters
  
   - Restrict results only to those events published under this event identifier
 
-- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   - Restrict results to events published after this date
 
-- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   -  Restrict results to events published before this date
 
@@ -161,11 +161,11 @@ Query Parameters
 
   - Restrict results only to those events published under this event identifier
 
-- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   - Restrict results to events published after this date
 
-- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   - Restrict results to events published before this date
 
@@ -279,11 +279,11 @@ Query Parameters
 
   - Restrict results only to those events published under this event identifier
 
-- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- start	- Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   - Restrict results to events published after this date
 
-- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT)
+- end - Number of milliseconds since January 1, 1970, 00:00:00 GMT
 
   - Restrict results to events published before this date
 

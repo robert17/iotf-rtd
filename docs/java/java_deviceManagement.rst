@@ -1,13 +1,11 @@
-===============================================================================
+======================================
 Java Client Library - Managed Device
-===============================================================================
+======================================
 
 Introduction
--------------------------------------------------------------------------------
+-------------
 
 This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../java/javaintro.html>`__. 
-
-This client library is divided into three sections, all included within the library. 
 
 This section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java and perform device management operations like firmware update, location update, and diagnostics update.
 
@@ -22,6 +20,11 @@ The `device management <../reference/device_mgmt.html>`__ feature enhances the I
 
 * **Managed Devices** are defined as devices which have a management agent installed. The management agent sends and receives device metadata and responds to device management commands from the Internet of Things Foundation Connect. 
 * **Unmanaged Devices** are any devices which do not have a device management agent. All devices begin their lifecycle as unmanaged devices, and can transition to managed devices by sending a message from a device management agent to the Internet of Things Foundation Connect. 
+
+
+---------------------------------------------------------------------------
+Connecting to the Internet of Things Foundation Device Management Service
+---------------------------------------------------------------------------
 
 Create DeviceData
 ------------------------------------------------------------------------
@@ -187,7 +190,7 @@ Once the device is connected to Internet of Things Foundation Connect, the locat
             	System.err.println("Failed to update the location");
 	}
 
-Later, any new location can be easily updated by changing the properties of the DeviceLocation object:
+Later, any new location can be updated by changing the properties of the DeviceLocation object:
 
 .. code:: java
 
@@ -198,7 +201,7 @@ Later, any new location can be easily updated by changing the properties of the 
 		System.err.println("Failed to update the location");
 	}
 
-The update() method actually informs the Internet of Things Foundation Connect about the new location.
+The update() method informs the Internet of Things Foundation Connect about the new location.
 
 Refer to the `documentation <../device_mgmt/operations/update.html>`__ for more information about the Location update.
 

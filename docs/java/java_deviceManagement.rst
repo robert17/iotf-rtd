@@ -1,5 +1,5 @@
 ===============================================================================
-Java Client Library - Managed Device (Update In Progress)
+Java Client Library - Managed Device
 ===============================================================================
 
 Introduction

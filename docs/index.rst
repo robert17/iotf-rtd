@@ -70,6 +70,7 @@ Programming Guides
 
     java/javaintro
     java/java_cli_devices
+    java/java_deviceManagement
     
     nodejs/node-js_intro
     nodejs/node-js_devices

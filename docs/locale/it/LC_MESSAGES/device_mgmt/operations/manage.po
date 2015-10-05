@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\manage.rst:3
+msgid "Device Management Operations - Manage"
+msgstr ""
+"Operazioni di gestione dispositivo - Gestisci"
+
+#: ..\docs\device_mgmt\operations\manage.rst:5
+msgid "The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices."
+msgstr ""
+"Le due azioni di gestione dispositivo sono Gestisci e Annulla gestione. Entrambe le operazioni sono obbligatorie per i dispositivi gestiti."
+
+#: ..\docs\device_mgmt\operations\manage.rst:10
+msgid "Manage Device"
+msgstr ""
+"Gestisci dispositivo"
+
+#: ..\docs\device_mgmt\operations\manage.rst:12
+msgid "A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever it starts or restarts."
+msgstr ""
+"Un dispositivo utilizza questa richiesta per diventare un dispositivo gestito. Deve essere la prima richiesta di gestione dispositivo inviata dal dispositivo dopo la connessione a Internet of Things Foundation. È usuale per un agent di gestione dispositivo inviare questa richiesta ogni volta che viene avviato o riavviato."
+
+#: ..\docs\device_mgmt\operations\manage.rst:15
+#: ..\docs\device_mgmt\operations\manage.rst:85
+msgid "Topic"
+msgstr ""
+"Argomento"
+
+#: ..\docs\device_mgmt\operations\manage.rst:23
+#: ..\docs\device_mgmt\operations\manage.rst:92
+msgid "Message Format"
+msgstr ""
+"Formato messaggio"
+
+#: ..\docs\device_mgmt\operations\manage.rst:25
+msgid "For the request, the ``d`` field and all of its sub-fields are optional. The ``metadata`` and ``deviceInfo`` field values replace the corresponding attributes for the sending device if they are sent."
+msgstr ""
+"Per la richiesta, il campo ``d`` e tutti i sottocampi, sono facoltativi. I valori campo ``metadata`` e ``deviceInfo``  sostituiscono i corrispondenti attributi per il dispositivo di invio se vengono inviati."
+
+#: ..\docs\device_mgmt\operations\manage.rst:27
+msgid "The optional ``lifetime`` field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as dormant. If omitted or if set to ``0``, the managed device will not become dormant.  When set, the minimum supported setting is ``3600`` (1 hour)."
+msgstr ""
+"Il campo facoltativo ``lifetime`` specifica l'arco di tempo in secondi entro cui il dispositivo deve inviare un'altra richiesta 'Gestisci dispositivo' per evitare di essere invertito in un dispositivo non gestito e contrassegnato come inattivo. Se omesso o se impostato su ``0``, il dispositivo gestito non diventerà inattivo.  Quando è impostato, l'impostazione minima supportata è ``3600`` (1 ora)."
+
+#: ..\docs\device_mgmt\operations\manage.rst:29
+msgid "Optional ``supports.deviceActions`` and ``supports.firmwareActions`` indicate the capabilities of the device management agent. If ``supports.deviceActions`` is set, the agent supports Reboot and Factory Reset actions. For a device that does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If ``supports.firmwareActions`` is set, the agent supports Firmware Download and Firmware Update actions."
+msgstr ""
+"Facoltativo, ``supports.deviceActions`` e ``supports.firmwareActions`` indicano le funzioni dell'agent di gestione dispositivo. Se ``supports.deviceActions`` è impostato, l'agent supporta le azioni Riavvia e Reimpostazione alle impostazioni di fabbrica. Per un dispositivo che non distingue tra il riavvio e la reimpostazione alle impostazioni di fabbrica, è accettabile utilizzare lo stesso comportamento per entrambe le azioni. Se ``supports.firmwareActions`` è impostato, l'agent supporta le azioni Scaricamento firmware e Aggiornamento firmware."
+
+#: ..\docs\device_mgmt\operations\manage.rst:31
+#: ..\docs\device_mgmt\operations\manage.rst:94
+msgid "Request Format:"
+msgstr ""
+"Formato richiesta:"
+
+#: ..\docs\device_mgmt\operations\manage.rst:58
+#: ..\docs\device_mgmt\operations\manage.rst:102
+msgid "Response Format:"
+msgstr ""
+"Formato risposta:"
+
+#: ..\docs\device_mgmt\operations\manage.rst:71
+#: ..\docs\device_mgmt\operations\manage.rst:112
+msgid "Possible Response Codes:"
+msgstr ""
+"Possibili codici di risposta:"
+
+#: ..\docs\device_mgmt\operations\manage.rst:73
+#: ..\docs\device_mgmt\operations\manage.rst:114
+msgid "200: The operation was successful."
+msgstr ""
+"200: L'operazione è stata eseguita correttamente."
+
+#: ..\docs\device_mgmt\operations\manage.rst:74
+#: ..\docs\device_mgmt\operations\manage.rst:115
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: Il messaggio di input non corrisponde al formato previsto oppure uno dei valori non è compreso nell'intervallo valido. "
+
+#: ..\docs\device_mgmt\operations\manage.rst:75
+#: ..\docs\device_mgmt\operations\manage.rst:116
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: Il nome dell'argomento non è corretto oppure il dispositivo non si trova nel database."
+
+#: ..\docs\device_mgmt\operations\manage.rst:76
+#: ..\docs\device_mgmt\operations\manage.rst:117
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: Si è verificato un conflitto durante l'aggiornamento del database del dispositivo. Per risolvere questo problema, semplificare l'operazione se necessario. "
+
+#: ..\docs\device_mgmt\operations\manage.rst:80
+msgid "Unmanage Device"
+msgstr ""
+"Annulla gestione dispositivo"
+
+#: ..\docs\device_mgmt\operations\manage.rst:82
+msgid "A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request."
+msgstr ""
+"Un dispositivo utilizza questa richiesta quando non deve essere più gestito. Internet of Things Foundation non invia più nuove richieste di gestione dispositivo a questo dispositivo e tutte le richieste di gestione dispositivo provenienti da questo dispositivo verranno respinte se diverse dalla richiesta 'Gestisci dispositivo'."
+

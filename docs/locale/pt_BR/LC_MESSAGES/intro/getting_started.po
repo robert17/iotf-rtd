@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\intro\getting_started.rst:3
+msgid "Quickstart"
+msgstr ""
+"Iniciação Rápida"
+
+#: ..\docs\intro\getting_started.rst:5
+msgid "The `Internet of Things Foundation Quickstart service <https://quickstart.internetofthings.ibmcloud.com>`__ is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or, if you don't have a device to hand, you can simulate a device using the `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ application."
+msgstr ""
+"O serviço de Iniciação Rápida do `Internet of Things Foundation <https://quickstart.internetofthings.ibmcloud.com>`__ é uma ferramenta que demonstra como é rápido e fácil conectar dispositivos com o Internet of Things Foundation. O serviço de Iniciação Rápida pode ser usado com um dispositivo ou, se você não tiver um dispositivo à mão, é possível simular um dispositivo usando o aplicativo do Sensor do `IoT <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__."
+
+#: ..\docs\intro\getting_started.rst:7
+msgid "To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality."
+msgstr ""
+"Para se conectarem ao serviço de Iniciação Rápida, os usuários devem falar MQTT. O MQTT 3.1 é o nível mínimo necessário, no entanto, a versão 3.1.1 fornece melhor funcionalidade."
+
+#: ..\docs\intro\getting_started.rst:9
+msgid "`Learn more about MQTT <../messaging/mqtt.html#/>`__"
+msgstr ""
+"`Saiba mais sobre o MQTT <../messaging/mqtt.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:10
+msgid "`How to connect a device to Quickstart <../messaging/devices.html#/>`__"
+msgstr ""
+"`Como conectar um dispositivo com a Iniciação Rápida <../messaging/devices.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:11
+msgid "`How to connect an application to Quickstart <../messaging/applications.html#/>`__"
+msgstr ""
+"`Como conectar um aplicativo com a Iniciação Rápida <../messaging/applications.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:13
+msgid "There are also several `programming guides <../libraries/programmingguides.html#/>`__ which you can use to connect to Quickstart in a language of your preference."
+msgstr ""
+"Também há vários `guias de programação <../libraries/programmingguides.html#/>`__ que podem ser usados para se conectar com a Iniciação Rápida em um idioma de sua preferência."
+

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"Einheitenmanagementoperationen - Aktualisierung"
+
+#: ..\docs\device_mgmt\operations\update.rst:8
+msgid "Update Location"
+msgstr ""
+"Position aktualisieren"
+
+#: ..\docs\device_mgmt\operations\update.rst:10
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"Bei Einheiten, die Ihre Position bestimmen können, kann festgelegt werden, dass der Einheitenmanagementserver von Internet of Things Foundation über Positionsänderungen informiert wird."
+
+#: ..\docs\device_mgmt\operations\update.rst:13
+#: ..\docs\device_mgmt\operations\update.rst:85
+msgid "Topic"
+msgstr ""
+"Thema"
+
+#: ..\docs\device_mgmt\operations\update.rst:20
+msgid "Message Format"
+msgstr ""
+"Nachrichtenformat"
+
+#: ..\docs\device_mgmt\operations\update.rst:22
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"Der Wert für \"measuredDateTime\" ist das Datum der Positionsmessung. Der Wert für \"updatedDateTime\" gibt das Datum der Aktualisierung für die Einheiteninformationen an. Aus Effizienzgründen können die Aktualisierungen der Positionsmessungen von IoTF im Stapelbetrieb ausgeführt werden; deswegen können die Aktualisierungen etwas verzögert durchgeführt werden. Die Werte für \"latitude\" und \"longitude\" müssen in Dezimalgrad gemäß WGS84 angegeben werden."
+
+#: ..\docs\device_mgmt\operations\update.rst:24
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"Wann immer die Position aktualisiert wird, werden die für Breitengrad, Längengrad, Höhe u.N. und Unbestimmtheit als einziges mehrwertiges Update betrachtet. Die Werte für Breitengrad und Längengrad sind obligatorisch und müssen bei jeder Aktualisierung angegeben werden.  Erhebungen und Unbestimmtheiten sind optional und können weggelassen werden."
+
+#: ..\docs\device_mgmt\operations\update.rst:26
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"Wenn ein optionaler Wert für eine Aktualisierung angegeben und bei einer späteren Aktualisierung weggelassen wird, wird der frühere Wert bei der späteren Aktualisierung gelöscht. Jede Aktualisierung wird als eine vollständige Einstellung mehrere Werte betrachtet."
+
+#: ..\docs\device_mgmt\operations\update.rst:28
+msgid "Location can be updated in several ways:"
+msgstr ""
+"Eine Position kann auf mehrere Arten aktualisiert werden:"
+
+#: ..\docs\device_mgmt\operations\update.rst:30
+msgid "The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"Von der Einheit wird die Position von einem GPS-Empfänger abgerufen und eine Einheitenmanagementnachricht an Internet of Things Foundation zum Aktualisieren der Position gesendet. Anhand einer Zeitmarke wird der Zeitpunkt erfasst, an dem die Position vom GPS-Empfänger abgerufen wurde. Dies bedeutet, dass die Zeitmarke gültig ist, auch wenn sich die Übertragung der Positionsnachricht verzögert hat. Falls die Zeitmarke in der gesendeten Einheitenmanagementnachricht weggelassen wurde, werden Datum und Uhrzeit des Zeitpunkts des Nachrichtenempfangs verwendet, wenn die Positionsmetadaten der Einheit aktualisiert werden."
+
+#: ..\docs\device_mgmt\operations\update.rst:32
+msgid "The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"Die REST-API von Internet of Things Foundation wird zum Einstellen der Positionsmetadaten einer statischen Einheit verwendet. Dies kann zum Zeitpunkt der Einheitenregistrierung erfolgen, bei Bedarf aber auch später. Das Einfügen einer Zeitmarke ist optional. Wenn sie weggelassen wird, werden das aktuelle Datum und die aktuelle Uhrzeit für die Einstellung der Positionsmetadaten der Einheit verwendet."
+
+#: ..\docs\device_mgmt\operations\update.rst:34
+#: ..\docs\device_mgmt\operations\update.rst:95
+msgid "Request Format:"
+msgstr ""
+"Anforderungsformat:"
+
+#: ..\docs\device_mgmt\operations\update.rst:51
+#: ..\docs\device_mgmt\operations\update.rst:108
+msgid "Response Format:"
+msgstr ""
+"Antwortformat:"
+
+#: ..\docs\device_mgmt\operations\update.rst:61
+msgid "Possible Response Codes:"
+msgstr ""
+"Mögliche Antwortcodes: "
+
+#: ..\docs\device_mgmt\operations\update.rst:63
+msgid "200: The operation was successful."
+msgstr ""
+"200: Die Operation war erfolgreich."
+
+#: ..\docs\device_mgmt\operations\update.rst:64
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: Die Eingabenachricht stimmt nicht mit dem erwarteten Format überein, oder einer der Werte liegt außerhalb des gültigen Bereichs."
+
+#: ..\docs\device_mgmt\operations\update.rst:65
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: Der Abschnittsname ist falsch, oder die Einheit ist nicht in der Datenbank vorhanden."
+
+#: ..\docs\device_mgmt\operations\update.rst:66
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: Ein Konflikt trat bei der Einheitendatenbankaktualisierung auf. Um dies zu beheben, vereinfachen Sie die Operation."
+
+#: ..\docs\device_mgmt\operations\update.rst:71
+msgid "Update Device Attributes"
+msgstr ""
+"Einheitenattribute aktualisieren"
+
+#: ..\docs\device_mgmt\operations\update.rst:73
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by this operation are location, metadata, device information and firmware."
+msgstr ""
+"Von Internet of Things Foundation kann diese Anforderung zum Aktualisieren der Werte mindestens eines Einheitenattributs an eine Einheit gesendet werden. Durch diese Operation können die Attribute für Position, Metadaten, Einheitendaten und Firmware aktualisiert werden."
+
+#: ..\docs\device_mgmt\operations\update.rst:75
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"Die Angabe unter \"value\" ist der neue Wert des Einheitenattributs. Es ist ein komplexes Feld, das dem Einheitenmodell entspricht. Als Ergebnis dieser Operation müssen nur änderbare Felder aktualisiert werden. Folgende Werte können aktualisiert werden:"
+
+#: ..\docs\device_mgmt\operations\update.rst:77
+msgid "location (see Update location section for details)"
+msgstr ""
+"Position (Details siehe Abschnitt 'Position aktualisieren')"
+
+#: ..\docs\device_mgmt\operations\update.rst:78
+msgid "metadata (Optional)"
+msgstr ""
+"Metadaten (optional)"
+
+#: ..\docs\device_mgmt\operations\update.rst:79
+msgid "deviceInfo (Optional)"
+msgstr ""
+"Einheiteninformationen (optional)"
+
+#: ..\docs\device_mgmt\operations\update.rst:80
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware (Details siehe 'Firmware-Update-Prozess')"
+
+#: ..\docs\device_mgmt\operations\update.rst:82
+msgid "If the update is successful, the \"rc\" should be set to 204. The \"message\" field can be specified if \"rc\" is not 204. If any field value could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). The \"fields\" array should contain the name of each field that could not be updated."
+msgstr ""
+"Wenn die Aktualisierung erfolgreich ist, muss für \"rc\" der Wert 204 eingestellt sein. Das Feld \"message\" kann angegeben werden, wenn \"rc\" nicht 204 ist. Wenn ein Feldwert nicht abgerufen werden konnte, muss für \"rc\" der Wert 404 (falls nicht gefunden) oder 500 (bei anderen Gründen) eingestellt sein. Die Feldgruppe \"fields\" darf nicht den Namen jedes einzelnen Felds enthalten, das nicht aktualisiert werden konnte."
+
+#: ..\docs\device_mgmt\operations\update.rst:93
+msgid "Message format"
+msgstr ""
+"Nachrichtenformat"
+

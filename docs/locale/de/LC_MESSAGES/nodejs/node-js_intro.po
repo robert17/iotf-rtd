@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\nodejs\node-js_intro.rst:3
+msgid "Node.js Client Library - Introduction"
+msgstr ""
+"Node.js-Clientbibliothek - Einführung"
+
+#: ..\docs\nodejs\node-js_intro.rst:5
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. The following libraries contain instructions and guidance on using the nodejs ibmiotf node to interact with devices and applications within your organizations."
+msgstr ""
+"Der Client node.js wird zum Vereinfachen der Interaktion mit Internet of Things Foundation verwendet. Die folgenden Bibliotheken enthalten Anweisungen und Informationen zur Verwendung des node.js-Knotens ibmiotf für die Interaktion mit Einheiten und Anwendungen in Ihren Organisationen."
+
+#: ..\docs\nodejs\node-js_intro.rst:7
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the nodejs ibmiotf module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices."
+msgstr ""
+"Diese Clientbibliothek ist in zwei Abschnitte unterteilt, die beide in der Bibliothek enthalten sind. Der Abschnitt mit den Einheiten enthält Informationen dazu, wie Einheiten Ereignisse publizieren und Befehle mit dem node.js-Modul ibmiotf verarbeiten. Der Abschnitt mit den Anwendungen enthält Informationen, wie Anwendungen das node.js-Modul ibmiotf zur Interaktion mit Einheiten verwenden können."
+
+#: ..\docs\nodejs\node-js_intro.rst:10
+msgid "Installation"
+msgstr ""
+"Installation"
+
+#: ..\docs\nodejs\node-js_intro.rst:11
+msgid "To install the latest version of the library, use the following command"
+msgstr ""
+"Zur Installation der neuesten Version der Bibliothek verwenden Sie den folgenden Befehl"
+
+#: ..\docs\nodejs\node-js_intro.rst:19
+msgid "Uninstall"
+msgstr ""
+"Deinstallation"
+
+#: ..\docs\nodejs\node-js_intro.rst:20
+msgid "To uninstall the ibmiotf, use the following command"
+msgstr ""
+"Verwenden Sie zum Deinstallieren von ibmiotf den folgenden Befehl."
+

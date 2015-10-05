@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\nodejs\node-js_intro.rst:3
+msgid "Node.js Client Library - Introduction"
+msgstr ""
+"Node.js クライアント・ライブラリー - 概要"
+
+#: ..\docs\nodejs\node-js_intro.rst:5
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. The following libraries contain instructions and guidance on using the nodejs ibmiotf node to interact with devices and applications within your organizations."
+msgstr ""
+"node.js クライアントを使用すると、Internet of Things Foundation との対話を単純化できます。以下のライブラリーには、組織内のデバイスやアプリケーションと対話するための nodejs ibmiotf ノードの使用に関する指示およびガイダンスが含まれています。"
+
+#: ..\docs\nodejs\node-js_intro.rst:7
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the nodejs ibmiotf module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices."
+msgstr ""
+"このクライアント・ライブラリーは、それぞれがライブラリー内に組み込まれた 2 つのセクションに分割されます。「デバイス」セクションには、デバイスで ibmiotf モジュール nodejs を使用してイベントのパブリッシュとコマンドの処理を行う方法についての情報が含まれ、「アプリケーション」セクションには、アプリケーションで ibmiotf モジュール nodejs を使用してデバイスと対話する方法についての情報が含まれています。"
+
+#: ..\docs\nodejs\node-js_intro.rst:10
+msgid "Installation"
+msgstr ""
+"インストール"
+
+#: ..\docs\nodejs\node-js_intro.rst:11
+msgid "To install the latest version of the library, use the following command"
+msgstr ""
+"最新バージョンのライブラリーをインストールするには、以下のコードを使用します"
+
+#: ..\docs\nodejs\node-js_intro.rst:19
+msgid "Uninstall"
+msgstr ""
+"アンインストール"
+
+#: ..\docs\nodejs\node-js_intro.rst:20
+msgid "To uninstall the ibmiotf, use the following command"
+msgstr ""
+"ibmiotf をアンインストールするには、以下のコマンドを使用します"
+

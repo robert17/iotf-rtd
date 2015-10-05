@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\nodejs\node-js_intro.rst:3
+msgid "Node.js Client Library - Introduction"
+msgstr ""
+"Node.js 클라이언트 라이브러리 - 소개"
+
+#: ..\docs\nodejs\node-js_intro.rst:5
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. The following libraries contain instructions and guidance on using the nodejs ibmiotf node to interact with devices and applications within your organizations."
+msgstr ""
+"node.js 클라이언트가 Internet of Things Foundation와의 상호작용을 단순화하는 데 사용됩니다. 다음 라이브러리에는 조직 내에서 디바이스 및 애플리케이션과 상호작용하는 데 nodejs ibmiotf 노드 사용에 대한 지시사항 및 지침이 포함되어 있습니다."
+
+#: ..\docs\nodejs\node-js_intro.rst:7
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the nodejs ibmiotf module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices."
+msgstr ""
+"이 클라이언트 라이브러리는 두 개의 절로 구성되며 두 개의 절 모두 라이브러리에 포함되어 있습니다. 디바이스 절에는 디바이스가 nodejs ibmiotf 모듈을 사용하여 이벤트를 공개하고 명령을 처리하는 방법에 대한 정보가 포함되어 있고, 애플리케이션 절에는 애플리케이션이 디바이스와 상호작용하는 데 nodejs ibmiotf 모듈을 사용할 수 있는 방법에 대한 정보가 포함되어 있습니다."
+
+#: ..\docs\nodejs\node-js_intro.rst:10
+msgid "Installation"
+msgstr ""
+"설치"
+
+#: ..\docs\nodejs\node-js_intro.rst:11
+msgid "To install the latest version of the library, use the following command"
+msgstr ""
+"최신 버전의 라이브러리를 설치하려면 다음 명령을 사용하십시오."
+
+#: ..\docs\nodejs\node-js_intro.rst:19
+msgid "Uninstall"
+msgstr ""
+"설치 제거"
+
+#: ..\docs\nodejs\node-js_intro.rst:20
+msgid "To uninstall the ibmiotf, use the following command"
+msgstr ""
+"ibmiotf를 설치 제거하려면 다음 명령을 사용하십시오."
+

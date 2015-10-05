@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\intro\getting_started.rst:3
+msgid "Quickstart"
+msgstr ""
+"Quickstart"
+
+#: ..\docs\intro\getting_started.rst:5
+msgid "The `Internet of Things Foundation Quickstart service <https://quickstart.internetofthings.ibmcloud.com>`__ is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or, if you don't have a device to hand, you can simulate a device using the `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ application."
+msgstr ""
+"`Internet of Things Foundation Quickstart サービス <https://quickstart.internetofthings.ibmcloud.com>」`__ は、デバイスを Internet of Things Foundation に素早く簡単に接続できることを示すツールです。デバイスで Quickstart サービスを使用できます。デバイスがお手元にない場合は `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ アプリケーションを使用してデバイスをシミュレートできます。"
+
+#: ..\docs\intro\getting_started.rst:7
+msgid "To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality."
+msgstr ""
+"Quickstart サービスに接続するにはユーザーが MQTT を使用する必要があります。必要な最小レベルは MQTT 3.1 ですが、バージョン 3.1.1 の機能の方が優れています。"
+
+#: ..\docs\intro\getting_started.rst:9
+msgid "`Learn more about MQTT <../messaging/mqtt.html#/>`__"
+msgstr ""
+"`MQTT の詳細について <../messaging/mqtt.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:10
+msgid "`How to connect a device to Quickstart <../messaging/devices.html#/>`__"
+msgstr ""
+"`デバイスを Quickstart に接続する方法 <../messaging/devices.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:11
+msgid "`How to connect an application to Quickstart <../messaging/applications.html#/>`__"
+msgstr ""
+"`アプリケーションを Quickstart に接続する方法 <../messaging/applications.html#/>`__"
+
+#: ..\docs\intro\getting_started.rst:13
+msgid "There are also several `programming guides <../libraries/programmingguides.html#/>`__ which you can use to connect to Quickstart in a language of your preference."
+msgstr ""
+"また、選択した言語で Quickstart に接続するために使用できる `プログラミング・ガイド <../libraries/programmingguides.html#/>`__ もあります。"
+

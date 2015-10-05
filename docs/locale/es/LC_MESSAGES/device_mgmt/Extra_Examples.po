@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:3
+msgid "Examples"
+msgstr ""
+"Ejemplos"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:5
+msgid "These examples illustrate the API and the behaviour of the device management agent."
+msgstr ""
+"Estos ejemplos ilustran la API y el comportamiento del agente de gestión de dispositivos."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:8
+msgid "Device Location"
+msgstr ""
+"Ubicación del dispositivo"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:10
+msgid "An administrator wants to update the location for a device in the Internet of Things Foundation, perhaps using information from a mobile device. A device would use an equivalent mechanismbased on MQTT."
+msgstr ""
+"Un administrador desea actualizar la ubicación de un dispositivo en Internet of Things Foundation, quizás utilizando información desde un dispositivo móvil. Un dispositivo debe utilizar un mecanismos equivalente basado en MQTT."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:12
+#: ..\docs\device_mgmt\Extra_Examples.rst:34
+msgid "Example Request:"
+msgstr ""
+"Ejemplo de solicitud:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:18
+msgid "Request Body"
+msgstr ""
+"Cuerpo de solicitud"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:30
+msgid "Device Reboot"
+msgstr ""
+"Reinicio de dispositivo"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:32
+msgid "An administrator wants to reboot a device from the device dashboard. This is a long-running asyncronous process."
+msgstr ""
+"Un administrador desea reiniciar un dispositivo desde el panel de instrumentos. Se trata de un proceso asíncrono de ejecución larga."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:40
+msgid "Request body"
+msgstr ""
+"Cuerpo de la solicitud"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:48
+#: ..\docs\device_mgmt\Extra_Examples.rst:81
+#: ..\docs\device_mgmt\Extra_Examples.rst:108
+msgid "Sequence:"
+msgstr ""
+"Secuencia:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:50
+msgid "REST API is issued to the Internet of Things device management server."
+msgstr ""
+"la API REST se envía al servidor de gestión de dispositivos de Internet of Things."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:51
+msgid "The Internet of Things Foundation published a command to reboot the device."
+msgstr ""
+"Internet of Things Foundation publica un mandato para reiniciar el dispositivo."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:52
+#: ..\docs\device_mgmt\Extra_Examples.rst:87
+msgid "REST API returns. A management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"La API REST envía una devolución. Se crea un documento de solicitud de gestión que se puede consultar para realizar un seguimiento del progreso de la solicitud."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:53
+msgid "When the device is connectd, it receives the command and reboots."
+msgstr ""
+"Cuando el dispositivo se conecta, recibe el mandato y se reinicia."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:54
+msgid "When the device restarts, it updates its device management registration."
+msgstr ""
+"Cuando el dispositivo se reinicia, actualiza su registro de gestión de dispositivos."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:57
+msgid "Firmware update"
+msgstr ""
+"Actualización de firmware"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:59
+msgid "An administrator wants to initiate a firmware update on a device from the device dashboard. This is a long-running, asynchronous process. There are two separate steps here, downloading and updating."
+msgstr ""
+"Un administrador desea iniciar una actualización de firmware en un dispositivo en el panel de instrumentos. Se trata de un proceso asíncrono de ejecución larga. Aquí hay dos pasos separados: descarga y actualización."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:61
+msgid "Request 1:"
+msgstr ""
+"Solicitud 1:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:67
+#: ..\docs\device_mgmt\Extra_Examples.rst:99
+msgid "Request Body:"
+msgstr ""
+"Cuerpo de la solicitud:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:83
+#: ..\docs\device_mgmt\Extra_Examples.rst:110
+msgid "REST API is issued to the Internet of Things Foundation."
+msgstr ""
+"la API REST se envía a Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:84
+msgid "The Internet of Things Foundation published an update to the mgmt.firmware section of the device's metadata containing the package URL. An observation request is scheduled for the status of the firmware update."
+msgstr ""
+"Internet of Things Foundation publica una actualización de la sección mgmt.firmware de los metadatos del dispositivo que contiene el URL del paquete. Se planifica una solicitud de observación del estado de actualización del firmware."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:85
+msgid "A command is published to the device to download the firmware package."
+msgstr ""
+"Se publica un mandato en el dispositivo para descargar el paquete de firmware."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:86
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata, replacing the existing data."
+msgstr ""
+"Internet of Things Foundation actualiza la sección de firmware de los metadatos del dispositivo sustituyendo los datos existentes."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:88
+msgid "When the device is connected, it receives the update to the mgmt.firmware section of its metadata containing the package URL, the observation request and the command."
+msgstr ""
+"Cuando se conecta el dispositivo, recibe la actualización en la sección mgmt.firmware de sus metadatos que contiene el URL del paquete, la solicitud de observación y el mandato."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:89
+msgid "The device sets its firmware status to 1 (Downloading) and initiates the download."
+msgstr ""
+"El dispositivo establece su estado de firmware en 1 (Descargar) e inicia la descarga."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:90
+msgid "When the firmware is downloaded, the device changes the firmware status to 2 (Downloaded) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"Cuando se descarga el firmware, el dispositivo cambia su estado de firmware a 2 (Descargado) y envía una notificación a Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:91
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata."
+msgstr ""
+"Internet of Things Foundation actualiza la sección de firmware de los metadatos del dispositivo."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:93
+msgid "Request 2:"
+msgstr ""
+"Solicitud 2:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:111
+msgid "The command is published to update the device firmware to the downloaded package."
+msgstr ""
+"El mandato se publica para actualizar el firmware del dispositivo en el paquete descargado."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:112
+msgid "The firmware section of the device's metadata is updated."
+msgstr ""
+"Se actualiza la sección de firmware de los metadatos del dispositivo."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:113
+msgid "The REST API returns and a management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"La API REST envía una devolución y se crea un documento de solicitud de gestión que se puede consultar para realizar un seguimiento del progreso de la solicitud."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:114
+msgid "When the device is connected, it receives the command and begins the firmware update."
+msgstr ""
+"Cuando se conecta el dispositivo, recibe el mandato y comienza la actualización de firmware."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:115
+msgid "Assuming the firmware update was successful, the device changes the firmware update status to 0 (Success) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"Suponiendo que la actualización de firmware sea correcta, el dispositivo cambia el estado de actualización de firmware a 0 (Satisfactorio) y envía una notificación a Internet of Things Foundation."
+

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\c_sharp_devices.rst:3
+msgid "C# Client Library - Devices"
+msgstr ""
+"C# クライアント・ライブラリー -デバイス"
+
+#: ..\docs\libraries\c_sharp_devices.rst:6
+msgid "Introduction"
+msgstr ""
+"概要"
+
+#: ..\docs\libraries\c_sharp_devices.rst:7
+msgid "This client library describes how to use devices with the C# ibmiotf module. For help with getting started with this module, see `C Sharp Client Library - Introduction <../libraries/c_sharp_introduction.html#/>`_\\."
+msgstr ""
+"このクライアント・ライブラリーでは、C# ibmiotf モジュールでデバイスを使用する方法について説明します。このモジュールを始めるにあたって、ヘルプとなる `C# クライアント・ライブラリー - 概要 <../libraries/c_sharp_introduction.html#/>`__ を参照してください。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:9
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the C# ibmiotf module. The Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"このクライアント・ライブラリーは、それぞれがライブラリー内に組み込まれた 2 つのセクションに分割されます。このセクションには、デバイスで C# ibmiotf モジュールを使用してイベントのパブリッシュとコマンドの処理を行う方法についての情報が含まれています。「アプリケーション」セクションには、アプリケーションで ibmiotf モジュールを使用してデバイスと対話する方法についての情報が含まれています。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:12
+msgid "Constructor"
+msgstr ""
+"コンストラクター"
+
+#: ..\docs\libraries\c_sharp_devices.rst:13
+msgid "The constructor builds the client instance, and accepts arguments containing the following definitions:"
+msgstr ""
+"コンストラクターはクライアント・インスタンスを作成するものであり、以下の定義を含む引数を受け入れます。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:15
+msgid "orgId - Your organization ID."
+msgstr ""
+"orgId - 組織 ID。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:16
+msgid "deviceType - The type of your device."
+msgstr ""
+"deviceType - デバイスのタイプ。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:17
+msgid "deviceId - The ID of your device."
+msgstr ""
+"deviceId - デバイスの ID。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:18
+msgid "auth-method - Method of authentication (the only value currently supported is “token”)."
+msgstr ""
+"auth-method - 認証方式 (現在サポートされている値は「token」のみ)。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:19
+msgid "auth-token - API key token (required if auth-method is “token”)."
+msgstr ""
+"auth-token - API キー・トークン (auth-method が「token」である場合に必須)。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:22
+msgid "If deviceId and deviceType are provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The argument lists creates definitions which are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"deviceId および deviceType が指定されている場合、クライアントは Internet of Things Foundation Quickstart に接続し、デフォルトで未登録デバイスになります。引数リストは Internet of Things Foundation モジュールと対話するために使用される定義を作成します。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:36
+msgid "Publishing events"
+msgstr ""
+"イベントのパブリッシング"
+
+#: ..\docs\libraries\c_sharp_devices.rst:37
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"イベントとは、デバイスが Internet of Things Foundation にデータをパブリッシュする際に使用するメカニズムです。デバイスはイベントのコンテンツを制御し、送信するイベントごとに名前を割り当てます。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:39
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine which device sent the event. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"IoT Foundation がイベントを受け取ると、イベントが受信された接続の資格情報を使用して、イベントの送信元デバイスが判別されます。このアーキテクチャーにより、デバイスは別のデバイスの偽名を使用することが不可能になります。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:41
+msgid "Events can be published at any of the three `quality of service (QoS) levels <../mqtt.html#/qoslevels>`_, defined by the MQTT protocol. By default events will be published as QoS level 0."
+msgstr ""
+"イベントは、MQTT プロトコルによって定義された 3 つの `サービス品質 (QoS) レベル <../mqtt.html#/qoslevels>` のいずれでもパブリッシュできます。デフォルトで、イベントは QoS レベル 0 としてパブリッシュされます。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:44
+msgid "Publish event using default quality of service"
+msgstr ""
+"デフォルトのサービスの品質を使用してイベントをパブリッシュ"
+
+#: ..\docs\libraries\c_sharp_devices.rst:53
+msgid "Publish event using user-defined quality of service"
+msgstr ""
+"ユーザー定義のサービスの品質を使用してイベントをパブリッシュ"
+
+#: ..\docs\libraries\c_sharp_devices.rst:54
+msgid "Events can be published at higher MQTT quality of service levels, but events published at QoS levels above 0 may be slower then QoS 0 events, because of the extra confirmation of receipt used in QoS levels above 0."
+msgstr ""
+"イベントは、より高いレベルの MQTT のサービス品質でパブリッシュできますが、0 を超える QoS レベルでは追加の受信確認があるため、0 を超える QoS レベルでパブリッシュされたイベントは QoS レベル 0 のイベントよりも低速になる可能性があります。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:63
+msgid "Handling commands"
+msgstr ""
+"コマンドの処理"
+
+#: ..\docs\libraries\c_sharp_devices.rst:64
+msgid "When the device client connects, it automatically subscribes to any commands for this device. To process specific commands, you must register a command callback method."
+msgstr ""
+"デバイス・クライアントは、接続時に自動的にこのデバイスに対するコマンドをサブスクライブします。特定のコマンドを処理するには、コマンド・コールバック・メソッドを登録する必要があります。"
+

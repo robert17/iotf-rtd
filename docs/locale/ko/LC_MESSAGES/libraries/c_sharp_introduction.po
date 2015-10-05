@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:3
+msgid "C# Client Library - Introduction"
+msgstr ""
+"C# 클라이언트 라이브러리 - 소개"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:5
+msgid "Use the C# module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ and to automate commands using C# 5.0 or 4.0. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instruction and guidance on using the C# module to interact with devices and applications within your organizations."
+msgstr ""
+"`IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_과 상호작용하고 C# 5.0 또는 4.0을 사용하여 명령을 자동화하기 위해 C# 모듈을 사용하십시오. 이 모듈은 IBM Internet of Things Foundation과의 상호작용을 단순화하는 데 사용할 수 있습니다. 다음 라이브러리에는 사용자의 조직 내에서 디바이스 및 애플리케이션과 상호작용하기 위해 C# 모듈 사용에 대한 지시사항 및 지침이 포함되어 있습니다."
+
+#: ..\docs\libraries\c_sharp_introduction.rst:7
+msgid "`C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+msgstr ""
+"`C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:8
+msgid "`C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+msgstr ""
+"`C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:10
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the C# ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"이 클라이언트 라이브러리는 두 개의 절로 구성되며 두 개의 절 모두 라이브러리에 포함되어 있습니다. 디바이스 절에는 디바이스가 C# ibmiotf 모듈을 사용하여 이벤트를 공개하고 명령을 처리하는 방법에 대한 정보가 포함되어 있고, 애플리케이션 절에는 애플리케이션이 ibmiotf 모듈을 사용하여 디바이스와 상호작용하는 방법에 대한 정보가 포함되어 있습니다."
+
+#: ..\docs\libraries\c_sharp_introduction.rst:13
+msgid "Dependencies"
+msgstr ""
+"종속 항목"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:14
+msgid "`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_에서는 애플리케이션이 MQTT 브로커에 연결할 수 있게 하는 클라이언트 클래스를 제공합니다."
+
+#: ..\docs\libraries\c_sharp_introduction.rst:16
+msgid "`Apache Commons Logging <https://logging.apache.org/log4net/>`_ library for logging various information"
+msgstr ""
+"여러 정보를 로그하기 위한 `Apache 공통 로깅 <https://logging.apache.org/log4net/>`_ 라이브러리"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:19
+msgid "Documentation"
+msgstr ""
+"문서"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:20
+msgid "`Device Client <../libraries/c_sharp_devices.html#/>`_"
+msgstr ""
+"`디바이스 클라이언트 <../libraries/c_sharp_devices.html#/>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:22
+msgid "`Application Client <../libraries/c_sharp_applications.html#/>`_"
+msgstr ""
+"`애플리케이션 클라이언트 <../libraries/c_sharp_applications.html#/>`_"
+

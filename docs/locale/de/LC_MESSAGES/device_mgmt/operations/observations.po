@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\observations.rst:3
+msgid "Device Management Operations - Observations"
+msgstr ""
+"Einheitenmanagementoperationen - Beobachtungen"
+
+#: ..\docs\device_mgmt\operations\observations.rst:5
+msgid "Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`."
+msgstr ""
+"Von einer Einheit müssen die Operationen zum Beobachten, Benachrichtigen und Abbrechen implementiert werden, damit :ref:`firmware-actions-update` unterstützt wird."
+
+#: ..\docs\device_mgmt\operations\observations.rst:10
+msgid "Observe Attribute Changes"
+msgstr ""
+"Attributänderungen beobachten"
+
+#: ..\docs\device_mgmt\operations\observations.rst:12
+msgid "The Internet of Things Foundation can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request (\"notify\" message) to the Internet of Things Foundation whenever the observed attributes value changes."
+msgstr ""
+"Von Internet of Things Foundation kann diese Anforderung zum Beobachten der Änderungen an mindestens einem Einheitenattribut an eine Einheit gesendet werden. Wenn diese Anforderung von der Einheit empfangen wird, muss von ihr eine Benachrichtigungsanforderung (die Nachricht \"notify\") an Internet of Things Foundation gesendet werden, sobald sich die beobachteten Attributwerte ändern."
+
+#: ..\docs\device_mgmt\operations\observations.rst:15
+#: ..\docs\device_mgmt\operations\observations.rst:70
+#: ..\docs\device_mgmt\operations\observations.rst:117
+msgid "Topic"
+msgstr ""
+"Thema"
+
+#: ..\docs\device_mgmt\operations\observations.rst:22
+#: ..\docs\device_mgmt\operations\observations.rst:78
+#: ..\docs\device_mgmt\operations\observations.rst:124
+msgid "Message format"
+msgstr ""
+"Nachrichtenformat"
+
+#: ..\docs\device_mgmt\operations\observations.rst:24
+msgid "The \"fields\" field is an array of the device attribute names from the device model. For example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\". If a complex field, such as \"mgmt.firmware\" is specified, it is expected that its underlying fields are updated at the same time, such that only a single notify message is generated."
+msgstr ""
+"Das Feld \"fields\" ist eine Feldgruppe aus den Einheitenattributnamen des Einheitenmodells. Gültige Werte sind zum Beispiel \"location\", \"mgmt.firmware\" und\"mgmt.firmware.state\". Wenn ein komplexes Feld wie \"mgmt.firmware\" angegeben wird, wird erwartet, dass die zugrunde liegenden Felder gleichzeitig aktualisiert werden, sodass nur eine einzige Hinweisnachricht generiert wird."
+
+#: ..\docs\device_mgmt\operations\observations.rst:26
+msgid "The \"message\" field used in the response can be specified if \"rc\" is not 200. If any field value which was to be observed could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). When values for fields to be observed cannot be found, \"fields\" should contain an array of elements with \"field\" set to the name of each field that could not be read, \"value\" fields should be omitted. For the response code to be set to 200, both \"field\" and \"value\" must be specified, \"value\" is the current value of an attribute identified by \"field\" content."
+msgstr ""
+"Das Feld \"message\", das in der Antwort verwendet wird, kann angegeben werden, wenn \"rc\" nicht 200 ist. Wenn ein Feldwert, der beobachtet werden soll, nicht abgerufen werden konnte, muss für \"rc\" der Wert 404 (falls nicht gefunden) oder 500 (bei anderen Gründen) eingestellt werden. Wenn Werte für Felder, die beobachtet werden sollen, nicht gefunden werden können, muss \"fields\" eine Feldgruppe aus Elementen enthalten, wobei für \"field\" der Name jedes einzelnen Felds eingestellt ist, das nicht gelesen werden konnte; Felder des Typs \"value\" müssen ausgeschlossen sein. Damit der Antwortcode auf 200 gesetzt ist, müssen sowohl \"field\" als auch \"value\" angegeben sein; \"value\" enthält den aktuellen Wert eines Attributs, das von \"field\" angegeben wird."
+
+#: ..\docs\device_mgmt\operations\observations.rst:28
+#: ..\docs\device_mgmt\operations\observations.rst:80
+#: ..\docs\device_mgmt\operations\observations.rst:126
+msgid "Request Format:"
+msgstr ""
+"Anforderungsformat:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:41
+#: ..\docs\device_mgmt\operations\observations.rst:93
+#: ..\docs\device_mgmt\operations\observations.rst:138
+msgid "Response Format:"
+msgstr ""
+"Antwortformat:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:63
+msgid "Cancel Attribute Observation"
+msgstr ""
+"Attributbeobachtung abbrechen"
+
+#: ..\docs\device_mgmt\operations\observations.rst:65
+msgid "The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The \"fields\" is an array of the device attribute names from the device model, for example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\"."
+msgstr ""
+"Von Internet of Things Foundation kann diese Anforderung zum Abbrechen der aktuellen Beobachtung von mindestens einem Einheitenattribut an eine Einheit gesendet werden. Das Feld \"fields\" ist eine Feldgruppe aus den Einheitenattributnamen des Einheitenmodells; gültige Werte sind zum Beispiel \"location\", \"mgmt.firmware\" und \"mgmt.firmware.state\"."
+
+#: ..\docs\device_mgmt\operations\observations.rst:67
+msgid "The \"message\" field must be specified if \"rc\" is not 200."
+msgstr ""
+"Das Feld \"message\" muss angegeben werden, wenn \"rc\" nicht 200 ist."
+
+#: ..\docs\device_mgmt\operations\observations.rst:107
+msgid "Notify Attribute Changes"
+msgstr ""
+"Über Attributänderungen benachrichtigen"
+
+#: ..\docs\device_mgmt\operations\observations.rst:109
+msgid "The Internet of Things Foundation can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value."
+msgstr ""
+"Von Internet of Things Foundation kann eine Beobachtungsanforderung für ein bestimmtes Attribut oder eine Gruppe von Werten ausgeführt werden. Bei einer Änderung eines Attributwerts oder mehrerer Attributwerte muss von der Einheit eine Benachrichtigung gesendet werden, in der die neuesten Werte enthalten sind."
+
+#: ..\docs\device_mgmt\operations\observations.rst:111
+msgid "The \"field_name\" value is the name of the attribute that has changed, the \"field_value\" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent."
+msgstr ""
+"Der Wert für \"field_name\" ist der Name des Attributs, das sich geändert hat, der Wert für \"field_value\" ist der aktuelle Wert des Attributs. Das Attribut kann ein komplexes Feld sein, falls mehrere Werte in einem komplexen Feld als Ergebnis einer einzigen Operation aktualisiert werden; es muss nur eine einzelne Benachrichtigung gesendet werden."
+
+#: ..\docs\device_mgmt\operations\observations.rst:113
+msgid "If notify request is processed successfully, \"rc\" should be set to 200. If the request is not correct, \"rc\" should be set to 400. If the field specified in the notify request is not being observed, \"rc\" should be set to 404."
+msgstr ""
+"Wenn die Benachrichtigungsanforderung erfolgreich verarbeitet wird, muss für \"rc\" der Wert 200 eingestellt sein. Wenn die Anforderung nicht korrekt ist, muss für \"rc\" der Wert 400 eingestellt sein. Wenn das in der Benachrichtigungsanforderung angegebene Feld nicht beobachtet wird, muss für \"rc\" der Wert 404 eingestellt sein."
+
+#: ..\docs\device_mgmt\operations\observations.rst:148
+msgid "Possible Response Codes:"
+msgstr ""
+"Mögliche Antwortcodes: "
+
+#: ..\docs\device_mgmt\operations\observations.rst:150
+msgid "200: The operation was successful."
+msgstr ""
+"200: Die Operation war erfolgreich."
+
+#: ..\docs\device_mgmt\operations\observations.rst:151
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: Die Eingabenachricht stimmt nicht mit dem erwarteten Format überein, oder einer der Werte liegt außerhalb des gültigen Bereichs."
+
+#: ..\docs\device_mgmt\operations\observations.rst:152
+msgid "404: The topic name is incorrect, the device is not in the database, or there is no observation for the field reported."
+msgstr ""
+"404: Der Abschnittsname ist falsch, die Einheit ist nicht in der Datenbank vorhanden, oder es ist keine Überwachung für das gemeldete Feld vorhanden."
+
+#: ..\docs\device_mgmt\operations\observations.rst:153
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: Ein Konflikt trat bei der Einheitendatenbankaktualisierung auf. Um dies zu beheben, vereinfachen Sie die Operation."
+
+#: ..\docs\device_mgmt\operations\observations.rst:154
+msgid "500: An internal error occurred, contact IBM Support."
+msgstr ""
+"500: Ein interner Fehler trat auf; wenden Sie sich an den IBM Support."
+

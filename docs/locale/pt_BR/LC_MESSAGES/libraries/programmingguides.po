@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\programmingguides.rst:3
+msgid "Programming Guides"
+msgstr ""
+"Guias de Programação"
+
+#: ..\docs\libraries\programmingguides.rst:5
+msgid "There are several client libraries availabe for use with the Internet of Things Foundation. These are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible."
+msgstr ""
+"Há várias bibliotecas do cliente disponíveis para uso com o Internet of Things Foundation. Elas são designadas para permitir que os usuários interajam com seus dispositivos e aplicativos usando seu idioma preferencial e para simplificar essa interação o máximo possível."
+
+#: ..\docs\libraries\programmingguides.rst:11
+msgid "Python"
+msgstr ""
+"Python"
+
+#: ..\docs\libraries\programmingguides.rst:13
+msgid "`Introduction <../libraries/python.html#/>`__"
+msgstr ""
+"Introdução <../libraries/python.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:14
+msgid "`Documentation for device developers <../libraries/python_cli_for_devices.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de dispositivos <../libraries/python_cli_for_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:15
+msgid "`Documentation application developers <../libraries/python_cli_for_apps.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de aplicativos <../libraries/python_cli_for_apps.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:16
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-python>`_"
+msgstr ""
+"`Consulte o código em GitHub <https://github.com/ibm-messaging/iot-python>`_"
+
+#: ..\docs\libraries\programmingguides.rst:19
+msgid "Embedded C"
+msgstr ""
+"C Integrado"
+
+#: ..\docs\libraries\programmingguides.rst:21
+msgid "`Documentation <../libraries/embedded_c.html#/>`__"
+msgstr ""
+"`Documentação <../libraries/embedded_c.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:22
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+msgstr ""
+"`Consulte o código em GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+
+#: ..\docs\libraries\programmingguides.rst:25
+msgid "Java"
+msgstr ""
+"Java"
+
+#: ..\docs\libraries\programmingguides.rst:27
+msgid "`Introduction <../java/javaintro.html#/>`__"
+msgstr ""
+"`Introdução <../java/javaintro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:28
+msgid "`Documentation for device developers <../java/java_cli_devices.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de dispositivos <../java/java_cli_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:29
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-java>`_"
+msgstr ""
+"`Consulte o código em GitHub <https://github.com/ibm-messaging/iot-java>`_"
+
+#: ..\docs\libraries\programmingguides.rst:32
+msgid "Node.js"
+msgstr ""
+"Node.js"
+
+#: ..\docs\libraries\programmingguides.rst:34
+msgid "`Introduction <../nodejs/node-js_intro.html#/>`__"
+msgstr ""
+"`Introdução <../nodejs/node-js_intro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:35
+msgid "`Documentation for device developers <../nodejs/node-js_devices.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de dispositivos <../nodejs/node-js_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:36
+msgid "`Documentation for application developers <../nodejs/node-js_applications.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de aplicativos <../nodejs/node-js_applications.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:37
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+msgstr ""
+"`Consulte o código em GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+
+#: ..\docs\libraries\programmingguides.rst:41
+msgid "C#"
+msgstr ""
+"C#"
+
+#: ..\docs\libraries\programmingguides.rst:43
+msgid "`Introduction <../libraries/c_sharp_introduction.html#/>`__"
+msgstr ""
+"`Introdução <../libraries/c_sharp_introduction.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:44
+msgid "`Documentation for device developers <../libraries/c_sharp_devices.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de dispositivos <../libraries/c_sharp_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:45
+msgid "`Documentation for application developers <../libraries/c_sharp_applications.html#/>`__"
+msgstr ""
+"`Documentação para desenvolvedores de aplicativos <../libraries/c_sharp_applications.html#/>`__"
+

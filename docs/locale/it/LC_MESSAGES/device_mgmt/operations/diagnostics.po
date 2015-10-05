@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:3
+msgid "Device Management Operations - Diagnostics"
+msgstr ""
+"Operazioni di gestione dispositivo - Diagnostica"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:5
+msgid "The device diagnostics operations are intended to provide information on device errors, and does not provide diagnostic information relating to the devices connection to the Internet of Things Foundation."
+msgstr ""
+"Le operazioni di diagnostica del dispositivo forniscono informazioni sugli errori di dispositivo e non forniscono informazioni diagnostiche relative alla connessione dispositivo a Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:10
+msgid "Add Error Code"
+msgstr ""
+"Aggiungi codice errore"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:12
+msgid "Devices can choose to notify the Internet of Things Foundation device management server about changes in their error status."
+msgstr ""
+"I dispositivi possono scegliere di notificare al server di gestione dispositivo di Internet of Things Foundation le modifiche nello stato di errore."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:15
+#: ..\docs\device_mgmt\operations\diagnostics.rst:64
+#: ..\docs\device_mgmt\operations\diagnostics.rst:108
+#: ..\docs\device_mgmt\operations\diagnostics.rst:163
+msgid "Topic"
+msgstr ""
+"Argomento"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:22
+#: ..\docs\device_mgmt\operations\diagnostics.rst:71
+#: ..\docs\device_mgmt\operations\diagnostics.rst:115
+msgid "Message Format"
+msgstr ""
+"Formato messaggio"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:24
+msgid "The \"errorCode\" is a current device error code that needs to be added to the Internet of Things Foundation."
+msgstr ""
+"\"errorCode\" è un codice di errore dispositivo corrente che deve essere aggiunto a Internet of Things Foundation."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:26
+#: ..\docs\device_mgmt\operations\diagnostics.rst:73
+#: ..\docs\device_mgmt\operations\diagnostics.rst:122
+#: ..\docs\device_mgmt\operations\diagnostics.rst:172
+msgid "Request Format:"
+msgstr ""
+"Formato richiesta:"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:38
+#: ..\docs\device_mgmt\operations\diagnostics.rst:81
+#: ..\docs\device_mgmt\operations\diagnostics.rst:137
+#: ..\docs\device_mgmt\operations\diagnostics.rst:180
+msgid "Response Format:"
+msgstr ""
+"Formato risposta:"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:50
+#: ..\docs\device_mgmt\operations\diagnostics.rst:94
+#: ..\docs\device_mgmt\operations\diagnostics.rst:149
+#: ..\docs\device_mgmt\operations\diagnostics.rst:190
+msgid "Possible Response Codes:"
+msgstr ""
+"Possibili codici di risposta:"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:52
+#: ..\docs\device_mgmt\operations\diagnostics.rst:96
+#: ..\docs\device_mgmt\operations\diagnostics.rst:151
+#: ..\docs\device_mgmt\operations\diagnostics.rst:192
+msgid "200: The operation was successful."
+msgstr ""
+"200: L'operazione è stata eseguita correttamente."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:53
+#: ..\docs\device_mgmt\operations\diagnostics.rst:97
+#: ..\docs\device_mgmt\operations\diagnostics.rst:152
+#: ..\docs\device_mgmt\operations\diagnostics.rst:193
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: Il messaggio di input non corrisponde al formato previsto oppure uno dei valori non è compreso nell'intervallo valido. "
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:54
+#: ..\docs\device_mgmt\operations\diagnostics.rst:98
+#: ..\docs\device_mgmt\operations\diagnostics.rst:153
+#: ..\docs\device_mgmt\operations\diagnostics.rst:194
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: Il nome dell'argomento non è corretto oppure il dispositivo non si trova nel database."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:55
+#: ..\docs\device_mgmt\operations\diagnostics.rst:99
+#: ..\docs\device_mgmt\operations\diagnostics.rst:154
+#: ..\docs\device_mgmt\operations\diagnostics.rst:195
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: Si è verificato un conflitto durante l'aggiornamento del database del dispositivo. Per risolvere questo problema, semplificare l'operazione se necessario. "
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:59
+msgid "Clear Error Codes"
+msgstr ""
+"Cancella codici di errore"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:61
+msgid "Devices can request that the Internet of Things Foundation clear all of their error codes."
+msgstr ""
+"I dispositivi possono richiedere che Internet of Things Foundation cancelli tutti i codici di errore."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:103
+msgid "Add Log"
+msgstr ""
+"Aggiungi log"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:105
+msgid "Devices can choose to notify IoTF device management support about changes a new log entry. Log entry includes a log messages, its timestamp and severity, as well as an optional base64-encoded binary diagnostic data."
+msgstr ""
+"I dispositivi possono scegliere di notificare al supporto di gestione dispositivo IoTF le modifiche a una nuova voce di log. La voce log include messaggi di log, la sua registrazione data/ora e gravità, nonché dati di diagnostica binari codificati base64 facoltativi."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:117
+msgid "\"message\" is a diagnostic message that needs to be added to IoTF. \"timestamp\" is a date and time of the log entry in ISO8601 format. \"data\" is an optional base64-encoded diagnostic data. \"severity\" is a severity of the message (0: informational, 1: warning, 2: error)."
+msgstr ""
+"\"message\" è un messaggio diagnostico che deve essere aggiunto a IoTF. \"timestamp\" è la data/ora della voce log nel formato ISO8601. \"data\" corrisponde a dati di diagnostica codificati base64 facoltativi. \"severity\" è la severità del messaggio (0: informativo, 1: avvertenza, 2: errore)."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:158
+msgid "Clear Logs"
+msgstr ""
+"Cancella log"
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:160
+msgid "Devices can request that the Internet of Things Foundation clear all of their log entries."
+msgstr ""
+"I dispositivi possono richiedere che Internet of Things Foundation cancelli tutte le voci di log."
+
+#: ..\docs\device_mgmt\operations\diagnostics.rst:170
+msgid "Message format"
+msgstr ""
+"Formato messaggio"
+

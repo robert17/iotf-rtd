@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"デバイス管理操作 - 更新"
+
+#: ..\docs\device_mgmt\operations\update.rst:8
+msgid "Update Location"
+msgstr ""
+"ロケーションの更新"
+
+#: ..\docs\device_mgmt\operations\update.rst:10
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"ロケーションを判別できるデバイスは、ロケーションの変更を Internet of Things Foundation デバイス管理サーバーに通知することを選択できます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:13
+#: ..\docs\device_mgmt\operations\update.rst:85
+msgid "Topic"
+msgstr ""
+"トピック"
+
+#: ..\docs\device_mgmt\operations\update.rst:20
+msgid "Message Format"
+msgstr ""
+"メッセージの形式"
+
+#: ..\docs\device_mgmt\operations\update.rst:22
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"\"measuredDateTime\" はロケーション計測の日付です。\"updatedDateTime\" はデバイス情報の更新の日付です。効率化のために IoTF はロケーション情報の更新をバッチ処理することがあるため、更新がわずかに遅れる可能性があります。\"latitude\" (緯度) と \"longitude\" (経度) は、WGS84 を使用して 10 進表記の度数で指定する必要があります。"
+
+#: ..\docs\device_mgmt\operations\update.rst:24
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"ロケーションが更新される際は必ず、緯度、経度、高度、および不確実性の値が、複数値から成る 1 つの更新と見なされます。緯度と経度は必須であり、すべての更新においてこの両方は指定する必要があります。高度と不確実性はオプションであり、省略可能です。"
+
+#: ..\docs\device_mgmt\operations\update.rst:26
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"ある更新でオプションの値を提供し、その後の更新で省略した場合、最初の値はその後の更新によって削除されます。それぞれの更新は完全にそろった複数値セットと見なされます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:28
+msgid "Location can be updated in several ways:"
+msgstr ""
+"ロケーションは以下のように複数の方法で更新できます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:30
+msgid "The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"デバイスが GPS レシーバーから自分のロケーションを取得して、ロケーションを更新するためのデバイス管理メッセージを Internet of Things Foundation に送ります。タイム・スタンプは、GPS レシーバーからロケーションが取得された時間をキャプチャーします。つまり、ロケーション・メッセージの伝送が遅れた場合でもタイム・スタンプは有効です。送信されたデバイス管理メッセージ内でタイム・スタンプが省略されている場合は、デバイスのロケーション・メタデータを更新するときに、メッセージを受信したときの現在日時が使用されます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:32
+msgid "The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"Internet of Things Foundation REST API を使用して、静的デバイスのロケーション・メタデータを設定します。デバイスの登録時、または必要に応じて後の時点でこれを行うことができます。タイム・スタンプを含めるかどうかはオプションです。省略した場合、現在の日時がデバイスのロケーション・メタデータとして設定されます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:34
+#: ..\docs\device_mgmt\operations\update.rst:95
+msgid "Request Format:"
+msgstr ""
+"リクエストの形式:"
+
+#: ..\docs\device_mgmt\operations\update.rst:51
+#: ..\docs\device_mgmt\operations\update.rst:108
+msgid "Response Format:"
+msgstr ""
+"レスポンスの形式:"
+
+#: ..\docs\device_mgmt\operations\update.rst:61
+msgid "Possible Response Codes:"
+msgstr ""
+"考えられる応答コード:"
+
+#: ..\docs\device_mgmt\operations\update.rst:63
+msgid "200: The operation was successful."
+msgstr ""
+"200: 操作は正常に終了しました。"
+
+#: ..\docs\device_mgmt\operations\update.rst:64
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: 入力メッセージが予期される形式に一致しないか、値の 1 つが有効範囲外です。"
+
+#: ..\docs\device_mgmt\operations\update.rst:65
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: トピック名が正しくないか、デバイスがデータベースにありません。"
+
+#: ..\docs\device_mgmt\operations\update.rst:66
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: デバイスのデータベース更新中に競合が発生しました。これを解決するには、操作を簡略化することが必要です。"
+
+#: ..\docs\device_mgmt\operations\update.rst:71
+msgid "Update Device Attributes"
+msgstr ""
+"デバイス属性の更新"
+
+#: ..\docs\device_mgmt\operations\update.rst:73
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by this operation are location, metadata, device information and firmware."
+msgstr ""
+"Internet of Things Foundation は、1 つ以上のデバイス属性の値を更新するためにこのリクエストをデバイスに送信できます。この操作によって更新できる属性は、ロケーション、メタデータ、デバイス情報およびファームウェアです。"
+
+#: ..\docs\device_mgmt\operations\update.rst:75
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"\"value\" はデバイス属性の新しい値です。これはデバイス・モデルに一致する複合フィールドです。この操作の結果として書き込み可能なフィールドだけを更新する必要があります。以下の値を更新できます。"
+
+#: ..\docs\device_mgmt\operations\update.rst:77
+msgid "location (see Update location section for details)"
+msgstr ""
+"location (詳しくは『ロケーションの更新』セクションを参照)"
+
+#: ..\docs\device_mgmt\operations\update.rst:78
+msgid "metadata (Optional)"
+msgstr ""
+"metadata (オプション)"
+
+#: ..\docs\device_mgmt\operations\update.rst:79
+msgid "deviceInfo (Optional)"
+msgstr ""
+"deviceInfo (オプション)"
+
+#: ..\docs\device_mgmt\operations\update.rst:80
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware (詳しくはファームウェア更新プロセスを参照)"
+
+#: ..\docs\device_mgmt\operations\update.rst:82
+msgid "If the update is successful, the \"rc\" should be set to 204. The \"message\" field can be specified if \"rc\" is not 204. If any field value could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). The \"fields\" array should contain the name of each field that could not be updated."
+msgstr ""
+"更新が成功した場合は、\"rc\" を 204 に設定します。\"rc\" が 204 でない場合は、\"message\" フィールドの指定が可能です。いずれかのフィールド値を取得できない場合は、\"rc\" を 404 (見つからない場合) または 500 (他のすべての理由) に設定します。\"fields\" 配列に、更新できなかった各フィールドの名前を含める必要があります。"
+
+#: ..\docs\device_mgmt\operations\update.rst:93
+msgid "Message format"
+msgstr ""
+"メッセージの形式"
+

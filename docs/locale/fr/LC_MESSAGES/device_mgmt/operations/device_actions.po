@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 13:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:3
+msgid "Device Management Operations - Device Actions"
+msgstr ""
+"Opérations de gestion des terminaux - Actions sur les terminaux"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:8
+msgid "Reboot"
+msgstr ""
+"Réamorcer"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:10
+msgid "The Internet of Things Foundation can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation peut envoyer cette demande pour réamorcer un terminal. L'action est considérée comme terminée lorsque le terminal envoie une demande de gestion à l'issue de son réamorçage."
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:12
+msgid "If this operation can be initiated immediately, set \"rc\" to 202, if reboot attempt fails, the \"rc\" is set to 500 and the \"message\" field should be set accordingly, if the reboot is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"Si cette opération peut être lancée immédiatement, associez \"rc\" à la valeur 202. Si la tentative de réamorçage échoue, \"rc\" correspond à 500 et la zone \"message\" doit être définie en conséquence ; si le réamorçage n'est pas pris en charge, associez \"rc\" à la valeur 501 et définissez éventuellement la zone \"message\" en conséquence."
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:16
+#: ..\docs\device_mgmt\operations\device_actions.rst:55
+msgid "Topic"
+msgstr ""
+"Sujet"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:24
+#: ..\docs\device_mgmt\operations\device_actions.rst:63
+msgid "Message format"
+msgstr ""
+"Format du message"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:26
+#: ..\docs\device_mgmt\operations\device_actions.rst:65
+msgid "Request Format:"
+msgstr ""
+"Format de la demande :"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:34
+#: ..\docs\device_mgmt\operations\device_actions.rst:73
+msgid "Response Format:"
+msgstr ""
+"Format de la réponse :"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:48
+msgid "Factory Reset"
+msgstr ""
+"Réinitialiser avec les paramètres d'usine"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:50
+msgid "The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation peut envoyer cette demande pour rétablir les paramètres d'usine du terminal. Lors de cette procédure, le terminal est également réamorcé. L'action est considérée comme terminée lorsque le terminal envoie une demande de gestion à l'issue de son réamorçage."
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:52
+msgid "The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the \"rc\" should be 500 and the \"message\" field should be set accordingly, if the factory reset action is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"Le code de réponse doit correspondre à 202 si cette action peut être lancée immédiatement. Si la réinitialisation avec les paramètres d'usine échoue, \"rc\" doit correspondre à 500 et la zone \"message\" doit être définie en conséquence. Si l'action de réinitialisation avec les paramètres d'usine n'est pas prise en charge, associez \"rc\" à la valeur 501 et définissez la zone \"message\" en conséquence."
+

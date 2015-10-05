@@ -283,7 +283,7 @@ Later, any new log messages can be easily added to the Internet of Things Founda
 		System.out.println("Log Addition failed");
 	}
 
-Also, the ErrorCodes can be cleared from Internet of Things Foundation Connect by calling the clear method as follows:
+Also, the log messages can be cleared from Internet of Things Foundation Connect by calling the clear method as follows:
 
 .. code:: java
 
@@ -338,23 +338,12 @@ The DeviceFirmware object represents the current firmware of the device and will
 The device needs to set the firmware action flag to true in order for the server to initiate the firmware request. This can be achieved by invoking a following method with a boolean value:
 
 .. code:: java
-	
-	ManagedDevice managedDevice = new ManagedDevice(options, deviceData);
-	managedDevice.supportsFirmwareActions(true);
-	managedDevice.connect();
-	
-Note that the supportsFirmwareActions() method is called before the connect() method as the ManagedDevice sends a manage request as part of the connect() method. As part of manage request the ibmiotf client library informs the Internet of Things Foundation Connect about the firmware action support and hence it needs to be added prior to calling connect() method.
 
-Alternatively, the support can be added later as well followed by the manage request as follows:
-
-.. code:: java
-
-	ManagedDevice managedDevice = new ManagedDevice(options, deviceData);
-    	managedDevice.connect();
-    	...
     	managedDevice.supportsFirmwareActions(true);
-    	managedDevice.manage(3600);
+    	managedDevice.manage();
 	
+As the manage request informs the Internet of Things Foundation Connect about the firmware action support, manage() method needs to be called right after setting the firmware action support.
+
 **3. Create the Firmware Action Handler**
 
 In order to support the Firmware action, the device needs to create a handler and add it to ManagedDevice. The handler must extend a DeviceFirmwareHandler class and implement the following methods:
@@ -532,21 +521,10 @@ In order to perform Reboot and Factory Reset, the device needs to inform the Int
 
 .. code:: java
 	
-	ManagedDevice managedDevice = new ManagedDevice(options, deviceData);
 	managedDevice.supportsDeviceActions(true);
-	managedDevice.connect();
+    	managedDevice.manage();
 	
-Note that the supportsDeviceActions() method is called before the connect() method as the ManagedDevice sends a manage request as part of the connect() method. As part of manage request the ibmiotf client library informs the Internet of Things Connect about the device action support and hence it needs to be added prior to calling connect() method.
-
-Alternatively, the support can be added later as well followed by the manage request as follows:
-
-.. code:: java
-
-	ManagedDevice managedDevice = new ManagedDevice(options, deviceData);
-    	managedDevice.connect();
-    	...
-    	managedDevice.supportsDeviceActions(true);
-    	managedDevice.manage(3600);
+As the manage request informs the Internet of Things Foundation Connect about the device action support, manage() method needs to be called right after setting the device action support.
 	
 **2. Create the Device Action Handler**
 

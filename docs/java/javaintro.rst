@@ -10,10 +10,8 @@ Use the Java client library for interacting with the `IBM Internet of Things Fou
 This client library is divided into three sections, all included within the library.  
 
 -  The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
+-  The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
 -  The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices. 
--  The Historian section contains information on how applications can use the Java ibmiotf Client Library to retrieve the historical information.
-
-
 
 Dependencies
 -------------------------------------------------------------------------------
@@ -21,7 +19,8 @@ Dependencies
 -  `Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker
 -  `google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects
 -  `Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations
--  `Apache Commons Codec <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__  - provides common encoder and decoder functionalities such as Base64
+-  `Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - provides common encoder and decoder functionalities such as Base64
+-  `Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - provides methods for manipulating core Java classes
 -  `Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds
 -  `Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library
 -  `Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library
@@ -33,6 +32,6 @@ Dependencies
 
 Documentation
 -------------
-* `Device Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_devices.rst>`__
-* `Application Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__
-* `Historian Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_historian.rst>`__
+* `Device Client <../java/java_cli_devices.html>`__
+* `Managed Device <../java/java_deviceManagement.html>`__
+* `Application Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__ 

@@ -7,11 +7,10 @@ Use the Java client library for interacting with the `IBM Internet of Things Fou
 -  `Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__
 -  `Java 8 <https://java.com/en/download/>`__
 
-This client library is divided into three sections, all included within the library.  
+This client library documentation is divided into two sections:  
 
 -  The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
 -  The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
--  The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices. 
 
 Dependencies
 -------------------------------------------------------------------------------
@@ -34,4 +33,3 @@ Documentation
 -------------
 * `Device Client <../java/java_cli_devices.html>`__
 * `Managed Device <../java/java_deviceManagement.html>`__
-* `Application Client <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/java_cli_for_applications.rst>`__ 

@@ -5,7 +5,7 @@ Java Client Library - Devices
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../libraries/javaintro.html/>`__. 
+This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../java/javaintro.html/>`__. 
 
 This client library is divided into three sections, all included within the library. This section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
 
@@ -193,7 +193,7 @@ Events are the mechanism by which devices publish data to the Internet of Things
 
 When an event is received by the IBM IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
-Events can be published at any of the three `quality of service levels <https://docs.internetofthings.ibmcloud.com/messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0.
+Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0.
 
 Publish event using default quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

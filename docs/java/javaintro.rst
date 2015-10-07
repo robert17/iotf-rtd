@@ -12,6 +12,19 @@ This client library documentation is divided into two sections:
 -  The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
 -  The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
 
+Download
+-------------------------------------------------------------------------------
+The latest version of the client library is available `here <https://github.com/ibm-messaging/iot-java/releases/download/0.0.2/com.ibm.iotf-0.0.2.zip>`__ to download.
+
+The zip module contains the following files,
+
+* com.ibm.iotf.client-<version>.jar - Client library that enables one to talk to Internet of Things Foundation Connect.
+* com.ibm.iotf.samples-<version>.jar - Contains samples.
+* DMDeviceSample.properties - Properties file used to configure the list of options required to connect to Internet of Things Foundation Connect and perform device management operations.
+* device.prop - Properties file to specify connectivity information when DeviceClient is used
+* lib - Contains all dependent libraries
+* javadoc - Contains the client library documentation
+
 Dependencies
 -------------------------------------------------------------------------------
 

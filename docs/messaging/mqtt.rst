@@ -156,8 +156,8 @@ messages for each subscription it has made.  Once the buffer fills up, any new
 message will result in the oldest message in the buffer being discarded.
 
 The subscription buffer can be accessed using MQTT clean session option.  If clean
-session is set to true, a subscriber will start receiving messages from the buffer.
-If it is false the buffer is reset.
+session is set to false, a subscriber will start receiving messages from the buffer.
+If clean session is set to true, the buffer is reset.
 
 .. note:: This limit applies regardless of the quality of service setting used.  
     Thus it is possible that a message sent at QoS1 or QoS2 may not be delivered 

@@ -76,6 +76,6 @@ subscribe to a set of specific commands.
 
 Managed and Unmanaged Devices
 --------------------------------------------------------------------------------
-Managed devices are defined as devices which contain a management agent. A management agent is a set of logic which allows the device to interact with the Internet of Things Foundation Device Management service via the Device Management protocol. Managed devices can perform device management operations including location updates, firmware download and updates, and reboot and factory reset.
+**Managed devices** are defined as devices which contain a management agent. A management agent is a set of logic which allows the device to interact with the Internet of Things Foundation Device Management service via the Device Management protocol. Managed devices can perform device management operations including location updates, firmware download and updates, and reboot and factory reset.
 
-An unmanaged device is a device without a management agent. An unmanaged device can still connect to the Internet of Things Foundation and send and receive events and commands. However, it cannot send any device management requests, or perform any of the device management operations.
+An **unmanaged device** is a device without a management agent. An unmanaged device can still connect to the Internet of Things Foundation and send and receive events and commands. However, it cannot send any device management requests, or perform any of the device management operations.

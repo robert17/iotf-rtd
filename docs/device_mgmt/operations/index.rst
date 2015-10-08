@@ -1,6 +1,13 @@
-============================
-Device Management Operations
-============================
+===============================
+Device Management Introduction
+===============================
+
+Introduction
+-------------
+
+The Device Management capabilities in the Internet of Things Foundation create a new class of connected devices, Managed Devices.
+
+Managed Devices must, by definition, contain a management agent which can understand the Internet of Things Foundation Device Management Protocol, and send a Manage Device request to the IoT Foundation Device Management server. Managed devices can access the device management operations as explained later in this document.
 
 The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 

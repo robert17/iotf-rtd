@@ -1,10 +1,9 @@
 Python Client Library - Introduction
 ============================================
 
-Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the python ibmiotf module to interact with devices and applications within your organizations.
+Use the Python module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Python 3.4 or 2.7. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following library contains the instructions and guidance on using the python ibmiotf module to interact with devices and applications within your organizations.
 
--  `Python 3.4 <https://www.python.org/downloads/release/python-343/>`__
--  `Python 2.7 <https://www.python.org/downloads/release/python-279/>`__
+-  `Python IoT Foundation Client Library <https://pypi.python.org/pypi/ibmiotf/0.1.4>`__
 
 .. important:: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1
 

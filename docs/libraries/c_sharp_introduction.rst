@@ -17,9 +17,6 @@ Documentation
 Dependencies
 ------------
 
-- `C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_
-- `C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_
-
 - `paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ provides a client class which enable applications to connect to an MQTT broker
 
 - `Apache Commons Logging <https://logging.apache.org/log4net/>`_ library for logging various information

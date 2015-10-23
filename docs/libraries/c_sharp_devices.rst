@@ -66,7 +66,7 @@ When the device client connects, it automatically subscribes to any commands for
 
 .. code:: C#
 
-	public static void processCommand(String cmdName, string format, string data) {
+	public static void processCommand(string cmdName, string format, string data) {
     ...
   }
 

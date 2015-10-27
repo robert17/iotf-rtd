@@ -2,10 +2,11 @@
 Programming Guides
 =====================================================================
 
-There are several client libraries availabe for use with the Internet 
-of Things Foundation. These are designed to allow users to interact 
-with their devices and applications using their preferred language, 
-and to simplify this interaction as much as possible.
+There are several client libraries availabe for use with the Internet of Things Foundation. The client libraries are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible.
+
+There are also specific device and operation recipes available for use with the Internet of Things Foundation hosted on the `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__.
+
+In the event that you cannot find a programming guide or recipe to suit your environment or device, raw MQTT should be used to communicate with the Internet of Things Foundation. For more information, please see `MQTT <../messaging/mqtt.html#/>`__ and `MQTT Connectivity for Devices <../messaging/devices.html#/>`__.
 
 Python
 ---------------------------------------------------------------------

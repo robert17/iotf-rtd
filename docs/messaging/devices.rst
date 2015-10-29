@@ -17,18 +17,26 @@ MQTT client identifier
 -------------------------------------------------------------------------------
 
 -  Supply a client id of the form
-   **d**:**org\_id**:**device\_type**:**device\_id**
+   **d**:**org\_id**:**type\_id**:**device\_id**
 -  **d** idenfities your client as a device
 -  **org\_id** is your unique organization ID, assigned when you sign up
    with the service.  It will be a 6 character alphanumeric string.
--  **device\_type** is intended to be used as an identifier of the type
+-  **type\_id** is intended to be used as an identifier of the type
    of device connecting, it may be useful to think of this as analogous
    to a model number. 
 -  **device\_id** must uniquely identify a device across all devices of
    a specific device\_type, it may be useful to think of this as
    analogous to a serial number.
 
+.. note:: You can use any scheme of your choice when assigning values for 
+    ``type\_id`` and ``device\_id``, however the following restrictions apply to both:
 
+    - Maximum length of 36 characters 
+    - Must comprise only alpha-numeric characters (``a-z``, ``A-Z``, ``0-9``) and the following special characters:
+
+      - dash (``-``)
+      - underscore (``\_``)
+      - dot (``.``)
 ----
 
 
@@ -41,7 +49,7 @@ Username
 The service currently only supports token-based authentication for
 devices, as such there is only one valid username for devices today.
 
-A value of **use-token-auth** indicates to the service that the
+A value of ``use-token-auth`` indicates to the service that the
 authentication token for the device will be passed as the password for
 the MQTT connection.
 

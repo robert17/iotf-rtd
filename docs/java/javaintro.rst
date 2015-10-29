@@ -6,9 +6,10 @@ Use the Java client library for interacting with the `IBM Internet of Things Fou
 
 -  `Java IoT Foundation Client Library <https://github.com/ibm-messaging/iot-java/releases/download/0.0.2/com.ibm.iotf-0.0.2.zip>`__
 
-This client library documentation is divided into two sections:  
+This client library documentation is divided into three sections:  
 
 -  The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
+- The Applications section details how applications can use the Java ibmiotf Client Library to interact with devices.
 -  The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
 
 Download

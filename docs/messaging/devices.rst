@@ -29,13 +29,13 @@ MQTT client identifier
    analogous to a serial number.
 
 .. note:: You can use any scheme of your choice when assigning values for 
-    ``type\_id`` and ``device\_id``, however the following restrictions apply to both:
+    ``type_id`` and ``device_id``, however the following restrictions apply to both:
 
     - Maximum length of 36 characters 
     - Must comprise only alpha-numeric characters (``a-z``, ``A-Z``, ``0-9``) and the following special characters:
 
       - dash (``-``)
-      - underscore (``\_``)
+      - underscore (``_``)
       - dot (``.``)
 ----
 

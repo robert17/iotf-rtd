@@ -4,7 +4,7 @@ Java Client Library - Introduction
 
 Use the Java client library for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Java 7 or Java 8. The client library can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the java ibmiotf client library to interact with devices and applications within your organizations.
 
--  `Java IoT Foundation Client Library <https://github.com/ibm-messaging/iot-java/releases/download/0.0.2/com.ibm.iotf-0.0.2.zip>`__
+-  `Java IoT Foundation Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__
 
 This client library documentation is divided into three sections:  
 
@@ -46,3 +46,5 @@ Documentation
 -------------
 * `Device Client <../java/java_cli_devices.html>`__
 * `Managed Device <../java/java_deviceManagement.html>`__
+* `Application Device <../java/java_cli_app.html>`__
+

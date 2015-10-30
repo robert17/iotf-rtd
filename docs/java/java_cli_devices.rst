@@ -5,7 +5,7 @@ Java Client Library - Devices
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../java/javaintro.html/>`__. 
+This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/java/javaintro.html>`__. 
 
 This client library is divided into three sections, all included within the library. This section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
 

@@ -46,5 +46,5 @@ Documentation
 -------------
 * `Device Client <../java/java_cli_devices.html>`__
 * `Managed Device <../java/java_deviceManagement.html>`__
-* `Application Device <../java/java_cli_app.html>`__
+* `Application <../java/java_cli_app.html>`__
 

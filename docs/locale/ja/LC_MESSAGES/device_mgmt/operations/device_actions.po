@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:3
+msgid "Device Management Operations - Device Actions"
+msgstr ""
+"デバイス管理操作 - デバイス・アクション"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:8
+msgid "Reboot"
+msgstr ""
+"リブート"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:10
+msgid "The Internet of Things Foundation can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation はデバイスをリブートするためにこのリクエストを送信することができます。このアクションは、リブート後にデバイスから「デバイスを管理」リクエストが送信された時点で完了したと見なされます。"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:12
+msgid "If this operation can be initiated immediately, set \"rc\" to 202, if reboot attempt fails, the \"rc\" is set to 500 and the \"message\" field should be set accordingly, if the reboot is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"この操作をただちに開始できる場合は、\"rc\" を 202 に設定します。リブートの試行に失敗した場合は、\"rc\" を 500 に設定し、\"message\" フィールドを適切に設定する必要があります。リブートがサポートされない場合は、\"rc\" を 501 に設定し、オプションで \"message\" を適切に設定します。"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:16
+#: ..\docs\device_mgmt\operations\device_actions.rst:55
+msgid "Topic"
+msgstr ""
+"トピック"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:24
+#: ..\docs\device_mgmt\operations\device_actions.rst:63
+msgid "Message format"
+msgstr ""
+"メッセージの形式"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:26
+#: ..\docs\device_mgmt\operations\device_actions.rst:65
+msgid "Request Format:"
+msgstr ""
+"リクエストの形式:"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:34
+#: ..\docs\device_mgmt\operations\device_actions.rst:73
+msgid "Response Format:"
+msgstr ""
+"レスポンスの形式:"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:48
+msgid "Factory Reset"
+msgstr ""
+"ファクトリー・リセット"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:50
+msgid "The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation は、デバイスを工場出荷時設定にリセットするためにこのリクエストを送信することができます。このプロセスの一部としてデバイスのリブートも実行されます。このアクションは、リブート後にデバイスから「デバイスを管理」リクエストが送信された時点で完了したと見なされます。"
+
+#: ..\docs\device_mgmt\operations\device_actions.rst:52
+msgid "The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the \"rc\" should be 500 and the \"message\" field should be set accordingly, if the factory reset action is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"この操作をただちに開始できる場合、応答コードは 202 です。ファクトリー・リセットの試行に失敗した場合は、\"rc\" を 500 に設定し、\"message\" フィールドを適切に設定する必要があります。ファクトリー・リセット・アクションがサポートされない場合は、\"rc\" を 501 に設定し、オプションで \"message\" を適切に設定します。"
+

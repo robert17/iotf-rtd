@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:3
+msgid "Examples"
+msgstr ""
+"예제"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:5
+msgid "These examples illustrate the API and the behaviour of the device management agent."
+msgstr ""
+"다음 예제에서 API 및 디바이스 관리 에이전트의 동작에 대해 설명합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:8
+msgid "Device Location"
+msgstr ""
+"디바이스 위치"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:10
+msgid "An administrator wants to update the location for a device in the Internet of Things Foundation, perhaps using information from a mobile device. A device would use an equivalent mechanismbased on MQTT."
+msgstr ""
+"관리자가 모바일 디바이스에서 정보를 사용하는 등의 방법으로 Internet of Things Foundation에서 디바이스의 위치를 업데이트하려고 합니다. 디바이스는 MQTT에 기반한 동등한 메커니즘을 사용합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:12
+#: ..\docs\device_mgmt\Extra_Examples.rst:34
+msgid "Example Request:"
+msgstr ""
+"예제 요청:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:18
+msgid "Request Body"
+msgstr ""
+"요청 본문"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:30
+msgid "Device Reboot"
+msgstr ""
+"디바이스 다시 부팅"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:32
+msgid "An administrator wants to reboot a device from the device dashboard. This is a long-running asyncronous process."
+msgstr ""
+"관리자가 디바이스 대시보드에서 디바이스를 다시 부팅하려고 합니다. 이는 장기 실행 중인 비동기 프로세스입니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:40
+msgid "Request body"
+msgstr ""
+"요청 본문"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:48
+#: ..\docs\device_mgmt\Extra_Examples.rst:81
+#: ..\docs\device_mgmt\Extra_Examples.rst:108
+msgid "Sequence:"
+msgstr ""
+"시퀀스:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:50
+msgid "REST API is issued to the Internet of Things device management server."
+msgstr ""
+"REST API가 Internet of Things 디바이스 관리 서버에 실행됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:51
+msgid "The Internet of Things Foundation published a command to reboot the device."
+msgstr ""
+"Internet of Things Foundation이 디바이스 다시 부팅 명령을 공개했습니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:52
+#: ..\docs\device_mgmt\Extra_Examples.rst:87
+msgid "REST API returns. A management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"REST API가 리턴됩니다. 요청의 진행상태를 추적하는 데 조회할 수 있는 관리 요청 문서가 작성됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:53
+msgid "When the device is connectd, it receives the command and reboots."
+msgstr ""
+"디바이스가 연결되면 명령을 수신하고 다시 부팅됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:54
+msgid "When the device restarts, it updates its device management registration."
+msgstr ""
+"디바이스가 다시 시작되면 디바이스 관리 등록을 업데이트합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:57
+msgid "Firmware update"
+msgstr ""
+"펌웨어 업데이트"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:59
+msgid "An administrator wants to initiate a firmware update on a device from the device dashboard. This is a long-running, asynchronous process. There are two separate steps here, downloading and updating."
+msgstr ""
+"관리자가 디바이스 대시보드에서 디바이스에 대해 펌웨어 업데이트를 시작하려고 합니다. 이는 장기 실행 중인 비동기 프로세스입니다. 여기에 별도의 2가지 단계인 다운로드 및 업데이트가 있습니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:61
+msgid "Request 1:"
+msgstr ""
+"요청 1:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:67
+#: ..\docs\device_mgmt\Extra_Examples.rst:99
+msgid "Request Body:"
+msgstr ""
+"요청 본문:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:83
+#: ..\docs\device_mgmt\Extra_Examples.rst:110
+msgid "REST API is issued to the Internet of Things Foundation."
+msgstr ""
+"REST API가 Internet of Things Foundation에 실행됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:84
+msgid "The Internet of Things Foundation published an update to the mgmt.firmware section of the device's metadata containing the package URL. An observation request is scheduled for the status of the firmware update."
+msgstr ""
+"Internet of Things Foundation이 패키지 URL이 포함된 디바이스 메타데이터의 mgmt.firmware 섹션에 대한 업데이트를 공개했습니다. 관찰 요청이 펌웨어 업데이트의 상태에 대해 스케줄링됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:85
+msgid "A command is published to the device to download the firmware package."
+msgstr ""
+"펌웨어 패키지를 다운로드하도록 디바이스에 명령이 공개됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:86
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata, replacing the existing data."
+msgstr ""
+"Internet of Things Foundation이 디바이스 메타데이터의 펌웨어 섹션을 업데이트하여, 기존 데이터를 바꿉니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:88
+msgid "When the device is connected, it receives the update to the mgmt.firmware section of its metadata containing the package URL, the observation request and the command."
+msgstr ""
+"디바이스가 연결되면 페키지 URL, 관찰 요청 및 명령이 포함된 메타데이터의 mgmt.firmware 섹션에 대한 업데이트를 수신합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:89
+msgid "The device sets its firmware status to 1 (Downloading) and initiates the download."
+msgstr ""
+"디바이스가 펌웨어 상태를 1(다운로드 중)로 설정하고 다운로드를 시작합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:90
+msgid "When the firmware is downloaded, the device changes the firmware status to 2 (Downloaded) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"펌웨어가 다운로드되면 디바이스가 펌웨어 상태를 2(다운로드됨)로 변경하고 Internet of Things Foundation에 알림을 보냅니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:91
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata."
+msgstr ""
+"Internet of Things Foundation이 디바이스 메타데이터의 펌웨어 섹션을 업데이트합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:93
+msgid "Request 2:"
+msgstr ""
+"요청 2:"
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:111
+msgid "The command is published to update the device firmware to the downloaded package."
+msgstr ""
+"다운로드된 패키지로 디바이스 펌웨어를 업데이트하도록 명령이 공개됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:112
+msgid "The firmware section of the device's metadata is updated."
+msgstr ""
+"디바이스 메타데이터의 펌웨어 섹션이 업데이트됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:113
+msgid "The REST API returns and a management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"REST API가 리턴되고 요청의 진행상태를 추적하도록 조회할 수 있는 관리 요청 문서가 작성됩니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:114
+msgid "When the device is connected, it receives the command and begins the firmware update."
+msgstr ""
+"디바이스가 연결되면 명령을 수신하고 펌웨어 업데이트를 시작합니다."
+
+#: ..\docs\device_mgmt\Extra_Examples.rst:115
+msgid "Assuming the firmware update was successful, the device changes the firmware update status to 0 (Success) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"펌웨어 업데이트에 성공하면, 디바이스가 펌웨어 업데이트 상태를 0(성공)으로 변경하고 Internet of Things Foundation에 알림을 보냅니다."
+

@@ -1,0 +1,858 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\reference\device_model.rst:3
+msgid "Device Model"
+msgstr ""
+"Einheitenmodell"
+
+#: ..\docs\reference\device_model.rst:5
+msgid "The device model describes the metadata and management characteristics of a device. The device database in the Internet of Things Foundation is the master source of device information. Applications and managed devices are able to send updates to the database such as a location or the progress of a firmware update. Once these updates are received by the Internet of Things Foundation, the device database is updated, making the information available to applications."
+msgstr ""
+"Vom Einheitenmodell werden die Einheitenmetadaten und Managementeigenschaften einer Einheit beschrieben. Die Einheitendatenbank in Internet of Things Foundation ist die Hauptquelle der Einheiteninformationen. Von Anwendungen und verwalteten Einheiten können Aktualisierungen an die Datenbank gesendet werden, zum Beispiel zur Position oder zum Fortschritt eines Firmware-Updates. Sobald diese Aktualisierungen von Internet of Things Foundation empfangen werden, wird die Einheitendatenbank aktualisiert und die Informationen werden den Anwendungen zur Verfügung gestellt."
+
+#: ..\docs\reference\device_model.rst:12
+msgid "With the exception of the management extension, the entire device model is available for both managed and unmanaged devices. However, an unmanaged device can not directly update its device model in the database."
+msgstr ""
+"Abgesehen von der Managementerweiterung ist das gesamte Einheitenmodell sowohl für verwaltete als auch nicht verwaltete Einheiten verfügbar. Von einer nicht verwalteten Einheit kann das eigene Einheitenmodell jedoch nicht direkt in der Datenbank aktualisiert werden."
+
+#: ..\docs\reference\device_model.rst:20
+msgid "Device Identification"
+msgstr ""
+"Einheitenidentifikation"
+
+#: ..\docs\reference\device_model.rst:22
+msgid "Every device has a typeId and deviceId attribute. Typically, the typeId represents the model of your device, whilst the deviceId can represent its serial number. Within your Internet of Things Foundation organization, the combination of typeId and deviceId must be unique for each device."
+msgstr ""
+"Jede Einheit verfügt über die Attribute 'typeId' und 'deviceId'. In der Regel gibt 'typeId' das Modell der Einheit an, während 'deviceId' für ihre Seriennummer stehen kann. Innerhalb einer Internet of Things Foundation-Organisation müssen die Angaben für 'typeId' und 'deviceId' für jede Einheit eindeutig sein."
+
+#: ..\docs\reference\device_model.rst:26
+msgid "In addition, the Internet of Things Foundation constructs a further identifier for each device based on your organizationId, the device's typeId and the device's deviceId. This identifier - the clientId - allows you to identify unequivocally an individual device."
+msgstr ""
+"Außerdem wird von Internet of Things Foundation für jede Einheit eine weitere Kennung erstellt, die aus den Angaben für 'organizationId', 'typeId' und 'deviceId' der Einheit besteht. Diese Kennung wird als 'clientId' bezeichnet und ermöglicht die zweifelsfreie Identifizierung jeder einzelnen Einheit."
+
+#: ..\docs\reference\device_model.rst:28
+msgid "The characters which can be used in these identifiers are restricted so they can be used straightforwardly in communication protocols and REST APIs. There are a number of optional device identifiers for use with the device management protocol. These identifiers are:"
+msgstr ""
+"Da die Zeichen in diesen Kennungen beschränkt sind, können sie in den Kommunikationsprotokollen und REST-APIs unkompliziert verwendet werden. Zur Verwendung mit dem Einheitenmanagementprotokoll stehen eine Reihe optionaler Einheitenkennungen zur Verfügung. Zu diesen Kennungen zählen:"
+
+#: ..\docs\reference\device_model.rst:32
+msgid "deviceInfo.manufacturer"
+msgstr ""
+"deviceInfo.manufacturer"
+
+#: ..\docs\reference\device_model.rst:33
+msgid "deviceInfo.serialNumber"
+msgstr ""
+"deviceInfo.serialNumber"
+
+#: ..\docs\reference\device_model.rst:34
+msgid "deviceInfo.model"
+msgstr ""
+"deviceInfo.model"
+
+#: ..\docs\reference\device_model.rst:35
+msgid "deviceInfo.deviceClass"
+msgstr ""
+"deviceInfo.deviceClass"
+
+#: ..\docs\reference\device_model.rst:36
+msgid "deviceInfo.description"
+msgstr ""
+"deviceInfo.description"
+
+#: ..\docs\reference\device_model.rst:38
+msgid "For more information on the identifiers and descriptions of their comparative identifiers in other device management standards, see Device Model Attributes Reference."
+msgstr ""
+"Weitere Informationen zu den Kennungen und Beschreibungen der vergleichbaren Kennungen in anderen Einheitenmanagementstandards finden Sie in der Referenz zu den Einheitenmodellattributen."
+
+#: ..\docs\reference\device_model.rst:46
+msgid "Identifiers and Device Type"
+msgstr ""
+"Einheiten und Einheitentyp"
+
+#: ..\docs\reference\device_model.rst:48
+msgid "Each device connected to the Internet of Things Foundation is associated with a device type. Device types are intended to be groups of devices which share characteristics or behaviour."
+msgstr ""
+"Jeder Einheit, die mit Internet of Things Foundation verbunden ist, ist ein Einheitentyp zugeordnet. Einheitentypen dienen dazu, Einheiten mit gemeinsamen Eigenschaften oder gemeinsamem Verhalten in Gruppen zusammenzufassen."
+
+#: ..\docs\reference\device_model.rst:52
+msgid "A device type has a set of attributes. When a device is added to the Internet of Things Foundation, the attributes in its device type are used as a template overridden by device-specific attributes. For example, the device type could have a value for the ``deviceInfo.fwVersion`` attribute reflecting the firmware version at the time of manufacture, and this value would be copied from the device type into the devices as they are added. However, if a device was added which already had a value for ``deviceInfo.fwVersion``, it would not be overridden by the device type."
+msgstr ""
+"Ein Einheitentyp verfügt über eine bestimmten Menge an Attributen. Wenn eine Einheit zu Internet of Things Foundation hinzugefügt wird, werden die Attribute ihres Einheitentyps als Vorlage verwendet, die durch einheitenspezifische Attribute überschrieben werden. Ein Einheitentyp kann zum Beispiel für das Attribut ``deviceInfo.fwVersion`` einen Wert aufweisen, aus dem die Firmwareversion zum Zeitpunkt der Herstellung hervorgeht; dieser Wert wird aus dem Einheitentyp in die Einheiten kopiert, wenn diese hinzugefügt werden. Wenn jedoch eine Einheit hinzugefügt wird, die bereits über einen Wert für ``deviceInfo.fwVersion`` verfügt, wird dieser nicht durch den Einheitentyp überschrieben."
+
+#: ..\docs\reference\device_model.rst:60
+msgid "When a device type is updated, future registered devices will reflect the modified device type template. However, existing devices of this device type are unaffected and remain unchanged."
+msgstr ""
+"Wenn ein Einheitentyp aktualisiert wird, findet die geänderte Einheitentypvorlage in zukünftigen registrierten Einheiten ihren Niederschlag. Bereits vorhandene Einheiten dieses Typs sind davon jedoch nicht betroffen und bleiben unverändert."
+
+#: ..\docs\reference\device_model.rst:69
+msgid "Attributes"
+msgstr ""
+"Attribute"
+
+#: ..\docs\reference\device_model.rst:71
+msgid "The table below shows the list of attributes which can apply to devices in the Internet of Things Foundation. Additionally, italicized attributes can also apply to device types."
+msgstr ""
+"In der nachfolgenden Tabelle werden die Attribute aufgelistet, die auf Einheiten in Internet of Things Foundation angewendet werden können. In Kursivdruck angezeigte Attribute können außerdem auch auf Einheitentypen angewendet werden."
+
+#: ..\docs\reference\device_model.rst:74
+msgid "API/DMA: Can be updated by API/Device Management Agent"
+msgstr ""
+"API/DMA: Kann von der API bzw. dem Einheitenmanagementagenten aktualisiert werden"
+
+#: ..\docs\reference\device_model.rst:76
+msgid "R: Read only"
+msgstr ""
+"R: Schreibgeschützt"
+
+#: ..\docs\reference\device_model.rst:77
+msgid "W: Write and read"
+msgstr ""
+"W: Schreiben und Lesen"
+
+#: ..\docs\reference\device_model.rst:78
+msgid "A: Append"
+msgstr ""
+"A: Anhängen"
+
+#: ..\docs\reference\device_model.rst:81
+#: ..\docs\reference\device_model.rst:155
+#: ..\docs\reference\device_model.rst:180
+#: ..\docs\reference\device_model.rst:204
+msgid "Attribute"
+msgstr ""
+"Attribute"
+
+#: ..\docs\reference\device_model.rst:81
+#: ..\docs\reference\device_model.rst:155
+#: ..\docs\reference\device_model.rst:180
+#: ..\docs\reference\device_model.rst:204
+msgid "Type"
+msgstr ""
+"Typ"
+
+#: ..\docs\reference\device_model.rst:81
+#: ..\docs\reference\device_model.rst:155
+#: ..\docs\reference\device_model.rst:180
+#: ..\docs\reference\device_model.rst:204
+msgid "Description"
+msgstr ""
+"Beschreibung"
+
+#: ..\docs\reference\device_model.rst:81
+#: ..\docs\reference\device_model.rst:155
+#: ..\docs\reference\device_model.rst:180
+#: ..\docs\reference\device_model.rst:204
+msgid "API"
+msgstr ""
+"API"
+
+#: ..\docs\reference\device_model.rst:81
+#: ..\docs\reference\device_model.rst:155
+#: ..\docs\reference\device_model.rst:180
+#: ..\docs\reference\device_model.rst:204
+msgid "DMA"
+msgstr ""
+"DMA"
+
+#: ..\docs\reference\device_model.rst:83
+msgid "clientId"
+msgstr ""
+"clientId"
+
+#: ..\docs\reference\device_model.rst:83
+#: ..\docs\reference\device_model.rst:86
+#: ..\docs\reference\device_model.rst:88
+#: ..\docs\reference\device_model.rst:92
+#: ..\docs\reference\device_model.rst:94
+#: ..\docs\reference\device_model.rst:96
+#: ..\docs\reference\device_model.rst:98
+#: ..\docs\reference\device_model.rst:100
+#: ..\docs\reference\device_model.rst:102
+#: ..\docs\reference\device_model.rst:105
+#: ..\docs\reference\device_model.rst:107
+#: ..\docs\reference\device_model.rst:112
+#: ..\docs\reference\device_model.rst:114
+#: ..\docs\reference\device_model.rst:117
+#: ..\docs\reference\device_model.rst:119
+#: ..\docs\reference\device_model.rst:121
+#: ..\docs\reference\device_model.rst:123
+#: ..\docs\reference\device_model.rst:162
+#: ..\docs\reference\device_model.rst:164
+#: ..\docs\reference\device_model.rst:166
+#: ..\docs\reference\device_model.rst:188
+#: ..\docs\reference\device_model.rst:190
+#: ..\docs\reference\device_model.rst:208
+#: ..\docs\reference\device_model.rst:211
+#: ..\docs\reference\device_model.rst:220
+#: ..\docs\reference\device_model.rst:222
+#: ..\docs\reference\device_model.rst:224
+#: ..\docs\reference\device_model.rst:226
+#: ..\docs\reference\device_model.rst:233
+msgid "string"
+msgstr ""
+"Zeichenfolge"
+
+#: ..\docs\reference\device_model.rst:83
+msgid "The client ID used with MQTT connections (d:org- id:device-type:device-id)"
+msgstr ""
+"Die Client-ID, die mit MQTT-Verbindungen verwendet wird (d:org- id:device-type:device-id)"
+
+#: ..\docs\reference\device_model.rst:83
+#: ..\docs\reference\device_model.rst:86
+#: ..\docs\reference\device_model.rst:88
+#: ..\docs\reference\device_model.rst:112
+#: ..\docs\reference\device_model.rst:114
+#: ..\docs\reference\device_model.rst:117
+#: ..\docs\reference\device_model.rst:119
+#: ..\docs\reference\device_model.rst:121
+#: ..\docs\reference\device_model.rst:123
+#: ..\docs\reference\device_model.rst:190
+#: ..\docs\reference\device_model.rst:206
+#: ..\docs\reference\device_model.rst:208
+#: ..\docs\reference\device_model.rst:211
+#: ..\docs\reference\device_model.rst:214
+#: ..\docs\reference\device_model.rst:217
+#: ..\docs\reference\device_model.rst:220
+#: ..\docs\reference\device_model.rst:222
+#: ..\docs\reference\device_model.rst:224
+#: ..\docs\reference\device_model.rst:226
+#: ..\docs\reference\device_model.rst:229
+#: ..\docs\reference\device_model.rst:231
+#: ..\docs\reference\device_model.rst:233
+msgid "R"
+msgstr ""
+"R"
+
+#: ..\docs\reference\device_model.rst:86
+msgid "*typeId*"
+msgstr ""
+"*typeId*"
+
+#: ..\docs\reference\device_model.rst:86
+msgid "Device type"
+msgstr ""
+"Einheitentyp"
+
+#: ..\docs\reference\device_model.rst:88
+msgid "deviceId"
+msgstr ""
+"deviceId"
+
+#: ..\docs\reference\device_model.rst:88
+msgid "Device ID"
+msgstr ""
+"Einheiten-ID"
+
+#: ..\docs\reference\device_model.rst:90
+msgid "status.alert"
+msgstr ""
+"status.alert"
+
+#: ..\docs\reference\device_model.rst:90
+#: ..\docs\reference\device_model.rst:206
+#: ..\docs\reference\device_model.rst:214
+#: ..\docs\reference\device_model.rst:217
+msgid "boolean"
+msgstr ""
+"Boolescher Wert"
+
+#: ..\docs\reference\device_model.rst:90
+msgid "Whether the device has an alert"
+msgstr ""
+"Gibt an, ob von der Einheit ein Alert gesendet wird"
+
+#: ..\docs\reference\device_model.rst:90
+#: ..\docs\reference\device_model.rst:92
+#: ..\docs\reference\device_model.rst:92
+#: ..\docs\reference\device_model.rst:94
+#: ..\docs\reference\device_model.rst:94
+#: ..\docs\reference\device_model.rst:96
+#: ..\docs\reference\device_model.rst:96
+#: ..\docs\reference\device_model.rst:98
+#: ..\docs\reference\device_model.rst:98
+#: ..\docs\reference\device_model.rst:100
+#: ..\docs\reference\device_model.rst:100
+#: ..\docs\reference\device_model.rst:102
+#: ..\docs\reference\device_model.rst:102
+#: ..\docs\reference\device_model.rst:105
+#: ..\docs\reference\device_model.rst:105
+#: ..\docs\reference\device_model.rst:107
+#: ..\docs\reference\device_model.rst:107
+#: ..\docs\reference\device_model.rst:110
+#: ..\docs\reference\device_model.rst:110
+#: ..\docs\reference\device_model.rst:182
+#: ..\docs\reference\device_model.rst:182
+#: ..\docs\reference\device_model.rst:184
+#: ..\docs\reference\device_model.rst:184
+#: ..\docs\reference\device_model.rst:186
+#: ..\docs\reference\device_model.rst:186
+#: ..\docs\reference\device_model.rst:188
+#: ..\docs\reference\device_model.rst:188
+#: ..\docs\reference\device_model.rst:192
+#: ..\docs\reference\device_model.rst:192
+#: ..\docs\reference\device_model.rst:220
+#: ..\docs\reference\device_model.rst:222
+#: ..\docs\reference\device_model.rst:224
+#: ..\docs\reference\device_model.rst:226
+#: ..\docs\reference\device_model.rst:229
+#: ..\docs\reference\device_model.rst:231
+msgid "W"
+msgstr ""
+"W"
+
+#: ..\docs\reference\device_model.rst:92
+msgid "*deviceInfo.serialNumber*"
+msgstr ""
+"*deviceInfo.serialNumber*"
+
+#: ..\docs\reference\device_model.rst:92
+msgid "The serial number of the device"
+msgstr ""
+"Die Seriennummer der Einheit"
+
+#: ..\docs\reference\device_model.rst:94
+msgid "*deviceInfo.manufacturer*"
+msgstr ""
+"*deviceInfo.manufacturer*"
+
+#: ..\docs\reference\device_model.rst:94
+msgid "The manufacturer of the device"
+msgstr ""
+"Der Hersteller der Einheit"
+
+#: ..\docs\reference\device_model.rst:96
+msgid "*deviceInfo.model*"
+msgstr ""
+"*deviceInfo.model*"
+
+#: ..\docs\reference\device_model.rst:96
+msgid "The model of the device"
+msgstr ""
+"Das Modell der Einheit"
+
+#: ..\docs\reference\device_model.rst:98
+msgid "*deviceInfo.deviceClass*"
+msgstr ""
+"*deviceInfo.deviceClass*"
+
+#: ..\docs\reference\device_model.rst:98
+msgid "The class of the device"
+msgstr ""
+"Die Klasse der Einheit"
+
+#: ..\docs\reference\device_model.rst:100
+msgid "*deviceInfo.description*"
+msgstr ""
+"*deviceInfo.description*"
+
+#: ..\docs\reference\device_model.rst:100
+msgid "The descriptive name of the device"
+msgstr ""
+"Der beschreibende Name der Einheit"
+
+#: ..\docs\reference\device_model.rst:102
+msgid "*deviceInfo.fwVersion*"
+msgstr ""
+"*deviceInfo.fwVersion*"
+
+#: ..\docs\reference\device_model.rst:102
+msgid "The firmware version currently known to be on the device"
+msgstr ""
+"Die Firmwareversion, die derzeit auf der Einheit bekannt ist"
+
+#: ..\docs\reference\device_model.rst:105
+msgid "*deviceInfo.hwVersion*"
+msgstr ""
+"*deviceInfo.hwVersion*"
+
+#: ..\docs\reference\device_model.rst:105
+msgid "The hardware version of the device"
+msgstr ""
+"Die Hardwareversion der Einheit"
+
+#: ..\docs\reference\device_model.rst:107
+msgid "*deviceInfo.descriptiveLocation*"
+msgstr ""
+"*deviceInfo.descriptiveLocation*"
+
+#: ..\docs\reference\device_model.rst:107
+msgid "The descriptive location, such as a room or building number, or a geopgraphical region"
+msgstr ""
+"Die beschreibende Position, zum Beispiel ein Raum, eine Gebäudenummer oder eine geografische Region"
+
+#: ..\docs\reference\device_model.rst:110
+msgid "*metadata*"
+msgstr ""
+"*metadata*"
+
+#: ..\docs\reference\device_model.rst:110
+msgid "complex"
+msgstr ""
+"komplex"
+
+#: ..\docs\reference\device_model.rst:110
+msgid "Free-form metadata"
+msgstr ""
+"Unformatierte Metadaten"
+
+#: ..\docs\reference\device_model.rst:112
+msgid "added.auth.id"
+msgstr ""
+"added.auth.id"
+
+#: ..\docs\reference\device_model.rst:112
+msgid "ID that added the device"
+msgstr ""
+"Kennung, die von der Einheit hinzugefügt wurde"
+
+#: ..\docs\reference\device_model.rst:114
+msgid "added.dateTime"
+msgstr ""
+"added.dateTime"
+
+#: ..\docs\reference\device_model.rst:114
+msgid "ISO8601 date-time: Date and time the device was added"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit des Zeitpunkts, an dem die Einheit hinzugefügt wurde"
+
+#: ..\docs\reference\device_model.rst:117
+msgid "refs.diag.errorCodes"
+msgstr ""
+"refs.diag.errorCodes"
+
+#: ..\docs\reference\device_model.rst:117
+msgid "URI of diag extension for error codes, if present"
+msgstr ""
+"URI der Diagnoseerweiterung für Fehlercode, sofern vorhanden"
+
+#: ..\docs\reference\device_model.rst:119
+msgid "refs.diag.logs"
+msgstr ""
+"refs.diag.logs"
+
+#: ..\docs\reference\device_model.rst:119
+msgid "URI of diag extension for logs, if present"
+msgstr ""
+"URI der Diagnoseerweiterung für Protokolle, sofern vorhanden"
+
+#: ..\docs\reference\device_model.rst:121
+msgid "refs.location"
+msgstr ""
+"refs.location"
+
+#: ..\docs\reference\device_model.rst:121
+msgid "URI of location extension, if present"
+msgstr ""
+"URI der Positionserweiterung, sofern vorhanden"
+
+#: ..\docs\reference\device_model.rst:123
+msgid "refs.mgmt"
+msgstr ""
+"refs.mgmt"
+
+#: ..\docs\reference\device_model.rst:123
+msgid "URI of mgmt extension, is present"
+msgstr ""
+"URI der Managementerweiterung, sofern vorhanden"
+
+#: ..\docs\reference\device_model.rst:129
+msgid "Extended Attributes"
+msgstr ""
+"Erweiterte Attribute"
+
+#: ..\docs\reference\device_model.rst:131
+msgid "In addition to core attributes listed above, there are additional attributes which are treated as extensions to the core device model. Simple queries about the device return information from the core device model, but not the extensions. Information from the extensions must be specifically requested."
+msgstr ""
+"Zusätzlich zu den oben aufgelisteten Basisattributen gibt es zusätzliche Attribute, die als Erweiterungen zum Basiseinheitenmodell anzusehen sind. Einfache Abfragen zu den Einheitenrückgabeinformationen vom Basiseinheitenmodell, aber keine Erweiterungen. Informationen von Erweiterungen müssen ausdrücklich angefordert werden."
+
+#: ..\docs\reference\device_model.rst:137
+msgid "Extension Name"
+msgstr ""
+"Erweiterungsname"
+
+#: ..\docs\reference\device_model.rst:137
+msgid "Prefix of attributes"
+msgstr ""
+"Präfix der Attribute"
+
+#: ..\docs\reference\device_model.rst:137
+msgid "Purpose"
+msgstr ""
+"Verwendungszweck"
+
+#: ..\docs\reference\device_model.rst:139
+msgid "Diagnostics"
+msgstr ""
+"Diagnose"
+
+#: ..\docs\reference\device_model.rst:139
+msgid "diag"
+msgstr ""
+"diag"
+
+#: ..\docs\reference\device_model.rst:139
+msgid "Error logs and diagnostic information"
+msgstr ""
+"Fehlerprotokolle und Diagnoseinformationen"
+
+#: ..\docs\reference\device_model.rst:141
+msgid "Location"
+msgstr ""
+"Standort"
+
+#: ..\docs\reference\device_model.rst:141
+msgid "location"
+msgstr ""
+"location"
+
+#: ..\docs\reference\device_model.rst:141
+msgid "Location of the device, potentially updated regularly"
+msgstr ""
+"Position der Einheit, wird möglicherweise regelmäßig aktualisiert"
+
+#: ..\docs\reference\device_model.rst:143
+msgid "Device management"
+msgstr ""
+"Einheitenmanagement"
+
+#: ..\docs\reference\device_model.rst:143
+msgid "mgmt"
+msgstr ""
+"mgmt"
+
+#: ..\docs\reference\device_model.rst:143
+msgid "Device management actions, e.g. firmware update"
+msgstr ""
+"Einheitenmanagementaktionen, zum Beispiel 'Firmware-Update'"
+
+#: ..\docs\reference\device_model.rst:148
+msgid "Diagnostics Extension"
+msgstr ""
+"Diagnoseerweiterung"
+
+#: ..\docs\reference\device_model.rst:150
+msgid "The diagnostics attributes are optional, and only present for devices with error log information. These attributes are intended for diagnosing device problems, not troubleshooting connectivity to the Internet of Things Foundation. In order to retrieve the information in these attributes, it must be queried separately, because the information stored in these attributes could potentially be very large."
+msgstr ""
+"Die Diagnoseattribute sind optional und nur für Einheiten mit Fehlerprotokollinformationen verfügbar. Diese Attribute sind für die Diagnose von Einheitenproblemen konzipiert, nicht zur Behebung von Fehlern im Zusammenhang mit der Verbindung zu Internet of Things Foundation. Die Informationen in diesen Attributen müssen separat abgerufen werden, weil die in diesen Attributen gespeicherten Informationen unter Umständen sehr umfangreich sein können."
+
+#: ..\docs\reference\device_model.rst:152
+msgid "Diagnostic log information is an array of entries which can have entries appended using an API, however, this can cause earlier entries to be lost, to keep the size of diagnostic logs manageable. Each entry consists of a message, an indication of severity, a timestamp and an optional byte-array of data."
+msgstr ""
+"Diagnoseprotokollinformationen bestehen aus einer Reihe von Einträgen, an die mithilfe einer API Einträge angehängt sein können; dabei können jedoch ältere Einträge verloren gehen, weil die Diagnoseprotokolle eine noch praktikable Größe aufweisen sollen. Jeder Eintrag besteht aus einer Nachricht, einer Angabe zum Schweregrad, einer Zeitmarke und optional Bytefeldgruppendaten."
+
+#: ..\docs\reference\device_model.rst:157
+msgid "diag.errorCodes[]"
+msgstr ""
+"diag.errorCodes[]"
+
+#: ..\docs\reference\device_model.rst:157
+msgid "array of integer(s)"
+msgstr ""
+"Feldgruppe aus ganzen Zahlen"
+
+#: ..\docs\reference\device_model.rst:157
+msgid "Array of error codes"
+msgstr ""
+"Feldgruppe aus Fehlercodes"
+
+#: ..\docs\reference\device_model.rst:157
+#: ..\docs\reference\device_model.rst:157
+#: ..\docs\reference\device_model.rst:160
+#: ..\docs\reference\device_model.rst:160
+msgid "A"
+msgstr ""
+"A"
+
+#: ..\docs\reference\device_model.rst:160
+msgid "diag.log[]"
+msgstr ""
+"diag.log[]"
+
+#: ..\docs\reference\device_model.rst:160
+msgid "array"
+msgstr ""
+"array"
+
+#: ..\docs\reference\device_model.rst:160
+msgid "Array of diagnostic data"
+msgstr ""
+"Feldgruppe aus Diagnosedaten"
+
+#: ..\docs\reference\device_model.rst:162
+msgid "diag.log[].message"
+msgstr ""
+"diag.log[].message"
+
+#: ..\docs\reference\device_model.rst:162
+msgid "Diagnostic message"
+msgstr ""
+"Diagnosenachricht"
+
+#: ..\docs\reference\device_model.rst:164
+msgid "diag.log[].timestamp"
+msgstr ""
+"diag.log[].timestamp"
+
+#: ..\docs\reference\device_model.rst:164
+msgid "ISO8601 date-time: Date and time of log entry"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit des Protokolleintrags"
+
+#: ..\docs\reference\device_model.rst:166
+msgid "diag.log[].logData"
+msgstr ""
+"diag.log[].logData"
+
+#: ..\docs\reference\device_model.rst:166
+msgid "byte: Diagnostic data, base-64 encoded"
+msgstr ""
+"byte: Diagnosedaten, base-64-codiert"
+
+#: ..\docs\reference\device_model.rst:168
+msgid "diag.log[].severity"
+msgstr ""
+"diag.log[].severity"
+
+#: ..\docs\reference\device_model.rst:168
+#: ..\docs\reference\device_model.rst:182
+#: ..\docs\reference\device_model.rst:184
+#: ..\docs\reference\device_model.rst:186
+#: ..\docs\reference\device_model.rst:192
+#: ..\docs\reference\device_model.rst:229
+#: ..\docs\reference\device_model.rst:231
+msgid "number"
+msgstr ""
+"Zahl"
+
+#: ..\docs\reference\device_model.rst:168
+msgid "Severity of message, 0: informational, 1: warning, 2: error"
+msgstr ""
+"Schweregrad der Nachricht, 0: Informationsnachricht, 1: Warnung, 2: Fehler"
+
+#: ..\docs\reference\device_model.rst:173
+msgid "Location Extension"
+msgstr ""
+"Positionserweiterung"
+
+#: ..\docs\reference\device_model.rst:175
+msgid "These attributes are optional and only present for devices with location information. The location information is stored separately in order to allow the use of storage mechanisms better suited to dynamic information in the event of frequently updated information, for example, in the case of a mobile device."
+msgstr ""
+"Diese Attribute sind optional und nur für Einheiten mit Positionsinformationen verfügbar. Die Positionsinformationen werden separat gespeichert, damit Speicherverfahren verwendet werden können, die für dynamische Informationen besser geeignet sind, die häufig aktualisiert werden, zum Beispiel auf einem Mobilgerät."
+
+#: ..\docs\reference\device_model.rst:177
+msgid "For solutions which place significant importance on frequent location updates, it is expected that the location would be treated as part of the device's event payload, enabling higher update rates, simple historical storage, and analytics."
+msgstr ""
+"Bei Lösungen, für die häufige Positionsaktualisierungen im Vordergrund stehen, wird erwartet, dass die Position als Teil der Ereignisnutzdaten der Einheit behandelt werden, was höhere Aktualisierungsraten sowie ein einfaches Speichern von historischen Daten und Analysedaten ermöglicht."
+
+#: ..\docs\reference\device_model.rst:182
+msgid "location.longitude"
+msgstr ""
+"location.longitude"
+
+#: ..\docs\reference\device_model.rst:182
+msgid "Longitude in decimal degrees using WGS84"
+msgstr ""
+"Längengrad in Dezimalgrad unter Verwendung von WGS84"
+
+#: ..\docs\reference\device_model.rst:184
+msgid "location.latitude"
+msgstr ""
+"location.latitude"
+
+#: ..\docs\reference\device_model.rst:184
+msgid "Latitude in decimal degrees using WGS84"
+msgstr ""
+"Breitengrad in Dezimalgrad unter Verwendung von WGS84"
+
+#: ..\docs\reference\device_model.rst:186
+msgid "location.elevation"
+msgstr ""
+"location.elevation"
+
+#: ..\docs\reference\device_model.rst:186
+msgid "Elevation in metres using WGS84"
+msgstr ""
+"Erhebung in Meter unter Verwendung von WGS84"
+
+#: ..\docs\reference\device_model.rst:188
+msgid "location.measuredDateTime"
+msgstr ""
+"location.measuredDateTime"
+
+#: ..\docs\reference\device_model.rst:188
+msgid "ISO8601 date-time: Date and time of location measurement"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit der Positionsmessung"
+
+#: ..\docs\reference\device_model.rst:190
+msgid "location.updatedDateTime"
+msgstr ""
+"location.updatedDateTime"
+
+#: ..\docs\reference\device_model.rst:190
+msgid "ISO8601 date-time: Date and time"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit"
+
+#: ..\docs\reference\device_model.rst:192
+msgid "location.accuracy"
+msgstr ""
+"location.accuracy"
+
+#: ..\docs\reference\device_model.rst:192
+msgid "Accuracy of the position in metres"
+msgstr ""
+"Genauigkeit der Position in Meter"
+
+#: ..\docs\reference\device_model.rst:197
+msgid "Device Management Extension"
+msgstr ""
+"Einheitenmanagementerweiterung"
+
+#: ..\docs\reference\device_model.rst:199
+msgid "The ``mgmt.`` attributes are only present for managed devices. When a managed device becomes dormant, it becomes unmanaged and the ``mgmt.`` attributes are deleted. The ``mgmt.`` attributes are set by the Internet of Things Foundation as a result of processing device management requests. These attributes cannot be directly written using the API."
+msgstr ""
+"Attribute des Typs ``mgmt.`` stehen nur für verwaltete Einheiten zur Verfügung. Wenn eine verwaltete Einheit zu einer ruhenden Einheit wird, wird sie zu einer nicht verwalteten Einheit und die Attribute des Typs ``mgmt.`` werden gelöscht. Die Attribute des Typs ``mgmt.`` werden von Internet of Things Foundation als Ergebnis der Verarbeitung von Einheitenmanagementanforderungen eingestellt. Diese Attribute können nicht direkt von der API geschrieben werden."
+
+#: ..\docs\reference\device_model.rst:201
+msgid "Devices have a management lifecycle, defined by their status as managed devices. The device management agent on the device is responsible for sending a Manage Device request using the device management protocol. To deal with defunct devices in large device populations, a managed device can be set to send a Manage Device request regularly, allowing the Internet of Things Foundation to notice when a device has become dormant. To facilitate this functionality, the Manage Device request has an optional lifetime parameter, When the Internet of Things Foundation receives a Manage Device request with a lifetime, it calculates the time before which another Manage Device request is required and stores it in the  \"mgmt.dormantDateTime\" attribute."
+msgstr ""
+"Einheiten verfügen über einen Managementlebenszyklus, der von ihrem Status als verwaltete Einheit definiert wird. Der Einheitenmanagementagent einer Einheit ist dafür zuständig, die Anforderung 'Einheit verwalten' mithilfe des Einheitenmanagementprotokolls zu senden. Zur Handhabung von nicht mehr bestehenden Einheiten in einer Umgebung mit einer großen Anzahl an Einheiten, kann eine verwaltete Einheit so eingestellt werden, dass von ihr regelmäßig die Anforderung 'Einheit verwalten' gesendet wird; so kann von Internet of Things Foundation erkannt werden, ob eine Einheit zu einer ruhenden Einheit geworden ist. Zur Vereinfachung dieser Funktion verfügt die Anforderung 'Einheit verwalten' über einen optionalen Parameter für den Lebenszyklus. Wenn Internet of Things Foundation die Anforderung 'Einheit verwalten' mit dem Parameter für den Lebenszyklus empfängt, wird von ihr der Zeitpunkt berechnet, vor dem eine weitere Anforderung des Typs 'Einheit verwalten' erforderlich ist, und speichert diesen Wert im Attribut \"mgmt.dormantDateTime\"."
+
+#: ..\docs\reference\device_model.rst:206
+msgid "mgmt.dormant"
+msgstr ""
+"mgmt.dormant"
+
+#: ..\docs\reference\device_model.rst:206
+msgid "Whether the device has become dormant"
+msgstr ""
+"Gibt an, ob die Einheit zu einer ruhenden Einheit wurde"
+
+#: ..\docs\reference\device_model.rst:208
+msgid "mgmt.dormantDateTime"
+msgstr ""
+"mgmt.dormantDateTime"
+
+#: ..\docs\reference\device_model.rst:208
+msgid "ISO8601 date-time: Date and time at which the managed device will become dormant"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit des Zeitpunkts, an dem die Einheit zu einer ruhenden Einheit wird"
+
+#: ..\docs\reference\device_model.rst:211
+msgid "mgmt.lastActivityDateTime"
+msgstr ""
+"mgmt.lastActivityDateTime"
+
+#: ..\docs\reference\device_model.rst:211
+msgid "ISO8601 date-time: Date and time of last activity, updated periodically"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit der letzten Aktivität, wird regelmäßig aktualisiert"
+
+#: ..\docs\reference\device_model.rst:214
+msgid "mgmt.supports.deviceActions"
+msgstr ""
+"mgmt.supports.deviceActions"
+
+#: ..\docs\reference\device_model.rst:214
+msgid "Whether the device supports Reboot and Factory Reset actions"
+msgstr ""
+"Gibt an, ob von der Einheit die Aktionen für Neustart und Factory-Reset unterstützt werden"
+
+#: ..\docs\reference\device_model.rst:217
+msgid "mgmt.supports.firmwareActions"
+msgstr ""
+"mgmt.supports.firmwareActions"
+
+#: ..\docs\reference\device_model.rst:217
+msgid "Whether the device supports Firmware Download and Firmware Update actions"
+msgstr ""
+"Gibt an, ob von der Einheit die Aktionen für Firmware-Download und Firmware-Update unterstützt werden"
+
+#: ..\docs\reference\device_model.rst:220
+msgid "mgmt.firmware.version"
+msgstr ""
+"mgmt.firmware.version"
+
+#: ..\docs\reference\device_model.rst:220
+msgid "The version of the firmware on the device"
+msgstr ""
+"Die Version der Firmware der Einheit"
+
+#: ..\docs\reference\device_model.rst:222
+msgid "mgmt.firmware.name"
+msgstr ""
+"mgmt.firmware.name"
+
+#: ..\docs\reference\device_model.rst:222
+msgid "The name of the firmware to be used on the device"
+msgstr ""
+"Der Name der Firmware, die auf der Einheit verwendet werden soll"
+
+#: ..\docs\reference\device_model.rst:224
+msgid "mgmt.firmware.uri"
+msgstr ""
+"mgmt.firmware.uri"
+
+#: ..\docs\reference\device_model.rst:224
+msgid "The URI from which the firmware image can be downloaded"
+msgstr ""
+"Die URI, von der das Firmware-Image heruntergeladen werden kann"
+
+#: ..\docs\reference\device_model.rst:226
+msgid "mgmt.firmware.verifier"
+msgstr ""
+"mgmt.firmware.verifier"
+
+#: ..\docs\reference\device_model.rst:226
+msgid "The verifier such as a checksum for the firmware image to validate its integrity"
+msgstr ""
+"Der Verifizierungszeichenfolge (zum Beispiel eine Kontrollsumme) für das Firmware-Image zum Überprüfen der Integrität"
+
+#: ..\docs\reference\device_model.rst:229
+msgid "mgmt.firmware.state"
+msgstr ""
+"mgmt.firmware.state"
+
+#: ..\docs\reference\device_model.rst:229
+msgid "Indicates the state of firmware download"
+msgstr ""
+"Gibt den Status des Firmware-Downloads an"
+
+#: ..\docs\reference\device_model.rst:231
+msgid "mgmt.firmware.updateStatus"
+msgstr ""
+"mgmt.firmware.updateStatus"
+
+#: ..\docs\reference\device_model.rst:231
+msgid "Indicates the status of the update"
+msgstr ""
+"Gibt den Status der Aktualisierung an"
+
+#: ..\docs\reference\device_model.rst:233
+msgid "mgmt.firmware.updatedDateTime"
+msgstr ""
+"mgmt.firmware.updatedDateTime"
+
+#: ..\docs\reference\device_model.rst:233
+msgid "ISO8601 date-time: Date of last update"
+msgstr ""
+"ISO8601 date-time: Datum und Zeit der letzten Aktualisierung"
+

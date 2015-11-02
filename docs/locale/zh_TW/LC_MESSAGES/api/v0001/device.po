@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0001\device.rst:3
+msgid "Device API v0001"
+msgstr ""
+"裝置 API v0001"
+
+#: ..\docs\api\v0001\device.rst:7
+msgid "Authentication"
+msgstr ""
+"鑑別"
+
+#: ..\docs\api\v0001\device.rst:9
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
+msgstr ""
+"此 API 只能透過 HTTPS 存取，且受到「HTTP 基本鑑別」保護，您必須在每一次要求時提供使用者名稱和密碼。"
+
+#: ..\docs\api\v0001\device.rst:14
+msgid "Username"
+msgstr ""
+"使用者名稱"
+
+#: ..\docs\api\v0001\device.rst:16
+msgid "A valid API key registered to the organization you want to work with."
+msgstr ""
+"已登錄到您想要使用之組織的有效 API 金鑰。"
+
+#: ..\docs\api\v0001\device.rst:20
+msgid "Password"
+msgstr ""
+"密碼"
+
+#: ..\docs\api\v0001\device.rst:22
+msgid "The authentication token corresponding to your API key."
+msgstr ""
+"對應到 API 金鑰的鑑別記號。"
+
+#: ..\docs\api\v0001\device.rst:30
+msgid "View Organization"
+msgstr ""
+"檢視組織"
+
+#: ..\docs\api\v0001\device.rst:32
+msgid "Retrieve details about an organization."
+msgstr ""
+"擷取關於組織的詳細資料。"
+
+#: ..\docs\api\v0001\device.rst:36
+#: ..\docs\api\v0001\device.rst:85
+#: ..\docs\api\v0001\device.rst:178
+#: ..\docs\api\v0001\device.rst:253
+#: ..\docs\api\v0001\device.rst:319
+#: ..\docs\api\v0001\device.rst:421
+#: ..\docs\api\v0001\device.rst:513
+#: ..\docs\api\v0001\device.rst:586
+msgid "Request"
+msgstr ""
+"要求"
+
+#: ..\docs\api\v0001\device.rst:37
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+
+#: ..\docs\api\v0001\device.rst:41
+#: ..\docs\api\v0001\device.rst:91
+#: ..\docs\api\v0001\device.rst:184
+#: ..\docs\api\v0001\device.rst:259
+#: ..\docs\api\v0001\device.rst:325
+#: ..\docs\api\v0001\device.rst:427
+#: ..\docs\api\v0001\device.rst:519
+#: ..\docs\api\v0001\device.rst:592
+msgid "Request Body"
+msgstr ""
+"要求內文"
+
+#: ..\docs\api\v0001\device.rst:43
+#: ..\docs\api\v0001\device.rst:93
+#: ..\docs\api\v0001\device.rst:186
+#: ..\docs\api\v0001\device.rst:261
+#: ..\docs\api\v0001\device.rst:521
+#: ..\docs\api\v0001\device.rst:594
+#: ..\docs\api\v0001\device.rst:600
+msgid "None"
+msgstr ""
+"無"
+
+#: ..\docs\api\v0001\device.rst:47
+#: ..\docs\api\v0001\device.rst:97
+#: ..\docs\api\v0001\device.rst:190
+#: ..\docs\api\v0001\device.rst:265
+#: ..\docs\api\v0001\device.rst:360
+#: ..\docs\api\v0001\device.rst:451
+#: ..\docs\api\v0001\device.rst:525
+#: ..\docs\api\v0001\device.rst:598
+msgid "Response Body"
+msgstr ""
+"回應內文"
+
+#: ..\docs\api\v0001\device.rst:49
+#: ..\docs\api\v0001\device.rst:103
+#: ..\docs\api\v0001\device.rst:109
+#: ..\docs\api\v0001\device.rst:196
+#: ..\docs\api\v0001\device.rst:202
+#: ..\docs\api\v0001\device.rst:330
+#: ..\docs\api\v0001\device.rst:367
+#: ..\docs\api\v0001\device.rst:458
+#: ..\docs\api\v0001\device.rst:464
+#: ..\docs\api\v0001\device.rst:531
+#: ..\docs\api\v0001\device.rst:537
+msgid "id - String"
+msgstr ""
+"id - 字串"
+
+#: ..\docs\api\v0001\device.rst:50
+msgid "name - String"
+msgstr ""
+"name - 字串"
+
+#: ..\docs\api\v0001\device.rst:51
+msgid "created - ISO8601 date string"
+msgstr ""
+"created - ISO8601 日期字串"
+
+#: ..\docs\api\v0001\device.rst:52
+msgid "updated - ISO8601 date string"
+msgstr ""
+"updated - ISO8601 日期字串"
+
+#: ..\docs\api\v0001\device.rst:56
+#: ..\docs\api\v0001\device.rst:117
+#: ..\docs\api\v0001\device.rst:210
+#: ..\docs\api\v0001\device.rst:274
+#: ..\docs\api\v0001\device.rst:378
+#: ..\docs\api\v0001\device.rst:472
+#: ..\docs\api\v0001\device.rst:545
+msgid "Example Response"
+msgstr ""
+"回應範例"
+
+#: ..\docs\api\v0001\device.rst:69
+#: ..\docs\api\v0001\device.rst:162
+#: ..\docs\api\v0001\device.rst:237
+#: ..\docs\api\v0001\device.rst:291
+#: ..\docs\api\v0001\device.rst:404
+#: ..\docs\api\v0001\device.rst:497
+#: ..\docs\api\v0001\device.rst:570
+#: ..\docs\api\v0001\device.rst:604
+msgid "Common Response Codes"
+msgstr ""
+"一般回應碼"
+
+#: ..\docs\api\v0001\device.rst:71
+#: ..\docs\api\v0001\device.rst:164
+#: ..\docs\api\v0001\device.rst:239
+#: ..\docs\api\v0001\device.rst:293
+#: ..\docs\api\v0001\device.rst:499
+#: ..\docs\api\v0001\device.rst:572
+msgid "200 (Success)"
+msgstr ""
+"200（成功）"
+
+#: ..\docs\api\v0001\device.rst:79
+msgid "List Devices"
+msgstr ""
+"列出裝置"
+
+#: ..\docs\api\v0001\device.rst:81
+msgid "Get a list of all devices in an organization."
+msgstr ""
+"取得組織中所有裝置的清單。"
+
+#: ..\docs\api\v0001\device.rst:87
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:99
+#: ..\docs\api\v0001\device.rst:192
+msgid "The response body will contain a list of devices, as below:"
+msgstr ""
+"回應內文將包含裝置清單，如下所示："
+
+#: ..\docs\api\v0001\device.rst:101
+#: ..\docs\api\v0001\device.rst:194
+#: ..\docs\api\v0001\device.rst:365
+#: ..\docs\api\v0001\device.rst:456
+#: ..\docs\api\v0001\device.rst:529
+msgid "uuid - String"
+msgstr ""
+"uuid - 字串"
+
+#: ..\docs\api\v0001\device.rst:102
+#: ..\docs\api\v0001\device.rst:110
+#: ..\docs\api\v0001\device.rst:195
+#: ..\docs\api\v0001\device.rst:203
+#: ..\docs\api\v0001\device.rst:329
+#: ..\docs\api\v0001\device.rst:366
+#: ..\docs\api\v0001\device.rst:457
+#: ..\docs\api\v0001\device.rst:465
+#: ..\docs\api\v0001\device.rst:530
+#: ..\docs\api\v0001\device.rst:538
+msgid "type - String"
+msgstr ""
+"type - 字串"
+
+#: ..\docs\api\v0001\device.rst:104
+#: ..\docs\api\v0001\device.rst:368
+msgid "metadata - Complex data (if available)"
+msgstr ""
+"metadata - 複式資料（如果可用的話）"
+
+#: ..\docs\api\v0001\device.rst:105
+#: ..\docs\api\v0001\device.rst:198
+#: ..\docs\api\v0001\device.rst:460
+#: ..\docs\api\v0001\device.rst:533
+msgid "registration"
+msgstr ""
+"登錄"
+
+#: ..\docs\api\v0001\device.rst:107
+#: ..\docs\api\v0001\device.rst:200
+#: ..\docs\api\v0001\device.rst:462
+#: ..\docs\api\v0001\device.rst:535
+msgid "auth"
+msgstr ""
+"鑑別"
+
+#: ..\docs\api\v0001\device.rst:112
+#: ..\docs\api\v0001\device.rst:205
+#: ..\docs\api\v0001\device.rst:467
+#: ..\docs\api\v0001\device.rst:540
+msgid "date - ISO8601 date string"
+msgstr ""
+"date - ISO8601 日期字串"
+
+#: ..\docs\api\v0001\device.rst:172
+msgid "List Devices by Type"
+msgstr ""
+"依類型列出裝置"
+
+#: ..\docs\api\v0001\device.rst:174
+msgid "Get a list of all devices of a specific type in an organization."
+msgstr ""
+"取得組織中特定類型的所有裝置清單。"
+
+#: ..\docs\api\v0001\device.rst:180
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+
+#: ..\docs\api\v0001\device.rst:197
+#: ..\docs\api\v0001\device.rst:432
+#: ..\docs\api\v0001\device.rst:459
+#: ..\docs\api\v0001\device.rst:532
+msgid "metadata - Complex data"
+msgstr ""
+"metadata - 複式資料"
+
+#: ..\docs\api\v0001\device.rst:247
+msgid "List Device Types"
+msgstr ""
+"列出裝置類型"
+
+#: ..\docs\api\v0001\device.rst:249
+msgid "Get a list of all devices types in an organization."
+msgstr ""
+"取得組織中所有裝置類型的清單。"
+
+#: ..\docs\api\v0001\device.rst:255
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+
+#: ..\docs\api\v0001\device.rst:267
+msgid "The response body will contain a list of device types:"
+msgstr ""
+"回應內文將包含裝置類型的清單："
+
+#: ..\docs\api\v0001\device.rst:269
+msgid "deviceType - String"
+msgstr ""
+"deviceType - 字串"
+
+#: ..\docs\api\v0001\device.rst:270
+msgid "count - Integer"
+msgstr ""
+"count - 整數"
+
+#: ..\docs\api\v0001\device.rst:301
+msgid "Register a New Device"
+msgstr ""
+"登錄新裝置"
+
+#: ..\docs\api\v0001\device.rst:303
+msgid "Register a new device to an organization."
+msgstr ""
+"在組織中登錄新裝置。"
+
+#: ..\docs\api\v0001\device.rst:305
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
+msgstr ""
+"對已登錄裝置指派類型和 ID 的值時，您可以使用自己選擇的任何方法，但有下列限制："
+
+#: ..\docs\api\v0001\device.rst:308
+msgid "Maximum length of 36 characters"
+msgstr ""
+"長度上限為 36 個字元"
+
+#: ..\docs\api\v0001\device.rst:309
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
+msgstr ""
+"只能包含英數字元和下列特殊字元："
+
+#: ..\docs\api\v0001\device.rst:311
+msgid "dash (\"-\")"
+msgstr ""
+"橫線 (\"-\")"
+
+#: ..\docs\api\v0001\device.rst:312
+msgid "underscore (\"\\_\")"
+msgstr ""
+"底線 (\"\\_\")"
+
+#: ..\docs\api\v0001\device.rst:313
+msgid "dot (\".\")"
+msgstr ""
+"句點 (\".\")"
+
+#: ..\docs\api\v0001\device.rst:321
+msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:327
+msgid "You must specify the type and identifer of the device being registered."
+msgstr ""
+"您必須指定所要登錄之裝置的類型和 ID。"
+
+#: ..\docs\api\v0001\device.rst:331
+msgid "metadata - Complex data (optional)"
+msgstr ""
+"metadata - 複式資料（選用）"
+
+#: ..\docs\api\v0001\device.rst:332
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
+msgstr ""
+"password - 字串（選用，遵循與類型和 ID 相同的限制，長度下限為 8 個字元）"
+
+#: ..\docs\api\v0001\device.rst:336
+#: ..\docs\api\v0001\device.rst:436
+msgid "Example Request"
+msgstr ""
+"要求範例"
+
+#: ..\docs\api\v0001\device.rst:353
+msgid "Response Headers"
+msgstr ""
+"回應標頭"
+
+#: ..\docs\api\v0001\device.rst:355
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
+msgstr ""
+"回應標頭將包含已登錄裝置的位置（資源 URI）。\\* 位置 - URI"
+
+#: ..\docs\api\v0001\device.rst:362
+msgid "The response body will contain a uuid and password for the registered device."
+msgstr ""
+"回應內文將包含已登錄裝置的 UUID 和密碼。"
+
+#: ..\docs\api\v0001\device.rst:369
+msgid "password - String"
+msgstr ""
+"password - 字串"
+
+#: ..\docs\api\v0001\device.rst:371
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
+msgstr ""
+"回應內文將包含此裝置已產生的鑑別記號。在處理回應時，請務必記錄此記號。此資料以隨機雜湊方式儲存，因此我們無法擷取失去的鑑別記號。"
+
+#: ..\docs\api\v0001\device.rst:406
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
+msgstr ""
+"201（已建立）- 已順利登錄此裝置（位置標頭設為新裝置的 URL）"
+
+#: ..\docs\api\v0001\device.rst:415
+msgid "Update a Registered Device"
+msgstr ""
+"更新已登錄裝置"
+
+#: ..\docs\api\v0001\device.rst:417
+msgid "Update an existing device in an organization."
+msgstr ""
+"更新組織中現有的裝置。"
+
+#: ..\docs\api\v0001\device.rst:423
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:429
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
+msgstr ""
+"目前，在起始登錄之後可變更的裝置唯一內容是它的 meta 資料。"
+
+#: ..\docs\api\v0001\device.rst:453
+msgid "The response body will contain the updated properties of the registered device."
+msgstr ""
+"回應內文將包含已登錄裝置的已更新內容。"
+
+#: ..\docs\api\v0001\device.rst:507
+msgid "View a Registered Device"
+msgstr ""
+"檢視已登錄裝置"
+
+#: ..\docs\api\v0001\device.rst:509
+msgid "Get summary information about a registered device in an organization."
+msgstr ""
+"取得關於組織中已登錄裝置的摘要資訊。"
+
+#: ..\docs\api\v0001\device.rst:515
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:527
+msgid "The response body will contain the known properties of the device."
+msgstr ""
+"回應內文將包含裝置的已知內容。"
+
+#: ..\docs\api\v0001\device.rst:580
+msgid "Delete a Registered Device"
+msgstr ""
+"刪除已登錄裝置"
+
+#: ..\docs\api\v0001\device.rst:582
+msgid "Unregister a device from an organization."
+msgstr ""
+"從組織中取消登錄裝置。"
+
+#: ..\docs\api\v0001\device.rst:588
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:606
+msgid "204 (No Content) - The device was successfully deleted"
+msgstr ""
+"204（無內容）- 已順利刪除裝置"
+

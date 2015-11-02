@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\c_sharp_devices.rst:3
+msgid "C# Client Library - Devices"
+msgstr ""
+"Biblioteca de cliente de C# - Dispositivos"
+
+#: ..\docs\libraries\c_sharp_devices.rst:6
+msgid "Introduction"
+msgstr ""
+"Introducción"
+
+#: ..\docs\libraries\c_sharp_devices.rst:7
+msgid "This client library describes how to use devices with the C# ibmiotf module. For help with getting started with this module, see `C Sharp Client Library - Introduction <../libraries/c_sharp_introduction.html#/>`_\\."
+msgstr ""
+"Esta biblioteca de cliente describe cómo utilizar dispositivos con el módulo C# ibmiotf. Para obtener ayuda para empezar a utilizar este módulo, consulte ` Biblioteca de cliente C# - Introducción <../libraries/c_sharp_introduction.html#/>`_\\."
+
+#: ..\docs\libraries\c_sharp_devices.rst:9
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the C# ibmiotf module. The Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"Esta biblioteca de cliente se divide en dos secciones, ambas incluidas en la biblioteca. Esta sección contiene información sobre cómo publican los dispositivos los sucesos y manejan los mandatos utilizando el módulo C# ibmiotf. La sección Aplicaciones contiene información sobre cómo pueden utilizar  el módulo ibmiotf para interactuar con los dispositivos."
+
+#: ..\docs\libraries\c_sharp_devices.rst:12
+msgid "Constructor"
+msgstr ""
+"Constructor"
+
+#: ..\docs\libraries\c_sharp_devices.rst:13
+msgid "The constructor builds the client instance, and accepts arguments containing the following definitions:"
+msgstr ""
+"El constructor crea la instancia de cliente y acepta argumentos que contienen las definiciones siguientes:"
+
+#: ..\docs\libraries\c_sharp_devices.rst:15
+msgid "orgId - Your organization ID."
+msgstr ""
+"orgId - ID de organización."
+
+#: ..\docs\libraries\c_sharp_devices.rst:16
+msgid "deviceType - The type of your device."
+msgstr ""
+"deviceType - Tipo del dispositivo."
+
+#: ..\docs\libraries\c_sharp_devices.rst:17
+msgid "deviceId - The ID of your device."
+msgstr ""
+"deviceId - ID del dispositivo."
+
+#: ..\docs\libraries\c_sharp_devices.rst:18
+msgid "auth-method - Method of authentication (the only value currently supported is “token”)."
+msgstr ""
+"auth-method - Método de autenticación (el único valor admitido actualmente es \"token\")."
+
+#: ..\docs\libraries\c_sharp_devices.rst:19
+msgid "auth-token - API key token (required if auth-method is “token”)."
+msgstr ""
+"auth-token - Señal de clave de API (necesario si auth-method es \"token\")."
+
+#: ..\docs\libraries\c_sharp_devices.rst:22
+msgid "If deviceId and deviceType are provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The argument lists creates definitions which are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"Si solo se suministran deviceId y deviceType, el cliente se conectará con el servicio Quickstart de Internet of Things Foundation y de forma predeterminada con un dispositivo sin registrar. Las listas de argumentos crean definiciones que se utilizan para interactuar con el módulo Internet of Things Foundation."
+
+#: ..\docs\libraries\c_sharp_devices.rst:36
+msgid "Publishing events"
+msgstr ""
+"Publicación de sucesos"
+
+#: ..\docs\libraries\c_sharp_devices.rst:37
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Los sucesos son el mecanismo mediante el cual los dispositivos publican datos en Internet of Things Foundation. El dispositivo controla el contenido del suceso y asigna un nombre para cada suceso que envía."
+
+#: ..\docs\libraries\c_sharp_devices.rst:39
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine which device sent the event. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Cuando IoT Foundation recibe un suceso, las credenciales de la conexión en la que se ha recibido el suceso se utilizan para determinar qué dispositivo envió el suceso. Con esta arquitectura, es imposible que un dispositivo pueda representar a otro dispositivo."
+
+#: ..\docs\libraries\c_sharp_devices.rst:41
+msgid "Events can be published at any of the three `quality of service (QoS) levels <../mqtt.html#/qoslevels>`_, defined by the MQTT protocol. By default events will be published as QoS level 0."
+msgstr ""
+"Los sucesos se pueden publicar en cualquiera de los sucesos de los niveles de calidad de servicio (QoS) <../mqtt.html#/qoslevels>`_, definidos por el protocolo MQTT. De forma predeterminada, los sucesos se publicarán con el nivel de QoS 0."
+
+#: ..\docs\libraries\c_sharp_devices.rst:44
+msgid "Publish event using default quality of service"
+msgstr ""
+"Publicar suceso utilizando calidad de servicio predeterminada"
+
+#: ..\docs\libraries\c_sharp_devices.rst:53
+msgid "Publish event using user-defined quality of service"
+msgstr ""
+"Publicar suceso utilizando calidad de servicio definida por el usuario"
+
+#: ..\docs\libraries\c_sharp_devices.rst:54
+msgid "Events can be published at higher MQTT quality of service levels, but events published at QoS levels above 0 may be slower then QoS 0 events, because of the extra confirmation of receipt used in QoS levels above 0."
+msgstr ""
+"Los sucesos se pueden publicar con niveles de calidad de servicio de MQTT más altos, pero los sucesos publicados con un nivel de calidad de servicio por encima de 0 pueden ser más lento que los sucesos del QoS 0, debido a la confirmación de recibo adicional que utilizan los niveles de calidad de servicio por encima de 0."
+
+#: ..\docs\libraries\c_sharp_devices.rst:63
+msgid "Handling commands"
+msgstr ""
+"Manejo de mandatos"
+
+#: ..\docs\libraries\c_sharp_devices.rst:64
+msgid "When the device client connects, it automatically subscribes to any commands for this device. To process specific commands, you must register a command callback method."
+msgstr ""
+"Cuando el cliente de dispositivo se conecta, se suscribe automáticamente a todos los mandatos para este dispositivo. Para procesar mandatos específicos, debe registrar un método de devolución de llamada de mandato."
+

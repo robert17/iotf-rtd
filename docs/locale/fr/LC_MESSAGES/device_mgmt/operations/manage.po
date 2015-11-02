@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\manage.rst:3
+msgid "Device Management Operations - Manage"
+msgstr ""
+"Opérations de gestion des terminaux - Gérer"
+
+#: ..\docs\device_mgmt\operations\manage.rst:5
+msgid "The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices."
+msgstr ""
+"Les deux actions de gestion des terminaux sont Gérer et Annuler la gestion. Ces deux opérations sont obligatoires pour les terminaux gérés."
+
+#: ..\docs\device_mgmt\operations\manage.rst:10
+msgid "Manage Device"
+msgstr ""
+"Gérer le terminal"
+
+#: ..\docs\device_mgmt\operations\manage.rst:12
+msgid "A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever it starts or restarts."
+msgstr ""
+"Un terminal utilise cette demande pour devenir un terminal géré. Cette demande doit être la première demande de gestion envoyée par le terminal après sa connexion à Internet of Things Foundation. Un agent de gestion des terminaux envoie généralement cette demande à chaque démarrage ou redémarrage."
+
+#: ..\docs\device_mgmt\operations\manage.rst:15
+#: ..\docs\device_mgmt\operations\manage.rst:85
+msgid "Topic"
+msgstr ""
+"Sujet"
+
+#: ..\docs\device_mgmt\operations\manage.rst:23
+#: ..\docs\device_mgmt\operations\manage.rst:92
+msgid "Message Format"
+msgstr ""
+"Format du message"
+
+#: ..\docs\device_mgmt\operations\manage.rst:25
+msgid "For the request, the ``d`` field and all of its sub-fields are optional. The ``metadata`` and ``deviceInfo`` field values replace the corresponding attributes for the sending device if they are sent."
+msgstr ""
+"Pour la demande, la zone ``d`` et toutes ses sous-zones sont facultatives. Les valeurs des zones ``metadata`` et ``deviceInfo`` remplacent les attributs correspondants du terminal d'envoi, si elles sont envoyées."
+
+#: ..\docs\device_mgmt\operations\manage.rst:27
+msgid "The optional ``lifetime`` field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as dormant. If omitted or if set to ``0``, the managed device will not become dormant.  When set, the minimum supported setting is ``3600`` (1 hour)."
+msgstr ""
+"La zone facultative ``lifetime`` indique la période, en secondes, au cours de laquelle le terminal doit envoyer une autre demande 'Gérer le terminal' pour éviter de revenir à l'état d'un terminal non géré et passer en mode veille. Si la zone est omise ou correspond à ``0``, le terminal géré n'est pas mis en veille.  Si la zone est définie, la valeur minimale acceptée est ``3600`` (1 heure)."
+
+#: ..\docs\device_mgmt\operations\manage.rst:29
+msgid "Optional ``supports.deviceActions`` and ``supports.firmwareActions`` indicate the capabilities of the device management agent. If ``supports.deviceActions`` is set, the agent supports Reboot and Factory Reset actions. For a device that does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If ``supports.firmwareActions`` is set, the agent supports Firmware Download and Firmware Update actions."
+msgstr ""
+"Facultatif. ``supports.deviceActions`` et ``supports.firmwareActions`` indiquent les fonctionnalités de l'agent de gestion des terminaux. Si ``supports.deviceActions`` est défini, l'agent prend en charge les actions Réamorcer et Réinitialiser avec les paramètres d'usine. Pour un terminal qui ne fait pas de distinction entre le réamorçage et la réinitialisation avec les paramètres d'usine, vous pouvez utiliser le même comportement pour les deux actions. Si ``supports.firmwareActions`` est défini, l'agent prend en charge les actions Télécharger le microprogramme et Mettre à jour le microprogramme."
+
+#: ..\docs\device_mgmt\operations\manage.rst:31
+#: ..\docs\device_mgmt\operations\manage.rst:94
+msgid "Request Format:"
+msgstr ""
+"Format de la demande :"
+
+#: ..\docs\device_mgmt\operations\manage.rst:58
+#: ..\docs\device_mgmt\operations\manage.rst:102
+msgid "Response Format:"
+msgstr ""
+"Format de la réponse :"
+
+#: ..\docs\device_mgmt\operations\manage.rst:71
+#: ..\docs\device_mgmt\operations\manage.rst:112
+msgid "Possible Response Codes:"
+msgstr ""
+"Codes de réponse possibles :"
+
+#: ..\docs\device_mgmt\operations\manage.rst:73
+#: ..\docs\device_mgmt\operations\manage.rst:114
+msgid "200: The operation was successful."
+msgstr ""
+"200 : L'opération a abouti."
+
+#: ..\docs\device_mgmt\operations\manage.rst:74
+#: ..\docs\device_mgmt\operations\manage.rst:115
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400 : Le message d'entrée ne correspond pas au format attendu ou une des valeurs n'est pas comprise dans la plage valide."
+
+#: ..\docs\device_mgmt\operations\manage.rst:75
+#: ..\docs\device_mgmt\operations\manage.rst:116
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404 : Le nom de sujet est incorrect ou le terminal n'est pas dans la base de données."
+
+#: ..\docs\device_mgmt\operations\manage.rst:76
+#: ..\docs\device_mgmt\operations\manage.rst:117
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409 : Un conflit s'est produit au cours de la mise à jour de la base de données de terminaux. Pour résoudre ce problème, simplifiez si nécessaire l'opération."
+
+#: ..\docs\device_mgmt\operations\manage.rst:80
+msgid "Unmanage Device"
+msgstr ""
+"Annuler la gestion du terminal"
+
+#: ..\docs\device_mgmt\operations\manage.rst:82
+msgid "A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request."
+msgstr ""
+"Un terminal utilise cette demande lorsqu'il n'a plus besoin d'être géré. Internet of Things Foundation n'enverra plus de nouvelles demandes de gestion de terminaux à ce terminal et toutes les demandes de gestion émises par ce terminal seront rejetées, à l'exception de la demande de gestion du terminal."
+

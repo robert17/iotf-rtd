@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\nodejs\node-js_devices.rst:2
+msgid "Node.js Client Library - Devices"
+msgstr ""
+"Libreria client Node.js - Dispositivi"
+
+#: ..\docs\nodejs\node-js_devices.rst:4
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using the Node.js with the Internet of Things Foundation to interact with your devices and applications."
+msgstr ""
+"Il client node.js viene utilizzato per semplificare l'interazione con Internet of Things Foundation. Questa libreria client contiene istruzioni ed orientamenti sull'utilizzo di Node.js con Internet of Things Foundation per interagire con i dispositivi e le applicazioni."
+
+#: ..\docs\nodejs\node-js_devices.rst:6
+msgid "The client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using node.js, and the Applications section contains information on how applications can use the node.js Internet of Things Foundation module to interact with devices."
+msgstr ""
+"La libreria client è divisa in due parti, Dispositivi e Applicazioni. La sezione Dispositivi contiene informazioni su come i dispositivi pubblicano gli eventi e gestiscono i comandi tramite l'utilizzo di node.js, e la sezione Applicazioni contiene informazioni su come le applicazioni possono utilizzare node.js per interagire con i dispositivi."
+
+#: ..\docs\nodejs\node-js_devices.rst:8
+msgid "*IotfDevice* is the device client for the Internet of Things Foundation service. You can use this client to connect to the service, publish events from the device and subscribe to commands."
+msgstr ""
+"*IotfDevice* è il client di dispositivo per il servizio Internet of Things Foundation. È possibile utilizzare questo client per connettersi al servizio, pubblicare gli eventi dal dispositivo e sottoscrivere comandi."
+
+#: ..\docs\nodejs\node-js_devices.rst:11
+msgid "Constructor"
+msgstr ""
+"Costruttore"
+
+#: ..\docs\nodejs\node-js_devices.rst:13
+msgid "The constructor builds the device client instance. It accepts a configuration json containing the following definitions:"
+msgstr ""
+"Il costruttore crea l'istanza del client del dispositivo. Accetta una configurazione json contenente le seguenti definizioni:"
+
+#: ..\docs\nodejs\node-js_devices.rst:15
+msgid "org - Your organization ID"
+msgstr ""
+"org - L'ID organizzazione"
+
+#: ..\docs\nodejs\node-js_devices.rst:16
+msgid "type - The type of your device"
+msgstr ""
+"type - Il tipo di dispositivo"
+
+#: ..\docs\nodejs\node-js_devices.rst:17
+msgid "id - The ID of your device"
+msgstr ""
+"id - L'ID del dispositivo"
+
+#: ..\docs\nodejs\node-js_devices.rst:18
+msgid "auth-method - Method of authentication (the only value currently supported is “token”)"
+msgstr ""
+"auth-method - Il metodo di autenticazione (il solo valore attualmente supportato è “token”)"
+
+#: ..\docs\nodejs\node-js_devices.rst:19
+msgid "auth-token - API key token (required if auth-method is “token”)"
+msgstr ""
+"auth-token - Il token della chiave API (richiesto se authmethod è “token”)"
+
+#: ..\docs\nodejs\node-js_devices.rst:21
+msgid "If you want to use quickstart, then send only the first three properties."
+msgstr ""
+"Se si desidera utilizzare quickstart, inviare solo le prime tre proprietà."
+
+#: ..\docs\nodejs\node-js_devices.rst:37
+msgid "Using a configuration file"
+msgstr ""
+"Tramite file di configurazione"
+
+#: ..\docs\nodejs\node-js_devices.rst:39
+msgid "Instead of passing the configuration json directly, you can also use a configuration file. Use the following code snippet:"
+msgstr ""
+"Invece di passare il json di configurazione direttamente, è possibile anche utilizzare un file di configurazione. Utilizzare il seguente frammento di codice:"
+
+#: ..\docs\nodejs\node-js_devices.rst:48
+msgid "The configuration file must be in the format of"
+msgstr ""
+"Il file di configurazione deve essere nel formato"
+
+#: ..\docs\nodejs\node-js_devices.rst:59
+msgid "Connecting to the Internet of Things Foundation"
+msgstr ""
+"Connessione a Internet of Things Foundation"
+
+#: ..\docs\nodejs\node-js_devices.rst:61
+msgid "Connect to the Internet of Things Foundation by calling the *connect* function."
+msgstr ""
+"Connettersi a Internet of Things Foundation richiamando la funzione *connect*."
+
+#: ..\docs\nodejs\node-js_devices.rst:76
+msgid "After the successful connection to the IoTF service, the device client sends a *connect* event. So all the device logic can be implemented inside this callback function."
+msgstr ""
+"Dopo che la connessione al servizio IoTF ha avuto esito positivo, il client di dispositivo invia un evento *connect*. Così tutta la logica del dispositivo può essere implementata all'interno di questa funzione di callback."
+
+#: ..\docs\nodejs\node-js_devices.rst:79
+msgid "Publishing events"
+msgstr ""
+"Pubblicazione degli eventi"
+
+#: ..\docs\nodejs\node-js_devices.rst:81
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Gli eventi sono un meccanismo tramite cui i dispositivi pubblicano i dati su Internet of Things Foundation. Il dispositivo controlla il contenuto dell'evento e assegna un nome per ogni evento inviato."
+
+#: ..\docs\nodejs\node-js_devices.rst:83
+msgid "When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Quando un evento viene ricevuto da IOT Foundation, vengono utilizzate le credenziali della connessione su cui l'evento è stato ricevuto, per determinare da quale dispositivo è stato inviato l'evento. Con questa architettura è impossibile per un dispositivo impersonare un altro dispositivo."
+
+#: ..\docs\nodejs\node-js_devices.rst:85
+msgid "Events can be published at any of the three quality of service levels defined by the MQTT protocol. By default events will be published as QoS level 0. Please not that if you are using the Internet of Things Quickstart service, events can only be published at QoS level 0."
+msgstr ""
+"Gli eventi possono essere pubblicati a uno qualsiasi dei tre livelli di QoS (quality of service) definiti dal protocollo MQTT. Per impostazione predefinita gli eventi verranno pubblicati al livello QoS 0. Notare che, se non si sta utilizzando il servizio Quickstart Internet of Things, gli eventi possono essere pubblicati solo a livello QoS 0."
+
+#: ..\docs\nodejs\node-js_devices.rst:87
+msgid "Events can be published by using: -   eventType - Type of event to be published e.g status, gps. -   eventFormat - Format of the event e.g json. -   data - Payload of the event. -   QoS - MQTT quality of service for the publish event. Supported values : 0,1,2."
+msgstr ""
+"Gli eventi possono essere pubblicati utilizzando: -   eventType - Il tipo di evento da pubblicare, ad es. status, gps. -   eventFormat - Il formato dell'evento, ad es. json. -   data - Il payload dell'evento. -   QoS - QoS MQTT per l'evento di pubblicazione. Valori supportati: 0,1,2."
+
+#: ..\docs\nodejs\node-js_devices.rst:110
+msgid "Handling commands"
+msgstr ""
+"Gestione dei comandi"
+
+#: ..\docs\nodejs\node-js_devices.rst:112
+msgid "When the device client connects, it automatically subscribes to any command for this device. To process specific commands you need to register a command callback function. The device client sends *command* when a command is received. The callback function has the following properties."
+msgstr ""
+"Quando il client del dispositivo si connette, effettua automaticamente la sottoscrizione a qualsiasi comando per questo dispositivo. Per elaborare comandi specifici è necessario registrare una funzione di callback del comando. Il client di dispositivo invia *command* quando un comando viene ricevuto. La funzione di callback ha le seguenti proprietà."
+
+#: ..\docs\nodejs\node-js_devices.rst:114
+msgid "commandName - name of the command invoked"
+msgstr ""
+"commandName - il nome del comando richiamato"
+
+#: ..\docs\nodejs\node-js_devices.rst:115
+msgid "format - e.g json, xml"
+msgstr ""
+"format - il formato, ad es. json, xml"
+
+#: ..\docs\nodejs\node-js_devices.rst:116
+msgid "payload - payload for the command"
+msgstr ""
+"payload – il payload per il comando"
+
+#: ..\docs\nodejs\node-js_devices.rst:117
+msgid "topic - actual topic where the command was received"
+msgstr ""
+"topic - argomento reale in cui il comando è stato ricevuto"
+
+#: ..\docs\nodejs\node-js_devices.rst:143
+msgid "Disconnect Client"
+msgstr ""
+"Disconnetti client"
+
+#: ..\docs\nodejs\node-js_devices.rst:145
+msgid "Disconnects the client and releases the connections"
+msgstr ""
+"Disconnette il client e rilascia le connessioni"
+
+#: ..\docs\nodejs\node-js_devices.rst:167
+msgid "Check Connection Status"
+msgstr ""
+"Controlla stato connessione"
+
+#: ..\docs\nodejs\node-js_devices.rst:169
+msgid "*isConnected* gives the current status of the client connection"
+msgstr ""
+"*isConnected* fornisce lo stato corrente della connessione del client"
+

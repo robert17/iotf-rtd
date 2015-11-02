@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,121 +19,136 @@ msgstr ""
 #: ..\docs\messaging\devices.rst:3
 msgid "MQTT Connectivity for Devices"
 msgstr ""
+"Conectividad de MQTT para dispositivos"
 
 #: ..\docs\messaging\devices.rst:5
 msgid "A Device must authenticate using a client ID in the following format:"
 msgstr ""
+"Un dispositivo se debe autenticar utilizando un ID de cliente en el formato siguiente:"
 
 #: ..\docs\messaging\devices.rst:7
 msgid "d:**org\\_id**:**device_type**:**device\\_id**"
 msgstr ""
+"d:**id\\_org**:**tipo_dispositivo**:**id\\_dispositivo**"
 
 #: ..\docs\messaging\devices.rst:9
 msgid "A Device must be registered before it can connect"
 msgstr ""
+"Un dispositivo debe registrarse para poderse conectar"
 
 #: ..\docs\messaging\devices.rst:10
-msgid ""
-"When connecting to the QuickStart service no authentication (or "
-"registration) is required"
+msgid "When connecting to the Quickstart service no authentication (or registration) is required, and org_id should be set to \"quickstart\""
 msgstr ""
+"Al conectarse al servicio Quickstart, no se necesita ninguna autenticación (o registro) y org_id debe establecerse en \"quickstart\""
 
 #: ..\docs\messaging\devices.rst:17
 msgid "MQTT client identifier"
 msgstr ""
+"Identificador de cliente MQTT"
 
 #: ..\docs\messaging\devices.rst:19
-msgid ""
-"Supply a client id of the form "
-"**d**:**org\\_id**:**device\\_type**:**device\\_id**"
+msgid "Supply a client id of the form **d**:**org\\_id**:**device\\_type**:**device\\_id**"
 msgstr ""
+"Proporcione un id de cliente con el formato **d**:**id\\_org**:**tipo\\_dispositivo**:**id\\_dispositivo**"
 
 #: ..\docs\messaging\devices.rst:21
 msgid "**d** idenfities your client as a device"
 msgstr ""
+"**d** identifica el cliente como un dispositivo"
 
 #: ..\docs\messaging\devices.rst:22
-msgid ""
-"**org\\_id** is your unique organization ID, assigned when you sign up with "
-"the service.  It will be a 6 character alphanumeric string."
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
 msgstr ""
+"**org\\_id** es el id de organización, asignado al registrarse en el servicio. Será una cadena alfanumérica de 6 caracteres."
 
 #: ..\docs\messaging\devices.rst:24
-msgid ""
-"**device\\_type** is intended to be used as an identifer of the type of "
-"device connecting, it may be useful to think of this as analogous to a model"
-" number."
+msgid "**device\\_type** is intended to be used as an identifier of the type of device connecting, it may be useful to think of this as analogous to a model number."
 msgstr ""
+"**tipo\\_dispositivo** está destinado a utilizar como identificador del tipo de dispositivo que se conecta; puede ser útil considerarlo como análogo a un número de modelo."
 
 #: ..\docs\messaging\devices.rst:27
-msgid ""
-"**device\\_id** must uniquely identify a device across all devices of a "
-"specific device\\_type, it may be useful to think of this as analogous to a "
-"serial number."
+msgid "**device\\_id** must uniquely identify a device across all devices of a specific device\\_type, it may be useful to think of this as analogous to a serial number."
 msgstr ""
+"**id\\_dispositivo** debe identificar de forma exclusiva un dispositivo entre todos los dispositivos de un tipo\\_dispositivo específico; puede ser útil considerarlo como análogo a un número de serie."
 
 #: ..\docs\messaging\devices.rst:36
 msgid "MQTT authentication"
 msgstr ""
+"Autenticación de MQTT"
 
 #: ..\docs\messaging\devices.rst:39
 msgid "Username"
 msgstr ""
+"Nombre de usuario"
 
 #: ..\docs\messaging\devices.rst:41
-msgid ""
-"The service currently only supports token-based authentication for devices, "
-"as such there is only one valid username for devices today."
+msgid "The service currently only supports token-based authentication for devices, as such there is only one valid username for devices today."
 msgstr ""
+"Actualmente el servicio solo soporta la autenticación basada en señal para dispositivos, por lo que actualmente solo hay un nombre de usuario válido para los dispositivos."
 
 #: ..\docs\messaging\devices.rst:44
-msgid ""
-"A value of **use-token-auth** indicates to the service that the "
-"authentication token for the device will be passed as the password for the "
-"MQTT connection."
+msgid "A value of **use-token-auth** indicates to the service that the authentication token for the device will be passed as the password for the MQTT connection."
 msgstr ""
+"Un valor de **use-token-auth** indica al servicio que la señal de autenticación para el dispositivo se pasará como la contraseña para la conexión de MQTT."
 
 #: ..\docs\messaging\devices.rst:49
 msgid "Password"
 msgstr ""
+"Contraseña"
 
 #: ..\docs\messaging\devices.rst:51
-msgid ""
-"When using token based authentication submit the device authentication token"
-" as the password when making your MQTT connection."
+msgid "When using token based authentication submit the device authentication token as the password when making your MQTT connection."
 msgstr ""
+"Cuando utilice la autenticación basada en señal, envíe la señal de autenticación de dispositivo como contraseña al realizar la conexión de MQTT."
 
 #: ..\docs\messaging\devices.rst:59
 msgid "Publishing events"
 msgstr ""
+"Publicación de sucesos"
 
 #: ..\docs\messaging\devices.rst:61
 msgid "Publish to topic iot-2/evt/\\ **event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"Publicar en tema iot-2/evt/\\ **id\\_suceso**/fmt/**serie\\_formato**"
 
-#: ..\docs\messaging\devices.rst:68 ..\docs\messaging\devices.rst:83
+#: ..\docs\messaging\devices.rst:63
+msgid "The message payload is limited to a maximum of 4096 bytes."
+msgstr ""
+"La carga útil de mensaje está limitada a un máximo de 4096 bytes."
+
+#: ..\docs\messaging\devices.rst:69
+#: ..\docs\messaging\devices.rst:81
 msgid "Subscribing to commands"
 msgstr ""
+"Suscripción a mandatos"
 
-#: ..\docs\messaging\devices.rst:70
+#: ..\docs\messaging\devices.rst:71
 msgid "Subscribe to topic iot-2/cmd/\\ **command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"Suscribirse a tema iot-2/cmd/\\ **id\\_mandato**/fmt/**serie\\_formato**"
 
-#: ..\docs\messaging\devices.rst:77
-msgid "QuickStart restrictions"
+#: ..\docs\messaging\devices.rst:78
+msgid "Quickstart Restrictions"
 msgstr ""
+"Restricciones de Quickstart"
 
 #: ..\docs\messaging\devices.rst:79
-msgid ""
-"If you are writing device code that wants to support use with QuickStart you"
-" must take into account the following features present in the registered "
-"service that are not supported in QuickStart:"
+msgid "The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest and offers no confirmation of receipt.  If you are writing device code for use with Quickstart you must also take into account the following features present in the registered service that are not supported in Quickstart:"
 msgstr ""
+"El servicio Quickstart actualmente no soporta niveles de calidad de servicio (QoS) MQTT superiores a 0. Este nivel es el más rápido y no ofrece confirmación de la recepción. Si está escribiendo código de dispositivo que desea soportar el uso con Quickstart, debe tener en cuenta las siguientes características presentes en el servicio registrado que no se soportan en Quickstart:"
 
-#: ..\docs\messaging\devices.rst:84
+#: ..\docs\messaging\devices.rst:82
 msgid "MQTT connection over SSL"
 msgstr ""
+"Conexión de MQTT sobre SSL"
 
-#: ..\docs\messaging\devices.rst:85
+#: ..\docs\messaging\devices.rst:83
 msgid "Clean or durable sessions"
 msgstr ""
+"Sesiones limpias o duraderas"
+
+#: ..\docs\messaging\devices.rst:85
+msgid "Please note, the Quickstart service may drop messages that are sent more frequently than 1 per second."
+msgstr ""
+"Tenga en cuenta que el servicio Quickstart puede descartar mensajes que se envíen con una frecuencia superior a 1 por segundo."
+

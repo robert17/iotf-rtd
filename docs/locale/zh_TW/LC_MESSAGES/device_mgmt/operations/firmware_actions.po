@@ -1,0 +1,428 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:3
+msgid "Device Management Operations - Firmware Actions"
+msgstr ""
+"裝置管理作業 - 韌體動作"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:5
+msgid "The firmware level currently known to be on a given device is stored in the ``deviceInfo.fwVersion`` attribute. The ``mgmt.firmware`` attributes are used to perform a firmware update and observe its status."
+msgstr ""
+"給定裝置上目前已知的韌體層次儲存在 ``deviceInfo.fwVersion`` 屬性中。``mgmt.firmware`` 屬性可用來執行韌體更新並觀察其狀態。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:8
+msgid "The managed device must support observation of the ``mgmt.firmware`` attribute in order to support firmware actions."
+msgstr ""
+"受管理裝置必須支援觀察 ``mgmt.firmware`` 屬性，才能支援韌體動作。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:10
+msgid "The firmware update process is separated into two distinct actions, Downloading Firmware, and Updating Firmware. The status of each of these actions is stored in a separate attribute on the device. The ``mgmt.firmware.state`` attribute describes the status of the firmware download. The possible values for ``mgmt.firmware.state`` are:"
+msgstr ""
+"韌體更新程序分為兩個不同的動作：「下載韌體」及「更新韌體」。每一個動作的狀態都儲存在裝置上個別的屬性中。``mgmt.firmware.state`` 屬性說明韌體下載的狀態。``mgmt.firmware.state`` 的可能值如下："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Value"
+msgstr ""
+"值"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "State"
+msgstr ""
+"狀態"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:15
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:29
+msgid "Meaning"
+msgstr ""
+"意義"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "0"
+msgstr ""
+"0"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "Idle"
+msgstr ""
+"閒置"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:17
+msgid "The device is currently not in the process of downloading firmware"
+msgstr ""
+"裝置目前並未進行韌體下載"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "1"
+msgstr ""
+"1"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "Downloading"
+msgstr ""
+"下載中"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:19
+msgid "The device is currently downloading firmware"
+msgstr ""
+"裝置目前正在下載韌體"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "2"
+msgstr ""
+"2"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "Downloaded"
+msgstr ""
+"已下載"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:21
+msgid "The device has successfully downloaded a firmware update and it is ready to install"
+msgstr ""
+"裝置已順利下載韌體更新，且可安裝"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:26
+msgid "The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware update. The possible values for ``mgmt.firmware.status`` are:"
+msgstr ""
+"``mgmt.firmware.updateStatus`` 屬性說明韌體更新的狀態。``mgmt.firmware.status`` 的可能值如下："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "Success"
+msgstr ""
+"成功"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:31
+msgid "The firmware has been successfully updated"
+msgstr ""
+"韌體已順利更新"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "In Progress"
+msgstr ""
+"進行中"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:33
+msgid "The firmware update has been initiated but is not yet complete"
+msgstr ""
+"已起始韌體更新但尚未完成"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "Out of Memory"
+msgstr ""
+"記憶體不足"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:35
+msgid "An out of memory condition has been detected during the operation."
+msgstr ""
+"作業期間偵測到記憶體不足的狀況。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "3"
+msgstr ""
+"3"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "Connection Lost"
+msgstr ""
+"連線中斷"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:37
+msgid "The connection was lost during the firmware download"
+msgstr ""
+"韌體下載期間連線中斷"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "4"
+msgstr ""
+"4"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "Verification Failed"
+msgstr ""
+"驗證失敗"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:39
+msgid "The firmware did not pass verification"
+msgstr ""
+"韌體未通過驗證"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "5"
+msgstr ""
+"5"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "Unsupported Image"
+msgstr ""
+"映像檔不受支援"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:41
+msgid "The downloaded firmware image is not supported by the device"
+msgstr ""
+"裝置不支援已下載的韌體映像檔"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "6"
+msgstr ""
+"6"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "Invalid URI"
+msgstr ""
+"URI 無效"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:43
+msgid "The device could not download the firmware from the provided URI"
+msgstr ""
+"裝置無法從提供的 URI 下載韌體"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:50
+msgid "Firmware Download"
+msgstr ""
+"韌體下載"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:51
+msgid "The Download Firmware action can be initiated by using either the Internet of Things Foundation dashboard, or the REST API."
+msgstr ""
+"「下載韌體」動作可使用 Internet of Things Foundation 儀表板或 REST API 來起始。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:53
+msgid "To initiate a firmware download using the REST API, issue a POST request to /mgmt/requests. The information provided is:"
+msgstr ""
+"若要使用 REST API 來起始韌體下載，請發出 POST 要求給 /mgmt/requests。所提供的資訊如下："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:55
+msgid "The action ``firmware/download``"
+msgstr ""
+"動作 ``firmware/download``"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:56
+msgid "The URI for the firmware image"
+msgstr ""
+"韌體映像檔的 URI"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:57
+msgid "A list of devices to receive the image, with a maximum of 5000 devices"
+msgstr ""
+"接收映像檔的裝置清單，最多 5000 個裝置"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:58
+msgid "Optional verifier string to validate the image"
+msgstr ""
+"選用的驗證器字串，用來驗證映像檔"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:59
+msgid "Optional firmware name"
+msgstr ""
+"選用的韌體名稱"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:60
+msgid "Optional firmware version"
+msgstr ""
+"選用的韌體版本"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:62
+msgid "The device management server in the Internet of Things Foundation uses the Device Management Protocol to send a request to the devices, initiating the firmware download. There are two steps:"
+msgstr ""
+"Internet of Things Foundation 中的裝置管理伺服器會使用「裝置管理通訊協定」來傳送要求給裝置，以起始韌體下載。這有兩個步驟："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:64
+msgid "Firmware details update request sent on topic ``iotdm-1/device/update``"
+msgstr ""
+"於主題 ``iotdm-1/device/update`` 傳送的韌體詳細資料更新要求"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:65
+msgid "Initiate the download request sent on topic ``iotdm-1/mgmt/initiate/firmware/download``"
+msgstr ""
+"起始於主題 ``iotdm-1/mgmt/initiate/firmware/download`` 傳送的下載要求"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:67
+msgid "If ``mgmt.firmware.state`` is not ``0`` (\"Idle\") an error should be reported with response code ``400``, and an optional message text."
+msgstr ""
+"如果 ``mgmt.firmware.state`` 不是 ``0``（閒置），應該報告回應碼為 ``400`` 的錯誤以及選用的訊息文字。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:68
+msgid "If the action can be initiated immediately, set ``rc`` to ``202``."
+msgstr ""
+"如果可以立即起始動作，請將 ``rc`` 設為 ``202``。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:69
+msgid "If ``mgmt.firmware.uri`` is not set or is not a valid URI, set ``rc`` to ``400``."
+msgstr ""
+"如果未設定 ``mgmt.firmware.uri`` 或不是有效的 URI，則將 ``rc`` 設為 ``400``。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:70
+msgid "If firmware download attempt fails, set ``rc`` to ``500`` and optionally set ``message`` accordingly."
+msgstr ""
+"如果韌體下載嘗試失敗，則將 ``rc`` 設為 ``500``，並選擇性地據以設定「訊息」。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:71
+msgid "If firmware download is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly."
+msgstr ""
+"如果不支援韌體下載，則將 ``rc`` 設為 ``501``，並選擇性地據以設定「訊息」。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:72
+msgid "When an excecute request is received by the device, ``mgmt.firmware.state`` should change from ``0`` (Idle) to ``1`` (Downloading)."
+msgstr ""
+"當裝置收到執行要求時，``mgmt.firmware.state`` 應該從 ``0``（閒置）變更為 ``1``（下載中）。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:73
+msgid "When the download has been completed successfully, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded)."
+msgstr ""
+"若下載順利完成，``mgmt.firmware.state`` 應該設為 ``2``（已下載）。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:74
+msgid "If an error occurrs during download ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to one of the error status values:"
+msgstr ""
+"如果下載期間發生錯誤，``mgmt.firmware.state`` 應該設為 ``0``（閒置），而 ``mgmt.firmware.updateStatus`` 應該設為其中一個錯誤狀態值："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:76
+msgid "2 (Out of Memory)"
+msgstr ""
+"2（記憶體不足）"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:77
+msgid "3 (Connection Lost)"
+msgstr ""
+"3（連線中斷）"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:78
+msgid "6 (Invalid URI)"
+msgstr ""
+"6（URI 無效）"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:80
+msgid "If a firmware verifier has been set, the device should attempt to verify the firmware image. If the image verification fails, ``mgmt.firmware.state`` should be set to ``0`` (Idle) and ``mgmt.firmware.updateStatus`` should be set to the error status value ``4`` (Verification Failed)."
+msgstr ""
+"如果已設定韌體驗證器，裝置應該嘗試驗證韌體映像檔。如果映像檔驗證失敗，``mgmt.firmware.state`` 應該設為 ``0``（閒置），而 ``mgmt.firmware.updateStatus`` 應該設為錯誤狀態值 ``4``（驗證失敗）。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:81
+msgid "If download and verification were successful, ``mgmt.firmware.state`` should be set to ``2`` (Downloaded) and ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success). The downloaded firmware is now ready to be installed."
+msgstr ""
+"如果下載及驗證成功，``mgmt.firmware.state`` 應該設為 ``2``（已下載），而 ``mgmt.firmware.updateStatus`` 應該設為 ``0``（成功）。已下載的韌體現在已備妥可進行安裝。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:85
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:143
+msgid "Topic"
+msgstr ""
+"主題"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:92
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:151
+msgid "Message format"
+msgstr ""
+"訊息格式"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:94
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:153
+msgid "Request Format:"
+msgstr ""
+"要求格式："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:103
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:161
+msgid "Response Format:"
+msgstr ""
+"回應格式："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:117
+msgid "Firmware Update"
+msgstr ""
+"韌體更新"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:119
+msgid "The installation of the downloaded firmware is initiated using the REST API by issuing a POST request to /mgmt/requests. The information which should be provided is:"
+msgstr ""
+"安裝下載的韌體是使用 REST API 發出 POST 要求給 /mgmt/requests 來起始。應該提供的資訊如下："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:121
+msgid "The action ``firmware/update``"
+msgstr ""
+"動作 ``firmware/update``"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:122
+msgid "The list of devices to receive the image, all of the same device type"
+msgstr ""
+"接收映像檔的裝置清單，裝置類型全部相同"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:124
+msgid "The device management server in the Internet of Things Foundation uses the device management protocol to request that the devices specified initiate the firmware installation by publishing using the topic ``iotdm-1/mgmt/initiate/firmware/update``."
+msgstr ""
+"Internet of Things Foundation 中的裝置管理伺服器會使用裝置管理通訊協定，利用主題 ``iotdm-1/mgmt/initiate/firmware/update`` 來發佈，以要求指定的裝置起始韌體安裝。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:126
+msgid "If this operation can be initiated immediately, ``rc`` should be set to ``202``."
+msgstr ""
+"如果可以立即起始這項作業，``rc`` 應該設為 ``202``。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:127
+msgid "If firmware was not previously downloaded successfully, ``rc`` should be set to ``400``."
+msgstr ""
+"如果先前未順利下載韌體，``rc`` 應該設為 ``400``。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:128
+msgid "If firmware update attempt fails, ``rc`` should be set to ``500`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"如果韌體更新嘗試失敗，``rc`` 應該設為 ``500``，而「訊息」欄位可以選擇性地設為包含相關的資訊。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:129
+msgid "If firmware update is not supported ``rc`` should be set to ``501`` and the ``message`` field can optionally be set to contain relevant information."
+msgstr ""
+"如果不支援韌體更新，``rc`` 應該設為 ``501``，而 ``message`` 欄位可以選擇性地設為包含相關的資訊。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:130
+msgid "If ``mgmt.firmware.state`` is not ``2`` (Downloaded), an error should be reported with ``rc`` set to ``400`` and an optional message text."
+msgstr ""
+"如果 ``mgmt.firmware.state`` 不是 ``2``（已下載），則應該報告 ``rc`` 設為 ``400`` 的錯誤以及選用的訊息文字。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:131
+msgid "Otherwise, ``mgmt.firmware.updateStatus`` should be set to ``1`` (In Progress) and firmware installation should start."
+msgstr ""
+"否則，``mgmt.firmware.updateStatus`` 應該設為 ``1``（進行中），且應該開始韌體安裝。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:132
+msgid "If firmware installation fails, ``mgmt.firmware.updateStatus`` should be set to either:"
+msgstr ""
+"如果韌體安裝失敗，``mgmt.firmware.updateStatus`` 應該設為下列其中一項："
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:134
+msgid "``2`` (Out of Memory)"
+msgstr ""
+"``2``（記憶體不足）"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:135
+msgid "``5`` (Unsupported Image)"
+msgstr ""
+"``5``（映像檔不受支援）"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:137
+msgid "Once firmware update is complete, ``mgmt.firmware.updateStatus`` should be set to ``0`` (Success), ``mgmt.firmware.state`` should be set to ``0`` (Idle), downloaded firmware image can be deleted from the device and ``deviceInfo.fwVersion`` should be set to the value of ``mgmt.firmware.version``."
+msgstr ""
+"在韌體更新完成之後，``mgmt.firmware.updateStatus`` 即應該設為 ``0``（成功），``mgmt.firmware.state`` 應該設為 ``0``（閒置），下載的韌體映像檔可以從裝置中刪除，而 ``deviceInfo.fwVersion`` 應該設為 ``mgmt.firmware.version`` 的值。"
+
+#: ..\docs\device_mgmt\operations\firmware_actions.rst:139
+msgid "All fields under ``mgmt.firmware`` must be set at the same time, so that if there is a current observation for ``mgmt.firmware``, only a single notify message is sent."
+msgstr ""
+"``mgmt.firmware`` 下的所有欄位都必須同時設定，如此一來，如果目前有觀察 ``mgmt.firmware``，則只會傳送單一通知訊息。"
+

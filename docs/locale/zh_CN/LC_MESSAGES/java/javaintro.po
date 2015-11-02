@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\java\javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Java 客户机库 - 简介"
+
+#: ..\docs\java\javaintro.rst:5
+msgid "Use the Java client library for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Java 7 or Java 8. The client library can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the java ibmiotf client library to interact with devices and applications within your organizations."
+msgstr ""
+"使用 Java 客户机库以与 `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ 进行交互，从而使用 Java 7 或 Java 自动执行命令。此客户机库可用于简化与 IBM Internet of Things Foundation 的交互。以下库包含有关使用 java ibmiotf 客户机库与组织中的设备和应用程序进行交互的指示信息和指南。"
+
+#: ..\docs\java\javaintro.rst:7
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ..\docs\java\javaintro.rst:8
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ..\docs\java\javaintro.rst:10
+msgid "This client library documentation is divided into two sections:"
+msgstr ""
+"此客户机库文档分为两部分："
+
+#: ..\docs\java\javaintro.rst:12
+msgid "The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"“设备”部分包含有关设备如何使用 Java ibmiotf 客户机库发布事件和处理命令的信息。"
+
+#: ..\docs\java\javaintro.rst:13
+msgid "The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"“受管设备”部分包含的信息涉及设备如何使用 Java ibmiotf 客户机库连接到“Internet of Things Foundation 设备管理”服务，以及设备如何执行设备管理操作，如固件更新、位置更新和诊断更新。"
+
+#: ..\docs\java\javaintro.rst:16
+msgid "Download"
+msgstr ""
+"下载"
+
+#: ..\docs\java\javaintro.rst:17
+msgid "The latest version of the client library is available `here <https://github.com/ibm-messaging/iot-java/releases/latest>`__ to download."
+msgstr ""
+"客户机库的最新版本可 `在此 <https://github.com/ibm-messaging/iot-java/releases/latest>`__ 下载。"
+
+#: ..\docs\java\javaintro.rst:19
+msgid "The zip module contains the following files,"
+msgstr ""
+"zip 模块中包含以下文件："
+
+#: ..\docs\java\javaintro.rst:21
+msgid "com.ibm.iotf.client-<version>.jar - Client library that enables one to talk to Internet of Things Foundation Connect."
+msgstr ""
+"com.ibm.iotf.client-<version>.jar - 客户机库，使用户能够与“Internet of Things Foundation 连接”交互。"
+
+#: ..\docs\java\javaintro.rst:22
+msgid "com.ibm.iotf.samples-<version>.jar - Contains samples."
+msgstr ""
+"com.ibm.iotf.samples-<version>.jar - 包含样本。"
+
+#: ..\docs\java\javaintro.rst:23
+msgid "DMDeviceSample.properties - Properties file used to configure the list of options required to connect to Internet of Things Foundation Connect and perform device management operations."
+msgstr ""
+"DMDeviceSample.properties - 用于配置连接到“Internet of Things Foundation 连接”时所需的选项列表和执行设备管理操作的属性文件。"
+
+#: ..\docs\java\javaintro.rst:24
+msgid "device.prop - Properties file to specify connectivity information when DeviceClient is used"
+msgstr ""
+"device.prop - 使用 DeviceClient 时用于指定连接信息的属性文件"
+
+#: ..\docs\java\javaintro.rst:25
+msgid "lib - Contains all dependent libraries"
+msgstr ""
+"lib - 包含所有依赖关系库"
+
+#: ..\docs\java\javaintro.rst:26
+msgid "javadoc - Contains the client library documentation"
+msgstr ""
+"javadoc - 包含客户机库文档"
+
+#: ..\docs\java\javaintro.rst:29
+msgid "Dependencies"
+msgstr ""
+"依赖关系"
+
+#: ..\docs\java\javaintro.rst:31
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Paho MQTT Java 客户机 <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__ - 提供使应用程序可连接到 MQTT 代理程序的客户机类"
+
+#: ..\docs\java\javaintro.rst:32
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - 用于与 JSON 对象交互的库"
+
+#: ..\docs\java\javaintro.rst:33
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - 用于记录各种信息的库"
+
+#: ..\docs\java\javaintro.rst:34
+msgid "`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - 提供常见编码器和解码器功能，例如，Base64"
+
+#: ..\docs\java\javaintro.rst:35
+msgid "`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - provides methods for manipulating core Java classes"
+msgstr ""
+"`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - 提供操纵核心 Java 类的方法"
+
+#: ..\docs\java\javaintro.rst:36
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - 自动化构建的构建工具"
+
+#: ..\docs\java\javaintro.rst:37
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - HTTP 客户机库"
+
+#: ..\docs\java\javaintro.rst:38
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - HTTP 核心库"
+
+#: ..\docs\java\javaintro.rst:39
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - Java 的日期和时间库"
+
+#: ..\docs\java\javaintro.rst:46
+msgid "Documentation"
+msgstr ""
+"文档"
+
+#: ..\docs\java\javaintro.rst:47
+msgid "`Device Client <../java/java_cli_devices.html>`__"
+msgstr ""
+"`设备客户机 <../java/java_cli_devices.html>`__"
+
+#: ..\docs\java\javaintro.rst:48
+msgid "`Managed Device <../java/java_deviceManagement.html>`__"
+msgstr ""
+"`受管设备 <../java/java_deviceManagement.html>`__"
+

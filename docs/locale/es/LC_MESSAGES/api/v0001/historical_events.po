@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0001\historical_events.rst:3
+msgid "Historical Event API"
+msgstr ""
+"API de sucesos históricos"
+
+#: ..\docs\api\v0001\historical_events.rst:7
+msgid "Authentication"
+msgstr ""
+"Autenticación"
+
+#: ..\docs\api\v0001\historical_events.rst:9
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication. You must provide a username and password with every request."
+msgstr ""
+"La API solo es accesible a través de HTTPS y está protegida por la autenticación básica HTTP. Debe proporcionar un nombre de usuario y una contraseña con cada solicitud."
+
+#: ..\docs\api\v0001\historical_events.rst:14
+msgid "Username"
+msgstr ""
+"Nombre de usuario"
+
+#: ..\docs\api\v0001\historical_events.rst:16
+msgid "A valid API key registered to the organization you want to work with."
+msgstr ""
+"Una clave de API válida registrada en la organización con la que desea trabajar."
+
+#: ..\docs\api\v0001\historical_events.rst:20
+msgid "Password"
+msgstr ""
+"Contraseña"
+
+#: ..\docs\api\v0001\historical_events.rst:22
+msgid "The authentication token corresponding to your API key."
+msgstr ""
+"Señal de autenticación correspondiente a la clave de API."
+
+#: ..\docs\api\v0001\historical_events.rst:30
+msgid "View all events"
+msgstr ""
+"Ver todos los sucesos"
+
+#: ..\docs\api\v0001\historical_events.rst:32
+msgid "View events across all devices registered to the organization"
+msgstr ""
+"Ver sucesos en todos los dispositivos registrados en la organización"
+
+#: ..\docs\api\v0001\historical_events.rst:36
+#: ..\docs\api\v0001\historical_events.rst:134
+#: ..\docs\api\v0001\historical_events.rst:252
+msgid "Request"
+msgstr ""
+"Solicitud"
+
+#: ..\docs\api\v0001\historical_events.rst:37
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/"
+msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/historian/"
+
+#: ..\docs\api\v0001\historical_events.rst:41
+#: ..\docs\api\v0001\historical_events.rst:139
+#: ..\docs\api\v0001\historical_events.rst:257
+msgid "Request Headers"
+msgstr ""
+"Cabeceras de solicitud"
+
+#: ..\docs\api\v0001\historical_events.rst:43
+#: ..\docs\api\v0001\historical_events.rst:141
+#: ..\docs\api\v0001\historical_events.rst:259
+msgid "cursorId"
+msgstr ""
+"ID de cursor"
+
+#: ..\docs\api\v0001\historical_events.rst:45
+#: ..\docs\api\v0001\historical_events.rst:143
+#: ..\docs\api\v0001\historical_events.rst:261
+msgid "Use the cursorId response header returned by the initial request to iterate through the list of historical records"
+msgstr ""
+"Utilice la cabecera de respuesta cursorId devuelta por la solicitud inicial para iterar por la lista de registros históricos"
+
+#: ..\docs\api\v0001\historical_events.rst:48
+#: ..\docs\api\v0001\historical_events.rst:146
+#: ..\docs\api\v0001\historical_events.rst:264
+msgid "Cookie"
+msgstr ""
+"Cookie"
+
+#: ..\docs\api\v0001\historical_events.rst:50
+#: ..\docs\api\v0001\historical_events.rst:148
+#: ..\docs\api\v0001\historical_events.rst:266
+msgid "Required when setting the cursorId header. Use the iotHistorianSessionId cookie returned by the initial request"
+msgstr ""
+"Necesario al establecer la cabecera cursorId. Utilice el cookie iotHistorianSessionId devuelto por la solicitud inicial"
+
+#: ..\docs\api\v0001\historical_events.rst:55
+#: ..\docs\api\v0001\historical_events.rst:153
+#: ..\docs\api\v0001\historical_events.rst:271
+msgid "Request Body"
+msgstr ""
+"Cuerpo de solicitud"
+
+#: ..\docs\api\v0001\historical_events.rst:56
+#: ..\docs\api\v0001\historical_events.rst:154
+#: ..\docs\api\v0001\historical_events.rst:272
+msgid "None"
+msgstr ""
+"Ninguno"
+
+#: ..\docs\api\v0001\historical_events.rst:60
+#: ..\docs\api\v0001\historical_events.rst:158
+#: ..\docs\api\v0001\historical_events.rst:276
+msgid "Query Parameters"
+msgstr ""
+"Parámetros de consulta"
+
+#: ..\docs\api\v0001\historical_events.rst:62
+#: ..\docs\api\v0001\historical_events.rst:160
+#: ..\docs\api\v0001\historical_events.rst:278
+msgid "evt_type - String"
+msgstr ""
+"evt_type - Serie"
+
+#: ..\docs\api\v0001\historical_events.rst:64
+#: ..\docs\api\v0001\historical_events.rst:162
+#: ..\docs\api\v0001\historical_events.rst:280
+msgid "Restrict results only to those events published under this event identifier"
+msgstr ""
+"Restringir resultados sólo a los sucesos publicados bajo este identificador de suceso"
+
+#: ..\docs\api\v0001\historical_events.rst:66
+#: ..\docs\api\v0001\historical_events.rst:164
+#: ..\docs\api\v0001\historical_events.rst:282
+msgid "start - Number of milliseconds since January 1, 1970, 00:00:00 GMT"
+msgstr ""
+"start - Número de milisegundos desde el 1 de enero de 1970, 00:00:00 GMT"
+
+#: ..\docs\api\v0001\historical_events.rst:68
+#: ..\docs\api\v0001\historical_events.rst:166
+#: ..\docs\api\v0001\historical_events.rst:284
+msgid "Restrict results to events published after this date"
+msgstr ""
+"Restringir resultados a los sucesos publicados después de esta fecha"
+
+#: ..\docs\api\v0001\historical_events.rst:70
+#: ..\docs\api\v0001\historical_events.rst:168
+#: ..\docs\api\v0001\historical_events.rst:286
+msgid "end - Number of milliseconds since January 1, 1970, 00:00:00 GMT"
+msgstr ""
+"end - Número de milisegundos desde el 1 de enero de 1970, 00:00:00 GMT"
+
+#: ..\docs\api\v0001\historical_events.rst:72
+#: ..\docs\api\v0001\historical_events.rst:170
+#: ..\docs\api\v0001\historical_events.rst:288
+msgid "Restrict results to events published before this date"
+msgstr ""
+"Restringir resultados a los sucesos publicados antes de esta fecha"
+
+#: ..\docs\api\v0001\historical_events.rst:77
+#: ..\docs\api\v0001\historical_events.rst:197
+#: ..\docs\api\v0001\historical_events.rst:315
+msgid "Response Headers"
+msgstr ""
+"Cabeceras de respuesta"
+
+#: ..\docs\api\v0001\historical_events.rst:78
+#: ..\docs\api\v0001\historical_events.rst:198
+#: ..\docs\api\v0001\historical_events.rst:316
+msgid "cursorId: use the cursorId response header returned by the initial request to iterate through the list of historical records"
+msgstr ""
+"cursorId: utilice la cabecera de respuesta cursorId devuelta por la solicitud inicial para iterar por la lista de registros históricos"
+
+#: ..\docs\api\v0001\historical_events.rst:80
+#: ..\docs\api\v0001\historical_events.rst:200
+#: ..\docs\api\v0001\historical_events.rst:318
+msgid "Set-Cookie: iotHistorianSessionId"
+msgstr ""
+"Cookie establecido: iotHistorianSessionId"
+
+#: ..\docs\api\v0001\historical_events.rst:84
+#: ..\docs\api\v0001\historical_events.rst:204
+#: ..\docs\api\v0001\historical_events.rst:322
+msgid "Response Body"
+msgstr ""
+"Cuerpo de respuesta"
+
+#: ..\docs\api\v0001\historical_events.rst:85
+#: ..\docs\api\v0001\historical_events.rst:205
+#: ..\docs\api\v0001\historical_events.rst:323
+msgid "Returns a list of historical data records sorted by timestamp in descending order"
+msgstr ""
+"Devuelve una lista de registros de datos históricos clasificados por la indicación de fecha y hora en orden descendente"
+
+#: ..\docs\api\v0001\historical_events.rst:87
+#: ..\docs\api\v0001\historical_events.rst:207
+msgid "device_id (String)"
+msgstr ""
+"id_dispositivo (Serie)"
+
+#: ..\docs\api\v0001\historical_events.rst:88
+msgid "device_type (String)"
+msgstr ""
+"tipo_dispositivo (Serie)"
+
+#: ..\docs\api\v0001\historical_events.rst:89
+#: ..\docs\api\v0001\historical_events.rst:208
+#: ..\docs\api\v0001\historical_events.rst:325
+msgid "evt_type (String)"
+msgstr ""
+"tipo_suceso (Serie)"
+
+#: ..\docs\api\v0001\historical_events.rst:90
+#: ..\docs\api\v0001\historical_events.rst:209
+#: ..\docs\api\v0001\historical_events.rst:326
+msgid "timestamp (Date)"
+msgstr ""
+"indicación de fecha y hora (Fecha)"
+
+#: ..\docs\api\v0001\historical_events.rst:91
+#: ..\docs\api\v0001\historical_events.rst:210
+#: ..\docs\api\v0001\historical_events.rst:327
+msgid "evt (Complex object)"
+msgstr ""
+"evt (Objeto complejo)"
+
+#: ..\docs\api\v0001\historical_events.rst:95
+#: ..\docs\api\v0001\historical_events.rst:214
+#: ..\docs\api\v0001\historical_events.rst:331
+msgid "Example Response"
+msgstr ""
+"Respuesta de ejemplo"
+
+#: ..\docs\api\v0001\historical_events.rst:118
+#: ..\docs\api\v0001\historical_events.rst:236
+#: ..\docs\api\v0001\historical_events.rst:351
+msgid "Common Response Codes"
+msgstr ""
+"Códigos de respuesta comunes"
+
+#: ..\docs\api\v0001\historical_events.rst:120
+#: ..\docs\api\v0001\historical_events.rst:238
+#: ..\docs\api\v0001\historical_events.rst:353
+msgid "200 (success)"
+msgstr ""
+"200 (éxito)"
+
+#: ..\docs\api\v0001\historical_events.rst:128
+msgid "View events for a device type"
+msgstr ""
+"Ver sucesos para un tipo de dispositivo"
+
+#: ..\docs\api\v0001\historical_events.rst:130
+msgid "View events across all devices of a specific type"
+msgstr ""
+"Ver sucesos en todos los dispositivos de un tipo específico"
+
+#: ..\docs\api\v0001\historical_events.rst:135
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**"
+msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/historian/**tipo_dispositivo**"
+
+#: ..\docs\api\v0001\historical_events.rst:172
+#: ..\docs\api\v0001\historical_events.rst:290
+msgid "top - Number between 1 and 100"
+msgstr ""
+"top - Número entre 1 y 100"
+
+#: ..\docs\api\v0001\historical_events.rst:174
+msgid "Restrict the number of records returned (default=100)"
+msgstr ""
+"Restringir el número de registros devueltos (valor predeterminado=100)"
+
+#: ..\docs\api\v0001\historical_events.rst:176
+#: ..\docs\api\v0001\historical_events.rst:294
+msgid "summarize - Array"
+msgstr ""
+"summarize - Matriz"
+
+#: ..\docs\api\v0001\historical_events.rst:178
+#: ..\docs\api\v0001\historical_events.rst:296
+msgid "A list of fields from the JSON event payload on which to perform the aggregate function specified by the summarize_type parameter.  The format for the parameter is {field1,field2,...,fieldN}"
+msgstr ""
+"Una lista de campos de la carga útil de suceso JSON en la que realizar la función de agregación especificada por el parámetro summarize_type.  El formato del parámetro es {field1,field2,...,fieldN}"
+
+#: ..\docs\api\v0001\historical_events.rst:182
+#: ..\docs\api\v0001\historical_events.rst:300
+msgid "summarize_type        - String"
+msgstr ""
+"summarize_type - Serie"
+
+#: ..\docs\api\v0001\historical_events.rst:184
+#: ..\docs\api\v0001\historical_events.rst:302
+msgid "The aggregation to perform on the fields specified by the summarize parameter:"
+msgstr ""
+"Agregación a realizar en los campos especificados por el parámetro summarize:"
+
+#: ..\docs\api\v0001\historical_events.rst:186
+#: ..\docs\api\v0001\historical_events.rst:304
+msgid "avg (default)"
+msgstr ""
+"avg (valor predeterminado)"
+
+#: ..\docs\api\v0001\historical_events.rst:187
+#: ..\docs\api\v0001\historical_events.rst:305
+msgid "count"
+msgstr ""
+"count"
+
+#: ..\docs\api\v0001\historical_events.rst:188
+#: ..\docs\api\v0001\historical_events.rst:306
+msgid "min"
+msgstr ""
+"min"
+
+#: ..\docs\api\v0001\historical_events.rst:189
+#: ..\docs\api\v0001\historical_events.rst:307
+msgid "max"
+msgstr ""
+"max"
+
+#: ..\docs\api\v0001\historical_events.rst:190
+#: ..\docs\api\v0001\historical_events.rst:308
+msgid "sum"
+msgstr ""
+"sum"
+
+#: ..\docs\api\v0001\historical_events.rst:191
+#: ..\docs\api\v0001\historical_events.rst:309
+msgid "range"
+msgstr ""
+"range"
+
+#: ..\docs\api\v0001\historical_events.rst:192
+#: ..\docs\api\v0001\historical_events.rst:310
+msgid "stdev"
+msgstr ""
+"stdev"
+
+#: ..\docs\api\v0001\historical_events.rst:193
+#: ..\docs\api\v0001\historical_events.rst:311
+msgid "variance"
+msgstr ""
+"variance"
+
+#: ..\docs\api\v0001\historical_events.rst:246
+msgid "View events for a device"
+msgstr ""
+"Ver sucesos para un dispositivo"
+
+#: ..\docs\api\v0001\historical_events.rst:248
+msgid "View events for a specific device"
+msgstr ""
+"Ver sucesos para un dispositivo específico"
+
+#: ..\docs\api\v0001\historical_events.rst:253
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/historian/**device_type**/**device_id**"
+msgstr ""
+"GET **id\\_org**.internetofthings.ibmcloud.com/api/v0001/historian/**tipo_dispositivo**/**ID_dispositivo**"
+
+#: ..\docs\api\v0001\historical_events.rst:292
+msgid "Restrict the number of records returned (default=100)."
+msgstr ""
+"Restringir el número de registros devueltos (valor predeterminado=100)."
+

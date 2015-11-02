@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\device_mgmt\operations\observations.rst:3
+msgid "Device Management Operations - Observations"
+msgstr ""
+"デバイス管理操作 - 監視"
+
+#: ..\docs\device_mgmt\operations\observations.rst:5
+msgid "Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`."
+msgstr ""
+":ref:`firmware-actions-update` をサポートするには、監視、通知、およびキャンセル操作をデバイスに実装する必要があります。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:10
+msgid "Observe Attribute Changes"
+msgstr ""
+"属性変更の監視"
+
+#: ..\docs\device_mgmt\operations\observations.rst:12
+msgid "The Internet of Things Foundation can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request (\"notify\" message) to the Internet of Things Foundation whenever the observed attributes value changes."
+msgstr ""
+"Internet of Things Foundation は、1 つ以上のデバイス属性の変更を監視するためにこのリクエストをデバイスに送信できます。このリクエストを受け取ったデバイスは、監視対象の属性値が変更されるたびに通知リクエスト (\"通知\" メッセージ) を Internet of Things Foundation に送信する必要があります。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:15
+#: ..\docs\device_mgmt\operations\observations.rst:70
+#: ..\docs\device_mgmt\operations\observations.rst:117
+msgid "Topic"
+msgstr ""
+"トピック"
+
+#: ..\docs\device_mgmt\operations\observations.rst:22
+#: ..\docs\device_mgmt\operations\observations.rst:78
+#: ..\docs\device_mgmt\operations\observations.rst:124
+msgid "Message format"
+msgstr ""
+"メッセージの形式"
+
+#: ..\docs\device_mgmt\operations\observations.rst:24
+msgid "The \"fields\" field is an array of the device attribute names from the device model. For example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\". If a complex field, such as \"mgmt.firmware\" is specified, it is expected that its underlying fields are updated at the same time, such that only a single notify message is generated."
+msgstr ""
+"\"fields\" フィールドは、デバイス・モデルのデバイス属性名から成る配列です。値は、\"location\"、\"mgmt.firmware\"、\"mgmt.firmware.state\" などを指定できます。\"mgmt.firmware\" のような複合フィールドを指定した場合は、その複数の基礎フィールドが同時に更新された場合に通知メッセージが 1 つだけ生成されます。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:26
+msgid "The \"message\" field used in the response can be specified if \"rc\" is not 200. If any field value which was to be observed could not be retrieved, \"rc\" should be set to 404 (if not found) or 500 (any other reason). When values for fields to be observed cannot be found, \"fields\" should contain an array of elements with \"field\" set to the name of each field that could not be read, \"value\" fields should be omitted. For the response code to be set to 200, both \"field\" and \"value\" must be specified, \"value\" is the current value of an attribute identified by \"field\" content."
+msgstr ""
+"\"rc\" が 200 でない場合は、レスポンスで使用する \"message\" フィールドを指定可能です。監視対象のフィールド値を取得できない場合は、\"rc\" を 404 (見つからない場合) または 500 (他のすべての理由) に設定します。監視対象のフィールドの値が見つからない場合、\"fields\" に含まれる配列の要素 \"field\" には読み取れなかった各フィールドの名前を設定し、\"value\" フィールドは省略します。応答コードを 200 に設定するためには、\"field\" と \"value\" の両方を指定する必要があります。\"value\" は \"field\" の内容で識別される属性の現行値です。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:28
+#: ..\docs\device_mgmt\operations\observations.rst:80
+#: ..\docs\device_mgmt\operations\observations.rst:126
+msgid "Request Format:"
+msgstr ""
+"リクエストの形式:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:41
+#: ..\docs\device_mgmt\operations\observations.rst:93
+#: ..\docs\device_mgmt\operations\observations.rst:138
+msgid "Response Format:"
+msgstr ""
+"レスポンスの形式:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:63
+msgid "Cancel Attribute Observation"
+msgstr ""
+"属性の監視のキャンセル"
+
+#: ..\docs\device_mgmt\operations\observations.rst:65
+msgid "The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The \"fields\" is an array of the device attribute names from the device model, for example, values could be \"location\", \"mgmt.firmware\" or \"mgmt.firmware.state\"."
+msgstr ""
+"Internet of Things Foundation は、現在行われている 1 つ以上のデバイス属性の監視をキャンセルするためにこのリクエストをデバイスに送信できます。\"fields\" は、デバイス・モデルのデバイス属性名から成る配列です。値は、\"location\"、\"mgmt.firmware\"、\"mgmt.firmware.state\" などを指定できます。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:67
+msgid "The \"message\" field must be specified if \"rc\" is not 200."
+msgstr ""
+"\"rc\" が 200 でない場合は、\"message\" フィールドを指定する必要があります。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:107
+msgid "Notify Attribute Changes"
+msgstr ""
+"属性変更の通知"
+
+#: ..\docs\device_mgmt\operations\observations.rst:109
+msgid "The Internet of Things Foundation can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value."
+msgstr ""
+"Internet of Things Foundation は、1 つの特定の属性または値のセットを参照する監視リクエストを出すことができます。1 つまたは複数の属性の値が変更された場合、デバイスは最新の値を含む通知を送信する必要があります。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:111
+msgid "The \"field_name\" value is the name of the attribute that has changed, the \"field_value\" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent."
+msgstr ""
+"\"field_name\" 値は変更された属性の名前、\"field_value\" は属性の現行値です。属性は複合フィールドにすることも可能です。1 つの操作の結果として複合フィールド内の複数の値が更新された場合に、通知メッセージが 1 つだけ送信されます。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:113
+msgid "If notify request is processed successfully, \"rc\" should be set to 200. If the request is not correct, \"rc\" should be set to 400. If the field specified in the notify request is not being observed, \"rc\" should be set to 404."
+msgstr ""
+"通知リクエストが正常に処理された場合は、\"rc\" を 200 に設定する必要があります。リクエストが正しくない場合は、\"rc\" を 400 に設定します。通知リクエストで指定されたフィールドが監視されていない場合は、\"rc\" を 404 に設定します。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:148
+msgid "Possible Response Codes:"
+msgstr ""
+"考えられる応答コード:"
+
+#: ..\docs\device_mgmt\operations\observations.rst:150
+msgid "200: The operation was successful."
+msgstr ""
+"200: 操作は正常に終了しました。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:151
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: 入力メッセージが予期される形式に一致しないか、値の 1 つが有効範囲外です。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:152
+msgid "404: The topic name is incorrect, the device is not in the database, or there is no observation for the field reported."
+msgstr ""
+"404: トピック名が正しくないか、デバイスがデータベースにないか、フィールドの監視が報告されていません。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:153
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: デバイスのデータベース更新中に競合が発生しました。これを解決するには、操作を簡略化することが必要です。"
+
+#: ..\docs\device_mgmt\operations\observations.rst:154
+msgid "500: An internal error occurred, contact IBM Support."
+msgstr ""
+"500: 内部エラーが発生しました。IBM サポートに連絡してください。"
+

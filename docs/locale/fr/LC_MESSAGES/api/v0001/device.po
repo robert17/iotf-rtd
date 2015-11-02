@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0001\device.rst:3
+msgid "Device API v0001"
+msgstr ""
+"API Terminaux v0001"
+
+#: ..\docs\api\v0001\device.rst:7
+msgid "Authentication"
+msgstr ""
+"Authentification"
+
+#: ..\docs\api\v0001\device.rst:9
+msgid "The API is only accessible over HTTPS and is protected by HTTP Basic Authentication, you must provide a username and password with every request."
+msgstr ""
+"L'API est accessible uniquement sur HTTPS et est protégée par le mécanisme d'authentification de base HTTP. Vous devez indiquer un nom d'utilisateur et un mot de passe avec chaque demande."
+
+#: ..\docs\api\v0001\device.rst:14
+msgid "Username"
+msgstr ""
+"Nom d'utilisateur"
+
+#: ..\docs\api\v0001\device.rst:16
+msgid "A valid API key registered to the organization you want to work with."
+msgstr ""
+"Clé d'API valide enregistrée dans l'organisation que vous souhaitez utiliser."
+
+#: ..\docs\api\v0001\device.rst:20
+msgid "Password"
+msgstr ""
+"Mot de passe"
+
+#: ..\docs\api\v0001\device.rst:22
+msgid "The authentication token corresponding to your API key."
+msgstr ""
+"Jeton d'authentification correspondant à votre clé d'API."
+
+#: ..\docs\api\v0001\device.rst:30
+msgid "View Organization"
+msgstr ""
+"Affichage d'une organisation"
+
+#: ..\docs\api\v0001\device.rst:32
+msgid "Retrieve details about an organization."
+msgstr ""
+"Extrayez les détails d'une organisation."
+
+#: ..\docs\api\v0001\device.rst:36
+#: ..\docs\api\v0001\device.rst:85
+#: ..\docs\api\v0001\device.rst:178
+#: ..\docs\api\v0001\device.rst:253
+#: ..\docs\api\v0001\device.rst:319
+#: ..\docs\api\v0001\device.rst:421
+#: ..\docs\api\v0001\device.rst:513
+#: ..\docs\api\v0001\device.rst:586
+msgid "Request"
+msgstr ""
+"Demande"
+
+#: ..\docs\api\v0001\device.rst:37
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/"
+
+#: ..\docs\api\v0001\device.rst:41
+#: ..\docs\api\v0001\device.rst:91
+#: ..\docs\api\v0001\device.rst:184
+#: ..\docs\api\v0001\device.rst:259
+#: ..\docs\api\v0001\device.rst:325
+#: ..\docs\api\v0001\device.rst:427
+#: ..\docs\api\v0001\device.rst:519
+#: ..\docs\api\v0001\device.rst:592
+msgid "Request Body"
+msgstr ""
+"Corps de la demande"
+
+#: ..\docs\api\v0001\device.rst:43
+#: ..\docs\api\v0001\device.rst:93
+#: ..\docs\api\v0001\device.rst:186
+#: ..\docs\api\v0001\device.rst:261
+#: ..\docs\api\v0001\device.rst:521
+#: ..\docs\api\v0001\device.rst:594
+#: ..\docs\api\v0001\device.rst:600
+msgid "None"
+msgstr ""
+"Aucun"
+
+#: ..\docs\api\v0001\device.rst:47
+#: ..\docs\api\v0001\device.rst:97
+#: ..\docs\api\v0001\device.rst:190
+#: ..\docs\api\v0001\device.rst:265
+#: ..\docs\api\v0001\device.rst:360
+#: ..\docs\api\v0001\device.rst:451
+#: ..\docs\api\v0001\device.rst:525
+#: ..\docs\api\v0001\device.rst:598
+msgid "Response Body"
+msgstr ""
+"Corps de la réponse"
+
+#: ..\docs\api\v0001\device.rst:49
+#: ..\docs\api\v0001\device.rst:103
+#: ..\docs\api\v0001\device.rst:109
+#: ..\docs\api\v0001\device.rst:196
+#: ..\docs\api\v0001\device.rst:202
+#: ..\docs\api\v0001\device.rst:330
+#: ..\docs\api\v0001\device.rst:367
+#: ..\docs\api\v0001\device.rst:458
+#: ..\docs\api\v0001\device.rst:464
+#: ..\docs\api\v0001\device.rst:531
+#: ..\docs\api\v0001\device.rst:537
+msgid "id - String"
+msgstr ""
+"id - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:50
+msgid "name - String"
+msgstr ""
+"name - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:51
+msgid "created - ISO8601 date string"
+msgstr ""
+"created - Chaîne de date ISO8601"
+
+#: ..\docs\api\v0001\device.rst:52
+msgid "updated - ISO8601 date string"
+msgstr ""
+"updated - Chaîne de date ISO8601"
+
+#: ..\docs\api\v0001\device.rst:56
+#: ..\docs\api\v0001\device.rst:117
+#: ..\docs\api\v0001\device.rst:210
+#: ..\docs\api\v0001\device.rst:274
+#: ..\docs\api\v0001\device.rst:378
+#: ..\docs\api\v0001\device.rst:472
+#: ..\docs\api\v0001\device.rst:545
+msgid "Example Response"
+msgstr ""
+"Exemple de réponse"
+
+#: ..\docs\api\v0001\device.rst:69
+#: ..\docs\api\v0001\device.rst:162
+#: ..\docs\api\v0001\device.rst:237
+#: ..\docs\api\v0001\device.rst:291
+#: ..\docs\api\v0001\device.rst:404
+#: ..\docs\api\v0001\device.rst:497
+#: ..\docs\api\v0001\device.rst:570
+#: ..\docs\api\v0001\device.rst:604
+msgid "Common Response Codes"
+msgstr ""
+"Codes de réponse courants"
+
+#: ..\docs\api\v0001\device.rst:71
+#: ..\docs\api\v0001\device.rst:164
+#: ..\docs\api\v0001\device.rst:239
+#: ..\docs\api\v0001\device.rst:293
+#: ..\docs\api\v0001\device.rst:499
+#: ..\docs\api\v0001\device.rst:572
+msgid "200 (Success)"
+msgstr ""
+"200 (Réussite)"
+
+#: ..\docs\api\v0001\device.rst:79
+msgid "List Devices"
+msgstr ""
+"Affichage de la liste de terminaux"
+
+#: ..\docs\api\v0001\device.rst:81
+msgid "Get a list of all devices in an organization."
+msgstr ""
+"Affichez la liste de tous les terminaux d'une organisation."
+
+#: ..\docs\api\v0001\device.rst:87
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:99
+#: ..\docs\api\v0001\device.rst:192
+msgid "The response body will contain a list of devices, as below:"
+msgstr ""
+"Le corps de la réponse contiendra une liste de terminaux, comme indiqué ci-après :"
+
+#: ..\docs\api\v0001\device.rst:101
+#: ..\docs\api\v0001\device.rst:194
+#: ..\docs\api\v0001\device.rst:365
+#: ..\docs\api\v0001\device.rst:456
+#: ..\docs\api\v0001\device.rst:529
+msgid "uuid - String"
+msgstr ""
+"uuid - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:102
+#: ..\docs\api\v0001\device.rst:110
+#: ..\docs\api\v0001\device.rst:195
+#: ..\docs\api\v0001\device.rst:203
+#: ..\docs\api\v0001\device.rst:329
+#: ..\docs\api\v0001\device.rst:366
+#: ..\docs\api\v0001\device.rst:457
+#: ..\docs\api\v0001\device.rst:465
+#: ..\docs\api\v0001\device.rst:530
+#: ..\docs\api\v0001\device.rst:538
+msgid "type - String"
+msgstr ""
+"type - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:104
+#: ..\docs\api\v0001\device.rst:368
+msgid "metadata - Complex data (if available)"
+msgstr ""
+"metadata - Données complexes (si disponibles)"
+
+#: ..\docs\api\v0001\device.rst:105
+#: ..\docs\api\v0001\device.rst:198
+#: ..\docs\api\v0001\device.rst:460
+#: ..\docs\api\v0001\device.rst:533
+msgid "registration"
+msgstr ""
+"registration"
+
+#: ..\docs\api\v0001\device.rst:107
+#: ..\docs\api\v0001\device.rst:200
+#: ..\docs\api\v0001\device.rst:462
+#: ..\docs\api\v0001\device.rst:535
+msgid "auth"
+msgstr ""
+"auth"
+
+#: ..\docs\api\v0001\device.rst:112
+#: ..\docs\api\v0001\device.rst:205
+#: ..\docs\api\v0001\device.rst:467
+#: ..\docs\api\v0001\device.rst:540
+msgid "date - ISO8601 date string"
+msgstr ""
+"date - Chaîne de date ISO8601"
+
+#: ..\docs\api\v0001\device.rst:172
+msgid "List Devices by Type"
+msgstr ""
+"Affichage de la liste des terminaux par type"
+
+#: ..\docs\api\v0001\device.rst:174
+msgid "Get a list of all devices of a specific type in an organization."
+msgstr ""
+"Affichez la liste de tous les terminaux d'un type donné dans une organisation."
+
+#: ..\docs\api\v0001\device.rst:180
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**"
+
+#: ..\docs\api\v0001\device.rst:197
+#: ..\docs\api\v0001\device.rst:432
+#: ..\docs\api\v0001\device.rst:459
+#: ..\docs\api\v0001\device.rst:532
+msgid "metadata - Complex data"
+msgstr ""
+"metadata - Données complexes"
+
+#: ..\docs\api\v0001\device.rst:247
+msgid "List Device Types"
+msgstr ""
+"Affichage de la liste des types de terminaux"
+
+#: ..\docs\api\v0001\device.rst:249
+msgid "Get a list of all devices types in an organization."
+msgstr ""
+"Affichez la liste de tous les types de terminaux d'une organisation."
+
+#: ..\docs\api\v0001\device.rst:255
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/device-types"
+
+#: ..\docs\api\v0001\device.rst:267
+msgid "The response body will contain a list of device types:"
+msgstr ""
+"Le corps de la réponse contiendra une liste de types de terminaux :"
+
+#: ..\docs\api\v0001\device.rst:269
+msgid "deviceType - String"
+msgstr ""
+"deviceType - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:270
+msgid "count - Integer"
+msgstr ""
+"count - Entier"
+
+#: ..\docs\api\v0001\device.rst:301
+msgid "Register a New Device"
+msgstr ""
+"Enregistrement d'un nouveau terminal"
+
+#: ..\docs\api\v0001\device.rst:303
+msgid "Register a new device to an organization."
+msgstr ""
+"Enregistrez un nouveau terminal dans une organisation."
+
+#: ..\docs\api\v0001\device.rst:305
+msgid "You can use any scheme of your choice when assigning values for type and id to registered devices, however the following restrictions apply:"
+msgstr ""
+"Vous pouvez utiliser les schémas de votre choix lorsque vous affectez des valeurs de type et d'ID aux terminaux enregistrés. Toutefois, les restrictions suivantes s'appliquent:"
+
+#: ..\docs\api\v0001\device.rst:308
+msgid "Maximum length of 36 characters"
+msgstr ""
+"La valeur doit inclure 36 caractères maximum."
+
+#: ..\docs\api\v0001\device.rst:309
+msgid "Must comprise only alpha-numeric characters and the following special characters:"
+msgstr ""
+"La valeur doit inclure uniquement des caractères alphanumériques et les caractères spéciaux suivants :"
+
+#: ..\docs\api\v0001\device.rst:311
+msgid "dash (\"-\")"
+msgstr ""
+"Tiret (\"-\")"
+
+#: ..\docs\api\v0001\device.rst:312
+msgid "underscore (\"\\_\")"
+msgstr ""
+"Trait de soulignement (\"\\_\")"
+
+#: ..\docs\api\v0001\device.rst:313
+msgid "dot (\".\")"
+msgstr ""
+"Point (\".\")"
+
+#: ..\docs\api\v0001\device.rst:321
+msgid "POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+msgstr ""
+"POST **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices"
+
+#: ..\docs\api\v0001\device.rst:327
+msgid "You must specify the type and identifer of the device being registered."
+msgstr ""
+"Vous devez indiquer le type et l'identificateur du terminal en cours d'enregistrement."
+
+#: ..\docs\api\v0001\device.rst:331
+msgid "metadata - Complex data (optional)"
+msgstr ""
+"metadata - Données complexes (facultatif)"
+
+#: ..\docs\api\v0001\device.rst:332
+msgid "password - String (optional, and follows the same restrictions as type and id, with a minimum length of 8 characters)"
+msgstr ""
+"password - Chaîne (facultatif. Suit les mêmes restrictions que le type et l'ID avec une longueur minimale de 8 caractères)"
+
+#: ..\docs\api\v0001\device.rst:336
+#: ..\docs\api\v0001\device.rst:436
+msgid "Example Request"
+msgstr ""
+"Exemple de demande"
+
+#: ..\docs\api\v0001\device.rst:353
+msgid "Response Headers"
+msgstr ""
+"En-têtes de réponse"
+
+#: ..\docs\api\v0001\device.rst:355
+msgid "The response header will contain the location (resource URI) for the registered device. \\* Location - URI"
+msgstr ""
+"L'en-tête de la réponse contiendra l'emplacement (URI de la ressource) du terminal enregistré. \\* Location - URI"
+
+#: ..\docs\api\v0001\device.rst:362
+msgid "The response body will contain a uuid and password for the registered device."
+msgstr ""
+"Le corps de la réponse contiendra un UUID et un mot de passe pour le terminal enregistré."
+
+#: ..\docs\api\v0001\device.rst:369
+msgid "password - String"
+msgstr ""
+"password - Chaîne"
+
+#: ..\docs\api\v0001\device.rst:371
+msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
+msgstr ""
+"Le corps de la réponse contiendra le jeton d'authentification généré pour ce terminal. N'oubliez pas de noter ce jeton lors du traitement de la réponse. Les données étant stockées sous forme hachée et salée, les jetons d'authentification perdus ne pourront pas être récupérés."
+
+#: ..\docs\api\v0001\device.rst:406
+msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
+msgstr ""
+"201 (Création) - Le terminal a été enregistré (en-tête Location incluant l'URL du nouveau terminal)"
+
+#: ..\docs\api\v0001\device.rst:415
+msgid "Update a Registered Device"
+msgstr ""
+"Mise à jour d'un terminal enregistré"
+
+#: ..\docs\api\v0001\device.rst:417
+msgid "Update an existing device in an organization."
+msgstr ""
+"Mettez à jour un terminal existant dans une organisation."
+
+#: ..\docs\api\v0001\device.rst:423
+msgid "PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"PUT **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:429
+msgid "Currently, the only property of a device that can be changed after initial registration is its metadata."
+msgstr ""
+"A l'heure actuelle, les métadonnées représentent la seule propriété d'un terminal que vous pouvez modifier après l'enregistrement initial."
+
+#: ..\docs\api\v0001\device.rst:453
+msgid "The response body will contain the updated properties of the registered device."
+msgstr ""
+"Le corps de la réponse contiendra les propriétés mises à jour du terminal enregistré."
+
+#: ..\docs\api\v0001\device.rst:507
+msgid "View a Registered Device"
+msgstr ""
+"Affichage d'un terminal enregistré"
+
+#: ..\docs\api\v0001\device.rst:509
+msgid "Get summary information about a registered device in an organization."
+msgstr ""
+"Affichez les informations récapitulatives d'un terminal enregistré dans une organisation."
+
+#: ..\docs\api\v0001\device.rst:515
+msgid "GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"GET **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:527
+msgid "The response body will contain the known properties of the device."
+msgstr ""
+"Le corps de la réponse contiendra les propriétés connues du terminal."
+
+#: ..\docs\api\v0001\device.rst:580
+msgid "Delete a Registered Device"
+msgstr ""
+"Suppression d'un terminal enregistré"
+
+#: ..\docs\api\v0001\device.rst:582
+msgid "Unregister a device from an organization."
+msgstr ""
+"Annulez l'enregistrement d'un terminal dans une organisation."
+
+#: ..\docs\api\v0001\device.rst:588
+msgid "DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+msgstr ""
+"DELETE **org\\_id**.internetofthings.ibmcloud.com/api/v0001/devices/**device\\_type**/**device\\_id**"
+
+#: ..\docs\api\v0001\device.rst:606
+msgid "204 (No Content) - The device was successfully deleted"
+msgstr ""
+"204 (Pas de contenu) - Le terminal a été supprimé"
+

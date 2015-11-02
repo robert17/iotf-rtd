@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,153 +19,160 @@ msgstr ""
 #: ..\docs\messaging\applications.rst:3
 msgid "MQTT Connectivity for Applications"
 msgstr ""
+"MQTT アプリケーション接続"
 
 #: ..\docs\messaging\applications.rst:5
-msgid ""
-"An Application must authenticate using a client ID in the following format:"
+msgid "An application must authenticate using a client ID in the following format:"
 msgstr ""
+"アプリケーションは、以下の形式のクライアント ID を使用して認証を行う必要があります。"
 
 #: ..\docs\messaging\applications.rst:7
 msgid "a:**org\\_id**:**app_id**"
 msgstr ""
+"a:**org\\_id**:**app_id**"
 
 #: ..\docs\messaging\applications.rst:9
-msgid ""
-"We do not impose any rules on the **app\\_id** component of the client ID"
+msgid "We do not impose any rules on the **app\\_id** component of the client ID"
 msgstr ""
+"クライアント ID の **app\\_id** 部分についての規則は特にありません"
 
 #: ..\docs\messaging\applications.rst:10
-msgid ""
-"When connecting to the QuickStart service no authentication is required"
+msgid "When connecting to the Quickstart service no authentication is required"
 msgstr ""
+"Quickstart サービスに接続する際、認証は必要ありません"
 
 #: ..\docs\messaging\applications.rst:11
-msgid "An Application does not need to be registered before it can connect"
+msgid "An application does not need to be registered before it can connect"
 msgstr ""
+"接続の前にアプリケーションを登録する必要はありません"
 
 #: ..\docs\messaging\applications.rst:18
 msgid "MQTT client identifier"
 msgstr ""
+"MQTT クライアント ID"
 
 #: ..\docs\messaging\applications.rst:20
 msgid "Supply a client id of the form **a**:**org\\_id**:**app\\_id**"
 msgstr ""
+"**a**:**org\\_id**:**app\\_id** 形式のクライアント ID を指定します"
 
 #: ..\docs\messaging\applications.rst:22
 msgid "**a** indicates the client is an application"
 msgstr ""
+"**a** は、クライアントがアプリケーションであることを示します"
 
 #: ..\docs\messaging\applications.rst:23
-msgid ""
-"**org\\_id** is your unique organization ID, assigned when you sign up with "
-"the service.  It will be a 6 character alphanumeric string."
+#: ..\docs\messaging\applications.rst:176
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
 msgstr ""
+"**org\\_id** は、サービス登録時に割り当てられる固有の組織 ID です。これは 6 文字の英数字ストリングです。"
 
 #: ..\docs\messaging\applications.rst:25
+#: ..\docs\messaging\applications.rst:178
 msgid "**app\\_id** is a user-defined unique string identifier for this client."
 msgstr ""
+"**app\\_id** は、このクライアントのための固有のユーザー定義ストリング ID です。"
 
 #: ..\docs\messaging\applications.rst:27
-msgid ""
-"Only one MQTT client can connect using any given client ID.  As soon as a "
-"secnd client in your organization connects using an **app\\_id** that you "
-"have already connected the first client will be disconnected."
+msgid "Only one MQTT client can connect using any given client ID.  As soon as a second client in your organization connects using an **app\\_id** that you have already connected the first client will be disconnected."
 msgstr ""
+"特定のクライアント ID を使用して接続できる MQTT クライアントは 1 つだけです。既に接続済みの **app\\_id** を使用して組織内の第 2 のクライアントが接続すると、第 1 のクライアントは切断されます。"
 
 #: ..\docs\messaging\applications.rst:36
 msgid "MQTT authentication"
 msgstr ""
+"MQTT 認証"
 
 #: ..\docs\messaging\applications.rst:38
-msgid ""
-"Applications require an API Key to connect into an Organization.  When an "
-"API Key is registered a token will be generated that must be used with that "
-"API key."
+msgid "Applications require an API Key to connect into an organization.  When an API Key is registered a token will be generated that must be used with that API key."
 msgstr ""
+"アプリケーションが組織に接続するには API キーが必要です。API キーを登録すると、その API キーと共に使用する必要のあるトークンが生成されます。"
 
 #: ..\docs\messaging\applications.rst:41
 msgid "The API key will look something like this: a-**org\\_id**-a84ps90Ajs"
 msgstr ""
+"API キーは、a-**org\\_id**-a84ps90Ajs のような形式です"
 
 #: ..\docs\messaging\applications.rst:43
 msgid "The token will look something like this: MP$08VKz!8rXwnR-Q*"
 msgstr ""
+"トークンは、MP$08VKz!8rXwnR-Q* のような形式です"
 
 #: ..\docs\messaging\applications.rst:45
 msgid "When making an MQTT connection using an API key the following applies:"
 msgstr ""
+"API キーを使用して MQTT 接続を確立する際には、以下の点が適用されます。"
 
 #: ..\docs\messaging\applications.rst:47
 msgid "MQTT client ID: a:**org\\id**:**app\\_id**"
 msgstr ""
+"MQTT クライアント ID: a:**org\\id**:**app\\_id**"
 
 #: ..\docs\messaging\applications.rst:48
 msgid "MQTT username must be the API key: a-**org\\_id**-a84ps90Ajs"
 msgstr ""
+"MQTT ユーザー名は API キーでなければなりません: a-**org\\_id**-a84ps90Ajs"
 
 #: ..\docs\messaging\applications.rst:49
 msgid "MQTT password must be the authentication token: MP$08VKz!8rXwnR-Q*"
 msgstr ""
+"MQTT パスワードは認証トークンでなければなりません: MP$08VKz!8rXwnR-Q*"
 
 #: ..\docs\messaging\applications.rst:56
 msgid "Publishing device events"
 msgstr ""
+"デバイス・イベントのパブリッシュ"
 
 #: ..\docs\messaging\applications.rst:57
-msgid ""
-"An application can publish events as if they came from any registered "
-"device."
+msgid "An application can publish events as if they came from any registered device."
 msgstr ""
+"アプリケーションは、登録デバイスから発信されたようにしてイベントをパブリッシュすることができます。"
 
 #: ..\docs\messaging\applications.rst:59
-msgid ""
-"Publish to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"パブリッシュ先トピック iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:61
-msgid ""
-"You may have a number of devices that are already generating bespoke data "
-"that you wish to send to IOTF.  One way to get that data into the service "
-"would be to write an application that processes the data and publishes it to"
-" IOTF."
+msgid "You may have a number of devices that are already generating bespoke data that you wish to send to IoTF.  One way to get that data into the service would be to write an application that processes the data and publishes it to IoTF."
 msgstr ""
+"IoTF への送信用データを既に生成している数多くのデバイスが既に手元にあるかもしれません。そのデータをサービスに取り入れる 1 つの方法は、そのデータを処理して IoTF にパブリッシュするアプリケーションを作成することです。"
 
 #: ..\docs\messaging\applications.rst:69
 msgid "Publishing device commands"
 msgstr ""
+"デバイス・コマンドのパブリッシュ"
 
 #: ..\docs\messaging\applications.rst:70
 msgid "An application can publish a command to any registered device."
 msgstr ""
+"アプリケーションは、登録デバイスに対してコマンドをパブリッシュすることができます。"
 
 #: ..\docs\messaging\applications.rst:72
-msgid ""
-"Publish to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgid "Publish to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"パブリッシュ先トピック iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:78
 msgid "Subscribing to device events"
 msgstr ""
+"デバイス・イベントへのサブスクライブ"
 
 #: ..\docs\messaging\applications.rst:79
 msgid "An application can subscribe to events from one or more devices."
 msgstr ""
+"アプリケーションは、1 つ以上のデバイスからイベントをサブスクライブすることができます。"
 
 #: ..\docs\messaging\applications.rst:81
-msgid ""
-"Subscribe to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"サブスクライブ先トピック iot-2/type/**device\\_type**/id/**device\\_id**/evt/**event\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:83
 #: ..\docs\messaging\applications.rst:102
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for any of the following"
-" components if you want to subscribe to more than one type of event, or "
-"events from more than a single device."
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to more than one type of event, or events from more than a single device."
 msgstr ""
+"複数のタイプのイベントまたは複数デバイスからのイベントをサブスクライブする場合、以下のいずれの部分についても MQTT の任意文字列ワイルドカード文字 (+) を使用することができます。"
 
 #: ..\docs\messaging\applications.rst:87
 #: ..\docs\messaging\applications.rst:106
@@ -168,107 +180,183 @@ msgstr ""
 #: ..\docs\messaging\applications.rst:155
 msgid "device\\_type"
 msgstr ""
+"device\\_type"
 
 #: ..\docs\messaging\applications.rst:88
 #: ..\docs\messaging\applications.rst:107
 #: ..\docs\messaging\applications.rst:125
 msgid "device\\_id"
 msgstr ""
+"device\\_id"
 
 #: ..\docs\messaging\applications.rst:89
 msgid "event\\_id"
 msgstr ""
+"event\\_id"
 
 #: ..\docs\messaging\applications.rst:90
 #: ..\docs\messaging\applications.rst:109
 msgid "format\\_string"
 msgstr ""
+"format\\_string"
 
 #: ..\docs\messaging\applications.rst:97
 msgid "Subscribing to device commands"
 msgstr ""
+"デバイス・コマンドへのサブスクライブ"
 
 #: ..\docs\messaging\applications.rst:98
-msgid ""
-"An application can subscribe to commands being sent to one or more devices."
+msgid "An application can subscribe to commands being sent to one or more devices."
 msgstr ""
+"アプリケーションは、1 つ以上のデバイスに送信されるコマンドをサブスクライブすることができます。"
 
 #: ..\docs\messaging\applications.rst:100
-msgid ""
-"Subscribe to topic "
-"iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
+msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"サブスクライブ先トピック iot-2/type/**device\\_type**/id/**device\\_id**/cmd/**command\\_id**/fmt/**format\\_string**"
 
 #: ..\docs\messaging\applications.rst:108
 msgid "cmd\\_id"
 msgstr ""
+"cmd\\_id"
 
 #: ..\docs\messaging\applications.rst:116
 msgid "Subscribing to device status messages"
 msgstr ""
+"デバイス状況メッセージへのサブスクライブ"
 
 #: ..\docs\messaging\applications.rst:117
 msgid "An application can subscribe to monitor status of one or more devices."
 msgstr ""
+"アプリケーションは、1 つ以上のデバイスのモニター状況をサブスクライブすることができます。"
 
 #: ..\docs\messaging\applications.rst:119
 msgid "Subscribe to topic iot-2/type/**device\\_type**/id/**device\\_id**/mon"
 msgstr ""
+"サブスクライブ先トピック iot-2/type/**device\\_type**/id/**device\\_id**/mon"
 
 #: ..\docs\messaging\applications.rst:121
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for any of the following"
-" components if you want to subscribe to updates from more than one device."
+msgid "The MQTT \"any\" wildcard character (+) may be used for any of the following components if you want to subscribe to updates from more than one device."
 msgstr ""
+"複数デバイスからの更新をサブスクライブする場合、以下のいずれの部分についても MQTT の任意文字列ワイルドカード文字 (+) を使用することができます。"
 
 #: ..\docs\messaging\applications.rst:132
 msgid "Subscribing to application status messages"
 msgstr ""
+"アプリケーション状況メッセージのサブスクライブ"
 
 #: ..\docs\messaging\applications.rst:133
-msgid ""
-"An application can subscribe to monitor status of one or more applications."
+msgid "An application can subscribe to monitor status of one or more applications."
 msgstr ""
+"アプリケーションは、1 つ以上のアプリケーションのモニター状況をサブスクライブすることができます。"
 
 #: ..\docs\messaging\applications.rst:135
 msgid "Subscribe to topic iot-2/app/**app\\_id**/mon"
 msgstr ""
+"サブスクライブ先トピック iot-2/app/**app\\_id**/mon"
 
 #: ..\docs\messaging\applications.rst:137
-msgid ""
-"The MQTT \"any\" wildcard character (+) may be used for **app\\_id** if you "
-"want to subscribe for updates for all applications."
+msgid "The MQTT \"any\" wildcard character (+) may be used for **app\\_id** if you want to subscribe for updates for all applications."
 msgstr ""
+"すべてのアプリケーションの更新にサブスクライブする場合、**app\\_id** に MQTT の任意文字列ワイルドカード文字 (+) を使用することができます。"
 
 #: ..\docs\messaging\applications.rst:145
-msgid "QuickStart restrictions"
+msgid "Quickstart restrictions"
 msgstr ""
+"Quickstart の制限"
 
 #: ..\docs\messaging\applications.rst:147
-msgid ""
-"If you are writing application code that wants to support use with "
-"QuickStart you must take into account the following features present in the "
-"registered service that are not supported in QuickStart:"
+msgid "If you are writing application code that wants to support use with Quickstart you must take into account the following features present in the registered service that are not supported in Quickstart:"
 msgstr ""
+"Quickstart との併用をサポートするアプリケーション・コードを作成する場合、Quickstart でサポートされない登録済みサービスに含まれる以下の機能を考慮する必要があります。"
 
 #: ..\docs\messaging\applications.rst:151
 msgid "Publishing commands"
 msgstr ""
+"コマンドのパブリッシュ"
 
 #: ..\docs\messaging\applications.rst:152
 msgid "Subscribing to commands"
 msgstr ""
+"コマンドのサブスクライブ"
 
 #: ..\docs\messaging\applications.rst:153
-msgid ""
-"Use of the MQTT \"any\" wildcard character (+) for the following topic "
-"components:"
+msgid "Use of the MQTT \"any\" wildcard character (+) for the following topic components:"
 msgstr ""
+"以下のトピック部分での MQTT 任意文字列ワイルドカード文字 (+) の使用"
 
 #: ..\docs\messaging\applications.rst:156
 msgid "app\\_id"
 msgstr ""
+"app\\_id"
 
 #: ..\docs\messaging\applications.rst:157
 msgid "MQTT connection over SSL"
 msgstr ""
+"MQTT SSL 接続"
+
+#: ..\docs\messaging\applications.rst:164
+msgid "Scalable Applications"
+msgstr ""
+"スケーラブル・アプリケーション"
+
+#: ..\docs\messaging\applications.rst:166
+msgid "You can build scalable applications which will load balance messages across multiple instances of your application by making a few changes to how your application connects to the IoT Foundation. Applications taking advantage of this feature must only attempt to make non-durable subscriptions. A bit of experimentation may be needed to understand how many clients are needed for the optimum balance in load."
+msgstr ""
+"アプリケーションを IoT Foundation に接続する方法を少し変更することで、アプリケーションの複数インスタンス間でメッセージの負荷分散を行うスケーラブルなアプリケーションを作成できます。この機能を活用するアプリケーションでは、非永続サブスクリプションのみを作成する必要があります。負荷分散を最適化するために必要なクライアント数を調べるには、少し実験する必要があります。"
+
+#: ..\docs\messaging\applications.rst:173
+msgid "Supply a client id of the form **A**:**org\\_id**:**app\\_id**"
+msgstr ""
+"**A**:**org\\_id**:**app\\_id** 形式のクライアント ID を指定します"
+
+#: ..\docs\messaging\applications.rst:175
+msgid "**A** indicates the client is a scalable application"
+msgstr ""
+"**A** は、クライアントがスケーラブル・アプリケーションであることを示します"
+
+#: ..\docs\messaging\applications.rst:179
+msgid "Create a non-durable subscription"
+msgstr ""
+"非永続サブスクリプションの作成"
+
+#: ..\docs\messaging\applications.rst:181
+msgid "Only non-durable subscriptions are supported for scalable applications. Please note that the client id must begin with a capital 'A' in order to designated as a scalable application by IoTF. Multiple clients that are part of the scalable application should use the exact same client id."
+msgstr ""
+"スケーラブル・アプリケーションでは、非永続サブスクリプションのみがサポートされます。IoTF によってスケーラブル・アプリケーションとして指定されるためには、クライアント ID を大文字 'A' で始める必要があることに注意してください。スケーラブル・アプリケーションの一部である複数のクライアントは、同じクライアント ID を使用する必要があります。"
+
+#: ..\docs\messaging\applications.rst:190
+msgid "How It Works"
+msgstr ""
+"動作内容"
+
+#: ..\docs\messaging\applications.rst:191
+msgid "The IoTF service extends the MQTT 3.1.1 specification to provide support for shared subscriptions. Shared subscription can provide simple load balancing functionality for applications. A shared subscription might be needed if a back-end enterprise application can not keep up with the number of messages being published to a specific topic space. For example if many devices were publishing messages that are being processed by a single application. It might be helpful to leverage the load balancing capability of a shared subscription. IoTF shared subscription support is limited to non-durable subscriptions only."
+msgstr ""
+"IoTF サービスは、共用サブスクリプションをサポートできるように MQTT 3.1.1 仕様を拡張したものです。共用サブスクリプションは、アプリケーションに対して簡単なロード・バランシング機能を提供できます。バックエンド・エンタープライズ・アプリケーションが特定のトピック・スペースにパブリッシュされる多数のメッセージに対応できない場合、共用サブスクリプションが必要になる場合があります。例えば、単一アプリケーションによって処理されるメッセージを多数のデバイスがパブリッシュする場合などです。共用サブスクリプションのロード・バランシング機能を活用すると効果がある可能性があります。IoTF 共用サブスクリプションのサポートは、非永続サブスクリプションのみに限定されます。"
+
+#: ..\docs\messaging\applications.rst:199
+msgid "A simple example of an auto-scaling application:"
+msgstr ""
+"自動スケーリング・アプリケーションの簡単な例:"
+
+#: ..\docs\messaging\applications.rst:201
+msgid "client 1 connects as A:abc123:myApplication and subscribes to all device events client 1 will receive 100% of the device events published"
+msgstr ""
+"クライアント 1 が A:abc123:myApplication として接続し、すべてのデバイス・イベントをサブスクライブしている。クライアント 1 はパブリッシュされたデバイス・イベントを 100% 受け取っている"
+
+#: ..\docs\messaging\applications.rst:203
+msgid "client 2 connects as A:abc123:myApplication and subscribes to all device events now, client 1 and client 2 will share all of the events published between them. that is the load is now shared between client 1 and client 2."
+msgstr ""
+"クライアント 2 が A:abc123:myApplication として接続し、すべてのデバイス・イベントをサブスクライブするようになる。クライアント 1 およびクライアント 2 は、パブリッシュされたすべてのデバイス・イベントを 2 つのクライアント間で共有する。つまり、クライアント 1 とクライアント 2 の間で負荷が分散される。"
+
+#: ..\docs\messaging\applications.rst:206
+msgid "client 3 connects as A:abc123:myApplication and subscribes to all device events now, instance 1, 2 and 3 will process the events shared amongst all three instances"
+msgstr ""
+"クライアント 3 が A:abc123:myApplication として接続し、すべてのデバイス・イベントをサブスクライブするようになる。インスタンス 1、2、および 3 は、3 つのインスタンスのすべての間で共有されたイベントを処理する"
+
+#: ..\docs\messaging\applications.rst:208
+msgid "clients 2 and 3 unsubscribe from all device events now, although instance 2 and 3 are still connected to the service, instance 1 will be receiving  all device events published"
+msgstr ""
+"クライアント 2 および 3 がすべてのデバイス・イベントをアンサブスクライブするようになるが、インスタンス 2 および 3 はまだサービスに接続されている。インスタンス 1 が、パブリッシュされるすべてのデバイス・イベントを受け取る"
+

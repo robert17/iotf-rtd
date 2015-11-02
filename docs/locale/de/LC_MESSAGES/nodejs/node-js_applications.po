@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\nodejs\node-js_applications.rst:2
+msgid "Node.js Client Library - Applications"
+msgstr ""
+"Node.js-Clientbibliothek - Anwendungen"
+
+#: ..\docs\nodejs\node-js_applications.rst:4
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using node.js with Internet of Things Foundation to interact with you devices and applications."
+msgstr ""
+"Der Client node.js wird zum Vereinfachen der Interaktion mit Internet of Things Foundation verwendet. Diese Clientbibliothek enthält Anweisungen und Informationen zur Verwendung von node.js mit Internet of Things Foundation zur Interaktion mit den Einheiten und Anwendungen."
+
+#: ..\docs\nodejs\node-js_applications.rst:6
+msgid "This client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using the node.js Internet of Things Foundation module, and the Applications section contains information on how applications can use the nodejs ibmiotf module to interact with devices."
+msgstr ""
+"Diese Clientbibliothek besteht aus den beiden Teilen für Einheiten und Anwendungen. Der Abschnitt mit den Einheiten enthält Informationen dazu, wie Einheiten Ereignisse publizieren und Befehle mit dem node.js-Modul von Internet of Things Foundation verarbeiten. Der Abschnitt mit den Anwendungen enthält Informationen, wie Anwendungen das node.js-Modul ibmiotf zur Interaktion mit Einheiten verwenden können."
+
+#: ..\docs\nodejs\node-js_applications.rst:8
+msgid "*IotfApplication* is the application client for the Internet of Things Foundation service. This section contains information on how applications interact with devices."
+msgstr ""
+"*IotfApplication* ist der Anwendungsclient für den Internet of Things Foundation-Service. Dieser Abschnitt enthält Informationen zur Interaktion mit Einheiten."
+
+#: ..\docs\nodejs\node-js_applications.rst:11
+msgid "Constructor"
+msgstr ""
+"Konstruktor"
+
+#: ..\docs\nodejs\node-js_applications.rst:13
+msgid "The constructor builds the application client instance. It accepts an configuration json containing the following : - org - Your organization ID - id - The unique ID of your application within your organization. - auth-key - API key - auth-token - API key token"
+msgstr ""
+"Die Instanz des Anwendungsclients wird vom Konstruktor erstellt. Er akzeptiert eine Konfigurations-JSON, die folgendes enthält: - org - Ihre Organisations-ID - id - Die eindeutige ID Ihrer Anwendung innerhalb Ihrer Organisation. - auth-key - API-Schlüssel - auth-token - API-Schlüsseltoken"
+
+#: ..\docs\nodejs\node-js_applications.rst:19
+msgid "If you want to use quickstart, then send only the first two properties."
+msgstr ""
+"Wenn Sie einen Schnellstart ausführen möchten, senden Sie nur die beiden ersten Eigenschaften."
+
+#: ..\docs\nodejs\node-js_applications.rst:34
+msgid "Using a configuration file"
+msgstr ""
+"Konfigurationsdatei verwenden"
+
+#: ..\docs\nodejs\node-js_applications.rst:36
+msgid "Instead of passing the configuration json directly, you can also use a configuration file. Use the following code snippet"
+msgstr ""
+"Anstatt die Konfigurations-JSON direkt weiterzugeben, können Sie auch eine Konfigurationsdatei verwenden. Verwenden Sie das folgenden Codefragment:"
+
+#: ..\docs\nodejs\node-js_applications.rst:45
+msgid "The configuration file must be in the format of"
+msgstr ""
+"Die Konfigurationsdatei muss im folgenden Format vorliegen:"
+
+#: ..\docs\nodejs\node-js_applications.rst:55
+msgid "Connecting to the Internet of Things Foundation"
+msgstr ""
+"Herstellen der Verbindung zu Internet of Things Foundation"
+
+#: ..\docs\nodejs\node-js_applications.rst:57
+msgid "Connect to the Internet of Things Foundation by calling the *connect* function."
+msgstr ""
+"Stellen Sie durch Aufrufen der Funktion *connect* eine Verbindung zu Internet of Things Foundation her."
+
+#: ..\docs\nodejs\node-js_applications.rst:73
+msgid "After the successful connection to the IoTF service, the application client sends a *connect* event. So all the logic can be implemented inside this callback function."
+msgstr ""
+"Nachdem die Verbindung zum IoTF-Service hergestellt wurde, wird vom Anwendungsclient das Ereignis *connect* gesendet. Somit kann die gesamte Logik in dieser Callback-Funktion implementiert werden."
+
+#: ..\docs\nodejs\node-js_applications.rst:76
+msgid "Subscribing to device events"
+msgstr ""
+"Einheitenereignisse subskribieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:78
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Ereignisse sind die Mechanismen, mit denen Einheiten Daten bei Internet of Things Foundation publizieren. Die Einheit steuert den Inhalt des Ereignisses und ordnet einen Namen für jedes von der Einheit gesendete Ereignis zu."
+
+#: ..\docs\nodejs\node-js_applications.rst:80
+msgid "When an event is received by the Internet of Things Foundation, the credentials of the connection on which the event was received are used to determine from which device the event was sent. Using this architecture, it is impossible for a device to impersonate another device."
+msgstr ""
+"Wenn ein Ereignis von Internet of Things Foundation empfangen wird, werden die Identifikationsdaten der Verbindung, mit der das Ereignis empfangen wurde, dazu verwendet, die Einheit zu ermitteln, von der das Ereignis gesendet wurde. Mit dieser Architektur ist es für eine Einheit unmöglich, die Identität einer anderen Einheit anzunehmen."
+
+#: ..\docs\nodejs\node-js_applications.rst:82
+msgid "By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters."
+msgstr ""
+"Standardmäßig subskribieren Anwendungen alle Ereignisse von allen verbundenen Einheiten. Verwenden Sie die Parameter type, id, event und msgFormat, um den Geltungsbereich der Subskription zu steuern. Ein einzelner Client kann mehrere Subskriptionen unterstützen. Die nachfolgenden Codebeispiele zeigen beispielhaft die Vorgehensweise beim Subskribieren bei Einheiten abhängig von den Einheitenparametern type, id, event und msgFormat."
+
+#: ..\docs\nodejs\node-js_applications.rst:85
+msgid "To subscribe to all events from all devices"
+msgstr ""
+"Zum Subskribieren aller Ereignisse von allen Einheiten"
+
+#: ..\docs\nodejs\node-js_applications.rst:103
+msgid "To subscribe to all events from all devices of a specific type"
+msgstr ""
+"Zum Subskribieren aller Ereignisse von allen Einheiten eines bestimmten Typs"
+
+#: ..\docs\nodejs\node-js_applications.rst:120
+msgid "To subscribe to a specific event from all devices"
+msgstr ""
+"Zum Subskribieren eines bestimmten Ereignisses von allen Einheiten"
+
+#: ..\docs\nodejs\node-js_applications.rst:138
+msgid "To subscribe to a specific event from two or more different devices"
+msgstr ""
+"Zum Subskribieren eines bestimmten Ereignisses von zwei oder mehr verschiedenen Einheiten"
+
+#: ..\docs\nodejs\node-js_applications.rst:156
+msgid "To subscribe to all events published by a device in json format"
+msgstr ""
+"Zum Subskribieren aller Ereignisse, die von einer Einheit im json-Format publiziert werden"
+
+#: ..\docs\nodejs\node-js_applications.rst:175
+msgid "Handling events from devices"
+msgstr ""
+"Ereignisse von Einheiten verarbeiten"
+
+#: ..\docs\nodejs\node-js_applications.rst:177
+msgid "To process the events received by your subscriptions you need to implement a device event callback method. The ibmiotf application client emits the event *deviceEvent*. This function has the following properties:"
+msgstr ""
+"Zum Verarbeiten der Ereignisse, die von Ihren Subskriptionen empfangen wurden, müssen Sie eine Ereignis-Callback-Methode implementieren. Vom Anwendungsclient ibmiotf wird das Ereignis *deviceEvent* ausgegeben. Diese Funktion weist folgende Eigenschaften auf:"
+
+#: ..\docs\nodejs\node-js_applications.rst:179
+#: ..\docs\nodejs\node-js_applications.rst:273
+msgid "deviceType"
+msgstr ""
+"deviceType"
+
+#: ..\docs\nodejs\node-js_applications.rst:180
+#: ..\docs\nodejs\node-js_applications.rst:274
+msgid "deviceId"
+msgstr ""
+"deviceId"
+
+#: ..\docs\nodejs\node-js_applications.rst:181
+msgid "eventType"
+msgstr ""
+"eventType"
+
+#: ..\docs\nodejs\node-js_applications.rst:182
+msgid "format"
+msgstr ""
+"format"
+
+#: ..\docs\nodejs\node-js_applications.rst:183
+msgid "payload - Device event payload"
+msgstr ""
+"payload - Einheitenereignisnutzdaten"
+
+#: ..\docs\nodejs\node-js_applications.rst:184
+msgid "topic - Original topic"
+msgstr ""
+"topic - Ursprüngliches Thema"
+
+#: ..\docs\nodejs\node-js_applications.rst:208
+msgid "Subscribing to device status"
+msgstr ""
+"Einheitenstatus subskribieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:210
+msgid "By default, this will subscribe to status updates for all connected devices. Use the type and id parameters to control the scope of the subscription. A single client can support multiple subscriptions."
+msgstr ""
+"Standardmäßig werden hiermit Statusaktualisierungen für alle verbundenen Einheiten subskribiert. Verwenden Sie die Parameter type und id, um den Geltungsbereich der Subskription zu steuern. Ein einzelner Client kann mehrere Subskriptionen unterstützen."
+
+#: ..\docs\nodejs\node-js_applications.rst:213
+msgid "Subscribe to status updates for all devices"
+msgstr ""
+"Statusaktualisierungen für alle Einheiten subskribieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:232
+msgid "Subscribe to status updates for all devices of a specific type"
+msgstr ""
+"Statusaktualisierungen für alle Einheiten eines bestimmten Typs subskribieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:250
+msgid "Subscribe to status updates for two different devices"
+msgstr ""
+"Statusaktualisierungen für zwei verschiedene Einheiten subskribieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:269
+msgid "Handling status updates from devices"
+msgstr ""
+"Statusaktualisierungen von Einheiten verarbeiten"
+
+#: ..\docs\nodejs\node-js_applications.rst:271
+msgid "To process the status updates received by your subscriptions you need to implement an device status callback method. The ibmiotf application client emits the event *deviceStatus*. This function has the following properties:"
+msgstr ""
+"Zum Verarbeiten der Statusaktualisierungen, die von Ihren Subskriptionen empfangen wurden, müssen Sie eine Callback-Methode für den Einheitenstatus implementieren. Vom Anwendungsclient ibmiotf wird das Ereignis *deviceStatus* ausgegeben. Diese Funktion weist folgende Eigenschaften auf:"
+
+#: ..\docs\nodejs\node-js_applications.rst:275
+msgid "payload - Device status payload"
+msgstr ""
+"payload - Einheitenstatusnutzdaten"
+
+#: ..\docs\nodejs\node-js_applications.rst:276
+msgid "topic"
+msgstr ""
+"topic"
+
+#: ..\docs\nodejs\node-js_applications.rst:300
+msgid "Publishing events from devices"
+msgstr ""
+"Ereignisse von Einheiten publizieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:302
+msgid "Applications can publish events as if they originated from a Device. The function requires:"
+msgstr ""
+"Anwendungen können Ereignisse so publizieren, als ob sie von einer Einheit stammen. Für die Funktion ist Folgendes erforderlich:"
+
+#: ..\docs\nodejs\node-js_applications.rst:304
+#: ..\docs\nodejs\node-js_applications.rst:331
+msgid "DeviceType"
+msgstr ""
+"DeviceType"
+
+#: ..\docs\nodejs\node-js_applications.rst:305
+#: ..\docs\nodejs\node-js_applications.rst:332
+msgid "Device ID"
+msgstr ""
+"Einheiten-ID"
+
+#: ..\docs\nodejs\node-js_applications.rst:306
+msgid "Event Type"
+msgstr ""
+"Ereignistyp"
+
+#: ..\docs\nodejs\node-js_applications.rst:307
+#: ..\docs\nodejs\node-js_applications.rst:334
+msgid "Format"
+msgstr ""
+"Format"
+
+#: ..\docs\nodejs\node-js_applications.rst:308
+#: ..\docs\nodejs\node-js_applications.rst:335
+msgid "Data"
+msgstr ""
+"Daten"
+
+#: ..\docs\nodejs\node-js_applications.rst:327
+msgid "Publishing commands to devices"
+msgstr ""
+"Befehle für Einheiten publizieren"
+
+#: ..\docs\nodejs\node-js_applications.rst:329
+msgid "Applications can publish commands to connected devices. The function requires:"
+msgstr ""
+"Anwendungen können Befehle an verbundene Einheiten publizieren. Für die Funktion ist Folgendes erforderlich:"
+
+#: ..\docs\nodejs\node-js_applications.rst:333
+msgid "Command Type"
+msgstr ""
+"Befehlstyp"
+
+#: ..\docs\nodejs\node-js_applications.rst:354
+msgid "Disconnect Client"
+msgstr ""
+"Verbindung des Clients trennen"
+
+#: ..\docs\nodejs\node-js_applications.rst:356
+msgid "Disconnects the client and releases the connections"
+msgstr ""
+"Trennt die Verbindung des Clients und gibt die Verbindungen frei"
+
+#: ..\docs\nodejs\node-js_applications.rst:376
+msgid "Check Connection Status"
+msgstr ""
+"Verbindungsstatus überprüfen"
+
+#: ..\docs\nodejs\node-js_applications.rst:378
+msgid "*isConnected* gives the current status of the application client connection"
+msgstr ""
+"*isConnected* gibt den aktuellen Status der Verbindung des Anwendungsclients an."
+

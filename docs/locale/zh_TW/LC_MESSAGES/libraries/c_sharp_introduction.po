@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:3
+msgid "C# Client Library - Introduction"
+msgstr ""
+"C# 用戶端程式庫 - 簡介"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:5
+msgid "Use the C# module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ and to automate commands using C# 5.0 or 4.0. The module can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instruction and guidance on using the C# module to interact with devices and applications within your organizations."
+msgstr ""
+"您可使用 C# 模組與 `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ 互動，並使用 C# 5.0 或 4.0 將指令自動化。該模組可用來簡化與 IBM Internet of Things Foundation 的互動。下列程式庫包含使用 C# 模組與組織內的裝置及應用程式互動的指示及指引。"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:7
+msgid "`C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+msgstr ""
+"`C# 5.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:8
+msgid "`C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+msgstr ""
+"`C# 4.0 <https://www.microsoft.com/en-us/download/details.aspx?id=7029>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:10
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the C# ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"此用戶端程式庫分成兩個區段，都內含在程式庫中。「裝置」區段包含裝置如何使用 C# ibmiotf 模組發佈事件及處理指令的相關資訊，「應用程式」區段則包含應用程式如何使用 ibmiotf 模組與裝置互動的相關資訊。"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:13
+msgid "Dependencies"
+msgstr ""
+"相依關係"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:14
+msgid "`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ 提供了一個用戶端類別，可讓應用程式連接至 MQTT 分配管理系統"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:16
+msgid "`Apache Commons Logging <https://logging.apache.org/log4net/>`_ library for logging various information"
+msgstr ""
+"`Apache Commons Logging <https://logging.apache.org/log4net/>`_ 程式庫，用於記載各種不同的資訊"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:19
+msgid "Documentation"
+msgstr ""
+"文件"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:20
+msgid "`Device Client <../libraries/c_sharp_devices.html#/>`_"
+msgstr ""
+"`裝置用戶端 <../libraries/c_sharp_devices.html#/>`_"
+
+#: ..\docs\libraries\c_sharp_introduction.rst:22
+msgid "`Application Client <../libraries/c_sharp_applications.html#/>`_"
+msgstr ""
+"`應用程式用戶端 <../libraries/c_sharp_applications.html#/>`_"
+

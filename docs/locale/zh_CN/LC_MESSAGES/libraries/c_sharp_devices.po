@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\c_sharp_devices.rst:3
+msgid "C# Client Library - Devices"
+msgstr ""
+"C# 客户机库 - 设备"
+
+#: ..\docs\libraries\c_sharp_devices.rst:6
+msgid "Introduction"
+msgstr ""
+"简介"
+
+#: ..\docs\libraries\c_sharp_devices.rst:7
+msgid "This client library describes how to use devices with the C# ibmiotf module. For help with getting started with this module, see `C Sharp Client Library - Introduction <../libraries/c_sharp_introduction.html#/>`_\\."
+msgstr ""
+"此客户机库描述了如何将设备与 C# ibmiotf 模块配合使用。有关如何开始使用此模块的帮助，请参阅 `C Sharp 客户机库 - 简介 <../libraries/c_sharp_introduction.html#/>`_\\。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:9
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the C# ibmiotf module. The Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"此客户机库分为两部分（均包含在该库中）。此部分包含有关设备如何使用 C# ibmiotf 模块发布事件和处理命令的信息。“应用程序”部分包含有关应用程序如何使用 ibmiotf 模块来与设备进行交互的信息。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:12
+msgid "Constructor"
+msgstr ""
+"构造方法"
+
+#: ..\docs\libraries\c_sharp_devices.rst:13
+msgid "The constructor builds the client instance, and accepts arguments containing the following definitions:"
+msgstr ""
+"此构造方法用于构建客户机实例，并接受包含以下定义的自变量："
+
+#: ..\docs\libraries\c_sharp_devices.rst:15
+msgid "orgId - Your organization ID."
+msgstr ""
+"orgId - 贵组织的标识。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:16
+msgid "deviceType - The type of your device."
+msgstr ""
+"deviceType - 设备的类型。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:17
+msgid "deviceId - The ID of your device."
+msgstr ""
+"deviceId - 设备的标识。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:18
+msgid "auth-method - Method of authentication (the only value currently supported is “token”)."
+msgstr ""
+"auth-method - 认证方法（当前唯一支持的值为“token”）。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:19
+msgid "auth-token - API key token (required if auth-method is “token”)."
+msgstr ""
+"auth-token - API 密钥令牌（如果 auth-method 为“token”，那么此项为必需项）。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:22
+msgid "If deviceId and deviceType are provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The argument lists creates definitions which are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"如果提供了 deviceId 和 deviceType，那么客户机将连接到 Internet of Things Foundation Quickstart 服务，并缺省设置为未注册的设备。自变量列表可创建用于与 Internet of Things Foundation 模块进行交互的定义。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:36
+msgid "Publishing events"
+msgstr ""
+"发布事件"
+
+#: ..\docs\libraries\c_sharp_devices.rst:37
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"事件是设备用于将数据发布到 Internet of Things Foundation 的机制。设备控制事件的内容，并为其发送的每个事件分配名称。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:39
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine which device sent the event. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"IoT Foundation 接收到事件时，将使用用于接收该事件的连接的凭证来确定是哪个设备发送了该事件。由于使用这种体系结构，设备将无法模拟其他设备。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:41
+msgid "Events can be published at any of the three `quality of service (QoS) levels <../mqtt.html#/qoslevels>`_, defined by the MQTT protocol. By default events will be published as QoS level 0."
+msgstr ""
+"可以按 MQTT 协议定义的三个 `服务质量 (QoS) 级别 <../mqtt.html#/qoslevels>`_ 中的任何一个级别发布事件。缺省情况下，将按 QoS 级别 0 发布事件。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:44
+msgid "Publish event using default quality of service"
+msgstr ""
+"使用缺省服务质量发布事件"
+
+#: ..\docs\libraries\c_sharp_devices.rst:53
+msgid "Publish event using user-defined quality of service"
+msgstr ""
+"使用用户定义的服务质量发布事件"
+
+#: ..\docs\libraries\c_sharp_devices.rst:54
+msgid "Events can be published at higher MQTT quality of service levels, but events published at QoS levels above 0 may be slower then QoS 0 events, because of the extra confirmation of receipt used in QoS levels above 0."
+msgstr ""
+"可按较高的 MQTT 服务质量级别发布事件，但由于 QoS 0 以上的级别需要额外的接收确认，因此按 QoS 0 以上的级别发布的事件可能比 QoS 0 事件要慢一些。"
+
+#: ..\docs\libraries\c_sharp_devices.rst:63
+msgid "Handling commands"
+msgstr ""
+"处理命令"
+
+#: ..\docs\libraries\c_sharp_devices.rst:64
+msgid "When the device client connects, it automatically subscribes to any commands for this device. To process specific commands, you must register a command callback method."
+msgstr ""
+"设备客户机进行连接时，会自动预订此设备的所有命令。要处理特定命令，必须注册命令回调方法。"
+

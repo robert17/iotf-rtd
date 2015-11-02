@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\api\v0002\device.rst:3
+msgid "Device Management API"
+msgstr ""
+"デバイス管理 API"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "Path"
+msgstr ""
+"パス"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "GET"
+msgstr ""
+"GET"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "POST"
+msgstr ""
+"POST"
+
+#: ..\docs\api\v0002\device.rst:6
+msgid "DELETE"
+msgstr ""
+"DELETE"
+
+#: ..\docs\api\v0002\device.rst:8
+msgid "/"
+msgstr ""
+"/"
+
+#: ..\docs\api\v0002\device.rst:8
+msgid "Get organization"
+msgstr ""
+"組織の取得"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "/device/types"
+msgstr ""
+"/device/types"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "List device types"
+msgstr ""
+"デバイス・タイプのリスト"
+
+#: ..\docs\api\v0002\device.rst:10
+msgid "Create device type"
+msgstr ""
+"デバイス・タイプの作成"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "/device/types/{typeID}"
+msgstr ""
+"/device/types/{typeID}"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Get device type"
+msgstr ""
+"デバイス・タイプの取得"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Update device type"
+msgstr ""
+"デバイス・タイプの更新"
+
+#: ..\docs\api\v0002\device.rst:12
+msgid "Delete device type"
+msgstr ""
+"デバイス・タイプの削除"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "/device/types/{typeID}/devices"
+msgstr ""
+"/device/types/{typeID}/devices"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "List devices"
+msgstr ""
+"デバイスのリスト"
+
+#: ..\docs\api\v0002\device.rst:14
+msgid "Add device"
+msgstr ""
+"デバイスの追加"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "/device/types/{typeID}/devices /{deviceID}"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Get device"
+msgstr ""
+"デバイスの取得"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Update device"
+msgstr ""
+"デバイスの更新"
+
+#: ..\docs\api\v0002\device.rst:16
+msgid "Remove device"
+msgstr ""
+"デバイスの削除"
+
+#: ..\docs\api\v0002\device.rst:19
+msgid "/device/types/{typeID}/devices /{deviceID}/diag"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag"
+
+#: ..\docs\api\v0002\device.rst:19
+msgid "Get device diagnostic information"
+msgstr ""
+"デバイス診断情報の取得"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Get device diagnostic error codes"
+msgstr ""
+"デバイス診断エラー・コードの取得"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Add error code"
+msgstr ""
+"エラー・コードの追加"
+
+#: ..\docs\api\v0002\device.rst:22
+msgid "Clear error codes"
+msgstr ""
+"エラー・コードの消去"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/log"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/log"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "Get device diagnostic log"
+msgstr ""
+"デバイス診断ログの取得"
+
+#: ..\docs\api\v0002\device.rst:25
+msgid "Add device diagnostic log"
+msgstr ""
+"デバイス診断ログの追加"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "/device/types/{typeID}/devices /{deviceID}/location"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/location"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "Get device location information"
+msgstr ""
+"デバイス・ロケーション情報の取得"
+
+#: ..\docs\api\v0002\device.rst:28
+msgid "Update device location information"
+msgstr ""
+"デバイス・ロケーション情報の更新"
+
+#: ..\docs\api\v0002\device.rst:31
+msgid "/device/types/{typeID}/devices /{deviceID}/mgmt"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/mgmt"
+
+#: ..\docs\api\v0002\device.rst:31
+msgid "Get device management information"
+msgstr ""
+"デバイス管理情報の取得"
+
+#: ..\docs\api\v0002\device.rst:34
+msgid "/bulk/devices"
+msgstr ""
+"/bulk/devices"
+
+#: ..\docs\api\v0002\device.rst:34
+msgid "List devices in bulk, with paging and filtering"
+msgstr ""
+"デバイスの一括リスト (ページングとフィルタリングあり)"
+
+#: ..\docs\api\v0002\device.rst:38
+msgid "/bulk/devices/add"
+msgstr ""
+"/bulk/devices/add"
+
+#: ..\docs\api\v0002\device.rst:38
+msgid "Add devices in bulk"
+msgstr ""
+"デバイスの一括追加"
+
+#: ..\docs\api\v0002\device.rst:41
+msgid "/bulk/devices/remove"
+msgstr ""
+"/bulk/devices/remove"
+
+#: ..\docs\api\v0002\device.rst:41
+msgid "Remove devices in bulk"
+msgstr ""
+"デバイスの一括削除"
+
+#: ..\docs\api\v0002\device.rst:44
+msgid "/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+msgstr ""
+"/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+
+#: ..\docs\api\v0002\device.rst:44
+msgid "Get connection log for device"
+msgstr ""
+"デバイスの接続ログの取得"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "/mgmt/requests"
+msgstr ""
+"/mgmt/requests"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "List device management requests"
+msgstr ""
+"デバイス管理リクエストのリスト"
+
+#: ..\docs\api\v0002\device.rst:47
+msgid "Initiate device management requests"
+msgstr ""
+"デバイス管理リクエストの開始"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "/mgmt/requests/{requestId}"
+msgstr ""
+"/mgmt/requests/{requestId}"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "Get device management request"
+msgstr ""
+"デバイス管理リクエストの取得"
+
+#: ..\docs\api\v0002\device.rst:50
+msgid "Clear device management request"
+msgstr ""
+"デバイス管理リクエストの消去"
+
+#: ..\docs\api\v0002\device.rst:53
+msgid "/mgmt/requests/{requestId} /deviceStatus"
+msgstr ""
+"/mgmt/requests/{requestId} /deviceStatus"
+
+#: ..\docs\api\v0002\device.rst:53
+msgid "Get device status for management requests"
+msgstr ""
+"管理リクエストに関するデバイス・ステータスの取得"
+
+#: ..\docs\api\v0002\device.rst:58
+msgid "Filtering and Querying"
+msgstr ""
+"フィルタリングおよび照会"
+
+#: ..\docs\api\v0002\device.rst:60
+msgid "An important part of device management is the ability to query and filter information about devices. This is important for operator dashboards as well as building tools using APIs."
+msgstr ""
+"デバイス管理の重要な部分は、デバイスに関する情報を照会してフィルタリングする機能です。これはオペレーター・ダッシュボードの操作や API を使用したツールの作成で重要になります。"
+
+#: ..\docs\api\v0002\device.rst:62
+msgid "The following API will permit a query string to qualify the devices whose information is being requested. - GET /bulk/devices"
+msgstr ""
+"次の API では、照会ストリングで、情報を要求する対象デバイスを限定することができます: GET /bulk/devices"
+
+#: ..\docs\api\v0002\device.rst:65
+msgid "The query string will be able to refer to all of the device attributes in the core device model, plus the management and diagnostic extensions. The location extension is excluded, meaning devices cannot be queried for their latitude and longitude. The query string can contain the following attributes:"
+msgstr ""
+"照会ストリングでは、コア・デバイス・モデルに加えて管理拡張と診断拡張のすべてのデバイス属性を参照できます。ロケーション拡張は対象外です。つまり、デバイスの緯度と経度を照会することはできません。照会ストリングには以下の属性を含めることができます。"
+
+#: ..\docs\api\v0002\device.rst:67
+msgid "``typeId``"
+msgstr ""
+"``typeId``"
+
+#: ..\docs\api\v0002\device.rst:68
+msgid "``deviceId``"
+msgstr ""
+"``deviceId``"
+
+#: ..\docs\api\v0002\device.rst:69
+msgid "``status.alert.enabled``"
+msgstr ""
+"``status.alert.enabled``"
+
+#: ..\docs\api\v0002\device.rst:70
+msgid "``deviceInfo.serialNumber``"
+msgstr ""
+"``deviceInfo.serialNumber``"
+
+#: ..\docs\api\v0002\device.rst:71
+msgid "``deviceInfo.manufacturer``"
+msgstr ""
+"``deviceInfo.manufacturer``"
+
+#: ..\docs\api\v0002\device.rst:72
+msgid "``deviceInfo.model``"
+msgstr ""
+"``deviceInfo.model``"
+
+#: ..\docs\api\v0002\device.rst:73
+msgid "``deviceInfo.deviceClass``"
+msgstr ""
+"``deviceInfo.deviceClass``"
+
+#: ..\docs\api\v0002\device.rst:74
+msgid "``deviceInfo.description``"
+msgstr ""
+"``deviceInfo.description``"
+
+#: ..\docs\api\v0002\device.rst:75
+msgid "``deviceInfo.fwVersion``"
+msgstr ""
+"``deviceInfo.fwVersion``"
+
+#: ..\docs\api\v0002\device.rst:76
+msgid "``deviceInfo.hwVersion``"
+msgstr ""
+"``deviceInfo.hwVersion``"
+
+#: ..\docs\api\v0002\device.rst:77
+msgid "``deviceInfo.descriptiveLocation``"
+msgstr ""
+"``deviceInfo.descriptiveLocation``"
+
+#: ..\docs\api\v0002\device.rst:78
+msgid "``mgmt.dormant``"
+msgstr ""
+"``mgmt.dormant``"
+
+#: ..\docs\api\v0002\device.rst:79
+msgid "``mgmt.supports.deviceActions``"
+msgstr ""
+"``mgmt.supports.deviceActions``"
+
+#: ..\docs\api\v0002\device.rst:80
+msgid "``mgmt.supports.firmwareActions``"
+msgstr ""
+"``mgmt.supports.firmwareActions``"
+
+#: ..\docs\api\v0002\device.rst:82
+msgid "The query string takes the form of a list of attribute=value pairs separated by '&'. This corresponds to an equality match on the attributes and values supplied. For example:"
+msgstr ""
+"照会ストリングは、複数の「属性=値」のペアを '&' で区切ったリスト形式で指定できます。これは、指定した属性と値の等式マッチングに相当します。例: "
+
+#: ..\docs\api\v0002\device.rst:88
+msgid "However, there is no capability to perform other types of matches, such as greater than or regular expressions."
+msgstr ""
+"ただし、「より大」や正規表現など、他の種類のマッチングを実行する機能はありません。"
+

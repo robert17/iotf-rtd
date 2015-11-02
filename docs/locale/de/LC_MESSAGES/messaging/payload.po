@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,121 +19,140 @@ msgstr ""
 #: ..\docs\messaging\payload.rst:2
 msgid "Message Payload"
 msgstr ""
+"Nachrichtennutzdaten"
 
 #: ..\docs\messaging\payload.rst:4
-msgid ""
-"The Foundation supports sending and recieving messages in any format, "
-"however we recommend the use of JSON and the IOTF event format "
-"specification."
+msgid "The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and the IoTF event format specification."
 msgstr ""
+"Die Foundation unterstützt das Senden und Empfangen von Nachrichten in jedem Format; wir empfehlen jedoch die Verwendung von JSON und der IoTF-Ereignisformatspezifikation."
 
-#: ..\docs\messaging\payload.rst:13
-msgid "IOTF JSON Payload Specification"
+#: ..\docs\messaging\payload.rst:9
+msgid "IoTF Maximum Message Payload Size"
 msgstr ""
+"Maximale Größe der IoTF-Nachrichtennutzdaten"
+
+#: ..\docs\messaging\payload.rst:11
+msgid "The maximum payload size is 4 kilobytes (kB).  If messages with payloads larger than this limit are sent, the client will be disconnected and the following log message will appear in the Diagnostic Logs if the client is a device:"
+msgstr ""
+"Die maximale Nutzdatengröße beträgt 4 Kilobyte (KB).  Wenn Nachrichten mit Nutzdaten gesendet werden, die größer als dieses Limit sind, wird die Clientverbundung getrennt und die folgende Protokollnachricht wird in den Diagnoseprotokollen angezeigt, wenn der Client eine Einheit ist: "
 
 #: ..\docs\messaging\payload.rst:15
-msgid ""
-"It is simple to create a JSON message that meets the IOTF specification."
+msgid "Closed connection from x.x.x.x. The message size is too large for this endpoint."
 msgstr ""
-
-#: ..\docs\messaging\payload.rst:17
-msgid ""
-"The message must be a valid JSON object (not an array) with only two top "
-"level elements: **d** and **ts**"
-msgstr ""
-
-#: ..\docs\messaging\payload.rst:19
-msgid "The message must be UTF-8 encoded"
-msgstr ""
+"Geschlossene Verbindung von x.x.x.x. Die Nachrichtengröße ist für diesen Endpunkt zu hoch. "
 
 #: ..\docs\messaging\payload.rst:22
-msgid "Data"
+msgid "IoTF JSON Payload Specification"
 msgstr ""
+"IoTF JSON - Nutzdatenspezifikation"
 
-#: ..\docs\messaging\payload.rst:23
-msgid ""
-"The **d** element is where you include all data for the event (or command) "
-"being transmitted in the message."
+#: ..\docs\messaging\payload.rst:24
+msgid "It is simple to create a JSON message that meets the IoTF specification."
 msgstr ""
+"Das Erstellen einer JSON-Nachricht, die der IoTF-Spezifikation entspricht ist einfach."
 
 #: ..\docs\messaging\payload.rst:26
-msgid ""
-"This element is required for your message to meet the IOTF message "
-"specification."
+msgid "The message must be a valid JSON object (not an array) with only two top level elements: **d** and **ts**"
 msgstr ""
-
-#: ..\docs\messaging\payload.rst:27
-msgid "This must always be a JSON object (not an array)"
-msgstr ""
+"Die Nachricht muss ein gültiges JSON-Objekt (kein Array) mit lediglich zwei Elementen der höchsten Ebene sein: **d** und **ts**"
 
 #: ..\docs\messaging\payload.rst:28
-msgid ""
-"In the case where you wish to send no data the **d** element should still be"
-" present, but contain an empty object."
+msgid "The message must be UTF-8 encoded"
 msgstr ""
+"Die Nachricht muss in UTF-8 codiert sein"
+
+#: ..\docs\messaging\payload.rst:31
+msgid "Data"
+msgstr ""
+"Daten"
 
 #: ..\docs\messaging\payload.rst:32
-msgid "Example 1 - Simple Data"
+msgid "The **d** element is where you include all data for the event (or command) being transmitted in the message."
 msgstr ""
+"Im **d**-Element schließen Sie alle Daten für das Ereignis (oder den Befehl), das in der Nachricht übertragen wird, ein."
+
+#: ..\docs\messaging\payload.rst:35
+msgid "This element is required for your message to meet the IoTF message specification."
+msgstr ""
+"Dieses Element ist für Ihre Nachricht erforderlich, damit die IoTF-Nachrichtenspezifikation eingehalten wird."
+
+#: ..\docs\messaging\payload.rst:36
+msgid "This must always be a JSON object (not an array)"
+msgstr ""
+"Dies muss immer ein JSON-Objekt sein (kein Array)"
+
+#: ..\docs\messaging\payload.rst:37
+msgid "In the case where you wish to send no data the **d** element should still be present, but contain an empty object."
+msgstr ""
+"Im dem Fall, wo Sie keine Daten senden wollen, muss das Element **d** weiterhin vorhanden sein, muss jedoch ein leeres Objekt enthalten."
 
 #: ..\docs\messaging\payload.rst:41
+msgid "Example 1 - Simple Data"
+msgstr ""
+"Beispiel 1 - Einfache Daten"
+
+#: ..\docs\messaging\payload.rst:50
 msgid "Example 2 - Complex data"
 msgstr ""
-
-#: ..\docs\messaging\payload.rst:58
-msgid "Example 3 - No data"
-msgstr ""
+"Beispiel 2 - Komplexe Daten"
 
 #: ..\docs\messaging\payload.rst:67
+msgid "Example 3 - No data"
+msgstr ""
+"Beispiel 3 - Keine Daten"
+
+#: ..\docs\messaging\payload.rst:76
 msgid "Timestamp"
 msgstr ""
+"Zeitmarke"
 
-#: ..\docs\messaging\payload.rst:69
-msgid ""
-"The **ts** element allows you to associate a timestamp with the event (or "
-"command). This is an optional element, if included its value should be a "
-"valid ISO8601 encoded timestamp string."
+#: ..\docs\messaging\payload.rst:78
+msgid "The **ts** element allows you to associate a timestamp with the event (or command). This is an optional element, if included its value should be a valid ISO8601 encoded timestamp string."
 msgstr ""
+"Das **ts**-Element ermöglicht das Zuordnen einer Zeitmarke mit dem Ereignis (oder dem Befehl). Dies ist ein optionales Element; falls einbezogen, muss es eine gültige ISO8601-codierte Zeitmarkenzeichenfolge sein."
 
-#: ..\docs\messaging\payload.rst:89
+#: ..\docs\messaging\payload.rst:98
 msgid "Custom JSON payloads"
 msgstr ""
-
-#: ..\docs\messaging\payload.rst:90
-msgid ""
-"The IOT Foundation is designed to be open, you may send your event and "
-"command data in any format you choose, however if you choose to send data in"
-" a custom format it will limit some features of the service which can only "
-"function with a known payload format."
-msgstr ""
-
-#: ..\docs\messaging\payload.rst:94
-msgid ""
-"Below are a number of example payloads that are close the to the IOTF "
-"specification, but do not quite match it.  Each would be treated as a custom"
-" JSON payload."
-msgstr ""
-
-#: ..\docs\messaging\payload.rst:97
-msgid "**Example 1**"
-msgstr ""
+"Angepasste JSON-Nutzdaten"
 
 #: ..\docs\messaging\payload.rst:99
+msgid "The IoT Foundation is designed to be open, you may send your event and command data in any format you choose, however if you choose to send data in a custom format it will limit some features of the service which can only function with a known payload format."
+msgstr ""
+"IoT Foundation ist als offene Plattform konzipiert. Sie können Ihre Ereignis- und Befehlsdaten in jedem Format senden, das Sie auswählen. Wenn Sie jedoch Daten in einem benutzerdefinierten Format senden, sind einige Funktionen des Services eingeschränkt, da der Service nur mit einem bekannten Nutzdatenformat funktioniert."
+
+#: ..\docs\messaging\payload.rst:103
+msgid "Below are a number of example payloads that are close to the IoTF specification, but do not quite match it.  Each would be treated as a custom JSON payload."
+msgstr ""
+"Nachfolgend werden einige Beispiele von Nutzdaten aufgeführt, die nahe an die IoTF-Spezifikation kommen, jedoch nicht ganz mit ihr übereinstimmen.  Jedes Nutzdatenbeispiel wird als angepasste JSON-Payload behandelt."
+
+#: ..\docs\messaging\payload.rst:106
+msgid "**Example 1**"
+msgstr ""
+"**Beispiel 1**"
+
+#: ..\docs\messaging\payload.rst:108
 msgid "Root node is a JSON array"
 msgstr ""
+"Rootknoten ist ein JSON-Array"
 
-#: ..\docs\messaging\payload.rst:123
+#: ..\docs\messaging\payload.rst:132
 msgid "**Example 2**"
 msgstr ""
-
-#: ..\docs\messaging\payload.rst:125
-msgid "\"d\" node is a JSON array"
-msgstr ""
+"**Beispiel 2**"
 
 #: ..\docs\messaging\payload.rst:134
+msgid "\"d\" node is a JSON array"
+msgstr ""
+"\"d\"-Knoten ist ein JSON-Array"
+
+#: ..\docs\messaging\payload.rst:143
 msgid "**Example 3**"
 msgstr ""
+"**Beispiel 3**"
 
-#: ..\docs\messaging\payload.rst:136
+#: ..\docs\messaging\payload.rst:145
 msgid "Unexpected node at root level"
 msgstr ""
+"Unerwarteter Knoten auf Rootebene"
+

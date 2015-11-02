@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ..\docs\libraries\programmingguides.rst:3
+msgid "Programming Guides"
+msgstr ""
+"程式設計手冊"
+
+#: ..\docs\libraries\programmingguides.rst:5
+msgid "There are several client libraries availabe for use with the Internet of Things Foundation. These are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible."
+msgstr ""
+"Internet of Things Foundation 有數個用戶端程式庫可供搭配使用。這些程式庫的設計目的是讓使用者可以使用他們偏好的語言與其裝置和應用程式互動，並盡可能簡化此互動。"
+
+#: ..\docs\libraries\programmingguides.rst:11
+msgid "Python"
+msgstr ""
+"Python"
+
+#: ..\docs\libraries\programmingguides.rst:13
+msgid "`Introduction <../libraries/python.html#/>`__"
+msgstr ""
+"`簡介 <../libraries/python.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:14
+msgid "`Documentation for device developers <../libraries/python_cli_for_devices.html#/>`__"
+msgstr ""
+"`裝置開發人員的文件 <../libraries/python_cli_for_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:15
+msgid "`Documentation application developers <../libraries/python_cli_for_apps.html#/>`__"
+msgstr ""
+"`應用程式開發人員的文件 <../libraries/python_cli_for_apps.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:16
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-python>`_"
+msgstr ""
+"`請參閱 GitHub 中的程式碼 <https://github.com/ibm-messaging/iot-python>`_"
+
+#: ..\docs\libraries\programmingguides.rst:19
+msgid "Embedded C"
+msgstr ""
+"嵌入式 C"
+
+#: ..\docs\libraries\programmingguides.rst:21
+msgid "`Documentation <../libraries/embedded_c.html#/>`__"
+msgstr ""
+"`文件 <../libraries/embedded_c.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:22
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+msgstr ""
+"`請參閱 GitHub 中的程式碼 <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+
+#: ..\docs\libraries\programmingguides.rst:25
+msgid "Java"
+msgstr ""
+"Java"
+
+#: ..\docs\libraries\programmingguides.rst:27
+msgid "`Introduction <../java/javaintro.html#/>`__"
+msgstr ""
+"`簡介 <../java/javaintro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:28
+msgid "`Documentation for device developers <../java/java_cli_devices.html#/>`__"
+msgstr ""
+"`裝置開發人員的文件 <../java/java_cli_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:29
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-java>`_"
+msgstr ""
+"`請參閱 GitHub 中的程式碼 <https://github.com/ibm-messaging/iot-java>`_"
+
+#: ..\docs\libraries\programmingguides.rst:32
+msgid "Node.js"
+msgstr ""
+"Node.js"
+
+#: ..\docs\libraries\programmingguides.rst:34
+msgid "`Introduction <../nodejs/node-js_intro.html#/>`__"
+msgstr ""
+"`簡介 <../nodejs/node-js_intro.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:35
+msgid "`Documentation for device developers <../nodejs/node-js_devices.html#/>`__"
+msgstr ""
+"`裝置開發人員的文件 <../nodejs/node-js_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:36
+msgid "`Documentation for application developers <../nodejs/node-js_applications.html#/>`__"
+msgstr ""
+"`應用程式開發人員的文件 <../nodejs/node-js_applications.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:37
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+msgstr ""
+"`請參閱 GitHub 中的程式碼 <https://github.com/ibm-messaging/iot-nodejs>`_"
+
+#: ..\docs\libraries\programmingguides.rst:41
+msgid "C#"
+msgstr ""
+"C#"
+
+#: ..\docs\libraries\programmingguides.rst:43
+msgid "`Introduction <../libraries/c_sharp_introduction.html#/>`__"
+msgstr ""
+"`簡介 <../libraries/c_sharp_introduction.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:44
+msgid "`Documentation for device developers <../libraries/c_sharp_devices.html#/>`__"
+msgstr ""
+"`裝置開發人員的文件 <../libraries/c_sharp_devices.html#/>`__"
+
+#: ..\docs\libraries\programmingguides.rst:45
+msgid "`Documentation for application developers <../libraries/c_sharp_applications.html#/>`__"
+msgstr ""
+"`應用程式開發人員的文件 <../libraries/c_sharp_applications.html#/>`__"
+

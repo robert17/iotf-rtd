@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-10-19 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,231 +19,185 @@ msgstr ""
 #: ..\docs\messaging\mqtt.rst:3
 msgid "MQTT"
 msgstr ""
+"MQTT"
 
 #: ..\docs\messaging\mqtt.rst:5
-msgid ""
-"The primary mechanism that devices and applications use to communicate with "
-"the IBM Internet of Things Foundation is MQTT; this is a protocol designed "
-"for the efficient exchange of real-time data with sensor and mobile devices."
+msgid "The primary mechanism that devices and applications use to communicate with the IBM Internet of Things Foundation is MQTT; this is a protocol designed for the efficient exchange of real-time data with sensor and mobile devices."
 msgstr ""
+"O mecanismo primário que os dispositivos e os aplicativos usam para se comunicar com o IBM Internet of Things Foundation é o MQTT; este é um protocolo designado para a troca eficiente de dados em tempo real com sensor e dispositivos móveis."
 
 #: ..\docs\messaging\mqtt.rst:10
-msgid ""
-"MQTT runs over TCP/IP and, while it is possible to code directly to TCP/IP, "
-"you might prefer to use a library that handles the details of the MQTT "
-"protocol for you. You will find there's a wide range of MQTT client "
-"libraries available at mqtt.org_, with the best place to start looking being"
-" the `Eclipse Paho project`_. IBM contributes to the development and support"
-" of many of these libraries."
+msgid "MQTT runs over TCP/IP and, while it is possible to code directly to TCP/IP, you might prefer to use a library that handles the details of the MQTT protocol for you. You will find there's a wide range of MQTT client libraries available at mqtt.org_, with the best place to start looking being the `Eclipse Paho project`_. IBM contributes to the development and support of many of these libraries."
 msgstr ""
+"MQTT é executado sobre TCP/IP e, enquanto é possível codificar diretamente para TCP/IP, você pode preferir usar uma biblioteca que manipule os detalhes do protocolo MQTT para você. Você descobrirá que há um amplo intervalo de bibliotecas de clientes MQTT disponíveis em mqtt.org_, com o melhor local para começar a olhar sendo o `Eclipse Paho project`_. A IBM contribui para o desenvolvimento e suporte de muitas dessas bibliotecas."
 
 #: ..\docs\messaging\mqtt.rst:20
-msgid ""
-"MQTT 3.1 is the version of the protocol that is in widest use today. Version"
-" 3.1.1 contains a number of minor enhancements, and has been ratified as an "
-"OASIS Standard."
+msgid "MQTT 3.1 is the version of the protocol that is in widest use today. Version 3.1.1 contains a number of minor enhancements, and has been ratified as an OASIS Standard."
 msgstr ""
+"MQTT 3.1 é a versão do protocolo mais amplamente usada hoje. A Versão 3.1.1 contém vários aprimoramentos menores e foi ratificada como um Padrão OASIS."
 
 #: ..\docs\messaging\mqtt.rst:23
-msgid ""
-"One reason for using version 3.1.1 is that the maximum length of the MQTT "
-"Client Identifier (ClientId) is increased from the 23 character limit "
-"imposed by 3.1. The IoT service will often require longer ClientId's and "
-"will accept long ClientId's with either version of the protocol however some"
-" 3.1 client libraries check the ClientId and enforce the 23 character limit."
+msgid "One reason for using version 3.1.1 is that the maximum length of the MQTT Client Identifier (ClientId) is increased from the 23 character limit imposed by 3.1. The IoT service will often require longer ClientId's and will accept long ClientId's with either version of the protocol however some 3.1 client libraries check the ClientId and enforce the 23 character limit."
 msgstr ""
+"Uma razão para usar a versão 3.1.1 é que o comprimento máximo do Identificador de Cliente MQTT (ClientId) é aumentado do limite de 23 caracteres imposto pela 3.1. O serviço IoT exigirá frequentemente ClientId mais longo e aceitará ClientId longo com qualquer versão do protocolo, no entanto, algumas bibliotecas do cliente 3.1 verificam o ClientId e forçam o limite de 23 caracteres."
 
 #: ..\docs\messaging\mqtt.rst:35
 msgid "MQTT client connection"
 msgstr ""
+"Conexão do cliente MQTT"
 
 #: ..\docs\messaging\mqtt.rst:36
-msgid ""
-"Every registered organization has a unique endpoint which must be used when "
-"connecting MQTT clients for applications and devices in that organization."
+msgid "Every registered organization has a unique endpoint which must be used when connecting MQTT clients for applications and devices in that organization."
 msgstr ""
+"Toda organização registrada possui um terminal exclusivo que deve ser usado ao conectar clientes MQTT para aplicativos e dispositivos nessa organização."
 
 #: ..\docs\messaging\mqtt.rst:39
 msgid "**org\\_id**.messaging.internetofthings.ibmcloud.com"
 msgstr ""
+"**org\\_id**.messaging.internetofthings.ibmcloud.com"
 
 #: ..\docs\messaging\mqtt.rst:45
 msgid "Unencrypted client connection"
 msgstr ""
+"Conexão do cliente não criptografada"
 
 #: ..\docs\messaging\mqtt.rst:47
 msgid "Connect on port **1883**"
 msgstr ""
+"Conectar à porta **1883**"
 
 #: ..\docs\messaging\mqtt.rst:49
-msgid ""
-"All information your device submits is being sent in plain text (including "
-"the authentication credentials for your device)."
+msgid "All information your device submits is being sent in plain text (including the authentication credentials for your device). We recommend the use of an encrypted connection whenever possible."
 msgstr ""
+"Todas as informações que seu dispositivo envia estão sendo enviadas em texto simples (incluindo as credenciais de autenticação para seu dispositivo). Recomendamos o uso de uma conexão criptografada sempre que possível."
 
-#: ..\docs\messaging\mqtt.rst:57
+#: ..\docs\messaging\mqtt.rst:58
 msgid "Encrypted client connection"
 msgstr ""
+"Conexão do cliente criptografada"
 
-#: ..\docs\messaging\mqtt.rst:59
+#: ..\docs\messaging\mqtt.rst:60
 msgid "Connect on port **8883** or **443** for websockets."
 msgstr ""
+"Conectar à porta **8883** ou **443** para websockets."
 
-#: ..\docs\messaging\mqtt.rst:61
-msgid ""
-"In many client libraries you will need to provide the server's public "
-"certificate in pem format.  The following file contains the entire "
-"certificate chain for \\*.messaging.internetofthings.ibmcloud.com: "
-"messaging.pem_"
+#: ..\docs\messaging\mqtt.rst:62
+msgid "In many client libraries you will need to provide the server's public certificate in pem format.  The following file contains the entire certificate chain for \\*.messaging.internetofthings.ibmcloud.com: messaging.pem_"
 msgstr ""
+"Em muitas bibliotecas de clientes, você precisará fornecer um certificado público do servidor no formato pem.  O arquivo a seguir contém a sequência de certificados inteira para \\*.messaging.internetofthings.ibmcloud.com: messaging.pem_"
 
-#: ..\docs\messaging\mqtt.rst:67
-msgid ""
-"Some SSL client libraries have been shown to not handle wildcarded domains, "
-"in which case, if you can not change libraries, you will need to turn off "
-"certificate checking."
+#: ..\docs\messaging\mqtt.rst:68
+msgid "Some SSL client libraries have been shown to not handle wildcarded domains, in which case, if you can not change libraries, you will need to turn off certificate checking."
 msgstr ""
+"Algumas bibliotecas do cliente SSL demonstraram não manipular domínios com caractere curinga; neste caso, se você não puder mudar as bibliotecas, será necessário desativar a verificação de certificados."
 
-#: ..\docs\messaging\mqtt.rst:71
-msgid ""
-"The IoT Foundation requires TLS v1.2. We suggest the following cipher "
-"suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128"
-"-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*."
+#: ..\docs\messaging\mqtt.rst:72
+msgid "The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*."
 msgstr ""
-
-#: ..\docs\messaging\mqtt.rst:77
-msgid "Device and application clients"
-msgstr ""
+"O IoT Foundation requer TLS v1.2. Sugerimos os seguintes conjuntos de cifras: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 ou AES128-GCM-SHA256 *(a partir de 1 de junho de 2015)*."
 
 #: ..\docs\messaging\mqtt.rst:78
+msgid "Device and application clients"
+msgstr ""
+"Clientes de dispositivo e de aplicativo"
+
+#: ..\docs\messaging\mqtt.rst:79
 msgid "We define two primary classes of thing: Devices & Applications"
 msgstr ""
+"Nós definimos duas classes primárias de coisas: Dispositivos e Aplicativos"
 
-#: ..\docs\messaging\mqtt.rst:80
-msgid ""
-"The class of thing that your MQTT client identifies itself to the service as"
-" will determine the capabilities of your client once connected as well as "
-"the mechanism through which you will need to authenticate."
+#: ..\docs\messaging\mqtt.rst:81
+msgid "The class of thing that your MQTT client identifies itself to the service as will determine the capabilities of your client once connected as well as the mechanism through which you will need to authenticate."
 msgstr ""
+"A classe de coisa que seu cliente MQTT se identifica para o serviço irá determinar os recursos do cliente depois de conectado e também o mecanismo pelo qual você precisará se autenticar."
 
-#: ..\docs\messaging\mqtt.rst:84
-msgid ""
-"Applications and devices also work with different MQTT topic spaces.  "
-"Devices work within a device-scoped topic space, whereas applications have "
-"full access to the topic space for an entire organization."
+#: ..\docs\messaging\mqtt.rst:85
+msgid "Applications and devices also work with different MQTT topic spaces.  Devices work within a device-scoped topic space, whereas applications have full access to the topic space for an entire organization."
 msgstr ""
-
-#: ..\docs\messaging\mqtt.rst:88
-msgid ":doc:`devices`"
-msgstr ""
+"Os aplicativos e dispositivos também funcionam com diferentes espaços de tópicos MQTT.  Os dispositivos funcionam dentro de um espaço de tópico com escopo do dispositivo, enquanto os aplicativos têm acesso total ao espaço de tópico para uma organização inteira."
 
 #: ..\docs\messaging\mqtt.rst:89
+msgid ":doc:`devices`"
+msgstr ""
+":doc:`devices`"
+
+#: ..\docs\messaging\mqtt.rst:90
 msgid ":doc:`applications`"
 msgstr ""
-
-#: ..\docs\messaging\mqtt.rst:98
-msgid "Quality of service"
-msgstr ""
+":doc:`applications`"
 
 #: ..\docs\messaging\mqtt.rst:99
-msgid ""
-"The MQTT protocol provides three qualities of service for delivering "
-"messages between clients and servers: \"at most once\", \"at least once\" "
-"and \"exactly once\". Events and commands can be sent using any quality of "
-"service level, however you should carefully consider whether what the right "
-"level is for your needs.  It is not a simple case that QoS2 is \"better\" "
-"than QoS0."
+msgid "Quality of service"
 msgstr ""
+"Qualidade de serviço"
 
-#: ..\docs\messaging\mqtt.rst:107
-msgid "At most once (QoS0)"
+#: ..\docs\messaging\mqtt.rst:100
+msgid "The MQTT protocol provides three qualities of service for delivering messages between clients and servers: \"at most once\", \"at least once\" and \"exactly once\". Events and commands can be sent using any quality of service level, however you should carefully consider whether what the right level is for your needs.  It is not a simple case that QoS2 is \"better\" than QoS0."
 msgstr ""
+"O protocolo MQTT fornece três qualidades de serviço para entrega de mensagens entre clientes e servidores: \"at most once\", \"at least once\" e \"exactly once\". Eventos e comandos podem ser enviados usando qualquer nível de qualidade de serviço, no entanto, deve-se considerar cuidadosamente se o nível correto atende às suas necessidades.  Não é um caso simples que QoS2 é \"better\" que QoS0."
 
 #: ..\docs\messaging\mqtt.rst:108
-msgid ""
-"The message is delivered at most once, or it might not be delivered at all. "
-"Delivery across the network is not acknowledged, and the message is not "
-"stored. The message could be lost if the client is disconnected, or if the "
-"server fails. QoS0 is the fastest mode of transfer. It is sometimes called "
-"\"fire and forget\"."
+msgid "At most once (QoS0)"
 msgstr ""
+"No máximo uma vez (QoS0)"
 
-#: ..\docs\messaging\mqtt.rst:114
-msgid ""
-"The MQTT protocol does not require servers to forward publications at QoS0 "
-"to a client. If the client is disconnected at the time the server receives "
-"the publication, the publication might be discarded, depending on the server"
-" implementation."
+#: ..\docs\messaging\mqtt.rst:109
+msgid "The message is delivered at most once, or it might not be delivered at all. Delivery across the network is not acknowledged, and the message is not stored. The message could be lost if the client is disconnected, or if the server fails. QoS0 is the fastest mode of transfer. It is sometimes called \"fire and forget\"."
 msgstr ""
+"A mensagem é entregue no máximo uma vez ou pode não ser entregue definitivamente. A entrega pela rede não é reconhecida e a mensagem não é armazenada. A mensagem poderá ser perdida se o cliente estiver desconectado ou se o servidor falhar. QoS0 é o modo mais rápido de transferência. Ele é, às vezes, chamado de \"fire and forget\"."
 
-#: ..\docs\messaging\mqtt.rst:119
-msgid ""
-"When sending real-time data on an interval we recommend using QoS0.  If a "
-"single message goes missing it does not really matter as another message "
-"will be sent shortly after containing newer data.  In this scenario the "
-"extra cost of using higher quality of service does not result in any "
-"tangible benefit."
+#: ..\docs\messaging\mqtt.rst:115
+msgid "The MQTT protocol does not require servers to forward publications at QoS0 to a client. If the client is disconnected at the time the server receives the publication, the publication might be discarded, depending on the server implementation."
 msgstr ""
+"O protocolo MQTT não exige servidores para redirecionar publicações em QoS0 para um cliente. Se o cliente estiver desconectado no momento em que o servidor recebe a publicação, a publicação poderá ser descartada, dependendo da implementação do servidor."
 
-#: ..\docs\messaging\mqtt.rst:126
-msgid "At least once (QoS1)"
+#: ..\docs\messaging\mqtt.rst:120
+msgid "When sending real-time data on an interval we recommend using QoS0.  If a single message goes missing it does not really matter as another message will be sent shortly after containing newer data.  In this scenario the extra cost of using higher quality of service does not result in any tangible benefit."
 msgstr ""
+"Ao enviar dados em tempo real em um intervalo, recomendamos usar o QoS0.  Se uma única mensagem estiver faltando, realmente não importará se outra mensagem será enviada rapidamente após conter dados mais novos.  Nesse cenário, o custo extra de usar qualidade de serviço mais alta não resulta em nenhum benefício tangível."
 
 #: ..\docs\messaging\mqtt.rst:127
-msgid ""
-"The message is always delivered at least once. It might be delivered "
-"multiple times if there is a failure before an acknowledgment is received by"
-" the sender. The message must be stored locally at the sender, until the "
-"sender receives confirmation that the message has been published by the "
-"receiver. The message is stored in case the message must be sent again."
+msgid "At least once (QoS1)"
 msgstr ""
+"Pelo menos uma vez (QoS1)"
 
-#: ..\docs\messaging\mqtt.rst:135
-msgid "Exactly once (QoS2)"
+#: ..\docs\messaging\mqtt.rst:128
+msgid "The message is always delivered at least once. It might be delivered multiple times if there is a failure before an acknowledgment is received by the sender. The message must be stored locally at the sender, until the sender receives confirmation that the message has been published by the receiver. The message is stored in case the message must be sent again."
 msgstr ""
+"A mensagem é sempre entregue pelo menos uma vez. Ela pode ser entregue várias vezes se houver uma falha antes de uma confirmação ser recebida pelo remetente. A mensagem deve ser armazenada localmente no remetente, até o remetente receber a confirmação de que a mensagem foi publicada pelo destinatário. A mensagem é armazenada para o caso de ser necessário enviá-la novamente."
 
 #: ..\docs\messaging\mqtt.rst:136
-msgid ""
-"The message is always delivered exactly once. The message must be stored "
-"locally at the sender, until the sender receives confirmation that the "
-"message has been published by the receiver. The message is stored in case "
-"the message must be sent again. QoS2 is the safest, but slowest mode of "
-"transfer. A more sophisticated handshaking and acknowledgement sequence is "
-"used than for QoS1 to ensure no duplication of messages occurs."
+msgid "Exactly once (QoS2)"
 msgstr ""
+"Exatamente uma vez (QoS2)"
 
-#: ..\docs\messaging\mqtt.rst:143
-msgid ""
-"When sending commands we recommend using QoS2.  In many cases, when "
-"processing commands you want to know that the command will only be actioned,"
-" and that it will be actioned only once.  This is one of the clearest "
-"examples of when the additional overhead of QoS2 has a clear benefit."
+#: ..\docs\messaging\mqtt.rst:137
+msgid "The message is always delivered exactly once. The message must be stored locally at the sender, until the sender receives confirmation that the message has been published by the receiver. The message is stored in case the message must be sent again. QoS2 is the safest, but slowest mode of transfer. A more sophisticated handshaking and acknowledgement sequence is used than for QoS1 to ensure no duplication of messages occurs."
 msgstr ""
+"A mensagem sempre é entregue exatamente uma vez. A mensagem deve ser armazenada localmente no remetente, até o remetente receber a confirmação de que a mensagem foi publicada pelo destinatário. A mensagem é armazenada para o caso de ser necessário enviá-la novamente. QoS2 é o modo mais seguro, mas o mais lento de transferência. Uma sequência mais sofisticada de handshaking e confirmação é usada para QoS1 para assegurar que não ocorra duplicação de mensagens."
 
-#: ..\docs\messaging\mqtt.rst:150
-msgid "Subscription Buffers and Clean Session"
+#: ..\docs\messaging\mqtt.rst:144
+msgid "When sending commands we recommend using QoS2.  In many cases, when processing commands you want to know that the command will only be actioned, and that it will be actioned only once.  This is one of the clearest examples of when the additional overhead of QoS2 has a clear benefit."
 msgstr ""
+"Ao enviar comandos, nós recomendamos usar QoS2.  Em muitos casos, ao processar comandos você deseja saber se o comando será apenas acionado e se ele será acionado apenas uma vez.  Este é um dos exemplos mais claros de quando a sobrecarga adicional do QoS2 tem um benefício evidente."
 
 #: ..\docs\messaging\mqtt.rst:151
-msgid ""
-"Each subscription from either a device or application is allocated a buffer "
-"of 5000 messages.  This allows for any application or device to fall behind "
-"the live data it is processing and build up a backlog of up to 5000 pending "
-"messages for each subscription it has made.  Once the buffer fills up, any "
-"new message will result in the oldest message in the buffer being discarded."
+msgid "Subscription Buffers and Clean Session"
 msgstr ""
+"Buffers de Assinatura e Sessão de Limpeza"
 
-#: ..\docs\messaging\mqtt.rst:157
-msgid ""
-"The subscription buffer can be accessed using MQTT clean session option.  If"
-" clean session is set to true, a subscriber will start receiving messages "
-"from the buffer. If it is false the buffer is reset."
+#: ..\docs\messaging\mqtt.rst:152
+msgid "Each subscription from either a device or application is allocated a buffer of 5000 messages.  This allows for any application or device to fall behind the live data it is processing and build up a backlog of up to 5000 pending messages for each subscription it has made.  Once the buffer fills up, any new message will result in the oldest message in the buffer being discarded."
 msgstr ""
+"A cada assinatura de um dispositivo ou aplicativo é alocado um buffer de 5000 mensagens.  Isso permite que qualquer aplicativo ou dispositivo fique atrás dos dados ativos que está processando e construa uma lista não processada de até 5000 mensagens pendentes para cada assinatura feita.  Quando o buffer estiver cheio, qualquer mensagem nova resultará no descarte da mensagem mais antiga do buffer."
 
-#: ..\docs\messaging\mqtt.rst:161
-msgid ""
-"This limit applies regardless of the quality of service setting used. Thus "
-"it is possible that a message sent at QoS1 or QoS2 may not be delivered to "
-"an application that is unable to keep up with the messages rate for the "
-"subscription(s) it has made."
+#: ..\docs\messaging\mqtt.rst:158
+msgid "The subscription buffer can be accessed using MQTT clean session option.  If clean session is set to false, a subscriber will start receiving messages from the buffer. If clean session is set to true, the buffer is reset."
 msgstr ""
+"O buffer de assinatura pode ser acessado usando a opção de sessão de limpeza MQTT.  Se a sessão de limpeza for configurada como false, um assinante começará a receber mensagens do buffer. Se a sessão de limpeza for configurada como true, o buffer será reconfigurado."
+
+#: ..\docs\messaging\mqtt.rst:162
+msgid "This limit applies regardless of the quality of service setting used. Thus it is possible that a message sent at QoS1 or QoS2 may not be delivered to an application that is unable to keep up with the messages rate for the subscription(s) it has made."
+msgstr ""
+"Este limite se aplica independentemente da configuração da qualidade de serviço usada. Portanto, é possível que uma mensagem enviada em QoS1 ou QoS2 possa não ser entregue a um aplicativo que não consegue acompanhar a taxa de mensagens para a(s) assinatura(s) feita(s)."
+

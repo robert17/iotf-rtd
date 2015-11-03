@@ -8,7 +8,7 @@ All devices can use HTTP(S) messaging to communicate with the Internet of Things
 The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:
 
 - `Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__.
-- `HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications>`__.
+- `HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__.
 
 
 Using HTTP(S) with Devices and the Internet of Things Foundation

@@ -92,9 +92,9 @@ Messaging
     messaging/managed_devices
     messaging/applications
     messaging/payload
-    messaging/HTTPIntro
-    messaging/HTTPDevice
-    messaging/HTTPApplications
+    messaging/HTTPSIntro
+    messaging/HTTPSDevice
+    messaging/HTTPSApplications
 
 
 Reference Material

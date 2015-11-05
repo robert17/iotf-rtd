@@ -14,8 +14,8 @@ Using HTTP(S) with Applications and the Internet of Things Foundation
 
 The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:
 
-..code:: 
-
+.. code::
+	
 	<target server: org_id.internetofthings.ibmcloud.com>/api/v0002/application/types/{DeviceType}/devices/{DeviceID}/events/{eventID}
 
 For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed.

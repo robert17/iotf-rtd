@@ -6,7 +6,7 @@ The HTTP(S) messaging protocol can be used by devices and applications to intera
 The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:
 
 - `Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__.
-- `HTTP(S) Connectivity for Devices <../messaging/HTTPSDevices.html>`__.
+- `HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__.
 
 
 Using HTTP(S) with Applications and the Internet of Things Foundation
@@ -15,8 +15,8 @@ Using HTTP(S) with Applications and the Internet of Things Foundation
 The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:
 
 .. code::
-	
-	<target server: org_id.internetofthings.ibmcloud.com>/api/v0002/application/types/{DeviceType}/devices/{DeviceID}/events/{eventID}
+        
+        <target server: org_id.internetofthings.ibmcloud.com>/api/v0002/application/types/{DeviceType}/devices/{DeviceID}/events/{eventID}
 
 For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed.
 

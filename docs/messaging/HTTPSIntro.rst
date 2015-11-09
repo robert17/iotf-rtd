@@ -28,8 +28,6 @@ Only HTTPS can be used with registered organizations. When using HTTPS with a re
 Quality of Service
 ------------------------
 
-The MQTT protocol provides three qualities of service (QoS) detailed in the `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation. Events and commands can be sent using any quality of service level, however, caution should be taken in selecting the correct QoS level for your needs. It is not a case that QoS2 is inherently better than QoS0.
+The HTTP(S) protocol has a quality of service analogous to, but not the same as, MQTT QoS0. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery.
 
-The Quickstart service only uses QoS0. When using QoS0 to deliver event messages, the device or application must implement retry logic to guarantee delivery.
-
-HTTP(S) has a quality of service analogous to, but not the same as, MQTT QoS0. 
+For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation.

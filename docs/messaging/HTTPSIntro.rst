@@ -28,6 +28,6 @@ Only HTTPS can be used with registered organizations. When using HTTPS with a re
 Quality of Service
 ------------------------
 
-The HTTP(S) protocol has a quality of service analogous to, but not the same as, MQTT QoS0. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery.
+The HTTP(S) protocol provides "at most once" best effort delivery, analagous to the QoS0 quality of service provided by the MQTT protocol. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery.
 
 For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation.

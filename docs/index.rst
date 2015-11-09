@@ -94,6 +94,7 @@ Messaging
     messaging/payload
     messaging/HTTPSIntro
     messaging/HTTPSDevice
+    messaging/HTTPSApplications
 
 
 Reference Material

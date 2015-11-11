@@ -1,7 +1,7 @@
 HTTP(S) Connectivity with the Internet of Things Foundation
 ============================================================
 
-The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messgaing protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__.
+The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__.
 
 All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation.
 

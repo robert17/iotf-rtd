@@ -230,6 +230,31 @@ Events can be published at higher MQTT quality of servive levels, but these even
 			myClient.publishEvent("status", event, 2);
 
 
+Publish event using HTTP(s)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Apart from MQTT, the devices can publish events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,
+
+* Construct a DeviceClient instance using the properties file
+* Construct an event that needs to be published
+* Specify the event name and publish the event using publishEventOverHTTP() method as follows,
+
+.. code:: java
+
+    	DeviceClient myClient = new DeviceClient(deviceProps);
+    
+    	JsonObject event = new JsonObject();
+			event.addProperty("name", "foo");
+			event.addProperty("cpu",  90);
+			event.addProperty("mem",  70);
+			
+    	int httpCode = myClient.publishEventOverHTTP("blink", event);
+    	
+The complete code can be found in the device example `HttpDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/device/HttpDeviceEventPublish.java>`__
+
+Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
+
+The event in HTTP(s) is published at most once QoS, so the device needs to implement the retry logic when there is an error.
+
 ----
 
 Handling commands

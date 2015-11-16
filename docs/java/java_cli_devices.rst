@@ -243,9 +243,9 @@ Apart from MQTT, the devices can publish events to IBM Internet of Things Founda
     	DeviceClient myClient = new DeviceClient(deviceProps);
     
     	JsonObject event = new JsonObject();
-			event.addProperty("name", "foo");
-			event.addProperty("cpu",  90);
-			event.addProperty("mem",  70);
+    	event.addProperty("name", "foo");
+    	event.addProperty("cpu",  90);
+    	event.addProperty("mem",  70);
 			
     	int httpCode = myClient.publishEventOverHTTP("blink", event);
     	

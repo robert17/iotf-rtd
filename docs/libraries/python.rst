@@ -11,6 +11,15 @@ The following versions of Python are compatible with this module:
 
 Note: Support for MQTT over SSL requires at least Python v2.7.9 or v3.4, and openssl v1.0.1
 
+For information on how to use the IBM Internet of Things Foundation Python module with devices, applications, and APIs, please refer to the following documentation.
+
+-  `Device
+   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__
+-  `Application
+   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__
+-  `API
+   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_api.html>`__
+
 Dependencies
 ------------
 
@@ -24,7 +33,7 @@ The following libraries and modules are required in order to use the Internet of
 Installation
 ------------
 
-Install the latest version of the library by using the following code in the command line.
+Install the latest version of the library by using the following code in the command line:
 
 ::
 
@@ -33,7 +42,7 @@ Install the latest version of the library by using the following code in the com
 Uninstall
 ---------
 
-Uninstall the module by using the following code in the command line.
+Uninstall the module by using the following code in the command line:
 
 ::
 
@@ -75,13 +84,3 @@ This can be easily changed with the following code.
     deviceCli = ibmiotf.device.Client(deviceOptions)
     # Revert to v0.0.x parsing for json messages -- assume all JSON events and commands use the IOTF JSON payload specification
     deviceCli.setMessageEncoderModule('json', jsonIotfCodec) 
-
-Documentation
--------------
-
--  `Device
-   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_devices.html>`__
--  `Application
-   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_apps.html>`__
--  `API
-   Client <https://docs.internetofthings.ibmcloud.com/libraries/python_cli_for_api.html>`__

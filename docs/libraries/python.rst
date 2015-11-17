@@ -17,7 +17,7 @@ Dependencies
 The following libraries and modules are required in order to use the Internet of Things Foundation Python module.
 
 -  The `paho-mqtt <https://pypi.python.org/pypi/paho-mqtt>`__ implements the MQTT protocol required for communicating with the Internet of Things Foundation.
--  `ISO8601 <https://pypi.python.org/pypi/iso8601>`__. This module is parses ISO8601 date strings into datetime objects. 
+-  `ISO8601 <https://pypi.python.org/pypi/iso8601>`__. This module parses ISO8601 date strings into datetime objects. 
 -  The `pytz <https://pypi.python.org/pypi/pytz>`__ library enables accurate timezone calculations.
 -  The `requests <https://pypi.python.org/pypi/requests>`__ library is a python HTTP library, enabling HTTP communication with the Internet of Things Foundation using python.
 

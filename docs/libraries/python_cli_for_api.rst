@@ -17,16 +17,16 @@ The `Python for Applications documentation </python_cli_for_apps.html>`__ contai
 Constructor
 -------------------------------------------------------------------------------
 
-The Internet of Things Python module client is built by the constructor. The constructor require a properties object containing the following definitions:
+The Internet of Things Python module client is built for device, application, or API use by the constructor. The constructor requires a properties object containing the following definitions:
 
-* org - Your organization ID
-* auth-method - Always "apikey"
-* auth-key - API key
-* auth-token - API key token
+* org - Your organization ID.
+* auth-method - This defines the authentication method be used, and should always be set to "apikey".
+* auth-key - The authentication key should be your API key.
+* auth-token - The authentication token is your API key token.
 
-The properties object creates definitions which are used to interact with the Internet of Things Foundation Connect module. 
+These definitions are used to interact with the Internet of Things Foundation module. 
 
-The following code snippet shows how to construct the APIClient instance using the properties,
+After installing the client library, as described in the Python for the Internet of Things Foundation Introduction, the APIClient instance can be construced by running the following code snippet:
 
 .. code:: python
     
@@ -50,20 +50,33 @@ Each method in the APIClient responds with either a valid response (JSON or bool
 
 So in the case of failure, application needs to parse the response to see if the action is partially successful or not.
 
-
 ----
-
 
 Organization details
 ----------------------------------------------------
 
-Application can use method getOrganizationDetails() to view the Organization details:
+Applications can use the getOrganizationDetails() method to retrieve the Organization details. Add the following code to a .py file, beneath the constructor code shown above.
 
 .. code:: Python
 
     orgDetail = apiCli.getOrganizationDetails();
 
-Refer to the Organization Configuration section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Organization Configuration section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the request & response model and http status code.
+
+Sample
+~~~~~~~
+
+Your final code should follow this format:
+
+.. code:: python
+    
+	import ibmiotf
+	import ibmiotf.application
+
+	apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
+	apiCli = ibmiotf.api.ApiClient(apiOptions)
+	
+	orgDetail = apiCli.getOrganizationDetails();
 
 ----
 
@@ -72,12 +85,12 @@ Bulk device operations
 
 Applications can use bulk operations to get, add or remove devices in bulk from Internet of Things Foundation Connect.
 
-Refer to the Bulk Operations section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Bulk Operations section of the `IBM IoT Foundation API https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ for information about the list of query parameters, the request & response model and http status code.
 
-Get Devices in bulk
-~~~~~~~~~~~~~~~~~~~
+Retrieve device information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getAllDevices() can be used to retrieve all the registered devices in an organization from Internet of Things Foundation Connect, each request can contain a maximum of 512KB. 
+Bulk device information can be retrieved using the getAllDevices() method. This method retrieves all registered devices in the organization from Internet of Things Foundation Connect, each request can contain a maximum of 512KB. 
 
 .. code:: python
 

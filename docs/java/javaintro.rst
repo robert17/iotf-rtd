@@ -2,15 +2,15 @@ Java Client Library - Introduction
 ============================================
 
 
-Use the Java client library for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__ and to automate commands using Java 7 or Java 8. The client library can be used to simplify interactions with the IBM Internet of Things Foundation. The following libraries contain instructions and guidance on using the java ibmiotf client library to interact with devices and applications within your organizations.
+This `Java Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__ can be used to simplify interactions with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. The documentation is divided into three sections:  
 
--  `Java IoT Foundation Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__
-
-This client library documentation is divided into three sections:  
-
--  The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
+- The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
 - The Applications section details how applications can use the Java ibmiotf Client Library to interact with devices.
--  The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
+- The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
+
+* `Device Client <../java/java_cli_devices.html>`__
+* `Managed Device <../java/java_deviceManagement.html>`__
+* `Application <../java/java_cli_app.html>`__
 
 Download
 -------------------------------------------------------------------------------
@@ -39,12 +39,3 @@ Dependencies
 -  `Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java 
 
 ----
-
-
-
-Documentation
--------------
-* `Device Client <../java/java_cli_devices.html>`__
-* `Managed Device <../java/java_deviceManagement.html>`__
-* `Application <../java/java_cli_app.html>`__
-

@@ -6,7 +6,7 @@ The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMI
 Dependencies
 ------------
 
-- `Eclipse Paho MQTT library <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
+- `Eclipse Paho MQTT library <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - Provides a MQTT client library for mBed devices, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
 - `EthernetInterface library <https://developer.mbed.org/users/mbed_official/code/EthernetInterface/>`__ - A mBed IP library over Ethernet.
 
 How to use the library
@@ -116,7 +116,7 @@ The below sample shows how to publish various data points of LPC1768 like x,y & 
         status = client.publishEvent("blink", buf);
 	....
 
-The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__
+The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__.
 
 Publish event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -152,7 +152,7 @@ The messages are returned as an instance of the Command class which has the foll
 - format - e.g json, xml
 - payload
 
-Following code defines a sample command callback function that processes the blink interval command from the application and adds the same to the DeviceClient instance.
+Following code defines a sample command callback function that processes the LED blink interval command from the application and adds the same to the DeviceClient instance.
 
 .. code:: c++
 
@@ -187,7 +187,7 @@ Following code defines a sample command callback function that processes the bli
     client.yield(10);  // allow the MQTT client to receive messages
     ....
     
-The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__
+The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__.
 
 .. note:: The 'client.yield()' function must be called periodically to receive commands.
 

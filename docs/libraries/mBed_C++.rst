@@ -1,12 +1,12 @@
-mBed C++ Client Library
-=========================
+mBed C++ Client Library (Update In Progress)
+=============================================
 
-The `Embedded C client library <https://github.com/ibm-messaging/iotf-embeddedc>`_ is used to interact with the IBM Internet of Things Foundation. This library will enable devices to communicate with the IoT Foundation Cloud service using the MQTT protocol.
+The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to simplify the interaction with the IBM Internet of Things Foundation. Although it uses C++, it still avoids dynamic memory allocations and use of STL functions. This library will enable `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ to communicate with the IBM IoT Foundation Cloud service using the MQTT protocol with simple APIs.
 
 Dependencies
 ------------
 
-- `Eclipse Paho Embedded C library <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.embedded-c.git/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
+- `Eclipse Paho MQTT library for mBed devices <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
 
 Installation
 --------------
@@ -48,26 +48,24 @@ When downloaded, the client has the following file structure:
  |-iotfclient.h - Header file for the client
  
  
-Initializing the Client Library
--------------------------------
+Constructor
+-------------------------------------------------------------------------------
 
-After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:
+The constructor builds the client instance, and accepts the following parameters:
 
-Passing as Parameters
-~~~~~~~~~~~~~~~~~~~~~
+* org - Your organization ID. (This is a required field. In case of quickstart flow, provide org as quickstart.)
+* type - The type of your device. (This is a required field.)
+* id - The ID of your device. (This is a required field.
+* auth-method - Method of authentication (This is an optional field, needed only for registered flow and the only value currently supported is "token"). 
+* auth-token - API key token (This is an optional field, needed only for registered flow).
 
-The 'initialize' function takes the following details to connect to the IoT Foundation service:
+These arguments create creates definitions which are used to interact with the Internet of Things Foundation service. 
 
--   client - Pointer to the *iotfclient*
--   org - Your organization ID
--   type - The type of your device
--   id - The device ID
--   authmethod - Method of authentication (the only value currently supported is "token")
--   authtoken - API key token (required if auth-method is "token")
+The following code shows how to create a DeviceClient instance to interact with the Internet of Things Foundation quickstart service.
 
 .. code:: c
 
-	#include "iotfclient.h"
+	#include "DeviceClient.h"
 	....
 	....
 	Iotfclient client;
@@ -76,12 +74,6 @@ The 'initialize' function takes the following details to connect to the IoT Foun
 	//registered
 	rc = initialize(&client,"orgid","type","id","token","authtoken");
 	....
-
-
-Using a Configuration File
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can also use a configuration file to initialize the Embedded C client library. The function 'initialize\_configfile' takes the configuration file path as a parameter.
 
 .. code:: c
 
@@ -92,17 +84,6 @@ You can also use a configuration file to initialize the Embedded C client librar
 	Iotfclient client;
 	rc = initialize_configfile(&client, filePath);
 	....
-
-
-The configuration file must use the following format.
-
-.. code::
-
-	org=$orgId
-	type=$myDeviceType
-	id=$myDeviceId
-	auth-method=token
-	auth-token=$token
 
 
 Connecting to the Service

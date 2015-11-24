@@ -78,7 +78,7 @@ The following code block shows how to create a DeviceClient instance to interact
   IoTF::DeviceClient client(organization, deviceType, deviceId);
   ....
 
-The following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation Registered organization.
+Similarly, the following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation Registered organization.
 
 .. code:: c++
 
@@ -178,7 +178,7 @@ Events can be published at higher MQTT quality of servive levels, but these even
 
 Handling commands
 -------------------------------------------------------------------------------
-When the device client connects it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. 
+When the device client connects, it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. 
 The messages are returned as an instance of the Command class which has the following properties:
 
 - command - name of the command invoked
@@ -232,18 +232,12 @@ To disconnect the client and release the connections, run the following code sni
 
 .. code:: c
 
-	#include "iotfclient.h"
-	....
-	rc = connectiotf (org, type, id , authmethod, authtoken);
-	char *payload = {\"d\" : {\"temp\" : 34 }};
-	
-	rc= publishEvent("status","json", payload , QOS0);
 	...
-	rc = disconnect();
+	client.disconnect();
 	....
 
 
 Samples
 -------
 
-Sample device and application code is provided in `GitHub <https://github.com/ibm-messaging/iotf-embeddedc/tree/master/samples>`_.
+`IBMIoTClientLibrarySample <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/>`__ - A Sample code that showcases how to use IBMIoTF client library to connect the mbed LPC1768 or FRDM-K64F devices to the IBM Internet of Things Cloud service.

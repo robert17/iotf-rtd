@@ -54,11 +54,11 @@ Similarly, the following code block shows how to create a DeviceClient instance 
   ....
   
   // Set IoT Foundation connection parameters
-  char organization[11] = "hrcl78";     // For a registered connection, replace with your org
-  char deviceType[8] = "LPC1768";       // For a registered connection, replace with your device type
-  char deviceId[3] = "01";              // For a registered connection, replace with your device id
-  char method[6] = "token";             // Not required to change as IBM IoTF expects only "token" for now
-  char token[9] = "password";           // For a registered connection, replace with your auth-token
+  char organization[11] = "hrcl78";
+  char deviceType[8] = "LPC1768";
+  char deviceId[3] = "01";
+  char method[6] = "token";
+  char token[9] = "password";
   
   // Create DeviceClient
   IoTF::DeviceClient client(organization, deviceType, deviceId, method, token);

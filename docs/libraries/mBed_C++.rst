@@ -106,20 +106,15 @@ Connect to the Internet of Things Foundation by calling the connect function on 
 
 .. code:: c++
 
-  #include "iotfclient.h"
+  #include "DeviceClient.h"
   ....
   ....
   
   // Create DeviceClient
   IoTF::DeviceClient client(organization, deviceType, deviceId, method, token);
   
-  bool status = false;
+  bool status = client.connect();
   
-  // keep on retrying till the connection is successful
-  while(status == false)
-  {
-  	status = client.connect();
-  }
 
 After the successful connection to the IoTF service, the Device client can publish events to IBM Internet of Things Foundation and listen for sommands.
 
@@ -135,88 +130,99 @@ Events can be published at any of the three `quality of service levels <../messa
 
 Publish event using default quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. code:: java
 
-			myClient.connect();
-			
-			JsonObject event = new JsonObject();
-			event.addProperty("name", "foo");
-			event.addProperty("cpu",  90);
-			event.addProperty("mem",  70);
-		    
-			myClient.publishEvent("status", event);
+The below sample shows how to publish various data points of LPC1768 like x,y & z axis, joystick position, current temperature reading and etc.. to IoT Foundation in JSON format.
 
+.. code:: c++
+
+	boolean status = client.connect();
+	
+	// Create buffer to hold the event
+	char buf[250];
+	
+	// Construct an event message with desired datapoints in JSON format
+	sprintf(buf,
+            "{\"d\":{\"myName\":\"IoT mbed\",\"accelX\":%0.4f,\"accelY\":%0.4f,\"accelZ\":%0.4f,
+            \"temp\":%0.4f,\"joystick\":\"%s\",\"potentiometer1\":%0.4f,\"potentiometer2\":%0.4f}}",
+            MMA.x(), MMA.y(), MMA.z(), sensor.temp(), joystickPos, ain1.read(), ain2.read());
+        
+        status = client.publishEvent("blink", buf);
+	....
+
+The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__
 
 Publish event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also Quickstart flow allows only Qos of 0
+Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also Quickstart flow allows only Qos of 0.
 
-.. code:: java
+.. code:: c
 
-			myClient.connect();
-			
-			JsonObject event = new JsonObject();
-			event.addProperty("name", "foo");
-			event.addProperty("cpu",  90);
-			event.addProperty("mem",  70);
-		    
-			//Registered flow allows 0, 1 and 2 QoS
-			myClient.publishEvent("status", event, 2);
+	#include "MQTTClient.h"
+	
+	boolean status = client.connect();
+	
+	// Create buffer to hold the event
+	char buf[250];
+	
+	// Construct an event message with desired datapoints in JSON format
+	sprintf(buf,
+            "{\"d\":{\"myName\":\"IoT mbed\",\"accelX\":%0.4f,\"accelY\":%0.4f,\"accelZ\":%0.4f,
+            \"temp\":%0.4f,\"joystick\":\"%s\",\"potentiometer1\":%0.4f,\"potentiometer2\":%0.4f}}",
+            MMA.x(), MMA.y(), MMA.z(), sensor.temp(), joystickPos, ain1.read(), ain2.read());
+        
+        status = client.publishEvent("blink", buf, MQTT::QOS2);
+	....
 
 ----
 
 Handling commands
-------------------------------------------
+-------------------------------------------------------------------------------
+When the device client connects it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. 
+The messages are returned as an instance of the Command class which has the following properties:
 
-When the device client connects, it automatically subscribes to any command for this device. To process specific commands you need to register a command callback function by calling the function 'setCommandHandler'. The commands are returned as:
-
-- commandName - name of the command invoked
+- command - name of the command invoked
 - format - e.g json, xml
 - payload
 
+Following code defines a sample command callback function that processes the blink interval command from the application and adds the same to the DeviceClient instance.
 
-.. code:: c
+.. code:: c++
 
-	#include "iotfclient.h"
-	
-	void myCallback (char* commandName, char* format, void* payload)
-	{
-	printf("The command received :: %s\n", commandName);
-	printf("format : %s\n", format);
-	printf("Payload is : %s\n", (char *)payload);
-	}
-	...
-	...
-	char *filePath = "./device.cfg";
-	rc = connectiotfConfig(filePath);
-	setCommandHandler(myCallback);
-	
-	yield(1000);
-	....
+    #include "DeviceClient.h"
+    #include "Command.h"
+    
+    // Process the command and set the LED blink interval
+    void processCommand(IoTF::Command &cmd)
+    {
+        if (strcmp(cmd.getCommand(), "blink") == 0) 
+    	{
+    	    char *payload = cmd.getPayload();
+    	    char* pos = strchr(payload, '}');
+    	    if (pos != NULL) {
+    	        *pos = '\0';
+    	        char* ratepos = strstr(payload, "rate");
+    	        if(ratepos == NULL)
+    	            return;
+    	        if ((pos = strchr(ratepos, ':')) != NULL)
+    	        {
+    	            int blink_rate = atoi(pos + 1);
+    	            blink_interval = (blink_rate <= 0) ? 0 : (blink_rate > 50 ? 1 : 50/blink_rate);
+    	        }
+    	    }
+    	} else {
+            WARN("Unsupported command: %s\n", cmd.getCommand());
+        }
+    }
+
+    client.setCommandCallback(processCommand); 
+    
+    yield(1000);
+    ....
+    
+The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__
 
 .. note:: The 'yield' function must be called periodically to receive commands.
-
-
-Publishing events
------------------------------------
-
-Events can be published by using:
-
-- eventType - Type of event to be published e.g status, gps
-- eventFormat - Format of the event e.g json
-- data - Payload of the event
-- QoS - qos for the publish event. Supported values : QOS0, QOS1, QOS2
-
-.. code:: c
-
-	#include "iotfclient.h"
-	....
-	rc = connectiotf (org, type, id , authmethod, authtoken);
-	char *payload = {\"d\" : {\"temp\" : 34 }};
-	
-	rc= publishEvent("status","json", "{\"d\" : {\"temp\" : 34 }}", QOS0); 
-	....
 
 
 Disconnect Client

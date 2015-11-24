@@ -4,13 +4,9 @@ Java Client Library - Introduction
 
 This `Java Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__ can be used to simplify interactions with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. The documentation is divided into three sections:  
 
-- The Devices section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
-- The Applications section details how applications can use the Java ibmiotf Client Library to interact with devices.
-- The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
-
-* `Device Client <../java/java_cli_devices.html>`__
-* `Managed Device <../java/java_deviceManagement.html>`__
-* `Application <../java/java_cli_app.html>`__
+- The `Devices section <../java/java_cli_devices.html>`__ contains information on how devices publish events and handle commands using the Java ibmiotf Client Library. 
+- The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
+- The `Applications section <../java/java_cli_app.html>`__ details how applications can use the Java ibmiotf Client Library to interact with devices.
 
 Download
 -------------------------------------------------------------------------------
@@ -24,6 +20,11 @@ The zip module contains the following files,
 * device.prop - Properties file to specify connectivity information when DeviceClient is used
 * lib - Contains all dependent libraries
 * javadoc - Contains the client library documentation
+
+This Java Client Library requires Oracle Java 7 or later,
+
+*  `Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__
+*  `Java 8 <https://java.com/en/download/>`__
 
 Dependencies
 -------------------------------------------------------------------------------

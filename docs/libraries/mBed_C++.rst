@@ -1,13 +1,13 @@
 mBed C++ Client Library (Update In Progress)
 =============================================
 
-The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to simplify the interaction with the IBM Internet of Things Foundation. Although it uses C++, it still avoids dynamic memory allocations and use of STL functions. This library will enable `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ and etc.. to communicate with the IBM IoT Foundation Cloud service using the MQTT protocol with simple APIs.
+The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to simplify the interaction with the IBM Internet of Things Foundation and enable `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ and etc.. to communicate with the IBM IoT Foundation Cloud service using the MQTT protocol. Although the library uses C++, it still avoids dynamic memory allocations and use of STL functions as the mBed devices sometimes have idiosyncratic memory models which make porting difficult. In any case, the library allows one to make memory use as predictable as possible. 
 
 Dependencies
 ------------
 
-- `Eclipse Paho MQTT library for mBed devices <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
-- `EthernetInterface library for mBed devices <https://developer.mbed.org/users/mbed_official/code/EthernetInterface/>`__ - A mBed IP library over Ethernet
+- `Eclipse Paho MQTT library <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
+- `EthernetInterface library <https://developer.mbed.org/users/mbed_official/code/EthernetInterface/>`__ - A mBed IP library over Ethernet
 
 How to use the library
 -------------------------------------------------------------------------------

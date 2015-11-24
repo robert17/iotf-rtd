@@ -1,5 +1,5 @@
-mBed C++ Client Library (Update In Progress)
-=============================================
+mBed C++ Client Library
+=======================
 
 The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to connect `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ and etc.. to IBM Internet of Things Foundation Cloud service with ease. Although the library uses C++, it still avoids dynamic memory allocations and use of STL functions as the mBed devices sometimes have idiosyncratic memory models which make porting difficult. In any case, the library allows one to make memory use as predictable as possible. 
 
@@ -38,14 +38,23 @@ The following code block shows how to create a DeviceClient instance to interact
   
   // Set IoT Foundation connection parameters
   char organization[11] = "quickstart";     // For a registered connection, replace with your org
-  char deviceType[8] = "LPC1768";          // For a registered connection, replace with your device type
-  char deviceId[3] = "01";                // For a registered connection, replace with your device id
+  char deviceType[8] = "LPC1768";           // For a registered connection, replace with your device type
+  char deviceId[3] = "01";                  // For a registered connection, replace with your device id
 
   // Create DeviceClient
   IoTF::DeviceClient client(organization, deviceType, deviceId);
+  
+  // Get the DeviceID(MAC Address) if we are in quickstart mode and device id is not specified
+  if((strcmp(organization, QUICKSTART) == 0) && (strcmp("", deviceId) == 0)) 
+  {
+  	char tmpBuf[50];
+  	client.getDeviceId(tmpBuf, sizeof(tmpBuf));
+  }
   ....
 
-Similarly, the following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation Registered organization.
+As shown above, if the device id is not specified, the DeviceClient uses the MAC address of the device as device id and connects to IBM Internet of Things Foundation. The device code can use getDeviceId() method to retrieve the device id from the DeviceClient instance.
+
+The following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation Registered organization.
 
 .. code:: c++
 
@@ -56,7 +65,7 @@ Similarly, the following code block shows how to create a DeviceClient instance 
   // Set IoT Foundation connection parameters
   char organization[11] = "hrcl78";
   char deviceType[8] = "LPC1768";
-  char deviceId[3] = "01";
+  char deviceId[3] = "LPC176801";
   char method[6] = "token";
   char token[9] = "password";
   
@@ -83,7 +92,7 @@ Connect to the Internet of Things Foundation by calling the connect function on 
   bool status = client.connect();
   
 
-After the successful connection to the IoTF service, the Device client can publish events to IBM Internet of Things Foundation and listen for commands.
+After the successful connection, the Device client can publish events to IBM Internet of Things Foundation and listen for commands.
 
 ----
 

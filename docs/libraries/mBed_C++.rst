@@ -8,46 +8,12 @@ Dependencies
 
 - `Eclipse Paho MQTT library for mBed devices <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
 
-Installation
---------------
-To install the Internet of Things Foundation client library for Embedded C follow the instructions below.
+Using the Library
+-------------------------------------------------------------------------------
+Use the mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. 
 
-1. To install the latest version of the library, enter the following code in your command line.
+Refer to `mBed Compiler handbook <https://developer.mbed.org/handbook/mbed-Compiler>`__ for more information about how to use the compiler and build your application.
 
-.. code::
-
-  [root@localhost ~]# git clone https://github.com/ibm-messaging/iotf-embeddedc.git
-
-2. Copy the Paho library .tar file that was downloaded in the previous step to the *lib* directory.
-
-.. code::
-    
-    cd iotf-embeddedc
-    cp ~/org.eclipse.paho.mqtt.embedded-c-1.0.0.tar.gz lib/
-
-3. Extract the library file
-
-.. code::
-    
-    cd lib
-    tar xvzf org.eclipse.paho.mqtt.embedded-c-1.0.0.tar.gz
-
-
-When downloaded, the client has the following file structure:
-
-.. code::
-
- |-lib - contains all the dependent files
- |-samples - contains the helloWorld and sampleDevice samples
-   |-sampleDevice.c - sample device implementation
-   |-helloworld.c - quickstart application
-   |-README.md
-   |-Makefile
-   |-build.sh
- |-iotfclient.c - Main client file
- |-iotfclient.h - Header file for the client
- 
- 
 Constructor
 -------------------------------------------------------------------------------
 
@@ -116,7 +82,7 @@ Connect to the Internet of Things Foundation by calling the connect function on 
   bool status = client.connect();
   
 
-After the successful connection to the IoTF service, the Device client can publish events to IBM Internet of Things Foundation and listen for sommands.
+After the successful connection to the IoTF service, the Device client can publish events to IBM Internet of Things Foundation and listen for commands.
 
 ----
 
@@ -154,7 +120,7 @@ The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT
 Publish event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also Quickstart flow allows only Qos of 0.
+Events can be published at higher MQTT quality of service levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also quickstart flow allows only Qos of 0.
 
 .. code:: c
 
@@ -217,20 +183,21 @@ Following code defines a sample command callback function that processes the bli
 
     client.setCommandCallback(processCommand); 
     
-    yield(1000);
+    client.yield(10);  // allow the MQTT client to receive messages
     ....
     
 The complete sample can be found `here <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTClientLibrarySample/file/e58533b6bc6b/src/Main.cpp>`__
 
-.. note:: The 'yield' function must be called periodically to receive commands.
+.. note:: The 'client.yield()' function must be called periodically to receive commands.
 
+----
 
 Disconnect Client
 -----------------
 
 To disconnect the client and release the connections, run the following code snippet.
 
-.. code:: c
+.. code:: c++
 
 	...
 	client.disconnect();

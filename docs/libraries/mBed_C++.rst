@@ -7,10 +7,11 @@ Dependencies
 ------------
 
 - `Eclipse Paho MQTT library for mBed devices <https://developer.mbed.org/teams/mqtt/code/MQTT/>`__ - provides an MQTT C client library, check `here <http://www.eclipse.org/paho/clients/c/embedded/>`__ for more information.
+- `EthernetInterface library for mBed devices <https://developer.mbed.org/users/mbed_official/code/EthernetInterface/>`__ - A mBed IP library over Ethernet
 
-Using the Library
+How to use the library
 -------------------------------------------------------------------------------
-Use the mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. 
+Use the `mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. 
 
 Refer to `mBed Compiler handbook <https://developer.mbed.org/handbook/mbed-Compiler>`__ for more information about how to use the compiler and build your application.
 
@@ -203,6 +204,7 @@ To disconnect the client and release the connections, run the following code sni
 	client.disconnect();
 	....
 
+----
 
 Samples
 -------

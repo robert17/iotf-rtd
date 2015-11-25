@@ -13,7 +13,7 @@ How to use the library
 -------------------------------------------------------------------------------
 Use the `mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. 
 
-Refer to `mBed Compiler handbook <https://developer.mbed.org/handbook/mbed-Compiler>`__ for more information about how to use the compiler and build your application.
+Refer to `mBed Compiler handbook <https://developer.mbed.org/handbook/mbed-Compiler>`__ for more information about how to use the compiler to build your application.
 
 Constructor
 -------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ The following code block shows how to create a DeviceClient instance to interact
 Connecting to the Internet of Things Foundation
 ------------------------------------------------
 
-Connect to the Internet of Things Foundation by calling the connect function on the DeviceClient instance.
+The device can connect to the Internet of Things Foundation by calling the connect function on the DeviceClient instance.
 
 .. code:: c++
 
@@ -92,7 +92,7 @@ Connect to the Internet of Things Foundation by calling the connect function on 
   bool status = client.connect();
   
 
-After the successful connection, the Device client can publish events to IBM Internet of Things Foundation and listen for commands.
+After the successful connection, the device can publish events to IBM Internet of Things Foundation and listen for commands.
 
 ----
 

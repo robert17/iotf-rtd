@@ -11,9 +11,10 @@ Dependencies
 
 How to use the library
 -------------------------------------------------------------------------------
-Use the `mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. 
+Use the `mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed.
 
-Refer to `mBed Compiler handbook <https://developer.mbed.org/handbook/mbed-Compiler>`__ for more information about how to use the compiler to build your application.
+
+Refer to the step by step `mBed C++ Client Library for IBM IoT Foundation Recipe <https://developer.ibm.com/recipes/tutorials/mbed-c-client-library-for-ibm-iot-foundation/>`__ that shows how one can use this library to connect an ARM mBed NXP LPC 1768 microcontroller to IBM Internet of Things Foundation.
 
 Constructor
 -------------------------------------------------------------------------------

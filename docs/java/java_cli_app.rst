@@ -9,9 +9,9 @@ This client library describes how to use applications with the Java ibmiotf clie
 
 This client library is divided into three sections, all included within the library. This section contains information on how applications can use the Java ibmiotf Client Library to interact with devices.
 
-The Device section contains information on how devices can publish events and handle commands using the Java ibmiotf Client Library. 
+The `Device section <../java/java_cli_devices.html>`__ contains information on how devices can publish events and handle commands using the Java ibmiotf Client Library. 
 
-The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
+The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update.
 
 Constructor
 -------------------------------------------------------------------------------
@@ -23,6 +23,9 @@ The constructor builds the client instance, and accepts a Properties object cont
 * auth-method - Method of authentication (the only value currently supported is “apikey”).
 * auth-key - API key (required if auth-method is “apikey”).
 * auth-token - API key token (required if auth-method is “apikey”).
+* enable-shared-subscription - true or false (required only if shared subscription needs to be enabled)
+
+.. note:: One must set **enable-shared-subscription** to true to build scalable applications which will load balance messages across multiple instances of the application. Refer to the `scalable applications section <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__ for more information about the load balancing.
 
 The Properties object creates definitions which are used to interact with the Internet of Things Foundation module. If no options are provided or organization is provided as quickstart, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device.
 
@@ -365,3 +368,4 @@ Examples
 * `MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - A sample application that shows how to publish device events.
 * `RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - A sample application that shows how to publish a command to a device.
 * `RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - A sample application that shows how to subscribe for various events like, device events, device commands, device status and application status.
+* `SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - A sample application that shows how to build a scalable application which will load balance messages across multiple instances of the application.

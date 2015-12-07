@@ -77,6 +77,7 @@ The application configuration file must be in the following format:
     auth-method=apikey
     auth-key=$key
     auth-token=$token
+    enable-shared-subscription=true|false
 
 ----
 

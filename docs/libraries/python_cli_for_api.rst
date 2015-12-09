@@ -55,7 +55,7 @@ So in the case of failure, application needs to parse the response to see if the
 Organization details
 ----------------------------------------------------
 
-Applications can use the getOrganizationDetails() method to retrieve the Organization details. Add the following code to a .py file, beneath the constructor code shown above.
+Applications can use the *getOrganizationDetails()* method to retrieve the Organization details. Add the following code to a .py file, beneath the constructor code shown above.
 
 .. code:: Python
 
@@ -78,6 +78,9 @@ Your final code should follow this format:
 	
 	orgDetail = apiCli.getOrganizationDetails();
 
+	
+This code will run the constructor, and then retrieve organization details for the specified organization.
+	
 ----
 
 Bulk device operations
@@ -90,14 +93,17 @@ Refer to the Bulk Operations section of the `IBM IoT Foundation API https://docs
 Retrieve device information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bulk device information can be retrieved using the getAllDevices() method. This method retrieves all registered devices in the organization from Internet of Things Foundation Connect, each request can contain a maximum of 512KB. 
+Bulk device information can be retrieved using the *getAllDevices()* method. This method retrieves information on all registered devices in the organization, each request can contain a maximum of 512KB.
 
 .. code:: python
 
-    response = apiClient.getAllDevices();
+    apiClient.getAllDevices();
     
 
-The response contains parameters and application needs to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further call, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined.
+Response and Bookmarks
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The response contains parameters required by the application to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further calls, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined.
 
 In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of org.apache.http.message.BasicNameValuePair as shown below,
 
@@ -108,75 +114,88 @@ In order to pass the *_bookmark* or any other condition, the overloaded method m
     
         ...
     
-        try:
-	    apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
-	    apiCli = ibmiotf.api.ApiClient(apiOptions)
+    apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
+	apiCli = ibmiotf.api.ApiClient(apiOptions)
     
-            ...
-	    print("Retrieved Devices = ", apiCli.getAllDevices({'typeId' : deviceTypeId}))		
+	apiCli.getAllDevices({'typeId' : deviceTypeId})		
 
 
-Register Devices in bulk
-~~~~~~~~~~~~~~~~~~~~~~~~
+Add Devices in bulk
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method addMultipleDevices() can be used to register one or more devices to Internet of Things Foundation Connect, each request can contain a maximum of 512KB. For example, the following sample shows how to add a device using the bulk operation.
+The *addMultipleDevices()* method can be used to add one or more devices to your Internet of Things Foundation organization. The maximum size of a request is set to 512KB. In each request, you must first define the devices to be added using the *listOfDevices* variable, as shown in the following code snippet:
 
+.. code:: python
+
+	listOfDevices = [{'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'}]
+    apiCli.addMultipleDevices(listOfDevices)
+	
+This above code snippet should be inserted after the constructor code in a .py file. 
+	
+Sample
+~~~~~~~
+
+The following sample shows an example of the format your final code, and is an example of using the *addMultipleDevices()* method to add two devices.
 
 .. code:: python
 
 	import ibmiotf
 	import ibmiotf.application
     
-        ...
+    apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
+	apiCli = ibmiotf.api.ApiClient(apiOptions)
     
-        try:
-	    apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
-	    apiCli = ibmiotf.api.ApiClient(apiOptions)
-    
-            ...
-            print("\nBulk Registering new devices 4")	
-            listOfDevices = [{'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'}]
-            print("Registered Device = ", apiCli.addMultipleDevices(listOfDevices))
+    listOfDevices = [{'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'}]
+    apiCli.addMultipleDevices(listOfDevices)
 
-    
-The response will contain the generated authentication tokens for all devices. Application must make sure to record these tokens when processing the response. The Internet of Things Foundation will not able to retrieve lost authentication tokens. 
+
+The response will contain the generated authentication tokens for each added device. These authentication tokens must be recorded when processing the response, as lost authentication tokens cannot be retrieved.
+
 
 Delete Devices in bulk
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method deleteMultipleDevices() can be used to delete multiple devices from Internet of Things Foundation Connect, each request can contain a maximum of 512KB. For example, the following sample shows how to delete 2 devices using the bulk operation.
+The *deleteMultipleDevices()* method can be used to delete multiple devices from an Internet of Things Foundation organization, each request can contain a maximum of 512KB. In each request, you must first define the devices to be deleted using the *listOfDevices* variable, as shown in the following code snippet:
+
+.. code:: python
+
+	listOfDevices = [ {'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'} ]
+	deleted = apiCli.deleteMultipleDevices(listOfDevices)
 
 
+This above code snippet should be inserted after the constructor code in a .py file. 
+
+
+Sample
+~~~~~~~
+
+The following sample shows an example of the format your final code, and is an example of using the *deleteMultipleDevices()* method to delete two devices.
 
 .. code:: python
 
 	import ibmiotf
 	import ibmiotf.application
     
-        ...
+	apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
+	apiCli = ibmiotf.api.ApiClient(apiOptions)
     
-        try:
-	    apiOptions = {"org": "uguhsp", "id": "myapp", "auth-method": "apikey", "auth-key": "SOME KEY", "auth-token": "SOME TOKEN"}
-	    apiCli = ibmiotf.api.ApiClient(apiOptions)
-            ...
-            print("\nDeleting bulk devices")
-            listOfDevices = [ {'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'} ]
-            deleted = apiCli.deleteMultipleDevices(listOfDevices)
-            print("Device deleted = ", deleted)
+    listOfDevices = [ {'typeId' : deviceTypeId, 'deviceId' : '200020002004'}, {'typeId' : deviceTypeId, 'deviceId' : '200020002005'} ]
+	deleted = apiCli.deleteMultipleDevices(listOfDevices)
 
 ----
 
-Device Type operations
+
+Device Type Operations
 ----------------------------------------------------
 
-Applications can use device type operations to list all, create, delete, view and update device types in Internet of Things Foundation Connect.
+Device types can be used as templates for adding device information to devices as they are added to your organization. Applications can use the Internet of Things Foundation API to list, create, delete, view, or update device types in your organization.
 
-Refer to the Device Types section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Device Types section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ documentation for information about the list of query parameters, the request & response model, and http status codes.
 
 Get all Device Types
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getAllDeviceTypes() can be used to retrieve all the registered device types in an organization from Internet of Things Foundation. For example,
+The *getAllDeviceTypes()* method can be used to retrieve all device types in your Internet of Things Foundation organization. For example,
 
 .. code:: python
 
@@ -196,7 +215,20 @@ In order to pass the *_bookmark* or any other condition, the overloaded method m
 Add a Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method addDeviceType() can be used to register a device type to Internet of Things Foundation Connect. For example,
+The *addDeviceType()* method can be used to register a device type to Internet of Things Foundation Connect. In each request, you must first define the device information, and device metadata elements which you want to be applied to all devices of this type. The device information element is comprised of several variables, including, serial number, manufacturer, model, class, description, firmware and hardware versions, and descriptive location. The metadata element is comprised of custom variables and values which can be defined by the user.
+
+After defining the *deviceInfo* and *metadata* elements, use the following code snippet to register a new device type.
+
+.. code:: python
+
+	apiCli.addDeviceType(deviceType = "myDeviceType5", description = "My first device type", deviceInfo = deviceInfo1, metadata = metadata1)
+	
+
+	
+Sample
+~~~~~~
+
+The following sample will define the API connection settings, define the DeviceInfo and Metadata elements, and then register a device type.
 
 .. code:: python
 
@@ -212,50 +244,58 @@ Method addDeviceType() can be used to register a device type to Internet of Thin
 Delete a Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method deleteDeviceType() can be used to delete a device type from Internet of Things Foundation. For example,
+The *deleteDeviceType()* method can be used to delete a device type from your Internet of Things Foundation organization. The following code snippet can be added to a .py file to delete a device type "myDeviceType5".
 
 .. code:: python
 
-     print("\nDeleting a device type")	
      deletion = apiCli.deleteDeviceType("myDeviceType5")
-     print("Device Type deleted = ", deletion)
-    
+
+
 Get a Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to retrieve information about a given device type, use the method getDeviceType() and pass the deviceTypeId as a parameter as shown below
+The *getDeviceType()* method retrieves information on a given device type. The *deviceTypeID* of the device type you wish to retrieve information on must be used as a parameter, as shown in the following code snippet for the device type "myDeviceType5". This method will return all available information for the device type, including all variables in the deviceInfo and metadata element.
 
 .. code:: python
 
-     print("Retrieved Device = ", apiCli.getDeviceType("myDeviceType5"))
+	apiCli.getDeviceType("myDeviceType5")
 
-    
+	
 Update a Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method updateDeviceType() can be used to modify one or more properties of a device type. The properties that needs to be modified should be passed in the form of a dictionary, as shown below
+The *updateDeviceType()* method can be used to modify the properties of a device type. When using this method, several parameters must be defined. Firstly, the *deviceTypeID* of the device type to be updated must be specified, then the *description*, *deviceInfo*, and *metadata* elements, as shown in the code snippet below.
+
+.. code:: python
+
+	apiCli.updateDeviceType("myDeviceType5", description, deviceInfo, metadata)
+
+
+The properties to be modified should be defined within the, *description*, *deviceInfo*, and *metadata* elements. The variables contained in *deviceInfo* and *metadata* which are to be updated must be defined before the method is called. The code sample below is an example of the full method being called.
+
+Sample
+~~~~~~~~
 
 .. code:: python
     
-     print("\nUpdating a device type")
-     description = "mydescription"
-     metadata2 = {"customField1": "customValue3", "customField2": "customValue4"}
-     deviceInfo = {"serialNumber": "string", "manufacturer": "string", "model": "string", "deviceClass": "string", "fwVersion": "string", "hwVersion": "string","descriptiveLocation": "string"}
-     print("Modified Device = ", apiCli.updateDeviceType("myDeviceType5", description, deviceInfo, metadata2))
+    description = "mydescription"
+    metadata = {"customField1": "customValue3", "customField2": "customValue4"}
+    deviceInfo = {"serialNumber": "string", "manufacturer": "string", "model": "string", "deviceClass": "string", "fwVersion": "string", "hwVersion": "string","descriptiveLocation": "string"}
+    apiCli.updateDeviceType("myDeviceType5", description, deviceInfo, metadata)
 
 ----
 
 Device operations
 ----------------------------------------------------
 
-Applications can use device operations to list, add, remove, view, update, view location and view management information of a device in Internet of Things Foundation.
+Device operations made available through the API include listing, adding, removing, viewing, updating, viewing location and viewing  device management information of devices in an Internet of Things Foundation organization.
 
 Refer to the Device section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
 
 Get Devices of a particular Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method retrieveDevices() can be used to retrieve all the devices of a particular device type in an organization from Internet of Things Foundation. For example,
+The *retrieveDevices()* method can be used to retrieve all the devices of a particular device type in an organization from Internet of Things Foundation. For example,
 
 .. code:: python
 
@@ -275,220 +315,253 @@ The above snippet sorts the response based on device id and uses the bookmark to
 Add a Device
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Method registerDevice() can be used to register a device to Internet of Things Foundation. For example,
+The *registerDevice()* method is used to add a device to an Internet of Things Foundation organization. The *registerDevice()* method adds a single device to your Internet of Things Foundation organization. The parameters which can be set when adding a device are:
+
+- deviceTypeId: *Optional*. Assigns a device type to the device. Where there is a clash between variables defined by the device type and variables defined by under deviceInfo, the device specific variables will take precedence.
+- deviceId: *Mandatory*. 
+- authToken: *Optional*. If no authentication token is supplied, one will be generated and included in the response.
+- deviceInfo: *Optional*. This parameter is optional, and can contain a number of variables, including: serialNumber, manufacturer, model, deviceClass, description, firmware and hardware versions, and descriptiveLocation.
+- metadata: *Optional*. Metadata can optionally be added in the form of custom field:value string pairs. An example is given in the code sample below.
+- location: *Optional*. This parameter contains the longitude, latitude, elevation, accuracy, and mesauredDateTime variables.
+
+For more information on the parameters presented here, and the response format and codes, please see the relevant section of `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__. 
+
+When using the *registerDevice()* method, you must define the mandatory deviceID parameter, and any of the optional parameters you require for your device, then call the method using the parameters you've selected.
+
+Sample
+~~~~~~~
+
+The following code sample should be inserted after the constructor code in a .py file. This code demonstrates defining the deviceId, authToken, metadata, deviceInfo parameters, and location parameters and then using the method with those parameters and adding a device type.
 
 .. code:: python
 
-     deviceId2 = "200020002000"
-     authToken = "password"
-     metadata2 = {"customField1": "customValue3", "customField2": "customValue4"}
-     deviceInfo = {"serialNumber": "001", "manufacturer": "Blueberry", "model": "e2", "deviceClass": "A", "descriptiveLocation" : "Bangalore", "fwVersion" : "1.0.1", "hwVersion" : "12.01"}
-     location = {"longitude" : "12.78", "latitude" : "45.90", "elevation" : "2000", "accuracy" : "0", "measuredDateTime" : "2015-10-28T08:45:11.662Z"}
+    deviceId = "200020002000"
+    authToken = "password"
+    metadata = {"customField1": "customValue1", "customField2": "customValue2"}
+    deviceInfo = {"serialNumber": "001", "manufacturer": "Blueberry", "model": "abc1", "deviceClass": "A", "descriptiveLocation" : "Bangalore", "fwVersion" : "1.0.1", "hwVersion" : "12.01"}
+    location = {"longitude" : "12.78", "latitude" : "45.90", "elevation" : "2000", "accuracy" : "0", "measuredDateTime" : "2015-10-28T08:45:11.662Z"}
 	
-     print("\nRegistering a new device with just deviceType and deviceId")	
-     print("Registered Device = ", apiCli.registerDevice(deviceTypeId, deviceId2))
+    apiCli.registerDevice(deviceTypeId, deviceId, metadata, deviceInfo, location)
 
 
 Delete a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method deleteDevice() can be used to delete a device from Internet of Things Foundation. For example,
+The *deleteDevice()* method is used to remove a device from an Internet of Things Foundation organization. When deleting a device using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
+
+The following code snippet provides an example of the format required for this method.
 
 .. code:: java
 
-     deleted = apiCli.deleteDevice(deviceTypeId, deviceId)
-     print("Device deleted = ", deleted)
+    apiCli.deleteDevice(deviceTypeId, deviceId)
 
     
 Get a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getDevice() can be used to retrieve a device from Internet of Things Foundation. For example,
+The *getDevice()* method can be used to retrieve a device from an Internet of Things Foundation organization. When retrieving device details using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
+
+The following code snippet provides an example of the format required for this method.
 
 .. code:: python
 
-     print("\nRetrieving an existing device")	
-     print("Retrieved Device = ", apiCli.getDevice(deviceTypeId, deviceId))
+	apiCli.getDevice(deviceTypeId, deviceId)
     
 
 Get all Devices
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getAllDevices() can be used to retrieve all the device from Internet of Things Foundation. For example,
+The *getAllDevices()* method can be used to retrieve all devices within an Internet of Things Foundation organization.
 
 .. code:: python
 
-     print("Retrieved Devices = ", apiCli.getAllDevices({'typeId' : deviceTypeId}))
+	apiCli.getAllDevices({'typeId' : deviceTypeId})
 
 
 Update a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method updateDevice() can be used to modify one or more properties of a device. For Example
+The *updateDevice()* method is used to modify one or more properties of a device. Any property in the deviceInfo or metadata parameters can be updated. In order to update a device property, it must be defined above the method. The status parameter should contain "alert": True. The Alert property controls whether a device will display error codes in the Internet of Things Foundation user interface, and should be set by default to 'True'.
 
 .. code:: python
     
-     print("\nUpdating an existing device")
-     status = { "alert": { "enabled": True }  }
-     print("Device Modified = ", apiCli.updateDevice(deviceTypeId, deviceId, metadata2, deviceInfo, status))
+    
+    status = { "alert": { "enabled": True }  }
+    apiCli.updateDevice(deviceTypeId, deviceId, metadata2, deviceInfo, status)
 
+Sample
+~~~~~~~
 
+In this sample, the following code identifies a specific device, and updates several properties under the deviceInfo parameter.
+
+.. code:: python
+
+	status = { "alert": { "enabled": True } }
+	deviceInfo = {descriptiveLocation: "London", hwVersion: "2.0.1", fwVersion: "2.5.1"}
+    apiCli.updateDevice("MyDeviceType", "200020002000", deviceInfo, status)	
+	
 Get Location Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getDeviceLocation() can be used to get the location information of a device. For example, 
+The *getDeviceLocation()* method can be used to retrieve the location information of a device. The parameters required for retrieving the location data are deviceTypeId and deviceId. 
 
 .. code:: python
     
-    JsonObject response = apiClient.getDeviceLocation("iotsample-ardunio", "ardunio01");
+	apiClient.getDeviceLocation("iotsample-ardunio", "ardunio01")
 
+The response to this method contains the longitude, latitude, elevation, accuracy, measuredTimeStamp, and updatedTimeStamp properties.	
+	
+	
 Update Location Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method updateDeviceLocation() can be used to modify the location information for a device. For example,
+The *updateDeviceLocation()* method is used to modify the location information for a device. Simlarly to updating device properties, the deviceLocation parameter must be defined with the changes you wish to apply. The code sample below demonstrates changing the location data for a given device.
 
 .. code:: python
     
-     print("\nUpdating device location")
-     deviceLocation = { "longitude": 0, "latitude": 0, "elevation": 0, "accuracy": 0, "measuredDateTime": "2015-10-28T08:45:11.673Z"}
-     print("Device Location = ", apiCli.updateDeviceLocation(deviceTypeId, deviceId, deviceLocation))
+    deviceLocation = { "longitude": 0, "latitude": 0, "elevation": 0, "accuracy": 0, "measuredDateTime": "2015-10-28T08:45:11.673Z"}
+    apiCli.updateDeviceLocation(deviceTypeId, deviceId, deviceLocation)
 
 If no date is supplied, the entry is added with the current date and time. 
-
-Get Device Location
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Method getDeviceLocation() can be used to retrieve the device location. For example,
-
-.. code:: python
-    
-     print("\nRetrieving device location")
-     print("Device Location = ", apiCli.getDeviceLocation(deviceTypeId, deviceId))
 
 
 Get Device Management Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getDeviceManagementInformation() can be used to get the device management information for a device. For example, 
+The *getDeviceManagementInformation()* method is used to get the device management information for a device. The response contains the last activity date-time, the device's dormant status (true/false), support for device and firmware actions, and firmware data. For a comprehensive list of response content, please see the relevant API documentation.
+
+The following code sample will return the device management information for a device with the deviceId "00aabbccde03", with deviceTypeId "iotsample-arduino".
+
+Sample
+~~~~~~~~~
 
 .. code:: python
     
-     print("\nRetrieving device management information")
-     info = apiCli.getDeviceManagementInformation("iotsample-arduino", "00aabbccde03")
-     print("Device management info retrieved = ", info)
+    apiCli.getDeviceManagementInformation("iotsample-arduino", "00aabbccde03")
+    
 
 ----
 
 Device diagnostic operations
 ----------------------------------------------------
 
-Applications can use Device diagnostic operations to clear logs, retrieve logs, add log information, delete logs, get specific log, clear error codes, get device error codes and add an error code to Internet of Things Foundation.
+Applications can use device diagnostic operations to clear logs, retrieve all or specific logs for a device, add log information, delete logs, clear error codes, get device error codes, and add an error codes.
 
-Refer to the Device Diagnostics section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+For more detailed information on query and response models, response codes, and query paramters, please see the relevant API documentation.
 
 Get Diagnostic logs
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Method getAllDiagnosticLogs() can be used to get all diagnostic logs of the device. For example,
+The *getAllDiagnosticLogs()* method is used to retrieve all diagnostic logs for a specific device. The *getAllDiagnosticLogs()* method requires the deviceTypeId and deviceId parameters.
 
 .. code:: python
 
-     print("\nRetrieving All device diagnostics")
-     print("Diagnostic Logs = ", apiCli.getAllDiagnosticLogs(deviceTypeId, deviceId)));
+    apiCli.getAllDiagnosticLogs(deviceTypeId, deviceId)
     
-Clear Diagnostic logs 
-~~~~~~~~~~~~~~~~~~~~~~
+The response model for this method contains the logId, message, severity, data, and timestamp.
 
-Method clearAllDiagnosticLogs() can be used to clear the diagnostic logs of the device. For example,
+Clear Diagnostic logs for a Device 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The *clearAllDiagnosticLogs()* method is used to delete all diagnostic logs for a specific device. The required parameters are deviceTypeId and deviceId. Care should be taken when deleting logs, as logs cannot be recovered once deleted.
 
 .. code:: python
 
-     print("\nClearing All device diagnostics")
-     print("Diagnostic Logs = ", apiCli.clearAllDiagnosticLogs(deviceTypeId, deviceId)));
+    apiCli.clearAllDiagnosticLogs(deviceTypeId, deviceId)
     
+
 Add a Diagnostic log
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Method addDiagnosticLog() can be used to add an entry in the log of diagnostic information for the device. The log may be pruned as the new entry is added. If no date is supplied, the entry is added with the current date and time. For example,
+The *addDiagnosticLog()* method is used to add an entry in the diagnostic log of the device. The log may be pruned as the new entry is added. If no date is supplied, the entry is added with the current date and time. To use this method, first define a 'logs' parameter with the following variables:
+
+- message: This variable is mandatory, and contains the new diagnostic message.
+- severity: This variable is optional. If used it corresponds to the severity of the diagnostic log, and should be 0, 1, or 2, corresponding to the informational, warning, and error categories.
+- data: This variable is optional, and should contain diagnostic data.
+- timestamp: This variable is optional, and contains the date and time of the log entry in ISO8601 format. If this variable is not included, it is automatically added with the current date and time. 
+
+The other necessary paramteres required in the method are the deviceTypeId and deviceId for the specific device.
+
+The code sample below contains an example of the method.
 
 .. code:: python
 
-     logs = { "message": "newMessage", "severity": 1, "data": "New log", "timestamp": "2015-10-29T07:43:57.109Z"}
-     print("Diagnostic Logs creation = ", apiCli.addDiagnosticLog(deviceTypeId, deviceId, logs))
+    logs = { "message": "MessageContent", "severity": 0, "data": "LogData"}
+    apiCli.addDiagnosticLog(deviceTypeId, deviceId, logs)
 
-Get single Diagnostic log
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+Retrieve a specific Diagnostic log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getDiagnosticLog() can be used to retrieve a diagnostic log based on the log id. For example,
+The *getDiagnosticLog()* method is used to retrieve a specific diagnostic log for a specified device based on the log id. The required parameters for this method are the deviceTypeId, deviceId, and logId.
 
 .. code:: python
 
-     print("\nRetrieving single log")
-     print("Diagnostic Logs = ", apiCli.getDiagnosticLog(deviceTypeId, deviceId, logId1))
+    apiCli.getDiagnosticLog(deviceTypeId, deviceId, logId)
     
+	
 Delete a Diagnostic log
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method deleteDiagnosticLog() can be used to delete a diagnostic log based on the log id. For example,
+The *deleteDiagnosticLog()* can be used to delete a specific diagnostic log. In order to specify a diagnostic log, the deviceTypeId, deviceId, and logId parameters should be supplied.
 
 .. code:: python
 
-     print("Deleting single log")
-     print("Diagnostic Logs = ", apiCli.deleteDiagnosticLog(deviceTypeId, deviceId, logId1))
+	apiCli.deleteDiagnosticLog(deviceTypeId, deviceId, logId)
     
 
-Clear Diagnostic ErrorCodes
+Retrieve Device Error Codes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The *getAllDiagnosticErrorCodes()* method is used to retrieve all diagnostic error codes associated with a specific device.
+
+.. code:: python
+
+	apiCli.getAllDiagnosticErrorCodes(deviceTypeId, deviceId)
+	
+		
+Clear Diagnostic Error Codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method clearAllErrorCodes() can be used to clear the list of error codes of the device. The list is replaced with a single error code of zero. For example,
+The *clearAllErrorCodes()* method is used to clear the list of error codes associated with the device. The list is replaced with a single error code of zero.
 
 .. code:: python
 
-     print("\nDeleting all error code")
-     print("Error codes deleted = ", apiCli.clearAllErrorCodes(deviceTypeId, deviceId))
-    
-Get Diagnostic ErrorCodes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Method getAllDiagnosticErrorCodes() can be used to retrieve all diagnostic ErrorCodes of the device. For example,
-
-.. code:: python
-
-     print("\nRetrieving all error code")
-     print("Error codes retrieved = ", apiCli.getAllDiagnosticErrorCodes(deviceTypeId, deviceId))
-
+    apiCli.clearAllErrorCodes(deviceTypeId, deviceId)
+	
 
 Add single Diagnostic ErrorCode
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method addErrorCode() can be used to add an error code to the list of error codes for the device. The list may be pruned as the new entry is added. For example,
+The *addErrorCode()* method is used to add an error code to the list of error codes associated with the device. The list may be pruned as the new entry is added. The parameters required in the method are deviceTypeId, deviceId, and errorCode. The errorCode parameter contains the following variables:
+
+- errorCode: This variable is mandatory and should be set as an integer. This sets the number of the error code to be created.
+- timestamp: This variable is optional, and contains the date and time of the log entry in ISO8601 format. If this variable is not included, it is automatically added with the current date and time. 
 
 .. code:: python
 
-     print("\nAdding error code")
-     errorCode = { "errorCode": 0, "timestamp": "2015-10-29T05:43:57.112Z" }
-     print("Error code creation = ", apiCli.addErrorCode(deviceTypeId, deviceId, errorCode))
+    errorCode = { "errorCode": 1234, "timestamp": "2015-10-29T05:43:57.112Z" }
+    apiCli.addErrorCode(deviceTypeId, deviceId, errorCode)
 
 ----
 
 Connection problem determination
 ----------------------------------
 
-Method getDeviceConnectionLogs() can be used to list connection log events for a device to aid in diagnosing connectivity problems. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection.
+The *getDeviceConnectionLogs()* method is used to list connection log events for a device. This information can be used to help diagnose connectivity problems between the device and the Internet of Things Foundation service. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection events.
 
 .. code:: python
 
-     deviceTypeId = "iotsample-arduino"
-     deviceId = "00aabbccde03"
-     print("Device Logs = ", apiCli.getDeviceConnectionLogs(deviceTypeId, deviceId))
+	apiCli.getDeviceConnectionLogs(deviceTypeId, deviceId)
 
-Refer to the Problem Determination section of the `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+The response includes a list of log entries, containing log messages and timestamps. 
 
 ----
 
 Historical Event Retrieval
 ----------------------------------
-Application can use this operation to view events from all devices, view events from a device type or to view events for a specific device.
+
+These operations can be used to view events from all devices, view events from a device type or to view events for a specific device.
 
 Refer to the Historical Event Retrieval section of the `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
 
@@ -510,19 +583,18 @@ In order to pass the *_bookmark* or any other condition, the overloaded method m
      startTime = math.floor(time.mktime((2013, 10, 10, 17, 3, 38, 0, 0, 0)) * 1000)
      endTime =  math.floor(time.mktime((2015, 10, 29, 17, 3, 38, 0, 0, 0)) * 1000)
      duration = {'start' : startTime, 'end' : endTime }
-     print("Historical Events = ", apiCli.getHistoricalEvents(options = duration))
+    apiCli.getHistoricalEvents(options = duration))
 
 The above snippet returns the events between the start and end time.
 
 View events from a device type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getHistoricalEvents() can be used to view events from all the devices of a particular device type. 
+The *getHistoricalEvents()* method is used to view events from all the devices of a particular device type. 
 
 .. code:: python
 
-     print("\nOnly device type passed")	
-     print("Historical Events = ", apiCli.getHistoricalEvents(deviceType = 'iotsample-arduino', options = duration))
+	apiCli.getHistoricalEvents(deviceType = 'iotsample-arduino', options = duration)
 
 The response will contain some parameters and the application needs to retrieve the JSON element *events* from the response to get the array of events returned. As mentioned in the *view events from all devices* section, the overloaded method can be used to control the output.
 
@@ -530,12 +602,11 @@ The response will contain some parameters and the application needs to retrieve 
 View events from a device
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Method getHistoricalEvents() can be used to view events from a specific device.
+The *getHistoricalEvents()* method is used to view events from a specific device. DeviceTypeId and deviceId parameters are required in order to use this method.
 
 .. code:: python
-
-     print("\nBoth device type and device passed")				
-     print("Historical Events = ", apiCli.getHistoricalEvents(deviceType = 'iotsample-arduino', deviceId = '00aabbccde03', options = duration))
+			
+    apiCli.getHistoricalEvents(deviceType, deviceId, options = duration)
 
 The response will contain more parameters and application needs to retrieve the JSON element *events* from the response to get the array of events returned. 
 

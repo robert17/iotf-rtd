@@ -74,8 +74,19 @@ and even controls which commands it will subscribe to in the first place.  It is
 possible to design your device to listen for any command, or to simply 
 subscribe to a set of specific commands.
 
+
 Managed and Unmanaged Devices
 --------------------------------------------------------------------------------
 **Managed devices** are defined as devices which contain a management agent. A management agent is a set of logic which allows the device to interact with the Internet of Things Foundation Device Management service via the Device Management protocol. Managed devices can perform device management operations including location updates, firmware download and updates, and reboot and factory reset.
 
 An **unmanaged device** is a device without a management agent. An unmanaged device can still connect to the Internet of Things Foundation and send and receive events and commands. However, it cannot send any device management requests, or perform any of the device management operations.
+
+
+Historical Event Storage
+---------------------------
+
+Historical event storage, or, the historian feature, allows users to store the data from devices added to their Internet of Things Foundation Organization. Historical event storage activity and duration can be controlled from the settings panel in the Internet of Things Foundation dashboard.
+
+When changing your settings for historical data storage, keep in mind that storing data for longer periods of time may affect your billing. Care should be taken when disabling historical data storage, as upon disabling data storage for your organization, all stored data will be deleted, and cannot be recovered.
+
+Historical event storage uses an MQTT Quality of Service level of 0 (delivery at most once), so some data may be lost. Historical event storage can be queried using the Internet of Things Foundation API.

@@ -65,6 +65,7 @@ Programming Guides
     libraries/python
     libraries/python_cli_for_devices
     libraries/python_cli_for_apps
+    libraries/python_cli_for_api
 
     libraries/embedded_c
 

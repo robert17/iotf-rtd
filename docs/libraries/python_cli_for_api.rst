@@ -5,13 +5,13 @@ Python Client Library - Internet of Things Foundation API Support
 Introduction
 -------------------------------------------------------------------------------
 
-This client library describes how to use the Internet of Things Foundation Python client library with the Internet of Things Foundation API. For help with getting started with this module, see `Python Client Library - Introduction <https://github.com/ibm-messaging/iot-python>`__. 
+This client library describes how to use the Internet of Things Foundation Python client library with the Internet of Things Foundation API. For help with getting started with this module, see `Python Client Library - Introduction <../python.html>`__. 
 
 This documentation contains information on how applications can use the `Python ibmiotf Client Library <https://pypi.python.org/pypi/ibmiotf>`__ to interact with your organization in the IBM Internet of Things Foundation Connect through ReST APIs.
 
-The `Python for Devices documentation </python_cli_for_devices.html>`__ contains information on how devices can publish events and handle commands using the Python ibmiotf Client Library. 
+The `Python for Devices documentation <../python_cli_for_devices.html>`__ contains information on how devices can publish events and handle commands using the Python ibmiotf Client Library. 
 
-The `Python for Applications documentation </python_cli_for_apps.html>`__ contains information on how applications can use the Python ibmiotf Client Library to interact with devices.
+The `Python for Applications documentation <../python_cli_for_apps.html>`__ contains information on how applications can use the Python ibmiotf Client Library to interact with devices.
 
 
 Constructor

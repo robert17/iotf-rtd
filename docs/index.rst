@@ -53,6 +53,7 @@ Device Management Operations
     device_mgmt/operations/device_actions
     device_mgmt/operations/firmware_actions
     
+    extensions/jasper
 
 Programming Guides
 -------------------------------------------------------------------------------

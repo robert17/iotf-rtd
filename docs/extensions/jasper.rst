@@ -11,6 +11,7 @@ What Operations can I perform with Jasper through IoTF?
 
 By using the built-in Jasper functions in the Internet of Things Foundation platform dashboard, you can perform the following Jasper operations:
 
+- View SIM details
 - View SIM usage
 - Change SIM activation state.
 - Send SMS to SIM

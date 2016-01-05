@@ -22,6 +22,7 @@ Introduction
 -------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: Introduction
     :maxdepth: 1
 
     index
@@ -34,6 +35,7 @@ API
 -------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: API
     
     api/api_intro
     API Version 2 <http://docs.internetofthings.ibmcloud.com/swagger/v0002.html>
@@ -43,6 +45,7 @@ Device Management Operations
 ------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: Device Management
     :maxdepth: 1
     
     device_mgmt/operations/index
@@ -53,12 +56,21 @@ Device Management Operations
     device_mgmt/operations/device_actions
     device_mgmt/operations/firmware_actions
     
+    
+Extensions
+------------------------------------------------------------------------------
+
+.. toctree::
+    :caption: Extensions
+    
     extensions/jasper
+
 
 Programming Guides
 -------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: Programming Guides
     :maxdepth: 1
 	
     libraries/programmingguides
@@ -87,6 +99,7 @@ Messaging
 -------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: Messaging
     :maxdepth: 1
 
     messaging/mqtt
@@ -97,12 +110,14 @@ Messaging
     messaging/HTTPSIntro
     messaging/HTTPSDevice
     messaging/HTTPSApplications
-
+    gateway/gateway_devices
+    gateway/gateway_dashboard
 
 Reference Material
 -------------------------------------------------------------------------------
 
 .. toctree::
+    :caption: Reference Material
     :maxdepth: 1
 
     reference/overview

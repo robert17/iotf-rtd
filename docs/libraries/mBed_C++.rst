@@ -93,7 +93,17 @@ The device can connect to the Internet of Things Foundation by calling the conne
   bool status = client.connect();
   
 
-After the successful connection, the device can publish events to IBM Internet of Things Foundation and listen for commands.
+After the successful connection, the device can publish events to IBM Internet of Things Foundation and listen for commands. 
+
+Also, the device can query the status of the connection using the isConnected() method as follows,
+
+.. code:: c++
+
+  #include "DeviceClient.h"
+  ....
+  ....
+  
+  client.isConnected();
 
 ----
 
@@ -150,6 +160,29 @@ Events can be published at higher MQTT quality of service levels, but these even
         
         status = client.publishEvent("blink", buf, MQTT::QOS2);
 	....
+
+Handling the connection lost error during the event publish
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When the publishEvent() method returns false, one can check the status of the connection and call reConnect() if the connection is lost,
+
+.. code:: c
+
+	#include "MQTTClient.h"
+	
+	status = client.publishEvent("blink", buf, MQTT::QOS2);
+	
+	if(status == false) {
+	    // Check if connection is lost and retry
+	    while(!client.isConnected())
+	    {
+	        client.reConnect();
+	        wait(5.0);
+	    }
+	}
+	....
+
+The library does not store the events published during the unconnected state, and hence, the device needs to call the publishEvent() method again to send those events once the connection is reestablished.
 
 ----
 

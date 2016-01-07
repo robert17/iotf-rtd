@@ -30,15 +30,15 @@ The topic structure for publishing data from gateways and gateway-connected devi
 
 Directly connected devices publish sensor data to the following topic:
 
-```iot-2/evt/sensorData/fmt/json```
+``iot-2/evt/sensorData/fmt/json``
 
 Gateway devices publish their sensor data to the following topic:
 
-```iot-2/type/<gatewayTypeId>/id/<gatewayDeviceId>/cmd/evt/fmt/<payloadFormat>```
+``iot-2/type/<gatewayTypeId>/id/<gatewayDeviceId>/cmd/evt/fmt/<payloadFormat>``
 
 Devices which are connected to gateways have their sensor data published by the gateway on the following topic:
 
-```iot-2/type/<deviceTypeId>/id/<deviceId>/cmd/evt/fmt/json```
+``iot-2/type/<deviceTypeId>/id/<deviceId>/cmd/evt/fmt/json```
 
 -----------
 

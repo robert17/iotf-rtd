@@ -112,6 +112,7 @@ Messaging
     messaging/HTTPSApplications
     gateway/gateway_devices
     gateway/gateway_dashboard
+    gateway/gateway_dm
 
 Reference Material
 -------------------------------------------------------------------------------

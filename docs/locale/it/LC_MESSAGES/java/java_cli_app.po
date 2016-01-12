@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/java_cli_app.rst:3
+msgid "Java Client Library - Applications"
+msgstr ""
+"Libreria client Java - Applicazioni"
+
+#: ../java/java_cli_app.rst:6
+msgid "Introduction"
+msgstr ""
+"Introduzione"
+
+#: ../java/java_cli_app.rst:8
+msgid "This client library describes how to use applications with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../java/javaintro.html>`__."
+msgstr ""
+"Questa libreria client descrive come utilizzare le applicazioni con la libreria client ibmiotf Java. Per una guida introduttiva per questo modulo, consultare `Libreria client Java - Introduzione <../java/javaintro.html>`__."
+
+#: ../java/java_cli_app.rst:10
+msgid "This client library is divided into three sections, all included within the library. This section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"Questa libreria client è divisa in tre sezioni, tutte incluse all'interno della libreria. Questa sezione contiene informazioni su come le applicazioni possono utilizzare la libreria client ibmiotf Java per interagire con i dispositivi."
+
+#: ../java/java_cli_app.rst:12
+msgid "The `Device section <../java/java_cli_devices.html>`__ contains information on how devices can publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"La sezione `Dispositivo <../java/java_cli_devices.html>`__ contiene informazioni su come i dispositivi possono pubblicare gli eventi e gestire i comandi utilizzando la libreria client ibmiotf Java."
+
+#: ../java/java_cli_app.rst:14
+msgid "The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"La sezione `Dispositivo gestito <../java/java_deviceManagement.html>`__ contiene informazioni su come i dispositivi possono connettersi al servizio di gestione dispositivo di Internet of Things Foundation utilizzando la libreria client ibmiotf Java ed eseguire operazioni di gestione dispositivo come l'aggiornamento del firmware, l'aggiornamento dell'ubicazione e l'aggiornamento della diagnostica."
+
+#: ../java/java_cli_app.rst:17
+msgid "Constructor"
+msgstr ""
+"Costruttore"
+
+#: ../java/java_cli_app.rst:19
+msgid "The constructor builds the client instance, and accepts a Properties object containing the following definitions:"
+msgstr ""
+"Il costruttore crea l'istanza client e accetta un oggetto Proprietà che contiene le seguenti definizioni:"
+
+#: ../java/java_cli_app.rst:21
+msgid "org - Your organization ID. (This is a required field. In case of quickstart flow, provide org as quickstart.)"
+msgstr ""
+"org - L'ID organizzazione. (Questo è un campo obbligatorio. Nel caso del flusso quickstart, specificare org come quickstart.)"
+
+#: ../java/java_cli_app.rst:22
+msgid "id - The unique ID of your application within your organization."
+msgstr ""
+"id - L'ID univoco dell'applicazione all'interno dell'organizzazione."
+
+#: ../java/java_cli_app.rst:23
+msgid "auth-method - Method of authentication (the only value currently supported is “apikey”)."
+msgstr ""
+"auth-method - Il metodo di autenticazione (il solo valore attualmente supportato è “apikey”)."
+
+#: ../java/java_cli_app.rst:24
+msgid "auth-key - API key (required if auth-method is “apikey”)."
+msgstr ""
+"auth-key - La chiave API (richiesta se authmethod è “apikey”)."
+
+#: ../java/java_cli_app.rst:25
+msgid "auth-token - API key token (required if auth-method is “apikey”)."
+msgstr ""
+"auth-token - Il token della chiave API (richiesto se authmethod è “apikey”)."
+
+#: ../java/java_cli_app.rst:26
+msgid "enable-shared-subscription - true or false (required only if shared subscription needs to be enabled)"
+msgstr ""
+"enable-shared-subscription - true o false (richiesto solo se è necessario abilitare la sottoscrizione condivisa)"
+
+#: ../java/java_cli_app.rst:28
+msgid "One must set **enable-shared-subscription** to true to build scalable applications which will load balance messages across multiple instances of the application. Refer to the `scalable applications section <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__ for more information about the load balancing."
+msgstr ""
+"È necessario impostare **enable-shared-subscription** su true per creare applicazioni scalabili che bilanceranno i messaggi tra più istanze dell'applicazione. Fare riferimento alla sezione `Applicazioni scalabili <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__ per ulteriori informazioni sul bilanciamento del carico."
+
+#: ../java/java_cli_app.rst:30
+msgid "The Properties object creates definitions which are used to interact with the Internet of Things Foundation module. If no options are provided or organization is provided as quickstart, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device."
+msgstr ""
+"L'oggetto Proprietà crea le definizioni che vengono utilizzate per interagire con il modulo Internet of Things Foundation. Se non viene fornita alcuna opzione oppure se non viene fornita un'organizzazione come quickstart, il client si connetterà a Quickstart di Internet of Things Foundation e utilizzerà per impostazione predefinita un dispositivo non registrato."
+
+#: ../java/java_cli_app.rst:32
+msgid "The following code snippet shows how to construct the ApplicationClient instance in Quickstart mode,"
+msgstr ""
+"Il seguente frammento di codice mostra come creare l'istanza ApplicationClient nella modalità Quickstart."
+
+#: ../java/java_cli_app.rst:44
+msgid "The following code snippet shows how to construct the ApplicationClient instance in registered flow,"
+msgstr ""
+"Il seguente frammento di codice mostra come creare l'istanza ApplicationClient in un flusso registrato."
+
+#: ../java/java_cli_app.rst:60
+msgid "Using a configuration file"
+msgstr ""
+"Tramite file di configurazione"
+
+#: ../java/java_cli_app.rst:62
+msgid "Instead of including a Properties object directly, you can use a configuration file containing the name-value pairs for Properties. If you are using a configuration file containing a Properties object, use the following code format."
+msgstr ""
+"Invece di includere un oggetto Proprietà direttamente, è possibile utilizzare un file di configurazione contenente le coppie nome-valore per Proprietà. Se si utilizza un file di configurazione contenente un oggetto Proprietà, utilizzare seguente il formato di codice."
+
+#: ../java/java_cli_app.rst:70
+msgid "The application configuration file must be in the following format:"
+msgstr ""
+"Il file di configurazione dell'applicazione deve essere nel seguente formato:"
+
+#: ../java/java_cli_app.rst:85
+msgid "Connecting to the Internet of Things Foundation"
+msgstr ""
+"Connessione a Internet of Things Foundation"
+
+#: ../java/java_cli_app.rst:87
+msgid "Connect to the Internet of Things Foundation by calling the *connect* function."
+msgstr ""
+"Connettersi a Internet of Things Foundation richiamando la funzione *connect*."
+
+#: ../java/java_cli_app.rst:97
+msgid "After the successful connection to the IoTF service, the application client can perform the following operations, like subscribing to device events, subscribing to device status, publishing device events and commands."
+msgstr ""
+"Dopo che la connessione al servizio IoTF ha avuto esito positivo, il client delle applicazioni può eseguire le seguenti operazioni, ad esempio la sottoscrizione agli eventi del dispositivo, la sottoscrizione allo stato del dispositivo, la pubblicazione degli eventi e dei comandi del dispositivo."
+
+#: ../java/java_cli_app.rst:102
+msgid "Subscribing to device events"
+msgstr ""
+"Sottoscrizione a eventi del dispositivo"
+
+#: ../java/java_cli_app.rst:103
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Gli eventi sono un meccanismo tramite cui i dispositivi pubblicano i dati su Internet of Things Foundation. Il dispositivo controlla il contenuto dell'evento e assegna un nome per ogni evento inviato."
+
+#: ../java/java_cli_app.rst:105
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Quando un evento viene ricevuto da IoT Foundation, vengono utilizzate le credenziali della connessione su cui l'evento è stato ricevuto, per determinare da quale dispositivo è stato inviato l'evento. Con questa architettura è impossibile per un dispositivo impersonare un altro dispositivo."
+
+#: ../java/java_cli_app.rst:107
+msgid "By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters."
+msgstr ""
+"Per impostazione predefinita, le applicazioni effettuano la sottoscrizione a tutti gli eventi provenienti da tutti i dispositivi connessi. Utilizzare i parametri type, id, event e msgFormat per controllare l'ambito della sottoscrizione. Un singolo client può supportare più sottoscrizioni. Gli esempi di codice di seguito forniscono esempi su come effettuare la sottoscrizione a dispositivi in base ai parametri type, id, event e msgFormat."
+
+#: ../java/java_cli_app.rst:110
+msgid "To subscribe to all events from all devices"
+msgstr ""
+"Per effettuare la sottoscrizione a tutti gli eventi provenienti da tutti i dispositivi"
+
+#: ../java/java_cli_app.rst:118
+msgid "To subscribe to all events from all devices of a specific type"
+msgstr ""
+"Per effettuare la sottoscrizione a tutti gli eventi provenienti da tutti i dispositivi di un tipo  specifico"
+
+#: ../java/java_cli_app.rst:126
+msgid "To subscribe to all events from a specific device"
+msgstr ""
+"Per effettuare la sottoscrizione a tutti gli eventi da uno specifico dispositivo"
+
+#: ../java/java_cli_app.rst:134
+msgid "To subscribe to a specific event from two or more different devices"
+msgstr ""
+"Per effettuare la sottoscrizione a un evento specifico proveniente da due o più dispositivi differenti"
+
+#: ../java/java_cli_app.rst:143
+msgid "To subscribe to events published by a device in json format"
+msgstr ""
+"Per effettuare la sottoscrizione agli eventi pubblicati da un dispositivo nel formato json"
+
+#: ../java/java_cli_app.rst:153
+msgid "Handling events from devices"
+msgstr ""
+"Gestione degli eventi dai dispositivi"
+
+#: ../java/java_cli_app.rst:154
+msgid "To process the events received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Event class which has the following properties:"
+msgstr ""
+"Per elaborare gli eventi ricevuti dalle sottoscrizioni è necessario registrare un metodo di callback dell'evento. I messaggi vengono restituiti come un'istanza della classe evento che ha le seguenti proprietà:"
+
+#: ../java/java_cli_app.rst:156
+msgid "event.device - string (uniquely identifies the device across all types of devices in the organization)"
+msgstr ""
+"event.device - stringa (identifica in modo univoco il dispositivo tra tutti i tipi di dispositivi nell'organizzazione)"
+
+#: ../java/java_cli_app.rst:157
+msgid "event.deviceType - string"
+msgstr ""
+"event.deviceType - stringa"
+
+#: ../java/java_cli_app.rst:158
+msgid "event.deviceId - string"
+msgstr ""
+"event.deviceId - stringa"
+
+#: ../java/java_cli_app.rst:159
+msgid "event.event - string"
+msgstr ""
+"event.event - stringa"
+
+#: ../java/java_cli_app.rst:160
+msgid "event.format - string"
+msgstr ""
+"event.format - stringa"
+
+#: ../java/java_cli_app.rst:161
+msgid "event.data - dict"
+msgstr ""
+"event.data - dict"
+
+#: ../java/java_cli_app.rst:162
+msgid "event.timestamp - datetime"
+msgstr ""
+"event.timestamp - dataora"
+
+#: ../java/java_cli_app.rst:164
+msgid "A sample implementation of the Event callback,"
+msgstr ""
+"Un'implementazione di esempio del callback dell'evento."
+
+#: ../java/java_cli_app.rst:182
+msgid "Once the event callback is added to the ApplicationClient, the processEvent() method is invoked whenever any event is published on the subscribed criteria, The following snippet shows how to add the Event call back into ApplicationClient instance,"
+msgstr ""
+"Una volta aggiunto il callback dell'evento ad ApplicationClient, il metodo processEvent() viene richiamato ogni volta che viene pubblicato un evento con i criteri a cui si è effettuata la sottoscrizione. Il seguente frammento mostra come aggiungere il callback dell'evento nell'istanza ApplicationClient."
+
+#: ../java/java_cli_app.rst:190
+msgid "Similar to subscribing to device events, the application can subscribe to commands that are sent to the devices. Following code snippet shows how to subscribe to all commands to all the devices in the organization:"
+msgstr ""
+"In modo simile alla sottoscrizione agli eventi del dispositivo, l'applicazione può effettuare la sottoscrizione ai comandi inviati ai dispositivi. Il seguente frammento di codice mostra come effettuare la sottoscrizione a tutti i comandi inviati a tutti i dispositivi nell'organizzazione:"
+
+#: ../java/java_cli_app.rst:198
+msgid "Overloaded methods are available to control the command subscription. The processCommand() method is called when a command is sent to the device that matches the command subscription."
+msgstr ""
+"I metodi sottoposti a overload sono disponibili per controllare la sottoscrizione ai comandi. Il metodo processCommand() viene richiamato quando al dispositivo viene inviato un comando che corrisponde alla sottoscrizione al comando."
+
+#: ../java/java_cli_app.rst:203
+msgid "Subscribing to device status"
+msgstr ""
+"Sottoscrizione allo stato del dispositivo"
+
+#: ../java/java_cli_app.rst:204
+msgid "Similar to subscribing to device events, applications can subscribe to device status, like device connect and disconnect to Internet of Things Foundation. By default, this will subscribe to status updates for all connected devices. Use the Device Type and Device Id parameters to control the scope of the subscription. A single ApplicationClient can support multiple subscriptions."
+msgstr ""
+"In modo simile alla sottoscrizione agli eventi del dispositivo, le applicazioni possono effettuare la sottoscrizione allo stato del dispositivo, ad esempio la connessione e la disconnessione del dispositivo a Internet of Things Foundation. Per impostazione predefinita, questa opzione effettuerà la sottoscrizione agli aggiornamenti dello stato per tutti i dispositivi connessi. Utilizzare i parametri Tipo di dispositivo e ID dispositivo per controllare l'ambito della sottoscrizione. Un singolo ApplicationClient può supportare più sottoscrizioni."
+
+#: ../java/java_cli_app.rst:207
+msgid "Subscribe to status updates for all devices"
+msgstr ""
+"Sottoscrivere agli aggiornamenti dello stato per tutti i dispositivi"
+
+#: ../java/java_cli_app.rst:216
+msgid "Subscribe to status updates for all devices of a specific type"
+msgstr ""
+"Sottoscrivere agli aggiornamenti dello stato per tutti i dispositivi di un tipo specifico"
+
+#: ../java/java_cli_app.rst:225
+msgid "Subscribe to status updates for two different devices"
+msgstr ""
+"Sottoscrivere agli aggiornamenti dello stato per due dispositivi differenti"
+
+#: ../java/java_cli_app.rst:237
+msgid "Handling status updates from devices"
+msgstr ""
+"Gestione degli aggiornamenti dello stato dai dispositivi"
+
+#: ../java/java_cli_app.rst:238
+msgid "To process the status updates received by your subscriptions you need to register an status event callback method. The messages are returned as an instance of the Status class which contains the below mentioned properties:"
+msgstr ""
+"Per elaborare gli aggiornamenti dello stato ricevuti dalla sottoscrizione, è necessario registrare un metodo di callback dell'evento dello stato. I messaggi vengono restituiti come un'istanza della classe Stato che contiene le proprietà menzionate di seguito:"
+
+#: ../java/java_cli_app.rst:240
+msgid "The following properties are set for both \"Connect\" and \"Disconnect\" status events:"
+msgstr ""
+"Le seguenti proprietà sono impostate sia per l'evento di stato \"Connetti\" che \"Disconnetti\":"
+
+#: ../java/java_cli_app.rst:242
+msgid "status.clientAddr - string"
+msgstr ""
+"status.clientAddr - stringa"
+
+#: ../java/java_cli_app.rst:243
+msgid "status.protocol - string"
+msgstr ""
+"status.protocol - stringa"
+
+#: ../java/java_cli_app.rst:244
+msgid "status.clientId - string"
+msgstr ""
+"status.clientId - stringa"
+
+#: ../java/java_cli_app.rst:245
+msgid "status.user - string"
+msgstr ""
+"status.user - stringa"
+
+#: ../java/java_cli_app.rst:246
+msgid "status.time - java.util.Date"
+msgstr ""
+"status.time - java.util.Date"
+
+#: ../java/java_cli_app.rst:247
+msgid "status.action - string"
+msgstr ""
+"status.action - stringa"
+
+#: ../java/java_cli_app.rst:248
+msgid "status.connectTime - java.util.Date"
+msgstr ""
+"status.connectTime - java.util.Date"
+
+#: ../java/java_cli_app.rst:249
+msgid "status.port - integer"
+msgstr ""
+"status.port - numero intero"
+
+#: ../java/java_cli_app.rst:251
+msgid "The following properties are only set when the action is \"Disconnect\":"
+msgstr ""
+"Le seguenti proprietà vengono impostate solo quando l'azione è \"Disconnetti\":"
+
+#: ../java/java_cli_app.rst:253
+msgid "status.writeMsg - integer"
+msgstr ""
+"status.writeMsg - numero intero"
+
+#: ../java/java_cli_app.rst:254
+msgid "status.readMsg - integer"
+msgstr ""
+"status.readMsg - numero intero"
+
+#: ../java/java_cli_app.rst:255
+msgid "status.reason - string"
+msgstr ""
+"status.reason - stringa"
+
+#: ../java/java_cli_app.rst:256
+msgid "status.readBytes - integer"
+msgstr ""
+"status.readBytes - numero intero"
+
+#: ../java/java_cli_app.rst:257
+msgid "status.writeBytes - integer"
+msgstr ""
+"status.writeBytes - numero intero"
+
+#: ../java/java_cli_app.rst:259
+msgid "A sample implementation of the Status callback,"
+msgstr ""
+"Un'implementazione di esempio del callback dello stato."
+
+#: ../java/java_cli_app.rst:283
+msgid "Once the status callback is added to the ApplicationClient, the processDeviceStatus() method is invoked whenever any device is connected or disconnected from Internet of Things Foundation that matches the criteria, The following snippet shows how to add the status call back instance into ApplicationClient,"
+msgstr ""
+"Una volta aggiunto il callback dello stato ad ApplicationClient, il metodo processDeviceStatus() viene richiamato ogni volta che un dispositivo corrispondente ai criteri si connette o disconnette da Internet of Things Foundation. Il seguente frammento mostra come aggiungere l'istanza del callback dello stato ad ApplicationClient,"
+
+#: ../java/java_cli_app.rst:293
+msgid "As similar to device status, the application can subscribe to any other application connect or disconnect status as well. Following code snippet shows how to subscribe to the application status in the organization:"
+msgstr ""
+"In modo simile allo stato del dispositivo, l'applicazione può effettuare la sottoscrizione allo stato di connessione o disconnessione di qualsiasi altra applicazione. Il seguente frammento di codice mostra come effettuare la sottoscrizione allo stato dell'applicazione nell'organizzazione:"
+
+#: ../java/java_cli_app.rst:301
+msgid "Overloaded method is available to control the status subscription to a particular application. The processApplicationStatus() method is called whenever any application is connected or disconnected from Internet of Things Foundation that matches the criteria."
+msgstr ""
+"Il metodo sottoposto a overload è disponibile per controllare la sottoscrizione allo stato di una particolare applicazione. Il metodo processApplicationStatus() viene richiamato ogni volta che un'applicazione che corrisponde ai criteri si connette o disconnette da Internet of Things Foundation."
+
+#: ../java/java_cli_app.rst:304
+msgid "Publishing events from devices"
+msgstr ""
+"Pubblicazione degli eventi dai dispositivi"
+
+#: ../java/java_cli_app.rst:305
+msgid "Applications can publish events as if they originated from a Device."
+msgstr ""
+"Le applicazioni possono pubblicare eventi come se originassero da un dispositivo."
+
+#: ../java/java_cli_app.rst:322
+msgid "Publish events using HTTP(s)"
+msgstr ""
+"Pubblicare gli eventi utilizzando HTTP(s)"
+
+#: ../java/java_cli_app.rst:323
+msgid "Apart from MQTT, the application can publish device events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,"
+msgstr ""
+"In aggiunta a MQTT, l'applicazione può pubblicare gli eventi del dispositivo su IBM Internet of Things Foundation utilizzando HTTP(s) completando 3 semplici operazioni."
+
+#: ../java/java_cli_app.rst:325
+msgid "Construct the ApplicationClient instance using the properties file"
+msgstr ""
+"Creare l'istanza ApplicationClient utilizzando il file delle proprietà"
+
+#: ../java/java_cli_app.rst:326
+msgid "Construct the event that needs to be published"
+msgstr ""
+"Creare l'evento che deve essere pubblicato"
+
+#: ../java/java_cli_app.rst:327
+msgid "Specify the event name, Device Type, Device ID and publish the event using publishEventOverHTTP() method as follows,"
+msgstr ""
+"Specificare il nome dell'evento, il tipo di dispositivo, l'ID del dispositivo e pubblicare l'evento utilizzando il metodo publishEventOverHTTP() come mostrato di seguito."
+
+#: ../java/java_cli_app.rst:341
+msgid "The complete code can be found in the application example `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__"
+msgstr ""
+"È possibile trovare il codice completo nell'esempio dell'applicazione `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__"
+
+#: ../java/java_cli_app.rst:343
+msgid "Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured."
+msgstr ""
+"In base alle impostazioni nel file delle proprietà, il metodo publishEventOverHTTP() pubblica l'evento in Quickstart o nel flusso registrato. Quando l'ID dell'organizzazione menzionato nel file delle proprietà è quickstart, il metodo publishEventOverHTTP() pubblica l'evento nel servizio quickstart di Internet of Things Foundation e in formato HTTP semplice. Ma quando nel file delle proprietà viene menzionata un'organizzazione registrata valida, questo metodo pubblica sempre l'evento in HTTPS (HTTP over SSL), in modo da proteggere tutte le comunicazioni."
+
+#: ../java/java_cli_app.rst:345
+msgid "The event in HTTP(s) is published at most once Quality of Service, so the application needs to implement the retry logic when there is an error."
+msgstr ""
+"L'evento in HTTP(s) viene pubblicato al massimo una volta su Quality of Service, pertanto quando si verifica un errore l'applicazione deve implementare la logica retry."
+
+#: ../java/java_cli_app.rst:350
+msgid "Publishing commands to devices"
+msgstr ""
+"Pubblicazione dei comandi sui dispositivi"
+
+#: ../java/java_cli_app.rst:351
+msgid "Applications can publish commands to connected devices."
+msgstr ""
+"Le applicazioni possono pubblicare i comandi sui dispositivi connessi."
+
+#: ../java/java_cli_app.rst:368
+msgid "Examples"
+msgstr ""
+"Esempi:"
+
+#: ../java/java_cli_app.rst:369
+msgid "`MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - A sample application that shows how to publish device events."
+msgstr ""
+"`MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - Un'applicazione di esempio che mostra come pubblicare gli eventi del dispositivo."
+
+#: ../java/java_cli_app.rst:370
+msgid "`RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - A sample application that shows how to publish a command to a device."
+msgstr ""
+"`RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - Un'applicazione di esempio che mostra come pubblicare un comando a un dispositivo."
+
+#: ../java/java_cli_app.rst:371
+msgid "`RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - A sample application that shows how to subscribe for various events like, device events, device commands, device status and application status."
+msgstr ""
+"`RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - Un'applicazione di esempio che mostra come effettuare la sottoscrizione a diversi eventi come, ad esempio, gli eventi del dispositivo, i comandi del dispositivo, lo stato del dispositivo e dell'applicazione."
+
+#: ../java/java_cli_app.rst:372
+msgid "`SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - A sample application that shows how to build a scalable application which will load balance messages across multiple instances of the application."
+msgstr ""
+"`SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - Un'applicazione di esempio che mostra come creare un'applicazione scalabile che bilancerà i messaggi in più istanze dell'applicazione."
+

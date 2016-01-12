@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/Extra_Examples.rst:3
+msgid "Examples"
+msgstr ""
+"示例"
+
+#: ../device_mgmt/Extra_Examples.rst:5
+msgid "These examples illustrate the API and the behaviour of the device management agent."
+msgstr ""
+"这些示例演示了该 API 以及设备管理代理程序的行为。"
+
+#: ../device_mgmt/Extra_Examples.rst:8
+msgid "Device Location"
+msgstr ""
+"设备位置"
+
+#: ../device_mgmt/Extra_Examples.rst:10
+msgid "An administrator wants to update the location for a device in the Internet of Things Foundation, perhaps using information from a mobile device. A device would use an equivalent mechanismbased on MQTT."
+msgstr ""
+"管理员可能想要使用移动设备中的信息来更新 Internet of Things Foundation 中某个设备的位置。设备将使用基于 MQTT 的同等机制。"
+
+#: ../device_mgmt/Extra_Examples.rst:12
+#: ../device_mgmt/Extra_Examples.rst:34
+msgid "Example Request:"
+msgstr ""
+"请求示例："
+
+#: ../device_mgmt/Extra_Examples.rst:18
+msgid "Request Body"
+msgstr ""
+"请求主体"
+
+#: ../device_mgmt/Extra_Examples.rst:30
+msgid "Device Reboot"
+msgstr ""
+"设备重新引导"
+
+#: ../device_mgmt/Extra_Examples.rst:32
+msgid "An administrator wants to reboot a device from the device dashboard. This is a long-running asyncronous process."
+msgstr ""
+"管理员想要从设备仪表板中重新引导设备。这是一个长时间运行的异步过程。"
+
+#: ../device_mgmt/Extra_Examples.rst:40
+msgid "Request body"
+msgstr ""
+"请求主体"
+
+#: ../device_mgmt/Extra_Examples.rst:48
+#: ../device_mgmt/Extra_Examples.rst:81
+#: ../device_mgmt/Extra_Examples.rst:108
+msgid "Sequence:"
+msgstr ""
+"序列："
+
+#: ../device_mgmt/Extra_Examples.rst:50
+msgid "REST API is issued to the Internet of Things device management server."
+msgstr ""
+"向物联网设备管理服务器发出 REST API。"
+
+#: ../device_mgmt/Extra_Examples.rst:51
+msgid "The Internet of Things Foundation published a command to reboot the device."
+msgstr ""
+"Internet of Things Foundation 发出了一条命令来重新引导设备。"
+
+#: ../device_mgmt/Extra_Examples.rst:52
+#: ../device_mgmt/Extra_Examples.rst:87
+msgid "REST API returns. A management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"REST API 将会返回。这会创建一个管理请求文档，可查询该文档来跟踪该请求的进度。"
+
+#: ../device_mgmt/Extra_Examples.rst:53
+msgid "When the device is connectd, it receives the command and reboots."
+msgstr ""
+"连接设备后，设备会收到此命令并重新引导。"
+
+#: ../device_mgmt/Extra_Examples.rst:54
+msgid "When the device restarts, it updates its device management registration."
+msgstr ""
+"设备重新启动后，它会更新其设备管理注册。"
+
+#: ../device_mgmt/Extra_Examples.rst:57
+msgid "Firmware update"
+msgstr ""
+"固件更新"
+
+#: ../device_mgmt/Extra_Examples.rst:59
+msgid "An administrator wants to initiate a firmware update on a device from the device dashboard. This is a long-running, asynchronous process. There are two separate steps here, downloading and updating."
+msgstr ""
+"管理员想要从设备仪表板中对某个设备启动固件更新。这是一个长时间运行的异步过程。此处分为两个单独的步骤：下载和更新。"
+
+#: ../device_mgmt/Extra_Examples.rst:61
+msgid "Request 1:"
+msgstr ""
+"请求 1："
+
+#: ../device_mgmt/Extra_Examples.rst:67
+#: ../device_mgmt/Extra_Examples.rst:99
+msgid "Request Body:"
+msgstr ""
+"请求主体："
+
+#: ../device_mgmt/Extra_Examples.rst:83
+#: ../device_mgmt/Extra_Examples.rst:110
+msgid "REST API is issued to the Internet of Things Foundation."
+msgstr ""
+"向 Internet of Things Foundation 发出 REST API。"
+
+#: ../device_mgmt/Extra_Examples.rst:84
+msgid "The Internet of Things Foundation published an update to the mgmt.firmware section of the device's metadata containing the package URL. An observation request is scheduled for the status of the firmware update."
+msgstr ""
+"Internet of Things Foundation 发布了对设备元数据中 mgmt.firmware 部分的更新（其中包括包 URL）。这样会调度一个观察请求，以了解固件更新的状态。"
+
+#: ../device_mgmt/Extra_Examples.rst:85
+msgid "A command is published to the device to download the firmware package."
+msgstr ""
+"向设备发出一条命令来下载固件包。"
+
+#: ../device_mgmt/Extra_Examples.rst:86
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata, replacing the existing data."
+msgstr ""
+"Internet of Things Foundation 将更新设备元数据中的 firmware 部分，以替换现有数据。"
+
+#: ../device_mgmt/Extra_Examples.rst:88
+msgid "When the device is connected, it receives the update to the mgmt.firmware section of its metadata containing the package URL, the observation request and the command."
+msgstr ""
+"连接设备后，设备会收到对其元数据中 mgmt.firmware 部分的更新（其中包括包 URL、观察请求和命令）。"
+
+#: ../device_mgmt/Extra_Examples.rst:89
+msgid "The device sets its firmware status to 1 (Downloading) and initiates the download."
+msgstr ""
+"设备会将其固件状态设置为 1（正在下载）并启动下载。"
+
+#: ../device_mgmt/Extra_Examples.rst:90
+msgid "When the firmware is downloaded, the device changes the firmware status to 2 (Downloaded) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"下载固件后，设备会将固件状态更改为 2（已下载）并向 Internet of Things Foundation 发送通知。"
+
+#: ../device_mgmt/Extra_Examples.rst:91
+msgid "The Internet of Things Foundation updates the firmware section of the device's metadata."
+msgstr ""
+"Internet of Things Foundation 将更新设备元数据中的 firmware 部分。"
+
+#: ../device_mgmt/Extra_Examples.rst:93
+msgid "Request 2:"
+msgstr ""
+"请求 2："
+
+#: ../device_mgmt/Extra_Examples.rst:111
+msgid "The command is published to update the device firmware to the downloaded package."
+msgstr ""
+"发出此命令以使用已下载的软件包来更新设备固件。"
+
+#: ../device_mgmt/Extra_Examples.rst:112
+msgid "The firmware section of the device's metadata is updated."
+msgstr ""
+"已更新设备元数据中的 firmware 部分。"
+
+#: ../device_mgmt/Extra_Examples.rst:113
+msgid "The REST API returns and a management request document is created which can be queried to keep track of the progress of the request."
+msgstr ""
+"REST API 将会返回，并会创建一个管理请求文档，可以查询该文档来跟踪该请求的进度。"
+
+#: ../device_mgmt/Extra_Examples.rst:114
+msgid "When the device is connected, it receives the command and begins the firmware update."
+msgstr ""
+"连接设备后，设备会收到此命令并开始更新固件。"
+
+#: ../device_mgmt/Extra_Examples.rst:115
+msgid "Assuming the firmware update was successful, the device changes the firmware update status to 0 (Success) and sends a notification to the Internet of Things Foundation."
+msgstr ""
+"假设固件更新成功，设备会将固件更新状态更改为 0（成功）并向 Internet of Things Foundation 发送通知。"
+

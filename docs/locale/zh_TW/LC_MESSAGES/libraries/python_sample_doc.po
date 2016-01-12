@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,57 +16,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\libraries\python_sample_doc.rst:3
+#: ../libraries/python_sample_doc.rst:3
 msgid "Python Client Library - Devices"
 msgstr ""
+"Python 用戶端程式庫 - 裝置"
 
-#: ..\docs\libraries\python_sample_doc.rst:6
+#: ../libraries/python_sample_doc.rst:6
 msgid "Introduction"
 msgstr ""
+"簡介"
 
-#: ..\docs\libraries\python_sample_doc.rst:8
-msgid ""
-"This client library describes how to use devices with the python ibmiotf "
-"module. For help with getting started with this module, see `Python Client "
-"Library - Introduction "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
+#: ../libraries/python_sample_doc.rst:8
+msgid "This client library describes how to use devices with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
 msgstr ""
+"此用戶端程式庫說明如何搭配 Python ibmiotf 模組來使用裝置。開始使用此模組時如需協助，請參閱 `Python 用戶端程式庫 - 簡介 <https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__。"
 
-#: ..\docs\libraries\python_sample_doc.rst:10
-msgid ""
-"The client library is divided into two sections, both included within the "
-"library. This section contains information on how devices publish events and"
-" handle commands using the Python ibmiotf module, and the Applications "
-"section contains information on how applications can use the ibmiotf module "
-"to interact with devices."
+#: ../libraries/python_sample_doc.rst:10
+msgid "The client library is divided into two sections, both included within the library. This section contains information on how devices publish events and handle commands using the Python ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
 msgstr ""
+"用戶端程式庫分成兩個區段，都內含在程式庫中。這個區段包含裝置如何使用 Python ibmiotf 模組發佈事件及處理指令的相關資訊，「應用程式」區段則包含應用程式如何使用 ibmiotf 模組與裝置互動的相關資訊。"
 
-#: ..\docs\libraries\python_sample_doc.rst:12
-msgid ""
-"This section lists the code samples which are bundled with the ibmiotf "
-"python module, and gives and introduction to their function and purpose."
+#: ../libraries/python_sample_doc.rst:12
+msgid "This section lists the code samples which are bundled with the ibmiotf python module, and gives and introduction to their function and purpose."
 msgstr ""
+"此區段列出與 Python ibmiotf 模組結合的程式碼範例，並簡介其函數和用途。"
 
-#: ..\docs\libraries\python_sample_doc.rst:18
+#: ../libraries/python_sample_doc.rst:18
 msgid "The bluemixZoneDemo Sample"
 msgstr ""
+"bluemixZoneDemo 範例"
 
-#: ..\docs\libraries\python_sample_doc.rst:22
+#: ../libraries/python_sample_doc.rst:22
 msgid "The cli Sample"
 msgstr ""
+"cli 範例"
 
-#: ..\docs\libraries\python_sample_doc.rst:26
+#: ../libraries/python_sample_doc.rst:26
 msgid "The customMessageFormat"
 msgstr ""
+"customMessageFormat"
 
-#: ..\docs\libraries\python_sample_doc.rst:30
+#: ../libraries/python_sample_doc.rst:30
 msgid "The helloWorld Sample"
 msgstr ""
+"helloWorld 範例"
 
-#: ..\docs\libraries\python_sample_doc.rst:34
+#: ../libraries/python_sample_doc.rst:34
 msgid "The psutil Sample"
 msgstr ""
+"psutil 範例"
 
-#: ..\docs\libraries\python_sample_doc.rst:38
+#: ../libraries/python_sample_doc.rst:38
 msgid "The simpleApp Sample"
 msgstr ""
+"simpleApp 範例"
+

@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Libreria client Java - Introduzione"
+
+#: ../java/javaintro.rst:5
+msgid "This `Java Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__ can be used to simplify interactions with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. The documentation is divided into three sections:"
+msgstr ""
+"Questa `Libreria client Java <https://github.com/ibm-messaging/iot-java/releases/latest>`__ può essere utilizzata per semplificare le interazioni con `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. La documentazione è divisa in tre sezioni:"
+
+#: ../java/javaintro.rst:7
+msgid "The `Devices section <../java/java_cli_devices.html>`__ contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"La sezione `Dispositivo <../java/java_cli_devices.html>`__ contiene informazioni su come i dispositivi pubblicano gli eventi e gestiscono i comandi utilizzando la libreria client ibmiotf Java."
+
+#: ../java/javaintro.rst:8
+msgid "The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"La sezione `Dispositivo gestito <../java/java_deviceManagement.html>`__ contiene informazioni su come i dispositivi possono connettersi al servizio di gestione dispositivo di Internet of Things Foundation utilizzando la libreria client ibmiotf Java ed eseguire operazioni di gestione dispositivo come l'aggiornamento del firmware, l'aggiornamento dell'ubicazione e l'aggiornamento della diagnostica."
+
+#: ../java/javaintro.rst:9
+msgid "The `Applications section <../java/java_cli_app.html>`__ details how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"La sezione `Applicazioni <../java/java_cli_app.html>`__ illustra come le applicazioni possono utilizzare la libreria client ibmiotf Java per interagire con i dispositivi."
+
+#: ../java/javaintro.rst:12
+msgid "Download"
+msgstr ""
+"Scarica"
+
+#: ../java/javaintro.rst:13
+msgid "The latest version of the client library is available `here <https://github.com/ibm-messaging/iot-java/releases/latest>`__ to download."
+msgstr ""
+"È possibile eseguire lo scaricamento dell'ultima versione della libreria client `qui <https://github.com/ibm-messaging/iot-java/releases/latest>`__."
+
+#: ../java/javaintro.rst:15
+msgid "The zip module contains the following files,"
+msgstr ""
+"Il modulo zip contiene i seguenti file,"
+
+#: ../java/javaintro.rst:17
+msgid "com.ibm.iotf.client-<version>.jar - Client library that enables one to talk to Internet of Things Foundation Connect."
+msgstr ""
+"com.ibm.iotf.client-<version>.jar - Libreria client che consente di comunicare con Internet of Things Foundation Connect."
+
+#: ../java/javaintro.rst:18
+msgid "com.ibm.iotf.samples-<version>.jar - Contains samples."
+msgstr ""
+"com.ibm.iotf.samples-<version>.jar - Contiene esempi."
+
+#: ../java/javaintro.rst:19
+msgid "DMDeviceSample.properties - Properties file used to configure the list of options required to connect to Internet of Things Foundation Connect and perform device management operations."
+msgstr ""
+"DMDeviceSample.properties - File di proprietà utilizzato per configurare l'elenco di opzioni richieste per stabilire una connessione a Internet of Things Foundation Connect ed eseguire operazioni di gestione dispositivo."
+
+#: ../java/javaintro.rst:20
+msgid "device.prop - Properties file to specify connectivity information when DeviceClient is used"
+msgstr ""
+"device.prop - File di proprietà per specificare le informazioni di connettività quando viene utilizzato DeviceClient"
+
+#: ../java/javaintro.rst:21
+msgid "lib - Contains all dependent libraries"
+msgstr ""
+"lib - Contiene tutte le librerie dipendenti"
+
+#: ../java/javaintro.rst:22
+msgid "javadoc - Contains the client library documentation"
+msgstr ""
+"javadoc - Contiene la documentazione della libreria client"
+
+#: ../java/javaintro.rst:24
+msgid "This Java Client Library requires Oracle Java 7 or later,"
+msgstr ""
+"Questa libreria client Java richiede Oracle Java 7 o versioni successive."
+
+#: ../java/javaintro.rst:26
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ../java/javaintro.rst:27
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ../java/javaintro.rst:30
+msgid "Dependencies"
+msgstr ""
+"Dipendenze"
+
+#: ../java/javaintro.rst:32
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Il client Java Paho MQTT <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - fornisce una classe client che consente alle applicazioni di connettersi a un broker MQTT"
+
+#: ../java/javaintro.rst:33
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - libreria per l'interazione con gli oggetti JSON"
+
+#: ../java/javaintro.rst:34
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - libreria per registrare diverse informazioni"
+
+#: ../java/javaintro.rst:35
+msgid "`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - fornisce funzionalità di codificatore e decodificatore comuni come ad esempio Base64"
+
+#: ../java/javaintro.rst:36
+msgid "`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - provides methods for manipulating core Java classes"
+msgstr ""
+"`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - fornisce metodi per modificare le classi Java principali"
+
+#: ../java/javaintro.rst:37
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - strumento di creazione per build automatiche"
+
+#: ../java/javaintro.rst:38
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - Una libreria client HTTP"
+
+#: ../java/javaintro.rst:39
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - Una libreria HTTP Core"
+
+#: ../java/javaintro.rst:40
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - La libreria per la gestione della data e dell'ora per Java"
+

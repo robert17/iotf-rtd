@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/java_cli_devices.rst:3
+msgid "Java Client Library - Devices"
+msgstr ""
+"Biblioteca de cliente Java - Dispositivos"
+
+#: ../java/java_cli_devices.rst:6
+msgid "Introduction"
+msgstr ""
+"Introducción"
+
+#: ../java/java_cli_devices.rst:8
+msgid "This client library describes how to use devices with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <https://docs.internetofthings.ibmcloud.com/java/javaintro.html>`__."
+msgstr ""
+"Esta biblioteca de cliente describe cómo utilizar dispositivos con la biblioteca de cliente Java ibmiotf. Para obtener ayuda para empezar a utilizar este módulo, consulte `Biblioteca de cliente Java - Introducción <https://docs.internetofthings.ibmcloud.com/java/javaintro.html>`__."
+
+#: ../java/java_cli_devices.rst:10
+msgid "This client library is divided into three sections, all included within the library. This section contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"Esta biblioteca de cliente se divide en tres secciones, todas incluidas en la biblioteca. Esta sección contiene información sobre cómo publican los dispositivos los sucesos y manejan los mandatos utilizando la biblioteca de cliente Java ibmiotf."
+
+#: ../java/java_cli_devices.rst:12
+msgid "The Managed Device section contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"La sección Dispositivo gestionado contiene información sobre cómo se pueden conectar dispositivos al servicio de gestión de dispositivos de Internet of Things Foundation utilizando la biblioteca de cliente Java ibmiotf y llevar a cabo operaciones de gestión de dispositivos como la actualización de firmware, la actualización de ubicaciones y la actualización de diagnósticos."
+
+#: ../java/java_cli_devices.rst:14
+msgid "The Applications section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"La sección Aplicaciones contiene información sobre cómo pueden utilizar las aplicaciones la biblioteca de cliente Java ibmiotf para interactuar con los dispositivos."
+
+#: ../java/java_cli_devices.rst:17
+msgid "Constructor"
+msgstr ""
+"Constructor"
+
+#: ../java/java_cli_devices.rst:19
+msgid "The constructor builds the client instance, and accepts a Properties object containing the following definitions:"
+msgstr ""
+"El constructor crea la instancia de cliente y acepta un objeto Propiedades que contiene las definiciones siguientes:"
+
+#: ../java/java_cli_devices.rst:21
+msgid "org - Your organization ID. (This is a required field. In case of quickstart flow, provide org as quickstart.)"
+msgstr ""
+"org - ID de organización. (Es un campo necesario. En el caso de flujo de inicio rápido, proporcione org como inicio rápido.)"
+
+#: ../java/java_cli_devices.rst:22
+msgid "type - The type of your device. (This is a required field.)"
+msgstr ""
+"type - Tipo del dispositivo. (Es un campo necesario.)"
+
+#: ../java/java_cli_devices.rst:23
+msgid "id - The ID of your device. (This is a required field."
+msgstr ""
+"id - ID del dispositivo. (Es un campo necesario."
+
+#: ../java/java_cli_devices.rst:24
+msgid "auth-method - Method of authentication (This is an optional field, needed only for registered flow and the only value currently supported is \"token\")."
+msgstr ""
+"auth-method - Método de autenticación (Este campo es opcional, solo necesario para el flujo registrado y el único valor soportado actualmente es \"token\")."
+
+#: ../java/java_cli_devices.rst:25
+msgid "auth-token - API key token (This is an optional field, needed only for registered flow)."
+msgstr ""
+"auth-token - Señal de clave de API (Este campo es opcional, solo necesario para el flujo registrado)."
+
+#: ../java/java_cli_devices.rst:27
+msgid "The Properties object creates definitions which are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"El objeto Propiedades crea definiciones que se utilizan para interactuar con el módulo Internet of Things Foundation."
+
+#: ../java/java_cli_devices.rst:29
+msgid "The following code shows a device publishing events in a Quickstart mode."
+msgstr ""
+"El código siguiente muestra un dispositivo que publica sucesos en la modalidad Quickstart."
+
+#: ../java/java_cli_devices.rst:79
+msgid "The following program shows a device publishing events in a registered flow"
+msgstr ""
+"El programa siguiente muestra un dispositivo que publica sucesos en un flujo registrado"
+
+#: ../java/java_cli_devices.rst:131
+msgid "Using a configuration file"
+msgstr ""
+"Utilización de un archivo de configuración"
+
+#: ../java/java_cli_devices.rst:133
+msgid "Instead of including a Properties object directly, you can use a configuration file containing the name-value pairs for Properties. If you are using a configuration file containing a Properties object, use the following code format."
+msgstr ""
+"En lugar de incluir un objeto Propiedades directamente, puede utilizar un archivo de configuración que contenga los pares nombre-valor para Propiedades. Si está utilizando un archivo de configuración que contiene un objeto Propiedades, utilice el formato de código siguiente."
+
+#: ../java/java_cli_devices.rst:175
+msgid "The content of the configuration file must be in the following format:"
+msgstr ""
+"El contenido del archivo de configuración debe estar en el formato siguiente:"
+
+#: ../java/java_cli_devices.rst:191
+msgid "Publishing events"
+msgstr ""
+"Publicación de sucesos"
+
+#: ../java/java_cli_devices.rst:192
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Los sucesos son el mecanismo mediante el cual los dispositivos publican datos en Internet of Things Foundation. El dispositivo controla el contenido del suceso y asigna un nombre para cada suceso que envía."
+
+#: ../java/java_cli_devices.rst:194
+msgid "When an event is received by the IBM IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Cuando IBM IoT Foundation recibe un suceso, se utilizan las credenciales de la conexión en la que se ha recibido el suceso para determinar de qué dispositivo se ha enviado el suceso. Con esta arquitectura, es imposible que un dispositivo suplante a otro."
+
+#: ../java/java_cli_devices.rst:196
+msgid "Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0."
+msgstr ""
+"Los sucesos se pueden publicar en cualquiera de los sucesos de los 'niveles de calidad de servicio <../messaging/mqtt.html#/>` definidos por el protocolo MQTT.  De forma predeterminada los sucesos se publicarán como qos nivel 0."
+
+#: ../java/java_cli_devices.rst:199
+msgid "Publish event using default quality of service"
+msgstr ""
+"Publicar suceso utilizando calidad de servicio predeterminada"
+
+#: ../java/java_cli_devices.rst:216
+msgid "Publish event using user-defined quality of service"
+msgstr ""
+"Publicar suceso utilizando calidad de servicio definida por el usuario"
+
+#: ../java/java_cli_devices.rst:218
+msgid "Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. Also Quickstart flow allows only Qos of 0"
+msgstr ""
+"Se pueden publicar sucesos en niveles de calidad de servicio MQTT más altos, pero es posible que estos sucesos vayan más lentos que el nivel 0 de QoS, debido a la confirmación de recepción adicional. Asimismo, el flujo de Quickstart solo permite Qos de 0"
+
+#: ../java/java_cli_devices.rst:234
+msgid "Publish event using HTTP(s)"
+msgstr ""
+"Publicar suceso utilizando HTTP(s)"
+
+#: ../java/java_cli_devices.rst:235
+msgid "Apart from MQTT, the devices can publish events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,"
+msgstr ""
+"Aparte de MQTT, los dispositivos pueden publicar sucesos en IBM Internet of Things Foundation utilizando HTTP(s) siguiendo 3 pasos simples, "
+
+#: ../java/java_cli_devices.rst:237
+msgid "Construct a DeviceClient instance using the properties file"
+msgstr ""
+"Construir una instancia de DeviceClient utilizando el archivo de propiedades"
+
+#: ../java/java_cli_devices.rst:238
+msgid "Construct an event that needs to be published"
+msgstr ""
+"Construir un suceso que debe publicarse"
+
+#: ../java/java_cli_devices.rst:239
+msgid "Specify the event name and publish the event using publishEventOverHTTP() method as follows,"
+msgstr ""
+"Especifique el nombre de suceso y publique el suceso utilizando el método publishEventOverHTTP() como se describe a continuación,"
+
+#: ../java/java_cli_devices.rst:252
+msgid "The complete code can be found in the device example `HttpDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/device/HttpDeviceEventPublish.java>`__"
+msgstr ""
+"El código completo se puede encontrar en el ejemplo de dispositivo `HttpDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/device/HttpDeviceEventPublish.java>`__"
+
+#: ../java/java_cli_devices.rst:254
+msgid "Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured."
+msgstr ""
+"Según los valores del archivo de propiedades, el método publishEventOverHTTP() publica el suceso en Quickstart o en un flujo registrado. Cuando el ID de la organización citado en el archivo de propiedades es quickstart, el método publishEventOverHTTP() publica el suceso en un servicio de inicio rápido de Internet of Things Foundation con formato HTTP simple. No obstante, cuando se cita una organización registrada válida en el archivo de propiedades, este método siempre publica el suceso en HTTPS (HTTP sobre SSL), para que toda la comunicación sea segura. "
+
+#: ../java/java_cli_devices.rst:256
+msgid "The event in HTTP(s) is published at most once QoS, so the device needs to implement the retry logic when there is an error."
+msgstr ""
+"El suceso en HTTP(s) se publica como máximo una vez (QoS), por lo que el dispositivo debe implementar la lógica de reintentos cuando se produce un error. "
+
+#: ../java/java_cli_devices.rst:261
+msgid "Handling commands"
+msgstr ""
+"Manejo de mandatos"
+
+#: ../java/java_cli_devices.rst:262
+msgid "When the device client connects it automatically subscribes to any commands for this device. To process specific commands you need to register a command callback method. The messages are returned as an instance of the Command class which has the following properties:"
+msgstr ""
+"Cuando el cliente de dispositivo se conecta, se suscribe automáticamente a todos los mandatos para este dispositivo. Para procesar mandatos específicos, necesita registrar un método de devolución de llamada de mandato. Los mensajes se devuelven como una instancia de la clase de mandato que tiene las propiedades siguientes:"
+
+#: ../java/java_cli_devices.rst:265
+msgid "payload - java.lang.String"
+msgstr ""
+"payload - java.lang.String"
+
+#: ../java/java_cli_devices.rst:266
+msgid "format - java.lang.String"
+msgstr ""
+"format - java.lang.String"
+
+#: ../java/java_cli_devices.rst:267
+msgid "command - java.lang.String"
+msgstr ""
+"command - java.lang.String"
+
+#: ../java/java_cli_devices.rst:268
+msgid "timestamp - org.joda.time.DateTime"
+msgstr ""
+"timestamp - org.joda.time.DateTime"
+

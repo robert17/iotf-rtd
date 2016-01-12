@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,124 +16,143 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\messaging\payload.rst:2
+#: ../messaging/payload.rst:2
 msgid "Message Payload"
 msgstr ""
+"消息有效内容"
 
-#: ..\docs\messaging\payload.rst:4
-msgid ""
-"The Foundation supports sending and recieving messages in any format, "
-"however we recommend the use of JSON and the IOTF event format "
-"specification."
+#: ../messaging/payload.rst:4
+msgid "The Foundation supports sending and recieving messages in any format, however we recommend the use of JSON and the IoTF event format specification."
 msgstr ""
+"Foundation 支持发送和接收任何格式的消息，但是我们建议使用 JSON 和 IoTF 事件格式规范。"
 
-#: ..\docs\messaging\payload.rst:13
-msgid "IOTF JSON Payload Specification"
+#: ../messaging/payload.rst:9
+msgid "IoTF Maximum Message Payload Size"
 msgstr ""
+"IoTF 最大消息有效内容大小"
 
-#: ..\docs\messaging\payload.rst:15
-msgid ""
-"It is simple to create a JSON message that meets the IOTF specification."
+#: ../messaging/payload.rst:11
+msgid "The maximum payload size is 4 kilobytes (kB).  If messages with payloads larger than this limit are sent, the client will be disconnected and the following log message will appear in the Diagnostic Logs if the client is a device:"
 msgstr ""
+"最大有效内容大小为 4 千字节 (kB)。如果发送的消息有效内容超出了该限制，那么在客户机为设备的情况下，将会断开该客户机连接，并在“诊断日志”中显示以下日志消息："
 
-#: ..\docs\messaging\payload.rst:17
-msgid ""
-"The message must be a valid JSON object (not an array) with only two top "
-"level elements: **d** and **ts**"
+#: ../messaging/payload.rst:15
+msgid "Closed connection from x.x.x.x. The message size is too large for this endpoint."
 msgstr ""
+"已关闭来自 x.x.x.x 的连接。消息大小对该端点来说过大。"
 
-#: ..\docs\messaging\payload.rst:19
+#: ../messaging/payload.rst:22
+msgid "IoTF JSON Payload Specification"
+msgstr ""
+"IoTF JSON 有效内容规范"
+
+#: ../messaging/payload.rst:24
+msgid "It is simple to create a JSON message that meets the IoTF specification."
+msgstr ""
+"可轻松创建符合 IoTF 规范的 JSON 消息。"
+
+#: ../messaging/payload.rst:26
+msgid "The message must be a valid JSON object (not an array) with only two top level elements: **d** and **ts**"
+msgstr ""
+"消息必须为有效 JSON 对象（而不是数组），并且仅包含两个顶级元素：**d** 和 **ts**"
+
+#: ../messaging/payload.rst:28
 msgid "The message must be UTF-8 encoded"
 msgstr ""
+"消息必须为 UTF-8 编码消息"
 
-#: ..\docs\messaging\payload.rst:22
+#: ../messaging/payload.rst:31
 msgid "Data"
 msgstr ""
+"数据"
 
-#: ..\docs\messaging\payload.rst:23
-msgid ""
-"The **d** element is where you include all data for the event (or command) "
-"being transmitted in the message."
+#: ../messaging/payload.rst:32
+msgid "The **d** element is where you include all data for the event (or command) being transmitted in the message."
 msgstr ""
+"您将在 **d** 元素中包含消息中所传输的事件（或命令）的所有数据。"
 
-#: ..\docs\messaging\payload.rst:26
-msgid ""
-"This element is required for your message to meet the IOTF message "
-"specification."
+#: ../messaging/payload.rst:35
+msgid "This element is required for your message to meet the IoTF message specification."
 msgstr ""
+"消息需要此元素才能符合 IoTF 消息规范。"
 
-#: ..\docs\messaging\payload.rst:27
+#: ../messaging/payload.rst:36
 msgid "This must always be a JSON object (not an array)"
 msgstr ""
+"这必须始终为 JSON 对象（而不是数组）"
 
-#: ..\docs\messaging\payload.rst:28
-msgid ""
-"In the case where you wish to send no data the **d** element should still be"
-" present, but contain an empty object."
+#: ../messaging/payload.rst:37
+msgid "In the case where you wish to send no data the **d** element should still be present, but contain an empty object."
 msgstr ""
+"如果您不希望发送任何数据，那么 **d** 元素仍应该存在，但包含空对象。"
 
-#: ..\docs\messaging\payload.rst:32
+#: ../messaging/payload.rst:41
 msgid "Example 1 - Simple Data"
 msgstr ""
+"示例 1 - 简单数据"
 
-#: ..\docs\messaging\payload.rst:41
+#: ../messaging/payload.rst:50
 msgid "Example 2 - Complex data"
 msgstr ""
+"示例 2 - 复杂数据"
 
-#: ..\docs\messaging\payload.rst:58
+#: ../messaging/payload.rst:67
 msgid "Example 3 - No data"
 msgstr ""
+"示例 3 - 无数据"
 
-#: ..\docs\messaging\payload.rst:67
+#: ../messaging/payload.rst:76
 msgid "Timestamp"
 msgstr ""
+"时间戳记"
 
-#: ..\docs\messaging\payload.rst:69
-msgid ""
-"The **ts** element allows you to associate a timestamp with the event (or "
-"command). This is an optional element, if included its value should be a "
-"valid ISO8601 encoded timestamp string."
+#: ../messaging/payload.rst:78
+msgid "The **ts** element allows you to associate a timestamp with the event (or command). This is an optional element, if included its value should be a valid ISO8601 encoded timestamp string."
 msgstr ""
+"**ts** 元素允许您将时间戳记与事件（或命令）关联。这是可选元素，如果包含此元素，那么其值必须为有效的 ISO8601 编码时间戳记字符串。"
 
-#: ..\docs\messaging\payload.rst:89
+#: ../messaging/payload.rst:98
 msgid "Custom JSON payloads"
 msgstr ""
+"定制 JSON 有效内容"
 
-#: ..\docs\messaging\payload.rst:90
-msgid ""
-"The IOT Foundation is designed to be open, you may send your event and "
-"command data in any format you choose, however if you choose to send data in"
-" a custom format it will limit some features of the service which can only "
-"function with a known payload format."
+#: ../messaging/payload.rst:99
+msgid "The IoT Foundation is designed to be open, you may send your event and command data in any format you choose, however if you choose to send data in a custom format it will limit some features of the service which can only function with a known payload format."
 msgstr ""
+"IoT Foundation 设计为开放产品，您可以发送任何所选格式的事件和命令数据，但是，如果您选择发送定制格式的数据，那么它将限制服务的一些功能，使之仅适用于某种已知有效内容格式。"
 
-#: ..\docs\messaging\payload.rst:94
-msgid ""
-"Below are a number of example payloads that are close the to the IOTF "
-"specification, but do not quite match it.  Each would be treated as a custom"
-" JSON payload."
+#: ../messaging/payload.rst:103
+msgid "Below are a number of example payloads that are close to the IoTF specification, but do not quite match it.  Each would be treated as a custom JSON payload."
 msgstr ""
+"以下是一些接近 IoTF 规范但不完全匹配的有效内容示例。每个都将作为定制 JSON 有效内容进行处理。"
 
-#: ..\docs\messaging\payload.rst:97
+#: ../messaging/payload.rst:106
 msgid "**Example 1**"
 msgstr ""
+"**示例 1**"
 
-#: ..\docs\messaging\payload.rst:99
+#: ../messaging/payload.rst:108
 msgid "Root node is a JSON array"
 msgstr ""
+"根节点为 JSON 数组"
 
-#: ..\docs\messaging\payload.rst:123
+#: ../messaging/payload.rst:132
 msgid "**Example 2**"
 msgstr ""
+"**示例 2**"
 
-#: ..\docs\messaging\payload.rst:125
+#: ../messaging/payload.rst:134
 msgid "\"d\" node is a JSON array"
 msgstr ""
+"“d”节点为 JSON 数组"
 
-#: ..\docs\messaging\payload.rst:134
+#: ../messaging/payload.rst:143
 msgid "**Example 3**"
 msgstr ""
+"**示例 3**"
 
-#: ..\docs\messaging\payload.rst:136
+#: ../messaging/payload.rst:145
 msgid "Unexpected node at root level"
 msgstr ""
+"根级别出现意外节点"
+

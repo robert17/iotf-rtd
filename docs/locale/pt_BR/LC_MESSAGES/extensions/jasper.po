@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../extensions/jasper.rst:2
+msgid "Jasper Integration in the IBM Internet of Things Foundation platform"
+msgstr ""
+"Integração Jasper na plataforma IBM Internet of Things Foundation "
+
+#: ../extensions/jasper.rst:5
+msgid "What is Jasper?"
+msgstr ""
+"O que é Jasper?"
+
+#: ../extensions/jasper.rst:7
+msgid "Jasper is an administration and management platform for SIM devices. Jasper has been integrated into the IBM IoT Foundation platform dashboard, making it possible to administer Jasper devices through your IoTF platform organization dashboard."
+msgstr ""
+"Jasper é uma plataforma de administração e gerenciamento para dispositivos SIM. O Jasper foi integrado no painel da plataforma IBM IoT Foundation, tornando possível a administrar dispositivos Jasper através do painel da organização de plataforma IoTF. "
+
+#: ../extensions/jasper.rst:10
+msgid "What Operations can I perform with Jasper through IoTF?"
+msgstr ""
+"Quais operações podem executar com o Jasper através do IoTF? "
+
+#: ../extensions/jasper.rst:12
+msgid "By using the built-in Jasper functions in the Internet of Things Foundation platform dashboard, you can perform the following Jasper operations:"
+msgstr ""
+"Utilizando as funções integradas do Jasper no painel do Internet of Things Foundation plataforma, é possível executar as seguintes operações: "
+
+#: ../extensions/jasper.rst:14
+msgid "View SIM usage"
+msgstr ""
+"Visualizar o uso do SIM "
+
+#: ../extensions/jasper.rst:15
+msgid "Change SIM activation state."
+msgstr ""
+"Alterar estado de ativação do SIM. "
+
+#: ../extensions/jasper.rst:16
+#: ../extensions/jasper.rst:69
+msgid "Send SMS to SIM"
+msgstr ""
+"Enviar SMS para o SIM "
+
+#: ../extensions/jasper.rst:17
+#: ../extensions/jasper.rst:70
+msgid "Change rate plan"
+msgstr ""
+"Alterar o plano de taxa "
+
+#: ../extensions/jasper.rst:19
+msgid "These operations can be accessed in the device drilldown of a Jasper connected device after the configuration steps below are completed."
+msgstr ""
+"Essas operações podem ser acessadas no drill down do dispositivo de um dispositivo conectado Jasper, após as etapas de configuração a seguir serem concluídas. "
+
+#: ../extensions/jasper.rst:23
+msgid "Integrating my Jasper dashboard into my IoT Foundation Dashboard"
+msgstr ""
+"Integrando o meu painel Jasper em meu painel IoT Foundation"
+
+#: ../extensions/jasper.rst:25
+msgid "In order to connect your Internet of Things Foundation platform organization with your Jasper account, there are two stages of configuration which must first be performed. The first stage of configuration is Organization Configuration."
+msgstr ""
+"Para conectar a sua organização de plataforma do Internet of Things Foundation com a sua conta Jasper, há dois estágios da configuração que devem ser executados primeiro. O primeiro estágio de configuração é de Configuração da Organização. "
+
+#: ../extensions/jasper.rst:28
+msgid "Organization Configuration"
+msgstr ""
+"Configuração da Organização"
+
+#: ../extensions/jasper.rst:30
+msgid "To connect your Jasper account to your Internet of Things Foundation platform organization, follow these steps:"
+msgstr ""
+"Para conectar a conta Jasper em sua organização de plataforma do Internet of Things Foundation, siga estas etapas: "
+
+#: ../extensions/jasper.rst:32
+msgid "When in your Internet of Things Foundation platform dashboard, click the wrench icon on the right to open the Configuration Settings."
+msgstr ""
+"Quando no painel do Internet of Things Foundation plataforma, clique no ícone de chave inglesa à direita para abrir as Definições de Configuração. "
+
+#: ../extensions/jasper.rst:33
+msgid "Scroll down the to the Extensions section, and set Jasper to 'On'."
+msgstr ""
+"Role para baixo para a seção Extensões e configure Jasper para 'On'. "
+
+#: ../extensions/jasper.rst:34
+msgid "Enter your Jasper username, password, license key, and API endpoint."
+msgstr ""
+"Insira nome de usuário, senha, chave de licença e o terminal da API do Jasper. "
+
+#: ../extensions/jasper.rst:37
+msgid "Device Configuration"
+msgstr ""
+"Configuração de Dispositivo"
+
+#: ../extensions/jasper.rst:39
+msgid "Devices which are connected to both your Internet of Things Foundation platform organization and your Jasper account can be configured to display data from Jasper in the IoT Foundation platform dashboard. Jasper configuration cannot be applied as part of the Add Device process, only already connected devices can be configured with Jasper. To configure your Jasper-connected devices, follow these steps:"
+msgstr ""
+"Os dispositivos que estão conectados à organização de plataforma do Internet of Things Foundation e sua conta Jasper podem ser configurados para exibir dados do Jasper no painel da plataforma IoT Foundation. A configuração do Jasper não pode ser aplicada como parte do processo Incluir Dispositivo, apenas dispositivos já conectados podem ser configurados com o Jasper. Para configurar os dispositivos conectados por Jasper, siga estas etapas: "
+
+#: ../extensions/jasper.rst:41
+msgid "In the devices tab of your Internet of Things Foundation platform dashboard, find the Jasper-connected device to be configured."
+msgstr ""
+"Na guia de dispositivos do painel de plataforma do Internet of Things Foundation, localize o dispositivo conectado por Jasper a ser configurado. "
+
+#: ../extensions/jasper.rst:42
+msgid "Select the device to open the Device Drilldown view."
+msgstr ""
+"Selecione o dispositivo para abrir a visualização de Drilldown do Dispositivo. "
+
+#: ../extensions/jasper.rst:43
+msgid "Scroll down to the 'Extension Configuration section. The extension configuration must be entered as JSON in the following format:"
+msgstr ""
+"Role para baixo até a seção Configuração da 'Extensão. A configuração de extensão deve ser inserida como JSON no seguinte formato: "
+
+#: ../extensions/jasper.rst:53
+msgid "When this has been entered, click 'Confirm changes' to save the configuration."
+msgstr ""
+"Quando isso tiver sido inserido, clique em 'Confirmar alterações' para salvar a configuração. "
+
+#: ../extensions/jasper.rst:55
+msgid "If the Organization configuration has been completed correctly, the Extensions section should now appear below the Extensions Configuration section in the Device Drilldown."
+msgstr ""
+"Se a configuração da Organização tiver sido concluída corretamente, a seção Extensões deve agora aparecer abaixo da seção Configuração das Extensões no Drilldown de dispositivo. "
+
+#: ../extensions/jasper.rst:58
+msgid "Operations"
+msgstr ""
+"Operações"
+
+#: ../extensions/jasper.rst:60
+msgid "Jaspers operations can be viewed or updated in the device drilldown menu for any devices which are connected to both your Internet of Things Foundation platform organization and Jasper, and have been configured as explained above. The supported Jasper operations are:"
+msgstr ""
+"As operações Jaspers podem ser visualizadas ou atualizadas no menu de drilldown de dispositivo para quaisquer dispositivos que estão conectados à organização de plataforma do Internet of Things Foundation e Jasper e foram configurados conforme explicado acima. As operações Jasper suportadas são:"
+
+#: ../extensions/jasper.rst:62
+msgid "View overall Jasper data - Shows: Status, Rate Plan, month-to-date data usage, month-to-date SMS usage, month-to-date voice usage, overage limits, date added, and date modified."
+msgstr ""
+"Visualizar dados Jasper em geral - Exibe: Status, Plano de Taxa, uso de dados mensal, uso de SMS mensal, uso de voz mensal, limites excedentes, data de inclusão e data de modificação."
+
+#: ../extensions/jasper.rst:64
+msgid "Change SIM activation state. - Select from: Inventory, Activation Ready, Activated, Deactivated, and Retired."
+msgstr ""
+"Alterar estado de ativação do SIM. - Selecione: Inventário, Ativação Pronta, Ativado, Desativado e Obsoleto."
+
+#: ../extensions/jasper.rst:66
+msgid "View SIM Usage - Shows: Cycle start date, billable and total data, billable and total SMS, billable and total voice. - The cycle start date can be set using a YYYY-MM-DD format."
+msgstr ""
+"Visualize o uso do SIM - Mostra: data de início do ciclo, dados cobrável e total, SMS cobrável e total, voz cobrável e total. - A data de início do ciclo de podem ser configurados utilizando um formato DD-MM-AAAA."
+

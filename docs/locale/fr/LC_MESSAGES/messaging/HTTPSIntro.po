@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSIntro.rst:2
+msgid "HTTP(S) Connectivity with the Internet of Things Foundation"
+msgstr ""
+"Connectivité HTTP(S) avec Internet of Things Foundation"
+
+#: ../messaging/HTTPSIntro.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"Le protocole de messagerie HTTP(S) permet à des terminaux et à des applications d'interagir avec IBM Internet of Things Foundation. Il peut être utilisé à la place du `protocole de messagerie MQTT <../messaging/mqtt.html>`__ et des `bibliothèques client facultatives <../libraries/programmingguides.html>`__."
+
+#: ../messaging/HTTPSIntro.rst:6
+msgid "All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation."
+msgstr ""
+"Tous les terminaux peuvent utiliser le protocole HTTP(S) pour communiquer avec Internet of Things Foundation sans nécessiter d'opérations d'installation supplémentaires."
+
+#: ../messaging/HTTPSIntro.rst:8
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"Le protocole HTTP(S) permet à des terminaux et à des applications d'envoyer des messages d'événement à Internet of Things Foundation. Pour plus d'informations, reportez-vous aux rubriques suivantes :"
+
+#: ../messaging/HTTPSIntro.rst:10
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"`Connectivité HTTP(S) pour les terminaux <../messaging/HTTPSDevice.html>`__."
+
+#: ../messaging/HTTPSIntro.rst:11
+msgid "`HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__."
+msgstr ""
+"`Connectivité HTTP(S) pour les applications <../messaging/HTTPSApplications.html>`__."
+
+#: ../messaging/HTTPSIntro.rst:13
+msgid "Please Note: Devices and applications cannot use the HTTP(S) protocol to issue commands."
+msgstr ""
+"Remarque : Les terminaux et les applications ne peuvent pas utiliser le protocole HTTP(S) pour exécuter des commandes."
+
+#: ../messaging/HTTPSIntro.rst:17
+msgid "HTTP(S) Request"
+msgstr ""
+"Demande HTTP(S)"
+
+#: ../messaging/HTTPSIntro.rst:19
+msgid "HTTP(S) requests for applications and devices must be issued to the originating organization's unique endpoint. The organization endpoint uses the following format:"
+msgstr ""
+"Les demandes HTTP(S) applicables aux applications et aux terminaux doivent être adressées au noeud final unique de l'organisation d'origine. Le noeud final de l'organisation utilise le format suivant :"
+
+#: ../messaging/HTTPSIntro.rst:25
+msgid "Only HTTPS can be used with registered organizations. When using HTTPS with a registered organization, the data, including the issuer's credentials are encrypted. HTTP is supported in the Quickstart environment only."
+msgstr ""
+"Seul HTTPS peut être utilisé avec des organisations enregistrées. Lorsque vous utilisez HTTPS avec une organisation enregistrée, les données, y compris les données d'identification de l'émetteur, sont chiffrées. HTTP est pris en charge uniquement dans l'environnement Quickstart."
+
+#: ../messaging/HTTPSIntro.rst:29
+msgid "Quality of Service"
+msgstr ""
+"Qualité de service"
+
+#: ../messaging/HTTPSIntro.rst:31
+msgid "The HTTP(S) protocol provides \"at most once\" best effort delivery, analagous to the QoS0 quality of service provided by the MQTT protocol. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery."
+msgstr ""
+"Le protocole HTTP(S) assure une distribution \"une fois tout au plus\", qui est comparable à la qualité de service QoS0 fournie par le protocole MQTT. Lorsque vous utilisez QoS0, ou le niveau équivalent disponible avec le protocole HTTP(S), pour distribuer les messages d'événement, le terminal ou l'application doit mettre en oeuvre une logique de relance pour assurer la distribution."
+
+#: ../messaging/HTTPSIntro.rst:33
+msgid "For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation."
+msgstr ""
+"Pour plus d'informations sur le protocole MQTT et les niveaux de qualité de service, reportez-vous à la documentation `MQTT pour Internet of Things Foundation <../messaging/mqtt.html>`__."
+

@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../extensions/jasper.rst:2
+msgid "Jasper Integration in the IBM Internet of Things Foundation platform"
+msgstr ""
+"IBM Internet of Things Foundation 平台中的 Jasper 集成"
+
+#: ../extensions/jasper.rst:5
+msgid "What is Jasper?"
+msgstr ""
+"什么是 Jasper？"
+
+#: ../extensions/jasper.rst:7
+msgid "Jasper is an administration and management platform for SIM devices. Jasper has been integrated into the IBM IoT Foundation platform dashboard, making it possible to administer Jasper devices through your IoTF platform organization dashboard."
+msgstr ""
+"Jasper 是一个用于 SIM 设备的管理平台。Jasper 已集成到 IBM IoT Foundation 平台仪表板中，使您可以通过 IoTF 平台组织仪表板来管理 Jasper 设备。"
+
+#: ../extensions/jasper.rst:10
+msgid "What Operations can I perform with Jasper through IoTF?"
+msgstr ""
+"可以通过 IoTF 使用 Jasper 执行哪些操作？"
+
+#: ../extensions/jasper.rst:12
+msgid "By using the built-in Jasper functions in the Internet of Things Foundation platform dashboard, you can perform the following Jasper operations:"
+msgstr ""
+"通过使用 Internet of Things Foundation 平台仪表板中内置的 Jasper 功能，您可以执行以下 Jasper 操作："
+
+#: ../extensions/jasper.rst:14
+msgid "View SIM usage"
+msgstr ""
+"查看 SIM 使用情况"
+
+#: ../extensions/jasper.rst:15
+msgid "Change SIM activation state."
+msgstr ""
+"更改 SIM 激活状态。"
+
+#: ../extensions/jasper.rst:16
+#: ../extensions/jasper.rst:69
+msgid "Send SMS to SIM"
+msgstr ""
+"将 SMS 发送到 SIM"
+
+#: ../extensions/jasper.rst:17
+#: ../extensions/jasper.rst:70
+msgid "Change rate plan"
+msgstr ""
+"更改套餐"
+
+#: ../extensions/jasper.rst:19
+msgid "These operations can be accessed in the device drilldown of a Jasper connected device after the configuration steps below are completed."
+msgstr ""
+"完成以下配置步骤后，可以在连接 Jasper 的设备的设备向下钻取中访问这些操作。"
+
+#: ../extensions/jasper.rst:23
+msgid "Integrating my Jasper dashboard into my IoT Foundation Dashboard"
+msgstr ""
+"将 Jasper 仪表板集成到 IoT Foundation 仪表板中"
+
+#: ../extensions/jasper.rst:25
+msgid "In order to connect your Internet of Things Foundation platform organization with your Jasper account, there are two stages of configuration which must first be performed. The first stage of configuration is Organization Configuration."
+msgstr ""
+"为了将 Internet of Things Foundation 平台组织与您的 Jasper 帐户进行连接，必须先执行两个配置阶段。第一个配置阶段是组织配置。"
+
+#: ../extensions/jasper.rst:28
+msgid "Organization Configuration"
+msgstr ""
+"组织配置"
+
+#: ../extensions/jasper.rst:30
+msgid "To connect your Jasper account to your Internet of Things Foundation platform organization, follow these steps:"
+msgstr ""
+"要将您的 Jasper 帐号连接到 Internet of Things Foundation 平台组织，请遵循以下步骤："
+
+#: ../extensions/jasper.rst:32
+msgid "When in your Internet of Things Foundation platform dashboard, click the wrench icon on the right to open the Configuration Settings."
+msgstr ""
+"如果是在 Internet of Things Foundation 平台仪表板中，请单击右侧的扳手图标来打开配置设置。"
+
+#: ../extensions/jasper.rst:33
+msgid "Scroll down the to the Extensions section, and set Jasper to 'On'."
+msgstr ""
+"向下滚动到扩展部分，并将 Jasper 设置为“开启”。"
+
+#: ../extensions/jasper.rst:34
+msgid "Enter your Jasper username, password, license key, and API endpoint."
+msgstr ""
+"输入您的 Jasper 用户名、密码、许可证密钥和 API 端点。"
+
+#: ../extensions/jasper.rst:37
+msgid "Device Configuration"
+msgstr ""
+"设备配置"
+
+#: ../extensions/jasper.rst:39
+msgid "Devices which are connected to both your Internet of Things Foundation platform organization and your Jasper account can be configured to display data from Jasper in the IoT Foundation platform dashboard. Jasper configuration cannot be applied as part of the Add Device process, only already connected devices can be configured with Jasper. To configure your Jasper-connected devices, follow these steps:"
+msgstr ""
+"可以配置同时连接到 Internet of Things Foundation 平台组织和 Jasper 帐户的设备，以在 IoT Foundation 平台仪表板中显示 Jasper 的数据。Jasper 配置不能用作“添加设备”流程的一部分，只有已连接的设备可以配置 Jasper。要配置与 Jasper 连接的设备，请遵循以下步骤："
+
+#: ../extensions/jasper.rst:41
+msgid "In the devices tab of your Internet of Things Foundation platform dashboard, find the Jasper-connected device to be configured."
+msgstr ""
+"在 Internet of Things Foundation 平台仪表板的设备选项卡中，查找要配置的与 Jasper 连接的设备。"
+
+#: ../extensions/jasper.rst:42
+msgid "Select the device to open the Device Drilldown view."
+msgstr ""
+"选择设备以打开“设备向下钻取”视图。"
+
+#: ../extensions/jasper.rst:43
+msgid "Scroll down to the 'Extension Configuration section. The extension configuration must be entered as JSON in the following format:"
+msgstr ""
+"向下滚动到“扩展配置”部分。必须采用以下格式作为 JSON 输入扩展配置："
+
+#: ../extensions/jasper.rst:53
+msgid "When this has been entered, click 'Confirm changes' to save the configuration."
+msgstr ""
+"输入该项后，请单击“确认更改”保存配置。"
+
+#: ../extensions/jasper.rst:55
+msgid "If the Organization configuration has been completed correctly, the Extensions section should now appear below the Extensions Configuration section in the Device Drilldown."
+msgstr ""
+"如果组织配置已正确完成，扩展部分现在应显示在“设备向下钻取”中的“扩展配置”部分下。"
+
+#: ../extensions/jasper.rst:58
+msgid "Operations"
+msgstr ""
+"操作"
+
+#: ../extensions/jasper.rst:60
+msgid "Jaspers operations can be viewed or updated in the device drilldown menu for any devices which are connected to both your Internet of Things Foundation platform organization and Jasper, and have been configured as explained above. The supported Jasper operations are:"
+msgstr ""
+"对于同时连接到 Internet of Things Foundation 平台组织和 Jasper，且已按照上文所述进行配置的任何设备，都可以在设备向下钻取菜单中查看或更新 Jasper 操作。支持的 Jasper 操作为："
+
+#: ../extensions/jasper.rst:62
+msgid "View overall Jasper data - Shows: Status, Rate Plan, month-to-date data usage, month-to-date SMS usage, month-to-date voice usage, overage limits, date added, and date modified."
+msgstr ""
+"查看总体 Jasper 数据 - 显示：状态、套餐、本月至今数据使用情况、本月至今 SMS 使用情况、本月至今语音使用情况、超额限制、添加日期和修改日期。"
+
+#: ../extensions/jasper.rst:64
+msgid "Change SIM activation state. - Select from: Inventory, Activation Ready, Activated, Deactivated, and Retired."
+msgstr ""
+"更改 SIM 激活状态。- 从以下项中选择：库存、可随时激活、已激活、已取消激活和已废弃。"
+
+#: ../extensions/jasper.rst:66
+msgid "View SIM Usage - Shows: Cycle start date, billable and total data, billable and total SMS, billable and total voice. - The cycle start date can be set using a YYYY-MM-DD format."
+msgstr ""
+"查看 SIM 使用情况 - 显示：周期开始日期、计费数据和数据总量、计费 SMS 和 SMS 总量、计费语音和语音总量。- 可以使用 YYYY-MM-DD 格式设定周期开始日期。"
+

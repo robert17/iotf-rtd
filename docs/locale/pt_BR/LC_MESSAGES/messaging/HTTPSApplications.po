@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSApplications.rst:2
+msgid "HTTP(S) Connectivity for Applications"
+msgstr ""
+"Conectividade HTTP(S) para Aplicativos "
+
+#: ../messaging/HTTPSApplications.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"O protocolo de mensagem HTTP(S) pode ser utilizado por dispositivos e aplicativos para interagir com o IBM Internet of Things Foundation. Esse protocolo de mensagens pode ser utilizado no lugar do `protocolo de mensagem MQTT <../messaging/mqtt.html>`__ e as `bibliotecas do cliente opcional <../libraries/programmingguides.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:6
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"O protocolo HTTP(S) pode ser utilizado com dispositivos e aplicativos para enviar mensagens de eventos para o Internet of Things Foundation. Para obter detalhes, consulte:"
+
+#: ../messaging/HTTPSApplications.rst:8
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`Usando o HTTP(S) com o Things Foundation <../messaging/HTTPSIntro.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:9
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"`Conectividade HTTP(S) para Dispositivos <../messaging/HTTPSDevice.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:13
+msgid "Using HTTP(S) with Applications and the Internet of Things Foundation"
+msgstr ""
+"Utilizando HTTP(S) com Aplicativos e o Internet of Things Foundation "
+
+#: ../messaging/HTTPSApplications.rst:15
+msgid "The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"O protocolo HTTP(S) permite que os aplicativos enviem mensagens de eventos para o Internet of Things Foundation enviando uma solicitação POST HTTP(S) para a seguinte URL: "
+
+#: ../messaging/HTTPSApplications.rst:21
+msgid "For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"Para obter detalhes, consulte a documentação da API relevante ` <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. O corpo do pedido (carga útil do evento) pode ter qualquer conteúdo, no entanto, as diretrizes de carga útil da mensagem MQTT devem ser seguidas."
+
+#: ../messaging/HTTPSApplications.rst:23
+msgid "Please Note: An application does not need to be registered before it can issue an HTTP(S) request. When connecting to the Quickstart service, no authentication (or registration) is required, the org_id should be set to \"quickstart\"."
+msgstr ""
+"Nota: Um aplicativo não precisa ser registrado antes de poder emitir uma solicitação HTTP(S). Ao conectar-se ao serviço de iniciação rápida, nenhuma autenticação (ou registro) é necessária, o org_id deve ser configurado como \"quickstart\". "
+
+#: ../messaging/HTTPSApplications.rst:27
+msgid "HTTP(S) Authentication"
+msgstr ""
+"Autenticação HTTP(S)"
+
+#: ../messaging/HTTPSApplications.rst:29
+msgid "HTTP(S) requests must include an Authorization header if they are sent to organizations that require authentication. Basic authentication the only method supported. The username and password must be provided as described below."
+msgstr ""
+"As solicitações HTTP(S) devem incluir um cabeçalho de autorização, se eles são enviados para as organizações que requerem autenticação. A autenticação básica é o único método suportado. O nome do usuário e senha devem ser fornecidos como descrito abaixo."
+
+#: ../messaging/HTTPSApplications.rst:31
+msgid "Applications require an API key to connect to an organization. When the API key is registered, a token will be generated that must be used with that API key."
+msgstr ""
+"Os aplicativos requerem uma chave API para se conectarem a uma organização. Quando a chave API é registrada, é gerado um token que deve ser usado com essa chave API. "
+
+#: ../messaging/HTTPSApplications.rst:33
+msgid "API keys use the following format:"
+msgstr ""
+"As chaves da API usam o formato a seguir: "
+
+#: ../messaging/HTTPSApplications.rst:35
+msgid "``a-org_id-a84ps90Ajs``"
+msgstr ""
+"``a-org_id-a84ps90Ajs``"
+
+#: ../messaging/HTTPSApplications.rst:37
+msgid "The token will follow the format of this example:"
+msgstr ""
+"O token seguirá o formato deste exemplo: "
+
+#: ../messaging/HTTPSApplications.rst:39
+msgid "``MP$08VKz!8rXwnR-Q*``"
+msgstr ""
+"``MP$08VKz!8rXwnR-Q*``"
+
+#: ../messaging/HTTPSApplications.rst:43
+msgid "Username"
+msgstr ""
+"Nome do usuário"
+
+#: ../messaging/HTTPSApplications.rst:45
+msgid "In an HTTP(S) request, the API key must be used as the username."
+msgstr ""
+"Em um pedido de HTTP(S), a chave API deve ser utilizada como o nome do usuário. "
+
+#: ../messaging/HTTPSApplications.rst:49
+msgid "Password"
+msgstr ""
+"Senha"
+
+#: ../messaging/HTTPSApplications.rst:51
+msgid "In an HTTP(S) request, the generated token must be used as the password."
+msgstr ""
+"Em um pedido de HTTP(S), o token gerado deve ser utilizado como a senha. "
+

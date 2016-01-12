@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,319 +16,343 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:3
+#: ../libraries/python_cli_for_apps.rst:3
 msgid "Python Client Library - Applications"
 msgstr ""
+"Python 클라이언트 라이브러리 - 애플리케이션"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:6
+#: ../libraries/python_cli_for_apps.rst:6
 msgid "Introduction"
 msgstr ""
+"소개"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:8
-msgid ""
-"This client library describes how to use applications with the python "
-"ibmiotf module. For help with getting started with this module, see `Python "
-"Client Library - Introduction "
-"<https://docs.internetofthings.ibmcloud.com/libraries/python.html#/>`__."
+#: ../libraries/python_cli_for_apps.rst:8
+msgid "This client library describes how to use applications with the python ibmiotf module. For help with getting started with this module, see `Python Client Library - Introduction <../libraries/python.html#/>`__."
 msgstr ""
+"이 클라이언트 라이브러리는 Python ibmiotf 모듈을 가진 애플리케이션을 사용하는 방법에 대해 설명합니다. 이 모듈을 시작하는 방법은 `Python 클라이언트 라이브러리 - 소개 <../libraries/python.html#/>`__를 참조하십시오."
 
-#: ..\docs\libraries\python_cli_for_apps.rst:10
-msgid ""
-"This client library is divided into two sections, both included within the "
-"library. This section contains information on how applications interact with"
-" devices using the Python ibmiotf module, and the Devices section contains "
-"information on how devices can use the ibmiotf module publish events and "
-"handle commands."
+#: ../libraries/python_cli_for_apps.rst:10
+msgid "This client library is divided into two sections, both included within the library. This section contains information on how applications interact with devices using the Python ibmiotf module, and the Devices section contains information on how devices can use the ibmiotf module publish events and handle commands."
 msgstr ""
+"이 클라이언트 라이브러리는 두 개의 절로 구성되며 두 개의 절 모두 라이브러리에 포함되어 있습니다. 이 절에는 애플리케이션이 Python ibmiotf 모듈을 사용하여 디바이스와 상호작용하는 방법에 대한 정보가 포함되어 있고 디바이스 절에는 디바이스가 ibmiotf 모듈 공개 이벤트를 사용하고 명령을 처리하는 방법에 대한 정보가 포함되어 있습니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:13
+#: ../libraries/python_cli_for_apps.rst:13
 msgid "Constructor"
 msgstr ""
+"생성자"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:15
-msgid ""
-"The constructor builds the client instance, and accepts an options dict "
-"containing the following definitions:"
+#: ../libraries/python_cli_for_apps.rst:15
+msgid "The constructor builds the client instance, and accepts an options dict containing the following definitions:"
 msgstr ""
+"생성자는 클라이언트 인스턴스를 빌드하고 다음과 같은 정의가 포함된 옵션 dict를 승인합니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:17
+#: ../libraries/python_cli_for_apps.rst:17
 msgid "org - Your organization ID."
 msgstr ""
+"org - 조직 ID. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:18
+#: ../libraries/python_cli_for_apps.rst:18
 msgid "id - The unique ID of your application within your organization."
 msgstr ""
+"id - 조직 내 애플리케이션의 고유 ID. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:19
-msgid ""
-"auth-method - Method of authentication (the only value currently supported "
-"is \"apikey\")."
+#: ../libraries/python_cli_for_apps.rst:19
+msgid "auth-method - Method of authentication (the only value currently supported is \"apikey\")."
 msgstr ""
+"auth-method - 인증 방법(현재 지원되는 유일한 값은 \"apikey\"임). "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:20
+#: ../libraries/python_cli_for_apps.rst:20
 msgid "auth-key - API key (required if auth-method is \"apikey\")."
 msgstr ""
+"auth-key - API 키(auth-method가 \"apikey\"인 경우에는 필수). "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:21
+#: ../libraries/python_cli_for_apps.rst:21
 msgid "auth-token - API key token (required if auth-method is \"apikey\")."
 msgstr ""
+"auth-token - API 키 토큰(auth-method가 \"apikey\"인 경우에는 필수). "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:23
-msgid ""
-"If no options dict is provided, the client will connect to the Internet of "
-"Things Foundation Quickstart, and default to an unregistered device. The "
-"options dict creates definitions which are used to interact with the "
-"Internet of Things Foundation module."
+#: ../libraries/python_cli_for_apps.rst:23
+msgid "If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the Internet of Things Foundation module."
 msgstr ""
+"옵션 dict가 제공되지 않는 경우 클라이언트는 Internet of Things Foundation Quickstart에 연결하며 등록되지 않은 디바이스로 기본값이 설정됩니다. 옵션 dict는 Internet of Things Foundation 모듈과 상호작용하는 데 사용되는 정의를 작성합니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:42
+#: ../libraries/python_cli_for_apps.rst:42
 msgid "Using a configuration file"
 msgstr ""
+"구성 파일 사용"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:44
-msgid ""
-"Instead of including an options dict directly, you can use a configuration "
-"file containing an options dict. If you are using a configuration file "
-"containing an options dict, use the following code format."
+#: ../libraries/python_cli_for_apps.rst:44
+msgid "If you are not using an options dict as shown above, you include a configuration file containing an options dict. If you are using a configuration file containing an options dict, use the following code format."
 msgstr ""
+"위에 표시된 대로 옵션 dict를 사용하지 않는 경우에는 옵션 dict가 포함된 구성 파일을 포함하십시오. 옵션 dict가 포함된 구성 파일을 사용하는 경우에는 다음의 코드 형식을 사용하십시오. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:55
+#: ../libraries/python_cli_for_apps.rst:55
 msgid "The application configuration file must be in the following format:"
 msgstr ""
+"애플리케이션 구성 파일의 형식은 다음 형식이어야 합니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:71
+#: ../libraries/python_cli_for_apps.rst:71
 msgid "Subscribing to device events"
 msgstr ""
+"디바이스 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:72
-msgid ""
-"Events are the mechanism by which devices publish data to the Internet of "
-"Things Foundation. The device controls the content of the event and assigns "
-"a name for each event it sends."
+#: ../libraries/python_cli_for_apps.rst:72
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
 msgstr ""
+"이벤트는 디바이스가 Internet of Things Foundation에 데이터를 공개하는 데 사용하는 메커니즘입니다. 디바이스는 이벤트의 컨텐츠를 제어하고 전송하는 각 이벤트에 대해 이름을 지정합니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:74
-msgid ""
-"When an event is received by the IOT Foundation the credentials of the "
-"connection on which the event was received are used to determine from which "
-"device the event was sent. With this architecture it is impossible for a "
-"device to impersonate another device."
+#: ../libraries/python_cli_for_apps.rst:74
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
 msgstr ""
+"IoT Foundation이 이벤트를 수신하면 이벤트가 수신된 연결의 신임 정보를 사용하여 이벤트를 전송한 디바이스를 판별합니다. 이 아키텍처를 사용하면 한 디바이스가 다른 디바이스를 위장할 수 없습니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:76
-msgid ""
-"By default, applications will subscribe to all events from all connected "
-"devices. Use the type, id, event and msgFormat parameters to control the "
-"scope of the subscription. A single client can support multiple "
-"subscriptions. The code samples below give examples of how to subscribe to "
-"devices dependent on device type, id, event and msgFormat parameters."
+#: ../libraries/python_cli_for_apps.rst:76
+msgid "By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters."
 msgstr ""
+"기본적으로 애플리케이션은 연결된 모든 디바이스의 모든 이벤트를 구독합니다. 유형, id, 이벤트 및 msgFormat 매개변수를 사용하여 구독의 범위를 제어하십시오. 단일 클라이언트가 여러 구독을 지원할 수 있습니다. 아래의 코드 샘플에서는 디바이스 유형, id, 이벤트 및 msgFormat 매개변수에 종속된 디바이스를 구독하는 방법에 대한 예제를 제공합니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:80
+#: ../libraries/python_cli_for_apps.rst:80
 msgid "To subscribe to all events from all devices"
 msgstr ""
+"모든 디바이스의 모든 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:89
+#: ../libraries/python_cli_for_apps.rst:89
 msgid "To subscribe to all events from all devices of a specific type"
 msgstr ""
+"특정 유형의 모든 디바이스의 모든 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:98
+#: ../libraries/python_cli_for_apps.rst:98
 msgid "To subscribe to a specific event from all devices"
 msgstr ""
+"모든 디바이스의 특정 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:107
+#: ../libraries/python_cli_for_apps.rst:107
 msgid "To subscribe to a specific event from two or more different devices"
 msgstr ""
+"둘 이상의 다른 디바이스의 특정 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:117
+#: ../libraries/python_cli_for_apps.rst:117
 msgid "To subscribe to all events published by a device in json format"
 msgstr ""
+"JSON 형식으로 디바이스가 공개하는 모든 이벤트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:128
+#: ../libraries/python_cli_for_apps.rst:128
 msgid "Handling events from devices"
 msgstr ""
+"디바이스의 이벤트 처리"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:129
-msgid ""
-"To process the events received by your subscroptions you need to register an"
-" event callback method. The messages are returned as an instance of the "
-"Event class:"
+#: ../libraries/python_cli_for_apps.rst:129
+msgid "To process the events received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Event class:"
 msgstr ""
+"구독에 의해 수신된 이벤트를 처리하려면 이벤트 콜백 메소드를 등록해야 합니다. 메시지는 이벤트 클래스의 인스턴스로 리턴됩니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:131
-msgid ""
-"event.device - string (uniquely identifies the device across all types of "
-"devices in the organization)"
+#: ../libraries/python_cli_for_apps.rst:131
+msgid "event.device - string (uniquely identifies the device across all types of devices in the organization)"
 msgstr ""
+"event.device - 문자열(조직에 있는 모든 유형의 디바이스에서 디바이스를 고유하게 식별함)"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:132
+#: ../libraries/python_cli_for_apps.rst:132
 msgid "event.deviceType - string"
 msgstr ""
+"event.deviceType - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:133
+#: ../libraries/python_cli_for_apps.rst:133
 msgid "event.deviceId - string"
 msgstr ""
+"event.deviceId - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:134
+#: ../libraries/python_cli_for_apps.rst:134
 msgid "event.event - string"
 msgstr ""
+"event.event - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:135
+#: ../libraries/python_cli_for_apps.rst:135
 msgid "event.format - string"
 msgstr ""
+"event.format - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:136
+#: ../libraries/python_cli_for_apps.rst:136
 msgid "event.data - dict"
 msgstr ""
+"event.data - dict"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:137
+#: ../libraries/python_cli_for_apps.rst:137
 msgid "event.timestamp - datetime"
 msgstr ""
+"event.timestamp - 날짜/시간"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:155
+#: ../libraries/python_cli_for_apps.rst:155
 msgid "Subscribing to device status"
 msgstr ""
+"디바이스 상태 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:156
-msgid ""
-"By default, this will subscribe to status updates for all connected devices."
-" Use the type and id parameters to control the scope of the subscription. A "
-"single client can support multiple subscriptions."
+#: ../libraries/python_cli_for_apps.rst:156
+msgid "By default, this will subscribe to status updates for all connected devices. Use the type and id parameters to control the scope of the subscription. A single client can support multiple subscriptions."
 msgstr ""
+"기본적으로 이는 연결된 모든 디바이스에 대한 상태 업데이트를 구독합니다. 유형 및 id 매개변수를 사용하여 구독의 범위를 제어하십시오. 단일 클라이언트가 여러 구독을 지원할 수 있습니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:159
+#: ../libraries/python_cli_for_apps.rst:159
 msgid "Subscribe to status updates for all devices"
 msgstr ""
+"모든 디바이스에 대한 상태 업데이트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:168
+#: ../libraries/python_cli_for_apps.rst:168
 msgid "Subscribe to status updates for all devices of a specific type"
 msgstr ""
+"특정 유형의 모든 디바이스에 대한 상태 업데이트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:177
+#: ../libraries/python_cli_for_apps.rst:177
 msgid "Subscribe to status updates for two different devices"
 msgstr ""
+"두 개의 다른 디바이스에 대한 상태 업데이트 구독"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:190
+#: ../libraries/python_cli_for_apps.rst:190
 msgid "Handling status updates from devices"
 msgstr ""
+"디바이스의 상태 업데이트 처리"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:191
-msgid ""
-"To process the status updates received by your subscriptions you need to "
-"register an event callback method. The messages are returned as an instance "
-"of the Status class:"
+#: ../libraries/python_cli_for_apps.rst:191
+msgid "To process the status updates received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Status class:"
 msgstr ""
+"구독에 의해 수신된 상태 업데이트를 처리하려면 이벤트 콜백 메소드를 등록해야 합니다. 메시지는 상태 클래스의 인스턴스로 리턴됩니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:195
-msgid ""
-"The following properties are set for both \"Connect\" and \"Disconnect\" "
-"status events:"
+#: ../libraries/python_cli_for_apps.rst:193
+msgid "The following properties are set for both \"Connect\" and \"Disconnect\" status events:"
 msgstr ""
+"\"연결\" 상태 이벤트와 \"연결 끊기\" 상태 이벤트 모두에 대해 다음과 같은 특성이 설정됩니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:198
+#: ../libraries/python_cli_for_apps.rst:195
 msgid "status.clientAddr - string"
 msgstr ""
+"status.clientAddr - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:199
+#: ../libraries/python_cli_for_apps.rst:196
 msgid "status.protocol - string"
 msgstr ""
+"status.protocol - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:200
+#: ../libraries/python_cli_for_apps.rst:197
 msgid "status.clientId - string"
 msgstr ""
+"status.clientId - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:201
+#: ../libraries/python_cli_for_apps.rst:198
 msgid "status.user - string"
 msgstr ""
+"status.user - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:202
+#: ../libraries/python_cli_for_apps.rst:199
 msgid "status.time - datetime"
 msgstr ""
+"status.time - 날짜/시간"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:203
+#: ../libraries/python_cli_for_apps.rst:200
 msgid "status.action - string"
 msgstr ""
+"status.action - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:204
+#: ../libraries/python_cli_for_apps.rst:201
 msgid "status.connectTime - datetime"
 msgstr ""
+"status.connectTime - 날짜/시간"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:205
-msgid "status.port - int"
+#: ../libraries/python_cli_for_apps.rst:202
+msgid "status.port - integer"
 msgstr ""
+"status.port - 정수"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:207
+#: ../libraries/python_cli_for_apps.rst:204
 msgid "The following properties are only set when the action is \"Disconnect\":"
 msgstr ""
+"다음과 같은 특성은 조치가 \"연결 끊기\"인 경우에만 설정됩니다. "
 
-#: ..\docs\libraries\python_cli_for_apps.rst:209
-msgid "status.writeMsg - int"
+#: ../libraries/python_cli_for_apps.rst:206
+msgid "status.writeMsg - integer"
 msgstr ""
+"status.writeMsg - 정수"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:210
-msgid "status.readMsg - int"
+#: ../libraries/python_cli_for_apps.rst:207
+msgid "status.readMsg - integer"
 msgstr ""
+"status.readMsg - 정수"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:211
+#: ../libraries/python_cli_for_apps.rst:208
 msgid "status.reason - string"
 msgstr ""
+"status.reason - 문자열"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:212
-msgid "status.readBytes - int"
+#: ../libraries/python_cli_for_apps.rst:209
+msgid "status.readBytes - integer"
 msgstr ""
+"status.readBytes - 정수"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:213
-msgid "status.writeBytes - int"
+#: ../libraries/python_cli_for_apps.rst:210
+msgid "status.writeBytes - integer"
 msgstr ""
+"status.writeBytes - 정수"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:234
+#: ../libraries/python_cli_for_apps.rst:231
 msgid "Publishing events from devices"
 msgstr ""
+"디바이스의 이벤트 공개"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:235
+#: ../libraries/python_cli_for_apps.rst:232
 msgid "Applications can publish events as if they originated from a Device"
 msgstr ""
+"애플리케이션은 디바이스에서 시작된 것처럼 이벤트를 공개할 수 있음"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:248
+#: ../libraries/python_cli_for_apps.rst:245
 msgid "Publishing commands to devices"
 msgstr ""
+"디바이스에 명령 공개"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:249
+#: ../libraries/python_cli_for_apps.rst:246
 msgid "Applications can publish commands to connected devices"
 msgstr ""
+"애플리케이션은 연결된 디바이스에 명령을 공개할 수 있음"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:262
+#: ../libraries/python_cli_for_apps.rst:259
 msgid "Retrieve device details"
 msgstr ""
+"디바이스 세부사항 검색"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:265
+#: ../libraries/python_cli_for_apps.rst:262
 msgid "Retrieve details of all registered devices"
 msgstr ""
+"등록된 모든 디바이스의 세부사항 검색"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:274
+#: ../libraries/python_cli_for_apps.rst:271
 msgid "Retrieve details of a specific device"
 msgstr ""
+"특정 디바이스의 세부사항 검색"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:286
+#: ../libraries/python_cli_for_apps.rst:283
 msgid "Register a new device"
 msgstr ""
+"새 디바이스 등록"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:299
+#: ../libraries/python_cli_for_apps.rst:296
 msgid "Delete a device"
 msgstr ""
+"디바이스 삭제"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:313
+#: ../libraries/python_cli_for_apps.rst:310
 msgid "Access historical event data"
 msgstr ""
+"히스토리 이벤트 데이터에 액세스"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:316
+#: ../libraries/python_cli_for_apps.rst:313
 msgid "Get historical event data for a specific device"
 msgstr ""
+"특정 디바이스에 대한 히스토리 이벤트 데이터 가져오기"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:325
+#: ../libraries/python_cli_for_apps.rst:322
 msgid "Get historical event data for all devices of a specific type"
 msgstr ""
+"특정 유형의 모든 디바이스에 대한 히스토리 이벤트 데이터 가져오기"
 
-#: ..\docs\libraries\python_cli_for_apps.rst:334
+#: ../libraries/python_cli_for_apps.rst:331
 msgid "Get historical event data for all devices of all types"
 msgstr ""
+"모든 유형의 모든 디바이스에 대한 히스토리 이벤트 데이터 가져오기"
+

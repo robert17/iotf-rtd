@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../nodejs/node-js_devices.rst:2
+msgid "Node.js Client Library - Devices"
+msgstr ""
+"Node.js 客户机库 - 设备"
+
+#: ../nodejs/node-js_devices.rst:4
+msgid "The node.js client is used for simplifying the interacting with the Internet of Things Foundation. This client library contains instruction and guidance on using the Node.js with the Internet of Things Foundation to interact with your devices and applications."
+msgstr ""
+"node.js 客户机用于简化与 Internet of Things Foundation 的交互。该客户机库包含有关如何使用 Node.js 和 Internet of Things Foundation 来与设备和应用程序进行交互的指示信息和指导内容。"
+
+#: ../nodejs/node-js_devices.rst:6
+msgid "The client library is divided into two parts, Devices and Applications. The Devices section contains information on how devices publish events and handle commands using node.js, and the Applications section contains information on how applications can use the node.js Internet of Things Foundation module to interact with devices."
+msgstr ""
+"此客户机库分为以下两个部分：设备和应用程序。“设备”部分包含有关设备如何使用 node.js 发布事件和处理命令的信息；“应用程序”部分包含有关应用程序如何使用 node.js Internet of Things Foundation 模块来与设备进行交互的信息。"
+
+#: ../nodejs/node-js_devices.rst:8
+msgid "*IotfDevice* is the device client for the Internet of Things Foundation service. You can use this client to connect to the service, publish events from the device and subscribe to commands."
+msgstr ""
+"*IotfDevice* 是 Internet of Things Foundation 服务的设备客户机。此客户机可用于连接服务，从设备发布事件以及预订命令。"
+
+#: ../nodejs/node-js_devices.rst:11
+msgid "Constructor"
+msgstr ""
+"构造方法"
+
+#: ../nodejs/node-js_devices.rst:13
+msgid "The constructor builds the device client instance. It accepts a configuration json containing the following definitions:"
+msgstr ""
+"此构造方法用于构建设备客户机实例。它接受包含以下定义的配置 json："
+
+#: ../nodejs/node-js_devices.rst:15
+msgid "org - Your organization ID"
+msgstr ""
+"org - 您的组织标识"
+
+#: ../nodejs/node-js_devices.rst:16
+msgid "type - The type of your device"
+msgstr ""
+"type - 您设备的类型"
+
+#: ../nodejs/node-js_devices.rst:17
+msgid "id - The ID of your device"
+msgstr ""
+"id - 设备的标识"
+
+#: ../nodejs/node-js_devices.rst:18
+msgid "auth-method - Method of authentication (the only value currently supported is “token”)"
+msgstr ""
+"auth-method - 认证方法（当前唯一支持的值为“token”）"
+
+#: ../nodejs/node-js_devices.rst:19
+msgid "auth-token - API key token (required if auth-method is “token”)"
+msgstr ""
+"auth-token - API 密钥令牌（如果 auth-method 为“token”，那么此项为必需项）"
+
+#: ../nodejs/node-js_devices.rst:21
+msgid "If you want to use quickstart, then send only the first three properties."
+msgstr ""
+"如果想要使用 Quickstart，只需发送前三个属性。"
+
+#: ../nodejs/node-js_devices.rst:37
+msgid "Using a configuration file"
+msgstr ""
+"使用配置文件"
+
+#: ../nodejs/node-js_devices.rst:39
+msgid "Instead of passing the configuration json directly, you can also use a configuration file. Use the following code snippet:"
+msgstr ""
+"除了直接传递配置 json 之外，您还可以使用配置文件。请使用以下代码片段："
+
+#: ../nodejs/node-js_devices.rst:48
+msgid "The configuration file must be in the format of"
+msgstr ""
+"配置文件必须为以下格式"
+
+#: ../nodejs/node-js_devices.rst:59
+msgid "Connecting to the Internet of Things Foundation"
+msgstr ""
+"连接到 Internet of Things Foundation"
+
+#: ../nodejs/node-js_devices.rst:61
+msgid "Connect to the Internet of Things Foundation by calling the *connect* function."
+msgstr ""
+"通过调用 *connect* 函数来连接到 Internet of Things Foundation。"
+
+#: ../nodejs/node-js_devices.rst:76
+msgid "After the successful connection to the IoTF service, the device client sends a *connect* event. So all the device logic can be implemented inside this callback function."
+msgstr ""
+"成功连接到 IoTF 服务后，设备客户机将发送 *connect* 事件。因此，可以在此回调函数内实现所有设备逻辑。"
+
+#: ../nodejs/node-js_devices.rst:79
+msgid "Publishing events"
+msgstr ""
+"发布事件"
+
+#: ../nodejs/node-js_devices.rst:81
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"事件是设备用于将数据发布到 Internet of Things Foundation 的机制。设备控制事件的内容，并为其发送的每个事件分配名称。"
+
+#: ../nodejs/node-js_devices.rst:83
+msgid "When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"IOT Foundation 接收到事件时，将使用用于接收该事件的连接的凭证来确定是从哪个设备发送了该事件。由于使用这种体系结构，设备将无法模拟其他设备。"
+
+#: ../nodejs/node-js_devices.rst:85
+msgid "Events can be published at any of the three quality of service levels defined by the MQTT protocol. By default events will be published as QoS level 0. Please not that if you are using the Internet of Things Quickstart service, events can only be published at QoS level 0."
+msgstr ""
+"可以按 MQTT 协议定义的三个服务质量级别中的任何一个级别发布事件。缺省情况下，将按 QoS 级别 0 发布事件。请注意，如果您正在使用 Internet of Things Quickstart 服务，那么只能按 QoS 级别 0 发布事件。"
+
+#: ../nodejs/node-js_devices.rst:87
+msgid "Events can be published by using: -   eventType - Type of event to be published e.g status, gps. -   eventFormat - Format of the event e.g json. -   data - Payload of the event. -   QoS - MQTT quality of service for the publish event. Supported values : 0,1,2."
+msgstr ""
+"可通过使用以下内容来发布事件：-   eventType - 要发布的事件类型（如 status 和 gps）。-   eventFormat - 事件的格式（如 json）。-   data - 事件的有效内容。-   QoS - 发布事件的 MQTT 服务质量。支持的值包括：0、1 和 2。"
+
+#: ../nodejs/node-js_devices.rst:110
+msgid "Handling commands"
+msgstr ""
+"处理命令"
+
+#: ../nodejs/node-js_devices.rst:112
+msgid "When the device client connects, it automatically subscribes to any command for this device. To process specific commands you need to register a command callback function. The device client sends *command* when a command is received. The callback function has the following properties."
+msgstr ""
+"设备客户机连接时，会自动预订此设备的任何命令。要处理特定命令，需要注册命令回调函数。设备客户机会在收到命令时发送 *command*。该回调函数具有以下属性。"
+
+#: ../nodejs/node-js_devices.rst:114
+msgid "commandName - name of the command invoked"
+msgstr ""
+"commandName - 所调用命令的名称"
+
+#: ../nodejs/node-js_devices.rst:115
+msgid "format - e.g json, xml"
+msgstr ""
+"format - 例如，json 和 xml"
+
+#: ../nodejs/node-js_devices.rst:116
+msgid "payload - payload for the command"
+msgstr ""
+"payload - 命令的有效内容"
+
+#: ../nodejs/node-js_devices.rst:117
+msgid "topic - actual topic where the command was received"
+msgstr ""
+"topic - 收到此命令的实际主题"
+
+#: ../nodejs/node-js_devices.rst:143
+msgid "Disconnect Client"
+msgstr ""
+"断开客户机连接"
+
+#: ../nodejs/node-js_devices.rst:145
+msgid "Disconnects the client and releases the connections"
+msgstr ""
+"断开与客户机的连接并释放连接"
+
+#: ../nodejs/node-js_devices.rst:167
+msgid "Check Connection Status"
+msgstr ""
+"检查连接状态"
+
+#: ../nodejs/node-js_devices.rst:169
+msgid "*isConnected* gives the current status of the client connection"
+msgstr ""
+"*isConnected* 提供了客户机连接的当前状态"
+

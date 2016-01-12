@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libraries/c_sharp_introduction.rst:3
+msgid "C# Client Library - Introduction"
+msgstr ""
+"Biblioteca de cliente de C# - Introducción"
+
+#: ../libraries/c_sharp_introduction.rst:5
+msgid "Use the C# module for interacting with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_ . The module can be used to simplify interactions with the IBM Internet of Things Foundation. This library contains instructions to use the C# module to interact with devices and applications within your organizations."
+msgstr ""
+"Utilice el módulo C# para interactuar con `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com/>`_. El módulo se puede utilizar para simplificar las interacciones con IBM Internet of Things Foundation. Esta biblioteca contiene instrucciones para utilizar el módulo C# para interactuar con dispositivos y aplicaciones dentro de las organizaciones."
+
+#: ../libraries/c_sharp_introduction.rst:7
+msgid "`C# library <https://github.com/IoT-Analytics/iot-csharp>`_"
+msgstr ""
+"`Biblioteca C# <https://github.com/IoT-Analytics/iot-csharp>`_"
+
+#: ../libraries/c_sharp_introduction.rst:9
+msgid "This client library is divided into two sections, both included within the library. The Devices section contains information on how devices publish events and handle commands using the C# ibmiotf module, and the Applications section contains information on how applications can use the ibmiotf module to interact with devices."
+msgstr ""
+"Esta biblioteca de cliente se divide en dos secciones, ambas incluidas en la biblioteca. La sección Dispositivos contiene información sobre cómo los dispositivos publican sucesos y manejan mandatos utilizando el módulo de C# ibmiotf y la sección Aplicaciones contiene información sobre cómo las aplicaciones pueden utilizar el módulo ibmiotf para interactuar con los dispositivos."
+
+#: ../libraries/c_sharp_introduction.rst:12
+msgid "Documentation"
+msgstr ""
+"Documentación"
+
+#: ../libraries/c_sharp_introduction.rst:13
+msgid "`Device Client <../libraries/c_sharp_devices.html#/>`_"
+msgstr ""
+"`Cliente de dispositivo <../libraries/c_sharp_devices.html#/>`_"
+
+#: ../libraries/c_sharp_introduction.rst:15
+msgid "`Application Client <../libraries/c_sharp_applications.html#/>`_"
+msgstr ""
+"Cliente de aplicaciones <../libraries/c_sharp_applications.html#/>`_"
+
+#: ../libraries/c_sharp_introduction.rst:18
+msgid "Dependencies"
+msgstr ""
+"Dependencias"
+
+#: ../libraries/c_sharp_introduction.rst:20
+msgid "`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`paho-mqtt <http://www.eclipse.org/paho/clients/dotnet/>`_ proporciona una clase de cliente que permite a las aplicaciones conectarse a un intermediario MQTT"
+
+#: ../libraries/c_sharp_introduction.rst:22
+msgid "`Apache Commons Logging <https://logging.apache.org/log4net/>`_ library for logging various information"
+msgstr ""
+"`Apache Commons Logging <https://logging.apache.org/log4net/>`_, biblioteca para registrar información diversa"
+

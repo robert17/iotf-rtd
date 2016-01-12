@@ -1,0 +1,770 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libraries/python_cli_for_api.rst:3
+msgid "Python Client Library - Internet of Things Foundation API Support"
+msgstr ""
+"Python 客户机库 - Internet of Things Foundation API 支持"
+
+#: ../libraries/python_cli_for_api.rst:6
+msgid "Introduction"
+msgstr ""
+"简介"
+
+#: ../libraries/python_cli_for_api.rst:8
+msgid "This client library describes how to use the Internet of Things Foundation Python client library with the Internet of Things Foundation API. For help with getting started with this module, see `Python Client Library - Introduction <../python.html>`__."
+msgstr ""
+"此客户机库描述了如何将 Internet of Things Foundation Python 客户机库与 Internet of Things Foundation API 配合使用。有关如何开始使用此模块的帮助，请参阅 `Python 客户机库 - 简介 <../python.html>`__。"
+
+#: ../libraries/python_cli_for_api.rst:10
+msgid "This documentation contains information on how applications can use the `Python ibmiotf Client Library <https://pypi.python.org/pypi/ibmiotf>`__ to interact with your organization in the IBM Internet of Things Foundation Connect through ReST APIs."
+msgstr ""
+"此文档包含有关应用程序如何使用 `Python ibmiotf 客户机库 <https://pypi.python.org/pypi/ibmiotf>`__ 通过 REST API 与您在 IBM Internet of Things Foundation Connect 中的组织进行交互的信息。"
+
+#: ../libraries/python_cli_for_api.rst:12
+msgid "The `Python for Devices documentation <../python_cli_for_devices.html>`__ contains information on how devices can publish events and handle commands using the Python ibmiotf Client Library."
+msgstr ""
+"`Python for Devices 文档 <../python_cli_for_devices.html>`__ 中包含有关设备如何使用 Python ibmiotf 客户机库发布事件和处理命令的信息。"
+
+#: ../libraries/python_cli_for_api.rst:14
+msgid "The `Python for Applications documentation <../python_cli_for_apps.html>`__ contains information on how applications can use the Python ibmiotf Client Library to interact with devices."
+msgstr ""
+"`Python for Applications 文档 <../python_cli_for_apps.html>`__ 中包含有关应用程序如何使用 Python ibmiotf 客户机库与设备交互的信息。"
+
+#: ../libraries/python_cli_for_api.rst:18
+msgid "Constructor"
+msgstr ""
+"构造方法"
+
+#: ../libraries/python_cli_for_api.rst:20
+msgid "The Internet of Things Python module client is built for device, application, or API use by the constructor. The constructor requires a properties object containing the following definitions:"
+msgstr ""
+"Internet of Things Python 模块客户机是通过构造方法为设备、应用程序或 API 而构建的。构造方法需要包含以下定义的属性对象："
+
+#: ../libraries/python_cli_for_api.rst:22
+msgid "org - Your organization ID."
+msgstr ""
+"org - 贵组织的标识。"
+
+#: ../libraries/python_cli_for_api.rst:23
+msgid "auth-method - This defines the authentication method be used, and should always be set to \"apikey\"."
+msgstr ""
+"auth-method - 定义要使用的认证方法，应始终设置为“apikey”。"
+
+#: ../libraries/python_cli_for_api.rst:24
+msgid "auth-key - The authentication key should be your API key."
+msgstr ""
+"auth-key - 认证密钥应该是您的 API 密钥。"
+
+#: ../libraries/python_cli_for_api.rst:25
+msgid "auth-token - The authentication token is your API key token."
+msgstr ""
+"auth-token - 认证令牌是您的 API 密钥令牌。"
+
+#: ../libraries/python_cli_for_api.rst:27
+msgid "These definitions are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"这些定义用来与 Internet of Things Foundation 模块进行交互。"
+
+#: ../libraries/python_cli_for_api.rst:29
+msgid "After installing the client library, as described in the Python for the Internet of Things Foundation Introduction, the APIClient instance can be construced by running the following code snippet:"
+msgstr ""
+"按照针对 Internet of Things Foundation 的 Python 简介中的描述安装客户机库后，可通过运行以下代码片段构造 APIClient 实例："
+
+#: ../libraries/python_cli_for_api.rst:43
+msgid "Response and Exception"
+msgstr ""
+"响应和异常"
+
+#: ../libraries/python_cli_for_api.rst:45
+msgid "Each method in the APIClient responds with either a valid response (JSON or boolean) in the case of success or IoTFCReSTException in the case of failure. The IoTFCReSTException contains the following properties that application can parse to get more information about the failure."
+msgstr ""
+"APIClient 中的每个方法都会在成功时用有效响应（JSON 或布尔值）进行响应，或在失败时用 IoTFCReSTException 进行响应。IoTFCReSTException 中包含以下属性，应用程序可以解析这些属性来获取有关失败的更多信息。"
+
+#: ../libraries/python_cli_for_api.rst:47
+msgid "httpcode - HTTP Status Code"
+msgstr ""
+"httpcode - HTTP 状态码"
+
+#: ../libraries/python_cli_for_api.rst:48
+msgid "message - Exception message containing the reason for the failure"
+msgstr ""
+"message - 包含失败原因的异常消息"
+
+#: ../libraries/python_cli_for_api.rst:49
+msgid "response - JsonElement containing the partial response if any otherwise null"
+msgstr ""
+"response - 如果存在响应，为包含部分响应的 JsonElement，否则为空"
+
+#: ../libraries/python_cli_for_api.rst:51
+msgid "So in the case of failure, application needs to parse the response to see if the action is partially successful or not."
+msgstr ""
+"因此，在失败情况下，应用程序需要解析此响应以确认操作是否部分成功。"
+
+#: ../libraries/python_cli_for_api.rst:56
+msgid "Organization details"
+msgstr ""
+"组织详细信息"
+
+#: ../libraries/python_cli_for_api.rst:58
+msgid "Applications can use the *getOrganizationDetails()* method to retrieve the Organization details. Add the following code to a .py file, beneath the constructor code shown above."
+msgstr ""
+"应用程序可以使用 *getOrganizationDetails()* 方法来检索组织详细信息。在 .py 文件中以上所示的构造方法代码下添加以下代码。"
+
+#: ../libraries/python_cli_for_api.rst:64
+msgid "Refer to the Organization Configuration section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the request & response model and http status code."
+msgstr ""
+"请参阅 `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ 的“组织配置”部分，了解有关请求和响应模型以及 HTTP 状态码的信息。"
+
+#: ../libraries/python_cli_for_api.rst:67
+#: ../libraries/python_cli_for_api.rst:136
+#: ../libraries/python_cli_for_api.rst:170
+#: ../libraries/python_cli_for_api.rst:229
+#: ../libraries/python_cli_for_api.rst:277
+#: ../libraries/python_cli_for_api.rst:332
+#: ../libraries/python_cli_for_api.rst:393
+#: ../libraries/python_cli_for_api.rst:436
+msgid "Sample"
+msgstr ""
+"样本"
+
+#: ../libraries/python_cli_for_api.rst:69
+msgid "Your final code should follow this format:"
+msgstr ""
+"最终代码应遵循以下格式："
+
+#: ../libraries/python_cli_for_api.rst:82
+msgid "This code will run the constructor, and then retrieve organization details for the specified organization."
+msgstr ""
+"该代码将运行构造方法，然后检索指定组织的组织详细信息。"
+
+#: ../libraries/python_cli_for_api.rst:87
+msgid "Bulk device operations"
+msgstr ""
+"批量设备操作"
+
+#: ../libraries/python_cli_for_api.rst:89
+msgid "Applications can use bulk operations to get, add or remove devices in bulk from Internet of Things Foundation Connect."
+msgstr ""
+"应用程序可以使用批量操作通过 Internet of Things Foundation Connect 成批获取、添加或移除设备。"
+
+#: ../libraries/python_cli_for_api.rst:91
+msgid "Refer to the Bulk Operations section of the `IBM IoT Foundation API https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"请参阅 `IBM IoT Foundation API https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ 中的“批量操作”部分，了解有关查询参数列表、请求和响应模型以及 HTTP 状态码的信息。"
+
+#: ../libraries/python_cli_for_api.rst:94
+msgid "Retrieve device information"
+msgstr ""
+"检索设备信息"
+
+#: ../libraries/python_cli_for_api.rst:96
+msgid "Bulk device information can be retrieved using the *getAllDevices()* method. This method retrieves information on all registered devices in the organization, each request can contain a maximum of 512KB."
+msgstr ""
+"可以使用 *getAllDevices()* 方法检索批量设备信息。此方法可检索组织内所有已注册设备的信息，每个请求最多可包含 512KB。"
+
+#: ../libraries/python_cli_for_api.rst:104
+msgid "Response and Bookmarks"
+msgstr ""
+"响应和书签"
+
+#: ../libraries/python_cli_for_api.rst:106
+msgid "The response contains parameters required by the application to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further calls, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"响应中包含应用程序从响应中检索字典 *results* 以获取返回的设备数组所需的参数。需要使用响应中的其他参数进行进一步的调用，例如，*_bookmark* 元素可用于对结果进行分页。在未指定书签的情况下发出第一个请求，然后获取响应中返回的书签，并在请求下一个页面时提供此书签。重复此步骤，直至由缺少书签指示结果集结束为止。每个请求都必须为其他参数使用完全相同的值，否则不会定义结果。"
+
+#: ../libraries/python_cli_for_api.rst:108
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of org.apache.http.message.BasicNameValuePair as shown below,"
+msgstr ""
+"为了传递 *_bookmark* 或任何其他条件，必须使用重载方法。重载方法使用 org.apache.http.message.BasicNameValuePair 格式的参数，如下所示，"
+
+#: ../libraries/python_cli_for_api.rst:124
+msgid "Add Devices in bulk"
+msgstr ""
+"批量添加设备"
+
+#: ../libraries/python_cli_for_api.rst:126
+msgid "The *addMultipleDevices()* method can be used to add one or more devices to your Internet of Things Foundation organization. The maximum size of a request is set to 512KB. In each request, you must first define the devices to be added using the *listOfDevices* variable, as shown in the following code snippet:"
+msgstr ""
+"*addMultipleDevices()* 方法可用于向 Internet of Things Foundation 组织添加一个或多个设备。请求的最大大小设置为 512KB。在每个请求中，必须先按照以下代码片段所示，使用 *listOfDevices* 变量定义要添加的设备："
+
+#: ../libraries/python_cli_for_api.rst:133
+#: ../libraries/python_cli_for_api.rst:166
+msgid "This above code snippet should be inserted after the constructor code in a .py file."
+msgstr ""
+"以上代码片段应插入到 .py 文件中的构造方法代码之后。"
+
+#: ../libraries/python_cli_for_api.rst:138
+msgid "The following sample shows an example of the format your final code, and is an example of using the *addMultipleDevices()* method to add two devices."
+msgstr ""
+"以下样本显示了最终代码的格式示例，同时也是使用 *addMultipleDevices()* 方法添加两个设备的示例。"
+
+#: ../libraries/python_cli_for_api.rst:152
+msgid "The response will contain the generated authentication tokens for each added device. These authentication tokens must be recorded when processing the response, as lost authentication tokens cannot be retrieved."
+msgstr ""
+"响应将包含为每个已添加设备生成的认证令牌。处理响应时必须记录这些认证令牌，因为无法检索丢失的认证令牌。"
+
+#: ../libraries/python_cli_for_api.rst:156
+msgid "Delete Devices in bulk"
+msgstr ""
+"批量删除设备"
+
+#: ../libraries/python_cli_for_api.rst:158
+msgid "The *deleteMultipleDevices()* method can be used to delete multiple devices from an Internet of Things Foundation organization, each request can contain a maximum of 512KB. In each request, you must first define the devices to be deleted using the *listOfDevices* variable, as shown in the following code snippet:"
+msgstr ""
+"*deleteMultipleDevices()* 方法可用于从 Internet of Things Foundation 组织中删除多个设备，每个请求最多可包含 512KB。在每个请求中，必须先按照以下代码片段所示，使用 *listOfDevices* 变量定义要删除的设备："
+
+#: ../libraries/python_cli_for_api.rst:172
+msgid "The following sample shows an example of the format your final code, and is an example of using the *deleteMultipleDevices()* method to delete two devices."
+msgstr ""
+"以下样本显示了最终代码的格式示例，同时也是使用 *deleteMultipleDevices()* 方法删除两个设备的示例。"
+
+#: ../libraries/python_cli_for_api.rst:189
+msgid "Device Type Operations"
+msgstr ""
+"设备类型操作"
+
+#: ../libraries/python_cli_for_api.rst:191
+msgid "Device types can be used as templates for adding device information to devices as they are added to your organization. Applications can use the Internet of Things Foundation API to list, create, delete, view, or update device types in your organization."
+msgstr ""
+"在组织中添加设备时，设备类型可用作向这些设备添加设备信息的模板。应用程序可以使用 Internet of Things Foundation API 来列示、创建、删除、查看或更新您组织内的设备类型。"
+
+#: ../libraries/python_cli_for_api.rst:193
+msgid "Refer to the Device Types section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ documentation for information about the list of query parameters, the request & response model, and http status codes."
+msgstr ""
+"请参阅 `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ 文档的“设备类型”部分，了解有关查询参数列表、请求和响应模型以及 HTTP 状态码的信息。"
+
+#: ../libraries/python_cli_for_api.rst:196
+msgid "Get all Device Types"
+msgstr ""
+"获取所有设备类型"
+
+#: ../libraries/python_cli_for_api.rst:198
+msgid "The *getAllDeviceTypes()* method can be used to retrieve all device types in your Internet of Things Foundation organization. For example,"
+msgstr ""
+"*getAllDeviceTypes()* 方法可用于检索您的 Internet of Things Foundation 组织中的所有设备类型。例如，"
+
+#: ../libraries/python_cli_for_api.rst:205
+#: ../libraries/python_cli_for_api.rst:305
+msgid "The response contains parameters and application needs to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further call, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"响应中包含参数，应用程序需要从响应中检索字典 *results* 以获取返回的设备数组。需要使用响应中的其他参数进行进一步的调用，例如，*_bookmark* 元素可用于对结果进行分页。在未指定书签的情况下发出第一个请求，然后获取响应中返回的书签，并在请求下一个页面时提供此书签。重复此步骤，直至由缺少书签指示结果集结束为止。每个请求都必须为其他参数使用完全相同的值，否则不会定义结果。"
+
+#: ../libraries/python_cli_for_api.rst:207
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of a dictionary as shown below,"
+msgstr ""
+"为了传递 *_bookmark* 或任何其他条件，必须使用重载方法。重载方法使用字典格式的参数，如下所示，"
+
+#: ../libraries/python_cli_for_api.rst:216
+msgid "Add a Device Type"
+msgstr ""
+"添加设备类型"
+
+#: ../libraries/python_cli_for_api.rst:218
+msgid "The *addDeviceType()* method can be used to register a device type to Internet of Things Foundation Connect. In each request, you must first define the device information, and device metadata elements which you want to be applied to all devices of this type. The device information element is comprised of several variables, including, serial number, manufacturer, model, class, description, firmware and hardware versions, and descriptive location. The metadata element is comprised of custom variables and values which can be defined by the user."
+msgstr ""
+"*addDeviceType()* 方法可用于向 Internet of Things Foundation Connect 注册设备类型。在每个请求中，您都必须先定义设备信息，以及要应用于此类型所有设备的设备元数据元素。该设备信息元素由多个变量组成，包括序列号、制造商、型号、种类、描述、固件和硬件版本以及描述性位置。元数据元素由用户可定义的定制变量和值组成。"
+
+#: ../libraries/python_cli_for_api.rst:220
+msgid "After defining the *deviceInfo* and *metadata* elements, use the following code snippet to register a new device type."
+msgstr ""
+"定义 *deviceInfo* 和 *metadata* 元素后，使用以下代码片段来注册新设备类型。"
+
+#: ../libraries/python_cli_for_api.rst:231
+msgid "The following sample will define the API connection settings, define the DeviceInfo and Metadata elements, and then register a device type."
+msgstr ""
+"以下样本将定义 API 连接设置，定义 DeviceInfo 和 Metadata 元素，然后注册设备类型。"
+
+#: ../libraries/python_cli_for_api.rst:245
+msgid "Delete a Device Type"
+msgstr ""
+"删除设备类型"
+
+#: ../libraries/python_cli_for_api.rst:247
+msgid "The *deleteDeviceType()* method can be used to delete a device type from your Internet of Things Foundation organization. The following code snippet can be added to a .py file to delete a device type \"myDeviceType5\"."
+msgstr ""
+"*deleteDeviceType()* 方法可用于删除您的 Internet of Things Foundation 组织中的设备类型。可将以下代码片段添加到 .py 文件中，以删除设备类型“myDeviceType5”。"
+
+#: ../libraries/python_cli_for_api.rst:255
+msgid "Get a Device Type"
+msgstr ""
+"获取设备类型"
+
+#: ../libraries/python_cli_for_api.rst:257
+msgid "The *getDeviceType()* method retrieves information on a given device type. The *deviceTypeID* of the device type you wish to retrieve information on must be used as a parameter, as shown in the following code snippet for the device type \"myDeviceType5\". This method will return all available information for the device type, including all variables in the deviceInfo and metadata element."
+msgstr ""
+"*getDeviceType()* 方法可检索有关给定设备类型的信息。如以下设备类型“myDeviceType5”的代码片段所示，您希望检索其信息的设备类型的 *deviceTypeID* 必须用作为一个参数。该方法将返回此设备类型的所有可用信息，包括 deviceInfo 和 metadata 元素中的所有变量。"
+
+#: ../libraries/python_cli_for_api.rst:265
+msgid "Update a Device Type"
+msgstr ""
+"更新设备类型"
+
+#: ../libraries/python_cli_for_api.rst:267
+msgid "The *updateDeviceType()* method can be used to modify the properties of a device type. When using this method, several parameters must be defined. Firstly, the *deviceTypeID* of the device type to be updated must be specified, then the *description*, *deviceInfo*, and *metadata* elements, as shown in the code snippet below."
+msgstr ""
+"*updateDeviceType()* 方法可用于修改设备类型的属性。在使用此方法时，必须定义多个参数。首先，必须指定要更新的设备类型的 *deviceTypeID*，然后是 *description*、 *deviceInfo* 和 *metadata* 元素，具体如以下代码片段所示。"
+
+#: ../libraries/python_cli_for_api.rst:274
+msgid "The properties to be modified should be defined within the, *description*, *deviceInfo*, and *metadata* elements. The variables contained in *deviceInfo* and *metadata* which are to be updated must be defined before the method is called. The code sample below is an example of the full method being called."
+msgstr ""
+"应该在 *description*、*deviceInfo* 和 *metadata* 元素内定义要修改的属性。在调用此方法之前，必须定义 *deviceInfo* 和 *metadata* 中包含的要更新的变量。以下代码样本是要调用的完整方法的示例。"
+
+#: ../libraries/python_cli_for_api.rst:289
+msgid "Device operations"
+msgstr ""
+"设备操作"
+
+#: ../libraries/python_cli_for_api.rst:291
+msgid "Device operations made available through the API include listing, adding, removing, viewing, updating, viewing location and viewing  device management information of devices in an Internet of Things Foundation organization."
+msgstr ""
+"通过 API 提供的设备操作包括在 Internet of Things Foundation 组织中进行列示、添加、移除、查看和更新设备，以及查看设备的位置和查看设备的管理信息。"
+
+#: ../libraries/python_cli_for_api.rst:293
+msgid "Refer to the Device section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"请参阅 `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ 的“设备”部分，了解有关查询参数列表、请求和响应模型以及 HTTP 状态码的信息。"
+
+#: ../libraries/python_cli_for_api.rst:296
+msgid "Get Devices of a particular Device Type"
+msgstr ""
+"获取特定设备类型的设备"
+
+#: ../libraries/python_cli_for_api.rst:298
+msgid "The *retrieveDevices()* method can be used to retrieve all the devices of a particular device type in an organization from Internet of Things Foundation. For example,"
+msgstr ""
+"*retrieveDevices()* 方法可用于从 Internet of Things Foundation 检索组织内特定设备类型的所有设备。例如，"
+
+#: ../libraries/python_cli_for_api.rst:307
+#: ../libraries/python_cli_for_api.rst:579
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of dictionary as shown below,"
+msgstr ""
+"为了传递 *_bookmark* 或任何其他条件，必须使用重载方法。重载方法使用字典格式的参数，如下所示，"
+
+#: ../libraries/python_cli_for_api.rst:313
+msgid "The above snippet sorts the response based on device id and uses the bookmark to page through the results."
+msgstr ""
+"以上片段根据设备标识对响应进行排序，并使用书签对结果进行分页。"
+
+#: ../libraries/python_cli_for_api.rst:316
+msgid "Add a Device"
+msgstr ""
+"添加设备"
+
+#: ../libraries/python_cli_for_api.rst:318
+msgid "The *registerDevice()* method is used to add a device to an Internet of Things Foundation organization. The *registerDevice()* method adds a single device to your Internet of Things Foundation organization. The parameters which can be set when adding a device are:"
+msgstr ""
+"*registerDevice()* 方法用于向 Internet of Things Foundation 组织添加设备。*registerDevice()* 方法可将单个设备添加到您的 Internet of Things Foundation 组织中。添加设备时可以设置的参数有："
+
+#: ../libraries/python_cli_for_api.rst:320
+msgid "deviceTypeId: *Optional*. Assigns a device type to the device. Where there is a clash between variables defined by the device type and variables defined by under deviceInfo, the device specific variables will take precedence."
+msgstr ""
+"deviceTypeId：*可选*。为设备指定设备类型。当设备类型定义的变量和 deviceInfo 下定义的变量之间存在冲突时，优先使用特定于设备的变量。"
+
+#: ../libraries/python_cli_for_api.rst:321
+msgid "deviceId: *Mandatory*."
+msgstr ""
+"deviceId：*必需*。"
+
+#: ../libraries/python_cli_for_api.rst:322
+msgid "authToken: *Optional*. If no authentication token is supplied, one will be generated and included in the response."
+msgstr ""
+"authToken：*可选*。如果未提供认证令牌，将生成一个令牌并包含在响应中。"
+
+#: ../libraries/python_cli_for_api.rst:323
+msgid "deviceInfo: *Optional*. This parameter is optional, and can contain a number of variables, including: serialNumber, manufacturer, model, deviceClass, description, firmware and hardware versions, and descriptiveLocation."
+msgstr ""
+"deviceInfo：*可选*。此参数为可选参数，可以包含多个变量，包括：序列号、制造商、型号、设备种类、描述、固件和硬件版本以及描述性位置。"
+
+#: ../libraries/python_cli_for_api.rst:324
+msgid "metadata: *Optional*. Metadata can optionally be added in the form of custom field:value string pairs. An example is given in the code sample below."
+msgstr ""
+"metadata：*可选*。可以采用定制“字段:值”字符串对格式选择性地添加元数据。以下代码样本中提供了示例。"
+
+#: ../libraries/python_cli_for_api.rst:325
+msgid "location: *Optional*. This parameter contains the longitude, latitude, elevation, accuracy, and mesauredDateTime variables."
+msgstr ""
+"location：*可选*。此参数包含经度、纬度、海拔高度、准确性和 mesauredDateTime 变量。"
+
+#: ../libraries/python_cli_for_api.rst:327
+msgid "For more information on the parameters presented here, and the response format and codes, please see the relevant section of `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__."
+msgstr ""
+"有关此处所提供参数以及响应格式和代码的更多信息，请参阅 `API 文档 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__ 的相关部分。"
+
+#: ../libraries/python_cli_for_api.rst:329
+msgid "When using the *registerDevice()* method, you must define the mandatory deviceID parameter, and any of the optional parameters you require for your device, then call the method using the parameters you've selected."
+msgstr ""
+"在使用 *registerDevice()* 方法时，您必须定义必需的 deviceID 参数，以及设备所需的其他任何可选参数，然后使用您选择的参数调用方法。"
+
+#: ../libraries/python_cli_for_api.rst:334
+msgid "The following code sample should be inserted after the constructor code in a .py file. This code demonstrates defining the deviceId, authToken, metadata, deviceInfo parameters, and location parameters and then using the method with those parameters and adding a device type."
+msgstr ""
+"以下代码样本应插入到 .py 文件中的构造方法代码之后。此代码演示了如何定义 deviceId、authToken、metadata、deviceInfo 和 location 参数，然后使用带有这些参数的方法并添加设备类型。"
+
+#: ../libraries/python_cli_for_api.rst:348
+msgid "Delete a Device"
+msgstr ""
+"删除设备"
+
+#: ../libraries/python_cli_for_api.rst:350
+msgid "The *deleteDevice()* method is used to remove a device from an Internet of Things Foundation organization. When deleting a device using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId."
+msgstr ""
+"*deleteDevice()* 方法用于从 Internet of Things Foundation 组织中移除设备。使用此方法删除设备时，该方法中必须指定的参数为 deviceTypeId 和 deviceId。"
+
+#: ../libraries/python_cli_for_api.rst:352
+#: ../libraries/python_cli_for_api.rst:364
+msgid "The following code snippet provides an example of the format required for this method."
+msgstr ""
+"以下代码片段提供了此方法所需格式的示例。"
+
+#: ../libraries/python_cli_for_api.rst:360
+msgid "Get a Device"
+msgstr ""
+"获取设备"
+
+#: ../libraries/python_cli_for_api.rst:362
+msgid "The *getDevice()* method can be used to retrieve a device from an Internet of Things Foundation organization. When retrieving device details using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId."
+msgstr ""
+"*getDevice()* 方法可用于从 Internet of Things Foundation 组织中检索设备。使用此方法检索设备详细信息时，该方法中必须指定的参数为 deviceTypeId 和 deviceId。"
+
+#: ../libraries/python_cli_for_api.rst:372
+msgid "Get all Devices"
+msgstr ""
+"获取所有设备"
+
+#: ../libraries/python_cli_for_api.rst:374
+msgid "The *getAllDevices()* method can be used to retrieve all devices within an Internet of Things Foundation organization."
+msgstr ""
+"*getAllDevices()* 方法可用于检索 Internet of Things Foundation 组织中的所有设备。"
+
+#: ../libraries/python_cli_for_api.rst:382
+msgid "Update a Device"
+msgstr ""
+"更新设备"
+
+#: ../libraries/python_cli_for_api.rst:384
+msgid "The *updateDevice()* method is used to modify one or more properties of a device. Any property in the deviceInfo or metadata parameters can be updated. In order to update a device property, it must be defined above the method. The status parameter should contain \"alert\": True. The Alert property controls whether a device will display error codes in the Internet of Things Foundation user interface, and should be set by default to 'True'."
+msgstr ""
+"*updateDevice()* 方法用于修改一个或多个设备属性。可以更新 deviceInfo 或 metadata 参数中的任何属性。为了更新设备属性，必须在此方法之上定义此属性。状态参数应包含“alert”：True。Alert 属性用于控制设备是否在 Internet of Things Foundation 用户界面中显示错误代码，缺省情况下应设置为“True”。"
+
+#: ../libraries/python_cli_for_api.rst:395
+msgid "In this sample, the following code identifies a specific device, and updates several properties under the deviceInfo parameter."
+msgstr ""
+"在此样本中，以下代码用于标识特定设备，并更新 deviceInfo 参数下的多个属性。"
+
+#: ../libraries/python_cli_for_api.rst:404
+msgid "Get Location Information"
+msgstr ""
+"获取位置信息"
+
+#: ../libraries/python_cli_for_api.rst:406
+msgid "The *getDeviceLocation()* method can be used to retrieve the location information of a device. The parameters required for retrieving the location data are deviceTypeId and deviceId."
+msgstr ""
+"*getDeviceLocation()* 方法可用于检索设备的位置信息。检索位置数据所需的参数为 deviceTypeId 和 deviceId。"
+
+#: ../libraries/python_cli_for_api.rst:412
+msgid "The response to this method contains the longitude, latitude, elevation, accuracy, measuredTimeStamp, and updatedTimeStamp properties."
+msgstr ""
+"该方法的响应中包含经度、纬度、海拔高度、准确性、measuredTimeStamp 和 updatedTimeStamp 属性。"
+
+#: ../libraries/python_cli_for_api.rst:416
+msgid "Update Location Information"
+msgstr ""
+"更新位置信息"
+
+#: ../libraries/python_cli_for_api.rst:418
+msgid "The *updateDeviceLocation()* method is used to modify the location information for a device. Simlarly to updating device properties, the deviceLocation parameter must be defined with the changes you wish to apply. The code sample below demonstrates changing the location data for a given device."
+msgstr ""
+"*updateDeviceLocation()* 方法用于修改设备的位置信息。与更新设备属性相似，必须使用您要应用的更改定义 deviceLocation 参数。以下代码样本演示了如何更改给定设备的位置数据。"
+
+#: ../libraries/python_cli_for_api.rst:425
+msgid "If no date is supplied, the entry is added with the current date and time."
+msgstr ""
+"如果未提供日期，将使用当前日期和时间添加该条目。"
+
+#: ../libraries/python_cli_for_api.rst:429
+msgid "Get Device Management Information"
+msgstr ""
+"获取设备管理信息"
+
+#: ../libraries/python_cli_for_api.rst:431
+msgid "The *getDeviceManagementInformation()* method is used to get the device management information for a device. The response contains the last activity date-time, the device's dormant status (true/false), support for device and firmware actions, and firmware data. For a comprehensive list of response content, please see the relevant API documentation."
+msgstr ""
+"*getDeviceManagementInformation()* 方法用于获取设备的管理信息。响应中包含上一次活动日期时间、设备的睡眠状态 (true/false)、设备和固件操作支持以及固件数据。有关响应内容的完整列表，请参阅相关 API 文档。"
+
+#: ../libraries/python_cli_for_api.rst:433
+msgid "The following code sample will return the device management information for a device with the deviceId \"00aabbccde03\", with deviceTypeId \"iotsample-arduino\"."
+msgstr ""
+"以下代码样本将返回设备的管理信息，deviceId 为“00aabbccde03”，deviceTypeId 为“iotsample-arduino”。"
+
+#: ../libraries/python_cli_for_api.rst:446
+msgid "Device diagnostic operations"
+msgstr ""
+"设备诊断操作"
+
+#: ../libraries/python_cli_for_api.rst:448
+msgid "Applications can use device diagnostic operations to clear logs, retrieve all or specific logs for a device, add log information, delete logs, clear error codes, get device error codes, and add an error codes."
+msgstr ""
+"应用程序可以使用设备诊断操作来清除日志，检索设备的所有日志或特定日志，添加日志信息，删除日志，清除错误代码，获取设备错误代码以及添加错误代码。"
+
+#: ../libraries/python_cli_for_api.rst:450
+msgid "For more detailed information on query and response models, response codes, and query paramters, please see the relevant API documentation."
+msgstr ""
+"有关查询和响应模型、响应代码和查询参数的更多详细信息，请参阅相关 API 文档。"
+
+#: ../libraries/python_cli_for_api.rst:453
+msgid "Get Diagnostic logs"
+msgstr ""
+"获取诊断日志"
+
+#: ../libraries/python_cli_for_api.rst:455
+msgid "The *getAllDiagnosticLogs()* method is used to retrieve all diagnostic logs for a specific device. The *getAllDiagnosticLogs()* method requires the deviceTypeId and deviceId parameters."
+msgstr ""
+"*getAllDiagnosticLogs()* 方法用于检索特定设备的所有诊断日志。*getAllDiagnosticLogs()* 方法需要使用 deviceTypeId 和 deviceId 参数。"
+
+#: ../libraries/python_cli_for_api.rst:461
+msgid "The response model for this method contains the logId, message, severity, data, and timestamp."
+msgstr ""
+"此方法的响应模型包含 logId、消息、严重性、数据和时间戳记。"
+
+#: ../libraries/python_cli_for_api.rst:464
+msgid "Clear Diagnostic logs for a Device"
+msgstr ""
+"清除设备的诊断日志"
+
+#: ../libraries/python_cli_for_api.rst:466
+msgid "The *clearAllDiagnosticLogs()* method is used to delete all diagnostic logs for a specific device. The required parameters are deviceTypeId and deviceId. Care should be taken when deleting logs, as logs cannot be recovered once deleted."
+msgstr ""
+"*clearAllDiagnosticLogs()* 方法用于删除特定设备的所有诊断日志。必需参数为 deviceTypeId 和 deviceId。删除日志时应慎重，因为日志一旦删除便无法恢复。"
+
+#: ../libraries/python_cli_for_api.rst:474
+msgid "Add a Diagnostic log"
+msgstr ""
+"添加诊断日志"
+
+#: ../libraries/python_cli_for_api.rst:476
+msgid "The *addDiagnosticLog()* method is used to add an entry in the diagnostic log of the device. The log may be pruned as the new entry is added. If no date is supplied, the entry is added with the current date and time. To use this method, first define a 'logs' parameter with the following variables:"
+msgstr ""
+"*addDiagnosticLog()* 方法用于在设备的诊断日志中添加条目。添加新条目时可能会对日志进行精简。如果未提供日期，将使用当前日期和时间添加该条目。要使用此方法，首先应使用以下变量定义“logs”参数："
+
+#: ../libraries/python_cli_for_api.rst:478
+msgid "message: This variable is mandatory, and contains the new diagnostic message."
+msgstr ""
+"message：此变量为必需变量，并包含新的诊断消息。"
+
+#: ../libraries/python_cli_for_api.rst:479
+msgid "severity: This variable is optional. If used it corresponds to the severity of the diagnostic log, and should be 0, 1, or 2, corresponding to the informational, warning, and error categories."
+msgstr ""
+"severity：此变量为可选变量。使用时与诊断日志的严重性相对应，应该为 0、1 或 2，分别对应参考、警告和错误类别。"
+
+#: ../libraries/python_cli_for_api.rst:480
+msgid "data: This variable is optional, and should contain diagnostic data."
+msgstr ""
+"data：此变量为可选变量，应包含诊断数据。"
+
+#: ../libraries/python_cli_for_api.rst:481
+#: ../libraries/python_cli_for_api.rst:539
+msgid "timestamp: This variable is optional, and contains the date and time of the log entry in ISO8601 format. If this variable is not included, it is automatically added with the current date and time."
+msgstr ""
+"timestamp：此变量为可选变量，包含日志条目的日期和时间（ISO8601 格式）。如果未包含此变量，会自动使用当前日期和时间进行添加。"
+
+#: ../libraries/python_cli_for_api.rst:483
+msgid "The other necessary paramteres required in the method are the deviceTypeId and deviceId for the specific device."
+msgstr ""
+"方法中必需使用的其他参数为特定设备的 deviceTypeId 和 deviceId。"
+
+#: ../libraries/python_cli_for_api.rst:485
+msgid "The code sample below contains an example of the method."
+msgstr ""
+"以下代码样本包含此方法的示例。"
+
+#: ../libraries/python_cli_for_api.rst:494
+msgid "Retrieve a specific Diagnostic log"
+msgstr ""
+"检索特定诊断日志"
+
+#: ../libraries/python_cli_for_api.rst:496
+msgid "The *getDiagnosticLog()* method is used to retrieve a specific diagnostic log for a specified device based on the log id. The required parameters for this method are the deviceTypeId, deviceId, and logId."
+msgstr ""
+"*getDiagnosticLog()* 方法用于根据日志标识检索指定设备的特定诊断日志。此方法必需使用的参数为 deviceTypeId、deviceId 和 logId。"
+
+#: ../libraries/python_cli_for_api.rst:504
+msgid "Delete a Diagnostic log"
+msgstr ""
+"删除诊断日志"
+
+#: ../libraries/python_cli_for_api.rst:506
+msgid "The *deleteDiagnosticLog()* can be used to delete a specific diagnostic log. In order to specify a diagnostic log, the deviceTypeId, deviceId, and logId parameters should be supplied."
+msgstr ""
+"*deleteDiagnosticLog()* 可用于删除特定诊断日志。为了指定诊断日志，应提供 deviceTypeId、deviceId 和 logId 参数。"
+
+#: ../libraries/python_cli_for_api.rst:514
+msgid "Retrieve Device Error Codes"
+msgstr ""
+"检索设备错误代码"
+
+#: ../libraries/python_cli_for_api.rst:516
+msgid "The *getAllDiagnosticErrorCodes()* method is used to retrieve all diagnostic error codes associated with a specific device."
+msgstr ""
+"*getAllDiagnosticErrorCodes()* 方法用于检索与特定设备关联的所有诊断错误代码。"
+
+#: ../libraries/python_cli_for_api.rst:524
+msgid "Clear Diagnostic Error Codes"
+msgstr ""
+"清除诊断错误代码"
+
+#: ../libraries/python_cli_for_api.rst:526
+msgid "The *clearAllErrorCodes()* method is used to clear the list of error codes associated with the device. The list is replaced with a single error code of zero."
+msgstr ""
+"*clearAllErrorCodes()* 方法用于清除与设备关联的错误代码列表。该列表将替换为单个错误代码 0。"
+
+#: ../libraries/python_cli_for_api.rst:534
+msgid "Add single Diagnostic ErrorCode"
+msgstr ""
+"添加单个诊断错误代码"
+
+#: ../libraries/python_cli_for_api.rst:536
+msgid "The *addErrorCode()* method is used to add an error code to the list of error codes associated with the device. The list may be pruned as the new entry is added. The parameters required in the method are deviceTypeId, deviceId, and errorCode. The errorCode parameter contains the following variables:"
+msgstr ""
+"*addErrorCode()* 方法用于向与设备关联的错误代码列表添加错误代码。添加新条目时可能会对列表进行精简。此方法中必需使用的参数为 deviceTypeId、deviceId 和 errorCode。errorCode 参数包含以下变量："
+
+#: ../libraries/python_cli_for_api.rst:538
+msgid "errorCode: This variable is mandatory and should be set as an integer. This sets the number of the error code to be created."
+msgstr ""
+"errorCode：此变量为必需变量，应设置为整数。此变量用于设置要创建的错误代码的编号。"
+
+#: ../libraries/python_cli_for_api.rst:549
+msgid "Connection problem determination"
+msgstr ""
+"连接问题确定"
+
+#: ../libraries/python_cli_for_api.rst:551
+msgid "The *getDeviceConnectionLogs()* method is used to list connection log events for a device. This information can be used to help diagnose connectivity problems between the device and the Internet of Things Foundation service. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection events."
+msgstr ""
+"*getDeviceConnectionLogs()* 方法用于列示设备的连接日志事件。此信息有助于诊断设备和 Internet of Things Foundation 服务之间的连接问题。这些条目记录成功连接、失败连接尝试次数、有意断开连接和服务器发起的断开连接事件。"
+
+#: ../libraries/python_cli_for_api.rst:557
+msgid "The response includes a list of log entries, containing log messages and timestamps."
+msgstr ""
+"响应中包括日志条目列表，其中包含日志消息和时间戳记。"
+
+#: ../libraries/python_cli_for_api.rst:562
+msgid "Historical Event Retrieval"
+msgstr ""
+"历史事件检索"
+
+#: ../libraries/python_cli_for_api.rst:564
+msgid "These operations can be used to view events from all devices, view events from a device type or to view events for a specific device."
+msgstr ""
+"这些操作可用于查看所有设备的事件、查看某种设备类型的事件或查看特定设备的事件。"
+
+#: ../libraries/python_cli_for_api.rst:566
+msgid "Refer to the Historical Event Retrieval section of the `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"请参阅 `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ 的“历史事件检索”部分，了解有关查询参数列表、请求和响应模型以及 HTTP 状态码的信息。"
+
+#: ../libraries/python_cli_for_api.rst:569
+msgid "View events from all devices"
+msgstr ""
+"查看所有设备的事件"
+
+#: ../libraries/python_cli_for_api.rst:571
+msgid "Method getHistoricalEvents() can be used to view events across all devices registered to the organization."
+msgstr ""
+"getHistoricalEvents() 方法可用于查看向组织注册的所有设备中的事件。"
+
+#: ../libraries/python_cli_for_api.rst:577
+msgid "The response will contain some parameters and the application needs to retrieve the JSON element *events* from the response to get the array of events returned. Other parameters in the response are required to make further call, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"响应中将包含某些参数，应用程序需要从响应中检索 JSON 元素 *events*，以获取返回的事件数组。需要使用响应中的其他参数进行进一步的调用，例如，*_bookmark* 元素可用于对结果进行分页。在未指定书签的情况下发出第一个请求，然后获取响应中返回的书签，并在请求下一个页面时提供此书签。重复此步骤，直至由缺少书签指示结果集结束为止。每个请求都必须为其他参数使用完全相同的值，否则不会定义结果。"
+
+#: ../libraries/python_cli_for_api.rst:588
+msgid "The above snippet returns the events between the start and end time."
+msgstr ""
+"以上片段将返回开始时间和结束时间之间的事件。"
+
+#: ../libraries/python_cli_for_api.rst:591
+msgid "View events from a device type"
+msgstr ""
+"查看某种设备类型的事件"
+
+#: ../libraries/python_cli_for_api.rst:593
+msgid "The *getHistoricalEvents()* method is used to view events from all the devices of a particular device type."
+msgstr ""
+"*getHistoricalEvents()* 方法用于查看特定设备类型的所有设备的事件。"
+
+#: ../libraries/python_cli_for_api.rst:599
+msgid "The response will contain some parameters and the application needs to retrieve the JSON element *events* from the response to get the array of events returned. As mentioned in the *view events from all devices* section, the overloaded method can be used to control the output."
+msgstr ""
+"响应中将包含某些参数，应用程序需要从响应中检索 JSON 元素 *events*，以获取返回的事件数组。如 *查看所有设备的事件* 部分中所提及的，重载方法可用于控制输出。"
+
+#: ../libraries/python_cli_for_api.rst:603
+msgid "View events from a device"
+msgstr ""
+"查看某个设备的事件"
+
+#: ../libraries/python_cli_for_api.rst:605
+msgid "The *getHistoricalEvents()* method is used to view events from a specific device. DeviceTypeId and deviceId parameters are required in order to use this method."
+msgstr ""
+"*getHistoricalEvents()* 方法用于查看特定设备的事件。要使用此方法，就需要使用 DeviceTypeId 和 deviceId 参数。"
+
+#: ../libraries/python_cli_for_api.rst:611
+msgid "The response will contain more parameters and application needs to retrieve the JSON element *events* from the response to get the array of events returned."
+msgstr ""
+"响应中将包含更多参数，应用程序需要从响应中检索 JSON 元素 *events*，以获取返回的事件数组。"
+
+#: ../libraries/python_cli_for_api.rst:617
+msgid "Examples"
+msgstr ""
+"示例"
+
+#: ../libraries/python_cli_for_api.rst:618
+msgid "`bulkOperations.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/bulkOperations.py>`__ - Sample that showcases how to get, add or remove devices in bulk from Internet of Things Foundation."
+msgstr ""
+"`bulkOperations.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/bulkOperations.py>`__ - 展示如何在 Internet of Things Foundation 中批量获取、添加或移除设备的样本。"
+
+#: ../libraries/python_cli_for_api.rst:619
+msgid "`deviceDiagnostics.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceDiagnostics.py>`__ - A sample that showcases various Device Diagnostic operations like clear logs, retrieve logs, add log information, delete logs, get specific log, clear error codes, get device error codes and add an error code to Internet of Things Foundation."
+msgstr ""
+"`deviceDiagnostics.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceDiagnostics.py>`__ - 展示各种设备诊断操作（如清除日志、检索日志、添加日志信息、删除日志、获取特定日志、清除错误代码、获取设备错误代码以及向 Internet of Things Foundation 添加错误代码）的样本。"
+
+#: ../libraries/python_cli_for_api.rst:620
+msgid "`deviceTypes.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceTypes.py>`__ - Sample that showcases various Device Type API operations like list all, create, delete, view and update device types in Internet of Things Foundation."
+msgstr ""
+"`deviceTypes.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceTypes.py>`__ - 展示各种设备类型 API 操作（如在 Internet of Things Foundation 中列示全部设备类型以及创建、删除、查看和更新设备类型）的样本。"
+
+#: ../libraries/python_cli_for_api.rst:621
+msgid "`devices.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/devices.py>`__ - A sample that showcases various Device operations like list, add, remove, view, update, view location and view management information of a device in Internet of Things Foundation."
+msgstr ""
+"`devices.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/devices.py>`__ - 展示各种设备操作（如在 Internet of Things Foundation 中进行列示、添加、移除、查看、更新、查看设备的位置和查看设备的管理信息）的样本。"
+
+#: ../libraries/python_cli_for_api.rst:622
+msgid "`historian.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/historian.py>`__ - A sample that showcases how to retrieve historical events from Internet of Things Foundation."
+msgstr ""
+"`historian.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/historian.py>`__ - 展示如何从 Internet of Things Foundation 中检索历史事件的样本。"
+
+#: ../libraries/python_cli_for_api.rst:623
+msgid "`logConnection.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/logConnection.py>`__ - A sample that showcases device connectivity log operations that can be performed on Internet of Things Foundation."
+msgstr ""
+"`logConnection.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/logConnection.py>`__ - 展示可对 Internet of Things Foundation 执行的设备连接日志操作的样本。"
+
+#: ../libraries/python_cli_for_api.rst:624
+msgid "`organization.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/organization.py>`__ - A sample that showcases organization operations that can be performed on Internet of Things Foundation."
+msgstr ""
+"`organization.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/organization.py>`__ - 展示可对 Internet of Things Foundation 执行的组织操作的样本。"
+

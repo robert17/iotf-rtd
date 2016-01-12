@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../api/v0002/device.rst:3
+msgid "Device Management API"
+msgstr ""
+"디바이스 관리 API"
+
+#: ../api/v0002/device.rst:6
+msgid "Path"
+msgstr ""
+"경로"
+
+#: ../api/v0002/device.rst:6
+msgid "GET"
+msgstr ""
+"GET"
+
+#: ../api/v0002/device.rst:6
+msgid "POST"
+msgstr ""
+"POST"
+
+#: ../api/v0002/device.rst:6
+msgid "DELETE"
+msgstr ""
+"DELETE"
+
+#: ../api/v0002/device.rst:8
+msgid "/"
+msgstr ""
+"/"
+
+#: ../api/v0002/device.rst:8
+msgid "Get organization"
+msgstr ""
+"조직 가져오기"
+
+#: ../api/v0002/device.rst:10
+msgid "/device/types"
+msgstr ""
+"/device/types"
+
+#: ../api/v0002/device.rst:10
+msgid "List device types"
+msgstr ""
+"디바이스 유형 나열"
+
+#: ../api/v0002/device.rst:10
+msgid "Create device type"
+msgstr ""
+"디바이스 유형 작성"
+
+#: ../api/v0002/device.rst:12
+msgid "/device/types/{typeID}"
+msgstr ""
+"/device/types/{typeID}"
+
+#: ../api/v0002/device.rst:12
+msgid "Get device type"
+msgstr ""
+"디바이스 유형 가져오기"
+
+#: ../api/v0002/device.rst:12
+msgid "Update device type"
+msgstr ""
+"디바이스 유형 업데이트"
+
+#: ../api/v0002/device.rst:12
+msgid "Delete device type"
+msgstr ""
+"디바이스 유형 삭제"
+
+#: ../api/v0002/device.rst:14
+msgid "/device/types/{typeID}/devices"
+msgstr ""
+"/device/types/{typeID}/devices"
+
+#: ../api/v0002/device.rst:14
+msgid "List devices"
+msgstr ""
+"디바이스 나열"
+
+#: ../api/v0002/device.rst:14
+msgid "Add device"
+msgstr ""
+"디바이스 추가"
+
+#: ../api/v0002/device.rst:16
+msgid "/device/types/{typeID}/devices /{deviceID}"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}"
+
+#: ../api/v0002/device.rst:16
+msgid "Get device"
+msgstr ""
+"디바이스 가져오기"
+
+#: ../api/v0002/device.rst:16
+msgid "Update device"
+msgstr ""
+"디바이스 업데이트"
+
+#: ../api/v0002/device.rst:16
+msgid "Remove device"
+msgstr ""
+"디바이스 제거"
+
+#: ../api/v0002/device.rst:19
+msgid "/device/types/{typeID}/devices /{deviceID}/diag"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag"
+
+#: ../api/v0002/device.rst:19
+msgid "Get device diagnostic information"
+msgstr ""
+"디바이스 진단 정보 가져오기"
+
+#: ../api/v0002/device.rst:22
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/errorCodes"
+
+#: ../api/v0002/device.rst:22
+msgid "Get device diagnostic error codes"
+msgstr ""
+"디바이스 진단 오류 코드 가져오기"
+
+#: ../api/v0002/device.rst:22
+msgid "Add error code"
+msgstr ""
+"오류 코드 추가"
+
+#: ../api/v0002/device.rst:22
+msgid "Clear error codes"
+msgstr ""
+"오류 코드 지우기"
+
+#: ../api/v0002/device.rst:25
+msgid "/device/types/{typeID}/devices /{deviceID}/diag/log"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/diag/log"
+
+#: ../api/v0002/device.rst:25
+msgid "Get device diagnostic log"
+msgstr ""
+"디바이스 진단 로그 가져오기"
+
+#: ../api/v0002/device.rst:25
+msgid "Add device diagnostic log"
+msgstr ""
+"디바이스 진단 로그 추가"
+
+#: ../api/v0002/device.rst:28
+msgid "/device/types/{typeID}/devices /{deviceID}/location"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/location"
+
+#: ../api/v0002/device.rst:28
+msgid "Get device location information"
+msgstr ""
+"디바이스 위치 정보 가져오기"
+
+#: ../api/v0002/device.rst:28
+msgid "Update device location information"
+msgstr ""
+"디바이스 위치 정보 업데이트"
+
+#: ../api/v0002/device.rst:31
+msgid "/device/types/{typeID}/devices /{deviceID}/mgmt"
+msgstr ""
+"/device/types/{typeID}/devices /{deviceID}/mgmt"
+
+#: ../api/v0002/device.rst:31
+msgid "Get device management information"
+msgstr ""
+"디바이스 관리 정보 가져오기"
+
+#: ../api/v0002/device.rst:34
+msgid "/bulk/devices"
+msgstr ""
+"/bulk/devices"
+
+#: ../api/v0002/device.rst:34
+msgid "List devices in bulk, with paging and filtering"
+msgstr ""
+"페이징 및 필터링과 함께 대량으로 디바이스 나열"
+
+#: ../api/v0002/device.rst:38
+msgid "/bulk/devices/add"
+msgstr ""
+"/bulk/devices/add"
+
+#: ../api/v0002/device.rst:38
+msgid "Add devices in bulk"
+msgstr ""
+"대량으로 디바이스 추가"
+
+#: ../api/v0002/device.rst:41
+msgid "/bulk/devices/remove"
+msgstr ""
+"/bulk/devices/remove"
+
+#: ../api/v0002/device.rst:41
+msgid "Remove devices in bulk"
+msgstr ""
+"대량으로 디바이스 제거"
+
+#: ../api/v0002/device.rst:44
+msgid "/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+msgstr ""
+"/logs/connection?typeId= {typeId}&deviceId={deviceId}"
+
+#: ../api/v0002/device.rst:44
+msgid "Get connection log for device"
+msgstr ""
+"디바이스에 대해 연결 로그 가져오기"
+
+#: ../api/v0002/device.rst:47
+msgid "/mgmt/requests"
+msgstr ""
+"/mgmt/requests"
+
+#: ../api/v0002/device.rst:47
+msgid "List device management requests"
+msgstr ""
+"디바이스 관리 요청 나열"
+
+#: ../api/v0002/device.rst:47
+msgid "Initiate device management requests"
+msgstr ""
+"디바이스 관리 요청 시작"
+
+#: ../api/v0002/device.rst:50
+msgid "/mgmt/requests/{requestId}"
+msgstr ""
+"/mgmt/requests/{requestId}"
+
+#: ../api/v0002/device.rst:50
+msgid "Get device management request"
+msgstr ""
+"디바이스 관리 요청 가져오기"
+
+#: ../api/v0002/device.rst:50
+msgid "Clear device management request"
+msgstr ""
+"디바이스 관리 요청 지우기"
+
+#: ../api/v0002/device.rst:53
+msgid "/mgmt/requests/{requestId} /deviceStatus"
+msgstr ""
+"/mgmt/requests/{requestId} /deviceStatus"
+
+#: ../api/v0002/device.rst:53
+msgid "Get device status for management requests"
+msgstr ""
+"관리 요청을 위해 디바이스 상태 가져오기"
+
+#: ../api/v0002/device.rst:58
+msgid "Filtering and Querying"
+msgstr ""
+"필터링 및 조회"
+
+#: ../api/v0002/device.rst:60
+msgid "An important part of device management is the ability to query and filter information about devices. This is important for operator dashboards as well as building tools using APIs."
+msgstr ""
+"디바이스 관리의 중요한 기능은 디바이스에 대한 정보를 조회하고 필터링하는 기능입니다. 이는 API를 통한 빌드 도구와 연산자 대시보드에 중요합니다."
+
+#: ../api/v0002/device.rst:62
+msgid "The following API will permit a query string to qualify the devices whose information is being requested. - GET /bulk/devices"
+msgstr ""
+"다음 API는 요청 중인 정보의 디바이스를 규정하도록 조회 문자열을 허용합니다. - GET /bulk/devices"
+
+#: ../api/v0002/device.rst:65
+msgid "The query string will be able to refer to all of the device attributes in the core device model, plus the management and diagnostic extensions. The location extension is excluded, meaning devices cannot be queried for their latitude and longitude. The query string can contain the following attributes:"
+msgstr ""
+"조회 문자열은 관리 및 진단 확장기능에 더하여 코어 디바이스 모델에서 모든 디바이스 속성을 참조할 수 있습니다. 위치 확장기능이 제외되어, 위도 및 경도에 대해 디바이스를 조회할 수 없습니다. 조회 문자열에 다음 속성이 포함될 수 있습니다."
+
+#: ../api/v0002/device.rst:67
+msgid "``typeId``"
+msgstr ""
+"``typeId``"
+
+#: ../api/v0002/device.rst:68
+msgid "``deviceId``"
+msgstr ""
+"``deviceId``"
+
+#: ../api/v0002/device.rst:69
+msgid "``status.alert.enabled``"
+msgstr ""
+"``status.alert.enabled``"
+
+#: ../api/v0002/device.rst:70
+msgid "``deviceInfo.serialNumber``"
+msgstr ""
+"``deviceInfo.serialNumber``"
+
+#: ../api/v0002/device.rst:71
+msgid "``deviceInfo.manufacturer``"
+msgstr ""
+"``deviceInfo.manufacturer``"
+
+#: ../api/v0002/device.rst:72
+msgid "``deviceInfo.model``"
+msgstr ""
+"``deviceInfo.model``"
+
+#: ../api/v0002/device.rst:73
+msgid "``deviceInfo.deviceClass``"
+msgstr ""
+"``deviceInfo.deviceClass``"
+
+#: ../api/v0002/device.rst:74
+msgid "``deviceInfo.description``"
+msgstr ""
+"``deviceInfo.description``"
+
+#: ../api/v0002/device.rst:75
+msgid "``deviceInfo.fwVersion``"
+msgstr ""
+"``deviceInfo.fwVersion``"
+
+#: ../api/v0002/device.rst:76
+msgid "``deviceInfo.hwVersion``"
+msgstr ""
+"``deviceInfo.hwVersion``"
+
+#: ../api/v0002/device.rst:77
+msgid "``deviceInfo.descriptiveLocation``"
+msgstr ""
+"``deviceInfo.descriptiveLocation``"
+
+#: ../api/v0002/device.rst:78
+msgid "``mgmt.dormant``"
+msgstr ""
+"``mgmt.dormant``"
+
+#: ../api/v0002/device.rst:79
+msgid "``mgmt.supports.deviceActions``"
+msgstr ""
+"``mgmt.supports.deviceActions``"
+
+#: ../api/v0002/device.rst:80
+msgid "``mgmt.supports.firmwareActions``"
+msgstr ""
+"``mgmt.supports.firmwareActions``"
+
+#: ../api/v0002/device.rst:82
+msgid "The query string takes the form of a list of attribute=value pairs separated by '&'. This corresponds to an equality match on the attributes and values supplied. For example:"
+msgstr ""
+"조회 문자열의 양식은 '&'로 분리된 속성=값 쌍의 목록입니다. 이는 제공된 속성 및 값에 대한 등식 일치에 해당합니다. 예를 들어, 다음과 같습니다."
+
+#: ../api/v0002/device.rst:88
+msgid "However, there is no capability to perform other types of matches, such as greater than or regular expressions."
+msgstr ""
+"그러나 초과 또는 정규식 등 기타 유형의 일치를 수행하는 기능이 없습니다."
+

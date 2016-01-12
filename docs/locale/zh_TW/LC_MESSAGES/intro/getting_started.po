@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../intro/getting_started.rst:3
+msgid "Quickstart"
+msgstr ""
+"Quickstart"
+
+#: ../intro/getting_started.rst:5
+msgid "The `Internet of Things Foundation Quickstart service <https://quickstart.internetofthings.ibmcloud.com>`__ is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or, if you don't have a device to hand, you can simulate a device using the `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ application."
+msgstr ""
+"`Internet of Things Foundation Quickstart 服務 <https://quickstart.internetofthings.ibmcloud.com>`__ 是一項工具，示範如何快速且輕易地讓裝置與 Internet of Things Foundation 連接。Quickstart 服務可用於裝置，或者，如果您沒有裝置，則可以使用 `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ 應用程式來模擬裝置。"
+
+#: ../intro/getting_started.rst:7
+msgid "To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality."
+msgstr ""
+"若要連接至 Quickstart 服務，使用者必須採用 MQTT。所需的最低層次是 MQTT 3.1；不過，3.1.1 版提供了更好的功能。"
+
+#: ../intro/getting_started.rst:9
+msgid "`Learn more about MQTT <../messaging/mqtt.html#/>`__"
+msgstr ""
+"`進一步瞭解 MQTT <../messaging/mqtt.html#/>`__"
+
+#: ../intro/getting_started.rst:10
+msgid "`How to connect a device to Quickstart <../messaging/devices.html#/>`__"
+msgstr ""
+"`如何將裝置連接至 Quickstart <../messaging/devices.html#/>`__"
+
+#: ../intro/getting_started.rst:11
+msgid "`How to connect an application to Quickstart <../messaging/applications.html#/>`__"
+msgstr ""
+"`如何將應用程式連接至 Quickstart <../messaging/applications.html#/>`__"
+
+#: ../intro/getting_started.rst:13
+msgid "There are also several `programming guides <../libraries/programmingguides.html#/>`__ which you can use to connect to Quickstart in a language of your preference."
+msgstr ""
+"另外還有幾本 `程式設計手冊 <../libraries/programmingguides.html#/>`__，可讓您以偏好的語言連接至 Quickstart。"
+

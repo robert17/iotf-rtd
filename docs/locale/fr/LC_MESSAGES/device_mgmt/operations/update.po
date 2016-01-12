@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"Opérations de gestion des terminaux - Mettre à jour"
+
+#: ../device_mgmt/operations/update.rst:8
+msgid "Update Location"
+msgstr ""
+"Mettre à jour l'emplacement"
+
+#: ../device_mgmt/operations/update.rst:10
+msgid "Devices can change their location over time. The update of the location can happen in two ways:"
+msgstr ""
+"Les terminaux peuvent changer d'emplacement au fil du temps. La mise à jour de l'emplacement peut être effectuée de deux manières :"
+
+#: ../device_mgmt/operations/update.rst:12
+msgid "The device itself notifies the Internet of Things Foundation about the location update: The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"Le terminal signale lui-même la mise à jour de son emplacement à Internet of Things Foundation : il extrait son emplacement d'un récepteur GPS et envoie un message de gestion du terminal à Internet of Things Foundation pour mettre à jour son emplacement. L'horodatage capture l'heure à laquelle l'emplacement a été extrait du récepteur GPS. Cela signifie que l'horodatage est valide même si la transmission du message d'emplacement a été retardée. Si l'horodatage ne figure pas dans le message de gestion du terminal envoyé, la date et l'heure de réception du message sont utilisées lors de la mise à jour des métadonnées d'emplacement du terminal."
+
+#: ../device_mgmt/operations/update.rst:14
+msgid "A user / app updates the location of a device using the Rest API: The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"Un utilisateur ou une application met à jour l'emplacement d'un terminal à l'aide de l'API REST ; l'API REST d'Internet of Things Foundation permet de définir les métadonnées d'emplacement d'un terminal statique. Cette opération peut être effectuée lors de l'enregistrement du terminal ou ultérieurement, si nécessaire. L'ajout d'un horodatage est facultatif. Si l'horodatage est omis, la date et l'heure en cours sont utilisées en tant que métadonnées d'emplacement du terminal."
+
+#: ../device_mgmt/operations/update.rst:17
+#: ../device_mgmt/operations/update.rst:51
+msgid "Location update triggered by device"
+msgstr ""
+"Mise à jour de l'emplacement déclenchée par un terminal"
+
+#: ../device_mgmt/operations/update.rst:18
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"Les terminaux qui peuvent déterminer leur emplacement peuvent décider de signaler la modification de leur emplacement au serveur de gestion des terminaux Internet of Things Foundation."
+
+#: ../device_mgmt/operations/update.rst:21
+#: ../device_mgmt/operations/update.rst:34
+#: ../device_mgmt/operations/update.rst:129
+msgid "Topic"
+msgstr ""
+"Sujet"
+
+#: ../device_mgmt/operations/update.rst:29
+#: ../device_mgmt/operations/update.rst:88
+msgid "Location update triggered by user or app"
+msgstr ""
+"Mise à jour de l'emplacement déclenchée par un utilisateur ou une application"
+
+#: ../device_mgmt/operations/update.rst:31
+msgid "A user can update the location of a device using the Internet of Things Foundation web interface. An app updates the location of a device using the Rest API (Version 2). In case the device, for which the location update is triggered, is currently active and managed, the device retrieves an update message on topic:"
+msgstr ""
+"Un utilisateur peut mettre à jour l'emplacement d'un terminal à l'aide de l'interface Web d'Internet of Things Foundation. Une application met à jour l'emplacement d'un terminal à l'aide de l'API REST (version 2). Si le terminal dont la mise à jour d'emplacement a été déclenchée est actuellement actif et géré, il extrait un message de mise à jour dans le sujet :"
+
+#: ../device_mgmt/operations/update.rst:42
+msgid "Message Format"
+msgstr ""
+"Format du message"
+
+#: ../device_mgmt/operations/update.rst:44
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"La valeur de \"measuredDateTime\" représente la date de la mesure de l'emplacement. La valeur de \"updatedDateTime\" représente la date de mise à jour des informations du terminal. Dans un souci d'efficacité, IoTF peut regrouper par lots les mises à jour des informations d'emplacement, ce qui peut retarder légèrement leur application. Les valeurs de \"latitude\" et de \"longitude\" doivent être exprimées en degrés décimaux à l'aide de WGS84."
+
+#: ../device_mgmt/operations/update.rst:46
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"Lorsque l'emplacement est mis à jour, les valeurs fournies pour longitude, elevation et uncertainty sont considérées comme une seule mise à jour comportant plusieurs valeurs. Les valeurs de latitude et de longitude sont obligatoires et doivent être indiquées pour chaque mise à jour.  Les valeurs définies pour elevation et uncertainty sont facultatives et peuvent être omises."
+
+#: ../device_mgmt/operations/update.rst:48
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"Si une valeur facultative est indiquée pour une mise à jour, puis omise lors d'une mise à jour ultérieure, la valeur précédente est supprimée par la mise à jour plus récente. Chaque mise à jour est considérée comme un ensemble complet incluant plusieurs valeurs."
+
+#: ../device_mgmt/operations/update.rst:53
+msgid "Request Format:"
+msgstr ""
+"Format de la demande :"
+
+#: ../device_mgmt/operations/update.rst:70
+msgid "Response Format:"
+msgstr ""
+"Format de la réponse :"
+
+#: ../device_mgmt/operations/update.rst:80
+msgid "Possible Response Codes:"
+msgstr ""
+"Codes de réponse possibles :"
+
+#: ../device_mgmt/operations/update.rst:82
+msgid "200: The operation was successful."
+msgstr ""
+"200 : L'opération a abouti."
+
+#: ../device_mgmt/operations/update.rst:83
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400 : Le message d'entrée ne correspond pas au format attendu ou une des valeurs n'est pas comprise dans la plage valide."
+
+#: ../device_mgmt/operations/update.rst:84
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404 : Le nom de sujet est incorrect ou le terminal n'est pas dans la base de données."
+
+#: ../device_mgmt/operations/update.rst:85
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409 : Un conflit s'est produit au cours de la mise à jour de la base de données de terminaux. Pour résoudre ce problème, simplifiez si nécessaire l'opération."
+
+#: ../device_mgmt/operations/update.rst:90
+#: ../device_mgmt/operations/update.rst:139
+msgid "Payload Format:"
+msgstr ""
+"Format du contenu :"
+
+#: ../device_mgmt/operations/update.rst:111
+msgid "Please note: there is no reqId as no response by device is required."
+msgstr ""
+"Remarque : il n'y a pas de reqId car aucune réponse du terminal n'est nécessaire."
+
+#: ../device_mgmt/operations/update.rst:116
+msgid "Update Device Attributes"
+msgstr ""
+"Mettre à jour les attributs du terminal"
+
+#: ../device_mgmt/operations/update.rst:118
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by the Rest API are location, metadata, device information and firmware."
+msgstr ""
+"Internet of Things Foundation peut envoyer cette demande à un terminal pour mettre à jour les valeurs d'un ou de plusieurs attributs du terminal. Les attributs qui peuvent être mis à jour par l'API REST sont location, metadata, device information et firmware."
+
+#: ../device_mgmt/operations/update.rst:120
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"La zone \"value\" représente la nouvelle valeur de l'attribut du terminal. Cette zone est une zone complexe qui correspond au modèle du terminal. Seules les zones accessibles en écriture doivent être mises à jour lors de cette opération. Les valeurs peuvent être mises à jour dans :"
+
+#: ../device_mgmt/operations/update.rst:122
+msgid "location (see Update location section for details)"
+msgstr ""
+"location (pour plus d'informations, reportez-vous à la section Mettre à jour l'emplacement)"
+
+#: ../device_mgmt/operations/update.rst:123
+msgid "metadata (Optional)"
+msgstr ""
+"metadata (facultatif)"
+
+#: ../device_mgmt/operations/update.rst:124
+msgid "deviceInfo (Optional)"
+msgstr ""
+"deviceInfo (facultatif)"
+
+#: ../device_mgmt/operations/update.rst:125
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware (pour plus d'informations, reportez-vous à la procédure de mise à jour du microprogramme)"
+
+#: ../device_mgmt/operations/update.rst:137
+msgid "Message format"
+msgstr ""
+"Format du message"
+

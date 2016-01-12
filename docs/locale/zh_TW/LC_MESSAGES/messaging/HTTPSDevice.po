@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSDevice.rst:2
+msgid "HTTP(S) Connectivity for Devices"
+msgstr ""
+"裝置的 HTTP(S) 連線功能"
+
+#: ../messaging/HTTPSDevice.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"裝置和應用程式可使用 HTTP(S) 傳訊通訊協定與 IBM Internet of Things Foundation 互動。此傳訊通訊協定可代替 `MQTT 傳訊通訊協定<../messaging/mqtt.html>`__和`選用的用戶端程式庫<../libraries/programmingguides.html>`__。"
+
+#: ../messaging/HTTPSDevice.rst:6
+msgid "All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation."
+msgstr ""
+"所有裝置皆可直接使用 HTTP(S) 傳訊與 Internet of Things Foundation 通訊，無需額外安裝。"
+
+#: ../messaging/HTTPSDevice.rst:8
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"HTTP(S) 通訊協定可用於裝置和應用程式，以將事件訊息傳送至 Internet of Things Foundation。如需詳細資料，請參閱："
+
+#: ../messaging/HTTPSDevice.rst:10
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`將 HTTP(S) 用於 Internet of Things Foundation<../messaging/HTTPSIntro.html>`__。"
+
+#: ../messaging/HTTPSDevice.rst:11
+msgid "`HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__."
+msgstr ""
+"`應用程式的 HTTP(S) 連線功能<../messaging/HTTPSApplications.html>`__。"
+
+#: ../messaging/HTTPSDevice.rst:15
+msgid "Using HTTP(S) with Devices and the Internet of Things Foundation"
+msgstr ""
+"將 HTTP(S) 用於裝置和 Internet of Things Foundation"
+
+#: ../messaging/HTTPSDevice.rst:17
+msgid "The HTTP(S) protocol allows devices to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"HTTP(S) 通訊協定可讓裝置傳送 HTTP(S) POST 要求至下列 URL，以將事件訊息傳送至 Internet of Things Foundation："
+
+#: ../messaging/HTTPSDevice.rst:23
+msgid "The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"要求內文（事件內容）可以有任何內容，但應遵循 MQTT 訊息內容準則。"
+
+#: ../messaging/HTTPSDevice.rst:25
+msgid "A Content-Type request header must be provided with the request. Only the following values are supported. The following table shows how they are mapped to the Internet of Things Foundation internal formats."
+msgstr ""
+"「內容類型」要求標頭必須隨要求提供。目前僅支援下列值。下表列出它們對映至 Internet of Things Foundation 內部格式的情形。"
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "Content-Type Header Volume"
+msgstr ""
+"內容類型標頭磁區"
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "IoT Foundation Format"
+msgstr ""
+"IoT Foundation 格式"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text/plain"
+msgstr ""
+"text/plain"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text"
+msgstr ""
+"text"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "application/json"
+msgstr ""
+"application/json"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "json"
+msgstr ""
+"json"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "application/xml"
+msgstr ""
+"application/xml"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "xml"
+msgstr ""
+"xml"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "application/octet-stream"
+msgstr ""
+"application/octet-stream"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "bin"
+msgstr ""
+"bin"
+
+#: ../messaging/HTTPSDevice.rst:39
+msgid "Please Note: Devices must be registered before issuing an HTTP(S) request, and when connecting to the Quickstart service no authentication or registration is required, and the org_id should be set to \"quickstart\"."
+msgstr ""
+"請注意：必須先登錄裝置才能發出 HTTP(S) 要求，且在連接至 Quickstart 服務時，不需要進行鑑別或登錄，而且 org_id 應設為 \"quickstart\"。"
+
+#: ../messaging/HTTPSDevice.rst:43
+msgid "HTTP(S) Authentication"
+msgstr ""
+"HTTP(S) 鑑別"
+
+#: ../messaging/HTTPSDevice.rst:45
+msgid "HTTP(S) requests must include an Authorization header if they are sent to registered organizations. Basic authentication is the only method supported. The username and password must be provided as described below."
+msgstr ""
+"HTTP(S) 要求如果是要傳送至已登錄的組織，則必須包含「授權」標頭。基本鑑別是唯一受支援的方法。您必須依照下列說明提供使用者名稱和密碼。"
+
+#: ../messaging/HTTPSDevice.rst:49
+msgid "Username"
+msgstr ""
+"使用者名稱"
+
+#: ../messaging/HTTPSDevice.rst:51
+msgid "The service currently supports only token-based authentication for devices. The username must be set to ``use-token-auth``. This username indicates to the service that the authentication token for the device will be passed as the password for the HTTP(S) request."
+msgstr ""
+"服務目前對於裝置僅支援記號型鑑別。使用者名稱必須設為 ``use-token-auth``。此使用者名稱向該服務指出裝置的鑑別記號將傳遞作為 HTTP(S) 要求的密碼。"
+
+#: ../messaging/HTTPSDevice.rst:55
+msgid "Password"
+msgstr ""
+"密碼"
+
+#: ../messaging/HTTPSDevice.rst:57
+msgid "Submit the device authentication token as the password when issuing your HTTP(S) request."
+msgstr ""
+"發出 HTTP(S) 要求時提交裝置鑑別記號作為密碼。"
+

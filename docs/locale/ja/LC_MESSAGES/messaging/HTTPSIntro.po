@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSIntro.rst:2
+msgid "HTTP(S) Connectivity with the Internet of Things Foundation"
+msgstr ""
+"Internet of Things Foundation への HTTP(S) 接続"
+
+#: ../messaging/HTTPSIntro.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"IBM Internet of Things Foundation と対話するために、デバイスとアプリケーションが HTTP(S) メッセージ・プロトコルを使用できます。このメッセージ・プロトコルは、`MQTT メッセージ・プロトコル <../messaging/mqtt.html>`__ と `オプションのクライアント・ライブラリー <../libraries/programmingguides.html>`__ の代わりに使用できます。"
+
+#: ../messaging/HTTPSIntro.rst:6
+msgid "All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation."
+msgstr ""
+"すべてのデバイスで HTTP(S) メッセージングを使用して、追加のインストールなしで Internet of Things Foundation と通信できます。"
+
+#: ../messaging/HTTPSIntro.rst:8
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"デバイスとアプリケーションでは、Internet of Things Foundation にイベント・メッセージを送信するために HTTP(S) プロトコルを使用できます。詳細については、以下を参照してください。"
+
+#: ../messaging/HTTPSIntro.rst:10
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"デバイスの `HTTP(S) 接続 <../messaging/HTTPSDevice.html>`__。"
+
+#: ../messaging/HTTPSIntro.rst:11
+msgid "`HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__."
+msgstr ""
+"`アプリケーションの HTTP(S) 接続 <../messaging/HTTPSApplications.html>`__。"
+
+#: ../messaging/HTTPSIntro.rst:13
+msgid "Please Note: Devices and applications cannot use the HTTP(S) protocol to issue commands."
+msgstr ""
+"注記: デバイスとアプリケーションがコマンドを発行するために HTTP(S) プロトコルを使用することはできません。"
+
+#: ../messaging/HTTPSIntro.rst:17
+msgid "HTTP(S) Request"
+msgstr ""
+"HTTP(S) 要求"
+
+#: ../messaging/HTTPSIntro.rst:19
+msgid "HTTP(S) requests for applications and devices must be issued to the originating organization's unique endpoint. The organization endpoint uses the following format:"
+msgstr ""
+"アプリケーションとデバイスの HTTP(S) 要求は、発信元組織の固有のエンドポイントに発行する必要があります。組織のエンドポイントは、次のフォーマットを使用します。"
+
+#: ../messaging/HTTPSIntro.rst:25
+msgid "Only HTTPS can be used with registered organizations. When using HTTPS with a registered organization, the data, including the issuer's credentials are encrypted. HTTP is supported in the Quickstart environment only."
+msgstr ""
+"登録済みの組織で、HTTPS のみを使用できます。登録済みの組織で HTTPS を使用する場合、発行者の資格情報を含むデータは暗号化されます。HTTP は Quickstart 環境でのみサポートされます。"
+
+#: ../messaging/HTTPSIntro.rst:29
+msgid "Quality of Service"
+msgstr ""
+"サービスの品質"
+
+#: ../messaging/HTTPSIntro.rst:31
+msgid "The HTTP(S) protocol provides \"at most once\" best effort delivery, analagous to the QoS0 quality of service provided by the MQTT protocol. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery."
+msgstr ""
+"HTTP(S) プロトコルは、MQTT プロトコルにより提供される QoS0 のサービス品質と同じように、ベスト・エフォートの送信を\" 最大 1 回\" 実行します。QoS0、または同等の HTTP(S) を使用してイベント・メッセージを送信する場合、デバイスまたはアプリケーションは、送信を保証するために再試行ロジックを実装する必要があります。"
+
+#: ../messaging/HTTPSIntro.rst:33
+msgid "For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation."
+msgstr ""
+"MQTT プロトコルとサービス品質のレベルの詳細情報は、`Internet of Things Foundation の MQTT<../messaging/mqtt.html>`__ の資料を参照してください。"
+

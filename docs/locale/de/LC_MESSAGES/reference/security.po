@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,153 +16,138 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\reference\security.rst:3
+#: ../reference/security.rst:3
 msgid "Securing the Internet of Things"
 msgstr ""
+"Internet of Things schützen"
 
-#: ..\docs\reference\security.rst:5
-msgid ""
-"The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, "
-"cloud-hosted service that makes it simple to derive value from Internet of "
-"Things (IoT) devices."
+#: ../reference/security.rst:5
+msgid "The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, cloud-hosted service that makes it simple to derive value from Internet of Things (IoT) devices."
 msgstr ""
+"IBM Internet of Things Foundation (IoT Foundation) ist ein voll-verwalteter, cloud-hosted Service, der es Ihnen ermöglicht, Nutzen aus den IoT-Geräte zu ziehen."
 
-#: ..\docs\reference\security.rst:9
-msgid ""
-"The following document aims to answer common questions about how your "
-"organization's data is protected. Focusing on specific areas:"
+#: ../reference/security.rst:9
+msgid "The following document aims to answer common questions about how your organization's data is protected. Focusing on specific areas:"
 msgstr ""
+"Im folgenden Dokument sollen Antworten auf die häufig gestellten Fragen gegeben werden, wie die Daten Ihrer Organisation geschützt werden. Folgende Bereiche stehen im Blickpunkt:"
 
-#: ..\docs\reference\security.rst:12
-msgid ""
-"Authentication: assuring the identity of users, devices or applications "
-"attempting to access your organization's information."
+#: ../reference/security.rst:12
+msgid "Authentication: assuring the identity of users, devices or applications attempting to access your organization's information."
 msgstr ""
+"Authentifizierung: Sicherstellung der Identität von Benutzern, Geräte oder Anwendungen, die auf die Informationen Ihrer Organisation zugreifen."
 
-#: ..\docs\reference\security.rst:14
-msgid ""
-"Authorization: assuring that users, devices and applications have permission"
-" to access your organization's information."
+#: ../reference/security.rst:14
+msgid "Authorization: assuring that users, devices and applications have permission to access your organization's information."
 msgstr ""
+"Berechtigung: Sicherstellung, dass Benutzer, Geräte und Anwendungen die Berechtigung zum Zugriff auf die Informationen Ihrer Organisation haben."
 
-#: ..\docs\reference\security.rst:16
-msgid ""
-"Encryption: assuring that data is only readable by authorized parties and "
-"cannot be intercepted."
+#: ../reference/security.rst:16
+msgid "Encryption: assuring that data is only readable by authorized parties and cannot be intercepted."
 msgstr ""
+"Verschlüsselung: Sicherstellung, dass Daten nur von berechtigten Personen gelesen und nicht abgefangen werden können."
 
-#: ..\docs\reference\security.rst:23
+#: ../reference/security.rst:23
 msgid "Terminology"
 msgstr ""
+"Terminologie"
 
-#: ..\docs\reference\security.rst:32
+#: ../reference/security.rst:32
 msgid "How do we secure management of your organization?"
 msgstr ""
+"Wie sichern wir die Verwaltung Ihrer Organisation?"
 
-#: ..\docs\reference\security.rst:33
-msgid ""
-"The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate"
-" signed by DigiCert enabling you to trust that you're connecting to the "
-"genuine IoT Foundation."
+#: ../reference/security.rst:33
+msgid "The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate signed by DigiCert enabling you to trust that you're connecting to the genuine IoT Foundation."
 msgstr ""
+"Die browserbasierte Benutzerschnittstelle (GUI) und die REST APIs laufen unter HTTPS; mit einem von DigiCert signierten Zertifikat gehen Sie sicher, dass Sie auch wirklich eine Verbindung zu IoT Foundation herstellen."
 
-#: ..\docs\reference\security.rst:37
+#: ../reference/security.rst:37
 msgid "GUI: authenticated via your IBM ID."
 msgstr ""
+"GUI: über Ihre IBM ID authentifiziert."
 
-#: ..\docs\reference\security.rst:38
-msgid ""
-"REST API: once you create an API key through the GUI, you can use this to "
-"make authenticated REST calls against your organization."
+#: ../reference/security.rst:38
+msgid "REST API: once you create an API key through the GUI, you can use this to make authenticated REST calls against your organization."
 msgstr ""
+"REST API: nachdem Sie einen API-Schlüssel über die GUI-Benutzerschnittstele erstellt haben, können Sie diesen Schlüssel verwenden, um authentifizierte RESTA-Aufrufe gegen Ihre Organisation durchzuführen."
 
-#: ..\docs\reference\security.rst:48
+#: ../reference/security.rst:48
 msgid "How do we secure your device and application credentials?"
 msgstr ""
+"Wie sichern wir die Identifikationsdaten für Ihr Gerät und Ihre Anwendung?"
 
-#: ..\docs\reference\security.rst:49
-msgid ""
-"When devices are registered or API keys are generated, the authentication "
-"token is salted and hashed. This means your organization's credentials can "
-"never be recovered from our systems - even in the unlikely event that the "
-"IoT Foundation is compromised."
+#: ../reference/security.rst:49
+msgid "When devices are registered or API keys are generated, the authentication token is salted and hashed. This means your organization's credentials can never be recovered from our systems - even in the unlikely event that the IoT Foundation is compromised."
 msgstr ""
+"Wenn Geräte registriert oder API-Schlüssel generiert werden, wird das Authentifizierungstoken salted und hashed. Dies bedeutet, dass die Identifikationsdaten Ihrer Organisation niemals wieder von unseren Systemen wiederhergestellt werden können - auch nicht in dem sehr unwahrscheinlichen Fall, dass IoT Foundation kompromittiert wird."
 
-#: ..\docs\reference\security.rst:54
-msgid ""
-"Device credentials and API keys can be individually revoked if they are "
-"compromised."
+#: ../reference/security.rst:54
+msgid "Device credentials and API keys can be individually revoked if they are compromised."
 msgstr ""
+"Die Identifikationsdaten von Geräten und API-Schlüssel können einzeln widerrufen werden, wenn diese kompromittiert wurden."
 
-#: ..\docs\reference\security.rst:64
+#: ../reference/security.rst:64
 msgid "How do we ensure your devices connect securely to the IoT Foundation?"
 msgstr ""
+"Wie stellen wir sicher, dass Ihre Geräte eine sichere Verbindung zu IoT Foundation herstellen?"
 
-#: ..\docs\reference\security.rst:65
-msgid ""
-"Devices connect through a unique combination of clientId and authentication "
-"token that only you know."
+#: ../reference/security.rst:65
+msgid "Devices connect through a unique combination of clientId and authentication token that only you know."
 msgstr ""
+"Geräte stellen die Verbindung über eine eindeutige Kombination aus Client-ID (clientId) und Authentifizierungstoken her. Nur Sie kennen das Authentifizierungstoken."
 
-#: ..\docs\reference\security.rst:67
+#: ../reference/security.rst:67
 msgid "Full support for connectivity over TLS (v1.2) is provided."
 msgstr ""
+"Vollständige Unterstützung für die Konnektivität über TLS (v1.2) wird bereitgestellt."
 
-#: ..\docs\reference\security.rst:68
-msgid ""
-"Open standards are used (MQTT v3.1.1) to allow easy interop across many "
-"platforms and languages."
+#: ../reference/security.rst:68
+msgid "Open standards are used (MQTT v3.1.1) to allow easy interop across many platforms and languages."
 msgstr ""
+"Offene Standards werden verwendet (MQTT v3.1.1), damit eine eine einfache Interoperabilität zwischen vielen Plattformen und Sprachen ermöglicht wird."
 
-#: ..\docs\reference\security.rst:78
+#: ../reference/security.rst:78
 msgid "How do we prevent data leaking between devices?"
 msgstr ""
+"Wie verhindern wir, dass es zwischen Geräte Datenlecks gibt?"
 
-#: ..\docs\reference\security.rst:79
-msgid ""
-"Secure messaging patterns are baked in. Once authenticated, devices are only"
-" authorized to publish and subscribe to a restricted topic space:"
+#: ../reference/security.rst:79
+msgid "Secure messaging patterns are baked in. Once authenticated, devices are only authorized to publish and subscribe to a restricted topic space:"
 msgstr ""
+"Es werden sichere Nachrichtenmuster verwendet. Nach erfolgter Authentifizierung sind Geräte nur dazu berechtigt, auf einem eingeschränkten Topic-Bereich zu publizieren und diesen zu subskribieren:"
 
-#: ..\docs\reference\security.rst:82
+#: ../reference/security.rst:82
 msgid "/iot-2/evt/+/fmt/+"
 msgstr ""
+"/iot-2/evt/+/fmt/+"
 
-#: ..\docs\reference\security.rst:83
+#: ../reference/security.rst:83
 msgid "/iot-2/cmd/+"
 msgstr ""
+"/iot-2/cmd/+"
 
-#: ..\docs\reference\security.rst:85
-msgid ""
-"All devices work with the same topic space. The authentication credentials "
-"provided by the client connecting dictate to which device this topic space "
-"will be scoped by the IOT Foundation.  This prevents devices from being able"
-" to impersonate another device."
+#: ../reference/security.rst:85
+msgid "All devices work with the same topic space. The authentication credentials provided by the client connecting dictate to which device this topic space will be scoped by the IoT Foundation.  This prevents devices from being able to impersonate another device."
 msgstr ""
+"Alle Geräte arbeiten mit dem selben Topic-Bereich. Die Authentifizierungsnachweise, die von dem sich verbindenden Client bereitgestellt werden, diktieren, auf welchem Gerät dieser Topic-Bereich durch IoT Foundation platziert wird.  Dadurch wird verhindert, dass Geräte die Identität von anderen Geräten annehmen können."
 
-#: ..\docs\reference\security.rst:90
-msgid ""
-"The only way to impersonate another device is by obtaining compromised "
-"security credentials for the device."
+#: ../reference/security.rst:90
+msgid "The only way to impersonate another device is by obtaining compromised security credentials for the device."
 msgstr ""
+"Die einzige Möglichkeit, die Identität eines anderen Geräts anzunehmen, besteht darin, dass man kompromittierte Sicherheitsberechtigungsnachweise für das Gerät erhält."
 
-#: ..\docs\reference\security.rst:97
-msgid ""
-"Applications can subscribe and publish on both the event and command topics "
-"for all devices in the organization. Applications can analyse data from may "
-"devices simultaneously, and can also simulate and proxy devices in addition "
-"to forming the complementary side of a full duplex communication loop."
+#: ../reference/security.rst:97
+msgid "Applications can subscribe and publish on both the event and command topics for all devices in the organization. Applications can analyse data from many devices simultaneously, and can also simulate or proxy devices in addition to forming the complementary side of a full duplex communication loop."
 msgstr ""
+"Anwendungen können sowohl Ereignis- als auch Befehls-Topics subskribieren und darauf publizieren, und zwar für alle Geräte in der Organisation. Anwendungen können Daten aus vielen Geräte gleichzeitig analysieren und können darüber hinaus Proxy-Geräte simulieren, zusätzlich zur Bildung der ergänzenden Rolle einer Vollduplexübertragungsschleife."
 
-#: ..\docs\reference\security.rst:107
+#: ../reference/security.rst:107
 msgid "How do we prevent data leaking between organizations?"
 msgstr ""
+"Wie verhindern wir, dass es zwischen Organisationen Datenlecks gibt?"
 
-#: ..\docs\reference\security.rst:108
-msgid ""
-"The topic space in which devices and applications operate is scoped within a"
-" single organization. When authenticated, the IoT Foundation transforms the "
-"topic structure using an organization ID based on the client authentication,"
-" making it impossible for data from one organization to be accessed from "
-"another."
+#: ../reference/security.rst:108
+msgid "The topic space in which devices and applications operate is scoped within a single organization. When authenticated, the IoT Foundation transforms the topic structure using an organization ID based on the client authentication, making it impossible for data from one organization to be accessed from another."
 msgstr ""
+"Der Topic-Bereich, in dem Geräte und Anwendungen operieren, befindet sich bereichsorientiert innerhalb einer einzigen Organisation. Nach Authentifizierung wandelt IoT Foundation die Topic-Struktur um, und zwar unter Verwendung einer Organisations-ID, die auf der Clientauthentifizierung basiert. Dadurch ist es unmöglich, dass auf Daten von einer Organisation durch eine andere Organisation zugegriffen werden kann."
+

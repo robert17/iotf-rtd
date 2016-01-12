@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"设备管理操作 - 更新"
+
+#: ../device_mgmt/operations/update.rst:8
+msgid "Update Location"
+msgstr ""
+"更新位置"
+
+#: ../device_mgmt/operations/update.rst:10
+msgid "Devices can change their location over time. The update of the location can happen in two ways:"
+msgstr ""
+"设备可以随时间推移更改位置。可以通过以下两种方式更新位置："
+
+#: ../device_mgmt/operations/update.rst:12
+msgid "The device itself notifies the Internet of Things Foundation about the location update: The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"设备本身会向 Internet of Things Foundation 通知位置更新：设备从 GPS 接收器检索其位置，并向 Internet of Things Foundation 发送设备管理消息来更新其位置。时间戳记可捕获从 GPS 接收器检索到设备位置的时间。这表示时间戳记有效，即使位置消息的传输发生延迟，也是如此。如果所发送的设备管理消息中省略了时间戳记，那么在更新设备位置元数据时，将使用该消息的接收日期和时间。"
+
+#: ../device_mgmt/operations/update.rst:14
+msgid "A user / app updates the location of a device using the Rest API: The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"用户/应用程序使用 REST API 更新设备位置：Internet of Things Foundation REST API 用于设置静态设备的位置元数据。该操作可以在注册设备时完成，也可以稍后完成（如有必要）。可以选择是否包含时间戳记。如果省略，当前的日期和时间将设置为设备的位置元数据。"
+
+#: ../device_mgmt/operations/update.rst:17
+#: ../device_mgmt/operations/update.rst:51
+msgid "Location update triggered by device"
+msgstr ""
+"设备触发的位置更新"
+
+#: ../device_mgmt/operations/update.rst:18
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"能确定自身位置的设备可以选择将位置变更信息通知给 Internet of Things Foundation 设备管理服务器。"
+
+#: ../device_mgmt/operations/update.rst:21
+#: ../device_mgmt/operations/update.rst:34
+#: ../device_mgmt/operations/update.rst:129
+msgid "Topic"
+msgstr ""
+"主题"
+
+#: ../device_mgmt/operations/update.rst:29
+#: ../device_mgmt/operations/update.rst:88
+msgid "Location update triggered by user or app"
+msgstr ""
+"用户或应用程序触发的位置更新"
+
+#: ../device_mgmt/operations/update.rst:31
+msgid "A user can update the location of a device using the Internet of Things Foundation web interface. An app updates the location of a device using the Rest API (Version 2). In case the device, for which the location update is triggered, is currently active and managed, the device retrieves an update message on topic:"
+msgstr ""
+"用户可以使用 Internet of Things Foundation Web 界面更新设备位置。应用程序使用 REST API (V2) 更新设备位置。如果为其触发位置更新的设备当前处于活动状态和受管状态，设备将在以下主题上检索更新消息："
+
+#: ../device_mgmt/operations/update.rst:42
+msgid "Message Format"
+msgstr ""
+"消息格式"
+
+#: ../device_mgmt/operations/update.rst:44
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"“measuredDateTime”是位置的测量日期。“updatedDateTime”是设备信息的更新日期。出于效率原因，IoTF 可能会成批更新位置信息，因此更新可能会稍有延迟。应使用 WGS84 指定“纬度”和“经度”（以十进制度为单位）。"
+
+#: ../device_mgmt/operations/update.rst:46
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"无论何时更新位置，为纬度、经度、海拔高度和不确定性提供的值都会被视为单个多值更新。纬度和经度是必需项，每次更新时都必须提供这两项。海拔高度和不确定性是可选项，可以将其省略。"
+
+#: ../device_mgmt/operations/update.rst:48
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"如果某次更新时提供了某个可选值，而某次后续更新时省略了该可选值，那么该后续更新将删除先前的值。每次更新都会被视为一个完整的多值集合。"
+
+#: ../device_mgmt/operations/update.rst:53
+msgid "Request Format:"
+msgstr ""
+"请求格式："
+
+#: ../device_mgmt/operations/update.rst:70
+msgid "Response Format:"
+msgstr ""
+"响应格式："
+
+#: ../device_mgmt/operations/update.rst:80
+msgid "Possible Response Codes:"
+msgstr ""
+"可能的响应代码："
+
+#: ../device_mgmt/operations/update.rst:82
+msgid "200: The operation was successful."
+msgstr ""
+"200：操作成功。"
+
+#: ../device_mgmt/operations/update.rst:83
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400：输入消息与期望的格式不匹配，或者其中一个值超出有效范围。"
+
+#: ../device_mgmt/operations/update.rst:84
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404：主题名称不正确，或者此设备不在数据库中。"
+
+#: ../device_mgmt/operations/update.rst:85
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409：在设备数据库更新期间发生冲突。要解决此问题，需要简化操作。"
+
+#: ../device_mgmt/operations/update.rst:90
+#: ../device_mgmt/operations/update.rst:139
+msgid "Payload Format:"
+msgstr ""
+"有效内容格式："
+
+#: ../device_mgmt/operations/update.rst:111
+msgid "Please note: there is no reqId as no response by device is required."
+msgstr ""
+"请注意：不存在 reqId，因为设备无需响应。"
+
+#: ../device_mgmt/operations/update.rst:116
+msgid "Update Device Attributes"
+msgstr ""
+"更新设备属性"
+
+#: ../device_mgmt/operations/update.rst:118
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by the Rest API are location, metadata, device information and firmware."
+msgstr ""
+"Internet of Things Foundation 可以向设备发送此请求，以更新一个或多个设备属性的值。REST API 可以更新的属性有位置、元数据、设备信息和固件。"
+
+#: ../device_mgmt/operations/update.rst:120
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"“value”是设备属性的新值。这是一个与设备模型匹配的复杂字段。此操作只应更新可写入字段。可以更新以下属性的值："
+
+#: ../device_mgmt/operations/update.rst:122
+msgid "location (see Update location section for details)"
+msgstr ""
+"location（请参阅“更新位置”部分，以获取详细信息）"
+
+#: ../device_mgmt/operations/update.rst:123
+msgid "metadata (Optional)"
+msgstr ""
+"metadata（可选）"
+
+#: ../device_mgmt/operations/update.rst:124
+msgid "deviceInfo (Optional)"
+msgstr ""
+"deviceInfo（可选）"
+
+#: ../device_mgmt/operations/update.rst:125
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware（请参阅“固件更新”过程，以获取详细信息）"
+
+#: ../device_mgmt/operations/update.rst:137
+msgid "Message format"
+msgstr ""
+"消息格式"
+

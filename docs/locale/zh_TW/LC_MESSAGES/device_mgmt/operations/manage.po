@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/manage.rst:3
+msgid "Device Management Operations - Manage"
+msgstr ""
+"裝置管理作業 - 管理"
+
+#: ../device_mgmt/operations/manage.rst:5
+msgid "The two device management actions are Manage and Unmanage. Both of these operations are mandatory for managed devices."
+msgstr ""
+"兩個裝置管理動作是「管理」及「取消管理」。這兩個作業對於受管理裝置都是必要的。"
+
+#: ../device_mgmt/operations/manage.rst:10
+msgid "Manage Device"
+msgstr ""
+"管理裝置"
+
+#: ../device_mgmt/operations/manage.rst:12
+msgid "A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever it starts or restarts."
+msgstr ""
+"使用這個要求的裝置會變成受管理裝置。它應該是連接至 Internet of Things Foundation 之後，由裝置傳送的第一個裝置管理要求。裝置管理代理程式每次啟動或重新啟動時，通常都會傳送這項要求。"
+
+#: ../device_mgmt/operations/manage.rst:15
+#: ../device_mgmt/operations/manage.rst:85
+msgid "Topic"
+msgstr ""
+"主題"
+
+#: ../device_mgmt/operations/manage.rst:23
+#: ../device_mgmt/operations/manage.rst:92
+msgid "Message Format"
+msgstr ""
+"訊息格式"
+
+#: ../device_mgmt/operations/manage.rst:25
+msgid "For the request, the ``d`` field and all of its sub-fields are optional. The ``metadata`` and ``deviceInfo`` field values replace the corresponding attributes for the sending device if they are sent."
+msgstr ""
+"要求中的 ``d`` 欄位及其所有子欄位都是選用的。如果傳送 ``metadata`` 及 ``deviceInfo`` 欄位，則其欄位值會取代傳送裝置的對應屬性。"
+
+#: ../device_mgmt/operations/manage.rst:27
+msgid "The optional ``lifetime`` field specifies the length of time in seconds within which the device must send another 'Manage device' request in order to avoid being reverted to an unmanaged device and marked as dormant. If omitted or if set to ``0``, the managed device will not become dormant.  When set, the minimum supported setting is ``3600`` (1 hour)."
+msgstr ""
+"選用的 ``lifetime`` 欄位會指定一個時間長度（以秒為單位），裝置必須在此期間內傳送另一個「管理裝置」要求，以避免回復成未受管理裝置並標示為休眠。如果省略或設為 ``0``，受管理裝置就不會變成休眠。若已設定，則支援的最小設定值為 ``3600``（1 小時）。"
+
+#: ../device_mgmt/operations/manage.rst:29
+msgid "Optional ``supports.deviceActions`` and ``supports.firmwareActions`` indicate the capabilities of the device management agent. If ``supports.deviceActions`` is set, the agent supports Reboot and Factory Reset actions. For a device that does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If ``supports.firmwareActions`` is set, the agent supports Firmware Download and Firmware Update actions."
+msgstr ""
+"選用的 ``supports.deviceActions`` 及 ``supports.firmwareActions`` 表示裝置管理代理程式的功能。如果已設定 ``supports.deviceActions``，代理程式支援「重新開機」及「重設為原廠設定」動作。如果裝置不會區分重新開機與重設為原廠設定，可接受這兩個動作使用相同的行為。如果已設定 ``supports.firmwareActions``，代理程式支援「韌體下載」及「韌體更新」動作。"
+
+#: ../device_mgmt/operations/manage.rst:31
+#: ../device_mgmt/operations/manage.rst:94
+msgid "Request Format:"
+msgstr ""
+"要求格式："
+
+#: ../device_mgmt/operations/manage.rst:58
+#: ../device_mgmt/operations/manage.rst:102
+msgid "Response Format:"
+msgstr ""
+"回應格式："
+
+#: ../device_mgmt/operations/manage.rst:71
+#: ../device_mgmt/operations/manage.rst:112
+msgid "Possible Response Codes:"
+msgstr ""
+"可能的回應碼："
+
+#: ../device_mgmt/operations/manage.rst:73
+#: ../device_mgmt/operations/manage.rst:114
+msgid "200: The operation was successful."
+msgstr ""
+"200: 作業成功。"
+
+#: ../device_mgmt/operations/manage.rst:74
+#: ../device_mgmt/operations/manage.rst:115
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: 輸入訊息與預期的格式不符，或其中一個值不在有效的範圍內。"
+
+#: ../device_mgmt/operations/manage.rst:75
+#: ../device_mgmt/operations/manage.rst:116
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: 主題名稱不正確，或裝置不在資料庫中。"
+
+#: ../device_mgmt/operations/manage.rst:76
+#: ../device_mgmt/operations/manage.rst:117
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: 裝置資料庫更新期間發生衝突。若要解決此問題，需要簡化作業。"
+
+#: ../device_mgmt/operations/manage.rst:80
+msgid "Unmanage Device"
+msgstr ""
+"取消管理裝置"
+
+#: ../device_mgmt/operations/manage.rst:82
+msgid "A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request."
+msgstr ""
+"當裝置不再需要管理時，可使用這個要求。Internet of Things Foundation 不會再傳送新的裝置管理要求給這個裝置，且除了「管理裝置」要求以外，來自這個裝置的所有裝置管理要求都會被拒絕。"
+

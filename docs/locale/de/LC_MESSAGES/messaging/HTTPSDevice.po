@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSDevice.rst:2
+msgid "HTTP(S) Connectivity for Devices"
+msgstr ""
+"HTTP(S)-Konnektivität für Geräte"
+
+#: ../messaging/HTTPSDevice.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"Das HTTP(S)-Nachrichtenprotokoll kann von Geräten und Anwendungen zur Interaktion mit IBM Internet of Things Foundation verwendet werden. Dieses Nachrichtenprotokoll kann anstelle des `MQTT-Nachrichtenprotokolls <../messaging/mqtt.html>`__ und der `optionalen Clientbibliotheken <../libraries/programmingguides.html>`__ verwendet werden. "
+
+#: ../messaging/HTTPSDevice.rst:6
+msgid "All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation."
+msgstr ""
+"Alle Geräte können die HTTP(S)-Nachrichtenübertragung für die Kommunikation mit Internet of Things Foundation nutzen, ohne dass eine zusätzliche Installation erforderlich ist. "
+
+#: ../messaging/HTTPSDevice.rst:8
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"Das HTTP(S)-Protokoll kann von Geräten und Anwendungen verwendet werden, um Ereignisnachrichten an Internet of Things Foundation zu senden. Details hierzu finden Sie hier: "
+
+#: ../messaging/HTTPSDevice.rst:10
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`Verwenden von HTTP(S) mit Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+
+#: ../messaging/HTTPSDevice.rst:11
+msgid "`HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__."
+msgstr ""
+"`HTTP(S)-Konnektivität für Anwendungen <../messaging/HTTPSApplications.html>`__."
+
+#: ../messaging/HTTPSDevice.rst:15
+msgid "Using HTTP(S) with Devices and the Internet of Things Foundation"
+msgstr ""
+"HTTP(S) bei Geräten und Internet of Things Foundation verwenden"
+
+#: ../messaging/HTTPSDevice.rst:17
+msgid "The HTTP(S) protocol allows devices to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"Das HTTP(S)-Protokoll ermöglicht es Geräten, Ereignisnachrichten an Internet of Things Foundation zu senden, indem sie eine HTTP(S)-POST-Anforderung an die folgenden URL senden: "
+
+#: ../messaging/HTTPSDevice.rst:23
+msgid "The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"Der Anforderungshauptteil (Ereignisnutzdaten) kann einen beliebigen Inhalt aufweisen, es müssen jedoch die Richtlinien für MQTT-Nachrichtennutzdaten befolgt werden. "
+
+#: ../messaging/HTTPSDevice.rst:25
+msgid "A Content-Type request header must be provided with the request. Only the following values are supported. The following table shows how they are mapped to the Internet of Things Foundation internal formats."
+msgstr ""
+"Ein Inhaltstypanforderungsheader muss zusammen mit der Anforderung angegeben werden. Nur die nachfolgend aufgeführten Werte werden unterstützt. Die folgende Tabelle zeigt die Zuordnung dieser Werte zu den internen Internet of Things Foundation-Formaten. "
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "Content-Type Header Volume"
+msgstr ""
+"Inhaltstypheader"
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "IoT Foundation Format"
+msgstr ""
+"IoT Foundation-Format"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text/plain"
+msgstr ""
+"text/plain"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text"
+msgstr ""
+"text"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "application/json"
+msgstr ""
+"application/json"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "json"
+msgstr ""
+"json"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "application/xml"
+msgstr ""
+"application/xml"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "xml"
+msgstr ""
+"xml"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "application/octet-stream"
+msgstr ""
+"application/octet-stream"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "bin"
+msgstr ""
+"bin"
+
+#: ../messaging/HTTPSDevice.rst:39
+msgid "Please Note: Devices must be registered before issuing an HTTP(S) request, and when connecting to the Quickstart service no authentication or registration is required, and the org_id should be set to \"quickstart\"."
+msgstr ""
+"Beachten Sie: Geräte müssen vor dem Absetzen einer HTTP(S)-Anforderung registriert werden, beim Herstellen einer Verbindung zum Quickstart-Service ist keine Authentifizierung oder Registrierung erforderlich und für 'org_id' muss \"quickstart\" festgelegt werden."
+
+#: ../messaging/HTTPSDevice.rst:43
+msgid "HTTP(S) Authentication"
+msgstr ""
+"HTTP(S)-Authentifizierung"
+
+#: ../messaging/HTTPSDevice.rst:45
+msgid "HTTP(S) requests must include an Authorization header if they are sent to registered organizations. Basic authentication is the only method supported. The username and password must be provided as described below."
+msgstr ""
+"HTTP(S)-Anforderungen müssen einen Berechtigungsheader enthalten, wenn sie an registrierte Organisationen gesendet werden. Die Basisauthentifizierung ist die einzige unterstützte Methode. Der Benutzername und das Kennwort müssen angegeben werden, wie im Folgenden beschrieben. "
+
+#: ../messaging/HTTPSDevice.rst:49
+msgid "Username"
+msgstr ""
+"Benutzername"
+
+#: ../messaging/HTTPSDevice.rst:51
+msgid "The service currently supports only token-based authentication for devices. The username must be set to ``use-token-auth``. This username indicates to the service that the authentication token for the device will be passed as the password for the HTTP(S) request."
+msgstr ""
+"Der Service unterstützt zurzeit nur die tokenbasierte Authentifizierung für Geräte. Für den Benutzernamen muss ``use-token-auth`` festgelegt werden. Dieser Benutzername informiert den Service, dass das Authentifizierungstoken für das Gerät als Kennwort für die HTTP(S)-Anforderung übergeben wird. "
+
+#: ../messaging/HTTPSDevice.rst:55
+msgid "Password"
+msgstr ""
+"Kennwort"
+
+#: ../messaging/HTTPSDevice.rst:57
+msgid "Submit the device authentication token as the password when issuing your HTTP(S) request."
+msgstr ""
+"Übergeben Sie das Authentifizierungstoken für das Gerät als Kennwort beim Absetzen der HTTP(S)-Anforderung. "
+

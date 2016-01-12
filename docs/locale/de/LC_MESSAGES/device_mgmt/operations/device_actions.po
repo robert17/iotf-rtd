@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/device_actions.rst:3
+msgid "Device Management Operations - Device Actions"
+msgstr ""
+"Gerätemanagementoperationen - Geräteaktionen"
+
+#: ../device_mgmt/operations/device_actions.rst:8
+msgid "Reboot"
+msgstr ""
+"Neu starten"
+
+#: ../device_mgmt/operations/device_actions.rst:10
+msgid "The Internet of Things Foundation can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Von Internet of Things Foundation kann diese Anforderung zum erneuten Starten eines Geräts gesendet werden. Die Aktion wird als abgeschlossen betrachtet, wenn das Gerät eine 'Gerät verwalten'-Anforderung nach dem Neustart sendet."
+
+#: ../device_mgmt/operations/device_actions.rst:12
+msgid "If this operation can be initiated immediately, set \"rc\" to 202, if reboot attempt fails, the \"rc\" is set to 500 and the \"message\" field should be set accordingly, if the reboot is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"Wenn diese Operation sofort eingeleitet werden kann, stellen Sie für \"rc\" den Wert 202 ein; wenn der Neustart fehlschlägt, stellen Sie für \"rc\" den Wert 500 ein und nehmen im Feld \"message\" die entsprechenden Einstellungen vor; wenn der Neustart nicht unterstützt wird, stellen Sie für \"rc\" den Wert 501 ein und nehmen im Feld \"message\" die entsprechenden Einstellungen vor."
+
+#: ../device_mgmt/operations/device_actions.rst:16
+#: ../device_mgmt/operations/device_actions.rst:55
+msgid "Topic"
+msgstr ""
+"Thema"
+
+#: ../device_mgmt/operations/device_actions.rst:24
+#: ../device_mgmt/operations/device_actions.rst:63
+msgid "Message format"
+msgstr ""
+"Nachrichtenformat"
+
+#: ../device_mgmt/operations/device_actions.rst:26
+#: ../device_mgmt/operations/device_actions.rst:65
+msgid "Request Format:"
+msgstr ""
+"Anforderungsformat:"
+
+#: ../device_mgmt/operations/device_actions.rst:34
+#: ../device_mgmt/operations/device_actions.rst:73
+msgid "Response Format:"
+msgstr ""
+"Antwortformat:"
+
+#: ../device_mgmt/operations/device_actions.rst:48
+msgid "Factory Reset"
+msgstr ""
+"Factory-Reset"
+
+#: ../device_mgmt/operations/device_actions.rst:50
+msgid "The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Von Internet of Things Foundation kann diese Anforderung zum Zurücksetzen des Geräts auf die Werkseinstellungen gesendet werden; im Verlauf dieses Prozesses wird das Gerät auch erneut gestartet. Die Aktion wird als abgeschlossen betrachtet, wenn das Gerät eine 'Gerät verwalten'-Anforderung nach dem Neustart sendet."
+
+#: ../device_mgmt/operations/device_actions.rst:52
+msgid "The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the \"rc\" should be 500 and the \"message\" field should be set accordingly, if the factory reset action is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"Der Antwortcode muss 202 lauten, wenn diese Aktion sofort initiiert werden kann. Wenn die Factory-Reset-Aktion fehlschlägt, müssen für \"rc\" der Wert 500 eingestellt und im Feld \"message\" die entsprechenden Einstellungen vorgenommen werden; wenn die Factory-Reset-Aktion nicht unterstützt wird, muss für \"rc\" der Wert 501 eingestellt werden, im Feld \"message\" können optional die entsprechenden Einstellungen vorgenommen werden."
+

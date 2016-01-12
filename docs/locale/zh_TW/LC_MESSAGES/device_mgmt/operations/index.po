@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/index.rst:3
+msgid "Device Management Introduction"
+msgstr ""
+"裝置管理簡介"
+
+#: ../device_mgmt/operations/index.rst:6
+msgid "Introduction"
+msgstr ""
+"簡介"
+
+#: ../device_mgmt/operations/index.rst:8
+msgid "The Device Management capabilities in the Internet of Things Foundation create a new class of connected devices, Managed Devices."
+msgstr ""
+"Internet of Things Foundation 中的「裝置管理」功能會建立一個新的已連接裝置類別，稱為「受管理裝置」。"
+
+#: ../device_mgmt/operations/index.rst:10
+msgid "Managed Devices must, by definition, contain a management agent which can understand the Internet of Things Foundation Device Management Protocol, and send a Manage Device request to the IoT Foundation Device Management server. Managed devices can access the device management operations as explained later in this document."
+msgstr ""
+"依定義，「受管理裝置」必須包含一個管理代理程式，其可瞭解「Internet of Things Foundation 裝置管理通訊協定」，及傳送「管理裝置」要求至「IoT Foundation 裝置管理」伺服器。受管理裝置可以存取裝置管理作業，如本文件中稍後說明。"
+
+#: ../device_mgmt/operations/index.rst:12
+msgid "The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation."
+msgstr ""
+"「裝置管理通訊協定」定義一組支援的作業。裝置管理代理程式可以支援部分作業，但必須支援「管理裝置」及「取消管理裝置」作業。支援韌體動作作業的裝置也必須支援觀察。"
+
+#: ../device_mgmt/operations/index.rst:14
+msgid "The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/managed_devices.html>`__"
+msgstr ""
+"「裝置管理通訊協定」是建置在 MQTT 之上。如需「裝置管理通訊協定」如何與 MQTT 互動的特定詳細資訊，請參閱 `適用於受管理裝置的 MQTT <../../messaging/managed_devices.html>`__"
+
+#: ../device_mgmt/operations/index.rst:17
+msgid "Device Initiated"
+msgstr ""
+"由裝置起始"
+
+#: ../device_mgmt/operations/index.rst:19
+msgid "These operations are initiated by the device.  ``manage`` and ``unmanage`` operations must be supported by all managed devices.  All other operations are optional."
+msgstr ""
+"這些作業是由裝置起始。所有受管理裝置都必須支援「管理」及「取消管理」作業。所有其他作業都是選用的。"
+
+#: ../device_mgmt/operations/index.rst:23
+msgid "Management Operations"
+msgstr ""
+"管理作業"
+
+#: ../device_mgmt/operations/index.rst:25
+msgid "These operations control whether device management features are enabled for the device."
+msgstr ""
+"這些作業控制是否針對裝置啟用裝置管理特性。"
+
+#: ../device_mgmt/operations/index.rst:28
+#: ../device_mgmt/operations/index.rst:42
+#: ../device_mgmt/operations/index.rst:58
+#: ../device_mgmt/operations/index.rst:81
+#: ../device_mgmt/operations/index.rst:92
+#: ../device_mgmt/operations/index.rst:110
+msgid "Operation"
+msgstr ""
+"作業"
+
+#: ../device_mgmt/operations/index.rst:28
+#: ../device_mgmt/operations/index.rst:42
+#: ../device_mgmt/operations/index.rst:58
+#: ../device_mgmt/operations/index.rst:81
+#: ../device_mgmt/operations/index.rst:92
+#: ../device_mgmt/operations/index.rst:110
+msgid "Device Support"
+msgstr ""
+"裝置支援"
+
+#: ../device_mgmt/operations/index.rst:30
+msgid ":ref:`manage-manage`"
+msgstr ""
+":ref:`manage-manage`"
+
+#: ../device_mgmt/operations/index.rst:30
+#: ../device_mgmt/operations/index.rst:32
+msgid "Required"
+msgstr ""
+"必要項目"
+
+#: ../device_mgmt/operations/index.rst:32
+msgid ":ref:`manage-unmanage`"
+msgstr ""
+":ref:`manage-unmanage`"
+
+#: ../device_mgmt/operations/index.rst:37
+msgid "Device Property Changes"
+msgstr ""
+"裝置內容變更"
+
+#: ../device_mgmt/operations/index.rst:39
+msgid "These optional operations, if implemented, allow the device to submit updated device-specific information to the service."
+msgstr ""
+"如果實作這些選用作業，可讓裝置提交更新的裝置特定資訊給服務。"
+
+#: ../device_mgmt/operations/index.rst:44
+msgid ":ref:`update-location`"
+msgstr ""
+":ref:`update-location`"
+
+#: ../device_mgmt/operations/index.rst:44
+#: ../device_mgmt/operations/index.rst:60
+#: ../device_mgmt/operations/index.rst:62
+#: ../device_mgmt/operations/index.rst:64
+#: ../device_mgmt/operations/index.rst:66
+#: ../device_mgmt/operations/index.rst:83
+#: ../device_mgmt/operations/index.rst:112
+#: ../device_mgmt/operations/index.rst:114
+#: ../device_mgmt/operations/index.rst:116
+#: ../device_mgmt/operations/index.rst:118
+msgid "Optional"
+msgstr ""
+"選用"
+
+#: ../device_mgmt/operations/index.rst:46
+msgid ":ref:`observations-notify`"
+msgstr ""
+":ref:`observations-notify`"
+
+#: ../device_mgmt/operations/index.rst:46
+#: ../device_mgmt/operations/index.rst:94
+#: ../device_mgmt/operations/index.rst:98
+msgid "Optional, required for devices supporting firmware update"
+msgstr ""
+"選用，若裝置支援韌體更新則是必要的"
+
+#: ../device_mgmt/operations/index.rst:53
+msgid "Add and Clear Diagnostic Information"
+msgstr ""
+"新增及清除診斷資訊"
+
+#: ../device_mgmt/operations/index.rst:55
+msgid "Devices can add new device-specific diagnostic information, for example, a new error code, log message, or to clear all existing error codes or log messages from the Internet of Things Foundation."
+msgstr ""
+"裝置可以新增裝置特定的診斷資訊（例如，新的錯誤碼、日誌訊息），或清除來自 Internet of Things Foundation 的所有現有錯誤碼或日誌訊息。"
+
+#: ../device_mgmt/operations/index.rst:60
+msgid ":ref:`diag-add-error-code`"
+msgstr ""
+":ref:`diag-add-error-code`"
+
+#: ../device_mgmt/operations/index.rst:62
+msgid ":ref:`diag-clear-error-codes`"
+msgstr ""
+":ref:`diag-clear-error-codes`"
+
+#: ../device_mgmt/operations/index.rst:64
+msgid ":ref:`diag-add-log`"
+msgstr ""
+":ref:`diag-add-log`"
+
+#: ../device_mgmt/operations/index.rst:66
+msgid ":ref:`diag-clear-logs`"
+msgstr ""
+":ref:`diag-clear-logs`"
+
+#: ../device_mgmt/operations/index.rst:71
+msgid "Service Initiated"
+msgstr ""
+"由服務起始"
+
+#: ../device_mgmt/operations/index.rst:73
+msgid "These operations are initiated by the Internet of Things Foundation, a managed device does not need to support handling any of these operations."
+msgstr ""
+"這些作業是由 Internet of Things Foundation 起始；受管理裝置不需要支援處理任何作業。"
+
+#: ../device_mgmt/operations/index.rst:77
+msgid "Update Attributes"
+msgstr ""
+"更新屬性"
+
+#: ../device_mgmt/operations/index.rst:78
+msgid "Devices should update attributes, such as metadata, location, or device information, upon a request from the Internet of Things Foundation."
+msgstr ""
+"裝置應該在 Internet of Things Foundation 要求時更新屬性（例如 meta 資料、位置或裝置資訊）。"
+
+#: ../device_mgmt/operations/index.rst:83
+msgid ":ref:`update-attributes`"
+msgstr ""
+":ref:`update-attributes`"
+
+#: ../device_mgmt/operations/index.rst:88
+msgid "Attribute Observations"
+msgstr ""
+"屬性觀察"
+
+#: ../device_mgmt/operations/index.rst:89
+msgid "These actions request devices to notify (or stop notifying) the service to changes in one or more attributes on the device."
+msgstr ""
+"這些動作會要求裝置在變更裝置上的一或多個屬性時，通知（或停止通知）服務。"
+
+#: ../device_mgmt/operations/index.rst:94
+msgid ":ref:`observations-observe`"
+msgstr ""
+":ref:`observations-observe`"
+
+#: ../device_mgmt/operations/index.rst:98
+msgid ":ref:`observations-cancel`"
+msgstr ""
+":ref:`observations-cancel`"
+
+#: ../device_mgmt/operations/index.rst:105
+msgid "Initiate an action"
+msgstr ""
+"起始動作"
+
+#: ../device_mgmt/operations/index.rst:107
+msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
+msgstr ""
+"此動作要求裝置起始下列其中一個動作：重新開機、重設為原廠設定、下載韌體，或更新韌體。"
+
+#: ../device_mgmt/operations/index.rst:110
+msgid "Type"
+msgstr ""
+"類型"
+
+#: ../device_mgmt/operations/index.rst:112
+#: ../device_mgmt/operations/index.rst:114
+msgid "Device action"
+msgstr ""
+"裝置動作"
+
+#: ../device_mgmt/operations/index.rst:112
+msgid ":ref:`device-actions-reboot`"
+msgstr ""
+":ref:`device-actions-reboot`"
+
+#: ../device_mgmt/operations/index.rst:114
+msgid ":ref:`device-actions-factory-reset`"
+msgstr ""
+":ref:`device-actions-factory-reset`"
+
+#: ../device_mgmt/operations/index.rst:116
+#: ../device_mgmt/operations/index.rst:118
+msgid "Firmware action"
+msgstr ""
+"韌體動作"
+
+#: ../device_mgmt/operations/index.rst:116
+msgid ":ref:`firmware-actions-download`"
+msgstr ""
+":ref:`firmware-actions-download`"
+
+#: ../device_mgmt/operations/index.rst:118
+msgid ":ref:`firmware-actions-update`"
+msgstr ""
+":ref:`firmware-actions-update`"
+
+#: ../device_mgmt/operations/index.rst:123
+msgid "Return Codes"
+msgstr ""
+"回覆碼"
+
+#: ../device_mgmt/operations/index.rst:125
+msgid "There are several return codes which are sent in response to the actions listed above."
+msgstr ""
+"您可傳送多個回覆碼，以回應上述列出的動作。"
+
+#: ../device_mgmt/operations/index.rst:127
+msgid "200: Operation succeeded"
+msgstr ""
+"200：作業成功"
+
+#: ../device_mgmt/operations/index.rst:128
+msgid "202: Accepted (for initiating commands)"
+msgstr ""
+"202：已接受（針對起始指令）"
+
+#: ../device_mgmt/operations/index.rst:129
+msgid "204: Changed (for attribute updates)"
+msgstr ""
+"204：已變更（針對屬性更新）"
+
+#: ../device_mgmt/operations/index.rst:130
+msgid "400: Bad request, for example, if a device is not in the appropriate state for this command"
+msgstr ""
+"400：不當的要求，例如，如果裝置不在此指令適用的狀態中"
+
+#: ../device_mgmt/operations/index.rst:131
+msgid "404: Attribute was not found, this code is also used if the operation was published to an invalid topic."
+msgstr ""
+"404：找不到屬性，如果作業發佈到無效的主題，也會使用此訊息碼。"
+
+#: ../device_mgmt/operations/index.rst:132
+msgid "409: Resource could not be updated due to a conflict, for example, the resource is being updated by two simultaneous requests, so update could be retried later"
+msgstr ""
+"409：由於衝突而無法更新資源，例如，資源由兩個同時執行的要求更新，因此稍後可能會再重試更新"
+
+#: ../device_mgmt/operations/index.rst:133
+msgid "500: Unexpected device error"
+msgstr ""
+"500：非預期的裝置錯誤"
+
+#: ../device_mgmt/operations/index.rst:134
+msgid "501: Operation not implemented"
+msgstr ""
+"501：未實作作業"
+

@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Bibliothèque client Java - Introduction"
+
+#: ../java/javaintro.rst:5
+msgid "This `Java Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__ can be used to simplify interactions with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. The documentation is divided into three sections:"
+msgstr ""
+"Cette `bibliothèque client Java <https://github.com/ibm-messaging/iot-java/releases/latest>`__ peut être utilisée pour simplifier les interactions avec `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. La documentation est divisée en trois sections :"
+
+#: ../java/javaintro.rst:7
+msgid "The `Devices section <../java/java_cli_devices.html>`__ contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"La `section Terminaux <../java/java_cli_devices.html>`__ contient des informations expliquant comment publier les événements et traiter les commandes à l'aide la bibliothèque client Java ibmiotf."
+
+#: ../java/javaintro.rst:8
+msgid "The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"La section `Terminaux gérés <../java/java_deviceManagement.html>`__ contient des informations décrivant le mode de connexion des terminaux au service Internet of Things Foundation Device Management via la bibliothèque client Java ibmiotf et présentant les opérations de gestion des terminaux, comme la mise à jour du microprogramme, de l'emplacement et des programmes de diagnostic. "
+
+#: ../java/javaintro.rst:9
+msgid "The `Applications section <../java/java_cli_app.html>`__ details how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"La `section Applications <../java/java_cli_app.html>`__ explique comment les applications peuvent utiliser la bibliothèque client Java ibmiotf pour interagir avec des terminaux."
+
+#: ../java/javaintro.rst:12
+msgid "Download"
+msgstr ""
+"Télécharger"
+
+#: ../java/javaintro.rst:13
+msgid "The latest version of the client library is available `here <https://github.com/ibm-messaging/iot-java/releases/latest>`__ to download."
+msgstr ""
+"La dernière version de la bibliothèque client peut être téléchargée `ici <https://github.com/ibm-messaging/iot-java/releases/latest>`__."
+
+#: ../java/javaintro.rst:15
+msgid "The zip module contains the following files,"
+msgstr ""
+"Le module zip contient les fichiers suivants :"
+
+#: ../java/javaintro.rst:17
+msgid "com.ibm.iotf.client-<version>.jar - Client library that enables one to talk to Internet of Things Foundation Connect."
+msgstr ""
+"com.ibm.iotf.client-<version>.jar - Bibliothèque client qui permet de communiquer avec Internet of Things Foundation Connect."
+
+#: ../java/javaintro.rst:18
+msgid "com.ibm.iotf.samples-<version>.jar - Contains samples."
+msgstr ""
+"com.ibm.iotf.samples-<version>.jar - Contient des exemples."
+
+#: ../java/javaintro.rst:19
+msgid "DMDeviceSample.properties - Properties file used to configure the list of options required to connect to Internet of Things Foundation Connect and perform device management operations."
+msgstr ""
+"DMDeviceSample.properties - Fichier de propriétés permettant de configurer la liste d'options requises pour se connecter à Internet of Things Foundation Connect et effectuer des opérations de gestion des terminaux."
+
+#: ../java/javaintro.rst:20
+msgid "device.prop - Properties file to specify connectivity information when DeviceClient is used"
+msgstr ""
+"device.prop - Fichier de propriétés permettant d'indiquer des informations de connectivité lors de l'utilisation de DeviceClient"
+
+#: ../java/javaintro.rst:21
+msgid "lib - Contains all dependent libraries"
+msgstr ""
+"lib - Contient toutes les bibliothèques dépendantes"
+
+#: ../java/javaintro.rst:22
+msgid "javadoc - Contains the client library documentation"
+msgstr ""
+"javadoc - Contient la documentation de la bibliothèque client"
+
+#: ../java/javaintro.rst:24
+msgid "This Java Client Library requires Oracle Java 7 or later,"
+msgstr ""
+"Cette bibliothèque client requiert Oracle Java 7 ou version ultérieure,"
+
+#: ../java/javaintro.rst:26
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ../java/javaintro.rst:27
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ../java/javaintro.rst:30
+msgid "Dependencies"
+msgstr ""
+"Dépendances"
+
+#: ../java/javaintro.rst:32
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Client Java MQTT Paho <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__  - Fournit une classe client qui permet aux applications de se connecter à un courtier MQTT."
+
+#: ../java/javaintro.rst:33
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - Bibliothèque permettant d'interagir avec des objets JSON."
+
+#: ../java/javaintro.rst:34
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - Bibliothèque permettant de consigner différentes informations."
+
+#: ../java/javaintro.rst:35
+msgid "`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Codec Apache Commons <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - Fournit des fonctionnalités d'encodeur et de décodeur courantes, comme Base64"
+
+#: ../java/javaintro.rst:36
+msgid "`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - provides methods for manipulating core Java classes"
+msgstr ""
+"`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - Fournit des méthodes pour manipuler des classes Java de base"
+
+#: ../java/javaintro.rst:37
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - Outil permettant des générations automatisées."
+
+#: ../java/javaintro.rst:38
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - Bibliothèque client HTTP."
+
+#: ../java/javaintro.rst:39
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - Bibliothèque de base HTTP."
+
+#: ../java/javaintro.rst:40
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - Bibliothèque gérant la date et l'heure pour Java."
+

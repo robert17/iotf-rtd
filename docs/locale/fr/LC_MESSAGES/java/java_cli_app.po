@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/java_cli_app.rst:3
+msgid "Java Client Library - Applications"
+msgstr ""
+"Bibliothèque client Java - Applications"
+
+#: ../java/java_cli_app.rst:6
+msgid "Introduction"
+msgstr ""
+"Introduction"
+
+#: ../java/java_cli_app.rst:8
+msgid "This client library describes how to use applications with the Java ibmiotf client library. For help with getting started with this module, see `Java Client Library - Introduction <../java/javaintro.html>`__."
+msgstr ""
+"Cette bibliothèque client explique comment utiliser des applications avec la bibliothèque client Java ibmiotf. Pour obtenir de l'aide lors de la mise en route de ce module, reportez-vous à la section `Bibliothèque client Java - Introduction <../java/javaintro.html>`__."
+
+#: ../java/java_cli_app.rst:10
+msgid "This client library is divided into three sections, all included within the library. This section contains information on how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"Cette bibliothèque client est divisée en trois sections, toutes placées au sein de la bibliothèque. Cette section contient des informations expliquant comment les applications peuvent utiliser la bibliothèque client Java ibmiotf pour interagir avec des terminaux."
+
+#: ../java/java_cli_app.rst:12
+msgid "The `Device section <../java/java_cli_devices.html>`__ contains information on how devices can publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"La section `Terminal <../java/java_cli_devices.html>` contient des informations expliquant comment les terminaux peuvent publier des événements et traiter des commandes à l'aide de la bibliothèque client Java ibmiotf."
+
+#: ../java/java_cli_app.rst:14
+msgid "The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"La section `Terminaux gérés <../java/java_deviceManagement.html>`__ contient des informations décrivant le mode de connexion des terminaux au service Internet of Things Foundation Device Management via la bibliothèque client Java ibmiotf et présentant les opérations de gestion des terminaux, comme la mise à jour du microprogramme, de l'emplacement et des programmes de diagnostic. "
+
+#: ../java/java_cli_app.rst:17
+msgid "Constructor"
+msgstr ""
+"Constructeur"
+
+#: ../java/java_cli_app.rst:19
+msgid "The constructor builds the client instance, and accepts a Properties object containing the following definitions:"
+msgstr ""
+"Le constructeur génère l'instance client et accepte un objet Properties contenant les définitions suivantes :"
+
+#: ../java/java_cli_app.rst:21
+msgid "org - Your organization ID. (This is a required field. In case of quickstart flow, provide org as quickstart.)"
+msgstr ""
+"org - ID de votre organisation. (Cette zone est obligatoire. Dans le cas d'un flux Quickstart, indiquez quickstart comme organisation.)"
+
+#: ../java/java_cli_app.rst:22
+msgid "id - The unique ID of your application within your organization."
+msgstr ""
+"id - ID unique de votre application au sein de l'organisation."
+
+#: ../java/java_cli_app.rst:23
+msgid "auth-method - Method of authentication (the only value currently supported is “apikey”)."
+msgstr ""
+"auth-method - Méthode d'authentification. (La seule valeur actuellement prise en charge est 'apikey'.)"
+
+#: ../java/java_cli_app.rst:24
+msgid "auth-key - API key (required if auth-method is “apikey”)."
+msgstr ""
+"auth-key - Clé d'API (obligatoire si auth-method a pour valeur 'apikey')."
+
+#: ../java/java_cli_app.rst:25
+msgid "auth-token - API key token (required if auth-method is “apikey”)."
+msgstr ""
+"auth-token - Jeton de la clé d'API (obligatoire si auth-method a pour valeur 'apikey')."
+
+#: ../java/java_cli_app.rst:26
+msgid "enable-shared-subscription - true or false (required only if shared subscription needs to be enabled)"
+msgstr ""
+"enable-shared-subscription - true ou false (obligatoire uniquement si l'abonnement partagé doit être activé)."
+
+#: ../java/java_cli_app.rst:28
+msgid "One must set **enable-shared-subscription** to true to build scalable applications which will load balance messages across multiple instances of the application. Refer to the `scalable applications section <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__ for more information about the load balancing."
+msgstr ""
+"Vous devez associer **enable-shared-subscription** à la valeur true pour générer des applications évolutives qui équilibrent la charge des messages entre plusieurs instances de l'application. Pour plus d'informations sur l'équilibrage de charge, reportez-vous à la `section relative aux applications évolutives <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__."
+
+#: ../java/java_cli_app.rst:30
+msgid "The Properties object creates definitions which are used to interact with the Internet of Things Foundation module. If no options are provided or organization is provided as quickstart, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device."
+msgstr ""
+"L'objet Properties crée des définitions qui permettent d'interagir avec le module Internet of Things Foundation. Si aucune option n'est indiquée ou que l'organisation correspond à quickstart, le client se connecte au service Quickstart d'Internet of Things Foundation et correspond par défaut à un terminal non enregistré."
+
+#: ../java/java_cli_app.rst:32
+msgid "The following code snippet shows how to construct the ApplicationClient instance in Quickstart mode,"
+msgstr ""
+"Le fragment de code suivant explique comment construire l'instance ApplicationClient dans le mode Quickstart :"
+
+#: ../java/java_cli_app.rst:44
+msgid "The following code snippet shows how to construct the ApplicationClient instance in registered flow,"
+msgstr ""
+"Le fragment de code suivant explique comment construire l'instance ApplicationClient dans le flux d'organisations enregistrées :"
+
+#: ../java/java_cli_app.rst:60
+msgid "Using a configuration file"
+msgstr ""
+"Utilisation d'un fichier de configuration"
+
+#: ../java/java_cli_app.rst:62
+msgid "Instead of including a Properties object directly, you can use a configuration file containing the name-value pairs for Properties. If you are using a configuration file containing a Properties object, use the following code format."
+msgstr ""
+"Au lieu d'inclure un objet Properties directement, vous pouvez utiliser un fichier de configuration contenant les paires nom-valeur de l'objet Properties. Si vous utilisez un fichier de configuration contenant un objet Properties, utilisez le format de code suivant :"
+
+#: ../java/java_cli_app.rst:70
+msgid "The application configuration file must be in the following format:"
+msgstr ""
+"Le fichier de configuration de l'application doit posséder le format suivant :"
+
+#: ../java/java_cli_app.rst:85
+msgid "Connecting to the Internet of Things Foundation"
+msgstr ""
+"Connexion à Internet of Things Foundation"
+
+#: ../java/java_cli_app.rst:87
+msgid "Connect to the Internet of Things Foundation by calling the *connect* function."
+msgstr ""
+"Connectez-vous à Internet of Things Foundation en appelant la fonction *connect*."
+
+#: ../java/java_cli_app.rst:97
+msgid "After the successful connection to the IoTF service, the application client can perform the following operations, like subscribing to device events, subscribing to device status, publishing device events and commands."
+msgstr ""
+"Une fois que la connexion au service IoTF est établie, le client d'application peut effectuer les opérations suivantes, comme l'abonnement à des événements du terminal, l'abonnement au statut du terminal, la publication des événements et des commandes du terminal."
+
+#: ../java/java_cli_app.rst:102
+msgid "Subscribing to device events"
+msgstr ""
+"Abonnement aux événements d'un terminal"
+
+#: ../java/java_cli_app.rst:103
+msgid "Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends."
+msgstr ""
+"Les événements représentent le mécanisme par lequel les terminaux publient les données dans Internet of Things Foundation. Le terminal contrôle le contenu de l'événement et affecte un nom à chaque événement qu'il envoie."
+
+#: ../java/java_cli_app.rst:105
+msgid "When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device."
+msgstr ""
+"Lorsqu'un événement est reçu par IoT Foundation, les données d'identification de la connexion sur laquelle l'événement a été reçu sont utilisées pour identifier le terminal qui a envoyé l'événement. Avec cette architecture, un terminal ne peut en aucun cas simuler les droits d'accès d'un autre terminal."
+
+#: ../java/java_cli_app.rst:107
+msgid "By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters."
+msgstr ""
+"Par défaut, les applications sont abonnées à tous les événements de tous les terminaux connectés. Utilisez les paramètres type, id, event et msgFormat pour contrôler la portée de l'abonnement. Un même client peut prendre en charge plusieurs abonnements. Les exemples de code ci-après expliquent comment s'abonner à des terminaux en fonction des paramètres type, id, event et msgFormat."
+
+#: ../java/java_cli_app.rst:110
+msgid "To subscribe to all events from all devices"
+msgstr ""
+"Abonnement à tous les événements de tous les terminaux"
+
+#: ../java/java_cli_app.rst:118
+msgid "To subscribe to all events from all devices of a specific type"
+msgstr ""
+"Abonnement à tous les événements de tous les terminaux d'un type donné"
+
+#: ../java/java_cli_app.rst:126
+msgid "To subscribe to all events from a specific device"
+msgstr ""
+"Abonnement à tous les événements d'un terminal spécifique"
+
+#: ../java/java_cli_app.rst:134
+msgid "To subscribe to a specific event from two or more different devices"
+msgstr ""
+"Abonnement à un événement spécifique de plusieurs terminaux"
+
+#: ../java/java_cli_app.rst:143
+msgid "To subscribe to events published by a device in json format"
+msgstr ""
+"Abonnement à des événements publiés par un terminal au format json"
+
+#: ../java/java_cli_app.rst:153
+msgid "Handling events from devices"
+msgstr ""
+"Traitement des événements provenant des terminaux"
+
+#: ../java/java_cli_app.rst:154
+msgid "To process the events received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Event class which has the following properties:"
+msgstr ""
+"Pour traiter les événements reçus via vos abonnements, vous devez enregistrer une méthode de rappel d'événement. Les messages sont renvoyés sous la forme d'une instance de la classe Event dotée des propriétés suivantes :"
+
+#: ../java/java_cli_app.rst:156
+msgid "event.device - string (uniquely identifies the device across all types of devices in the organization)"
+msgstr ""
+"event.device - Chaîne (qui identifie de manière unique le terminal parmi tous les types de terminaux de l'organisation)"
+
+#: ../java/java_cli_app.rst:157
+msgid "event.deviceType - string"
+msgstr ""
+"event.deviceType - Chaîne"
+
+#: ../java/java_cli_app.rst:158
+msgid "event.deviceId - string"
+msgstr ""
+"event.deviceId - Chaîne"
+
+#: ../java/java_cli_app.rst:159
+msgid "event.event - string"
+msgstr ""
+"event.event - Chaîne"
+
+#: ../java/java_cli_app.rst:160
+msgid "event.format - string"
+msgstr ""
+"event.format - Chaîne"
+
+#: ../java/java_cli_app.rst:161
+msgid "event.data - dict"
+msgstr ""
+"event.data - dict"
+
+#: ../java/java_cli_app.rst:162
+msgid "event.timestamp - datetime"
+msgstr ""
+"event.timestamp - Objet datetime"
+
+#: ../java/java_cli_app.rst:164
+msgid "A sample implementation of the Event callback,"
+msgstr ""
+"Exemple d'implémentation du rappel Event :"
+
+#: ../java/java_cli_app.rst:182
+msgid "Once the event callback is added to the ApplicationClient, the processEvent() method is invoked whenever any event is published on the subscribed criteria, The following snippet shows how to add the Event call back into ApplicationClient instance,"
+msgstr ""
+"Une fois que le rappel Event est ajouté à l'instance ApplicationClient, la méthode processEvent() est appelée lorsqu'un événement est publié sur les critères d'abonnement. Le fragment suivant explique comment ajouter le rappel Event dans l'instance ApplicationClient :"
+
+#: ../java/java_cli_app.rst:190
+msgid "Similar to subscribing to device events, the application can subscribe to commands that are sent to the devices. Following code snippet shows how to subscribe to all commands to all the devices in the organization:"
+msgstr ""
+"Comme pour l'abonnement à des événements de terminaux, l'application peut s'abonner à des commandes envoyées aux terminaux. Le fragment de code suivant explique comment s'abonner à toutes les commandes destinées à l'ensemble des terminaux de l'organisation :"
+
+#: ../java/java_cli_app.rst:198
+msgid "Overloaded methods are available to control the command subscription. The processCommand() method is called when a command is sent to the device that matches the command subscription."
+msgstr ""
+"Des méthodes surchargées sont disponibles pour contrôler l'abonnement aux commandes. La méthode processCommand() est appelée lorsqu'une commande correspondant à l'abonnement est envoyée au terminal."
+
+#: ../java/java_cli_app.rst:203
+msgid "Subscribing to device status"
+msgstr ""
+"Abonnement au statut des terminaux"
+
+#: ../java/java_cli_app.rst:204
+msgid "Similar to subscribing to device events, applications can subscribe to device status, like device connect and disconnect to Internet of Things Foundation. By default, this will subscribe to status updates for all connected devices. Use the Device Type and Device Id parameters to control the scope of the subscription. A single ApplicationClient can support multiple subscriptions."
+msgstr ""
+"Comme pour l'abonnement à des événements de terminaux, les applications peuvent s'abonner aux statuts des terminaux, comme la connexion et la déconnexion des terminaux dans Internet of Things Foundation. Par défaut, vous êtes abonné aux mises à jour du statut de tous les terminaux connectés. Utilisez les paramètres Device Type et Device Id pour contrôler la portée de l'abonnement. Un même client ApplicationClient peut prendre en charge plusieurs abonnements."
+
+#: ../java/java_cli_app.rst:207
+msgid "Subscribe to status updates for all devices"
+msgstr ""
+"Abonnement aux mises à jour du statut de tous les terminaux"
+
+#: ../java/java_cli_app.rst:216
+msgid "Subscribe to status updates for all devices of a specific type"
+msgstr ""
+"Abonnement aux mises à jour du statut de tous les terminaux d'un type donné"
+
+#: ../java/java_cli_app.rst:225
+msgid "Subscribe to status updates for two different devices"
+msgstr ""
+"Abonnement aux mises à jour du statut de deux terminaux différents"
+
+#: ../java/java_cli_app.rst:237
+msgid "Handling status updates from devices"
+msgstr ""
+"Traitement des mises à jour du statut des terminaux"
+
+#: ../java/java_cli_app.rst:238
+msgid "To process the status updates received by your subscriptions you need to register an status event callback method. The messages are returned as an instance of the Status class which contains the below mentioned properties:"
+msgstr ""
+"Pour traiter les mises à jour du statut reçues par vos abonnements, vous devez enregistrer une méthode de rappel d'événement de statut. Les messages sont renvoyés sous la forme d'une instance de la classe Status qui inclut les propriétés suivantes :"
+
+#: ../java/java_cli_app.rst:240
+msgid "The following properties are set for both \"Connect\" and \"Disconnect\" status events:"
+msgstr ""
+"Les propriétés suivantes sont définies pour les événements de statut \"Connexion\" (Connect) et \"Déconnexion\" (Disconnect) :"
+
+#: ../java/java_cli_app.rst:242
+msgid "status.clientAddr - string"
+msgstr ""
+"status.clientAddr - Chaîne"
+
+#: ../java/java_cli_app.rst:243
+msgid "status.protocol - string"
+msgstr ""
+"status.protocol - Chaîne"
+
+#: ../java/java_cli_app.rst:244
+msgid "status.clientId - string"
+msgstr ""
+"status.clientId - Chaîne"
+
+#: ../java/java_cli_app.rst:245
+msgid "status.user - string"
+msgstr ""
+"status.user - Chaîne"
+
+#: ../java/java_cli_app.rst:246
+msgid "status.time - java.util.Date"
+msgstr ""
+"status.time - java.util.Date"
+
+#: ../java/java_cli_app.rst:247
+msgid "status.action - string"
+msgstr ""
+"status.action - Chaîne"
+
+#: ../java/java_cli_app.rst:248
+msgid "status.connectTime - java.util.Date"
+msgstr ""
+"status.connectTime - java.util.Date"
+
+#: ../java/java_cli_app.rst:249
+msgid "status.port - integer"
+msgstr ""
+"status.port - Entier"
+
+#: ../java/java_cli_app.rst:251
+msgid "The following properties are only set when the action is \"Disconnect\":"
+msgstr ""
+"Les propriétés suivantes sont définies uniquement lorsque l'action est \"Déconnexion\" (Disconnect) :"
+
+#: ../java/java_cli_app.rst:253
+msgid "status.writeMsg - integer"
+msgstr ""
+"status.writeMsg - Entier"
+
+#: ../java/java_cli_app.rst:254
+msgid "status.readMsg - integer"
+msgstr ""
+"status.readMsg - Entier"
+
+#: ../java/java_cli_app.rst:255
+msgid "status.reason - string"
+msgstr ""
+"status.reason - Chaîne"
+
+#: ../java/java_cli_app.rst:256
+msgid "status.readBytes - integer"
+msgstr ""
+"status.readBytes - Entier"
+
+#: ../java/java_cli_app.rst:257
+msgid "status.writeBytes - integer"
+msgstr ""
+"status.writeBytes - Entier"
+
+#: ../java/java_cli_app.rst:259
+msgid "A sample implementation of the Status callback,"
+msgstr ""
+"Exemple d'implémentation du rappel Status :"
+
+#: ../java/java_cli_app.rst:283
+msgid "Once the status callback is added to the ApplicationClient, the processDeviceStatus() method is invoked whenever any device is connected or disconnected from Internet of Things Foundation that matches the criteria, The following snippet shows how to add the status call back instance into ApplicationClient,"
+msgstr ""
+"Une fois que le rappel Status est ajouté à l'instance ApplicationClient, la méthode  processDeviceStatus() est appelée lorsqu'un terminal correspondant aux critères est connecté ou déconnecté dans Internet of Things Foundation. Le fragment suivant explique comment ajouter l'instance de rappel Status dans l'instance ApplicationClient :"
+
+#: ../java/java_cli_app.rst:293
+msgid "As similar to device status, the application can subscribe to any other application connect or disconnect status as well. Following code snippet shows how to subscribe to the application status in the organization:"
+msgstr ""
+"Outre le statut des terminaux, l'application peut s'abonner à n'importe quel autre statut de connexion ou de déconnexion. Le fragment de code suivant indique comment s'abonner au statut d'une application dans l'organisation :"
+
+#: ../java/java_cli_app.rst:301
+msgid "Overloaded method is available to control the status subscription to a particular application. The processApplicationStatus() method is called whenever any application is connected or disconnected from Internet of Things Foundation that matches the criteria."
+msgstr ""
+"La méthode surchargée est disponible pour contrôler l'abonnement au statut d'une application spécifique. La méthode processApplicationStatus() est appelée chaque fois qu'une application correspondant aux critères est connectée ou déconnectée d'Internet of Things Foundation."
+
+#: ../java/java_cli_app.rst:304
+msgid "Publishing events from devices"
+msgstr ""
+"Publication des événements à partir de terminaux"
+
+#: ../java/java_cli_app.rst:305
+msgid "Applications can publish events as if they originated from a Device."
+msgstr ""
+"Les applications peuvent publier des événements comme s'ils provenaient d'un terminal."
+
+#: ../java/java_cli_app.rst:322
+msgid "Publish events using HTTP(s)"
+msgstr ""
+"Publication des événements à l'aide du protocole HTTP(s)"
+
+#: ../java/java_cli_app.rst:323
+msgid "Apart from MQTT, the application can publish device events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,"
+msgstr ""
+"Outre MQTT, les terminaux peuvent publier les événements des terminaux dans IBM Internet of Things Foundation via HTTP(s) en suivant trois étapes simples :"
+
+#: ../java/java_cli_app.rst:325
+msgid "Construct the ApplicationClient instance using the properties file"
+msgstr ""
+"Construire l'instance ApplicationClient à l'aide du fichier de propriétés"
+
+#: ../java/java_cli_app.rst:326
+msgid "Construct the event that needs to be published"
+msgstr ""
+"Construire l'événement qui doit être publié"
+
+#: ../java/java_cli_app.rst:327
+msgid "Specify the event name, Device Type, Device ID and publish the event using publishEventOverHTTP() method as follows,"
+msgstr ""
+"Indiquer le nom de l'événement, le type de terminal, l'ID terminal et publier l'événement à l'aide de la méthode publishEventOverHTTP(), comme indiqué ci-après :"
+
+#: ../java/java_cli_app.rst:341
+msgid "The complete code can be found in the application example `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__"
+msgstr ""
+"Le code complet est disponible dans l'exemple d'application `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__"
+
+#: ../java/java_cli_app.rst:343
+msgid "Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured."
+msgstr ""
+"En fonction des paramètres du fichier de propriétés, la méthode publishEventOverHTTP() publie l'événement dans le flux Quickstart ou le flux des organisations enregistrées. Lorsque l'ID organisation indiqué dans le fichier de propriétés est quickstart, la méthode publishEventOverHTTP() publie l'événement dans le service Quickstart d'Internet of Things Foundation au format HTTP standard. En revanche, lorsqu'une organisation enregistrée valide est indiquée dans le fichier de propriétés, cette méthode publie toujours l'événement dans HTTPS (HTTP sur SSL) afin que toutes les communications soient sécurisées. "
+
+#: ../java/java_cli_app.rst:345
+msgid "The event in HTTP(s) is published at most once Quality of Service, so the application needs to implement the retry logic when there is an error."
+msgstr ""
+"Dans HTTP(s), l'événement est publié au niveau de qualité de service 'une fois tout au plus', ce qui signifie que l'application doit mettre en place une logique de relance en cas d'erreur."
+
+#: ../java/java_cli_app.rst:350
+msgid "Publishing commands to devices"
+msgstr ""
+"Publication de commandes sur des terminaux"
+
+#: ../java/java_cli_app.rst:351
+msgid "Applications can publish commands to connected devices."
+msgstr ""
+"Les applications peuvent publier des commandes sur des terminaux connectés."
+
+#: ../java/java_cli_app.rst:368
+msgid "Examples"
+msgstr ""
+"Exemples"
+
+#: ../java/java_cli_app.rst:369
+msgid "`MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - A sample application that shows how to publish device events."
+msgstr ""
+"`MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - Exemple d'application qui explique comment publier les événements d'un terminal. "
+
+#: ../java/java_cli_app.rst:370
+msgid "`RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - A sample application that shows how to publish a command to a device."
+msgstr ""
+"`RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - Exemple d'application qui explique comment publier une commande sur un terminal. "
+
+#: ../java/java_cli_app.rst:371
+msgid "`RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - A sample application that shows how to subscribe for various events like, device events, device commands, device status and application status."
+msgstr ""
+"`RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - Exemple d'application qui explique comment s'abonner à différents événements, comme les événements des terminaux, les commandes des terminaux, le statut des terminaux et le statut des applications."
+
+#: ../java/java_cli_app.rst:372
+msgid "`SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - A sample application that shows how to build a scalable application which will load balance messages across multiple instances of the application."
+msgstr ""
+"`SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - Exemple d'application qui explique comment générer une application évolutive qui effectue un équilibrage de charge entre les messages de plusieurs instances de l'application."
+

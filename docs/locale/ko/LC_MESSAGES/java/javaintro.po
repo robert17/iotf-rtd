@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../java/javaintro.rst:2
+msgid "Java Client Library - Introduction"
+msgstr ""
+"Java 클라이언트 라이브러리 - 소개"
+
+#: ../java/javaintro.rst:5
+msgid "This `Java Client Library <https://github.com/ibm-messaging/iot-java/releases/latest>`__ can be used to simplify interactions with the `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__. The documentation is divided into three sections:"
+msgstr ""
+"이 `Java 클라이언트 라이브러리 <https://github.com/ibm-messaging/iot-java/releases/latest>`__는 `IBM Internet of Things Foundation <https://internetofthings.ibmcloud.com>`__과의 상호작용을 간소화하는 데 사용할 수 있습니다. 이 문서는 3개의 절로 나뉩니다."
+
+#: ../java/javaintro.rst:7
+msgid "The `Devices section <../java/java_cli_devices.html>`__ contains information on how devices publish events and handle commands using the Java ibmiotf Client Library."
+msgstr ""
+"`디바이스 절 <../java/java_cli_devices.html>`__에는 디바이스가 Java ibmiotf 클라이언트 라이브러리를 통해 이벤트를 공개하고 명령을 처리하는 방법에 대한 정보가 포함됩니다."
+
+#: ../java/javaintro.rst:8
+msgid "The `Managed Device section <../java/java_deviceManagement.html>`__ contains information on how devices can connect to the Internet of Things Foundation Device Management service using Java ibmiotf Client Library and perform device management operations like firmware update, location update, and diagnostics update."
+msgstr ""
+"`관리 디바이스 절 <../java/java_deviceManagement.html>`__에는 디바이스가 Java ibmiotf 클라이언트 라이브러리를 통해 Internet of Things Foundation 디바이스 관리 서비스에 연결하고 펌웨어 업데이트, 위치 업데이트 및 진단 업데이트와 같은 디바이스 관리 오퍼레이션을 수행할 수 있는 방법에 대한 정보가 포함됩니다."
+
+#: ../java/javaintro.rst:9
+msgid "The `Applications section <../java/java_cli_app.html>`__ details how applications can use the Java ibmiotf Client Library to interact with devices."
+msgstr ""
+"`애플리케이션 절 <../java/java_cli_app.html>`__은 애플리케이션이 디바이스와 상호작용하는 데 Java ibmiotf 클라이언트 라이브러리를 사용할 수 있는 방법에 대해 자세히 설명합니다."
+
+#: ../java/javaintro.rst:12
+msgid "Download"
+msgstr ""
+"다운로드"
+
+#: ../java/javaintro.rst:13
+msgid "The latest version of the client library is available `here <https://github.com/ibm-messaging/iot-java/releases/latest>`__ to download."
+msgstr ""
+"최신 버전의 클라이언트 라이브러리는 `여기 <https://github.com/ibm-messaging/iot-java/releases/latest>`__에서 다운로드할 수 있습니다. "
+
+#: ../java/javaintro.rst:15
+msgid "The zip module contains the following files,"
+msgstr ""
+"zip 모듈에는 다음 파일이 있습니다. "
+
+#: ../java/javaintro.rst:17
+msgid "com.ibm.iotf.client-<version>.jar - Client library that enables one to talk to Internet of Things Foundation Connect."
+msgstr ""
+"com.ibm.iotf.client-<version>.jar - Internet of Things Foundation 연결과 대화할 수 있도록 지원하는 클라이언트 라이브러리입니다. "
+
+#: ../java/javaintro.rst:18
+msgid "com.ibm.iotf.samples-<version>.jar - Contains samples."
+msgstr ""
+"com.ibm.iotf.samples-<version>.jar - 샘플이 있습니다. "
+
+#: ../java/javaintro.rst:19
+msgid "DMDeviceSample.properties - Properties file used to configure the list of options required to connect to Internet of Things Foundation Connect and perform device management operations."
+msgstr ""
+"DMDeviceSample.properties - Internet of Things Foundation 연결에 연결하여 디바이스 관리 오퍼레이션을 수행하는 데 필요한 옵션 목록을 구성하는 데 사용되는 특성 파일입니다. "
+
+#: ../java/javaintro.rst:20
+msgid "device.prop - Properties file to specify connectivity information when DeviceClient is used"
+msgstr ""
+"device.prop - DeviceClient가 사용되는 경우 연결 정보를 지정하기 위한 특성 파일입니다. "
+
+#: ../java/javaintro.rst:21
+msgid "lib - Contains all dependent libraries"
+msgstr ""
+"lib - 모든 종속 라이브러리가 있습니다. "
+
+#: ../java/javaintro.rst:22
+msgid "javadoc - Contains the client library documentation"
+msgstr ""
+"javadoc - 클라이언트 라이브러리 문서가 있습니다. "
+
+#: ../java/javaintro.rst:24
+msgid "This Java Client Library requires Oracle Java 7 or later,"
+msgstr ""
+"이 Java 클라이언트 라이브러리는 Oracle Java 7 이상이 필요합니다."
+
+#: ../java/javaintro.rst:26
+msgid "`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+msgstr ""
+"`Java 7 <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`__"
+
+#: ../java/javaintro.rst:27
+msgid "`Java 8 <https://java.com/en/download/>`__"
+msgstr ""
+"`Java 8 <https://java.com/en/download/>`__"
+
+#: ../java/javaintro.rst:30
+msgid "Dependencies"
+msgstr ""
+"종속 항목"
+
+#: ../java/javaintro.rst:32
+msgid "`Paho MQTT Java Client <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - provides a client class which enable applications to connect to an MQTT broker"
+msgstr ""
+"`Paho MQTT Java 클라이언트 <http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git/>`__   - 애플리케이션이 MQTT 브로커에 연결할 수 있게 하는 클라이언트 클래스를 제공함"
+
+#: ../java/javaintro.rst:33
+msgid "`google-gson <https://code.google.com/p/google-gson/>`__   - library for interacting with JSON objects"
+msgstr ""
+"`google-gson <https://code.google.com/p/google-gson/>`__   - JSON 오브젝트와 상호작용하기 위한 라이브러리"
+
+#: ../java/javaintro.rst:34
+msgid "`Apache Commons Logging <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - library for logging various informations"
+msgstr ""
+"`Apache 공통 로깅 <http://commons.apache.org/proper/commons-logging/download_logging.cgi>`__   - 다양한 정보를 로그하기 위한 라이브러리"
+
+#: ../java/javaintro.rst:35
+msgid "`Apache Commons Codec <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__  - provides common encoder and decoder functionalities such as Base64"
+msgstr ""
+"`Apache 공통 코덱 <https://commons.apache.org/proper/commons-codec/download_codec.cgi>`__ - Base64와 같은 공통 인코더 및 디코더 기능을 제공합니다. "
+
+#: ../java/javaintro.rst:36
+msgid "`Apache Commons Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - provides methods for manipulating core Java classes"
+msgstr ""
+"`Apache 공통 Lang <https://commons.apache.org/proper/commons-lang/download_lang.cgi>`__ - 코어 Java 클래스를 조작하기 위한 메소드를 제공합니다. "
+
+#: ../java/javaintro.rst:37
+msgid "`Apache Ant <http://ant.apache.org/>`__   - build tool for automated builds"
+msgstr ""
+"`Apache Ant <http://ant.apache.org/>`__   - 자동화된 빌드를 위한 빌드 도구"
+
+#: ../java/javaintro.rst:38
+msgid "`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - A HTTP Client library"
+msgstr ""
+"`Apache HttpClient <https://hc.apache.org/downloads.cgi>`__   - HTTP 클라이언트 라이브러리"
+
+#: ../java/javaintro.rst:39
+msgid "`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - A HTTP Core library"
+msgstr ""
+"`Apache HttpCore <https://hc.apache.org/downloads.cgi>`__   - HTTP 코어 라이브러리"
+
+#: ../java/javaintro.rst:40
+msgid "`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - The date and time library for Java"
+msgstr ""
+"`Joda-Time <http://www.joda.org/joda-time/download.html>`__ - Java의 날짜 및 시간 라이브러리"
+

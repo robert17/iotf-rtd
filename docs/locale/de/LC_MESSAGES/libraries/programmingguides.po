@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libraries/programmingguides.rst:3
+msgid "Programming Guides"
+msgstr ""
+"Programmierhandbücher"
+
+#: ../libraries/programmingguides.rst:5
+msgid "There are several client libraries availabe for use with the Internet of Things Foundation. The client libraries are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible."
+msgstr ""
+"Es sind mehrere Clientbibliotheken für die Verwendung mit Internet of Things Foundation verfügbar. Die Clientbibliotheken helfen Benutzer bei der Interaktion mit ihren Geräte und Anwendungen unter Verwendung ihrer bevorzugten Sprache und vereinfachen daher diese Interaktion so weit wie möglich."
+
+#: ../libraries/programmingguides.rst:7
+msgid "There are also specific device and operation recipes available for use with the Internet of Things Foundation hosted on the `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__."
+msgstr ""
+"Spezielle Anleitungen für Geräte und Operationen zur Verwendung mit Internet of Things Foundation stehen darüber hinaus in `developerWorks-Anleitungen <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__ zur Verfügung. "
+
+#: ../libraries/programmingguides.rst:9
+msgid "In the event that you cannot find a programming guide or recipe to suit your environment or device, raw MQTT should be used to communicate with the Internet of Things Foundation. For more information, please see `MQTT <../messaging/mqtt.html#/>`__ and `MQTT Connectivity for Devices <../messaging/devices.html#/>`__."
+msgstr ""
+"Falls Sie kein geeignetes Programmierungshandbuch bzw. keine geeignete Anleitung für Ihre Umgebung oder das verwendete Gerät finden, verwenden Sie unformatiertes MQTT für die Kommunikation mit Internet of Things Foundation. Weitere Informationen finden Sie in `MQTT <../messaging/mqtt.html#/>`__ und `MQTT-Konnektivität für Geräte <../messaging/devices.html#/>`__."
+
+#: ../libraries/programmingguides.rst:12
+msgid "Python"
+msgstr ""
+"Python"
+
+#: ../libraries/programmingguides.rst:14
+msgid "`Introduction <../libraries/python.html#/>`__"
+msgstr ""
+"`Einführung <../libraries/python.html#/>`__"
+
+#: ../libraries/programmingguides.rst:15
+msgid "`Documentation for device developers <../libraries/python_cli_for_devices.html#/>`__"
+msgstr ""
+"`Dokumentation für Geräteentwickler <../libraries/python_cli_for_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:16
+msgid "`Documentation application developers <../libraries/python_cli_for_apps.html#/>`__"
+msgstr ""
+"`Dokumentation für Anwendungsentwickler <../libraries/python_cli_for_apps.html#/>`__"
+
+#: ../libraries/programmingguides.rst:17
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-python>`_"
+msgstr ""
+"`Siehe den Code in GitHub <https://github.com/ibm-messaging/iot-python>`_"
+
+#: ../libraries/programmingguides.rst:20
+msgid "Embedded C"
+msgstr ""
+"Embedded C"
+
+#: ../libraries/programmingguides.rst:22
+msgid "`Documentation <../libraries/embedded_c.html#/>`__"
+msgstr ""
+"`Dokumentation <../libraries/embedded_c.html#/>`__"
+
+#: ../libraries/programmingguides.rst:23
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+msgstr ""
+"`Siehe den Code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+
+#: ../libraries/programmingguides.rst:26
+msgid "Java"
+msgstr ""
+"Java"
+
+#: ../libraries/programmingguides.rst:28
+msgid "`Introduction <../java/javaintro.html#/>`__"
+msgstr ""
+"`Einführung <../java/javaintro.html#/>`__"
+
+#: ../libraries/programmingguides.rst:29
+msgid "`Documentation for device developers <../java/java_cli_devices.html#/>`__"
+msgstr ""
+"`Dokumentation für Geräteentwickler <../java/java_cli_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:30
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-java>`_"
+msgstr ""
+"`Siehe den Code in GitHub <https://github.com/ibm-messaging/iot-java>`_"
+
+#: ../libraries/programmingguides.rst:33
+msgid "Node.js"
+msgstr ""
+"Node.js"
+
+#: ../libraries/programmingguides.rst:35
+msgid "`Introduction <../nodejs/node-js_intro.html#/>`__"
+msgstr ""
+"`Einführung <../nodejs/node-js_intro.html#/>`__"
+
+#: ../libraries/programmingguides.rst:36
+msgid "`Documentation for device developers <../nodejs/node-js_devices.html#/>`__"
+msgstr ""
+"`Dokumentation für Geräteentwickler <../nodejs/node-js_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:37
+msgid "`Documentation for application developers <../nodejs/node-js_applications.html#/>`__"
+msgstr ""
+"`Dokumentation für Anwendungsentwickler <../nodejs/node-js_applications.html#/>`__"
+
+#: ../libraries/programmingguides.rst:38
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+msgstr ""
+"`Siehe den Code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+
+#: ../libraries/programmingguides.rst:42
+msgid "C#"
+msgstr ""
+"C#"
+
+#: ../libraries/programmingguides.rst:44
+msgid "`Introduction <../libraries/c_sharp_introduction.html#/>`__"
+msgstr ""
+"`Einführung <../libraries/c_sharp_introduction.html#/>`__"
+
+#: ../libraries/programmingguides.rst:45
+msgid "`Documentation for device developers <../libraries/c_sharp_devices.html#/>`__"
+msgstr ""
+"`Dokumentation für Geräteentwickler <../libraries/c_sharp_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:46
+msgid "`Documentation for application developers <../libraries/c_sharp_applications.html#/>`__"
+msgstr ""
+"`Dokumentation für Anwendungsentwickler <../libraries/c_sharp_applications.html#/>`__"
+

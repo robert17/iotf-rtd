@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/update.rst:3
+msgid "Device Management Operations - Update"
+msgstr ""
+"디바이스 관리 오퍼레이션 - 업데이트"
+
+#: ../device_mgmt/operations/update.rst:8
+msgid "Update Location"
+msgstr ""
+"위치 업데이트"
+
+#: ../device_mgmt/operations/update.rst:10
+msgid "Devices can change their location over time. The update of the location can happen in two ways:"
+msgstr ""
+"디바이스가 시간이 지나면서 해당 위치를 변경할 수 있습니다. 다음과 같이 두 가지 방식으로 위치가 업데이트될 수 있습니다."
+
+#: ../device_mgmt/operations/update.rst:12
+msgid "The device itself notifies the Internet of Things Foundation about the location update: The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated."
+msgstr ""
+"디바이스 자체는 위치 업데이트에 대해 Internet of Things Foundation에 알립니다. 디바이스는 GPS 수신기에서 해당 위치를 검색하고 디바이스 관리 메시지를 Internet of Things Foundation에 전송하여 해당 위치를 업데이트합니다. 위치가 GPS 수신기에서 검색된 시간을 시간소인이 캡처합니다. 즉, 위치 메시지의 전송이 지연된 경우에도 시간소인은 유효합니다. 전송된 디바이스 관리 메시지에서 시간소인이 생략된 경우, 디바이스의 위치 메타데이터가 업데이트되면 메시지 수신 시 현재 날짜 및 시간이 사용됩니다."
+
+#: ../device_mgmt/operations/update.rst:14
+msgid "A user / app updates the location of a device using the Rest API: The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata."
+msgstr ""
+"사용자/앱은 Rest API를 통해 디바이스의 위치를 업데이트합니다. Internet of Things Foundation REST API가 사용되어 정적 디바이스의 위치 메타데이터를 설정합니다. 이는 디바이스 등록 시 완료될 수 있거나 필요한 경우 나중에 완료됩니다. 시간소인을 포함할지 여부는 선택사항입니다. 생략된 경우 현재 날짜 및 시간이 디바이스의 위치 메타데이터로 설정됩니다."
+
+#: ../device_mgmt/operations/update.rst:17
+#: ../device_mgmt/operations/update.rst:51
+msgid "Location update triggered by device"
+msgstr ""
+"디바이스에서 트리거된 위치 업데이트"
+
+#: ../device_mgmt/operations/update.rst:18
+msgid "Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes."
+msgstr ""
+"위치를 판별할 수 있는 디바이스가 위치 변경사항에 대해 Internet of Things Foundation 디바이스 관리 서버에 알리도록 선택할 수 있습니다."
+
+#: ../device_mgmt/operations/update.rst:21
+#: ../device_mgmt/operations/update.rst:34
+#: ../device_mgmt/operations/update.rst:129
+msgid "Topic"
+msgstr ""
+"주제"
+
+#: ../device_mgmt/operations/update.rst:29
+#: ../device_mgmt/operations/update.rst:88
+msgid "Location update triggered by user or app"
+msgstr ""
+"사용자 또는 앱에서 트리거된 위치 업데이트"
+
+#: ../device_mgmt/operations/update.rst:31
+msgid "A user can update the location of a device using the Internet of Things Foundation web interface. An app updates the location of a device using the Rest API (Version 2). In case the device, for which the location update is triggered, is currently active and managed, the device retrieves an update message on topic:"
+msgstr ""
+"사용자는 Internet of Things Foundation 웹 인터페이스를 통해 디바이스의 위치를 업데이트할 수 있습니다. 앱이 Rest API(버전 2)를 통해 디바이스의 위치를 업데이트합니다. 위치 업데이트가 트리거되는 디바이스가 현재 활성이고 관리되는 경우 주제에서 업데이트 메시지를 검색합니다."
+
+#: ../device_mgmt/operations/update.rst:42
+msgid "Message Format"
+msgstr ""
+"메시지 형식"
+
+#: ../device_mgmt/operations/update.rst:44
+msgid "The \"measuredDateTime\" is the date of location measurement. The \"updatedDateTime\" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The \"latitude\" and \"longitude\" should be specified in decimal degrees using WGS84."
+msgstr ""
+"\"measuredDateTime\"은 위치 측정 날짜입니다. \"updatedDateTime\"은 디바이스 정보에 대한 업데이트 날짜입니다. 효율성을 위해 IoTF가 위치 정보에 대한 업데이트를 일괄처리하여 업데이트가 약간 지연될 수도 있습니다. \"위도\" 및 \"경도\"가 WGS84를 통해 10진수 도로 지정되어야 합니다."
+
+#: ../device_mgmt/operations/update.rst:46
+msgid "Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted."
+msgstr ""
+"위치가 업데이트될 때마다 위도, 경도, 엘리베이션 및 불확실성에 대해 제공된 값은 하나의 다중 값 업데이트로 간주됩니다. 위도 및 경도는 필수이고 둘 다 각 업데이트와 함께 제공되어야 합니다. 엘리베이션 및 불활실성은 선택사항이고 생략할 수 있습니다."
+
+#: ../device_mgmt/operations/update.rst:48
+msgid "If an optional value is provided on an update and then omitted on a later update, the earlier value is deleted by the later update. Each update is considered as a complete multi-value set."
+msgstr ""
+"선택적 값이 업데이트 시 제공된 다음 나중 업데이트에서 생략된 경우 이전 값이 나중 업데이트에서 삭제됩니다. 각 업데이트는 전체 다중 값 세트로 간주됩니다."
+
+#: ../device_mgmt/operations/update.rst:53
+msgid "Request Format:"
+msgstr ""
+"요청 형식:"
+
+#: ../device_mgmt/operations/update.rst:70
+msgid "Response Format:"
+msgstr ""
+"응답 형식:"
+
+#: ../device_mgmt/operations/update.rst:80
+msgid "Possible Response Codes:"
+msgstr ""
+"가능한 응답 코드"
+
+#: ../device_mgmt/operations/update.rst:82
+msgid "200: The operation was successful."
+msgstr ""
+"200: 오퍼레이션이 완료되었습니다."
+
+#: ../device_mgmt/operations/update.rst:83
+msgid "400: The input message does not match the expected format, or one of the values is out of the valid range."
+msgstr ""
+"400: 입력 메시지가 예상 형식과 일치하지 않거나 값 중 하나가 올바른 범위 밖에 있습니다."
+
+#: ../device_mgmt/operations/update.rst:84
+msgid "404: The topic name is incorrect, or the device is not in the database."
+msgstr ""
+"404: 주제 이름이 올바르지 않거나 디바이스가 데이터베이스에 없습니다."
+
+#: ../device_mgmt/operations/update.rst:85
+msgid "409: A conflict occurred during the device database update. To resolve this, simplify the operation is necessary."
+msgstr ""
+"409: 디바이스 데이터베이스 업데이트 중에 충돌이 발생했습니다. 이를 해결하려면 오퍼레이션을 단순화해야 합니다."
+
+#: ../device_mgmt/operations/update.rst:90
+#: ../device_mgmt/operations/update.rst:139
+msgid "Payload Format:"
+msgstr ""
+"페이로드 형식:"
+
+#: ../device_mgmt/operations/update.rst:111
+msgid "Please note: there is no reqId as no response by device is required."
+msgstr ""
+"참고로, 디바이스의 응답이 필요하지 않으므로 reqId가 없습니다."
+
+#: ../device_mgmt/operations/update.rst:116
+msgid "Update Device Attributes"
+msgstr ""
+"디바이스 속성 업데이트"
+
+#: ../device_mgmt/operations/update.rst:118
+msgid "The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by the Rest API are location, metadata, device information and firmware."
+msgstr ""
+"Internet of Things Foundation이 이 요청을 디바이스에 전송하여 하나 이상의 디바이스 속성 값을 업데이트할 수 있습니다. Rest API에서 업데이트될 수 있는 속성은 위치, 메타데이터, 디바이스 정보 및 펌웨어입니다."
+
+#: ../device_mgmt/operations/update.rst:120
+msgid "The \"value\" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:"
+msgstr ""
+"\"value\"는 디바이스 속성의 새 값입니다. 이는 디바이스 모델과 일치하는 복합 필드입니다. 쓰기 가능한 필드만 이 오퍼레이션의 결과로 업데이트되어야 합니다. 값을 업데이트할 수 있는 위치는 다음과 같습니다."
+
+#: ../device_mgmt/operations/update.rst:122
+msgid "location (see Update location section for details)"
+msgstr ""
+"위치(세부사항은 위치 업데이트 섹션 참조)"
+
+#: ../device_mgmt/operations/update.rst:123
+msgid "metadata (Optional)"
+msgstr ""
+"메타데이터(선택사항)"
+
+#: ../device_mgmt/operations/update.rst:124
+msgid "deviceInfo (Optional)"
+msgstr ""
+"deviceInfo(선택사항)"
+
+#: ../device_mgmt/operations/update.rst:125
+msgid "mgmt.firmware (see Firmware update process for details)"
+msgstr ""
+"mgmt.firmware(세부사항은 펌웨어 업데이트 프로세스 참조)"
+
+#: ../device_mgmt/operations/update.rst:137
+msgid "Message format"
+msgstr ""
+"메시지 형식"
+

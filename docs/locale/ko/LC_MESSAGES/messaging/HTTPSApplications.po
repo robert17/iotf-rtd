@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSApplications.rst:2
+msgid "HTTP(S) Connectivity for Applications"
+msgstr ""
+"애플리케이션을 위한 HTTP(S) 연결"
+
+#: ../messaging/HTTPSApplications.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"HTTP(S) 메시징 프로토콜은 IBM Internet of Things Foundation과 상호작용하는 데 디바이스 및 애플리케이션에서 사용될 수 있습니다. 이 메시징 프로토콜은 `MQTT 메시징 프로토콜 <../messaging/mqtt.html>`__ 및 `선택적 클라이언트 라이브러리 <../libraries/programmingguides.html>`__ 대신 사용할 수 있습니다."
+
+#: ../messaging/HTTPSApplications.rst:6
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"HTTP(S) 프로토콜은 Internet of Things Foundation에 이벤트 메시지를 전송하는 데 디바이스 및 애플리케이션과 함께 사용될 수 있습니다. 세부사항은 다음을 참조하십시오."
+
+#: ../messaging/HTTPSApplications.rst:8
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`Internet of Things Foundation과 함께 HTTP(S) 사용 <../messaging/HTTPSIntro.html>`__"
+
+#: ../messaging/HTTPSApplications.rst:9
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"`디바이스용 HTTP(S) 연결 <../messaging/HTTPSDevice.html>`__"
+
+#: ../messaging/HTTPSApplications.rst:13
+msgid "Using HTTP(S) with Applications and the Internet of Things Foundation"
+msgstr ""
+"애플리케이션 및 Internet of Things Foundation과 함께 HTTP(S) 사용"
+
+#: ../messaging/HTTPSApplications.rst:15
+msgid "The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"HTTP(S) 프로토콜을 통해 애플리케이션이 다음 URL에 HTTP(S) POST 요청을 전송하여 Internet of Things Foundation에 이벤트 메시지를 전송할 수 있습니다."
+
+#: ../messaging/HTTPSApplications.rst:21
+msgid "For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"세부사항은 관련 `API 문서 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__의 내용을 참조하십시오. 요청 본문(이벤트 페이로드)에 컨텐츠가 있을 수 있지만 MQTT 메시지 페이로드 가이드라인이 앞서야 합니다."
+
+#: ../messaging/HTTPSApplications.rst:23
+msgid "Please Note: An application does not need to be registered before it can issue an HTTP(S) request. When connecting to the Quickstart service, no authentication (or registration) is required, the org_id should be set to \"quickstart\"."
+msgstr ""
+"참고: HTTP(S) 요청을 발행하려면 애플리케이션이 등록될 필요가 없습니다. Quickstart 서비스에 연결하는 경우 인증(또는 등록)이 필요하지 않고 org_id가 \"quickstart\"로 설정되어야 합니다."
+
+#: ../messaging/HTTPSApplications.rst:27
+msgid "HTTP(S) Authentication"
+msgstr ""
+"HTTP(S) 인증"
+
+#: ../messaging/HTTPSApplications.rst:29
+msgid "HTTP(S) requests must include an Authorization header if they are sent to organizations that require authentication. Basic authentication the only method supported. The username and password must be provided as described below."
+msgstr ""
+"HTTP(S) 요청은 인증이 필요한 조직에 전송되는 경우 권한 부여 헤더를 포함해야 합니다. 유일한 메소드가 지원한 기본 인증입니다. 사용자 이름 및 비밀번호가 아래에 설명된 대로 제공되어야 합니다."
+
+#: ../messaging/HTTPSApplications.rst:31
+msgid "Applications require an API key to connect to an organization. When the API key is registered, a token will be generated that must be used with that API key."
+msgstr ""
+"애플리케이션이 조직에 연결하려면 API 키가 필요합니다. API 키가 등록되면 해당 API 키와 함께 사용되어야 하는 토큰이 생성됩니다."
+
+#: ../messaging/HTTPSApplications.rst:33
+msgid "API keys use the following format:"
+msgstr ""
+"API 키는 다음 형식을 사용합니다."
+
+#: ../messaging/HTTPSApplications.rst:35
+msgid "``a-org_id-a84ps90Ajs``"
+msgstr ""
+"``a-org_id-a84ps90Ajs``"
+
+#: ../messaging/HTTPSApplications.rst:37
+msgid "The token will follow the format of this example:"
+msgstr ""
+"토큰이 이 예제의 형식을 따릅니다."
+
+#: ../messaging/HTTPSApplications.rst:39
+msgid "``MP$08VKz!8rXwnR-Q*``"
+msgstr ""
+"``MP$08VKz!8rXwnR-Q*``"
+
+#: ../messaging/HTTPSApplications.rst:43
+msgid "Username"
+msgstr ""
+"사용자 이름"
+
+#: ../messaging/HTTPSApplications.rst:45
+msgid "In an HTTP(S) request, the API key must be used as the username."
+msgstr ""
+"HTTP(S) 요청에서 API 키가 사용자 이름으로 사용되어야 합니다."
+
+#: ../messaging/HTTPSApplications.rst:49
+msgid "Password"
+msgstr ""
+"비밀번호"
+
+#: ../messaging/HTTPSApplications.rst:51
+msgid "In an HTTP(S) request, the generated token must be used as the password."
+msgstr ""
+"HTTP(S) 요청에서 생성된 토큰이 비밀번호로 사용되어야 합니다."
+

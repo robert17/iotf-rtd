@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSApplications.rst:2
+msgid "HTTP(S) Connectivity for Applications"
+msgstr ""
+"应用程序的 HTTP(S) 连接"
+
+#: ../messaging/HTTPSApplications.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"设备和应用程序可以使用 HTTP(S) 消息传递协议与 IBM Internet of Things Foundation 交互。此消息传递协议可代替 `MQTT 消息传递协议 <../messaging/mqtt.html>`__ 和 `可选客户机库 <../libraries/programmingguides.html>`__ 使用。"
+
+#: ../messaging/HTTPSApplications.rst:6
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"设备和应用程序可以使用 HTTP(S) 协议向 Internet of Things Foundation 发送事件消息。有关详细信息，请参阅："
+
+#: ../messaging/HTTPSApplications.rst:8
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`将 HTTP(S) 与 Internet of Things Foundation 配合使用 <../messaging/HTTPSIntro.html>`__。"
+
+#: ../messaging/HTTPSApplications.rst:9
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"`设备的 HTTP(S) 连接 <../messaging/HTTPSDevice.html>`__。"
+
+#: ../messaging/HTTPSApplications.rst:13
+msgid "Using HTTP(S) with Applications and the Internet of Things Foundation"
+msgstr ""
+"将 HTTP(S) 与应用程序和 Internet of Things Foundation 配合使用"
+
+#: ../messaging/HTTPSApplications.rst:15
+msgid "The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"HTTP(S) 协议允许应用程序通过向以下 URL 发送 HTTP(S) POST 请求，向 Internet of Things Foundation 发送事件消息："
+
+#: ../messaging/HTTPSApplications.rst:21
+msgid "For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"有关详细信息，请参阅相关的 `API 文档 <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__。请求主体（事件有效内容）可以包含任何内容，但是应遵循 MQTT 消息有效内容准则。"
+
+#: ../messaging/HTTPSApplications.rst:23
+msgid "Please Note: An application does not need to be registered before it can issue an HTTP(S) request. When connecting to the Quickstart service, no authentication (or registration) is required, the org_id should be set to \"quickstart\"."
+msgstr ""
+"请注意：应用程序无需进行注册即可发出 HTTP(S) 请求。连接 Quickstart 服务时，无需认证（或注册），org_id 应设置为“quickstart”。"
+
+#: ../messaging/HTTPSApplications.rst:27
+msgid "HTTP(S) Authentication"
+msgstr ""
+"HTTP(S) 认证"
+
+#: ../messaging/HTTPSApplications.rst:29
+msgid "HTTP(S) requests must include an Authorization header if they are sent to organizations that require authentication. Basic authentication the only method supported. The username and password must be provided as described below."
+msgstr ""
+"如果将 HTTP(S) 请求发送到需要认证的组织，那么这些请求中必须包括授权头。只支持基本认证方法。必须按如下所述提供用户名和密码。"
+
+#: ../messaging/HTTPSApplications.rst:31
+msgid "Applications require an API key to connect to an organization. When the API key is registered, a token will be generated that must be used with that API key."
+msgstr ""
+"应用程序需要 API 密钥才能连接到组织。注册 API 密钥时，将生成必须与该 API 密钥配合使用的令牌。"
+
+#: ../messaging/HTTPSApplications.rst:33
+msgid "API keys use the following format:"
+msgstr ""
+"API 密钥使用以下格式："
+
+#: ../messaging/HTTPSApplications.rst:35
+msgid "``a-org_id-a84ps90Ajs``"
+msgstr ""
+"``a-org_id-a84ps90Ajs``"
+
+#: ../messaging/HTTPSApplications.rst:37
+msgid "The token will follow the format of this example:"
+msgstr ""
+"令牌遵循以下示例格式："
+
+#: ../messaging/HTTPSApplications.rst:39
+msgid "``MP$08VKz!8rXwnR-Q*``"
+msgstr ""
+"``MP$08VKz!8rXwnR-Q*``"
+
+#: ../messaging/HTTPSApplications.rst:43
+msgid "Username"
+msgstr ""
+"用户名"
+
+#: ../messaging/HTTPSApplications.rst:45
+msgid "In an HTTP(S) request, the API key must be used as the username."
+msgstr ""
+"在 HTTP(S) 请求中，API 密钥必须用作用户名。"
+
+#: ../messaging/HTTPSApplications.rst:49
+msgid "Password"
+msgstr ""
+"密码"
+
+#: ../messaging/HTTPSApplications.rst:51
+msgid "In an HTTP(S) request, the generated token must be used as the password."
+msgstr ""
+"在 HTTP(S) 请求中，生成的令牌必须用作密码。"
+

@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../extensions/jasper.rst:2
+msgid "Jasper Integration in the IBM Internet of Things Foundation platform"
+msgstr ""
+"IBM Internet of Things Foundation 플랫폼의 Jasper 통합"
+
+#: ../extensions/jasper.rst:5
+msgid "What is Jasper?"
+msgstr ""
+"Jasper의 개념"
+
+#: ../extensions/jasper.rst:7
+msgid "Jasper is an administration and management platform for SIM devices. Jasper has been integrated into the IBM IoT Foundation platform dashboard, making it possible to administer Jasper devices through your IoTF platform organization dashboard."
+msgstr ""
+"Jasper는 SIM 디바이스의 관리 플랫폼입니다. Jasper가 IBM IoT Foundation 플랫폼 대시보드로 통합되어, IoTF 플랫폼 조직 대시보드를 통해 Jasper 디바이스를 관리할 수 있도록 했습니다."
+
+#: ../extensions/jasper.rst:10
+msgid "What Operations can I perform with Jasper through IoTF?"
+msgstr ""
+"IoTF를 통해 Jasper로 수행할 수 있는 오퍼레이션"
+
+#: ../extensions/jasper.rst:12
+msgid "By using the built-in Jasper functions in the Internet of Things Foundation platform dashboard, you can perform the following Jasper operations:"
+msgstr ""
+"Internet of Things Foundation 플랫폼 대시보드에서 기본 제공 Jasper 기능을 사용하여 다음 Jasper 오퍼레이션을 수행할 수 있습니다."
+
+#: ../extensions/jasper.rst:14
+msgid "View SIM usage"
+msgstr ""
+"SIM 사용 보기"
+
+#: ../extensions/jasper.rst:15
+msgid "Change SIM activation state."
+msgstr ""
+"SIM 활성화 상태를 변경하십시오."
+
+#: ../extensions/jasper.rst:16
+#: ../extensions/jasper.rst:69
+msgid "Send SMS to SIM"
+msgstr ""
+"SIM에 SMS 전송"
+
+#: ../extensions/jasper.rst:17
+#: ../extensions/jasper.rst:70
+msgid "Change rate plan"
+msgstr ""
+"등급 플랜 변경"
+
+#: ../extensions/jasper.rst:19
+msgid "These operations can be accessed in the device drilldown of a Jasper connected device after the configuration steps below are completed."
+msgstr ""
+"아래의 구성 단계가 완료된 후 Jasper 연결 디바이스의 디바이스 드릴다운에서 이러한 오퍼레이션에 액세스할 수 있습니다."
+
+#: ../extensions/jasper.rst:23
+msgid "Integrating my Jasper dashboard into my IoT Foundation Dashboard"
+msgstr ""
+"내 IoT Foundation 대시보드에 내 Jasper 대시보드 통합"
+
+#: ../extensions/jasper.rst:25
+msgid "In order to connect your Internet of Things Foundation platform organization with your Jasper account, there are two stages of configuration which must first be performed. The first stage of configuration is Organization Configuration."
+msgstr ""
+"Jasper 계정으로 Internet of Things Foundation 플랫폼 조직을 연결하기 위해 우선 수행되어야 하는 구성의 두 가지 단계가 있습니다. 구성의 첫 번째 단계는 조직 구성입니다."
+
+#: ../extensions/jasper.rst:28
+msgid "Organization Configuration"
+msgstr ""
+"조직 구성"
+
+#: ../extensions/jasper.rst:30
+msgid "To connect your Jasper account to your Internet of Things Foundation platform organization, follow these steps:"
+msgstr ""
+"Jasper 계정을 Internet of Things Foundation 플랫폼 조직에 연결하려면 다음 단계를 따르십시오."
+
+#: ../extensions/jasper.rst:32
+msgid "When in your Internet of Things Foundation platform dashboard, click the wrench icon on the right to open the Configuration Settings."
+msgstr ""
+"Internet of Things Foundation 플랫폼 대시보드에서는 오른쪽의 렌치 아이콘을 클릭하여 구성 설정을 여십시오."
+
+#: ../extensions/jasper.rst:33
+msgid "Scroll down the to the Extensions section, and set Jasper to 'On'."
+msgstr ""
+"확장기능 섹션으로 화면 이동하여 Jasper를 'On'으로 설정하십시오."
+
+#: ../extensions/jasper.rst:34
+msgid "Enter your Jasper username, password, license key, and API endpoint."
+msgstr ""
+"Jasper 사용자 이름, 비밀번호, 라이센스 키 및 API 엔드포인트를 입력하십시오."
+
+#: ../extensions/jasper.rst:37
+msgid "Device Configuration"
+msgstr ""
+"디바이스 구성"
+
+#: ../extensions/jasper.rst:39
+msgid "Devices which are connected to both your Internet of Things Foundation platform organization and your Jasper account can be configured to display data from Jasper in the IoT Foundation platform dashboard. Jasper configuration cannot be applied as part of the Add Device process, only already connected devices can be configured with Jasper. To configure your Jasper-connected devices, follow these steps:"
+msgstr ""
+"Internet of Things Foundation 플랫폼 조직 및 Jasper 계정 둘 다에 연결되는 디바이스를 구성하여 IoT Foundation 플랫폼 대시보드의 Jasper에서 데이터를 표시할 수 있습니다. Jasper 구성은 디바이스 추가 프로세스의 파트로 적용될 수 없고, 이미 연결된 디바이스만 Jasper로 구성될 수 있습니다. Jasper 연결 디바이스를 구성하려면 다음 단계를 따르십시오."
+
+#: ../extensions/jasper.rst:41
+msgid "In the devices tab of your Internet of Things Foundation platform dashboard, find the Jasper-connected device to be configured."
+msgstr ""
+"Internet of Things Foundation 플랫폼 대시보드의 디바이스 탭에서 구성될 Jasper 연결 디바이스를 찾으십시오."
+
+#: ../extensions/jasper.rst:42
+msgid "Select the device to open the Device Drilldown view."
+msgstr ""
+"디바이스 드릴다운 보기를 열 디바이스를 선택하십시오."
+
+#: ../extensions/jasper.rst:43
+msgid "Scroll down to the 'Extension Configuration section. The extension configuration must be entered as JSON in the following format:"
+msgstr ""
+"확장기능 구성 섹션으로 화면 이동하십시오. 확장기능 구성은 다음 형식에서 JSON으로 입력되어야 합니다."
+
+#: ../extensions/jasper.rst:53
+msgid "When this has been entered, click 'Confirm changes' to save the configuration."
+msgstr ""
+"이를 입력하면 '변경사항 확인'을 클릭하여 구성을 저장하십시오."
+
+#: ../extensions/jasper.rst:55
+msgid "If the Organization configuration has been completed correctly, the Extensions section should now appear below the Extensions Configuration section in the Device Drilldown."
+msgstr ""
+"조직 구성이 올바르게 완료된 경우 이제 확장기능 섹션이 디바이스 드릴다운에서 확장기능 구성 섹션 아래에 나타나야 합니다."
+
+#: ../extensions/jasper.rst:58
+msgid "Operations"
+msgstr ""
+"오퍼레이션"
+
+#: ../extensions/jasper.rst:60
+msgid "Jaspers operations can be viewed or updated in the device drilldown menu for any devices which are connected to both your Internet of Things Foundation platform organization and Jasper, and have been configured as explained above. The supported Jasper operations are:"
+msgstr ""
+"Internet of Things Foundation 플랫폼 조직 및 Jasper 둘 다에 연결되고 위에 설명된 대로 구성된 디바이스에 대해 디바이스 드릴다운 메뉴에서 Jasper 오퍼레이션을 보거나 업데이트할 수 있습니다. 지원되는 Jasper 오퍼레이션은 다음과 같습니다."
+
+#: ../extensions/jasper.rst:62
+msgid "View overall Jasper data - Shows: Status, Rate Plan, month-to-date data usage, month-to-date SMS usage, month-to-date voice usage, overage limits, date added, and date modified."
+msgstr ""
+"전체 Jasper 데이터 보기 - 표시: 상태, 등급 플랜, 당월 합계 데이터 사용, 당월 합계 SMS 사용, 당월 합계 음성 사용, 초과 한계, 추가된 날짜 및 수정된 날짜"
+
+#: ../extensions/jasper.rst:64
+msgid "Change SIM activation state. - Select from: Inventory, Activation Ready, Activated, Deactivated, and Retired."
+msgstr ""
+"SIM 활성화 상태를 변경하십시오.- 선택 소스: 인벤토리, 활성화 준비, 활성화됨, 비활성화됨 및 폐기됨"
+
+#: ../extensions/jasper.rst:66
+msgid "View SIM Usage - Shows: Cycle start date, billable and total data, billable and total SMS, billable and total voice. - The cycle start date can be set using a YYYY-MM-DD format."
+msgstr ""
+"SIM 사용 보기 - 표시: 주기 시작 날짜, 청구 가능 및 총계 데이터, 청구 가능 및 총계 SMS, 청구 가능 및 총계 음성 - 주기 시작 날짜는 YYYY-MM-DD 형식으로 설정할 수 있습니다."
+

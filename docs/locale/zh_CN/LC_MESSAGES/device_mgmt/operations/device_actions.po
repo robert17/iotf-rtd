@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../device_mgmt/operations/device_actions.rst:3
+msgid "Device Management Operations - Device Actions"
+msgstr ""
+"设备管理操作 - 设备操作"
+
+#: ../device_mgmt/operations/device_actions.rst:8
+msgid "Reboot"
+msgstr ""
+"重新引导"
+
+#: ../device_mgmt/operations/device_actions.rst:10
+msgid "The Internet of Things Foundation can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation 可以发送此请求来重新引导设备。当设备在重新引导后发送“管理设备”请求时，此操作才会被视为已完成。"
+
+#: ../device_mgmt/operations/device_actions.rst:12
+msgid "If this operation can be initiated immediately, set \"rc\" to 202, if reboot attempt fails, the \"rc\" is set to 500 and the \"message\" field should be set accordingly, if the reboot is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"如果此操作可以立即启动，请将“rc”设置为 202；如果重新引导尝试失败，请将“rc”设置为 500 并相应地设置“message”；如果不支持重新引导，请将“rc”设置为 501 并可以相应地选择设置“message”。"
+
+#: ../device_mgmt/operations/device_actions.rst:16
+#: ../device_mgmt/operations/device_actions.rst:55
+msgid "Topic"
+msgstr ""
+"主题"
+
+#: ../device_mgmt/operations/device_actions.rst:24
+#: ../device_mgmt/operations/device_actions.rst:63
+msgid "Message format"
+msgstr ""
+"消息格式"
+
+#: ../device_mgmt/operations/device_actions.rst:26
+#: ../device_mgmt/operations/device_actions.rst:65
+msgid "Request Format:"
+msgstr ""
+"请求格式："
+
+#: ../device_mgmt/operations/device_actions.rst:34
+#: ../device_mgmt/operations/device_actions.rst:73
+msgid "Response Format:"
+msgstr ""
+"响应格式："
+
+#: ../device_mgmt/operations/device_actions.rst:48
+msgid "Factory Reset"
+msgstr ""
+"恢复工厂设置"
+
+#: ../device_mgmt/operations/device_actions.rst:50
+msgid "The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot."
+msgstr ""
+"Internet of Things Foundation 可以发送此请求来将设备重置为出厂设置, 在此过程中，设备还会重新引导。当设备在重新引导后发送“管理设备”请求时，此操作才会被视为已完成。"
+
+#: ../device_mgmt/operations/device_actions.rst:52
+msgid "The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the \"rc\" should be 500 and the \"message\" field should be set accordingly, if the factory reset action is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
+msgstr ""
+"如果此操作可以立即启动，那么响应代码应为 202。如果恢复工厂设置尝试失败，那么“rc”应该为 500 并相应地设置“message”字段；如果不支持恢复工厂设置操作，请将“rc”设置为 501 并可以相应地选择设置“message”。"
+

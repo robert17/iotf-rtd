@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSDevice.rst:2
+msgid "HTTP(S) Connectivity for Devices"
+msgstr ""
+"디바이스용 HTTP(S) 연결"
+
+#: ../messaging/HTTPSDevice.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the  IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"HTTP(S) 메시징 프로토콜은 IBM Internet of Things Foundation과 상호작용하는 데 디바이스 및 애플리케이션에서 사용될 수 있습니다. 이 메시징 프로토콜은 `MQTT 메시징 프로토콜 <../messaging/mqtt.html>`__ 및 `선택적 클라이언트 라이브러리 <../libraries/programmingguides.html>`__ 대신 사용할 수 있습니다."
+
+#: ../messaging/HTTPSDevice.rst:6
+msgid "All devices can use HTTP(S) messaging to communicate with the Internet of Things Foundation with no additional installation."
+msgstr ""
+"모든 디바이스는 HTTP(S) 메시징을 사용하여 추가 설치 없이 Internet of Things Foundation과 통신할 수 있습니다."
+
+#: ../messaging/HTTPSDevice.rst:8
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"HTTP(S) 프로토콜은 Internet of Things Foundation에 이벤트 메시지를 전송하는 데 디바이스 및 애플리케이션과 함께 사용될 수 있습니다. 세부사항은 다음을 참조하십시오."
+
+#: ../messaging/HTTPSDevice.rst:10
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`Internet of Things Foundation과 함께 HTTP(S) 사용 <../messaging/HTTPSIntro.html>`__"
+
+#: ../messaging/HTTPSDevice.rst:11
+msgid "`HTTP(S) Connectivity for Applications <../messaging/HTTPSApplications.html>`__."
+msgstr ""
+"`애플리케이션용 HTTP(S) 연결 <../messaging/HTTPSApplications.html>`__"
+
+#: ../messaging/HTTPSDevice.rst:15
+msgid "Using HTTP(S) with Devices and the Internet of Things Foundation"
+msgstr ""
+"디바이스 및 Internet of Things Foundation과 함께 HTTP(S) 사용"
+
+#: ../messaging/HTTPSDevice.rst:17
+msgid "The HTTP(S) protocol allows devices to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"HTTP(S) 프로토콜을 통해 디바이스가 다음 URL에 HTTP(S) POST 요청을 전송하여 Internet of Things Foundation에 이벤트 메시지를 전송할 수 있습니다."
+
+#: ../messaging/HTTPSDevice.rst:23
+msgid "The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"요청 본문(이벤트 페이로드)에 컨텐츠가 있을 수 있지만 MQTT 메시지 페이로드 가이드라인이 앞서야 합니다."
+
+#: ../messaging/HTTPSDevice.rst:25
+msgid "A Content-Type request header must be provided with the request. Only the following values are supported. The following table shows how they are mapped to the Internet of Things Foundation internal formats."
+msgstr ""
+"컨텐츠-유형 요청 헤더가 요청과 함께 제공되어야 합니다. 다음 값만 지원됩니다. 다음 테이블에서는 Internet of Things Foundation 내부 형식에 맵핑되는 방식을 보여줍니다."
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "Content-Type Header Volume"
+msgstr ""
+"컨텐츠-유형 헤더 볼륨"
+
+#: ../messaging/HTTPSDevice.rst:28
+msgid "IoT Foundation Format"
+msgstr ""
+"IoT Foundation 형식"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text/plain"
+msgstr ""
+"텍스트/일반"
+
+#: ../messaging/HTTPSDevice.rst:30
+msgid "text"
+msgstr ""
+"텍스트"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "application/json"
+msgstr ""
+"애플리케이션/json"
+
+#: ../messaging/HTTPSDevice.rst:32
+msgid "json"
+msgstr ""
+"json"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "application/xml"
+msgstr ""
+"애플리케이션/xml"
+
+#: ../messaging/HTTPSDevice.rst:34
+msgid "xml"
+msgstr ""
+"xml"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "application/octet-stream"
+msgstr ""
+"애플리케이션/옥텟-스트림"
+
+#: ../messaging/HTTPSDevice.rst:36
+msgid "bin"
+msgstr ""
+"바이너리"
+
+#: ../messaging/HTTPSDevice.rst:39
+msgid "Please Note: Devices must be registered before issuing an HTTP(S) request, and when connecting to the Quickstart service no authentication or registration is required, and the org_id should be set to \"quickstart\"."
+msgstr ""
+"참고: 디바이스가 HTTP(S) 요청을 발행하기 전에 등록되어야 하며 Quickstart 서비스에 연결하는 경우 인증 또는 등록이 필요하지 않고 org_id가 \"quickstart\"로 설정되어야 합니다."
+
+#: ../messaging/HTTPSDevice.rst:43
+msgid "HTTP(S) Authentication"
+msgstr ""
+"HTTP(S) 인증"
+
+#: ../messaging/HTTPSDevice.rst:45
+msgid "HTTP(S) requests must include an Authorization header if they are sent to registered organizations. Basic authentication is the only method supported. The username and password must be provided as described below."
+msgstr ""
+"HTTP(S) 요청은 등록된 조직에 전송되는 경우 권한 부여 헤더를 포함해야 합니다. 기본 인증은 지원되는 유일한 메소드입니다. 사용자 이름 및 비밀번호가 아래에 설명된 대로 제공되어야 합니다."
+
+#: ../messaging/HTTPSDevice.rst:49
+msgid "Username"
+msgstr ""
+"사용자 이름"
+
+#: ../messaging/HTTPSDevice.rst:51
+msgid "The service currently supports only token-based authentication for devices. The username must be set to ``use-token-auth``. This username indicates to the service that the authentication token for the device will be passed as the password for the HTTP(S) request."
+msgstr ""
+"서비스는 디바이스에 대해 토큰 기반 인증만 현재 지원합니다. 사용자 이름은 ``use-token-auth``로 설정되어야 합니다. 이 사용자 이름은 디바이스에 대한 인증 토큰이 HTTP(S) 요청에 대해 비밀번호로 전달됨을 서비스에 표시합니다."
+
+#: ../messaging/HTTPSDevice.rst:55
+msgid "Password"
+msgstr ""
+"비밀번호"
+
+#: ../messaging/HTTPSDevice.rst:57
+msgid "Submit the device authentication token as the password when issuing your HTTP(S) request."
+msgstr ""
+"HTTP(S) 요청 발행 시 비밀번호로 디바이스 인증 토큰을 제출하십시오."
+

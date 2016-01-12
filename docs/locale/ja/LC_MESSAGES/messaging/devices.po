@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,124 +16,169 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\messaging\devices.rst:3
+#: ../messaging/devices.rst:3
 msgid "MQTT Connectivity for Devices"
 msgstr ""
+"MQTT デバイス接続"
 
-#: ..\docs\messaging\devices.rst:5
+#: ../messaging/devices.rst:5
 msgid "A Device must authenticate using a client ID in the following format:"
 msgstr ""
+"デバイスは、以下の形式のクライアント ID を使用して認証を実施する必要があります。"
 
-#: ..\docs\messaging\devices.rst:7
+#: ../messaging/devices.rst:7
 msgid "d:**org\\_id**:**device_type**:**device\\_id**"
 msgstr ""
+"d:**org\\_id**:**device_type**:**device\\_id**"
 
-#: ..\docs\messaging\devices.rst:9
+#: ../messaging/devices.rst:9
 msgid "A Device must be registered before it can connect"
 msgstr ""
+"デバイスを接続するには、事前にデバイスを登録する必要があります"
 
-#: ..\docs\messaging\devices.rst:10
-msgid ""
-"When connecting to the QuickStart service no authentication (or "
-"registration) is required"
+#: ../messaging/devices.rst:10
+msgid "When connecting to the Quickstart service no authentication (or registration) is required, and org_id should be set to \"quickstart\""
 msgstr ""
+"Quickstart サービスに接続する際、認証は (登録も) 必要ありません。org_id は \"quickstart\" に設定する必要があります"
 
-#: ..\docs\messaging\devices.rst:17
+#: ../messaging/devices.rst:17
 msgid "MQTT client identifier"
 msgstr ""
+"MQTT クライアント ID"
 
-#: ..\docs\messaging\devices.rst:19
-msgid ""
-"Supply a client id of the form "
-"**d**:**org\\_id**:**device\\_type**:**device\\_id**"
+#: ../messaging/devices.rst:19
+msgid "Supply a client id of the form **d**:**org\\_id**:**type\\_id**:**device\\_id**"
 msgstr ""
+"**d**:**org\\_id**:**type\\_id**:**device\\_id** の形式のクライアント ID を指定します"
 
-#: ..\docs\messaging\devices.rst:21
+#: ../messaging/devices.rst:21
 msgid "**d** idenfities your client as a device"
 msgstr ""
+"**d** は、クライアントをデバイスとして識別します"
 
-#: ..\docs\messaging\devices.rst:22
-msgid ""
-"**org\\_id** is your unique organization ID, assigned when you sign up with "
-"the service.  It will be a 6 character alphanumeric string."
+#: ../messaging/devices.rst:22
+msgid "**org\\_id** is your unique organization ID, assigned when you sign up with the service.  It will be a 6 character alphanumeric string."
 msgstr ""
+"**org\\_id** は、サービス登録時に割り当てられる固有の組織 ID です。これは 6 文字の英数字ストリングです。"
 
-#: ..\docs\messaging\devices.rst:24
-msgid ""
-"**device\\_type** is intended to be used as an identifer of the type of "
-"device connecting, it may be useful to think of this as analogous to a model"
-" number."
+#: ../messaging/devices.rst:24
+msgid "**type\\_id** is intended to be used as an identifier of the type of device connecting, it may be useful to think of this as analogous to a model number."
 msgstr ""
+"**type\\_id** は、接続するデバイスのタイプ ID として使用するためのものであり、型式番号に類似したものと見なすことができます。"
 
-#: ..\docs\messaging\devices.rst:27
-msgid ""
-"**device\\_id** must uniquely identify a device across all devices of a "
-"specific device\\_type, it may be useful to think of this as analogous to a "
-"serial number."
+#: ../messaging/devices.rst:27
+msgid "**device\\_id** must uniquely identify a device across all devices of a specific device\\_type, it may be useful to think of this as analogous to a serial number."
 msgstr ""
+"**device\\_id** は、特定の device\\_type のすべてのデバイスの中で 1 つのデバイスを固有に識別するものでなければなりません。これは、シリアル番号のようなものと考えることができます。"
 
-#: ..\docs\messaging\devices.rst:36
+#: ../messaging/devices.rst:31
+msgid "You can use any scheme of your choice when assigning values for ``type_id`` and ``device_id``, however the following restrictions apply to both:"
+msgstr ""
+"``type_id`` および ``device_id` の値を割り当てるときにはどのスキームを使用しても構いませんが、どちらにも以下の制限が適用されます。"
+
+#: ../messaging/devices.rst:34
+msgid "Maximum length of 36 characters"
+msgstr ""
+"最大長 36 文字"
+
+#: ../messaging/devices.rst:35
+msgid "Must comprise only alpha-numeric characters (``a-z``, ``A-Z``, ``0-9``) and the following special characters:"
+msgstr ""
+"英数字 (``a-z``、``A-Z``、``0-9``) および以下の特殊文字のみで構成する必要があります。"
+
+#: ../messaging/devices.rst:37
+msgid "dash (``-``)"
+msgstr ""
+"ダッシュ (``-``)"
+
+#: ../messaging/devices.rst:38
+msgid "underscore (``_``)"
+msgstr ""
+"下線 (``_``)"
+
+#: ../messaging/devices.rst:39
+msgid "dot (``.``)"
+msgstr ""
+"ドット (``.``)"
+
+#: ../messaging/devices.rst:46
 msgid "MQTT authentication"
 msgstr ""
+"MQTT 認証"
 
-#: ..\docs\messaging\devices.rst:39
+#: ../messaging/devices.rst:49
 msgid "Username"
 msgstr ""
+"ユーザー名"
 
-#: ..\docs\messaging\devices.rst:41
-msgid ""
-"The service currently only supports token-based authentication for devices, "
-"as such there is only one valid username for devices today."
+#: ../messaging/devices.rst:51
+msgid "The service currently only supports token-based authentication for devices, as such there is only one valid username for devices today."
 msgstr ""
+"現在サービスでサポートされているのは、トークン・ベースの認証のみです。それで、デバイスについて有効なユーザー名は 1 つのみということになります。"
 
-#: ..\docs\messaging\devices.rst:44
-msgid ""
-"A value of **use-token-auth** indicates to the service that the "
-"authentication token for the device will be passed as the password for the "
-"MQTT connection."
+#: ../messaging/devices.rst:54
+msgid "A value of ``use-token-auth`` indicates to the service that the authentication token for the device will be passed as the password for the MQTT connection."
 msgstr ""
+"値が ``use-token-auth`` の場合、デバイスの認証トークンが MQTT 接続のパスワードとして渡されることをサービスに対して通知することになります。"
 
-#: ..\docs\messaging\devices.rst:49
+#: ../messaging/devices.rst:59
 msgid "Password"
 msgstr ""
+"パスワード"
 
-#: ..\docs\messaging\devices.rst:51
-msgid ""
-"When using token based authentication submit the device authentication token"
-" as the password when making your MQTT connection."
+#: ../messaging/devices.rst:61
+msgid "When using token based authentication submit the device authentication token as the password when making your MQTT connection."
 msgstr ""
+"トークン・ベースの認証を使用する場合、MQTT 接続時にデバイス認証トークンをパスワードとして送信します。"
 
-#: ..\docs\messaging\devices.rst:59
+#: ../messaging/devices.rst:69
 msgid "Publishing events"
 msgstr ""
+"イベントのパブリッシング"
 
-#: ..\docs\messaging\devices.rst:61
+#: ../messaging/devices.rst:71
 msgid "Publish to topic iot-2/evt/\\ **event\\_id**/fmt/**format\\_string**"
 msgstr ""
+"パブリッシュ先トピック iot-2/evt/\\ **event\\_id**/fmt/**format\\_string**"
 
-#: ..\docs\messaging\devices.rst:68 ..\docs\messaging\devices.rst:83
+#: ../messaging/devices.rst:73
+msgid "The message payload is limited to a maximum of 4096 bytes."
+msgstr ""
+"メッセージ・ペイロードは最大 4096 バイトに制限されます。"
+
+#: ../messaging/devices.rst:79
+#: ../messaging/devices.rst:91
 msgid "Subscribing to commands"
 msgstr ""
+"コマンドのサブスクライブ"
 
-#: ..\docs\messaging\devices.rst:70
+#: ../messaging/devices.rst:81
 msgid "Subscribe to topic iot-2/cmd/\\ **command\\_id**/fmt/**format\\_string**"
 msgstr ""
+"サブスクライブ先トピック iot-2/cmd/\\ **command\\_id**/fmt/**format\\_string**"
 
-#: ..\docs\messaging\devices.rst:77
-msgid "QuickStart restrictions"
+#: ../messaging/devices.rst:88
+msgid "Quickstart Restrictions"
 msgstr ""
+"Quickstart の制限"
 
-#: ..\docs\messaging\devices.rst:79
-msgid ""
-"If you are writing device code that wants to support use with QuickStart you"
-" must take into account the following features present in the registered "
-"service that are not supported in QuickStart:"
+#: ../messaging/devices.rst:89
+msgid "The Quickstart service does not currently support MQTT Quality of Service (QoS) levels greater than 0. This is the fastest and offers no confirmation of receipt.  If you are writing device code for use with Quickstart you must also take into account the following features present in the registered service that are not supported in Quickstart:"
 msgstr ""
+"現在、Quickstart サービスは、0 を超える MQTT サービス品質 (QoS) レベルをサポートしていません。これが最も高速ですが、受信確認は利用できません。Quickstart で使用するデバイス・コードを作成する場合は、Quickstart でサポートされない登録済みサービスに含まれる以下の機能も考慮する必要があります。"
 
-#: ..\docs\messaging\devices.rst:84
+#: ../messaging/devices.rst:92
 msgid "MQTT connection over SSL"
 msgstr ""
+"MQTT SSL 接続"
 
-#: ..\docs\messaging\devices.rst:85
+#: ../messaging/devices.rst:93
 msgid "Clean or durable sessions"
 msgstr ""
+"クリーンまたは永続的セッション"
+
+#: ../messaging/devices.rst:95
+msgid "Please note, the Quickstart service may drop messages that are sent more frequently than 1 per second."
+msgstr ""
+"Quickstart サービスは、毎秒 1 回を超える頻度で送信されるメッセージをドロップする場合があることに注意してください。"
+

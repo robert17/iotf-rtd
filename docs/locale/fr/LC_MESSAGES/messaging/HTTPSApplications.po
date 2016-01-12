@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../messaging/HTTPSApplications.rst:2
+msgid "HTTP(S) Connectivity for Applications"
+msgstr ""
+"Connectivité HTTP(S) pour les applications"
+
+#: ../messaging/HTTPSApplications.rst:4
+msgid "The HTTP(S) messaging protocol can be used by devices and applications to interact with the IBM Internet of Things Foundation. This messaging protocol can be used instead of the `MQTT messaging  protocol <../messaging/mqtt.html>`__ and the `optional client libraries <../libraries/programmingguides.html>`__."
+msgstr ""
+"Le protocole de messagerie HTTP(S) permet à des terminaux et à des applications d'interagir avec IBM Internet of Things Foundation. Il peut être utilisé à la place du `protocole de messagerie MQTT <../messaging/mqtt.html>`__ et des `bibliothèques client facultatives <../libraries/programmingguides.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:6
+msgid "The HTTP(S) protocol can be used with devices and applications to send event messages to the Internet of Things Foundation. For details, please see:"
+msgstr ""
+"Le protocole HTTP(S) permet à des terminaux et à des applications d'envoyer des messages d'événement à Internet of Things Foundation. Pour plus d'informations, reportez-vous aux rubriques suivantes :"
+
+#: ../messaging/HTTPSApplications.rst:8
+msgid "`Using HTTP(S) with the Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+msgstr ""
+"`Utilisation de HTTP(S) avec Internet of Things Foundation <../messaging/HTTPSIntro.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:9
+msgid "`HTTP(S) Connectivity for Devices <../messaging/HTTPSDevice.html>`__."
+msgstr ""
+"`Connectivité HTTP(S) pour les terminaux <../messaging/HTTPSDevice.html>`__."
+
+#: ../messaging/HTTPSApplications.rst:13
+msgid "Using HTTP(S) with Applications and the Internet of Things Foundation"
+msgstr ""
+"Utilisation de HTTP(S) avec des applications et Internet of Things Foundation"
+
+#: ../messaging/HTTPSApplications.rst:15
+msgid "The HTTP(S) protocol allows applications to send event messages to the Internet of Things Foundation by sending an HTTP(S) POST request to the following URL:"
+msgstr ""
+"Le protocole HTTP(S) permet aux applications d'envoyer des messages d'événement à Internet of Things Foundation en soumettant une demande HTTP(S) POST à l'adresse URL suivante :"
+
+#: ../messaging/HTTPSApplications.rst:21
+msgid "For details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__. The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed."
+msgstr ""
+"Pour plus d'informations, reportez-vous à la `documentation d'API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__ appropriée. Le corps de la demande (contenu de l'événement) peut correspondre à n'importe quel contenu. Toutefois, les règles applicables au contenu des messages MQTT doivent être respectées."
+
+#: ../messaging/HTTPSApplications.rst:23
+msgid "Please Note: An application does not need to be registered before it can issue an HTTP(S) request. When connecting to the Quickstart service, no authentication (or registration) is required, the org_id should be set to \"quickstart\"."
+msgstr ""
+"Remarque : Il est inutile d'enregistrer une application pour qu'elle puisse soumettre une demande HTTP(S). Lors de la connexion au service Quickstart, aucune authentification (ou enregistrement) n'est nécessaire. La valeur définie pour org_id doit être \"quickstart\"."
+
+#: ../messaging/HTTPSApplications.rst:27
+msgid "HTTP(S) Authentication"
+msgstr ""
+"Authentification HTTP(S)"
+
+#: ../messaging/HTTPSApplications.rst:29
+msgid "HTTP(S) requests must include an Authorization header if they are sent to organizations that require authentication. Basic authentication the only method supported. The username and password must be provided as described below."
+msgstr ""
+"Les demandes HTTP(S) doivent inclure un en-tête Authorization si elles sont envoyées à des organisations qui requièrent une authentification. L'authentification de base est la seule méthode prise en charge. Le nom d'utilisateur et le mot de passe doivent être indiqués comme décrit dans la section ci-dessous. "
+
+#: ../messaging/HTTPSApplications.rst:31
+msgid "Applications require an API key to connect to an organization. When the API key is registered, a token will be generated that must be used with that API key."
+msgstr ""
+"Les applications requièrent une clé d'API pour se connecter à une organisation. Lorsque la clé d'API est enregistrée, la procédure génère un jeton qui doit être utilisé avec cette clé d'API."
+
+#: ../messaging/HTTPSApplications.rst:33
+msgid "API keys use the following format:"
+msgstr ""
+"Les clés d'API utilisent le format suivant :"
+
+#: ../messaging/HTTPSApplications.rst:35
+msgid "``a-org_id-a84ps90Ajs``"
+msgstr ""
+"``a-org_id-a84ps90Ajs``"
+
+#: ../messaging/HTTPSApplications.rst:37
+msgid "The token will follow the format of this example:"
+msgstr ""
+"Le jeton doit respecter le format de cet exemple :"
+
+#: ../messaging/HTTPSApplications.rst:39
+msgid "``MP$08VKz!8rXwnR-Q*``"
+msgstr ""
+"``MP$08VKz!8rXwnR-Q*``"
+
+#: ../messaging/HTTPSApplications.rst:43
+msgid "Username"
+msgstr ""
+"Nom d'utilisateur"
+
+#: ../messaging/HTTPSApplications.rst:45
+msgid "In an HTTP(S) request, the API key must be used as the username."
+msgstr ""
+"Dans une demande HTTP(S), la clé d'API doit être utilisée comme nom d'utilisateur. "
+
+#: ../messaging/HTTPSApplications.rst:49
+msgid "Password"
+msgstr ""
+"Mot de passe"
+
+#: ../messaging/HTTPSApplications.rst:51
+msgid "In an HTTP(S) request, the generated token must be used as the password."
+msgstr ""
+"Dans une demande HTTP(S), le jeton généré doit être utilisé comme mot de passe. "
+

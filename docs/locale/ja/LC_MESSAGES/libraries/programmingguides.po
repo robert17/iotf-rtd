@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libraries/programmingguides.rst:3
+msgid "Programming Guides"
+msgstr ""
+"プログラミング・ガイド"
+
+#: ../libraries/programmingguides.rst:5
+msgid "There are several client libraries availabe for use with the Internet of Things Foundation. The client libraries are designed to allow users to interact with their devices and applications using their preferred language, and to simplify this interaction as much as possible."
+msgstr ""
+"Internet of Things Foundation と一緒に使用できるクライアント・ライブラリーはいくつかあります。クライアント・ライブラリーは、ユーザーが自分の優先言語を使用してデバイスおよびアプリケーションと対話し、この対話をできるだけ簡略化できるように設計されています。"
+
+#: ../libraries/programmingguides.rst:7
+msgid "There are also specific device and operation recipes available for use with the Internet of Things Foundation hosted on the `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__."
+msgstr ""
+"Internet of Things Foundation で利用できる特定のデバイスや操作のレシピが、`developerWorks のレシピ <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__ でホストされています。"
+
+#: ../libraries/programmingguides.rst:9
+msgid "In the event that you cannot find a programming guide or recipe to suit your environment or device, raw MQTT should be used to communicate with the Internet of Things Foundation. For more information, please see `MQTT <../messaging/mqtt.html#/>`__ and `MQTT Connectivity for Devices <../messaging/devices.html#/>`__."
+msgstr ""
+"環境やデバイスに合ったプログラミングのガイドやレシピが見つからない場合は、未加工の MQTT を使用して Internet of Things Foundation と通信する必要があります。詳細情報は、`「MQTT」<../messaging/mqtt.html#/>`__と`MQTT デバイス接続 <../messaging/devices.html#/>`__を参照してください。"
+
+#: ../libraries/programmingguides.rst:12
+msgid "Python"
+msgstr ""
+"Python"
+
+#: ../libraries/programmingguides.rst:14
+msgid "`Introduction <../libraries/python.html#/>`__"
+msgstr ""
+"`概要 <../libraries/python.html#/>`__"
+
+#: ../libraries/programmingguides.rst:15
+msgid "`Documentation for device developers <../libraries/python_cli_for_devices.html#/>`__"
+msgstr ""
+"`デバイス開発者用の資料 <../libraries/python_cli_for_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:16
+msgid "`Documentation application developers <../libraries/python_cli_for_apps.html#/>`__"
+msgstr ""
+"`アプリケーション開発者用の資料 <../libraries/python_cli_for_apps.html#/>`__"
+
+#: ../libraries/programmingguides.rst:17
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-python>`_"
+msgstr ""
+"`GitHub にあるコードを参照 <https://github.com/ibm-messaging/iot-python>`_"
+
+#: ../libraries/programmingguides.rst:20
+msgid "Embedded C"
+msgstr ""
+"Embedded C"
+
+#: ../libraries/programmingguides.rst:22
+msgid "`Documentation <../libraries/embedded_c.html#/>`__"
+msgstr ""
+"`資料 <../libraries/embedded_c.html#/>`__"
+
+#: ../libraries/programmingguides.rst:23
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+msgstr ""
+"`GitHub にあるコードを参照 <https://github.com/ibm-messaging/iotf-embeddedc>`_"
+
+#: ../libraries/programmingguides.rst:26
+msgid "Java"
+msgstr ""
+"Java"
+
+#: ../libraries/programmingguides.rst:28
+msgid "`Introduction <../java/javaintro.html#/>`__"
+msgstr ""
+"`概要 <../java/javaintro.html#/>`__"
+
+#: ../libraries/programmingguides.rst:29
+msgid "`Documentation for device developers <../java/java_cli_devices.html#/>`__"
+msgstr ""
+"`デバイス開発者用の資料 <../java/java_cli_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:30
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-java>`_"
+msgstr ""
+"`GitHub にあるコードを参照 <https://github.com/ibm-messaging/iot-java>`_"
+
+#: ../libraries/programmingguides.rst:33
+msgid "Node.js"
+msgstr ""
+"Node.js"
+
+#: ../libraries/programmingguides.rst:35
+msgid "`Introduction <../nodejs/node-js_intro.html#/>`__"
+msgstr ""
+"`概要 <../nodejs/node-js_intro.html#/>`__"
+
+#: ../libraries/programmingguides.rst:36
+msgid "`Documentation for device developers <../nodejs/node-js_devices.html#/>`__"
+msgstr ""
+"`デバイス開発者用の資料 <../nodejs/node-js_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:37
+msgid "`Documentation for application developers <../nodejs/node-js_applications.html#/>`__"
+msgstr ""
+"`アプリケーション開発者用の資料 <../nodejs/node-js_applications.html#/>`__"
+
+#: ../libraries/programmingguides.rst:38
+msgid "`See the code in GitHub <https://github.com/ibm-messaging/iot-nodejs>`_"
+msgstr ""
+"`GitHub にあるコードを参照 <https://github.com/ibm-messaging/iot-nodejs>`_"
+
+#: ../libraries/programmingguides.rst:42
+msgid "C#"
+msgstr ""
+"C#"
+
+#: ../libraries/programmingguides.rst:44
+msgid "`Introduction <../libraries/c_sharp_introduction.html#/>`__"
+msgstr ""
+"`概要 <../libraries/c_sharp_introduction.html#/>`__"
+
+#: ../libraries/programmingguides.rst:45
+msgid "`Documentation for device developers <../libraries/c_sharp_devices.html#/>`__"
+msgstr ""
+"`デバイス開発者用の資料 <../libraries/c_sharp_devices.html#/>`__"
+
+#: ../libraries/programmingguides.rst:46
+msgid "`Documentation for application developers <../libraries/c_sharp_applications.html#/>`__"
+msgstr ""
+"`アプリケーション開発者用の資料 <../libraries/c_sharp_applications.html#/>`__"
+

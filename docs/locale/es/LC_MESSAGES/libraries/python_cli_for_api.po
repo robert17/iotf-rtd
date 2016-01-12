@@ -1,0 +1,770 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IBM IOT Foundation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libraries/python_cli_for_api.rst:3
+msgid "Python Client Library - Internet of Things Foundation API Support"
+msgstr ""
+"Biblioteca de cliente Python - Soporte de API de Internet of Things Foundation"
+
+#: ../libraries/python_cli_for_api.rst:6
+msgid "Introduction"
+msgstr ""
+"Introducción"
+
+#: ../libraries/python_cli_for_api.rst:8
+msgid "This client library describes how to use the Internet of Things Foundation Python client library with the Internet of Things Foundation API. For help with getting started with this module, see `Python Client Library - Introduction <../python.html>`__."
+msgstr ""
+"Esta biblioteca de cliente describe cómo utilizar la biblioteca de cliente Internet of Things Foundation Python con la API de Internet of Things Foundation. Para obtener ayuda con el inicio de este módulo, consulte `Biblioteca de cliente Python - Introducción <../python.html>`__."
+
+#: ../libraries/python_cli_for_api.rst:10
+msgid "This documentation contains information on how applications can use the `Python ibmiotf Client Library <https://pypi.python.org/pypi/ibmiotf>`__ to interact with your organization in the IBM Internet of Things Foundation Connect through ReST APIs."
+msgstr ""
+"Esta documentación contiene información sobre cómo las aplicaciones pueden utilizar la `Biblioteca de cliente Python ibmiotf <https://pypi.python.org/pypi/ibmiotf>`__ para interactuar con la organización en IBM Internet of Things Foundation Connect mediante las API ReST. "
+
+#: ../libraries/python_cli_for_api.rst:12
+msgid "The `Python for Devices documentation <../python_cli_for_devices.html>`__ contains information on how devices can publish events and handle commands using the Python ibmiotf Client Library."
+msgstr ""
+"La `Documentación de Python para dispositivos<../python_cli_for_devices.html>`__ contiene información sobre cómo los dispositivos pueden publicar los sucesos y manejar los mandatos utilizando la biblioteca de cliente Python ibmiotf. "
+
+#: ../libraries/python_cli_for_api.rst:14
+msgid "The `Python for Applications documentation <../python_cli_for_apps.html>`__ contains information on how applications can use the Python ibmiotf Client Library to interact with devices."
+msgstr ""
+"La `Documentación de Python para aplicaciones <../python_cli_for_apps.html>`__ contiene información sobre cómo pueden utilizar las aplicaciones la biblioteca de cliente Python ibmiotf para interactuar con los dispositivos."
+
+#: ../libraries/python_cli_for_api.rst:18
+msgid "Constructor"
+msgstr ""
+"Constructor"
+
+#: ../libraries/python_cli_for_api.rst:20
+msgid "The Internet of Things Python module client is built for device, application, or API use by the constructor. The constructor requires a properties object containing the following definitions:"
+msgstr ""
+"El constructor crea el cliente del módulo Internet of Things Python para el uso de dispositivos, aplicaciones o API. El constructor requiere un objeto Propiedades que contenga las definiciones siguientes:"
+
+#: ../libraries/python_cli_for_api.rst:22
+msgid "org - Your organization ID."
+msgstr ""
+"org - ID de organización."
+
+#: ../libraries/python_cli_for_api.rst:23
+msgid "auth-method - This defines the authentication method be used, and should always be set to \"apikey\"."
+msgstr ""
+"auth-method - Define el método de autenticación que se va a utilizar y debe establecerse siempre en \"apikey\"."
+
+#: ../libraries/python_cli_for_api.rst:24
+msgid "auth-key - The authentication key should be your API key."
+msgstr ""
+"auth-key - La clave de autenticación debe ser su clave de API. "
+
+#: ../libraries/python_cli_for_api.rst:25
+msgid "auth-token - The authentication token is your API key token."
+msgstr ""
+"auth-token - La señal de autenticación es la señal de la clave de API. "
+
+#: ../libraries/python_cli_for_api.rst:27
+msgid "These definitions are used to interact with the Internet of Things Foundation module."
+msgstr ""
+"Estas definiciones se utilizan para interactuar con el módulo Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:29
+msgid "After installing the client library, as described in the Python for the Internet of Things Foundation Introduction, the APIClient instance can be construced by running the following code snippet:"
+msgstr ""
+"Después de instalar la biblioteca de cliente, tal como se describe en la Introducción de Python para Internet of Things Foundation, la instancia APIClient puede construirse ejecutando el siguiente fragmento de código: "
+
+#: ../libraries/python_cli_for_api.rst:43
+msgid "Response and Exception"
+msgstr ""
+"Respuesta y excepción"
+
+#: ../libraries/python_cli_for_api.rst:45
+msgid "Each method in the APIClient responds with either a valid response (JSON or boolean) in the case of success or IoTFCReSTException in the case of failure. The IoTFCReSTException contains the following properties that application can parse to get more information about the failure."
+msgstr ""
+"Cada método en APIClient responde con una respuesta válida (JSON o booleana) en el caso de que la operación sea satisfactoria o IoTFCReSTException en el caso de que se produzca un error. IoTFCReSTException contiene las siguientes propiedades que la aplicación puede analizar para obtener más información sobre el error. "
+
+#: ../libraries/python_cli_for_api.rst:47
+msgid "httpcode - HTTP Status Code"
+msgstr ""
+"httpcode - Código de estado HTTP"
+
+#: ../libraries/python_cli_for_api.rst:48
+msgid "message - Exception message containing the reason for the failure"
+msgstr ""
+"message - Mensaje de excepción que contiene la razón del error"
+
+#: ../libraries/python_cli_for_api.rst:49
+msgid "response - JsonElement containing the partial response if any otherwise null"
+msgstr ""
+"response - JsonElement que contiene la respuesta parcial si existe; de lo contrario, es nulo"
+
+#: ../libraries/python_cli_for_api.rst:51
+msgid "So in the case of failure, application needs to parse the response to see if the action is partially successful or not."
+msgstr ""
+"En el caso de un error, la aplicación debe analizar la respuesta para ver si la acción es parcialmente satisfactoria o no. "
+
+#: ../libraries/python_cli_for_api.rst:56
+msgid "Organization details"
+msgstr ""
+"Detalles de organización"
+
+#: ../libraries/python_cli_for_api.rst:58
+msgid "Applications can use the *getOrganizationDetails()* method to retrieve the Organization details. Add the following code to a .py file, beneath the constructor code shown above."
+msgstr ""
+"Las aplicaciones pueden utilizar el método *getOrganizationDetails()* para recuperar los detalles de la organización. Añada el código siguiente a un archivo .py, debajo del código de constructor que se muestra arriba. "
+
+#: ../libraries/python_cli_for_api.rst:64
+msgid "Refer to the Organization Configuration section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the request & response model and http status code."
+msgstr ""
+"Consulte la sección Configuración de la organización de la `API de IBM IoT Foundation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ para obtener información sobre el modelo de solicitud y respuesta, y el código de estado http. "
+
+#: ../libraries/python_cli_for_api.rst:67
+#: ../libraries/python_cli_for_api.rst:136
+#: ../libraries/python_cli_for_api.rst:170
+#: ../libraries/python_cli_for_api.rst:229
+#: ../libraries/python_cli_for_api.rst:277
+#: ../libraries/python_cli_for_api.rst:332
+#: ../libraries/python_cli_for_api.rst:393
+#: ../libraries/python_cli_for_api.rst:436
+msgid "Sample"
+msgstr ""
+"Ejemplo"
+
+#: ../libraries/python_cli_for_api.rst:69
+msgid "Your final code should follow this format:"
+msgstr ""
+"El código final debe seguir este formato: "
+
+#: ../libraries/python_cli_for_api.rst:82
+msgid "This code will run the constructor, and then retrieve organization details for the specified organization."
+msgstr ""
+"Este código ejecutará el constructor y recuperará los detalles de la organización para la organización especificada. "
+
+#: ../libraries/python_cli_for_api.rst:87
+msgid "Bulk device operations"
+msgstr ""
+"Operaciones de dispositivo masivas"
+
+#: ../libraries/python_cli_for_api.rst:89
+msgid "Applications can use bulk operations to get, add or remove devices in bulk from Internet of Things Foundation Connect."
+msgstr ""
+"Las aplicaciones pueden utilizar operaciones masivas para obtener, añadir o eliminar dispositivos de forma masiva de Internet of Things Foundation Connect."
+
+#: ../libraries/python_cli_for_api.rst:91
+msgid "Refer to the Bulk Operations section of the `IBM IoT Foundation API https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"Consulte la sección Operaciones masivas de la `API de IBM IoT Foundation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ para obtener información sobre la lista de parámetros de consulta, el modelo de solicitud y respuesta, y el código de estado http. "
+
+#: ../libraries/python_cli_for_api.rst:94
+msgid "Retrieve device information"
+msgstr ""
+"Recuperar información de dispositivos"
+
+#: ../libraries/python_cli_for_api.rst:96
+msgid "Bulk device information can be retrieved using the *getAllDevices()* method. This method retrieves information on all registered devices in the organization, each request can contain a maximum of 512KB."
+msgstr ""
+"Puede recuperarse información de dispositivos masiva utilizando el método *getAllDevices()*. Este método recupera información sobre todos los dispositivos registrados en la organización; cada solicitud puede contener un máximo de 512 KB."
+
+#: ../libraries/python_cli_for_api.rst:104
+msgid "Response and Bookmarks"
+msgstr ""
+"Respuesta y marcadores"
+
+#: ../libraries/python_cli_for_api.rst:106
+msgid "The response contains parameters required by the application to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further calls, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"La respuesta contiene los parámetros que necesita la aplicación para recuperar el diccionario *results* de la respuesta, para obtener la matriz de los dispositivos devueltos. Se requieren otros parámetros en la respuesta para realizar más llamadas, por ejemplo, el elemento *_bookmark* puede utilizarse para paginar por los resultados. Emita la primera solicitud sin especificar un marcador y, a continuación, devuelva el marcador en la respuesta y proporciónelo en la solicitud de la página siguiente. Repita este paso hasta el final del conjunto de resultados indicado por la ausencia de un marcador. Cada solicitud debe utilizar exactamente los mismos valores para los otros parámetros o los resultados no estarán definidos. "
+
+#: ../libraries/python_cli_for_api.rst:108
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of org.apache.http.message.BasicNameValuePair as shown below,"
+msgstr ""
+"Para poder pasar *_bookmark* o cualquier otra condición, debe utilizarse el método sobrecargado. El método sobrecargado utiliza parámetros con el formato org.apache.http.message.BasicNameValuePair como se muestra a continuación,"
+
+#: ../libraries/python_cli_for_api.rst:124
+msgid "Add Devices in bulk"
+msgstr ""
+"Añadir dispositivos de forma masiva"
+
+#: ../libraries/python_cli_for_api.rst:126
+msgid "The *addMultipleDevices()* method can be used to add one or more devices to your Internet of Things Foundation organization. The maximum size of a request is set to 512KB. In each request, you must first define the devices to be added using the *listOfDevices* variable, as shown in the following code snippet:"
+msgstr ""
+"Puede utilizarse el método *addMultipleDevices()* para añadir uno o varios dispositivos a la organización de Internet of Things Foundation. El tamaño máximo de una solicitud se establece en 512 KB. En cada solicitud, primero debe definir los dispositivos que se van a añadir utilizando la variable *listOfDevices*, como se muestra en el fragmento de código siguiente: "
+
+#: ../libraries/python_cli_for_api.rst:133
+#: ../libraries/python_cli_for_api.rst:166
+msgid "This above code snippet should be inserted after the constructor code in a .py file."
+msgstr ""
+"El fragmento de código anterior debe insertarse después del código de constructor en un archivo .py. "
+
+#: ../libraries/python_cli_for_api.rst:138
+msgid "The following sample shows an example of the format your final code, and is an example of using the *addMultipleDevices()* method to add two devices."
+msgstr ""
+"A continuación, se muestra un ejemplo del formato del código final que demuestra cómo utilizar el método *addMultipleDevices()* para añadir dos dispositivos. "
+
+#: ../libraries/python_cli_for_api.rst:152
+msgid "The response will contain the generated authentication tokens for each added device. These authentication tokens must be recorded when processing the response, as lost authentication tokens cannot be retrieved."
+msgstr ""
+"La respuesta contendrá las señales de autenticación generadas para cada dispositivo añadido. Estas señales de autenticación deben registrarse cuando se procesa la respuesta, ya que las señales de autenticación perdidas no podrán recuperarse. "
+
+#: ../libraries/python_cli_for_api.rst:156
+msgid "Delete Devices in bulk"
+msgstr ""
+"Suprimir dispositivos de forma masiva"
+
+#: ../libraries/python_cli_for_api.rst:158
+msgid "The *deleteMultipleDevices()* method can be used to delete multiple devices from an Internet of Things Foundation organization, each request can contain a maximum of 512KB. In each request, you must first define the devices to be deleted using the *listOfDevices* variable, as shown in the following code snippet:"
+msgstr ""
+"Puede utilizarse el método *deleteMultipleDevices()* para suprimir varios dispositivos de una organización de Internet of Things Foundation, donde cada solicitud puede contener un máximo de 512 KB. En cada solicitud, primero debe definir los dispositivos que se van a suprimir utilizando la variable *listOfDevices*, como se muestra en el fragmento de código siguiente: "
+
+#: ../libraries/python_cli_for_api.rst:172
+msgid "The following sample shows an example of the format your final code, and is an example of using the *deleteMultipleDevices()* method to delete two devices."
+msgstr ""
+"A continuación, se muestra un ejemplo del formato del código final que demuestra cómo utilizar el método *deleteMultipleDevices()* para suprimir dos dispositivos. "
+
+#: ../libraries/python_cli_for_api.rst:189
+msgid "Device Type Operations"
+msgstr ""
+"Operaciones de tipos de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:191
+msgid "Device types can be used as templates for adding device information to devices as they are added to your organization. Applications can use the Internet of Things Foundation API to list, create, delete, view, or update device types in your organization."
+msgstr ""
+"Los tipos de dispositivo pueden utilizarse como plantillas para añadir información de dispositivos cuando se añaden a la organización. Las aplicaciones pueden utilizar la API de Internet of Things Foundation para listar, crear, suprimir, ver o actualizar tipos de dispositivo en la organización. "
+
+#: ../libraries/python_cli_for_api.rst:193
+msgid "Refer to the Device Types section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ documentation for information about the list of query parameters, the request & response model, and http status codes."
+msgstr ""
+"Consulte la sección Tipos de dispositivo de la documentación de la `API de IBM IoT Foundation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ para obtener información sobre la lista de parámetros de consulta, el modelo de solicitud y respuesta, y los códigos de estado http. "
+
+#: ../libraries/python_cli_for_api.rst:196
+msgid "Get all Device Types"
+msgstr ""
+"Obtener todos los tipos de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:198
+msgid "The *getAllDeviceTypes()* method can be used to retrieve all device types in your Internet of Things Foundation organization. For example,"
+msgstr ""
+"Puede utilizarse el método *getAllDeviceTypes()* para recuperar todos los tipos de dispositivo en la organización de Internet of Things Foundation. Por ejemplo, "
+
+#: ../libraries/python_cli_for_api.rst:205
+#: ../libraries/python_cli_for_api.rst:305
+msgid "The response contains parameters and application needs to retrieve the dictionary *results* from the response to get the array of devices returned. Other parameters in the response are required to make further call, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"La respuesta contiene parámetros y la aplicación debe recuperar el diccionario *results* de la respuesta, para obtener la matriz de los dispositivos devueltos. Se requieren otros parámetros en la respuesta para realizar más llamadas, por ejemplo, el elemento *_bookmark* puede utilizarse para paginar por los resultados. Emita la primera solicitud sin especificar un marcador y, a continuación, devuelva el marcador en la respuesta y proporciónelo en la solicitud de la página siguiente. Repita este paso hasta el final del conjunto de resultados indicado por la ausencia de un marcador. Cada solicitud debe utilizar exactamente los mismos valores para los otros parámetros o los resultados no estarán definidos. "
+
+#: ../libraries/python_cli_for_api.rst:207
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of a dictionary as shown below,"
+msgstr ""
+"Para poder pasar *_bookmark* o cualquier otra condición, debe utilizarse el método sobrecargado. El método sobrecargado utiliza parámetros con formato de diccionario como se muestra a continuación,"
+
+#: ../libraries/python_cli_for_api.rst:216
+msgid "Add a Device Type"
+msgstr ""
+"Añadir un tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:218
+msgid "The *addDeviceType()* method can be used to register a device type to Internet of Things Foundation Connect. In each request, you must first define the device information, and device metadata elements which you want to be applied to all devices of this type. The device information element is comprised of several variables, including, serial number, manufacturer, model, class, description, firmware and hardware versions, and descriptive location. The metadata element is comprised of custom variables and values which can be defined by the user."
+msgstr ""
+"Puede utilizarse el método *addDeviceType()* para registrar un tipo de dispositivo en Internet of Things Foundation Connect. En cada solicitud, primero debe definir la información del dispositivo y los elementos de metadatos de dispositivo que desea que se apliquen a todos los dispositivos de este tipo. El elemento de información de dispositivo está formado por varias variables, incluido el número de serie, el fabricante, el modelo, la clase, la descripción, las versiones de firmware y hardware, y una ubicación descriptiva. El elemento de metadatos está formado por variables y valores personalizados que puede definir el usuario. "
+
+#: ../libraries/python_cli_for_api.rst:220
+msgid "After defining the *deviceInfo* and *metadata* elements, use the following code snippet to register a new device type."
+msgstr ""
+"Después de definir los elementos *deviceInfo* y *metadata*, utilice el siguiente  fragmento de código para registrar un nuevo tipo de dispositivo. "
+
+#: ../libraries/python_cli_for_api.rst:231
+msgid "The following sample will define the API connection settings, define the DeviceInfo and Metadata elements, and then register a device type."
+msgstr ""
+"El siguiente ejemplo definirá los valores de conexión de la API, definirá los elementos DeviceInfo y Metadata, y registrará un tipo de dispositivo."
+
+#: ../libraries/python_cli_for_api.rst:245
+msgid "Delete a Device Type"
+msgstr ""
+"Suprimir un tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:247
+msgid "The *deleteDeviceType()* method can be used to delete a device type from your Internet of Things Foundation organization. The following code snippet can be added to a .py file to delete a device type \"myDeviceType5\"."
+msgstr ""
+"Puede utilizarse el método *deleteDeviceType()* para suprimir un tipo de dispositivo de la organización de Internet of Things Foundation. El siguiente fragmento de código puede añadirse a un archivo .py para suprimir un tipo de dispositivo \"myDeviceType5\"."
+
+#: ../libraries/python_cli_for_api.rst:255
+msgid "Get a Device Type"
+msgstr ""
+"Obtener un tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:257
+msgid "The *getDeviceType()* method retrieves information on a given device type. The *deviceTypeID* of the device type you wish to retrieve information on must be used as a parameter, as shown in the following code snippet for the device type \"myDeviceType5\". This method will return all available information for the device type, including all variables in the deviceInfo and metadata element."
+msgstr ""
+"El método *getDeviceType()* recupera información sobre un determinado tipo de dispositivo. El *deviceTypeID* del tipo de dispositivo sobre el que desea recuperar información debe utilizarse como parámetro, como se muestra en el siguiente fragmento de código para el tipo de dispositivo \"myDeviceType5\". Este método devolverá toda la información disponible para el tipo de dispositivo, incluidas todas las variables en el elemento deviceInfo y metadata. "
+
+#: ../libraries/python_cli_for_api.rst:265
+msgid "Update a Device Type"
+msgstr ""
+"Actualizar un tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:267
+msgid "The *updateDeviceType()* method can be used to modify the properties of a device type. When using this method, several parameters must be defined. Firstly, the *deviceTypeID* of the device type to be updated must be specified, then the *description*, *deviceInfo*, and *metadata* elements, as shown in the code snippet below."
+msgstr ""
+"Puede utilizarse el método *updateDeviceType()* para modificar las propiedades de un tipo de dispositivo. Cuando se utiliza este método, deben definirse varios parámetros. En primer lugar, debe especificarse el *deviceTypeID* del tipo de dispositivo que se va a actualizar y, a continuación, los elementos *description*, *deviceInfo* y *metadata*, como se muestra en el fragmento de código siguiente. "
+
+#: ../libraries/python_cli_for_api.rst:274
+msgid "The properties to be modified should be defined within the, *description*, *deviceInfo*, and *metadata* elements. The variables contained in *deviceInfo* and *metadata* which are to be updated must be defined before the method is called. The code sample below is an example of the full method being called."
+msgstr ""
+"Las propiedades que se van a modificar deben definirse en los elementos *description*, *deviceInfo* y *metadata*. Las variables contenidas en *deviceInfo* y*metadata* que se van a actualizar deben definirse antes de invocar el método. El ejemplo de código siguiente es un ejemplo del método completo que se invoca. "
+
+#: ../libraries/python_cli_for_api.rst:289
+msgid "Device operations"
+msgstr ""
+"Operaciones de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:291
+msgid "Device operations made available through the API include listing, adding, removing, viewing, updating, viewing location and viewing  device management information of devices in an Internet of Things Foundation organization."
+msgstr ""
+"Las operaciones de dispositivo que están disponibles mediante la API incluyen listar, añadir, eliminar, ver y actualizar dispositivos, así como ver la ubicación y ver información de gestión de dispositivos en una organización de Internet of Things Foundation. "
+
+#: ../libraries/python_cli_for_api.rst:293
+msgid "Refer to the Device section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"Consulte la sección Dispositivo de la `API de IBM IoT Foundation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ para obtener información sobre la lista de parámetros de consulta, el modelo de solicitud y respuesta, y el código de estado http. "
+
+#: ../libraries/python_cli_for_api.rst:296
+msgid "Get Devices of a particular Device Type"
+msgstr ""
+"Obtener dispositivos de un determinado tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:298
+msgid "The *retrieveDevices()* method can be used to retrieve all the devices of a particular device type in an organization from Internet of Things Foundation. For example,"
+msgstr ""
+"Puede utilizarse el método *retrieveDevices()* para recuperar todos los dispositivos de un determinado tipo de dispositivo en una organización de Internet of Things Foundation. Por ejemplo, "
+
+#: ../libraries/python_cli_for_api.rst:307
+#: ../libraries/python_cli_for_api.rst:579
+msgid "In order to pass the *_bookmark* or any other condition, the overloaded method must be used. The overloaded method takes the parameters in the form of dictionary as shown below,"
+msgstr ""
+"Para poder pasar *_bookmark* o cualquier otra condición, debe utilizarse el método sobrecargado. El método sobrecargado utiliza parámetros con formato de diccionario como se muestra a continuación,"
+
+#: ../libraries/python_cli_for_api.rst:313
+msgid "The above snippet sorts the response based on device id and uses the bookmark to page through the results."
+msgstr ""
+"El fragmento de código anterior ordena la repuesta basándose en el ID de dispositivo y utiliza el marcador para paginar por los resultados. "
+
+#: ../libraries/python_cli_for_api.rst:316
+msgid "Add a Device"
+msgstr ""
+"Añadir un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:318
+msgid "The *registerDevice()* method is used to add a device to an Internet of Things Foundation organization. The *registerDevice()* method adds a single device to your Internet of Things Foundation organization. The parameters which can be set when adding a device are:"
+msgstr ""
+"El método *registerDevice()* se utiliza para añadir un dispositivo a una organización de Internet of Things Foundation. El método *registerDevice()* añade un único dispositivo a la organización de Internet of Things Foundation. Los parámetros que pueden establecerse cuando se añade un dispositivo son: "
+
+#: ../libraries/python_cli_for_api.rst:320
+msgid "deviceTypeId: *Optional*. Assigns a device type to the device. Where there is a clash between variables defined by the device type and variables defined by under deviceInfo, the device specific variables will take precedence."
+msgstr ""
+"deviceTypeId: *Optional*. Asigna un tipo de dispositivo al dispositivo. Cuando hay un conflicto entre las variables definidas por el tipo de dispositivo y las variables definidas por deviceInfo, las variables específicas del dispositivo tendrán prioridad. "
+
+#: ../libraries/python_cli_for_api.rst:321
+msgid "deviceId: *Mandatory*."
+msgstr ""
+"deviceId: *Mandatory*."
+
+#: ../libraries/python_cli_for_api.rst:322
+msgid "authToken: *Optional*. If no authentication token is supplied, one will be generated and included in the response."
+msgstr ""
+"authToken: *Optional*. Si no se suministra ninguna señal de autenticación, se generará una y se incluirá en la respuesta. "
+
+#: ../libraries/python_cli_for_api.rst:323
+msgid "deviceInfo: *Optional*. This parameter is optional, and can contain a number of variables, including: serialNumber, manufacturer, model, deviceClass, description, firmware and hardware versions, and descriptiveLocation."
+msgstr ""
+"deviceInfo: *Optional*. Este parámetro es opcional y puede contener varias variables, entre ellas: serialNumber, fabricante, modelo, deviceClass, descripción, versiones de firmware y hardware, y descriptiveLocation."
+
+#: ../libraries/python_cli_for_api.rst:324
+msgid "metadata: *Optional*. Metadata can optionally be added in the form of custom field:value string pairs. An example is given in the code sample below."
+msgstr ""
+"metadata: *Optional*. Los metadatos pueden añadirse de manera opcional en forma de pares de serie campo:valor personalizados. A continuación, se muestra un ejemplo de código. "
+
+#: ../libraries/python_cli_for_api.rst:325
+msgid "location: *Optional*. This parameter contains the longitude, latitude, elevation, accuracy, and mesauredDateTime variables."
+msgstr ""
+"location: *Optional*. Este parámetro contiene las variables longitude, latitude, elevation, accuracy y mesauredDateTime. "
+
+#: ../libraries/python_cli_for_api.rst:327
+msgid "For more information on the parameters presented here, and the response format and codes, please see the relevant section of `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__."
+msgstr ""
+"Para obtener más información sobre los parámetros presentados, y los códigos y el formato de respuesta, visite la sección correspondiente de la `Documentación de la API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__."
+
+#: ../libraries/python_cli_for_api.rst:329
+msgid "When using the *registerDevice()* method, you must define the mandatory deviceID parameter, and any of the optional parameters you require for your device, then call the method using the parameters you've selected."
+msgstr ""
+"Cuando se utiliza el método *registerDevice()*, debe definir el parámetro deviceID obligatorio y los parámetros opcionales que requiera para su dispositivo y, a continuación, invocar el método utilizando los parámetros que ha seleccionado. "
+
+#: ../libraries/python_cli_for_api.rst:334
+msgid "The following code sample should be inserted after the constructor code in a .py file. This code demonstrates defining the deviceId, authToken, metadata, deviceInfo parameters, and location parameters and then using the method with those parameters and adding a device type."
+msgstr ""
+"El siguiente ejemplo de código debe insertarse después del código de constructor en un archivo .py. Este código demuestra la definición de los parámetros deviceId, authToken, metadata y deviceInfo, y de los parámetros de ubicación, así como el uso del método con esos parámetros y la adición de un tipo de dispositivo. "
+
+#: ../libraries/python_cli_for_api.rst:348
+msgid "Delete a Device"
+msgstr ""
+"Suprimir un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:350
+msgid "The *deleteDevice()* method is used to remove a device from an Internet of Things Foundation organization. When deleting a device using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId."
+msgstr ""
+"El método *deleteDevice()* se utiliza para suprimir un dispositivo de una organización de Internet of Things Foundation. Cuando se suprime un dispositivo con este método, los parámetros que deben especificarse en el método son deviceTypeId y deviceId."
+
+#: ../libraries/python_cli_for_api.rst:352
+#: ../libraries/python_cli_for_api.rst:364
+msgid "The following code snippet provides an example of the format required for this method."
+msgstr ""
+"El siguiente fragmento de código proporciona un ejemplo del formato necesario para este método. "
+
+#: ../libraries/python_cli_for_api.rst:360
+msgid "Get a Device"
+msgstr ""
+"Obtener un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:362
+msgid "The *getDevice()* method can be used to retrieve a device from an Internet of Things Foundation organization. When retrieving device details using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId."
+msgstr ""
+"Puede utilizarse el método *getDevice()* para recuperar un dispositivo de una organización de Internet of Things Foundation. Cuando se recuperan detalles de dispositivo con este método, los parámetros que deben especificarse en el método son deviceTypeId y deviceId."
+
+#: ../libraries/python_cli_for_api.rst:372
+msgid "Get all Devices"
+msgstr ""
+"Obtener todos los dispositivos"
+
+#: ../libraries/python_cli_for_api.rst:374
+msgid "The *getAllDevices()* method can be used to retrieve all devices within an Internet of Things Foundation organization."
+msgstr ""
+"Puede utilizarse el método *getAllDevices()* para recuperar todos los dispositivos en una organización de Internet of Things Foundation. "
+
+#: ../libraries/python_cli_for_api.rst:382
+msgid "Update a Device"
+msgstr ""
+"Actualizar un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:384
+msgid "The *updateDevice()* method is used to modify one or more properties of a device. Any property in the deviceInfo or metadata parameters can be updated. In order to update a device property, it must be defined above the method. The status parameter should contain \"alert\": True. The Alert property controls whether a device will display error codes in the Internet of Things Foundation user interface, and should be set by default to 'True'."
+msgstr ""
+"El método *updateDevice()* se utiliza para modificar una o varias propiedades de un dispositivo. Cualquier propiedad en los parámetros deviceInfo o metadata puede actualizarse. Para poder actualizar una propiedad de dispositivo, debe definirse encima del método. El parámetro de estado debe contener \"alert\": True. La propiedad Alert controla si un dispositivo mostrará códigos de error en la interfaz de usuario de Internet of Things Foundation, y si debe establecerse de forma predeterminada en 'True'."
+
+#: ../libraries/python_cli_for_api.rst:395
+msgid "In this sample, the following code identifies a specific device, and updates several properties under the deviceInfo parameter."
+msgstr ""
+"En este ejemplo, el siguiente código identifica un dispositivo específico y actualiza varias propiedades en el parámetro deviceInfo. "
+
+#: ../libraries/python_cli_for_api.rst:404
+msgid "Get Location Information"
+msgstr ""
+"Obtener información de ubicación"
+
+#: ../libraries/python_cli_for_api.rst:406
+msgid "The *getDeviceLocation()* method can be used to retrieve the location information of a device. The parameters required for retrieving the location data are deviceTypeId and deviceId."
+msgstr ""
+"Puede utilizarse el método *getDeviceLocation()* para recuperar la información de ubicación de un dispositivo. Los parámetros necesarios para recuperar los datos de ubicación son deviceTypeId y deviceId."
+
+#: ../libraries/python_cli_for_api.rst:412
+msgid "The response to this method contains the longitude, latitude, elevation, accuracy, measuredTimeStamp, and updatedTimeStamp properties."
+msgstr ""
+"La respuesta a este método contiene las propiedades longitude, latitude, elevation, accuracy, measuredTimeStamp y updatedTimeStamp. "
+
+#: ../libraries/python_cli_for_api.rst:416
+msgid "Update Location Information"
+msgstr ""
+"Actualizar información de ubicación"
+
+#: ../libraries/python_cli_for_api.rst:418
+msgid "The *updateDeviceLocation()* method is used to modify the location information for a device. Simlarly to updating device properties, the deviceLocation parameter must be defined with the changes you wish to apply. The code sample below demonstrates changing the location data for a given device."
+msgstr ""
+"El método *updateDeviceLocation()* se utiliza para modificar la información de ubicación de un dispositivo. De forma parecida a la actualización de las propiedades de dispositivo, el parámetro deviceLocation debe definirse con los cambios que desee aplicar. El siguiente ejemplo de código demuestra el cambio de los datos de ubicación de un determinado dispositivo. "
+
+#: ../libraries/python_cli_for_api.rst:425
+msgid "If no date is supplied, the entry is added with the current date and time."
+msgstr ""
+"Si no se suministra ninguna fecha, la entrada se añade con la fecha y hora actual. "
+
+#: ../libraries/python_cli_for_api.rst:429
+msgid "Get Device Management Information"
+msgstr ""
+"Obtener información de gestión de dispositivos"
+
+#: ../libraries/python_cli_for_api.rst:431
+msgid "The *getDeviceManagementInformation()* method is used to get the device management information for a device. The response contains the last activity date-time, the device's dormant status (true/false), support for device and firmware actions, and firmware data. For a comprehensive list of response content, please see the relevant API documentation."
+msgstr ""
+"El método *getDeviceManagementInformation()* se utiliza para obtener la información de gestión de dispositivos para un dispositivo. La respuesta contiene la fecha y la hora de la última actividad, el estado inactivo del dispositivo (true/false), soporte para las acciones del firmware y el dispositivo, y datos de firmware. Para ver una lista completa del contenido de la respuesta, consulte la documentación de la API correspondiente. "
+
+#: ../libraries/python_cli_for_api.rst:433
+msgid "The following code sample will return the device management information for a device with the deviceId \"00aabbccde03\", with deviceTypeId \"iotsample-arduino\"."
+msgstr ""
+"El siguiente ejemplo de código devolverá información de gestión de dispositivos para un dispositivo con deviceId \"00aabbccde03\" y deviceTypeId \"iotsample-arduino\"."
+
+#: ../libraries/python_cli_for_api.rst:446
+msgid "Device diagnostic operations"
+msgstr ""
+"Operaciones de diagnóstico de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:448
+msgid "Applications can use device diagnostic operations to clear logs, retrieve all or specific logs for a device, add log information, delete logs, clear error codes, get device error codes, and add an error codes."
+msgstr ""
+"Las aplicaciones pueden utilizar las operaciones de diagnóstico de dispositivos para borrar registros, recuperar todos los registros o registros específicos para un dispositivo, añadir información de registro, suprimir registros, borrar códigos de error, obtener códigos de error de dispositivo y añadir un código de error."
+
+#: ../libraries/python_cli_for_api.rst:450
+msgid "For more detailed information on query and response models, response codes, and query paramters, please see the relevant API documentation."
+msgstr ""
+"Para obtener información detallada sobre los modelos de consulta y respuesta, los códigos de respuesta y los parámetros de consulta, consulte la documentación de la API correspondiente. "
+
+#: ../libraries/python_cli_for_api.rst:453
+msgid "Get Diagnostic logs"
+msgstr ""
+"Obtener registros de diagnóstico"
+
+#: ../libraries/python_cli_for_api.rst:455
+msgid "The *getAllDiagnosticLogs()* method is used to retrieve all diagnostic logs for a specific device. The *getAllDiagnosticLogs()* method requires the deviceTypeId and deviceId parameters."
+msgstr ""
+"El método *getAllDiagnosticLogs()* se utiliza para recuperar todos los registros de diagnóstico de un dispositivo específico. El método *getAllDiagnosticLogs()* requiere los parámetros deviceTypeId y deviceId. "
+
+#: ../libraries/python_cli_for_api.rst:461
+msgid "The response model for this method contains the logId, message, severity, data, and timestamp."
+msgstr ""
+"El modelo de respuesta de este método contiene los parámetros logId, message, severity, data y timestamp."
+
+#: ../libraries/python_cli_for_api.rst:464
+msgid "Clear Diagnostic logs for a Device"
+msgstr ""
+"Borrar registros de diagnóstico para un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:466
+msgid "The *clearAllDiagnosticLogs()* method is used to delete all diagnostic logs for a specific device. The required parameters are deviceTypeId and deviceId. Care should be taken when deleting logs, as logs cannot be recovered once deleted."
+msgstr ""
+"El método *clearAllDiagnosticLogs()* se utiliza para suprimir todos los registros de diagnóstico de un dispositivo específico. Los parámetros necesarios son deviceTypeId y deviceId. Tenga cuidado cuando suprima registros, ya que no pueden recuperarse una vez suprimidos. "
+
+#: ../libraries/python_cli_for_api.rst:474
+msgid "Add a Diagnostic log"
+msgstr ""
+"Añadir un registro de diagnóstico"
+
+#: ../libraries/python_cli_for_api.rst:476
+msgid "The *addDiagnosticLog()* method is used to add an entry in the diagnostic log of the device. The log may be pruned as the new entry is added. If no date is supplied, the entry is added with the current date and time. To use this method, first define a 'logs' parameter with the following variables:"
+msgstr ""
+"El método *addDiagnosticLog()* se utiliza para añadir una entrada en el registro de diagnóstico del dispositivo. El registro puede borrarse cuando se añade la nueva entrada. Si no se suministra ninguna fecha, la entrada se añade con la fecha y hora actual. Para utilizar este método, defina primero un parámetro 'logs' con las siguientes variables:"
+
+#: ../libraries/python_cli_for_api.rst:478
+msgid "message: This variable is mandatory, and contains the new diagnostic message."
+msgstr ""
+"message: esta variable es obligatoria y contiene el nuevo mensaje de diagnóstico. "
+
+#: ../libraries/python_cli_for_api.rst:479
+msgid "severity: This variable is optional. If used it corresponds to the severity of the diagnostic log, and should be 0, 1, or 2, corresponding to the informational, warning, and error categories."
+msgstr ""
+"severity: esta variable es opcional. Si se utiliza, corresponde a la gravedad del registro de diagnóstico y debe ser 0, 1 o 2, para las categorías informativa, de aviso y de error, respectivamente. "
+
+#: ../libraries/python_cli_for_api.rst:480
+msgid "data: This variable is optional, and should contain diagnostic data."
+msgstr ""
+"data: esta variable es opcional y debe contener datos de diagnóstico. "
+
+#: ../libraries/python_cli_for_api.rst:481
+#: ../libraries/python_cli_for_api.rst:539
+msgid "timestamp: This variable is optional, and contains the date and time of the log entry in ISO8601 format. If this variable is not included, it is automatically added with the current date and time."
+msgstr ""
+"timestamp: esta variable es opcional y contiene la fecha y la hora de la entrada de registro en formato ISO8601. Si esta variable no se incluye, se añade automáticamente con la fecha y hora actuales. "
+
+#: ../libraries/python_cli_for_api.rst:483
+msgid "The other necessary paramteres required in the method are the deviceTypeId and deviceId for the specific device."
+msgstr ""
+"Los otros parámetros necesarios en el método son deviceTypeId y deviceId para el dispositivo específico. "
+
+#: ../libraries/python_cli_for_api.rst:485
+msgid "The code sample below contains an example of the method."
+msgstr ""
+"El ejemplo de código siguiente es un ejemplo del método. "
+
+#: ../libraries/python_cli_for_api.rst:494
+msgid "Retrieve a specific Diagnostic log"
+msgstr ""
+"Recuperar un registro de diagnóstico específico"
+
+#: ../libraries/python_cli_for_api.rst:496
+msgid "The *getDiagnosticLog()* method is used to retrieve a specific diagnostic log for a specified device based on the log id. The required parameters for this method are the deviceTypeId, deviceId, and logId."
+msgstr ""
+"El método *getDiagnosticLog()* se utiliza para recuperar un registro de diagnóstico específico para un determinado dispositivo basándose en el ID de registro. Los parámetros necesarios para este método son deviceTypeId, deviceId y logId."
+
+#: ../libraries/python_cli_for_api.rst:504
+msgid "Delete a Diagnostic log"
+msgstr ""
+"Suprimir un registro de diagnóstico"
+
+#: ../libraries/python_cli_for_api.rst:506
+msgid "The *deleteDiagnosticLog()* can be used to delete a specific diagnostic log. In order to specify a diagnostic log, the deviceTypeId, deviceId, and logId parameters should be supplied."
+msgstr ""
+"Puede utilizar *deleteDiagnosticLog()* para suprimir un registro de diagnóstico específico. Para poder especificar un registro de diagnóstico, deben proporcionarse los parámetros deviceTypeId, deviceId y logId. "
+
+#: ../libraries/python_cli_for_api.rst:514
+msgid "Retrieve Device Error Codes"
+msgstr ""
+"Recuperar códigos de error de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:516
+msgid "The *getAllDiagnosticErrorCodes()* method is used to retrieve all diagnostic error codes associated with a specific device."
+msgstr ""
+"El método *getAllDiagnosticErrorCodes()* se utiliza para recuperar todos los códigos de error de diagnóstico asociados con un dispositivo específico. "
+
+#: ../libraries/python_cli_for_api.rst:524
+msgid "Clear Diagnostic Error Codes"
+msgstr ""
+"Borrar códigos de error de diagnóstico"
+
+#: ../libraries/python_cli_for_api.rst:526
+msgid "The *clearAllErrorCodes()* method is used to clear the list of error codes associated with the device. The list is replaced with a single error code of zero."
+msgstr ""
+"El método *clearAllErrorCodes()* se utiliza para borrar la lista de códigos de error asociados con el dispositivo. La lista se sustituye por un código de error individual igual a cero. "
+
+#: ../libraries/python_cli_for_api.rst:534
+msgid "Add single Diagnostic ErrorCode"
+msgstr ""
+"Añadir ErrorCode de diagnóstico individual"
+
+#: ../libraries/python_cli_for_api.rst:536
+msgid "The *addErrorCode()* method is used to add an error code to the list of error codes associated with the device. The list may be pruned as the new entry is added. The parameters required in the method are deviceTypeId, deviceId, and errorCode. The errorCode parameter contains the following variables:"
+msgstr ""
+"El método *addErrorCode()* se utiliza para añadir un código de error a la lista de códigos de error asociados con el dispositivo. La lista puede borrarse cuando se añade la nueva entrada. Los parámetros necesarios en el método son deviceTypeId, deviceId y errorCode. El parámetro errorCode contiene las siguientes variables:"
+
+#: ../libraries/python_cli_for_api.rst:538
+msgid "errorCode: This variable is mandatory and should be set as an integer. This sets the number of the error code to be created."
+msgstr ""
+"errorCode: esta variable es obligatoria y debe establecerse como un entero. Establece el número del código de error que se va a crear. "
+
+#: ../libraries/python_cli_for_api.rst:549
+msgid "Connection problem determination"
+msgstr ""
+"Determinación de problemas de conexión"
+
+#: ../libraries/python_cli_for_api.rst:551
+msgid "The *getDeviceConnectionLogs()* method is used to list connection log events for a device. This information can be used to help diagnose connectivity problems between the device and the Internet of Things Foundation service. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection events."
+msgstr ""
+"El método *getDeviceConnectionLogs()* se utiliza para listar los sucesos de registro de conexión de un dispositivo. Esta información puede utilizarse para diagnosticar problemas de conectividad entre el dispositivo y el servicio Internet of Things Foundation. Las entradas registran los sucesos de conexión satisfactoria, intentos de conexión no satisfactorios, desconexión intencional y desconexión iniciada por el servidor. "
+
+#: ../libraries/python_cli_for_api.rst:557
+msgid "The response includes a list of log entries, containing log messages and timestamps."
+msgstr ""
+"La respuesta incluye una lista de entradas de registro, que contienen mensajes de registro e indicaciones de fecha y hora. "
+
+#: ../libraries/python_cli_for_api.rst:562
+msgid "Historical Event Retrieval"
+msgstr ""
+"Recuperación de sucesos históricos"
+
+#: ../libraries/python_cli_for_api.rst:564
+msgid "These operations can be used to view events from all devices, view events from a device type or to view events for a specific device."
+msgstr ""
+"Estas operaciones pueden utilizarse para ver sucesos procedentes de todos los dispositivos, ver sucesos procedentes de un tipo de dispositivo o ver sucesos de un dispositivo específico. "
+
+#: ../libraries/python_cli_for_api.rst:566
+msgid "Refer to the Historical Event Retrieval section of the `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code."
+msgstr ""
+"Consulte la sección Recuperación de sucesos históricos de la `API de IBM IoT Foundation Connect <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ para obtener información sobre la lista de parámetros de consulta, el modelo de solicitud y respuesta, y el código de estado http. "
+
+#: ../libraries/python_cli_for_api.rst:569
+msgid "View events from all devices"
+msgstr ""
+"Ver los sucesos de todos los dispositivos"
+
+#: ../libraries/python_cli_for_api.rst:571
+msgid "Method getHistoricalEvents() can be used to view events across all devices registered to the organization."
+msgstr ""
+"El método getHistoricalEvents() puede utilizarse para ver sucesos en todos los dispositivos registrados en la organización. "
+
+#: ../libraries/python_cli_for_api.rst:577
+msgid "The response will contain some parameters and the application needs to retrieve the JSON element *events* from the response to get the array of events returned. Other parameters in the response are required to make further call, for example, the *_bookmark* element can be used to page through results. Issue the first request without specifying a bookmark, then take the bookmark returned in the response and provide it on the request for the next page. Repeat until the end of the result set indicated by the absence of a bookmark. Each request must use exactly the same values for the other parameters, or the results are undefined."
+msgstr ""
+"La respuesta contendrá algunos parámetros y la aplicación debe recuperar el elemento JSON *events* de la respuesta, para obtener la matriz de los sucesos devueltos. Se requieren otros parámetros en la respuesta para realizar más llamadas, por ejemplo, el elemento *_bookmark* puede utilizarse para paginar por los resultados. Emita la primera solicitud sin especificar un marcador y, a continuación, devuelva el marcador en la respuesta y proporciónelo en la solicitud de la página siguiente. Repita este paso hasta el final del conjunto de resultados indicado por la ausencia de un marcador. Cada solicitud debe utilizar exactamente los mismos valores para los otros parámetros o los resultados no estarán definidos. "
+
+#: ../libraries/python_cli_for_api.rst:588
+msgid "The above snippet returns the events between the start and end time."
+msgstr ""
+"El fragmento de código anterior devuelve los sucesos entre la hora de inicio y la hora de finalización. "
+
+#: ../libraries/python_cli_for_api.rst:591
+msgid "View events from a device type"
+msgstr ""
+"Ver sucesos de un tipo de dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:593
+msgid "The *getHistoricalEvents()* method is used to view events from all the devices of a particular device type."
+msgstr ""
+"El método *getHistoricalEvents()* se utiliza para ver sucesos de todos los dispositivos de un determinado tipo de dispositivo. "
+
+#: ../libraries/python_cli_for_api.rst:599
+msgid "The response will contain some parameters and the application needs to retrieve the JSON element *events* from the response to get the array of events returned. As mentioned in the *view events from all devices* section, the overloaded method can be used to control the output."
+msgstr ""
+"La respuesta contendrá algunos parámetros y la aplicación debe recuperar el elemento JSON *events* de la respuesta, para obtener la matriz de los sucesos devueltos. Como se ha comentado en la sección *Ver los sucesos de todos los dispositivos*, puede utilizarse el método sobrecargado para controlar la salida. "
+
+#: ../libraries/python_cli_for_api.rst:603
+msgid "View events from a device"
+msgstr ""
+"Ver sucesos de un dispositivo"
+
+#: ../libraries/python_cli_for_api.rst:605
+msgid "The *getHistoricalEvents()* method is used to view events from a specific device. DeviceTypeId and deviceId parameters are required in order to use this method."
+msgstr ""
+"El método *getHistoricalEvents()* se utiliza para ver sucesos de un dispositivo específico. Los parámetros DeviceTypeId y deviceId son necesarios para poder utilizar este método. "
+
+#: ../libraries/python_cli_for_api.rst:611
+msgid "The response will contain more parameters and application needs to retrieve the JSON element *events* from the response to get the array of events returned."
+msgstr ""
+"La respuesta contendrá más parámetros y la aplicación debe recuperar el elemento JSON *events* de la respuesta, para obtener la matriz de los sucesos devueltos. "
+
+#: ../libraries/python_cli_for_api.rst:617
+msgid "Examples"
+msgstr ""
+"Ejemplos"
+
+#: ../libraries/python_cli_for_api.rst:618
+msgid "`bulkOperations.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/bulkOperations.py>`__ - Sample that showcases how to get, add or remove devices in bulk from Internet of Things Foundation."
+msgstr ""
+"`bulkOperations.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/bulkOperations.py>`__ - Ejemplo que muestra cómo obtener, añadir o eliminar dispositivos de forma masiva de Internet of Things Foundation. "
+
+#: ../libraries/python_cli_for_api.rst:619
+msgid "`deviceDiagnostics.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceDiagnostics.py>`__ - A sample that showcases various Device Diagnostic operations like clear logs, retrieve logs, add log information, delete logs, get specific log, clear error codes, get device error codes and add an error code to Internet of Things Foundation."
+msgstr ""
+"`deviceDiagnostics.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceDiagnostics.py>`__ - Un ejemplo que muestra varias operaciones de diagnóstico de dispositivos como, por ejemplo, borrar registros, recuperar registros, añadir información de registro, suprimir registros, obtener un registro específico, borrar códigos de error, obtener códigos de error de dispositivo y añadir un código de error a Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:620
+msgid "`deviceTypes.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceTypes.py>`__ - Sample that showcases various Device Type API operations like list all, create, delete, view and update device types in Internet of Things Foundation."
+msgstr ""
+"`deviceTypes.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/deviceTypes.py>`__ - Ejemplo que muestra varias operaciones de API de tipo de dispositivo como, por ejemplo, listar todo, crear, suprimir, ver y actualizar tipos de dispositivo en Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:621
+msgid "`devices.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/devices.py>`__ - A sample that showcases various Device operations like list, add, remove, view, update, view location and view management information of a device in Internet of Things Foundation."
+msgstr ""
+"`devices.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/devices.py>`__ - Un ejemplo que muestra varias operaciones de dispositivo como, por ejemplo, listar, añadir, eliminar, ver y actualizar dispositivos, así como ver ubicación y ver información de gestión de un dispositivo en Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:622
+msgid "`historian.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/historian.py>`__ - A sample that showcases how to retrieve historical events from Internet of Things Foundation."
+msgstr ""
+"`historian.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/historian.py>`__ - Un ejemplo que muestra cómo recuperar sucesos históricos de Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:623
+msgid "`logConnection.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/logConnection.py>`__ - A sample that showcases device connectivity log operations that can be performed on Internet of Things Foundation."
+msgstr ""
+"`logConnection.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/logConnection.py>`__ - Un ejemplo que muestra las operaciones de registro de conectividad de dispositivos que pueden ejecutarse en Internet of Things Foundation."
+
+#: ../libraries/python_cli_for_api.rst:624
+msgid "`organization.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/organization.py>`__ - A sample that showcases organization operations that can be performed on Internet of Things Foundation."
+msgstr ""
+"`organization.py <https://github.com/ibm-messaging/iot-python/blob/master/samples/apiExamples/organization.py>`__ - Un ejemplo que muestra las operaciones de organización que pueden ejecutarse en Internet of Things Foundation."
+

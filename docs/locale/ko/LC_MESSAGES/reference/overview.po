@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, IBM Corporation
+# This file is distributed under the same license as the IBM IOT Foundation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: IBM IOT Foundation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 15:22+0100\n"
+"POT-Creation-Date: 2015-12-17 09:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,126 +16,153 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\docs\reference\overview.rst:3
+#: ../reference/overview.rst:3
 msgid "Building the Internet of Things"
 msgstr ""
+"Internet of Things 빌드"
 
-#: ..\docs\reference\overview.rst:5
-msgid ""
-"The IBM Internet of Things Foundation is powered by a core of IBM's leading "
-"products and services:"
+#: ../reference/overview.rst:5
+msgid "The IBM Internet of Things Foundation is powered by a core of IBM's leading products and services:"
 msgstr ""
+"IBM Internet of Things Foundation은 IBM 주요 제품 및 서비스의 핵심을 기반으로 합니다. "
 
-#: ..\docs\reference\overview.rst:8
+#: ../reference/overview.rst:8
 msgid "`IBM DataPower Gateway`_"
 msgstr ""
+"`IBM DataPower Gateway`"
 
-#: ..\docs\reference\overview.rst:9
+#: ../reference/overview.rst:9
 msgid "`IBM WebSphere Application Server Liberty Core`_"
 msgstr ""
+"`IBM WebSphere Application Server Liberty Core`"
 
-#: ..\docs\reference\overview.rst:10
+#: ../reference/overview.rst:10
 msgid "`IBM Informix TimeSeries`_"
 msgstr ""
+"`IBM Informix TimeSeries`"
 
-#: ..\docs\reference\overview.rst:11
+#: ../reference/overview.rst:11
 msgid "`IBM MessageSight`_"
 msgstr ""
+"`IBM MessageSight`"
 
-#: ..\docs\reference\overview.rst:12
+#: ../reference/overview.rst:12
 msgid "Cloudant_"
 msgstr ""
+"Cloudant"
 
-#: ..\docs\reference\overview.rst:13
+#: ../reference/overview.rst:13
 msgid "SoftLayer_"
 msgstr ""
+"SoftLayer"
 
-#: ..\docs\reference\overview.rst:23
-msgid ""
-"The Foundation is also built upon a number of open source projects, "
-"including:"
+#: ../reference/overview.rst:23
+msgid "The Foundation is also built upon a number of open source projects, including:"
 msgstr ""
+"이 Foundation은 다음을 포함한 다수의 오픈 소스 프로젝트도 기반으로 합니다. "
 
-#: ..\docs\reference\overview.rst:25
+#: ../reference/overview.rst:25
 msgid "Logging"
 msgstr ""
+"로깅"
 
-#: ..\docs\reference\overview.rst:27
+#: ../reference/overview.rst:27
 msgid "Logstash_"
 msgstr ""
+"Logstash"
 
-#: ..\docs\reference\overview.rst:28
+#: ../reference/overview.rst:28
 msgid "Redis_"
 msgstr ""
+"Redis"
 
-#: ..\docs\reference\overview.rst:29
+#: ../reference/overview.rst:29
 msgid "Elasticsearch_"
 msgstr ""
+"Elasticsearch"
 
-#: ..\docs\reference\overview.rst:30
+#: ../reference/overview.rst:30
 msgid "Kibana_"
 msgstr ""
+"Kibana"
 
-#: ..\docs\reference\overview.rst:32
+#: ../reference/overview.rst:32
 msgid "Service Discovery"
 msgstr ""
+"서비스 발견"
 
-#: ..\docs\reference\overview.rst:34
+#: ../reference/overview.rst:34
 msgid "Consul_"
 msgstr ""
+"Consul"
 
-#: ..\docs\reference\overview.rst:36
+#: ../reference/overview.rst:36
 msgid "Continuous Delivery"
 msgstr ""
+"Continuous Delivery"
 
-#: ..\docs\reference\overview.rst:38
+#: ../reference/overview.rst:38
 msgid "CasperJS_"
 msgstr ""
+"CasperJS"
 
-#: ..\docs\reference\overview.rst:39
+#: ../reference/overview.rst:39
 msgid "Chef_"
 msgstr ""
+"Chef"
 
-#: ..\docs\reference\overview.rst:40
+#: ../reference/overview.rst:40
 msgid "Docker_"
 msgstr ""
+"Docker"
 
-#: ..\docs\reference\overview.rst:41
+#: ../reference/overview.rst:41
 msgid "Karma_"
 msgstr ""
+"Karma"
 
-#: ..\docs\reference\overview.rst:42
+#: ../reference/overview.rst:42
 msgid "Mocha_"
 msgstr ""
+"Mocha"
 
-#: ..\docs\reference\overview.rst:44
+#: ../reference/overview.rst:44
 msgid "Statistics & Monitoring"
 msgstr ""
+"통계 및 모니터링"
 
-#: ..\docs\reference\overview.rst:46
+#: ../reference/overview.rst:46
 msgid "Graphite_"
 msgstr ""
+"Graphite"
 
-#: ..\docs\reference\overview.rst:47
+#: ../reference/overview.rst:47
 msgid "Diamond_"
 msgstr ""
+"Diamond"
 
-#: ..\docs\reference\overview.rst:48
+#: ../reference/overview.rst:48
 msgid "StatsD_"
 msgstr ""
+"StatsD"
 
-#: ..\docs\reference\overview.rst:49
+#: ../reference/overview.rst:49
 msgid "Grafana_"
 msgstr ""
+"Grafana"
 
-#: ..\docs\reference\overview.rst:51
+#: ../reference/overview.rst:51
 msgid "User Interface"
 msgstr ""
+"사용자 인터페이스"
 
-#: ..\docs\reference\overview.rst:53
+#: ../reference/overview.rst:53
 msgid "AngularJS_"
 msgstr ""
+"AngularJS"
 
-#: ..\docs\reference\overview.rst:54
+#: ../reference/overview.rst:54
 msgid "Bootstrap_"
 msgstr ""
+"부트스트랩"
+

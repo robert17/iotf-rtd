@@ -39,8 +39,8 @@ After creating a gateway device, the authentication token provided should be sav
 	
 4. Set up devices that are connected to the gateway and are to be connected to the Internet of Things Foundation platform.
 
-	a. Use the REST API Authenticate Gateway stuff as described in the Connection Setup documentation.
+	a. Use the REST API Authenticate Gateway as described in the Connection Setup documentation.
 	b. Create a device type for the device or devices which are to connect through the gateway. The devices should have *gatewayId* and *gatewayTypeId* properties matching the *deviceId* and *deviceTypeId* of the gateway they are connecting through.
 	c. Add the devices which are connected to the gateway to the Internet of Things Foundation. 
 	
-The devices connected to the gateway should now be visible in the your Internet of Things Foundation platform organization dashboard.
+The devices connected to the gateway should now be visible in your Internet of Things Foundation platform organization dashboard.

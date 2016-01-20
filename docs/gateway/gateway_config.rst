@@ -1,5 +1,5 @@
-Setup Configuration for a Gateway
-===================================
+ClientId Configuration for Gateways
+=====================================
 
 Gateway Connection Setup using MQTT
 ------------------------------------

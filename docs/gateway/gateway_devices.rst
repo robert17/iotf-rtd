@@ -26,19 +26,24 @@ The *gatewayTypeId* device property is an optional property which is applied to 
 Data from gateways and gateway-connected devices
 --------------------------------------------------
 
-The topic structure for publishing data from gateways and gateway-connected devices is different to the structure for devices which are directly connected to the Internet of Things Foundation. 
+The topic structure for publishing and receiving data to and from gateways and gateway-connected devices is different to the structure for devices which are directly connected to the Internet of Things Foundation.
 
-Directly connected devices publish sensor data to the following topic:
+Directly connected devices publish their sensor data to the following topic:
+``iot-2/evt/<eventType>/fmt/<payloadFormat>``
+Directly connected devices receive commands on the following topic:
+``iot-2/cmd/<commandType>/fmt/<payloadFormat>``
 
-``iot-2/evt/sensorData/fmt/json``
+Gateway devices publish their own sensor data to the following topic:
+``iot-2/type/<gatewayTypeId>/id/<gatewayDeviceId>/evt/<eventType>/fmt/<payloadFormat>``
 
-Gateway devices publish their sensor data to the following topic:
+Gateway devices receive commands on the following topic:
+``iot-2/type/<gatewayTypeId>/id/<gatewayDeviceId>/cmd/<commandType>/fmt/<payloadFormat>``
 
-``iot-2/type/<gatewayTypeId>/id/<gatewayDeviceId>/cmd/evt/fmt/<payloadFormat>``
+Gateway-connected devices have their sensor data published by the gateway on the following topic:
+``iot-2/type/<deviceTypeId>/id/<deviceId>/evt/<eventType>/fmt/<payloadFormat>``
 
-Devices which are connected to gateways have their sensor data published by the gateway on the following topic:
-
-``iot-2/type/<deviceTypeId>/id/<deviceId>/cmd/evt/fmt/json```
+Gateway-connected devices receive commands by subscribing from the gateway to the following topic:
+``iot-2/type/<deviceTypeId>/id/<deviceId>/cmd/<commandType>/fmt/<payloadFormat>``
 
 -----------
 

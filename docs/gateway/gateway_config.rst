@@ -1,5 +1,5 @@
-Setup Configuration for a Gateway Device
-============================================
+Setup Configuration for a Gateway
+===================================
 
 Gateway Connection Setup using MQTT
 ------------------------------------

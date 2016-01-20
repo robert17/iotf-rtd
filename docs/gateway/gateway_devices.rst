@@ -1,6 +1,11 @@
 Introduction to Gateways in the IBM Internet of Things Foundation platform
 ============================================================================
 
+.. note:: This documentation applies to the Gateway capability which is in beta state. Fully tested and documented, the beta allows us to seek feedback about the capability and potentially incorporate improvements before it becomes a fully supported part of the platform. Please try it out and let us know what you think on this forum:
+
+https://developer.ibm.com/answers/smart-spaces/17/internet-of-things.html 
+
+
 Gateways are a specialized class of devices in the Internet of Things Foundation. Gateways are devices which serve as access points to the Internet of Things Foundation for other devices.
 
 Gateway devices have additional permission when compared to regular devices. Gateway devices can register new devices and can send and receive data on behalf of devices connected to them.

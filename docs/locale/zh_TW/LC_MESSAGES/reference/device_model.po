@@ -39,7 +39,7 @@ msgstr ""
 #: ../reference/device_model.rst:22
 msgid "Every device has a typeId and deviceId attribute. Typically, the typeId represents the model of your device, whilst the deviceId can represent its serial number. Within your Internet of Things Foundation organization, the combination of typeId and deviceId must be unique for each device."
 msgstr ""
-"每一個裝置都有 typeId 及 deviceId 屬性。一般而言，typeId 代表裝置的型號，而 deviceId 可代表其序號。在 Internet of Things Foundation 組織內，每一個裝置的 typeId 及 deviceId 的組合都必須是唯一的。"
+"每一個裝置都有 typeId 及 deviceId 屬性。一般而言，typeId 代表裝置的模型，而 deviceId 可代表其序號。在 Internet of Things Foundation 組織內，每一個裝置的 typeId 及 deviceId 的組合都必須是唯一的。"
 
 #: ../reference/device_model.rst:26
 msgid "In addition, the Internet of Things Foundation constructs a further identifier for each device based on your organizationId, the device's typeId and the device's deviceId. This identifier - the clientId - allows you to identify unequivocally an individual device."
@@ -345,7 +345,7 @@ msgstr ""
 #: ../reference/device_model.rst:96
 msgid "The model of the device"
 msgstr ""
-"裝置的型號"
+"裝置的模型"
 
 #: ../reference/device_model.rst:98
 msgid "*deviceInfo.deviceClass*"

@@ -226,7 +226,7 @@ msgstr ""
 #: ../device_mgmt/operations/index.rst:107
 msgid "This action requests the device to initiate one of the following actions: reboot, factory reset, download firmware, or update firmware."
 msgstr ""
-"このアクションは、リブート、ファクトリー・リセット、ファームウェア・ダウンロード、またはファームウェア更新のいずれかのアクションを開始するようにデバイスに要求します。"
+"このアクションは、リブート、工場出荷時設定にリセット、ファームウェア・ダウンロード、またはファームウェア更新のいずれかのアクションを開始するようにデバイスに要求します。"
 
 #: ../device_mgmt/operations/index.rst:110
 msgid "Type"

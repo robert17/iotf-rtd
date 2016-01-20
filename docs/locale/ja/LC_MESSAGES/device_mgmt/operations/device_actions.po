@@ -63,7 +63,7 @@ msgstr ""
 #: ../device_mgmt/operations/device_actions.rst:48
 msgid "Factory Reset"
 msgstr ""
-"ファクトリー・リセット"
+"工場出荷時設定にリセット"
 
 #: ../device_mgmt/operations/device_actions.rst:50
 msgid "The Internet of Things Foundation can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot."
@@ -73,5 +73,5 @@ msgstr ""
 #: ../device_mgmt/operations/device_actions.rst:52
 msgid "The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the \"rc\" should be 500 and the \"message\" field should be set accordingly, if the factory reset action is not supported, set \"rc\" to 501 and optionally set \"message\" accordingly."
 msgstr ""
-"この操作をただちに開始できる場合、応答コードは 202 です。ファクトリー・リセットの試行に失敗した場合は、\"rc\" を 500 に設定し、\"message\" フィールドを適切に設定する必要があります。ファクトリー・リセット・アクションがサポートされない場合は、\"rc\" を 501 に設定し、オプションで \"message\" を適切に設定します。"
+"この操作をただちに開始できる場合、応答コードは 202 です。工場出荷時設定へのリセットの試行に失敗した場合は、\"rc\" を 500 に設定し、\"message\" フィールドを適切に設定する必要があります。工場出荷時設定にリセット・アクションがサポートされない場合は、\"rc\" を 501 に設定し、オプションで \"message\" を適切に設定します。"
 

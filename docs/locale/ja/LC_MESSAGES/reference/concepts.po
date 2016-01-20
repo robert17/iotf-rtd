@@ -139,7 +139,7 @@ msgstr ""
 #: ../reference/concepts.rst:80
 msgid "**Managed devices** are defined as devices which contain a management agent. A management agent is a set of logic which allows the device to interact with the Internet of Things Foundation Device Management service via the Device Management protocol. Managed devices can perform device management operations including location updates, firmware download and updates, and reboot and factory reset."
 msgstr ""
-"**管理対象デバイス**とは、管理エージェントを持つデバイスのことです。管理エージェントは、デバイス管理プロトコル経由での Internet of Things Foundation デバイス管理サービスとデバイスの対話を可能にするロジックのセットです。管理対象デバイスは、場所の更新、ファームウェアのダウンロードと更新、リブート、ファクトリー・リセットなどのデバイス管理操作を実行することができます。"
+"**管理対象デバイス**とは、管理エージェントを持つデバイスのことです。管理エージェントは、デバイス管理プロトコル経由での Internet of Things Foundation デバイス管理サービスとデバイスの対話を可能にするロジックのセットです。管理対象デバイスは、場所の更新、ファームウェアのダウンロードと更新、リブート、工場出荷時設定へのリセットなどのデバイス管理操作を実行することができます。"
 
 #: ../reference/concepts.rst:82
 msgid "An **unmanaged device** is a device without a management agent. An unmanaged device can still connect to the Internet of Things Foundation and send and receive events and commands. However, it cannot send any device management requests, or perform any of the device management operations."

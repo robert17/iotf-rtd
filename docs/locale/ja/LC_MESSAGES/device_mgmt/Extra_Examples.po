@@ -45,7 +45,7 @@ msgstr ""
 #: ../device_mgmt/Extra_Examples.rst:18
 msgid "Request Body"
 msgstr ""
-"リクエストの Body"
+"リクエストの本文"
 
 #: ../device_mgmt/Extra_Examples.rst:30
 msgid "Device Reboot"

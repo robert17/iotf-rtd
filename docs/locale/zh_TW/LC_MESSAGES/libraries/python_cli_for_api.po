@@ -389,7 +389,7 @@ msgstr ""
 #: ../libraries/python_cli_for_api.rst:323
 msgid "deviceInfo: *Optional*. This parameter is optional, and can contain a number of variables, including: serialNumber, manufacturer, model, deviceClass, description, firmware and hardware versions, and descriptiveLocation."
 msgstr ""
-"deviceInfo：*選用*。此參數是選用的，且可包含許多變數，包括：serialNumber、製造商、機型、deviceClass、說明、韌體和硬體版本以及 descriptiveLocation。"
+"deviceInfo：*選用*。此參數是選用的，且可包含許多變數，包括：serialNumber、manufacturer、model、deviceClass、description、firmware 和 hardware versions，以及 descriptiveLocation。"
 
 #: ../libraries/python_cli_for_api.rst:324
 msgid "metadata: *Optional*. Metadata can optionally be added in the form of custom field:value string pairs. An example is given in the code sample below."

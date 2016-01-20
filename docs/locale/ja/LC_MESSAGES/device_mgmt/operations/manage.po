@@ -61,7 +61,7 @@ msgstr ""
 #: ../device_mgmt/operations/manage.rst:29
 msgid "Optional ``supports.deviceActions`` and ``supports.firmwareActions`` indicate the capabilities of the device management agent. If ``supports.deviceActions`` is set, the agent supports Reboot and Factory Reset actions. For a device that does not distinguish between rebooting and factory reset, it is acceptable to use the same behaviour for both actions. If ``supports.firmwareActions`` is set, the agent supports Firmware Download and Firmware Update actions."
 msgstr ""
-"オプションの ``supports.deviceActions`` および ``supports.firmwareActions`` はデバイス管理エージェントの機能を示します。``supports.deviceActions`` を設定した場合、エージェントはリブート・アクションとファクトリー・リセット・アクションをサポートします。リブートとファクトリー・リセットが区別されないデバイスの場合は、両方のアクションに同じ動作を使用してかまいません。``supports.firmwareActions`` を設定した場合、エージェントはファームウェア・ダウンロード・アクションとファームウェア更新アクションをサポートします。"
+"オプションの ``supports.deviceActions`` および ``supports.firmwareActions`` はデバイス管理エージェントの機能を示します。``supports.deviceActions`` を設定した場合、エージェントはリブート・アクションと工場出荷時設定にリセット・アクションをサポートします。リブートと工場出荷時設定へのリセットが区別されないデバイスの場合は、両方のアクションに同じ動作を使用してかまいません。``supports.firmwareActions`` を設定した場合、エージェントはファームウェア・ダウンロード・アクションとファームウェア更新アクションをサポートします。"
 
 #: ../device_mgmt/operations/manage.rst:31
 #: ../device_mgmt/operations/manage.rst:94

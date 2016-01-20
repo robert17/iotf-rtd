@@ -774,7 +774,7 @@ msgstr ""
 #: ../reference/device_model.rst:214
 msgid "Whether the device supports Reboot and Factory Reset actions"
 msgstr ""
-"デバイスがリブートおよびファクトリー・リセットのアクションをサポートするかどうか"
+"デバイスがリブートおよび工場出荷時設定へのリセットのアクションをサポートするかどうか"
 
 #: ../reference/device_model.rst:217
 msgid "mgmt.supports.firmwareActions"

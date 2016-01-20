@@ -278,7 +278,7 @@ msgstr ""
 #: ../libraries/python_cli_for_api.rst:218
 msgid "The *addDeviceType()* method can be used to register a device type to Internet of Things Foundation Connect. In each request, you must first define the device information, and device metadata elements which you want to be applied to all devices of this type. The device information element is comprised of several variables, including, serial number, manufacturer, model, class, description, firmware and hardware versions, and descriptive location. The metadata element is comprised of custom variables and values which can be defined by the user."
 msgstr ""
-"*addDeviceType()* メソッドを使用すると、Internet of Things Foundation Connect にデバイス・タイプを登録できます。各要求で、最初にデバイス情報と、このタイプのすべてのデバイスに適用するデバイスのメタデータ要素を定義する必要があります。デバイス情報の要素は複数の変数から構成され、シリアル番号、製造者、モデル、クラス、説明、ファームウェアとハードウェアのバージョン、およびロケーションのわかりやすい説明が含まれます。メタデータ要素は、ユーザーが定義できるカスタムの変数と値から構成されます。"
+"*addDeviceType()* メソッドを使用すると、Internet of Things Foundation Connect にデバイス・タイプを登録できます。各要求で、最初にデバイス情報と、このタイプのすべてのデバイスに適用するデバイスのメタデータ要素を定義する必要があります。デバイス情報の要素は複数の変数から構成され、シリアル番号、製造元、モデル、クラス、説明、ファームウェアとハードウェアのバージョン、およびロケーションのわかりやすい説明が含まれます。メタデータ要素は、ユーザーが定義できるカスタムの変数と値から構成されます。"
 
 #: ../libraries/python_cli_for_api.rst:220
 msgid "After defining the *deviceInfo* and *metadata* elements, use the following code snippet to register a new device type."
@@ -374,32 +374,32 @@ msgstr ""
 #: ../libraries/python_cli_for_api.rst:320
 msgid "deviceTypeId: *Optional*. Assigns a device type to the device. Where there is a clash between variables defined by the device type and variables defined by under deviceInfo, the device specific variables will take precedence."
 msgstr ""
-"deviceTypeId: *Optional* です。デバイス・タイプをデバイスに割り当てます。デバイス・タイプによって定義された変数と deviceInfo で定義された変数が競合する場合は、デバイス固有の変数が優先されます。"
+"deviceTypeId: *オプション* です。デバイス・タイプをデバイスに割り当てます。デバイス・タイプによって定義された変数と deviceInfo で定義された変数が競合する場合は、デバイス固有の変数が優先されます。"
 
 #: ../libraries/python_cli_for_api.rst:321
 msgid "deviceId: *Mandatory*."
 msgstr ""
-"deviceId: *Mandatory* です。"
+"deviceId: *必須* です。"
 
 #: ../libraries/python_cli_for_api.rst:322
 msgid "authToken: *Optional*. If no authentication token is supplied, one will be generated and included in the response."
 msgstr ""
-"authToken: *Optional* です。認証トークンが指定されない場合は生成され、応答に含められます。"
+"authToken: *オプション* です。認証トークンが指定されない場合は生成され、応答に含められます。"
 
 #: ../libraries/python_cli_for_api.rst:323
 msgid "deviceInfo: *Optional*. This parameter is optional, and can contain a number of variables, including: serialNumber, manufacturer, model, deviceClass, description, firmware and hardware versions, and descriptiveLocation."
 msgstr ""
-"deviceInfo: *Optional* オプションです。このパラメーターはオプションであり、serialNumber、製造者、モデル、deviceClass、説明、ファームウェアとハードウェアのバージョン、descriptiveLocation などの多数の変数を含めることができます。"
+"deviceInfo: *オプション* です。このパラメーターはオプションであり、serialNumber (シリアル番号)、manufacturer (製造元)、model (モデル)、デバイス・クラス (deviceClass)、説明 (description)、ファームウェアとハードウェアのバージョン、ロケーションの分かりやすい説明 (descriptiveLocation) などの多数の変数を含めることができます。"
 
 #: ../libraries/python_cli_for_api.rst:324
 msgid "metadata: *Optional*. Metadata can optionally be added in the form of custom field:value string pairs. An example is given in the code sample below."
 msgstr ""
-"metadata: *Optional* です。メタデータは、カスタムの field:value ストリングのペアの形式で、オプションで追加できます。以下のコード・サンプルで例を示します。"
+"metadata: *オプション* です。メタデータは、カスタムの field:value ストリングのペアの形式で、オプションで追加できます。以下のコード・サンプルで例を示します。"
 
 #: ../libraries/python_cli_for_api.rst:325
 msgid "location: *Optional*. This parameter contains the longitude, latitude, elevation, accuracy, and mesauredDateTime variables."
 msgstr ""
-"location: *Optional* です。このパラメーターには、経度、緯度、高度、正確度、および mesauredDateTime の変数が含まれます。"
+"location: *オプション* です。このパラメーターには、経度、緯度、高度、正確度、および mesauredDateTime の変数が含まれます。"
 
 #: ../libraries/python_cli_for_api.rst:327
 msgid "For more information on the parameters presented here, and the response format and codes, please see the relevant section of `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Devices/post_device_types_typeId_devices>`__."

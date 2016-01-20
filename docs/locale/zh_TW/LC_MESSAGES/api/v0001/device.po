@@ -392,7 +392,7 @@ msgstr ""
 #: ../api/v0001/device.rst:371
 msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
 msgstr ""
-"回應內文將包含此裝置已產生的鑑別記號。在處理回應時，請務必記錄此記號。此資料以隨機雜湊方式儲存，因此我們無法擷取失去的鑑別記號。"
+"回應內文將包含此裝置已產生的鑑別記號。在處理回應時，請務必記錄此記號。此資料以隨機雜湊方式儲存，因此我們無法擷取遺失的鑑別記號。"
 
 #: ../api/v0001/device.rst:406
 msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"

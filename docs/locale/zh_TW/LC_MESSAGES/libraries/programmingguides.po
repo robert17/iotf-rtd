@@ -29,12 +29,12 @@ msgstr ""
 #: ../libraries/programmingguides.rst:7
 msgid "There are also specific device and operation recipes available for use with the Internet of Things Foundation hosted on the `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__."
 msgstr ""
-"此外，也有特定的裝置和作業秘訣可用於 Internet of Things Foundation，請參閱 `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__。"
+"此外，也有特定的裝置和作業配方可用於 Internet of Things Foundation，請參閱 `developerWorks Recipes <https://developer.ibm.com/recipes/?post_type=tutorials&s=IoTF>`__。"
 
 #: ../libraries/programmingguides.rst:9
 msgid "In the event that you cannot find a programming guide or recipe to suit your environment or device, raw MQTT should be used to communicate with the Internet of Things Foundation. For more information, please see `MQTT <../messaging/mqtt.html#/>`__ and `MQTT Connectivity for Devices <../messaging/devices.html#/>`__."
 msgstr ""
-"如果您找不到適用於您的環境或裝置的程式設計手冊或秘訣，則應使用原始 MQTT 與 Internet of Things Foundation 通訊。如需相關資訊，請參閱 `MQTT <../messaging/mqtt.html#/>`__和`裝置的 MQTT 連線功能<../messaging/devices.html#/>`__。"
+"如果您找不到適用於您的環境或裝置的程式設計手冊或配方，則應使用原始 MQTT 與 Internet of Things Foundation 通訊。如需相關資訊，請參閱 `MQTT <../messaging/mqtt.html#/>`__和`裝置的 MQTT 連線功能<../messaging/devices.html#/>`__。"
 
 #: ../libraries/programmingguides.rst:12
 msgid "Python"

@@ -113,7 +113,7 @@ msgstr ""
 #: ../api/v0001/historical_events.rst:271
 msgid "Request Body"
 msgstr ""
-"リクエストの Body"
+"リクエストの本文"
 
 #: ../api/v0001/historical_events.rst:56
 #: ../api/v0001/historical_events.rst:154
@@ -197,7 +197,7 @@ msgstr ""
 #: ../api/v0001/historical_events.rst:322
 msgid "Response Body"
 msgstr ""
-"レスポンスの Body"
+"レスポンスの本文"
 
 #: ../api/v0001/historical_events.rst:85
 #: ../api/v0001/historical_events.rst:205

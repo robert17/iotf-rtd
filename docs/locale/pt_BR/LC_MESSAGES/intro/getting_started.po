@@ -19,12 +19,12 @@ msgstr ""
 #: ../intro/getting_started.rst:3
 msgid "Quickstart"
 msgstr ""
-"Iniciação Rápida"
+"Quickstart"
 
 #: ../intro/getting_started.rst:5
 msgid "The `Internet of Things Foundation Quickstart service <https://quickstart.internetofthings.ibmcloud.com>`__ is a tool demonstrating how quickly and easily you can get devices connected with the Internet of Things Foundation. The Quickstart service can be used with a device or, if you don't have a device to hand, you can simulate a device using the `IoT Sensor <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__ application."
 msgstr ""
-"O serviço de Iniciação Rápida do `Internet of Things Foundation <https://quickstart.internetofthings.ibmcloud.com>`__ é uma ferramenta que demonstra como é rápido e fácil conectar dispositivos com o Internet of Things Foundation. O serviço de Iniciação Rápida pode ser usado com um dispositivo ou, se você não tiver um dispositivo à mão, é possível simular um dispositivo usando o aplicativo do Sensor do `IoT <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__."
+"O Quickstart do `Internet of Things Foundation <https://quickstart.internetofthings.ibmcloud.com>`__ é uma ferramenta que demonstra como é rápido e fácil conectar dispositivos com o Internet of Things Foundation. O serviço de Iniciação Rápida pode ser usado com um dispositivo ou, se você não tiver um dispositivo à mão, é possível simular um dispositivo usando o aplicativo do Sensor do `IoT <https://quickstart.internetofthings.ibmcloud.com/iotsensor/>`__."
 
 #: ../intro/getting_started.rst:7
 msgid "To connect to the Quickstart service, users must speak MQTT. MQTT 3.1 is the minimum level required, however, version 3.1.1 provides better functionality."

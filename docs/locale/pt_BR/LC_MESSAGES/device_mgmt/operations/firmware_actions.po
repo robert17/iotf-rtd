@@ -240,7 +240,7 @@ msgstr ""
 #: ../device_mgmt/operations/firmware_actions.rst:60
 msgid "Optional firmware version"
 msgstr ""
-"Versão de firmware opcional"
+"Versão do firmware opcional"
 
 #: ../device_mgmt/operations/firmware_actions.rst:62
 msgid "Example firmware download request on which all the following example messages are based:"

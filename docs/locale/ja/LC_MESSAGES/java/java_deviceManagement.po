@@ -501,7 +501,7 @@ msgstr ""
 #: ../java/java_deviceManagement.rst:514
 msgid "Factory Reset"
 msgstr ""
-"ファクトリー・リセット"
+"工場出荷時設定にリセット"
 
 #: ../java/java_deviceManagement.rst:516
 msgid "The device needs to do the following activities to support Device Actions:"
@@ -516,7 +516,7 @@ msgstr ""
 #: ../java/java_deviceManagement.rst:520
 msgid "In order to perform Reboot and Factory Reset, the device needs to inform the Internet of Things Foundation Connect about its support first. This can achieved by invoking a following method with a boolean value:"
 msgstr ""
-"リブートおよびファクトリー・リセットを実行するには、デバイスはまずそのサポート状況について Internet of Things Foundation Connect に通知する必要があります。これは、ブール値を指定して以下のメソッドを呼び出すことによって行えます。"
+"リブートおよび工場出荷時設定へのリセットを実行するには、デバイスはまずそのサポート状況について Internet of Things Foundation Connect に通知する必要があります。これは、ブール値を指定して以下のメソッドを呼び出すことによって行えます。"
 
 #: ../java/java_deviceManagement.rst:527
 msgid "As the manage request informs the Internet of Things Foundation Connect about the device action support, manage() method needs to be called right after setting the device action support."
@@ -556,7 +556,7 @@ msgstr ""
 #: ../java/java_deviceManagement.rst:567
 msgid "The implementation must add a logic to reset the device to factory settings and report the status via DeviceAction object. The device needs to update the status along with a optional message only when there is a failure (because as part of this process, the device reboots and the device will not have a control to update status to Internet of Things Foundation Connect). The skeleton of the Factory Reset implementation is shown below:"
 msgstr ""
-"実装では、デバイスを工場出荷時設定にリセットして DeviceAction オブジェクト経由で状況を報告するロジックを追加する必要があります。デバイスは、失敗した場合にのみ、状況を更新してオプションでメッセージを出す必要があります (このプロセスの一部としてデバイスはリブートし、デバイスは状況を Internet of Things Foundation Connect で更新するための制御権を持たないからです)。ファクトリー・リセット実装のスケルトンを以下に示します。"
+"実装では、デバイスを工場出荷時設定にリセットして DeviceAction オブジェクト経由で状況を報告するロジックを追加する必要があります。デバイスは、失敗した場合にのみ、状況を更新してオプションでメッセージを出す必要があります (このプロセスの一部としてデバイスはリブートし、デバイスは状況を Internet of Things Foundation Connect で更新するための制御権を持たないからです)。工場出荷時設定にリセット実装のスケルトンを以下に示します。"
 
 #: ../java/java_deviceManagement.rst:582
 msgid "**3. Add the handler to ManagedDevice**"

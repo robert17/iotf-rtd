@@ -88,7 +88,7 @@ msgstr ""
 #: ../api/v0001/device.rst:592
 msgid "Request Body"
 msgstr ""
-"リクエストの Body"
+"リクエストの本文"
 
 #: ../api/v0001/device.rst:43
 #: ../api/v0001/device.rst:93
@@ -111,7 +111,7 @@ msgstr ""
 #: ../api/v0001/device.rst:598
 msgid "Response Body"
 msgstr ""
-"レスポンスの Body"
+"レスポンスの本文"
 
 #: ../api/v0001/device.rst:49
 #: ../api/v0001/device.rst:103
@@ -195,7 +195,7 @@ msgstr ""
 #: ../api/v0001/device.rst:192
 msgid "The response body will contain a list of devices, as below:"
 msgstr ""
-"レスポンスの Body には、以下のようなデバイスのリストが含まれます。"
+"レスポンスの本文には、以下のようなデバイスのリストが含まれます。"
 
 #: ../api/v0001/device.rst:101
 #: ../api/v0001/device.rst:194
@@ -291,7 +291,7 @@ msgstr ""
 #: ../api/v0001/device.rst:267
 msgid "The response body will contain a list of device types:"
 msgstr ""
-"レスポンスの Body には、以下のようなデバイス・タイプのリストが含まれます。"
+"レスポンスの本文には、以下のようなデバイス・タイプのリストが含まれます。"
 
 #: ../api/v0001/device.rst:269
 msgid "deviceType - String"
@@ -382,7 +382,7 @@ msgstr ""
 #: ../api/v0001/device.rst:362
 msgid "The response body will contain a uuid and password for the registered device."
 msgstr ""
-"レスポンスの Body には、登録済みデバイスの uuid とパスワードが含まれます。"
+"レスポンスの本文には、登録済みデバイスの uuid とパスワードが含まれます。"
 
 #: ../api/v0001/device.rst:369
 msgid "password - String"
@@ -392,7 +392,7 @@ msgstr ""
 #: ../api/v0001/device.rst:371
 msgid "The response body will contain the generated authentication token for this device. You must make sure to record this token when processing the response. The data is stored hashed and salted so we are not able to retrieve lost authentication tokens."
 msgstr ""
-"レスポンスの Body にはこのデバイス用に生成された認証トークンが含まれます。レスポンスを処理するときには、必ずこのトークンを記録してください。データはハッシュ化およびソルト化して保存されるので、失われた認証トークンは取得できません。"
+"レスポンスの本文にはこのデバイス用に生成された認証トークンが含まれます。レスポンスを処理するときには、必ずこのトークンを記録してください。データはハッシュ化およびソルト化して保存されるので、失われた認証トークンは取得できません。"
 
 #: ../api/v0001/device.rst:406
 msgid "201 (Created) - The device was successfully registered (Location header set to the URL of the new device)"
@@ -422,7 +422,7 @@ msgstr ""
 #: ../api/v0001/device.rst:453
 msgid "The response body will contain the updated properties of the registered device."
 msgstr ""
-"レスポンスの Body には、登録済みデバイスの更新されたプロパティーが含まれます。"
+"レスポンスの本文には、登録済みデバイスの更新されたプロパティーが含まれます。"
 
 #: ../api/v0001/device.rst:507
 msgid "View a Registered Device"
@@ -442,7 +442,7 @@ msgstr ""
 #: ../api/v0001/device.rst:527
 msgid "The response body will contain the known properties of the device."
 msgstr ""
-"レスポンスの Body には、デバイスの既知のプロパティーが含まれます。"
+"レスポンスの本文には、デバイスの既知のプロパティーが含まれます。"
 
 #: ../api/v0001/device.rst:580
 msgid "Delete a Registered Device"

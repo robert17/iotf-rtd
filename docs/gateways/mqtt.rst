@@ -1,0 +1,174 @@
+===============================================================================
+MQTT Connectivity for Gateways
+===============================================================================
+
+.. important:: This feature is currently available as part of a limited beta.  Future updates 
+  may include changes incompatible with the current version of this feature.  Try it out and `let us know what you 
+  think <https://developer.ibm.com/answers/smart-spaces/17/internet-of-things.html>`_
+
+
+MQTT client identifier
+-------------------------------------------------------------------------------
+
+A gateway must authenticate using a client ID in the following format:
+
+    g:**orgId**:**typeId**:**deviceId**
+
+-  **g** idenfities your client as a gateway
+-  **orgId** is your unique organization ID, assigned when you sign up
+   with the service.  It will be a 6 character alphanumeric string.
+-  **typeId** is intended to be used as an identifier of the type
+   of gateway connecting, it may be useful to think of this as analogous
+   to a model number. 
+-  **deviceId** must uniquely identify a gateway device across all gateways of
+   a specific type, it may be useful to think of this as
+   analogous to a serial number.
+
+.. note:: You can use any scheme of your choice when assigning values for 
+    ``typeId`` and ``deviceId``, however the following restrictions apply to both:
+
+    - Maximum length of 36 characters 
+    - Must comprise only alpha-numeric characters (``a-z``, ``A-Z``, ``0-9``) and the following special characters:
+
+      - dash (``-``)
+      - underscore (``_``)
+      - dot (``.``)
+
+
+----
+
+
+MQTT authentication
+-------------------------------------------------------------------------------
+
+Username
+~~~~~~~~
+
+The service currently only supports token-based authentication for
+devices, as such there is only one valid username for gateways today.
+
+A value of ``use-token-auth`` indicates to the service that the
+authentication token for the gateway will be passed as the password for
+the MQTT connection.
+
+Password
+~~~~~~~~
+
+When using token based authentication submit the device authentication
+token as the password when making your MQTT connection.
+
+
+----
+
+
+Publishing events
+-------------------------------------------------------------------------------
+
+A gateway can publish events from itself and on behalf of any device
+connected via the gateway by using the following topic and substituting 
+in the appropriate ``typeId`` and ``deviceId`` based on the origin of the event:
+
+  iot-2/type/\ **typeId**/id/\ **deviceId**/evt/\ **eventId**/fmt/\ **formatString**
+
+
+.. important:: The message payload is limited to a maximum of 4096 bytes.  Messages larger than this will be rejected.
+
+
+----
+
+
+Subscribing to commands
+-------------------------------------------------------------------------------
+
+A gateway can subscribe to commands directed at the gateway itself and to any device
+connected via the gateway by using the following topic and substituting 
+in the appropriate ``typeId`` and ``deviceId`` of the device.:
+
+  iot-2/type/\ **typeId**/id/\ **deviceId**/cmd/\ **commandId**/fmt/\ **formatString**
+
+
+----
+
+
+Managed Gateways
+-------------------------------------------------------------------------------
+
+Support for device lifecycle management is optional, the device management protocol 
+used by IoTF utilises the same MQTT connection that your gateway already uses for events 
+and command control.
+
+Quality of Service Levels and Clean Session
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Managed gateways can publish messages with Quality of Service (QoS) level of 0 or 1. If 
+QoS 1 is used, messages from the gateway will be queued if necessary. Messages from 
+the gateway must not be retained messages. 
+
+The Internet of Things Foundation publishes requests with a QoS level of 1 to support 
+queuing of messages.  In order to queue messages sent while a managed gateway is not 
+connected, the device should use ``cleansession=false``.
+
+.. warning::
+  If your managed gateway uses a durable subscription (cleansession=false) you need to be 
+  aware that device management commands sent to your gateway while it is offline will be 
+  reported as failed operations, however, when the gateway later connects those requests will 
+  be actioned by the gateway.
+  
+  When handling failures it is important to take this into account if you are using durable
+  subscriptions for your managed gateways.
+
+
+Topics
+~~~~~~
+
+A managed gateway is required to subscribe to two topics to handle requests and responses from IoTF:
+
+- The managed gateway will subscribe to device management reponses on ``iotdm-1/type/<typeId>/id/<deviceId>/response/+``
+- The managed gateway will subscribe to device management requests on ``iotdm-1/type/<typeId>/id/<deviceId>/+``
+
+
+A managed gateway will publish to two topics:
+
+- The managed gateway will publish device management responses on ``iotdevice-1/type/<typeId>/id/<deviceId>/response/``
+- The managed gateway will publish device management requests on ``iotdevice-1/type/<typeId>/id/<deviceId>/``
+
+The gateway is able to process device management protocol messages for both itself and on behalf other connected devices
+by using the relevant <typeId> and <deviceId>.
+
+
+Message Format
+~~~~~~~~~~~~~~
+
+All messages are sent in JSON format. There are two types of message.
+
+1. Request
+    Requests are formatted as follows:
+    
+    .. code:: json
+        
+        {  "d": {...}, "reqId": "b53eb43e-401c-453c-b8f5-94b73290c056" }
+
+    - ``d`` carries any data relevant to the request
+    - ``reqId`` is an identifier of the request, and must be copied into a response. 
+      If a response is not required, the field should be omitted.
+    
+2. Response
+    Responses are formatted as follows:
+    
+    .. code::
+
+        {
+            "rc": 0,
+            "message": "success",
+            "d": {...},
+            "reqId": "b53eb43e-401c-453c-b8f5-94b73290c056"
+        }
+    
+    - "rc" is a result code of the original request.
+    - ``message`` is an optional element with a text description of the response code.
+    - ``d`` is an optional data element accompanying the response.
+    - ``reqId`` is the request ID of the original request. This is used to correlate responses with 
+      requests, and the device needs to ensure that all request IDs are unique.  When responding to Internet of Things 
+      Foundation requests, the correct ``reqId`` value must be sent in the response.
+
+

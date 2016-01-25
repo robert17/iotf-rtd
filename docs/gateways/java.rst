@@ -16,7 +16,7 @@ The constructor builds the Gateway client instance, and accepts a Properties obj
 
 The Properties object creates definitions which are used to interact with the Watson Internet of Things Platform module. 
 
-The following code snippet shows how to construct the ApplicationClient instance in registered flow,
+The following code snippet shows how to construct the GatewayClient instance,
 
 .. code:: java
     
@@ -72,6 +72,54 @@ After the successful connection to the IBM Watson IoT Platform, the Gateway clie
 * Publish events for itself and on behalf of devices connected behind the Gateway.
 * Subscribe to commands for itself and on behalf of devices behind the Gateway.
 
+----
+
+Register devices using the The Watson IoT Platform API
+-------------------------------------------------------------------------
+
+The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. Get the APIClient instance by invoking the api() method as follows,
+
+.. code:: java
+     
+     import com.ibm.iotf.client.api.APIClient;
+     
+     ....
+     
+     GatewayClient gwClient = new GatewayClient(props);
+     gwClient.connect();
+     
+     APIClient api = gwClient.api();
+
+Once you get the handle of APIClient, you can add the devices, by first adding the device type and then the device as shown below,
+
+Following code snippet shows how to add a device type using the APIClient:
+
+.. code:: java
+ 
+    GatewayClient gwClient = new GatewayClient(props);
+    gwClient.connect();
+     
+    final String deviceTypeToBeAdded = "{\"id\": \"" + DEVICE_TYPE + "\",\"description\": "
+				+ "\"My Device Type\"}";
+		
+	JsonElement type = new JsonParser().parse(deviceTypeToBeAdded);
+	JsonObject response = gwClient.api().addDeviceType(type);
+	
+Following code snippet shows how to add a device type using the APIClient:
+
+.. code:: java
+ 
+    GatewayClient gwClient = new GatewayClient(props);
+    gwClient.connect();
+     
+    String deviceToBeAdded = "{\"deviceId\": \"" + DEVICE_ID +
+						"\",\"authToken\": \"qwer123\"}";
+
+	JsonParser parser = new JsonParser();
+	JsonElement input = parser.parse(deviceToBeAdded);
+	JsonObject response = this.gwClient.api().
+				registerDeviceUnderGateway(DEVICE_TYPE, this.gwDeviceId, this.gwDeviceType, input);
+
 
 ----
 
@@ -80,7 +128,7 @@ Publishing events
 -------------------------------------------------------------------------------
 Events are the mechanism by which Gateways/devices publish data to the Watson IoT Platform. The Gateway/device controls the content of the event and assigns a name for each event it sends.
 
-The Gateway can publish events from itself and on behalf of any device connected via the Gateway.
+**The Gateway can publish events from itself and on behalf of any device connected via the Gateway**.
 
 When an event is received by the IBM Watson IoT Platform the credentials of the connection on which the event was received are used to determine from which Gateway the event was sent. With this architecture it is impossible for a Gateway to impersonate another device.
 
@@ -102,7 +150,7 @@ Publish Gateway event using default quality of service
 Publish Gateway event using user-defined quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. 
+Events can be published at higher MQTT quality of service levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. 
 
 .. code:: java
 
@@ -140,7 +188,7 @@ One can use the overloaded publishDeviceEvent() method to publish the device eve
 
 Handling commands
 -------------------------------------------------------------------------------
-When the Gateway client connects, it automatically subscribes to any commands for this Gateway. But to subscribe to any commands for the devices connected via the Gateway, use one of the overloaded subscribeToDeviceCommands() method, for example,
+The Gateway can subscribe to commands directed at the gateway itself and to any device connected via the gateway. When the Gateway client connects, it automatically subscribes to any commands for this Gateway. But to subscribe to any commands for the devices connected via the Gateway, use one of the overloaded subscribeToDeviceCommands() method, for example,
 
 .. code:: java
 

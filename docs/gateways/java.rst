@@ -84,7 +84,7 @@ The Gateway can publish events from itself and on behalf of any device connected
 
 When an event is received by the IBM Watson IoT Platform the credentials of the connection on which the event was received are used to determine from which Gateway the event was sent. With this architecture it is impossible for a Gateway to impersonate another device.
 
-Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0.
+Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>`__ defined by the MQTT protocol.  By default events will be published as qos level 0.
 
 Publish Gateway event using default quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,9 +97,6 @@ Publish Gateway event using default quality of service
     event.addProperty("mem",  70);
     
     gwClient.publishGatewayEvent("status", event);
-
-
-----
 
 
 Publish Gateway event using user-defined quality of service
@@ -159,9 +156,9 @@ To process specific commands you need to register a command callback method. The
 * payload - The command payload.
 * format - The format of the command payload, currently only JSON format is supported in the Java Client Library.
 * command - The name of the command.
-* timestamp - The org.joda.time.DateTime when the command is sent
+* timestamp - The org.joda.time.DateTime when the command is sent.
 
-A sample implementation of the Command callback,
+A sample implementation of the Command callback is shown below,
 
 .. code:: java
 
@@ -194,15 +191,13 @@ Once the Command callback is added to the GatewayClient, the processCommand() me
     SampleGatewayCommandCallback callback = new SampleGatewayCommandCallback();
     gwClient.setCommandCallback(callback);
     //Subscribe to device connected to the Gateway
-    gwClient.subscribeToDeviceCommands(DEVICE_TYPE, DEVICE_ID); 
+    gwClient.subscribeToDeviceCommands(DEVICE_TYPE, DEVICE_ID);
 
 
 Overloaded methods are available to control the command subscription. 
+
 ----
 
 Examples
 -------------
 * `MQTTApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/MQTTApplicationDeviceEventPublish.java>`__ - A sample application that shows how to publish device events.
-* `RegisteredApplicationCommandPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationCommandPublish.java>`__ - A sample application that shows how to publish a command to a device.
-* `RegisteredApplicationSubscribeSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/RegisteredApplicationSubscribeSample.java>`__ - A sample application that shows how to subscribe for various events like, device events, device commands, device status and application status.
-* `SharedSubscriptionSample <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/SharedSubscriptionSample.java>`__ - A sample application that shows how to build a scalable application which will load balance messages across multiple instances of the application.

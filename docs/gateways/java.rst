@@ -74,7 +74,7 @@ After the successful connection to the IBM Watson IoT Platform, the Gateway clie
 
 ----
 
-Register devices using the The Watson IoT Platform API
+Register devices using the Watson IoT Platform API
 -------------------------------------------------------------------------
 
 The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. Get the APIClient instance by invoking the api() method as follows,

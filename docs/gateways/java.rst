@@ -67,231 +67,65 @@ Connect to the Watson Internet of Things Platform by calling the *connect* funct
     gwClient.connect();
     
 
-After the successful connection to the IBM Watson IoT Platform, the Gateway client can perform the following operations, 
-* Publish events for itself and on behalf of devices connected behind the Gateway
-* Subscribe to commands for itself and on behalf of devices behind the Gateway
+After the successful connection to the IBM Watson IoT Platform, the Gateway client can perform the following operations,
+
+* Publish events for itself and on behalf of devices connected behind the Gateway.
+* Subscribe to commands for itself and on behalf of devices behind the Gateway.
 
 
 ----
 
 
-Subscribing to device events
+Publishing events
 -------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Watson Internet of Things Platform. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which Gateways/devices publish data to the Watson IoT Platform. The Gateway/device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+The Gateway can publish events from itself and on behalf of any device connected via the Gateway.
 
-By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
+When an event is received by the IBM Watson IoT Platform the credentials of the connection on which the event was received are used to determine from which Gateway the event was sent. With this architecture it is impossible for a Gateway to impersonate another device.
 
-To subscribe to all events from all devices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0.
+
+Publish Gateway event using default quality of service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code:: java
+    
+    gwClient.connect();
+    JsonObject event = new JsonObject();
+    event.addProperty("name", "foo");
+    event.addProperty("cpu",  90);
+    event.addProperty("mem",  70);
+    
+    gwClient.publishGatewayEvent("status", event);
+
+
+----
+
+
+Publish Gateway event using user-defined quality of service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Events can be published at higher MQTT quality of servive levels, but these events may take slower than QoS level 0, because of the extra confirmation of receipt. 
 
 .. code:: java
 
-    myClient.connect();
-    myClient.subscribeToDeviceEvents();
-
-To subscribe to all events from all devices of a specific type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceEvents("iotsample-ardunio");
-
-To subscribe to all events from a specific device
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceEvents("iotsample-ardunio", "00aabbccddee");
-
-To subscribe to a specific event from two or more different devices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceEvents("iotsample-ardunio", "00aabbccddee", "myEvent");
-    myClient.subscribeToDeviceEvents("iotsample-ardunio", "10aabbccddee", "myEvent");
-
-To subscribe to events published by a device in json format
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    client.connect()
-    myClient.subscribeToDeviceEvents("iotsample-ardunio", "00aabbccddee", "myEvent", "json", 0);
+    gwClient.connect();
+    JsonObject event = new JsonObject();
+    event.addProperty("name", "foo");
+    event.addProperty("cpu",  90);
+    event.addProperty("mem",  70);
+    
+    gwClient.publishGatewayEvent("status", event, 2);
 
     
-----
-
-
-Handling events from devices
--------------------------------------------------------------------------------
-To process the events received by your subscriptions you need to register an event callback method. The messages are returned as an instance of the Event class which has the following properties:
-
-* event.device - string (uniquely identifies the device across all types of devices in the organization)
-* event.deviceType - string
-* event.deviceId - string
-* event.event - string
-* event.format - string
-* event.data - dict
-* event.timestamp - datetime
-
-A sample implementation of the Event callback,
-
-.. code:: java
-
-  import com.ibm.iotf.client.app.Event;
-  import com.ibm.iotf.client.app.EventCallback;
-  import com.ibm.iotf.client.app.Command;
-  
-  public class MyEventCallback implements EventCallback {
-      public void processEvent(Event e) {
-          System.out.println("Event:: " + e.getDeviceId() + ":" + e.getEvent() + ":" + e.getPayload());
-      }
-      
-      public void processCommand(Command cmd) {
-          System.out.println("Command " + cmd.getPayload());
-      }
-  }
-
-Once the event callback is added to the ApplicationClient, the processEvent() method is invoked whenever any event is published on the subscribed criteria, The following snippet shows how to add the Event call back into ApplicationClient instance,
-
-.. code:: java
-
-    myClient.connect()
-    myClient.setEventCallback(new MyEventCallback());
-    myClient.subscribeToDeviceEvents();
-
-Similar to subscribing to device events, the application can subscribe to commands that are sent to the devices. Following code snippet shows how to subscribe to all commands to all the devices in the organization:
-
-.. code:: java
-
-    myClient.connect()
-    myClient.setEventCallback(new MyEventCallback());
-    myClient.subscribeToDeviceCommands();
-
-Overloaded methods are available to control the command subscription. The processCommand() method is called when a command is sent to the device that matches the command subscription. 
-
-
-----
-
-
-Subscribing to device status
--------------------------------------------------------------------------------
-Similar to subscribing to device events, applications can subscribe to device status, like device connect and disconnect to Watson Internet of Things Platform. By default, this will subscribe to status updates for all connected devices. Use the Device Type and Device Id parameters to control the scope of the subscription. A single ApplicationClient can support multiple subscriptions.
-
-Subscribe to status updates for all devices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceStatus();
-
-
-Subscribe to status updates for all devices of a specific type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceStatus("iotsample-ardunio");
-
-
-Subscribe to status updates for two different devices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: java
-
-    myClient.connect();
-    myClient.subscribeToDeviceStatus("iotsample-ardunio", "00aabbccddee");
-    myClient.subscribeToDeviceStatus("iotsample-ardunio", "10aabbccddee");
-
-
-----
-
-
-Handling status updates from devices
--------------------------------------------------------------------------------
-To process the status updates received by your subscriptions you need to register an status event callback method. The messages are returned as an instance of the Status class which contains the below mentioned properties:
-
-The following properties are set for both "Connect" and "Disconnect" status events:
-  
-* status.clientAddr - string
-* status.protocol - string
-* status.clientId - string
-* status.user - string
-* status.time - java.util.Date
-* status.action - string
-* status.connectTime - java.util.Date
-* status.port - integer
-
-The following properties are only set when the action is "Disconnect":
-
-* status.writeMsg - integer
-* status.readMsg - integer
-* status.reason - string
-* status.readBytes - integer
-* status.writeBytes - integer
-
-A sample implementation of the Status callback,
-
-.. code:: java
-
-  private static class MyStatusCallback implements StatusCallback {
-      
-      public void processApplicationStatus(ApplicationStatus status) {
-          System.out.println("Application Status = " + status.getPayload());
-      }
-      
-      public void processDeviceStatus(DeviceStatus status) {
-          if(status.getAction() == "Disconnect") {
-              System.out.println("device: "+status.getDeviceId()
-                                  + "  time: "+ status.getTime()
-                                  + "  action: " + status.getAction()
-                                  + "  reason: " + status.getReason());
-          } else {
-              System.out.println("device: "+status.getDeviceId()
-                                  + "  time: "+ status.getTime()
-                                  + "  action: " + status.getAction());
-          }
-      }
-  }
-	
-Once the status callback is added to the ApplicationClient, the processDeviceStatus() method is invoked whenever any device is connected or disconnected from Watson Internet of Things Platform that matches the criteria, The following snippet shows how to add the status call back instance into ApplicationClient,
-
-.. code:: java
-
-    myClient.connect()
-    myClient.setStatusCallback(new MyStatusCallback());
-    myClient.subscribeToDeviceStatus();
-
-
-As similar to device status, the application can subscribe to any other application connect or disconnect status as well. Following code snippet shows how to subscribe to the application status in the organization:
-
-.. code:: java
-
-    myClient.connect()
-    myClient.setEventCallback(new MyEventCallback());
-    myClient.subscribeToApplicationStatus();
-
-Overloaded method is available to control the status subscription to a particular application. The processApplicationStatus() method is called whenever any application is connected or disconnected from Watson Internet of Things Platform that matches the criteria.
-
-
-----
-
-
 Publishing events from devices
 -------------------------------------------------------------------------------
-Applications can publish events as if they originated from a Device.
+
+The Gateway can publish events on behalf of any device connected via the Gateway by passing the appropriate typeId and deviceId based on the origin of the event:
 
 .. code:: java
 
-    myClient.connect()
+    gwClient.connect()
     
     //Generate the event to be published
     JsonObject event = new JsonObject();
@@ -300,58 +134,71 @@ Applications can publish events as if they originated from a Device.
     event.addProperty("mem",  40);
     
     // publish the event on behalf of device
-    myClient.publishEvent(deviceType, deviceId, "blink", event);
+     gwClient.publishDeviceEvent(deviceType, deviceId, eventName, event);
 
-
-Publish events using HTTP(s)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Apart from MQTT, the application can publish device events to IBM Watson Internet of Things Platform using HTTP(s) by following 3 simple steps,
-
-* Construct the ApplicationClient instance using the properties file
-* Construct the event that needs to be published
-* Specify the event name, Device Type, Device ID and publish the event using publishEventOverHTTP() method as follows,
-
-.. code:: java
-
-    	ApplicationClient myClient = new ApplicationClient(props);
-    
-    	JsonObject event = new JsonObject();
-    	event.addProperty("name", "foo");
-    	event.addProperty("cpu",  90);
-    	event.addProperty("mem",  70);
-			
-    	code = myClient.publishEventOverHTTP(deviceType, deviceId, "blink", event);
- 
-
-The complete code can be found in the application example `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__
-
-Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Watson Internet of Things Platform quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
-
-The event in HTTP(s) is published at most once Quality of Service, so the application needs to implement the retry logic when there is an error.
-
+One can use the overloaded publishDeviceEvent() method to publish the device event in the desired quality of service. Refer to `MQTT Connectivity for Gateways <https://docs.internetofthings.ibmcloud.com/gateways/mqtt.html>`__ documentation to know more about the topic structure used.
 
 ----
 
 
-Publishing commands to devices
+Handling commands
 -------------------------------------------------------------------------------
-Applications can publish commands to connected devices.
+When the Gateway client connects, it automatically subscribes to any commands for this Gateway. But to subscribe to any commands for the devices connected via the Gateway, use one of the overloaded subscribeToDeviceCommands() method, for example,
 
 .. code:: java
 
-    myClient.connect()
+    gwClient.connect()
     
-    //Generate the event to be published
-    JsonObject data = new JsonObject();
-    data.addProperty("name", "stop-rotation");
-    data.addProperty("delay",  0);
+    // subscribe to commands on behalf of device
+    gwClient.subscribeToDeviceCommands(DEVICE_TYPE, DEVICE_ID);
+
+To process specific commands you need to register a command callback method. The messages are returned as an instance of the Command class which has the following properties:
+
+* deviceType - The device type for which the command is received.
+* deviceId - The device id for which the command is received, Could be the Gateway or any device connected via the Gateway.
+* payload - The command payload.
+* format - The format of the command payload, currently only JSON format is supported in the Java Client Library.
+* command - The name of the command.
+* timestamp - The org.joda.time.DateTime when the command is sent
+
+A sample implementation of the Command callback,
+
+.. code:: java
+
+    import com.ibm.iotf.client.app.Command;
+    import com.ibm.iotf.client.gateway.GWCallback;
     
-    //Registered flow allows 0, 1 and 2 QoS
-    myAppClient.publishCommand(deviceType, deviceId, "stop", data);
+    public class SampleGatewayCommandCallback implements GWCallback, Runnable {
+    	// A queue to hold & process the commands
+    	private BlockingQueue<Command> queue = new LinkedBlockingQueue<Command>();
+    	
+    	public void processCommand(Command cmd) {
+    	    queue.put(cmd);
+    	}
+    	
+    	public void run() {
+    	    while(true) {
+    	        Command cmd = queue.take();
+    	        System.out.println("Command " + cmd.getPayload());
+    	        
+    	        // code to process the command
+    	    }
+    	}
+    } 
+  
+Once the Command callback is added to the GatewayClient, the processCommand() method is invoked whenever any command is published on the subscribed criteria, The following snippet shows how to add the Gateway command call back into GatewayClient instance,
+
+.. code:: java
+
+    gwClient.connect()
+    SampleGatewayCommandCallback callback = new SampleGatewayCommandCallback();
+    gwClient.setCommandCallback(callback);
+    //Subscribe to device connected to the Gateway
+    gwClient.subscribeToDeviceCommands(DEVICE_TYPE, DEVICE_ID); 
 
 
+Overloaded methods are available to control the command subscription. 
 ----
-
 
 Examples
 -------------

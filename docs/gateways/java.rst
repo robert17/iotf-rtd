@@ -77,7 +77,7 @@ After the successful connection to the IBM Watson IoT Platform, the Gateway clie
 Register devices using the Watson IoT Platform API
 -------------------------------------------------------------------------
 
-The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. Get the APIClient instance by invoking the api() method as follows,
+The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. The APIClient simplifies the interactions with Watson IoT Platform API. Get the APIClient instance by invoking the api() method as follows,
 
 .. code:: java
      
@@ -101,11 +101,11 @@ Following code snippet shows how to add a device type using the APIClient:
      
     final String deviceTypeToBeAdded = "{\"id\": \"" + DEVICE_TYPE + "\",\"description\": "
 				+ "\"My Device Type\"}";
-		
-	JsonElement type = new JsonParser().parse(deviceTypeToBeAdded);
-	JsonObject response = gwClient.api().addDeviceType(type);
+    
+    JsonElement type = new JsonParser().parse(deviceTypeToBeAdded);
+    JsonObject response = gwClient.api().addDeviceType(type);
 	
-Following code snippet shows how to add a device type using the APIClient:
+Following code snippet shows how to add a device to a Gateway in Watson IoT Platform,
 
 .. code:: java
  
@@ -115,11 +115,11 @@ Following code snippet shows how to add a device type using the APIClient:
     String deviceToBeAdded = "{\"deviceId\": \"" + DEVICE_ID +
 						"\",\"authToken\": \"qwer123\"}";
 
-	JsonParser parser = new JsonParser();
-	JsonElement input = parser.parse(deviceToBeAdded);
-	JsonObject response = this.gwClient.api().
-				registerDeviceUnderGateway(DEVICE_TYPE, this.gwDeviceId, this.gwDeviceType, input);
+    JsonParser parser = new JsonParser();
+    JsonElement input = parser.parse(deviceToBeAdded);
+    JsonObject response = this.gwClient.api().registerDeviceUnderGateway(DEVICE_TYPE, gwDeviceId, gwDeviceType, input);
 
+The gwDeviceId and gwDeviceType are the Gateway properties to which this device will be attached to when its registered.
 
 ----
 
@@ -245,6 +245,17 @@ Once the Command callback is added to the GatewayClient, the processCommand() me
 Overloaded methods are available to control the command subscription. 
 
 ----
+
+List Devices Connected through the Gateway
+------------------------------------------
+
+Invoke the method getDevicesConnectedThroughGateway() to retrieve all devices that are connected through the specified gateway(typeId, deviceId) to Watson IoT Platform:
+
+.. code:: java
+
+    gwClient.connect()
+    gwClient.api().getDevicesConnectedThroughGateway(gatewayType, gatewayId);
+
 
 Examples
 -------------

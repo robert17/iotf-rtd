@@ -162,10 +162,10 @@ A sample implementation of the Command callback is shown below,
 
 .. code:: java
 
-    import com.ibm.iotf.client.app.Command;
-    import com.ibm.iotf.client.gateway.GWCallback;
+    import com.ibm.iotf.client.gateway.Command;
+    import com.ibm.iotf.client.gateway.CommandCallback;
     
-    public class SampleGatewayCommandCallback implements GWCallback, Runnable {
+    public class GatewayCommandCallback implements CommandCallback, Runnable {
     	// A queue to hold & process the commands
     	private BlockingQueue<Command> queue = new LinkedBlockingQueue<Command>();
     	
@@ -183,12 +183,12 @@ A sample implementation of the Command callback is shown below,
     	}
     } 
   
-Once the Command callback is added to the GatewayClient, the processCommand() method is invoked whenever any command is published on the subscribed criteria, The following snippet shows how to add the Gateway command call back into GatewayClient instance,
+Once the Command callback is added to the GatewayClient, the processCommand() method is invoked whenever any command is published on the subscribed criteria, The following snippet shows how to add the command call back into GatewayClient instance,
 
 .. code:: java
 
     gwClient.connect()
-    SampleGatewayCommandCallback callback = new SampleGatewayCommandCallback();
+    GatewayCommandCallback callback = new GatewayCommandCallback();
     gwClient.setCommandCallback(callback);
     //Subscribe to device connected to the Gateway
     gwClient.subscribeToDeviceCommands(DEVICE_TYPE, DEVICE_ID);

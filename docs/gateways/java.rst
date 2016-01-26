@@ -78,7 +78,7 @@ Register devices using the Watson IoT Platform API
 -------------------------------------------------------------------------
 There are different ways to register the devices behind the Gateway to IBM Watson IoT Platform,
 
-* **Auto registration**: The device gets added automatically in IBM Watson IoT Platform when Gateway publishes any event/subscribes to any commands for the Arduino Uno device.
+* **Auto registration**: The device gets added automatically in IBM Watson IoT Platform when Gateway publishes any event/subscribes to any commands for the devices connected to it.
 * **API**: The Watson IoT Platform API can be used to register the devices to the Watson IoT Platform. 
 
 The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. The APIClient simplifies the interactions with Watson IoT Platform API. Get the APIClient instance by invoking the api() method as follows,

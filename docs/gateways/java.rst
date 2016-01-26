@@ -36,7 +36,7 @@ Instead of including a Properties object directly, you can use a configuration f
 
 .. code:: java
 
-    Properties props = GatewayClient.parsePropertiesFile(new File("C:\\temp\\application.prop"));
+    Properties props = GatewayClient.parsePropertiesFile(new File("C:\\temp\\device.prop"));
     GatewayClient gwClient = new GatewayClient(props);
     ...
 
@@ -61,7 +61,7 @@ Connect to the Watson Internet of Things Platform by calling the *connect* funct
 
 .. code:: java
 
-    Properties props = GatewayClient.parsePropertiesFile(new File("C:\\temp\\application.prop"));
+    Properties props = GatewayClient.parsePropertiesFile(new File("C:\\temp\\device.prop"));
     GatewayClient gwClient = new GatewayClient(props);
     
     gwClient.connect();
@@ -76,6 +76,10 @@ After the successful connection to the IBM Watson IoT Platform, the Gateway clie
 
 Register devices using the Watson IoT Platform API
 -------------------------------------------------------------------------
+There are different ways to register the devices behind the Gateway to IBM Watson IoT Platform,
+
+* **Auto registration**: The device gets added automatically in IBM Watson IoT Platform when Gateway publishes any event/subscribes to any commands for the Arduino Uno device.
+* **API**: The Watson IoT Platform API can be used to register the devices to the Watson IoT Platform. 
 
 The Watson IoT Platform API can be used to register the devices (that are connected to the Gateway) to the Watson IoT Platform. The APIClient simplifies the interactions with Watson IoT Platform API. Get the APIClient instance by invoking the api() method as follows,
 
@@ -90,22 +94,7 @@ The Watson IoT Platform API can be used to register the devices (that are connec
      
      APIClient api = gwClient.api();
 
-Once you get the handle of APIClient, you can add the devices, by first adding the device type and then the device as shown below,
-
-Following code snippet shows how to add a device type using the APIClient:
-
-.. code:: java
- 
-    GatewayClient gwClient = new GatewayClient(props);
-    gwClient.connect();
-     
-    final String deviceTypeToBeAdded = "{\"id\": \"" + DEVICE_TYPE + "\",\"description\": "
-				+ "\"My Device Type\"}";
-    
-    JsonElement type = new JsonParser().parse(deviceTypeToBeAdded);
-    JsonObject response = gwClient.api().addDeviceType(type);
-	
-Following code snippet shows how to add a device to a Gateway in Watson IoT Platform,
+Once you get the handle of APIClient, you can add the devices. Following code snippet shows how to add a device to a Gateway in Watson IoT Platform,
 
 .. code:: java
  

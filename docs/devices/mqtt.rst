@@ -113,10 +113,11 @@ connected, the device should use ``cleansession=false``.
 .. warning::
   If your managed device uses a durable subscription (cleansession=false) you need to be 
   aware that device management commands sent to your device while it is offline will be 
-  reported as failed operations, however, when the device later connects those requests will 
+  reported as failed operations if the device does not reconnect to the service before the
+  request times out, however when the device later connects those requests will 
   be actioned by the device.
   
-  When handling failures it is important to take this into account if you are using durable
+  When handling request failures it is important to take this into account if you are using durable
   subscriptions for your managed devices.
 
 

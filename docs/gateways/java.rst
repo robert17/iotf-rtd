@@ -1,5 +1,5 @@
-Java for Gateway Developers (Update in progress)
-================================================
+Java for Gateway Developers 
+============================
 
 - See `iot-java <https://github.com/ibm-messaging/iot-java>`_ in GitHub
 
@@ -248,4 +248,4 @@ Invoke the method getDevicesConnectedThroughGateway() to retrieve all devices th
 
 Examples
 -------------
-* `SampleRasPiGateway <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/gateway/SampleRasPiGateway.java>`__ - A Gateway sample that shows how to connect Raspberry Pi as Gateway. This sample is `explained in detail in this recipe <https://developer.ibm.com/recipes/?post_type=tutorials&p=9397>`__.
+* `SampleRasPiGateway <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/gateway/SampleRasPiGateway.java>`__ - A Gateway sample that shows how to connect Raspberry Pi as Gateway. This sample is explained in detail in `this recipe <https://developer.ibm.com/recipes/?post_type=tutorials&p=9397>`__.

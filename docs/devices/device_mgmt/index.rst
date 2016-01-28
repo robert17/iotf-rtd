@@ -10,7 +10,7 @@ Managed Devices must, by definition, contain a management agent which can unders
 
 The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 
-The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT for Managed Devices <../../messaging/devices.html>`__
+The Device Management Protocol is built on top of MQTT.  For details specific to how Device Management Protocol interacts with MQTT please see `MQTT Connectivity for Devices <../mqtt.html>`__
 
 
 The Device Management Lifecycle

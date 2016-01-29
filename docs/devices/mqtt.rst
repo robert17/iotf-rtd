@@ -2,7 +2,41 @@
 MQTT Connectivity for Devices
 ===============================================================================
 
+Client connection
+-------------------------------------------------------------------------------
+Every registered organization has a unique endpoint which must be used when 
+connecting MQTT clients for devices in that organization.
 
+**org\_id**.messaging.internetofthings.ibmcloud.com
+
+
+Unencrypted client connection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Connect on port **1883**
+
+.. important:: All information your device submits is being sent in 
+    plain text (including the authentication credentials for your device).  
+    We recommend the use of an encrypted connection whenever possible.
+
+
+Encrypted client connection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Connect on port **8883** or **443** for websockets.
+
+In many client libraries you will need to provide the server's public certificate 
+in pem format.  The following file contains the entire certificate chain for 
+\*.messaging.internetofthings.ibmcloud.com: messaging.pem_
+
+.. _messaging.pem: https://github.com/ibm-messaging/iot-python/blob/master/src/ibmiotf/messaging.pem
+
+.. tip:: Some SSL client libraries have been shown to not handle wildcarded
+    domains, in which case, if you can not change libraries, you will need to turn 
+    off certificate checking.
+
+.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
+   
 
 .. note:: **Device Support in Quickstart**
     
@@ -17,11 +51,9 @@ MQTT Connectivity for Devices
     Also, messages sent from devices at a rate greater than 1 per second may be discarded.
 
 
-----
-
 
 MQTT client identifier
--------------------------------------------------------------------------------
+----------------------
 
 A Device must authenticate using a client ID in the following format:
 
@@ -48,11 +80,8 @@ A Device must authenticate using a client ID in the following format:
       - dot (``.``)
 
 
-----
-
-
 MQTT authentication
--------------------------------------------------------------------------------
+-------------------
 
 Username
 ~~~~~~~~
@@ -71,29 +100,23 @@ When using token based authentication submit the device authentication
 token as the password when making your MQTT connection.
 
 
-----
-
 
 Publishing events
--------------------------------------------------------------------------------
+-----------------
 
 -  Publish to topic iot-2/evt/\ **event\_id**/fmt/**format\_string**
 
 .. important:: The message payload is limited to a maximum of 4096 bytes.  Messages larger than this will be rejected.
 
-----
-
 
 Subscribing to commands
--------------------------------------------------------------------------------
+-----------------------
 
 -  Subscribe to topic iot-2/cmd/\ **command\_id**/fmt/**format\_string**
 
 
-----
-
 Managed Devices
--------------------------------------------------------------------------------
+---------------
 
 Support for device lifecycle management is optional, the device management protocol 
 used by IoTF utilises the same MQTT connection that your device already uses for events 

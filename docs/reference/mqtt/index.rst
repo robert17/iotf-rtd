@@ -1,8 +1,7 @@
 .. _ref-mqtt:
 
-===============================================================================
 MQTT
-===============================================================================
+====
 
 The primary mechanism that devices and applications use to communicate
 with the IBM Internet of Things Foundation is MQTT; this is a protocol
@@ -30,55 +29,8 @@ protocol however some 3.1 client libraries check the ClientId and
 enforce the 23 character limit.
 
 
-----
-
-
-MQTT client connection
--------------------------------------------------------------------------------
-Every registered organization has a unique endpoint which must be used when 
-connecting MQTT clients for applications and devices in that organization.
-
-**org\_id**.messaging.internetofthings.ibmcloud.com
-
-----
-
-
-Unencrypted client connection
--------------------------------------------------------------------------------
-
-Connect on port **1883**
-
-.. important:: All information your device submits is being sent in 
-    plain text (including the authentication credentials for your device).  
-    We recommend the use of an encrypted connection whenever possible.
-
-
-----
-
-
-Encrypted client connection
--------------------------------------------------------------------------------
-
-Connect on port **8883** or **443** for websockets.
-
-In many client libraries you will need to provide the server's public certificate 
-in pem format.  The following file contains the entire certificate chain for 
-\*.messaging.internetofthings.ibmcloud.com: messaging.pem_
-
-.. _messaging.pem: https://github.com/ibm-messaging/iot-python/blob/master/src/ibmiotf/messaging.pem
-
-.. tip:: Some SSL client libraries have been shown to not handle wildcarded
-    domains, in which case, if you can not change libraries, you will need to turn 
-    off certificate checking.
-
-.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
-   
-
-----
-
-
 Device and application clients
--------------------------------------------------------------------------------
+------------------------------
 We define two primary classes of thing: Devices & Applications
 
 The class of thing that your MQTT client identifies itself to the service as 
@@ -91,15 +43,13 @@ to the topic space for an entire organization.
 
 - :doc:`../../devices/mqtt`
 - :doc:`../../applications/mqtt`
-
-
-----
+- :doc:`../../gateways/mqtt`
 
 
 .. _qoslevels:
 
 Quality of service
--------------------------------------------------------------------------------
+------------------
 The MQTT protocol provides three qualities of service for delivering messages 
 between clients and servers: "at most once", "at least once" and "exactly once".
 Events and commands can be sent using any quality of service level, however you 
@@ -150,9 +100,6 @@ to ensure no duplication of messages occurs.
    of when the additional overhead of QoS2 has a clear benefit.
 
 
-----
-
-
 Subscription Buffers and Clean Session
 --------------------------------------
 Each subscription from either a device or application is allocated a buffer of 
@@ -169,10 +116,6 @@ If clean session is set to true, the buffer is reset.
     Thus it is possible that a message sent at QoS1 or QoS2 may not be delivered 
     to an application that is unable to keep up with the messages rate for the 
     subscription(s) it has made.
-
-
-
-----
 
 
 Message Payload

@@ -17,6 +17,7 @@ The IoTF API supports the following functionality for applications:
 - Historical event retrieval (view events from all devices, view events from a device type, view events for a specific device).
 - Device management request operations (list device management requests, initiate a request, clear request status, get details of a request, get list of request statuses for each affected device,  get request status for a specific device).
 - Usage management (retrieve number of active devices over a period of time, retrieve amount of storage used by historical event data, retrieve total amount of data used).
+- Publish events on behalf of devices (beta)
 - Service status queries (retrieve service statuses for an organization).
 
 

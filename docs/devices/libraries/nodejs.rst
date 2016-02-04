@@ -52,10 +52,10 @@ The configuration file must be in the format of
     auth-method=token
     auth-token=$token
 
-Connecting to the Internet of Things Foundation
+Connecting to the IoT Platform
 -----------------------------------------------------
 
-Connect to the Internet of Things Foundation by calling the *connect* function.
+Connect to the IoT Platform by calling the *connect* function.
 
 .. code:: javascript
 
@@ -70,14 +70,14 @@ Connect to the Internet of Things Foundation by calling the *connect* function.
     //Add your code here
     });
 
-After the successful connection to the IoTF service, the device client sends a *connect* event. So all the device logic can be implemented inside this callback function.
+After the successful connection to the IoT Platform service, the device client sends a *connect* event. So all the device logic can be implemented inside this callback function.
 
 Publishing events
 ------------------
 
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IOT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IoT Platform the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 Events can be published at any of the three quality of service levels defined by the MQTT protocol. By default events will be published as QoS level 0. Please not that if you are using the Internet of Things Quickstart service, events can only be published at QoS level 0.
 

@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Welcome to the documentation/reference material for IBM's IoT Foundation 
+Welcome to the documentation/reference material for IBM's IoT Platform 
 service.  If you are looking for tutorials you can find them on developerWorks Recipes_.
 
 .. _Recipes: https://developer.ibm.com/recipes/

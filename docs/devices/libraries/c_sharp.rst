@@ -15,7 +15,7 @@ The constructor builds the client instance, and accepts arguments containing the
 - ``auth-token`` - API key token (required if auth-method is "token").
 
 
-If deviceId and deviceType are provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The argument lists creates definitions which are used to interact with the Internet of Things Foundation module.
+If deviceId and deviceType are provided, the client will connect to the IoT Platform Quickstart, and default to an unregistered device. The argument lists creates definitions which are used to interact with the IoT Platform module.
 
 .. code:: C#
 
@@ -30,9 +30,9 @@ If deviceId and deviceType are provided, the client will connect to the Internet
 
 Publishing events
 ------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine which device sent the event. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IoT Platform the credentials of the connection on which the event was received are used to determine which device sent the event. With this architecture it is impossible for a device to impersonate another device.
 
 Events can be published at any of the three `quality of service (QoS) levels <../mqtt.html#/qoslevels>`_, defined by the MQTT protocol. By default events will be published as QoS level 0.
 

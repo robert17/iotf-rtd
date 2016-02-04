@@ -15,7 +15,7 @@ The constructor builds the client instance, and accepts a Properties object cont
 * auth-method - Method of authentication (This is an optional field, needed only for registered flow and the only value currently supported is "token"). 
 * auth-token - API key token (This is an optional field, needed only for registered flow).
 
-The Properties object creates definitions which are used to interact with the Internet of Things Foundation module. 
+The Properties object creates definitions which are used to interact with the IoT Platform module. 
 
 The following code shows a device publishing events in a Quickstart mode.
 
@@ -49,7 +49,7 @@ The following code shows a device publishing events in a Quickstart mode.
 				e.printStackTrace();
 			}
 			
-			//Connect to the IBM IoT Foundation
+			//Connect to the IBM IoT Platform
 			myClient.connect();
 			
 			//Generate a JSON object of the event to be published
@@ -101,7 +101,7 @@ The following program shows a device publishing events in a registered flow
 				e.printStackTrace();
 			}
 			
-			//Connect to the IBM IoT Foundation		
+			//Connect to the IBM IoT Platform		
 			myClient.connect();
 			
 			//Generate a JSON object of the event to be published
@@ -148,7 +148,7 @@ Instead of including a Properties object directly, you can use a configuration f
 				e.printStackTrace();
 			}
 			
-			//Connect to the IBM IoT Foundation	
+			//Connect to the IBM IoT Platform	
 			myClient.connect();
 			
 			//Generate a JSON object of the event to be published
@@ -180,9 +180,9 @@ The content of the configuration file must be in the following format:
 
 Publishing events
 -------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IBM IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IBM IoT Platform the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>` defined by the MQTT protocol.  By default events will be published as qos level 0.
 
@@ -223,7 +223,7 @@ Events can be published at higher MQTT quality of servive levels, but these even
 
 Publish event using HTTP(s)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Apart from MQTT, the devices can publish events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,
+Apart from MQTT, the devices can publish events to the IoT Platform using HTTP(s) by following 3 simple steps,
 
 * Construct a DeviceClient instance using the properties file
 * Construct an event that needs to be published
@@ -242,7 +242,7 @@ Apart from MQTT, the devices can publish events to IBM Internet of Things Founda
     	
 The complete code can be found in the device example `HttpDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/device/HttpDeviceEventPublish.java>`__
 
-Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
+Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to the IoT Platform quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
 
 The event in HTTP(s) is published at most once QoS, so the device needs to implement the retry logic when there is an error.
 
@@ -308,7 +308,7 @@ The messages are returned as an instance of the Command class which has the foll
 			//Pass the above implemented CommandCallback as an argument to this device client
 			myClient.setCommandCallback(new MyNewCommandCallback());
 
-			//Connect to the IBM IoT Foundation	
+			//Connect to the IoT Platform	
 			myClient.connect();
 		}
 	}

@@ -35,7 +35,7 @@ in pem format.  The following file contains the entire certificate chain for
     domains, in which case, if you can not change libraries, you will need to turn 
     off certificate checking.
 
-.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
+.. note:: The IoT Platform requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
    
 
 .. note:: **Device Support in Quickstart**
@@ -129,7 +129,7 @@ Managed devices can publish messages with Quality of Service (QoS) level of 0 or
 QoS 1 is used, messages from the device will be queued if necessary. Messages from 
 the device must not be retained messages. 
 
-The Internet of Things Foundation publishes requests with a QoS level of 1 to support 
+The IoT Platform publishes requests with a QoS level of 1 to support 
 queuing of messages.  In order to queue messages sent while a managed device is not 
 connected, the device should use ``cleansession=false``.
 
@@ -191,7 +191,7 @@ All messages are sent in JSON format. There are two types of message.
     - ``message`` is an optional element with a text description of the response code.
     - ``d`` is an optional data element accompanying the response.
     - ``reqId`` is the request ID of the original request. This is used to correlate responses with 
-      requests, and the device needs to ensure that all request IDs are unique.  When responding to Internet of Things 
-      Foundation requests, the correct ``reqId`` value must be sent in the response.
+      requests, and the device needs to ensure that all request IDs are unique.  When responding to IoT 
+      Platform requests, the correct ``reqId`` value must be sent in the response.
 
 

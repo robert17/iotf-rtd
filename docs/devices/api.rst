@@ -9,7 +9,7 @@ HTTP API for Devices
 Publish an event
 ----------------
 
-As an alternative to MQTT it is possible for devices to submit events to IoTF over an HTTP API.  Devices may submit a ``POST`` request to: ``https://${orgid}.internetofthings.ibmcloud.com>/api/v0002/device/types/${typeId}/devices/${deviceId}/events/${eventId}``
+As an alternative to MQTT it is possible for devices to submit events to the IoT Platform over an HTTP API.  Devices may submit a ``POST`` request to: ``https://${orgid}.internetofthings.ibmcloud.com>/api/v0002/device/types/${typeId}/devices/${deviceId}/events/${eventId}``
 
 For full details, see the relevant `API documentation <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#/>`__.  The request body (event payload) can have any content, however, MQTT message payload guidelines should be followed.
 
@@ -23,7 +23,7 @@ Authentication
 ~~~~~~~~~~~~~~
 
 Requests must include an authorization header. Basic authentication the only method supported. Applications 
-are authenticated by API keys, when an application makes any request to the IoTF API it must present an API 
+are authenticated by API keys, when an application makes any request to the IoT Platform API it must present an API 
 as it's crednetials:
 
 - username = "use-token-auth"
@@ -32,10 +32,10 @@ as it's crednetials:
 Content-Type
 ~~~~~~~~~~~~
 
-A ``Content-Type`` request header must be provided with the request. The following table shows the supported types and how they are mapped to the Internet of Things Foundation internal formats.
+A ``Content-Type`` request header must be provided with the request. The following table shows the supported types and how they are mapped to the IoT Platform internal formats.
 
 +----------------------------+-----------------------+
-| Content-Type Header        | IoT Foundation Format |
+| Content-Type Header        | IoT Platform Format |
 +============================+=======================+
 | text/plain                 | text                  |
 +----------------------------+-----------------------+
@@ -52,5 +52,5 @@ Quality of Service
 
 The HTTP(S) protocol provides "at most once" best effort delivery, analagous to the QoS0 quality of service provided by the MQTT protocol. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery.
 
-For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the Internet of Things Foundation <../messaging/mqtt.html>`__ documentation.
+For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the IoT Platform <../messaging/mqtt.html>`__ documentation.
 

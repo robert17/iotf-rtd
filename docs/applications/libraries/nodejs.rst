@@ -56,10 +56,10 @@ The configuration file must be in the format of
 ----
 
     
-Connecting to the Internet of Things Foundation
+Connecting to the IoT Platform
 ----------------------------------------------------
 
-Connect to the Internet of Things Foundation by calling the *connect* function.
+Connect to the IoT Platform by calling the *connect* function.
 
 .. code:: javascript
 
@@ -75,7 +75,7 @@ Connect to the Internet of Things Foundation by calling the *connect* function.
     });
     
 
-After the successful connection to the IoTF service, the application client sends a *connect* event. So all the logic can be implemented inside this callback function.
+After the successful connection to the IoT Platform service, the application client sends a *connect* event. So all the logic can be implemented inside this callback function.
 
 
 ----
@@ -84,9 +84,9 @@ After the successful connection to the IoTF service, the application client send
 Subscribing to device events
 ----------------------------
 
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the Internet of Things Foundation, the credentials of the connection on which the event was received are used to determine from which device the event was sent. Using this architecture, it is impossible for a device to impersonate another device.
+When an event is received by the IoT Platform, the credentials of the connection on which the event was received are used to determine from which device the event was sent. Using this architecture, it is impossible for a device to impersonate another device.
 
 By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
 

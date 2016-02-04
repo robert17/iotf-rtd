@@ -1,12 +1,12 @@
 HTTP API for Applications
 =========================
 
-The Internet of Things Foundation API can be used to interact with your organization in the Internet of Things Foundation. 
+The IoT Platform API can be used to interact with your organization in the IoT Platform. 
 
 API Capabilities
 ----------------
 
-The IoTF API supports the following functionality for applications:
+The IoT Platform API supports the following functionality for applications:
 
 - View organization details.
 - Bulk device operations (list all, add, remove).
@@ -24,17 +24,17 @@ The IoTF API supports the following functionality for applications:
 ----
 
 
-IoT Foundation API Version 2 
+IoT Platform API Version 2 
 ------------------------------
 
-The current version of the Internet of Things Foundation API is `version 2 <../swagger/v0002.html>`_.  We 
+The current version of the IoT Platform API is `version 2 <../swagger/v0002.html>`_.  We 
 strongly recommend that all users build their solutions based on the version 2 APIs.
 
 
 ----
 
 
-IoT Foundation API Version 1
+IoT Platform API Version 1
 ------------------------------
 
 `Version 1 <../swagger/v0001.html>`_ of the API is still supported, however it should now be considered a 

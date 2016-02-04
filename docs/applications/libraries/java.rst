@@ -17,7 +17,7 @@ The constructor builds the client instance, and accepts a Properties object cont
 
 .. note:: One must set ``enable-shared-subscription`` to true to build scalable applications which will load balance messages across multiple instances of the application. Refer to the `scalable applications section <https://docs.internetofthings.ibmcloud.com/messaging/applications.html#/scalable-applications#scalable-applications>`__ for more information about the load balancing.
 
-The Properties object creates definitions which are used to interact with the Internet of Things Foundation module. If no options are provided or organization is provided as quickstart, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device.
+The Properties object creates definitions which are used to interact with the IoT Platform module. If no options are provided or organization is provided as quickstart, the client will connect to the IoT Platform Quickstart, and default to an unregistered device.
 
 The following code snippet shows how to construct the ApplicationClient instance in Quickstart mode,
 
@@ -72,10 +72,10 @@ The application configuration file must be in the following format:
 ----
 
 
-Connecting to the Internet of Things Foundation
+Connecting to the IoT Platform
 ----------------------------------------------------
 
-Connect to the Internet of Things Foundation by calling the *connect* function.
+Connect to the IoT Platform by calling the *connect* function.
 
 .. code:: java
 
@@ -85,7 +85,7 @@ Connect to the Internet of Things Foundation by calling the *connect* function.
     myClient.connect();
     
 
-After the successful connection to the IoTF service, the application client can perform the following operations, like subscribing to device events, subscribing to device status, publishing device events and commands.
+After the successful connection to the IoT Platform service, the application client can perform the following operations, like subscribing to device events, subscribing to device status, publishing device events and commands.
 
 
 ----
@@ -93,9 +93,9 @@ After the successful connection to the IoTF service, the application client can 
 
 Subscribing to device events
 -------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IoT Platform the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
 
@@ -198,7 +198,7 @@ Overloaded methods are available to control the command subscription. The proces
 
 Subscribing to device status
 -------------------------------------------------------------------------------
-Similar to subscribing to device events, applications can subscribe to device status, like device connect and disconnect to Internet of Things Foundation. By default, this will subscribe to status updates for all connected devices. Use the Device Type and Device Id parameters to control the scope of the subscription. A single ApplicationClient can support multiple subscriptions.
+Similar to subscribing to device events, applications can subscribe to device status, like device connect and disconnect to IoT Platform. By default, this will subscribe to status updates for all connected devices. Use the Device Type and Device Id parameters to control the scope of the subscription. A single ApplicationClient can support multiple subscriptions.
 
 Subscribe to status updates for all devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -278,7 +278,7 @@ A sample implementation of the Status callback,
       }
   }
 	
-Once the status callback is added to the ApplicationClient, the processDeviceStatus() method is invoked whenever any device is connected or disconnected from Internet of Things Foundation that matches the criteria, The following snippet shows how to add the status call back instance into ApplicationClient,
+Once the status callback is added to the ApplicationClient, the processDeviceStatus() method is invoked whenever any device is connected or disconnected from IoT Platform that matches the criteria, The following snippet shows how to add the status call back instance into ApplicationClient,
 
 .. code:: java
 
@@ -295,7 +295,7 @@ As similar to device status, the application can subscribe to any other applicat
     myClient.setEventCallback(new MyEventCallback());
     myClient.subscribeToApplicationStatus();
 
-Overloaded method is available to control the status subscription to a particular application. The processApplicationStatus() method is called whenever any application is connected or disconnected from Internet of Things Foundation that matches the criteria.
+Overloaded method is available to control the status subscription to a particular application. The processApplicationStatus() method is called whenever any application is connected or disconnected from IoT Platform that matches the criteria.
 
 
 ----
@@ -321,7 +321,7 @@ Applications can publish events as if they originated from a Device.
 
 Publish events using HTTP(s)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Apart from MQTT, the application can publish device events to IBM Internet of Things Foundation using HTTP(s) by following 3 simple steps,
+Apart from MQTT, the application can publish device events to IBM Watson IoT Platform using HTTP(s) by following 3 simple steps,
 
 * Construct the ApplicationClient instance using the properties file
 * Construct the event that needs to be published
@@ -341,7 +341,7 @@ Apart from MQTT, the application can publish device events to IBM Internet of Th
 
 The complete code can be found in the application example `HttpApplicationDeviceEventPublish <https://github.com/ibm-messaging/iot-java/blob/master/samples/iotfdeviceclient/src/com/ibm/iotf/sample/client/application/HttpApplicationDeviceEventPublish.java>`__
 
-Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to Internet of Things Foundation quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
+Based on the settings in the properties file, the publishEventOverHTTP() method either publishes the event in Quickstart or in Registered flow. When the Organization ID mentioned in the properties file is quickstart, publishEventOverHTTP() method publishes the event to IoT Platform quickstart service and publishes the event in plain HTTP format. But when valid registered organization is mentioned in the properties file, this method always publishes the event in HTTPS (HTTP over SSL), so all the communication is secured.
 
 The event in HTTP(s) is published at most once Quality of Service, so the application needs to implement the retry logic when there is an error.
 

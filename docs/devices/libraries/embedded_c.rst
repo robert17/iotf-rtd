@@ -12,7 +12,7 @@ Dependencies
 
 Installation
 --------------
-To install the Internet of Things Foundation client library for Embedded C follow the instructions below.
+To install the IoT Platform client library for Embedded C follow the instructions below.
 
 1. To install the latest version of the library, enter the following code in your command line.
 
@@ -53,12 +53,12 @@ When downloaded, the client has the following file structure:
 Initializing the Client Library
 -------------------------------
 
-After downloading the client library, it must be initialized and connected to the Internet of Things Foundation. There are 2 ways to initialize the Internet of Things Foundation Client Library for Embedded C:
+After downloading the client library, it must be initialized and connected to the IoT Platform. There are 2 ways to initialize the IoT Platform Client Library for Embedded C:
 
 Passing as Parameters
 ~~~~~~~~~~~~~~~~~~~~~
 
-The 'initialize' function takes the following details to connect to the IoT Foundation service:
+The 'initialize' function takes the following details to connect to the IoT Platform service:
 
 -   client - Pointer to the *iotfclient*
 -   org - Your organization ID
@@ -110,7 +110,7 @@ The configuration file must use the following format.
 Connecting to the Service
 -------------------------
 
-After initializing the Internet of Things Foundation Embedded C client library, you can connect to the Internet of Things Foundation by calling the 'connectiotf' function.
+After initializing the IoT Platform Embedded C client library, you can connect to the IoT Platform by calling the 'connectiotf' function.
 
 
 .. code:: c

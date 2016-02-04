@@ -17,7 +17,7 @@ The constructor builds the client instance, and accepts arguments containing the
 - ``auth-key`` - API key (required if auth-method is ``apikey``).
 - ``auth-token`` - API key token (required if auth-method is ``apikey``).
 
-If only ``appId`` is provided, the client will connect to the Internet of Things Foundation Quickstart service and default to an unregistered device. The argument lists create definitions which are used to interact with the Internet of Things Foundation module.
+If only ``appId`` is provided, the client will connect to the IoT Platform Quickstart service and default to an unregistered device. The argument lists create definitions which are used to interact with the IoT Platform module.
 
 .. code:: C#
 
@@ -31,7 +31,7 @@ If only ``appId`` is provided, the client will connect to the Internet of Things
 Subscribing to device events
 -----------------------------
 
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
 When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 

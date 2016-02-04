@@ -15,7 +15,7 @@ The constructor builds the client instance, and accepts an options dict containi
 - ``auth-key`` - API key (required if auth-method is ``apikey``).
 - ``auth-token`` - API key token (required if auth-method is ``apikey``).
 
-If no options dict is provided, the client will connect to the Internet of Things Foundation Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the Internet of Things Foundation module.
+If no options dict is provided, the client will connect to the IoT Platform Quickstart, and default to an unregistered device. The options dict creates definitions which are used to interact with the IoT Platform module.
 
 .. code:: python
 
@@ -79,9 +79,9 @@ So in the case of failure, application needs to parse the response to see if the
 
 Subscribing to device events
 -------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IoT Platform the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 By default, applications will subscribe to all events from all connected devices. Use the type, id, event and msgFormat parameters to control the scope of the subscription. A single client can support multiple subscriptions. The code samples below give examples of how to subscribe to devices dependent on device type, id, event and msgFormat parameters.
 
@@ -344,7 +344,7 @@ Applications can use the ``getOrganizationDetails()`` method to retrieve the det
         print("ERROR [" + e.httpcode + "] " + e.message)
     
 
-Refer to the Organization Configuration section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the request & response model and http status code.
+Refer to the Organization Configuration section of the `IBM IoT Platform API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the request & response model and http status code.
 
 
 ----
@@ -356,7 +356,7 @@ Bulk device operations
 
 Applications can use bulk operations to get, add or remove devices in bulk.
 
-Refer to the Bulk Operations section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Bulk Operations section of the `IBM IoT Platform API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html#!/Bulk_Operations/>`__ for information about the list of query parameters, the request & response model and http status code.
 
 Retrieve device information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -388,7 +388,7 @@ other parameters, or the results are undefined.
 Add Devices in bulk
 ~~~~~~~~~~~~~~~~~~~
 
-The ``addMultipleDevices()`` method can be used to add one or more devices to your Internet of Things Foundation 
+The ``addMultipleDevices()`` method can be used to add one or more devices to your IoT Platform 
 organization, the maximum size of a request is set to 512KB.  The response will contain the generated authentication 
 tokens for each added device. These authentication tokens must be recorded when processing the response, as lost 
 authentication tokens cannot be retrieved.
@@ -415,7 +415,7 @@ authentication tokens cannot be retrieved.
 Delete Devices in bulk
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``deleteMultipleDevices()`` method can be used to delete multiple devices from an Internet of Things Foundation 
+The ``deleteMultipleDevices()`` method can be used to delete multiple devices from an IoT Platform 
 organization, each request can contain a maximum of 512KB.
 
 .. code:: python
@@ -443,17 +443,17 @@ Device Type Operations
 ----------------------
 
 Device types can be used as templates for adding device information to devices as they are added to 
-your organization. Applications can use the Internet of Things Foundation API to list, create, 
+your organization. Applications can use the IoT Platform API to list, create, 
 delete, view, or update device types in your organization.
 
-Refer to the Device Types section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ documentation 
+Refer to the Device Types section of the `IBM IoT Platform API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ documentation 
 for information about the list of query parameters, the request & response model, and http status codes.
 
 
 Get all Device Types
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``getAllDeviceTypes()`` method can be used to retrieve all device types in your Internet of Things Foundation 
+The ``getAllDeviceTypes()`` method can be used to retrieve all device types in your IoT Platform 
 organization. The response contains parameters and application needs to retrieve the dictionary *results* from the 
 response to get the array of devices returned. Other parameters in the response are required to make further call, 
 for example, the *_bookmark* element can be used to page through results. Issue the first request without 
@@ -484,7 +484,7 @@ same values for the other parameters, or the results are undefined.
 Add a Device Type
 ~~~~~~~~~~~~~~~~~
 
-The ``addDeviceType()`` method can be used to register a device type to Internet of Things Foundation. In 
+The ``addDeviceType()`` method can be used to register a device type to IoT Platform. In 
 each request, you must first define the device information, and device metadata elements which you want to be applied 
 to all devices of this type. The device information element is comprised of several variables, including, serial 
 number, manufacturer, model, class, description, firmware and hardware versions, and descriptive location. The 
@@ -522,7 +522,7 @@ metadata element is comprised of custom variables and values which can be define
 Delete a Device Type
 ~~~~~~~~~~~~~~~~~~~~
 
-The ``deleteDeviceType()`` method can be used to delete a device type from your Internet of Things Foundation 
+The ``deleteDeviceType()`` method can be used to delete a device type from your IoT Platform 
 organization.
 
 .. code:: python
@@ -598,14 +598,14 @@ must be defined. Firstly, the ``typeId`` of the device type to be updated must b
 Device operations
 -----------------
 
-Device operations made available through the API include listing, adding, removing, viewing, updating, viewing location and viewing  device management information of devices in an Internet of Things Foundation organization.
+Device operations made available through the API include listing, adding, removing, viewing, updating, viewing location and viewing  device management information of devices in an IoT Platform organization.
 
-Refer to the Device section of the `IBM IoT Foundation API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Device section of the `IoT Platform API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
 
 Get Devices of a particular Device Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *retrieveDevices()* method can be used to retrieve all the devices of a particular device type in an organization from Internet of Things Foundation. For example,
+The *retrieveDevices()* method can be used to retrieve all the devices of a particular device type in an organization from IoT Platform. For example,
 
 .. code:: python
 
@@ -625,7 +625,7 @@ The above snippet sorts the response based on device id and uses the bookmark to
 Add a Device
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The *registerDevice()* method is used to add a device to an Internet of Things Foundation organization. The *registerDevice()* method adds a single device to your Internet of Things Foundation organization. The parameters which can be set when adding a device are:
+The *registerDevice()* method is used to add a device to an IoT Platform organization. The *registerDevice()* method adds a single device to your IoT Platform organization. The parameters which can be set when adding a device are:
 
 - deviceTypeId: *Optional*. Assigns a device type to the device. Where there is a clash between variables defined by the device type and variables defined by under deviceInfo, the device specific variables will take precedence.
 - deviceId: *Mandatory*. 
@@ -657,7 +657,7 @@ The following code sample should be inserted after the constructor code in a .py
 Delete a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *deleteDevice()* method is used to remove a device from an Internet of Things Foundation organization. When deleting a device using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
+The *deleteDevice()* method is used to remove a device from an IoT Platform organization. When deleting a device using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
 
 The following code snippet provides an example of the format required for this method.
 
@@ -669,7 +669,7 @@ The following code snippet provides an example of the format required for this m
 Get a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *getDevice()* method can be used to retrieve a device from an Internet of Things Foundation organization. When retrieving device details using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
+The *getDevice()* method can be used to retrieve a device from an IoT Platform organization. When retrieving device details using this method, the parameters which must be specified in the method are the deviceTypeId, and the deviceId.
 
 The following code snippet provides an example of the format required for this method.
 
@@ -681,7 +681,7 @@ The following code snippet provides an example of the format required for this m
 Get all Devices
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *getAllDevices()* method can be used to retrieve all devices within an Internet of Things Foundation organization.
+The *getAllDevices()* method can be used to retrieve all devices within an IoT Platform organization.
 
 .. code:: python
 
@@ -691,7 +691,7 @@ The *getAllDevices()* method can be used to retrieve all devices within an Inter
 Update a Device
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *updateDevice()* method is used to modify one or more properties of a device. Any property in the deviceInfo or metadata parameters can be updated. In order to update a device property, it must be defined above the method. The status parameter should contain "alert": True. The Alert property controls whether a device will display error codes in the Internet of Things Foundation user interface, and should be set by default to 'True'.
+The *updateDevice()* method is used to modify one or more properties of a device. Any property in the deviceInfo or metadata parameters can be updated. In order to update a device property, it must be defined above the method. The status parameter should contain "alert": True. The Alert property controls whether a device will display error codes in the IoT Platform user interface, and should be set by default to 'True'.
 
 .. code:: python
     
@@ -858,7 +858,7 @@ The *addErrorCode()* method is used to add an error code to the list of error co
 Connection problem determination
 ----------------------------------
 
-The *getDeviceConnectionLogs()* method is used to list connection log events for a device. This information can be used to help diagnose connectivity problems between the device and the Internet of Things Foundation service. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection events.
+The *getDeviceConnectionLogs()* method is used to list connection log events for a device. This information can be used to help diagnose connectivity problems between the device and the IoT Platform service. The entries record successful connection, unsuccessful connection attempts, intentional disconnection and server-initiated disconnection events.
 
 .. code:: python
 
@@ -873,7 +873,7 @@ Historical Event Retrieval
 
 These operations can be used to view events from all devices, view events from a device type or to view events for a specific device.
 
-Refer to the Historical Event Retrieval section of the `IBM IoT Foundation Connect API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
+Refer to the Historical Event Retrieval section of the `IBM IoT Platform API <https://docs.internetofthings.ibmcloud.com/swagger/v0002.html>`__ for information about the list of query parameters, the request & response model and http status code.
 
 View events from all devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

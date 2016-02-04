@@ -35,7 +35,7 @@ in pem format.  The following file contains the entire certificate chain for
     domains, in which case, if you can not change libraries, you will need to turn 
     off certificate checking.
 
-.. note:: The IoT Foundation requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
+.. note:: The IoT Platform requires TLS v1.2. We suggest the following cipher suites: ECDHE-RSA-AES256-GCM-SHA384, AES256-GCM-SHA384, ECDHE-RSA-AES128-GCM-SHA256 or AES128-GCM-SHA256 *(as of Jun 1 2015)*.
    
 
 
@@ -84,8 +84,8 @@ An application can publish events as if they came from any registered device.
 -  Publish to topic iot-2/type/**device\_type**/id/**device\_id**/evt/**event\_id**/fmt/**format\_string**
 
 .. tip:: You may have a number of devices that are already generating bespoke data
-    that you wish to send to IoTF.  One way to get that data into the service would
-    be to write an application that processes the data and publishes it to IoTF.
+    that you wish to send to the IoT Platform.  One way to get that data into the service would
+    be to write an application that processes the data and publishes it to the IoT Platform.
 
 
 Publishing device commands
@@ -171,7 +171,7 @@ Scalable Applications
 
 You can build scalable applications which will load balance messages across 
 multiple instances of your application by making a few changes to how your 
-application connects to the IoT Foundation. Applications taking advantage
+application connects to the IoT Platform. Applications taking advantage
 of this feature must only attempt to make non-durable subscriptions. A bit
 of experimentation may be needed to understand how many clients are needed
 for the optimum balance in load.
@@ -186,18 +186,18 @@ for the optimum balance in load.
 
 .. note:: Only non-durable subscriptions are supported for scalable applications. 
     Please note that the client id must begin with a capital 'A' in order to designated
-    as a scalable application by IoTF. Multiple clients that are part of the scalable
+    as a scalable application by the IoT Platform. Multiple clients that are part of the scalable
     application should use the exact same client id.
 
 
 How It Works
 ~~~~~~~~~~~~
-The IoTF service extends the MQTT 3.1.1 specification to provide support for shared subscriptions. 
+The IoT Platform service extends the MQTT 3.1.1 specification to provide support for shared subscriptions. 
 Shared subscription can provide simple load balancing functionality for applications. A shared 
 subscription might be needed if a back-end enterprise application can not keep up with the number 
 of messages being published to a specific topic space. For example if many devices were publishing 
 messages that are being processed by a single application. It might be helpful to leverage the load 
-balancing capability of a shared subscription. IoTF shared subscription support is limited to 
+balancing capability of a shared subscription. IoT Platform shared subscription support is limited to 
 non-durable subscriptions only.
 
 A simple example of an auto-scaling application:

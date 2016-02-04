@@ -4,9 +4,9 @@ Device Management Protocol
 Introduction
 ------------
 
-The Device Management capabilities in the Internet of Things Foundation create a new class of connected devices, Managed Devices.
+The Device Management capabilities in the IoT Platform create a new class of connected devices, Managed Devices.
 
-Managed Devices must, by definition, contain a management agent which can understand the Internet of Things Foundation Device Management Protocol, and send a Manage Device request to the IoT Foundation Device Management server. Managed devices can access the device management operations as explained later in this document.
+Managed Devices must, by definition, contain a management agent which can understand the IoT Platform Device Management Protocol, and send a Manage Device request to the IoT Platform Device Management server. Managed devices can access the device management operations as explained later in this document.
 
 The Device Management Protocol defines a set of supported operations. A device management agent can support a subset of the operations, but the Manage device and Unmanage device operations must be supported. A device supporting firmware action operations must also support observation.
 
@@ -16,12 +16,12 @@ The Device Management Protocol is built on top of MQTT.  For details specific to
 The Device Management Lifecycle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. A device and its associated device type are created in the Internet of Things Foundation using the dashboard or API.
-2. The device connects to the Internet of Things Foundation and uses the 'Manage Device' operation to become a managed device.
+1. A device and its associated device type are created in the IoT Platform using the dashboard or API.
+2. The device connects to the IoT Platform and uses the 'Manage Device' operation to become a managed device.
 3. The device's metadata, as described in the Device Model can now be viewed and manipulated through device operations, for example, firmware update and device reboot.
 4. The device can communicate updates through the device-management protocol, such as location or diagnostic information and error codes.
 5. In order to provide a way to deal with defunct devices in large device populations, the 'Manage device' operation request has an optional lifetime parameter. This lifetime parameter is the number of seconds within which the device must make another 'Manage device' request in order to avoid being marked as dormant and becoming an unmanaged device.
-6. When a device is decommissioned it can be removed from the Internet of Things Foundation using the dashboard or REST API.
+6. When a device is decommissioned it can be removed from the IoT Platform using the dashboard or REST API.
 
 
 Return Code Summary
@@ -47,7 +47,7 @@ There are several return codes which are sent in response to the actions listed 
 Manage Device
 -------------
 
-A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the Internet of Things Foundation. It would be usual for a device management agent to send this whenever it starts or restarts.   
+A device uses this request to become a managed device. It should be the first device management request sent by the device after connecting to the IoT Platform. It would be usual for a device management agent to send this whenever it starts or restarts.   
 
 .. important:: Support for this operation is mandatory for any managed devices.
 
@@ -124,7 +124,7 @@ Response Codes
 Unmanage Device
 ---------------
 
-A device uses this request when it no longer needs to be managed. The Internet of Things Foundation will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request.
+A device uses this request when it no longer needs to be managed. The IoT Platform will no longer send new device management requests to this device and all device management requests from this device will be rejected other than a 'Manage device' request.
 
 .. important:: Support for this operation is mandatory for any managed devices.
 
@@ -174,13 +174,13 @@ Update Location
 
 Devices can change their location over time. The update of the location can happen in two ways:
 
-- The device itself notifies the Internet of Things Foundation about the location update: The device retrieves its location from a GPS receiver and sends a device management message to the Internet of Things Foundation to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated.
+- The device itself notifies the IoT Platform about the location update: The device retrieves its location from a GPS receiver and sends a device management message to the IoT Platform to update its location. The timestamp captures the time at which the location was retrieved from the GPS receiver. This means that the timestamp is valid, even if the transmission of the location message was delayed. In the event that the timestamp is omitted from the device management message sent, the current date and time on message receipt will be used when the device's location metadata is updated.
 
-- A user / app updates the location of a device using the Rest API: The Internet of Things Foundation REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata.
+- A user / app updates the location of a device using the Rest API: The IoT Platform REST API is used to set the location metadata of a static device. This can be done at the time that the device is registered, or later if required. It is optional whether to include a timestamp. If omitted, the current date and time will be set as the device’s location metadata.
 
 Location update triggered by device
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Devices that can determine their location can choose to notify the Internet of Things Foundation device management server about location changes.
+Devices that can determine their location can choose to notify the IoT Platform device management server about location changes.
 
 Topic
 ~~~~~~
@@ -193,7 +193,7 @@ Topic
 Location update triggered by user or app
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A user can update the location of a device using the Internet of Things Foundation web interface. An app updates the location of a device using the Rest API (Version 2). In case the device, for which the location update is triggered, is currently active and managed, the device retrieves an update message on topic: 
+A user can update the location of a device using the IoT Platform web interface. An app updates the location of a device using the Rest API (Version 2). In case the device, for which the location update is triggered, is currently active and managed, the device retrieves an update message on topic: 
 
 Topic
 ~~~~~~
@@ -206,7 +206,7 @@ Topic
 Message Format
 ~~~~~~~~~~~~~~
 
-The "measuredDateTime" is the date of location measurement. The "updatedDateTime" is the date of the update to the device information. For efficiency reasons, IoTF may batch updates to location information so the updates may be slightly delayed. The "latitude" and "longitude" should be specified in decimal degrees using WGS84. 
+The "measuredDateTime" is the date of location measurement. The "updatedDateTime" is the date of the update to the device information. For efficiency reasons, the IoT Platform may batch updates to location information so the updates may be slightly delayed. The "latitude" and "longitude" should be specified in decimal degrees using WGS84. 
 
 Whenever location is updated, the values provided for latitude, longitude, elevation and uncertainty are considered as a single multi-value update. The latitude and longitude are mandatory and must both be provided with each update.  Elevation and uncertainty are optional and can be omitted. 
 
@@ -286,7 +286,7 @@ Please note: there is no reqId as no response by device is required.
 Update Device Attributes
 ------------------------
 
-The Internet of Things Foundation can send this request to a device to update values of one or more device attributes. Attributes that can be updated by the Rest API are location, metadata, device information and firmware.
+The IoT Platform can send this request to a device to update values of one or more device attributes. Attributes that can be updated by the Rest API are location, metadata, device information and firmware.
 
 The "value" is the new value of the device attribute. It is a complex field matching the device model. Only writeable fields should be updated as a result of this operation. Values can be updated in:
 
@@ -331,7 +331,7 @@ Payload Format:
 Add Error Code
 --------------
 
-Devices can choose to notify the Internet of Things Foundation device management server about changes in their error status.
+Devices can choose to notify the IoT Platform device management server about changes in their error status.
 
 Topic
 ~~~~~~~
@@ -343,7 +343,7 @@ Topic
 Message Format
 ~~~~~~~~~~~~~~~
 
-The "errorCode" is a current device error code that needs to be added to the Internet of Things Foundation.
+The "errorCode" is a current device error code that needs to be added to the IoT Platform.
 
 Request Format:
 
@@ -536,7 +536,7 @@ Response Codes
 Observe Attribute Changes
 -------------------------
 
-The Internet of Things Foundation can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request ("notify" message) to the Internet of Things Foundation whenever the observed attributes value changes.
+The IoT Platform can send this request to a device to observe changes of one or more device attributes. When the device receives this request, it must send a notification request ("notify" message) to the IoT Platform whenever the observed attributes value changes.
 
 .. important:: Devices must implement observe, notify & cancel operations in order to support :ref:`firmware-actions-update`.
 
@@ -594,7 +594,7 @@ Response Format:
 Cancel Attribute Observation
 ----------------------------
 
-The Internet of Things Foundation can send this request to a device to cancel the current observation of one or more device attributes. The "fields" is an array of the device attribute names from the device model, for example, values could be "location", "mgmt.firmware" or "mgmt.firmware.state".
+The IoT Platform can send this request to a device to cancel the current observation of one or more device attributes. The "fields" is an array of the device attribute names from the device model, for example, values could be "location", "mgmt.firmware" or "mgmt.firmware.state".
 
 The "message" field must be specified if "rc" is not 200.
 
@@ -643,7 +643,7 @@ Response Format:
 Notify Attribute Changes
 ------------------------
 
-The Internet of Things Foundation can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value.
+The IoT Platform can make an observation request referring to a specific attribute or set of values. When the value of the attribute or attributes changes, the device must send a notification containing the latest value.
 
 The "field_name" value is the name of the attribute that has changed, the "field_value" is the current value of the attribute. The attribute can be a complex field, if multiple values in a complex field are updated as a result of a single operation, only a single notification message should be sent.
 

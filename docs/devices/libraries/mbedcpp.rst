@@ -3,7 +3,7 @@ mBed C++ for Device Developers
 
 - See `ibmiotf <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ on `developer.mbed.org <https://developer.mbed.org/>`_
 
-The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to connect `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ and etc.. to IBM Internet of Things Foundation Cloud service with ease. Although the library uses C++, it still avoids dynamic memory allocations and use of STL functions as the mBed devices sometimes have idiosyncratic memory models which make porting difficult. In any case, the library allows one to make memory use as predictable as possible. 
+The `mBed C++ client library <https://developer.mbed.org/teams/IBM_IoT/code/IBMIoTF/>`_ can be used to connect `mBed devices <https://www.mbed.com/en/>`__ like `LPC1768 <https://developer.mbed.org/platforms/mbed-LPC1768/>`__, `FRDM-K64F <https://developer.mbed.org/platforms/FRDM-K64F/>`__ and etc.. to the IoT Platform Cloud service with ease. Although the library uses C++, it still avoids dynamic memory allocations and use of STL functions as the mBed devices sometimes have idiosyncratic memory models which make porting difficult. In any case, the library allows one to make memory use as predictable as possible. 
 
 Dependencies
 ------------
@@ -16,7 +16,7 @@ How to use the library
 Use the `mBed Compiler <https://developer.mbed.org/compiler/>`__ to create your applications using this mBed C++ IBMIoTF Client Library. The mBed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed.
 
 
-Refer to the step by step `mBed C++ Client Library for IBM IoT Foundation Recipe <https://developer.ibm.com/recipes/tutorials/mbed-c-client-library-for-ibm-iot-foundation/>`__ that shows how one can use this library to connect an ARM mBed NXP LPC 1768 microcontroller to IBM Internet of Things Foundation.
+Refer to the step by step `mBed C++ Client Library for IBM IoT Platform Recipe <https://developer.ibm.com/recipes/tutorials/mbed-c-client-library-for-ibm-iot-foundation/>`__ that shows how one can use this library to connect an ARM mBed NXP LPC 1768 microcontroller to the IoT Platform.
 
 Constructor
 -------------------------------------------------------------------------------
@@ -29,9 +29,9 @@ The constructor builds the client instance, and accepts the following parameters
 * auth-method - Method of authentication (This is an optional field, needed only for registered flow and the only value currently supported is "token"). 
 * auth-token - API key token (This is an optional field, needed only for registered flow).
 
-These arguments create definitions which are used to interact with the Internet of Things Foundation service. 
+These arguments create definitions which are used to interact with the IoT Platform service. 
 
-The following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation quickstart service.
+The following code block shows how to create a DeviceClient instance to interact with the IoT Platform quickstart service.
 
 .. code:: c++
 
@@ -39,7 +39,7 @@ The following code block shows how to create a DeviceClient instance to interact
   ....
   ....
   
-  // Set IoT Foundation connection parameters
+  // Set IoT Platform connection parameters
   char organization[11] = "quickstart";     // For a registered connection, replace with your org
   char deviceType[8] = "LPC1768";           // For a registered connection, replace with your device type
   char deviceId[3] = "01";                  // For a registered connection, replace with your device id
@@ -55,9 +55,9 @@ The following code block shows how to create a DeviceClient instance to interact
   }
   ....
 
-As shown above, if the device id is not specified, the DeviceClient uses the MAC address of the device as device id and connects to IBM Internet of Things Foundation. The device code can use getDeviceId() method to retrieve the device id from the DeviceClient instance.
+As shown above, if the device id is not specified, the DeviceClient uses the MAC address of the device as device id and connects to the IoT Platform. The device code can use getDeviceId() method to retrieve the device id from the DeviceClient instance.
 
-The following code block shows how to create a DeviceClient instance to interact with the Internet of Things Foundation Registered organization.
+The following code block shows how to create a DeviceClient instance to interact with the IoT Platform Registered organization.
 
 .. code:: c++
 
@@ -65,7 +65,7 @@ The following code block shows how to create a DeviceClient instance to interact
   ....
   ....
   
-  // Set IoT Foundation connection parameters
+  // Set IoT Platform connection parameters
   char organization[11] = "hrcl78";
   char deviceType[8] = "LPC1768";
   char deviceId[3] = "LPC176801";
@@ -78,10 +78,10 @@ The following code block shows how to create a DeviceClient instance to interact
 
 ----
 
-Connecting to the Internet of Things Foundation
+Connecting to the IoT Platform
 ------------------------------------------------
 
-The device can connect to the Internet of Things Foundation by calling the connect function on the DeviceClient instance.
+The device can connect to the IoT Platform by calling the connect function on the DeviceClient instance.
 
 .. code:: c++
 
@@ -95,7 +95,7 @@ The device can connect to the Internet of Things Foundation by calling the conne
   bool status = client.connect();
   
 
-After the successful connection, the device can publish events to IBM Internet of Things Foundation and listen for commands.
+After the successful connection, the device can publish events to the IoT Platform and listen for commands.
 
 Also, the device can query the status of the connection using the isConnected() method as follows,
 
@@ -112,16 +112,16 @@ Also, the device can query the status of the connection using the isConnected() 
 
 Publishing events
 -------------------------------------------------------------------------------
-Events are the mechanism by which devices publish data to the Internet of Things Foundation. The device controls the content of the event and assigns a name for each event it sends.
+Events are the mechanism by which devices publish data to the IoT Platform. The device controls the content of the event and assigns a name for each event it sends.
 
-When an event is received by the IBM IoT Foundation the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
+When an event is received by the IBM IoT Platform the credentials of the connection on which the event was received are used to determine from which device the event was sent. With this architecture it is impossible for a device to impersonate another device.
 
 Events can be published at any of the three `quality of service levels <../messaging/mqtt.html#/>`__ defined by the MQTT protocol.  By default events will be published as qos level 0.
 
 Publish event using default quality of service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The below sample shows how to publish various data points of LPC1768 like x,y & z axis, joystick position, current temperature reading and etc.. to IoT Foundation in JSON format.
+The below sample shows how to publish various data points of LPC1768 like x,y & z axis, joystick position, current temperature reading and etc.. to IoT Platform in JSON format.
 
 .. code:: c++
 

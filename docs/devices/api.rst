@@ -52,5 +52,4 @@ Quality of Service
 
 The HTTP(S) protocol provides "at most once" best effort delivery, analagous to the QoS0 quality of service provided by the MQTT protocol. When using QoS0, or the HTTP(S) equivalent, to deliver event messages, the device or application must implement retry logic to guarantee delivery.
 
-For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the IoT Platform <../messaging/mqtt.html>`__ documentation.
-
+For more information on the MQTT protocol and Quality of Service levels, please see `MQTT for the IoT Platform <../reference/mqtt/index.html>`__ documentation.

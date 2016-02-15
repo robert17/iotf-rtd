@@ -96,9 +96,23 @@ Publishing events
 
 A gateway can publish events from itself and on behalf of any device
 connected via the gateway by using the following topic and substituting 
-in the appropriate ``typeId`` and ``deviceId`` based on the origin of the event:
+in the appropriate ``typeId`` and ``deviceId`` based on the intended 
+origin of the event:
 
   iot-2/type/\ **typeId**/id/\ **deviceId**/evt/\ **eventId**/fmt/\ **formatString**
+
+Example
+~~~~~~~
++-----------+------------+--------------+
+|           | ``typeId`` | ``deviceId`` |
++===========+============+==============+
+| Gateway 1 | mygateway  | gateway1     |
++-----------+------------+--------------+
+| Device 1  | mydevice   | device1      |
++-----------+------------+--------------+
+
+- Gateway 1 can publish it's own status events: ``iot-2/type/mygateway/id/gateway1/evt/status/fmt/json``
+- Gateway 1 can publish status events on behalf of Device 1: ``iot-2/type/mydevice/id/device1/evt/status/fmt/json``
 
 
 .. important:: The message payload is limited to a maximum of 4096 bytes.  Messages larger than this will be rejected.
@@ -109,9 +123,27 @@ Subscribing to commands
 
 A gateway can subscribe to commands directed at the gateway itself and to any device
 connected via the gateway by using the following topic and substituting 
-in the appropriate ``typeId`` and ``deviceId`` of the device.:
+in the appropriate ``typeId`` and ``deviceId``:
 
   iot-2/type/\ **typeId**/id/\ **deviceId**/cmd/\ **commandId**/fmt/\ **formatString**
+
+The MQTT ``+`` wildcard can be used for ``typeId``, ``deviceId``, ``commandId`` 
+and ``formatString`` to subscribe to multiple command sources.
+
+Example
+~~~~~~~
+
++-----------+------------+--------------+
+|           | ``typeId`` | ``deviceId`` |
++===========+============+==============+
+| Gateway 1 | mygateway  | gateway1     |
++-----------+------------+--------------+
+| Device 1  | mydevice   | device1      |
++-----------+------------+--------------+
+
+- Gateway 1 can subscribe to commands directed at the gateway: ``iot-2/type/mygateway/id/gateway1/cmd/+/fmt/+``
+- Gateway 1 can subscribe to commands sent to Device 1: ``iot-2/type/mydevice/id/device1/cmd/+/fmt/+``
+- Gateway 1 can subscribe any command sent to devices of type "mydevice": ``iot-2/type/mydevice/id/+/cmd/+/fmt/+``
 
 
 Managed Gateways

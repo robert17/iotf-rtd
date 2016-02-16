@@ -1,8 +1,8 @@
 ===============================================================================
-Securing the Internet of Things
+Securing the Watson IoT platform
 ===============================================================================
 
-The IBM Internet of Things Foundation (IoT Foundation) is a fully managed, 
+The IBM Watson IoT platform is a fully managed, 
 cloud-hosted service that makes it simple to derive value from Internet of 
 Things (IoT) devices.
 
@@ -32,7 +32,7 @@ How do we secure management of your organization?
 -------------------------------------------------------------------------------
 The browser-based GUI and REST APIs are fronted by HTTPS, with a certificate 
 signed by DigiCert enabling you to trust that you're connecting to 
-the genuine IoT Foundation.
+the genuine Watson IoT platform.
 
 * GUI: authenticated via your IBM ID.
 * REST API: once you create an API key through the GUI, you can use this 
@@ -48,7 +48,7 @@ How do we secure your device and application credentials?
 -------------------------------------------------------------------------------
 When devices are registered or API keys are generated, the authentication token 
 is salted and hashed. This means your organization's credentials can never be 
-recovered from our systems - even in the unlikely event that the IoT Foundation 
+recovered from our systems - even in the unlikely event that the Watson IoT platform 
 is compromised.
 
 Device credentials and API keys can be individually revoked if they are 
@@ -60,7 +60,7 @@ compromised.
 ----
 
 
-How do we ensure your devices connect securely to the IoT Foundation?
+How do we ensure your devices connect securely to the Watson IoT platform?
 -------------------------------------------------------------------------------
 * Devices connect through a unique combination of clientId and authentication 
   token that only you know. 
@@ -84,7 +84,7 @@ authorized to publish and subscribe to a restricted topic space:
 
 All devices work with the same topic space. The authentication credentials
 provided by the client connecting dictate to which device this topic space
-will be scoped by the IoT Foundation.  This prevents devices from being 
+will be scoped by the Watson IoT platform.  This prevents devices from being 
 able to impersonate another device.
 
 The only way to impersonate another device is by obtaining compromised security
@@ -106,7 +106,7 @@ the complementary side of a full duplex communication loop.
 How do we prevent data leaking between organizations?
 -------------------------------------------------------------------------------
 The topic space in which devices and applications operate is 
-scoped within a single organization. When authenticated, the IoT Foundation 
+scoped within a single organization. When authenticated, the Watson IoT platform 
 transforms the topic structure using an organization ID based on the client 
 authentication, making it impossible for data from one organization to be 
 accessed from another.

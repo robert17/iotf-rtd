@@ -104,7 +104,10 @@ token as the password when making your MQTT connection.
 Publishing events
 -----------------
 
--  Publish to topic iot-2/evt/\ **event\_id**/fmt/**format\_string**
+    Devices can only publish to the event topic of the form iot-2/evt/\ **event\_id**/fmt/**format\_string**
+
+-  **event\_id** is the ID of the event, for example "status".
+-  **format\_string** is the format of the event payload, for example "json".
 
 .. important:: The message payload is limited to a maximum of 4096 bytes.  Messages larger than this will be rejected.
 
@@ -112,8 +115,10 @@ Publishing events
 Subscribing to commands
 -----------------------
 
--  Subscribe to topic iot-2/cmd/\ **command\_id**/fmt/**format\_string**
+    Devices can only subscribe to command topics of the form iot-2/cmd/\ **command\_id**/fmt/**format\_string**
 
+-  **command\_id** is the ID of the command, for example "update".
+-  **format\_string** is the format of the command payload, for example "json".
 
 Managed Devices
 ---------------

@@ -4,12 +4,12 @@ External Service Integrations
 Overview
 --------
 External service integration allows you to bind metadata or function supported by 
-another service to your IoTF account.
+another service to your Watson IoT account.
 
 Jasper
 ------
 
-Jasper is an administration and management platform for SIM devices. Jasper has been integrated into the IBM IoT Foundation platform dashboard, making it possible to administer Jasper devices through your IoTF platform organization dashboard.
+Jasper is an administration and management platform for SIM devices. Jasper has been integrated into the IBM Watson IoT platform dashboard, making it possible to administer Jasper devices through your Watson IoT platform organization dashboard.
 
 .. important:: Jasper integration is currently available as part of a limited beta.  Future updates 
   may include changes incompatible with the current version of this feature.
@@ -40,24 +40,24 @@ These operations can be accessed in the device drilldown of a Jasper connected d
 Configuration
 ~~~~~~~~~~~~~
 
-In order to connect your Internet of Things Foundation platform organization with your Jasper account, there are two stages of configuration which must first be performed. The first stage of configuration is Organization Configuration.
+In order to connect your Watson IoT Platform platform organization with your Jasper account, there are two stages of configuration which must first be performed. The first stage of configuration is Organization Configuration.
 
 
 Extension Enablement
 ^^^^^^^^^^^^^^^^^^^^
 
-To enable Jasper integrtion with your IoTF organization follow these steps:
+To enable Jasper integrtion with your Watson IoT organization follow these steps:
 
-1. When in your Internet of Things Foundation platform dashboard, click the wrench icon on the right to open the Configuration Settings.
+1. When in your Watson IoT platform dashboard, click the wrench icon on the right to open the Configuration Settings.
 2. Scroll down the to the Extensions section, and set Jasper to 'On'.
 3. Enter your Jasper username, password, license key, and API endpoint.
 
 Device Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
-Devices which are connected to both your Internet of Things Foundation platform organization and your Jasper account can be configured to display data from Jasper in the IoT Foundation platform dashboard. Jasper configuration cannot be applied as part of the Add Device process, only already connected devices can be configured with Jasper. To configure your Jasper-connected devices, follow these steps:
+Devices which are connected to both your Watson IoT platform organization and your Jasper account can be configured to display data from Jasper in the Watson IoT platform dashboard. Jasper configuration cannot be applied as part of the Add Device process, only already connected devices can be configured with Jasper. To configure your Jasper-connected devices, follow these steps:
 
-1. In the devices tab of your Internet of Things Foundation platform dashboard, find the Jasper-connected device to be configured.
+1. In the devices tab of your Watson IoT platform dashboard, find the Jasper-connected device to be configured.
 2. Select the device to open the Device Drilldown view.
 3. Scroll down to the 'Extension Configuration section. The extension configuration must be entered as JSON in the following format:
 

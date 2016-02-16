@@ -4,7 +4,7 @@ MQTT
 ====
 
 The primary mechanism that devices and applications use to communicate
-with the IBM Internet of Things Foundation is MQTT; this is a protocol
+with the IBM Watson IoT platform is MQTT; this is a protocol
 designed for the efficient exchange of real-time data with sensor and
 mobile devices.
 
@@ -121,10 +121,10 @@ If clean session is set to true, the buffer is reset.
 Message Payload
 ---------------
 
-The Foundation supports sending and recieving messages in any format.
+The Watson IoT platform supports sending and recieving messages in any format.
 
 
-IoTF Maximum Message Payload Size
+Watson IoT Platform Maximum Message Payload Size
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The maximum payload size is 4 kilobytes (kB).  If messages with payloads larger

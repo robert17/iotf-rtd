@@ -16,7 +16,7 @@ you should find yourself looking at an empty dashboard:
 Choose your Region
 ------------------
 Now, before you go any further you need to consider data soveriegnty and make a decision as to which of the available regions you want 
-to register your service instance with.  Currently IoTF is available in two regions:
+to register your service instance with.  Currently the Watson IoT platform is available in two regions:
 
 - United Kingom
 - United States
@@ -25,7 +25,7 @@ to register your service instance with.  Currently IoTF is available in two regi
   Data sovereignty is the concept that information which has been converted and stored 
   in binary digital form is subject to the laws of the country in which it is located.
 
-The region your IoTF instance will be provisioned in will be determined by the Bluemix region you are using.  You can switch Bluemix regions via the controls in the top right corner of the Bluemix dashboard.  You can also determine which region are currently have selected by the URL in your browser:
+The region your Watson IoT platform instance will be provisioned in will be determined by the Bluemix region you are using.  You can switch Bluemix regions via the controls in the top right corner of the Bluemix dashboard.  You can also determine which region are currently have selected by the URL in your browser:
 
 - United Kingdom: console.\ **eu-gb**\ .bluemix.net
 - United States: console.\ **ng**\ .bluemix.net
@@ -34,19 +34,19 @@ The region your IoTF instance will be provisioned in will be determined by the B
     :align: center
 
 
-Provision an IoTF Service Instance
+Provision a Watson IoT platform Service Instance
 ----------------------------------
 From anywhere in the Bluemix dashboard click **catalog** in the top navigation, this will take you to a list of all services available on Bluemix.  
 
-1. Type ``internet of things foundation`` into the search box at the top of the page to filter out all the other services.
-2. Click ``View More``  on the **Internet of Things Foundation** service tile.  
+1. Type ``Internet of Things`` into the search box at the top of the page to filter out all the other services.
+2. Click ``View More``  on the **Watson IoT platform** service tile.  
 3. Optionally give your service instance a name (or simply accept the generated name)
 4. Click ``Create``
 
 .. image:: bm_provision.png
     :align: center
 
-After a short delay you will find yourself the proud owner of an organization on IBM's Internet of Things Foundation.
+After a short delay you will find yourself the proud owner of an organization on the IBM Watson IoT platform.
 
 .. image:: bm_service_instance_dashboard.png
     :align: center
@@ -54,7 +54,7 @@ After a short delay you will find yourself the proud owner of an organization on
 
 Additional Setup and Experimentation
 ------------------------------------
-Click the ``Launch Dashboard`` button when viewing your new service instance within Bluemix, this will take you to your IoTF Dashboard.
+Click the ``Launch Dashboard`` button when viewing your new service instance within Bluemix, this will take you to your Watson IoT platform Dashboard.
 
 Configure Access
 ~~~~~~~~~~~~~~~~
@@ -80,10 +80,10 @@ Take a note of your ``API Key`` and ``Authentication Token`` - you will need the
 Now we have an API key we want to run an application, the simpler the better.  
 
 .. note::
-  IoTF has client library support for multiple languages, but for the purpose of this getting started 
+  The Watson IoT platform has client library support for multiple languages, but for the purpose of this getting started 
   tutorial we're going to stick with Python.  If you don't already have `Python <https://www.python.org/downloads/>`_ installed now is the time to do so.
 
-Install the latest version of the IoTF python client library using pip
+Install the latest version of the Watson IoT platform python client library using pip
 
 .. code::
 
@@ -141,7 +141,7 @@ When you launch the application you will see nothing overly exciting
 Connect a Device
 ~~~~~~~~~~~~~~~~
 Before we can register a device we have to define a device type.  A ``device type`` is intended to represent a group of devices that are identical, it can be useful to think 
-of the ``device type`` as analogous to a model in the traditional model:serial identification scheme.  Leave you application running to return to your IoTF Dashboard and 
+of the ``device type`` as analogous to a model in the traditional model:serial identification scheme.  Leave you application running to return to your Watson IoT platform Dashboard and 
 navigate to ``Devices > Device Types``, click ``Create Type`` and enter ``python-sample`` as the name, all other fields are optional, so we're just going to skip past the 
 rest of the options for the device type for now.
 

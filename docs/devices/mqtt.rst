@@ -106,8 +106,8 @@ Publishing events
 
     Devices can only publish to the event topic of the form iot-2/evt/\ **event\_id**/fmt/**format\_string**
 
--  **event\_id** is the ID of the event, for example "status".
--  **format\_string** is the format of the event payload, for example "json".
+-  **event\_id** is the ID of the event, for example "status".  The event ID can be any string permitted by MQTT.  Subscriber applications must use this string in their subscription topic to receive the events published on this topic if wildcards are not used.
+-  **format\_string** is the format of the event payload, for example "json".  The format can be any string permitted by MQTT.  Subscriber applications must use this string in their subscription topic to receive events published on this topic if wildcards are not used.  If the format is not "json", then messages will not be stored in the Historian.
 
 .. important:: The message payload is limited to a maximum of 4096 bytes.  Messages larger than this will be rejected.
 
@@ -115,10 +115,10 @@ Publishing events
 Subscribing to commands
 -----------------------
 
-    Devices can only subscribe to command topics of the form iot-2/cmd/\ **command\_id**/fmt/**format\_string**
+    Devices can only subscribe to command topics of the form iot-2/cmd/\ **command\_id**/fmt/**format\_string**.  They cannot subscribe to other devices' events and will only receive commands published specifically to the device itself.
 
--  **command\_id** is the ID of the command, for example "update".
--  **format\_string** is the format of the command payload, for example "json".
+-  **command\_id** is the ID of the command, for example "update".  The command ID can be any string permitted by MQTT.  A device must use this string in its subscription topic in order to receive commands published on this topic if wildcards are not used.
+-  **format\_string** is the format of the command payload, for example "json".  The format can be any string permitted by MQTT.  A device must use this string in its subscription topic in order to receive commands published on this topic if wildcards are not used.
 
 Managed Devices
 ---------------

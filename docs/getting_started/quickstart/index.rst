@@ -1,7 +1,7 @@
 Quickstart
 ==========
 
-`Quickstart <https://quickstart.internetofthings.ibmcloud.com>`_ is an open sandbox allowing developers to quickly and easily get devices connected to IoTF with registration required.  Any  device that can run an MQTT client can be connected to Quickstart within mimimum fuss, `DeveloperWorks Recipes <https://developer.ibm.com/recipes>`_ features dozens of community produced tutorials for connecting different devices to the service, including but not limited to:
+`Quickstart <https://quickstart.internetofthings.ibmcloud.com>`_ is an open sandbox allowing developers to quickly and easily get devices connected to the Watson IoT platform with registration required.  Any  device that can run an MQTT client can be connected to Quickstart within mimimum fuss, `DeveloperWorks Recipes <https://developer.ibm.com/recipes>`_ features dozens of community produced tutorials for connecting different devices to the service, including but not limited to:
 
 - `OpenBlocks IoT BX1G <https://developer.ibm.com/recipes/tutorials/openblocks-iot-bx1g-for-iot-foundation-quickstart/>`_
 - `Reactive Blocks <https://developer.ibm.com/recipes/tutorials/reactive-blocks-and-java-to-iot-foundation-part-1-quickstart/>`_
@@ -11,7 +11,7 @@ Simulated Device
 ----------------
 In addition to these, we have developed a simple browser-based simulated device, designed for mobile devices, that can be used to connect any device with a web browser to the service.  Open the following URL on a mobile phone or tablet in your favourite browser: http://quickstart.internetofthings.ibmcloud.com/iotsensor. 
 
-This will launch a browser-based simulated device connecting to IoTF. There are three sensors which you can manipulate using the on-screen controls:
+This will launch a browser-based simulated device connecting to the Watson IoT platform. There are three sensors which you can manipulate using the on-screen controls:
 
 - Temperature
 - Humidity
@@ -33,7 +33,7 @@ Now, as you adjust the sensor values in your simulated device you will be able t
 
 Mosquitto Demonstration
 -----------------------
-`Mosquitto <http://mosquitto.org/>`_ is a cross platform open source MQTT client that is perfect for experimenting with the IoTF service.  Once you have installed mosquitto pick an ``applicationId``, a ``deviceId`` that have a good chance to be unique (otherwise your experiment will clash with someone 
+`Mosquitto <http://mosquitto.org/>`_ is a cross platform open source MQTT client that is perfect for experimenting with the Watson IoT platform service.  Once you have installed mosquitto pick an ``applicationId``, a ``deviceId`` that have a good chance to be unique (otherwise your experiment will clash with someone 
 else running through this same demonstration). 
 
 .. note:: There are a couple of restrictions you must consider when dedicing on these IDs:
@@ -67,4 +67,4 @@ Returning to your application terminal you should see the two events that you pu
     {"helloworld": 1}
     {"helloworld": 2}
 
-That's all there is to it.  You have successfully connected a device and an application to IoTF over MQTT, sent an event from the device to the service and recieved that event in your application.
+That's all there is to it.  You have successfully connected a device and an application to the Watson IoT platform over MQTT, sent an event from the device to the service and recieved that event in your application.

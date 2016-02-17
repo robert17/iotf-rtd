@@ -110,7 +110,7 @@ Now, create a really simple application that will connect using the API key you 
   options = {
     "org": "<INSERT_ORGANIZATION_ID>", 
     "id": "MyFirstApplication", 
-    "auth-method": "use-token-auth", 
+    "auth-method": "apikey", 
     "auth-key": "<INSERT_API_KEY>", 
     "auth-token": "<INSERT_AUTH_TOKEN>"
   }

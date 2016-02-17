@@ -1,7 +1,7 @@
 Register
 ========
 
-Registering for an account on IoTF and connecting your first device is simple and will take less than 10 minutes to complete.
+Registering for an account on the Watson IoT platform and connecting your first device is simple and will take less than 10 minutes to complete.
 
 
 Create a Bluemix Account
@@ -220,7 +220,7 @@ events submitted by your device in real time.
   2015-12-19T00:35:05.689215+00:00 python-sample:MyFirstDevice     greeting: {"hello": "world", "x": 8}
   2015-12-19T00:35:06.688842+00:00 python-sample:MyFirstDevice     greeting: {"hello": "world", "x": 9}
 
-Finally, if you return to the IoTF dashboard and scroll down to ``Device Events`` you will be able to see all the events that you just sent.
+Finally, if you return to the Watson IoT platform dashboard and scroll down to ``Device Events`` you will be able to see all the events that you just sent.
 
 .. image:: dashboard_events.png
     :align: center

@@ -9,7 +9,7 @@ device types to represent individual device models and apply default metadata to
 
 Connectivity
 ------------
-Securely connect your devices, gateways and applications directly to IoTF via MQTT.  See the section 
+Securely connect your devices, gateways and applications directly to the Watson IoT platform via MQTT.  See the section 
 on MQTT in the :ref:`reference material <ref-mqtt>` to learn more about the advantages of using 
 this protocol.  Model the data from your device as events and control the flow of events into your 
 applications.
@@ -17,7 +17,7 @@ applications.
 
 Gateway Support
 ---------------
-In many cases a direct connection can not be made between the service and a device, IoTF allows 
+In many cases a direct connection can not be made between the service and a device, the Watson IoT platform allows 
 gateway devices to connect that can provide indirect connectivity for multiple devices.
 
 .. important:: This feature is currently available as part of a limited beta.  Future updates 
@@ -27,17 +27,17 @@ gateway devices to connect that can provide indirect connectivity for multiple d
 
 Device Management
 -----------------
-Optionally, allow IoTF to manage the lifecycle of your devices by implementing support for 
-IoTF's device management protocol in your devices.  The means by which the device
+Optionally, allow the Watson IoT platform to manage the lifecycle of your devices by implementing support for 
+the Watson IoT platform's device management protocol in your devices.  The means by which the device
 connects to the service does not affect the device management protocol, which functions the 
 same for directly connected, indirectly connected, and gateway devices.  
 
 
 External Service Integration
 ----------------------------
-IoTF supports integration with external services to bring data and operations supported by 
+The Watson IoT platform supports integration with external services to bring data and operations supported by 
 other online services into the platform, allowing your application and device developers to
-seemlessly interact with those services without ever leaving the comfort of the IoTF APIs.
+seemlessly interact with those services without ever leaving the comfort of the Watson IoT platform APIs.
 
 .. important:: This feature is currently available as part of a limited beta.  Future updates 
   may include changes incompatible with the current version of this feature.  Try it out and `let us know what you 
@@ -46,7 +46,7 @@ seemlessly interact with those services without ever leaving the comfort of the 
 
 Historian
 ---------
-Configure IoTF to store a record of the events your devices generate.
+Configure the Watson IoT platform to store a record of the events your devices generate.
 
 .. warning:: **Message format restrictions apply to the Historian**
   
@@ -61,7 +61,7 @@ Configure IoTF to store a record of the events your devices generate.
   The **d** element is where you include all data for the event (or
   command) being transmitted in the message. 
   
-  * This element is required for your message to meet the IoTF message specification.
+  * This element is required for your message to meet the Watson IoT platform message specification.
   * This must always be a JSON object (not an array)
   * In the case where you wish to send no data the **d** element should 
     still be present, but contain an empty object.

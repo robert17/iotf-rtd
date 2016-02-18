@@ -24,7 +24,7 @@ Authentication
 
 Requests must include an authorization header. Basic authentication the only method supported. Applications 
 are authenticated by API keys, when an application makes any request to the IoT Platform API it must present an API 
-as it's crednetials:
+as it's credentials:
 
 - username = "use-token-auth"
 - password = Authentication token
@@ -35,7 +35,7 @@ Content-Type
 A ``Content-Type`` request header must be provided with the request. The following table shows the supported types and how they are mapped to the IoT Platform internal formats.
 
 +----------------------------+-----------------------+
-| Content-Type Header        | IoT Platform Format |
+| Content-Type Header        | IoT Platform Format   |
 +============================+=======================+
 | text/plain                 | text                  |
 +----------------------------+-----------------------+

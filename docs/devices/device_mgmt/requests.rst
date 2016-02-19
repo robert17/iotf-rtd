@@ -245,17 +245,7 @@ This response will trigger the next request.
    Message:
    {
       "rc" : 200,
-      "reqId" : "909b477c-cd37-4bee-83fa-1d568664fbe8",
-      "d" : {
-         "fields" : [{
-               "field" : "mgmt.firmware",
-               "value" : {
-                  "state" : 0,
-                  "updateStatus" : 0
-               }
-            }
-         ]
-      }
+      "reqId" : "909b477c-cd37-4bee-83fa-1d568664fbe8"
    }
    
 This exchange will trigger the last step.
@@ -297,12 +287,14 @@ Here some examples:
    Topic: iotdevice-1/notify
    Message:
    {
+      "reqId" : "123456789"; 
       "d" : {
-         "field" : "mgmt.firmware",
-         "value" : {
-            "state" : 1,
-            "updateStatus" : 0
-         }
+         "fields" : [ {
+         	"fields" : "mgmt.firmware",
+         	"value" : {
+            		"state" : 1
+            	}
+         } ]
       }
    }
    
@@ -315,15 +307,16 @@ Here some examples:
    Topic: iotdevice-1/notify
    Message:
    {
+      "reqId" : "1234567890"; 
       "d" : {
-         "field" : "mgmt.firmware",
-         "value" : {
-            "state" : 2,
-            "updateStatus" : 0
-         }
+         "fields" : [ {
+         	"fields" : "mgmt.firmware",
+         	"value" : {
+            		"state" : 2
+            	}
+         } ]
       }
    }
- 
 |
 
 After the notification with ``mgmt.firmware.state`` set to ``2`` was published, a request will be triggered on the ``iotdm-1/cancel``-topic, which cancels the observation of the ``mgmt.firmware``-field. 

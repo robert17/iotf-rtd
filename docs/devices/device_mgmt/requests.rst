@@ -110,7 +110,7 @@ attribute describes the status of the firmware download. The possible values for
 
 
 
-The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware update. The possible values for ``mgmt.firmware.status`` are:
+The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware update. The possible values for ``mgmt.firmware.updateStatus`` are:
 
 +--------------+---------------------+----------------------------------------------------------------------+
 | Value        | State               | Meaning                                                              |

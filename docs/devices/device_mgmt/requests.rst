@@ -6,40 +6,55 @@ Device Management Requests
 Device Actions - Reboot
 ----------------------
 
-The IoT Platform can send this request to reboot a device. The action is considered complete when the device sends a Manage device request following its reboot.
-	
-If this operation can be initiated immediately, set "rc" to 202, if reboot attempt fails, the "rc" is set to 500 and the "message" field should be set accordingly, if the reboot is not supported, set "rc" to 501 and optionally set "message" accordingly.
+The reboot action can be initiated by using either the IoT Platform dashboard, or the REST API. 
 
+To initiate a reboot action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
-Topic
-~~~~~~
+- The action ``device/reboot``
+- A list of devices to reboot
 
-.. code:: 
-
-	iotdm-1/mgmt/initiate/device/reboot
-
-	
-Message format
-~~~~~~~~~~~~~~~
-
-Request Format:
-
-.. code:: 
-
-	{
-		"reqId": "string"
-	}
-
-Response Format:
+Example device reboot request on which the following examples are based:
 
 .. code::
 
-	{
-		"rc": "response_code",
-		"message": "string",
-		"reqId": "string"
-	}
+   {
+      "action" : "device/reboot",
+      "devices" : [{
+            "typeId" : "someType",
+            "deviceId" : "someId"
+         }
+      ]
+   }
+   
+The device management server in the IoT Platform uses the Device Management Protocol to send a request to the devices, initiating the reboot.
+	
+If this operation can be initiated immediately, set ``rc`` to ``202``. If the reboot attempt fails, set ``rc`` to ``500`` and set the ``message`` field accordingly. If reboot is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly.
 
+The action is considered complete when the device sends a Manage device request following its reboot.
+
+Device Management Protocol for Device Reboot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code::
+
+   Incoming request from the IoT Platform:
+   
+   Topic: iotdm-1/mgmt/initiate/device/reboot
+   Message: 
+   {
+      "reqId" : "f38faafc-53de-47a8-a940-e697552c3194",
+   }
+   
+   Outgoing response from device:
+   
+   Topic: iotdevice-1/response
+   Message: 
+   {
+      "rc": "response_code",
+      "message": "string",
+      "reqId": "string"
+   }
+	
 
 ----
 
@@ -49,38 +64,54 @@ Response Format:
 Device Actions - Factory Reset
 -----------------------------
 
-The IoT Platform can send this request to reset the device to factory settings, as part of this process, the device also reboots. The action is considered complete when the device sends a Manage device request following its reboot.
+The factory reset action can be initiated by using either the IoT Platform dashboard, or the REST API.
 
-The response code should be 202 if this action can be initiated immediately. If the factory reset attempt fails, the "rc" should be 500 and the "message" field should be set accordingly, if the factory reset action is not supported, set "rc" to 501 and optionally set "message" accordingly.
+To initiate a factory reset action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
-Topic
-~~~~~~
+- The action ``device/factoryReset``
+- A list of devices to reset
+
+Example factory reset request on which the following examples are based:
+
+-- code::
+
+   {
+      "action" : "device/factoryReset",
+      "devices" : [{
+            "typeId" : "someType",
+            "deviceId" : "someId"
+         }
+      ]
+   }
+   
+The device management server in the IoT Platform uses the Device Management Protocol to send a request to the devices, initiating the factory reset. As part of this process, the device also reboots. 
+
+If the operation can be initiated immediately, set ``rc`` to ``202``. If the factory reset attempt fails, set ``rc`` to ``500`` and set the ``message`` field accordingly. If the factory reset action is not supported, set ``rc`` to ``501`` and optionally set ``message`` accordingly.
+
+The action is considered complete when the device sends a Manage device request following its reboot.
+
+Device Management Protocol for Device Reset
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
-	iotdm-1/mgmt/initiate/device/factory_reset
-
-
-Message format
-~~~~~~~~~~~~~~~
-
-Request Format:
-
-.. code::
-
-	{
-		"reqId": "string"
-	}
-
-Response Format:
-
-.. code::
-
-	{
-		"rc": "response_code",
-		"message": "string",
-		"reqId": "string"
-	}
+   Incoming request from the IoT Platform:
+   
+   Topic: iotdm-1/mgmt/initiate/device/factory_reset
+   Message: 
+   {
+      "reqId" : "f38faafc-53de-47a8-a940-e697552c3194",
+   }
+   
+   Outgoing response from device:
+   
+   Topic: iotdevice-1/response
+   Message: 
+   {
+      "rc": "response_code",
+      "message": "string",
+      "reqId": "string"
+   }
 
 
 ----
@@ -138,9 +169,9 @@ The ``mgmt.firmware.updateStatus`` attribute describes the status of firmware up
 Firmware Actions - Download
 ---------------------------
 
-The Download Firmware action can be initiated by using either the IoT Platform dashboard, or the REST API.
+The Download Firmware action can be initiated using either the IoT Platform dashboard, or the REST API.
 
-To initiate a firmware download using the REST API, issue a POST request to /mgmt/requests. The information provided is:
+To initiate a firmware download action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
 - The action ``firmware/download``
 - The URI for the firmware image
@@ -180,7 +211,7 @@ The device management server in the IoT Platform uses the Device Management Prot
 
 1. Firmware details update request sent on topic ``iotdm-1/device/update``:
 
-   This request let the device validate if the requested firmware differs from the currently installed firmware. If there is a difference, set ``rc`` to ``204``, which translates to the status ``Changed``.
+   This request lets the device validate if the requested firmware differs from the currently installed firmware. If there is a difference, set ``rc`` to ``204``, which translates to the status ``Changed``.
    The following example shows which message is to be expected for the previously sent example firmware download request and what response should be sent, when a difference is detected:
 
 .. code::
@@ -221,10 +252,10 @@ This response will trigger the next request.
       
 |
    
-2. Observation request for firmware download status ``iotdm-1/observe``:
+2. Observation request for firmware download status sent on topic ``iotdm-1/observe``:
 
    Verifies if the device is ready to start the firmware download. When the download can be started immediately, set ``rc`` to ``200`` (``Ok``), ``mgmt.firmware.state`` to 
-   ``0`` (``Idle``) and ``mgmt.firmware.updateStatus`` to ``0`` (``Idle``). Here an example exchange between the IoT Platform and device:
+   ``0`` (``Idle``) and ``mgmt.firmware.updateStatus`` to ``0`` (``Idle``). Here is an example exchange between the IoT Platform and device:
    
 .. code::
 
@@ -254,7 +285,7 @@ This exchange will trigger the last step.
    
 3. Initiate the download request sent on topic ``iotdm-1/mgmt/initiate/firmware/download``:
    
-   This request tells a device to actually start the firmware download. If the action can be initiated immediately, set ``rc`` to ``202``. Here an example:
+   This request tells a device to actually start the firmware download. If the action can be initiated immediately, set ``rc`` to ``202``. Here is an example:
    
 .. code::
 
@@ -277,8 +308,8 @@ This exchange will trigger the last step.
 
 |
    
-After a firmware download is initiated this way, the device needs to report to the IoT Platform the status of the download. This is possible by publishing a message to the ``iotdevice-1/notify``-topic, where the ``mgmt.firmware.state`` is set to either ``1`` (``Downloading``) or ``2`` (``Downloaded``).
-Here some examples:
+After a firmware download is initiated this way, the device needs to report to the IoT Platform the status of the download. This is possible by publishing a message to the ``iotdevice-1/notify`` topic, where the ``mgmt.firmware.state`` is set to either ``1`` (``Downloading``) or ``2`` (``Downloaded``).
+Here are some examples:
 
 .. code:: 
 
@@ -290,7 +321,7 @@ Here some examples:
       "reqId" : "123456789"; 
       "d" : {
          "fields" : [ {
-         	"fields" : "mgmt.firmware",
+         	"field" : "mgmt.firmware",
          	"value" : {
             		"state" : 1
             	}
@@ -310,7 +341,7 @@ Here some examples:
       "reqId" : "1234567890"; 
       "d" : {
          "fields" : [ {
-         	"fields" : "mgmt.firmware",
+         	"field" : "mgmt.firmware",
          	"value" : {
             		"state" : 2
             	}
@@ -319,8 +350,8 @@ Here some examples:
    }
 |
 
-After the notification with ``mgmt.firmware.state`` set to ``2`` was published, a request will be triggered on the ``iotdm-1/cancel``-topic, which cancels the observation of the ``mgmt.firmware``-field. 
-After a response with ``rc`` set to ``200`` was sent the firmware download is completed. Example:
+After the notification with ``mgmt.firmware.state`` set to ``2`` is published, a request will be triggered on the ``iotdm-1/cancel`` topic, which cancels the observation of the ``mgmt.firmware`` field. 
+After a response with ``rc`` set to ``200`` is sent the firmware download is completed. Here is an example:
 
 .. code:: 
 
@@ -375,12 +406,14 @@ Useful information regarding error handling:
 Firmware Actions - Update
 -------------------------
 
-The installation of the downloaded firmware is initiated using the REST API by issuing a POST request to /mgmt/requests. The information which should be provided is:
+The Update Firmware action can be initiated using either the IoT Platform dashboard, or the REST API.
+
+To initiate a firmware update action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
 - The action ``firmware/update``
 - The list of devices to receive the image, all of the same device type.
 
-Here an example request:
+Here is an example request:
 
 .. code ::
 
@@ -395,8 +428,8 @@ Here an example request:
    
 |
 
-In order to monitor the status of the firmware update the IoT Platform first triggers an observer request on the topic ``iotdm-1/observe``. When the device is ready to start the update process it sents a response with ``rc`` set to ``200``, ``mgmt.firmware.state`` set to ``0`` and ``mgmt.firmware.updateStatus`` set to ``0``.
-Here an example:
+In order to monitor the status of the firmware update the IoT Platform first triggers an observe request on the topic ``iotdm-1/observe``. When the device is ready to start the update process it sends a response with ``rc`` set to ``200``, ``mgmt.firmware.state`` set to ``0`` and ``mgmt.firmware.updateStatus`` set to ``0``.
+Here is an example:
 
 .. code::
 
@@ -433,10 +466,10 @@ Here an example:
 |
 
 
-Afterwards the device management server in the IoT Platform uses the device management protocol to request that the devices specified initiate the firmware installation by publishing using the topic ``iotdm-1/mgmt/initiate/firmware/update``.
+Afterwards the device management server in the IoT Platform uses the device management protocol to request that the devices specified initiate the firmware installation by publishing to the topic ``iotdm-1/mgmt/initiate/firmware/update``.
 If this operation can be initiated immediately, ``rc`` should be set to ``202``.
 If firmware was not previously downloaded successfully, ``rc`` should be set to ``400``.
-Here some example exchange:
+Here is an example exchange:
 
 .. code::
 
@@ -459,9 +492,9 @@ Here some example exchange:
 
 |
    
-In order to finish the firmware update request the device has to report its update status to the IoT Platform via a status message published on its ``iotdevice-1/notify``-topic.
-Once firmware update is completed, ``mgmt.firmware.updateStatus`` should be set to ``0`` (``Success``), ``mgmt.firmware.state`` should be set to ``0`` (``Idle``), downloaded firmware image can be deleted from the device and ``deviceInfo.fwVersion`` should be set to the value of ``mgmt.firmware.version``.
-Here an example notify message:
+In order to finish the firmware update request the device has to report its update status to the IoT Platform via a status message published on its ``iotdevice-1/notify`` topic.
+Once the firmware update is completed, ``mgmt.firmware.updateStatus`` should be set to ``0`` (``Success``), ``mgmt.firmware.state`` should be set to ``0`` (``Idle``), downloaded firmware image can be deleted from the device and ``deviceInfo.fwVersion`` should be set to the value of ``mgmt.firmware.version``.
+Here is an example notify message:
 
 .. code:: 
    
@@ -481,8 +514,8 @@ Here an example notify message:
  
 |
 
-After the IoT Platform received the notify of a completed firmware update it will trigger a last request on the ``iotdm-1/cancel``-topic for cancelation of the observation of the ``mgmt.firmware``-field.
-After a response with ``rc`` set to ``200`` was sent the firmware update request is completed. Example:
+After the IoT Platform received the notify of a completed firmware update it will trigger a last request on the ``iotdm-1/cancel`` topic for cancellation of the observation of the ``mgmt.firmware`` field.
+After a response with ``rc`` set to ``200`` is sent the firmware update request is completed. Here is an example:
 
 .. code:: 
 

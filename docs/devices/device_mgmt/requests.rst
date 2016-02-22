@@ -11,7 +11,7 @@ The reboot action can be initiated by using either the IoT Platform dashboard, o
 To initiate a reboot action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
 - The action ``device/reboot``
-- A list of devices to reboot
+- A list of devices to reboot, with a maximum of 5000 devices
 
 Example device reboot request on which the following examples are based:
 
@@ -32,8 +32,7 @@ If this operation can be initiated immediately, set ``rc`` to ``202``. If the re
 
 The action is considered complete when the device sends a Manage device request following its reboot.
 
-Device Management Protocol for Device Reboot
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Device Management Protocol for Device Reboot**
 
 .. code::
 
@@ -69,7 +68,7 @@ The factory reset action can be initiated by using either the IoT Platform dashb
 To initiate a factory reset action using the REST API, issue a POST request to /mgmt/requests. The information which should be provided is:
 
 - The action ``device/factoryReset``
-- A list of devices to reset
+- A list of devices to reset, with a maximum of 5000 devices
 
 Example factory reset request on which the following examples are based:
 
@@ -90,8 +89,7 @@ If the operation can be initiated immediately, set ``rc`` to ``202``. If the fac
 
 The action is considered complete when the device sends a Manage device request following its reboot.
 
-Device Management Protocol for Device Reset
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Device Management Protocol for Device Reset**
 
 .. code::
 

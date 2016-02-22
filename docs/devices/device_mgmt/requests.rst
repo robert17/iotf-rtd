@@ -72,7 +72,7 @@ To initiate a factory reset action using the REST API, issue a POST request to /
 
 Example factory reset request on which the following examples are based:
 
--- code::
+.. code::
 
    {
       "action" : "device/factoryReset",
